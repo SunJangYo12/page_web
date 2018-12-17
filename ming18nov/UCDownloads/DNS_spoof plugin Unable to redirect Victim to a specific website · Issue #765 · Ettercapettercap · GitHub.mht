@@ -1,0 +1,4155 @@
+From: <Saved by WebKit>
+Subject: DNS_spoof plugin Unable to redirect Victim to a specific website ? Issue #765 ? Ettercap/ettercap ? GitHub
+Date: Mon, 11 Nov 2018 19:48:16 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_B8F2_A1F5A9B1.61DA9008"
+
+------=_NextPart_000_B8F2_A1F5A9B1.61DA9008
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://github.com/Ettercap/ettercap/issues/765
+
+<html lang=3D"en"><head><meta charset=3D"UTF-8">
+   =20
+  <link rel=3D"dns-prefetch" href=3D"https://assets-cdn.github.com/">
+  <link rel=3D"dns-prefetch" href=3D"https://avatars0.githubusercontent.com=
+/">
+  <link rel=3D"dns-prefetch" href=3D"https://avatars1.githubusercontent.com=
+/">
+  <link rel=3D"dns-prefetch" href=3D"https://avatars2.githubusercontent.com=
+/">
+  <link rel=3D"dns-prefetch" href=3D"https://avatars3.githubusercontent.com=
+/">
+  <link rel=3D"dns-prefetch" href=3D"https://github-cloud.s3.amazonaws.com/=
+">
+  <link rel=3D"dns-prefetch" href=3D"https://user-images.githubusercontent.=
+com/">
+
+
+
+  <link crossorigin=3D"anonymous" media=3D"all" integrity=3D"sha512-wTTqmxY=
+gVetC9399S4yH2TVoV8rVTOV7yHAWKhn0L+ya2eHNLiao7GuMGRx9iBEu83NpKtJibZrlMyYDYX=
+YC0Q=3D=3D" rel=3D"stylesheet" href=3D"https://assets-cdn.github.com/assets=
+/frameworks-dd10d63b72c3bc48412f78fba535547a.css">
+  <link crossorigin=3D"anonymous" media=3D"all" integrity=3D"sha512-kFfNRgI=
+n1u64ZXJCJuapQrT+swDqJCZyDE8FyycxOkQwpRuzlK6arRw/Pr0VqffhmPLao0XQoV/ym85wD4=
+hq6A=3D=3D" rel=3D"stylesheet" href=3D"https://assets-cdn.github.com/assets=
+/github-c7ab4bcd2bbc288bc8d02dbe7fa373fa.css">
+ =20
+ =20
+  <link crossorigin=3D"anonymous" media=3D"all" integrity=3D"sha512-QbxBZqA=
+u/zl5DDhd2QizVMJEVzg31c5Mlqi5uPXG9U7GQFnAk64qWU/ngS64iYhFycI93jHr5hLoAIWvTs=
+we4w=3D=3D" rel=3D"stylesheet" href=3D"https://assets-cdn.github.com/assets=
+/site-d5d073510fa15e2c00f1b636632a01ff.css">
+ =20
+ =20
+
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+ =20
+  <title>DNS_spoof plugin Unable to redirect Victim to a specific website =
+=C2=B7 Issue #765 =C2=B7 Ettercap/ettercap =C2=B7 GitHub</title>
+    <meta name=3D"description" content=3D"The network scan in Ettercap v0.8=
+.2 detected the victim pc which is my Windows 7 machine and my internet gat=
+eway which is my router so I set my target 1 as the victim machine and targ=
+et 2 as the router and proceeded to ARP poison them an...">
+    <link rel=3D"search" type=3D"application/opensearchdescription+xml" hre=
+f=3D"https://github.com/opensearch.xml" title=3D"GitHub">
+  <link rel=3D"fluid-icon" href=3D"https://github.com/fluidicon.png" title=
+=3D"GitHub">
+  <meta property=3D"fb:app_id" content=3D"1401488693436528">
+
+   =20
+    <meta property=3D"og:image" content=3D"https://avatars2.githubuserconte=
+nt.com/u/20989997?s=3D400&amp;v=3D4"><meta property=3D"og:site_name" conten=
+t=3D"GitHub"><meta property=3D"og:type" content=3D"object"><meta property=
+=3D"og:title" content=3D"DNS_spoof plugin Unable to redirect Victim to a sp=
+ecific website =C2=B7 Issue #765 =C2=B7 Ettercap/ettercap"><meta property=
+=3D"og:url" content=3D"https://github.com/Ettercap/ettercap/issues/765"><me=
+ta property=3D"og:description" content=3D"The network scan in Ettercap v0.8=
+.2 detected the victim pc which is my Windows 7 machine and my internet gat=
+eway which is my router so I set my target 1 as the victim machine and targ=
+et 2 as the ro...">
+
+  <link rel=3D"assets" href=3D"https://assets-cdn.github.com/">
+ =20
+  <meta name=3D"pjax-timeout" content=3D"1000">
+ =20
+  <meta name=3D"request-id" content=3D"5286:797C:156F118:1E477BF:5BE824EF" =
+data-pjax-transient=3D"">
+
+    <meta name=3D"hovercard-subject-tag" content=3D"issue:184687372" data-p=
+jax-transient=3D"">
+
+ =20
+
+  <meta name=3D"selected-link" value=3D"repo_issues" data-pjax-transient=3D=
+"">
+
+      <meta name=3D"google-site-verification" content=3D"KT5gs8h0wvaagLKAVW=
+q8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name=3D"google-site-verification" content=3D"ZzhVyEFwb7w3e0-uOTlt=
+m8Jsck2F5StVihD0exw2fsA">
+    <meta name=3D"google-site-verification" content=3D"GXs5KoUUkNCoaAZn7wPN=
+-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name=3D"octolytics-host" content=3D"collector.githubapp.com"><meta =
+name=3D"octolytics-app-id" content=3D"github"><meta name=3D"octolytics-even=
+t-url" content=3D"https://collector.githubapp.com/github-external/browser_e=
+vent"><meta name=3D"octolytics-dimension-request_id" content=3D"5286:797C:1=
+56F118:1E477BF:5BE824EF"><meta name=3D"octolytics-dimension-region_edge" co=
+ntent=3D"ap-southeast-1"><meta name=3D"octolytics-dimension-region_render" =
+content=3D"iad">
+<meta name=3D"analytics-location" content=3D"/&lt;user-name&gt;/&lt;repo-na=
+me&gt;/issues/show" data-pjax-transient=3D"true">
+
+
+
+    <meta name=3D"google-analytics" content=3D"UA-3769691-2">
+
+
+<meta class=3D"js-ga-set" name=3D"dimension1" content=3D"Logged Out">
+
+  <meta class=3D"js-ga-set" name=3D"dimension3" content=3D"mobile">
+
+
+ =20
+
+      <meta name=3D"hostname" content=3D"github.com">
+    <meta name=3D"user-login" content=3D"">
+
+      <meta name=3D"expected-hostname" content=3D"github.com">
+    <meta name=3D"js-proxy-site-detection-payload" content=3D"NWJhNWY3ZjVmZ=
+GYxNjgxZmJiNzEzMzZkYzAxYzk0MjdkNmU3YjA2Y2M1MTc1MzYyNTdlY2RhNjM1NGQwYjM3Mnx7=
+InJlbW90ZV9hZGRyZXNzIjoiMzYuODEuMTIuMTE0IiwicmVxdWVzdF9pZCI6IjUyODY6Nzk3Qzo=
+xNTZGMTE4OjFFNDc3QkY6NUJFODI0RUYiLCJ0aW1lc3RhbXAiOjE1NDE5NDA0NzAsImhvc3QiOi=
+JnaXRodWIuY29tIn0=3D">
+
+    <meta name=3D"enabled-features" content=3D"DASHBOARD_V2_LAYOUT_OPT_IN,E=
+XPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_E=
+DITOR">
+
+  <meta name=3D"html-safe-nonce" content=3D"b014d374623b5751eb36bec8fb3a52f=
+fcb6bd6fd">
+
+  <meta http-equiv=3D"x-pjax-version" content=3D"807392c32e04cd743737cf37b3=
+70e402">
+ =20
+
+      <link href=3D"https://github.com/Ettercap/ettercap/commits/master.ato=
+m" rel=3D"alternate" title=3D"Recent Commits to ettercap:master" type=3D"ap=
+plication/atom+xml">
+
+  <meta name=3D"go-import" content=3D"github.com/Ettercap/ettercap git http=
+s://github.com/Ettercap/ettercap.git">
+
+  <meta name=3D"octolytics-dimension-user_id" content=3D"1973147"><meta nam=
+e=3D"octolytics-dimension-user_login" content=3D"Ettercap"><meta name=3D"oc=
+tolytics-dimension-repository_id" content=3D"5041133"><meta name=3D"octolyt=
+ics-dimension-repository_nwo" content=3D"Ettercap/ettercap"><meta name=3D"o=
+ctolytics-dimension-repository_public" content=3D"true"><meta name=3D"octol=
+ytics-dimension-repository_is_fork" content=3D"false"><meta name=3D"octolyt=
+ics-dimension-repository_network_root_id" content=3D"5041133"><meta name=3D=
+"octolytics-dimension-repository_network_root_nwo" content=3D"Ettercap/ette=
+rcap"><meta name=3D"octolytics-dimension-repository_explore_github_marketpl=
+ace_ci_cta_shown" content=3D"false">
+
+
+
+
+  <meta name=3D"browser-stats-url" content=3D"https://api.github.com/_priva=
+te/browser/stats">
+
+  <meta name=3D"browser-errors-url" content=3D"https://api.github.com/_priv=
+ate/browser/errors">
+
+  <link rel=3D"mask-icon" href=3D"https://assets-cdn.github.com/pinned-octo=
+cat.svg" color=3D"#000000">
+  <link rel=3D"icon" type=3D"image/x-icon" class=3D"js-site-favicon" href=
+=3D"https://assets-cdn.github.com/favicon.ico">
+
+<meta name=3D"theme-color" content=3D"#1e2327">
+
+
+
+  <link rel=3D"manifest" href=3D"https://github.com/manifest.json" crossori=
+gin=3D"use-credentials">
+
+  </head>
+
+  <body class=3D"logged-out env-production">
+   =20
+
+  <div class=3D"position-relative js-header-wrapper ">
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#start-of-con=
+tent" tabindex=3D"1" class=3D"px-2 py-4 bg-blue text-white show-on-focus js=
+-skip-to-content">Skip to content</a>
+    <div id=3D"js-pjax-loader-bar" class=3D"pjax-loader-bar"><div class=3D"=
+progress"></div></div>
+
+   =20
+   =20
+   =20
+
+      <div class=3D"mobile-banner">
+        <!-- '"` --><!-- </textarea></xmp> --><form class=3D"js-mobile-pref=
+erence-form" action=3D"https://github.com/site/mobile_preference" accept-ch=
+arset=3D"UTF-8" method=3D"post"><input name=3D"utf8" type=3D"hidden" value=
+=3D"=E2=9C=93"><input type=3D"hidden" name=3D"authenticity_token" value=3D"=
+siKRR7P1Bz0w07xf3C01WOGOeDhraOS3xwFLlWUVb8Fj/VWUDwsdQEJ3OOVmzMqCyp/y2EBs5HZ=
+PcQ2pgwmBQQ=3D=3D">
+          <input type=3D"hidden" name=3D"mobile" value=3D"true">
+          <input type=3D"hidden" name=3D"anchor" class=3D"js-mobile-prefere=
+nce-anchor-field">
+
+          <button type=3D"submit" class=3D"switch-to-mobile" data-ga-click=
+=3D"Mobile, switch to mobile, switch button">
+            <svg height=3D"64" class=3D"octicon octicon-device-mobile" view=
+Box=3D"0 0 10 16" version=3D"1.1" width=3D"40" aria-hidden=3D"true"><path f=
+ill-rule=3D"evenodd" d=3D"M9 0H1C.45 0 0 .45 0 1v14c0 .55.45 1 1 1h8c.55 0 =
+1-.45 1-1V1c0-.55-.45-1-1-1zM5 15.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3=
+-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zM9 12H1V2h8v10z"></path></sv=
+g>
+            Switch to mobile version
+          </button>
+</form>      </div>
+
+
+       =20
+<header class=3D"Header header-logged-out  position-relative f4 py-3" role=
+=3D"banner">
+  <div class=3D"container-lg d-flex px-3">
+    <div class=3D"d-flex flex-justify-between flex-items-center">
+      <a class=3D"header-logo-invertocat my-0" href=3D"https://github.com/"=
+ aria-label=3D"Homepage" data-ga-click=3D"(Logged out) Header, go to homepa=
+ge, icon:logo-wordmark">
+        <svg height=3D"32" class=3D"octicon octicon-mark-github" viewBox=3D=
+"0 0 16 16" version=3D"1.1" width=3D"32" aria-hidden=3D"true"><path fill-ru=
+le=3D"evenodd" d=3D"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.=
+55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-=
+.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87=
+ 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-=
+2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 =
+1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.2=
+7.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.0=
+1 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path><=
+/svg>
+      </a>
+
+    </div>
+
+    <div class=3D"HeaderMenu d-flex flex-justify-between flex-auto">
+        <nav class=3D"mt-0">
+          <ul class=3D"d-flex list-style-none">
+              <li class=3D"ml-2">
+                <a class=3D"js-selected-navigation-item HeaderNavlink px-0 =
+py-2 m-0" data-ga-click=3D"Header, click, Nav menu - item:features" data-se=
+lected-links=3D"/features /features/project-management /features/code-revie=
+w /features/project-management /features/integrations /features" href=3D"ht=
+tps://github.com/features">
+                  Features
+</a>              </li>
+              <li class=3D"ml-4">
+                <a class=3D"js-selected-navigation-item HeaderNavlink px-0 =
+py-2 m-0" data-ga-click=3D"Header, click, Nav menu - item:business" data-se=
+lected-links=3D"/business /business/security /business/customers /business"=
+ href=3D"https://github.com/business">
+                  Business
+</a>              </li>
+
+              <li class=3D"ml-4">
+                <a class=3D"js-selected-navigation-item HeaderNavlink px-0 =
+py-2 m-0" data-ga-click=3D"Header, click, Nav menu - item:explore" data-sel=
+ected-links=3D"/explore /trending /trending/developers /integrations /integ=
+rations/feature/code /integrations/feature/collaborate /integrations/featur=
+e/ship showcases showcases_search showcases_landing /explore" href=3D"https=
+://github.com/explore">
+                  Explore
+</a>              </li>
+
+              <li class=3D"ml-4">
+                    <a class=3D"js-selected-navigation-item HeaderNavlink p=
+x-0 py-2 m-0" data-ga-click=3D"Header, click, Nav menu - item:marketplace" =
+data-selected-links=3D" /marketplace" href=3D"https://github.com/marketplac=
+e">
+                      Marketplace
+</a>              </li>
+              <li class=3D"ml-4">
+                <a class=3D"js-selected-navigation-item HeaderNavlink px-0 =
+py-2 m-0" data-ga-click=3D"Header, click, Nav menu - item:pricing" data-sel=
+ected-links=3D"/pricing /pricing/developer /pricing/team /pricing/business-=
+hosted /pricing/business-enterprise /pricing" href=3D"https://github.com/pr=
+icing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class=3D"d-flex">
+          <div class=3D"d-lg-flex flex-items-center mr-3">
+            <div class=3D"header-search scoped-search site-scoped-search js=
+-site-search position-relative " role=3D"search">
+  <div class=3D"position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --><form class=3D"js-site-search-for=
+m" data-scope-type=3D"Repository" data-scope-id=3D"5041133" data-scoped-sea=
+rch-url=3D"/Ettercap/ettercap/search" data-unscoped-search-url=3D"/search" =
+action=3D"https://github.com/Ettercap/ettercap/search" accept-charset=3D"UT=
+F-8" method=3D"get"><input name=3D"utf8" type=3D"hidden" value=3D"=E2=9C=93=
+">
+      <label class=3D"form-control header-search-wrapper  js-chromeless-inp=
+ut-container">
+            <a class=3D"header-search-scope no-underline" href=3D"https://g=
+ithub.com/Ettercap/ettercap/issues/765">This repository</a>
+        <input type=3D"text" class=3D"form-control header-search-input  js-=
+site-search-focus js-site-search-field is-clearable" data-hotkey=3D"s,/" na=
+me=3D"q" value=3D"" placeholder=3D"Search" data-unscoped-placeholder=3D"Sea=
+rch GitHub" data-scoped-placeholder=3D"Search" autocapitalize=3D"off" aria-=
+label=3D"Search this repository">
+          <input type=3D"hidden" class=3D"js-site-search-type-field" name=
+=3D"type">
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <span class=3D"d-inline-block">
+            <div class=3D"HeaderNavlink px-0 py-2 m-0">
+              <a class=3D"text-bold text-white no-underline" href=3D"https:=
+//github.com/login?return_to=3D%2FEttercap%2Fettercap%2Fissues%2F765" data-=
+ga-click=3D"(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class=3D"text-gray">or</span>
+                <a class=3D"text-bold text-white no-underline" href=3D"http=
+s://github.com/join?source=3Dheader-repo" data-ga-click=3D"(Logged out) Hea=
+der, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id=3D"start-of-content" class=3D"show-on-focus"></div>
+
+    <div id=3D"js-flash-container">
+
+
+</div>
+
+
+
+  <div role=3D"main" class=3D"application-main " data-organization-hovercar=
+ds-enabled=3D"">
+        <div itemscope=3D"" itemtype=3D"http://schema.org/SoftwareSourceCod=
+e" class=3D"">
+    <div id=3D"js-repo-pjax-container" data-pjax-container=3D"">
+     =20
+
+
+
+ =20
+
+
+
+  <div class=3D"pagehead repohead instapaper_ignore readability-menu experi=
+ment-repo-nav  ">
+    <div class=3D"repohead-details-container clearfix container">
+
+      <ul class=3D"pagehead-actions">
+  <li>
+      <a href=3D"https://github.com/login?return_to=3D%2FEttercap%2Fetterca=
+p" class=3D"btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label=
+=3D"You must be signed in to watch a repository" rel=3D"nofollow">
+    <svg class=3D"octicon octicon-eye v-align-text-bottom" viewBox=3D"0 0 1=
+6 16" version=3D"1.1" width=3D"16" height=3D"16" aria-hidden=3D"true"><path=
+ fill-rule=3D"evenodd" d=3D"M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s=
+-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22=
+-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2=
+ .89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class=3D"social-count" href=3D"https://github.com/Ettercap/ettercap/wa=
+tchers" aria-label=3D"103 users are watching this repository">
+    103
+  </a>
+
+  </li>
+
+  <li>
+      <a href=3D"https://github.com/login?return_to=3D%2FEttercap%2Fetterca=
+p" class=3D"btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label=
+=3D"You must be signed in to star a repository" rel=3D"nofollow">
+    <svg class=3D"octicon octicon-star v-align-text-bottom" viewBox=3D"0 0 =
+14 16" version=3D"1.1" width=3D"14" height=3D"16" aria-hidden=3D"true"><pat=
+h fill-rule=3D"evenodd" d=3D"M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 =
+14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+    Star
+  </a>
+
+    <a class=3D"social-count js-social-count" href=3D"https://github.com/Et=
+tercap/ettercap/stargazers" aria-label=3D"1220 users starred this repositor=
+y">
+      1,220
+    </a>
+
+  </li>
+
+  <li>
+      <a href=3D"https://github.com/login?return_to=3D%2FEttercap%2Fetterca=
+p" class=3D"btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label=
+=3D"You must be signed in to fork a repository" rel=3D"nofollow">
+        <svg class=3D"octicon octicon-repo-forked v-align-text-bottom" view=
+Box=3D"0 0 10 16" version=3D"1.1" width=3D"10" height=3D"16" aria-hidden=3D=
+"true"><path fill-rule=3D"evenodd" d=3D"M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8=
+ 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993=
+ 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8=
+ 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .6=
+5-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.=
+2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.=
+2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href=3D"https://github.com/Ettercap/ettercap/network/members" class=
+=3D"social-count" aria-label=3D"329 users forked this repository">
+      329
+    </a>
+  </li>
+</ul>
+
+      <h1 class=3D"public ">
+  <svg class=3D"octicon octicon-repo" viewBox=3D"0 0 12 16" version=3D"1.1"=
+ width=3D"12" height=3D"16" aria-hidden=3D"true"><path fill-rule=3D"evenodd=
+" d=3D"M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.4=
+5 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1=
+ .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class=3D"author" itemprop=3D"author"><a class=3D"url fn" rel=3D"aut=
+hor" data-hovercard-type=3D"organization" data-hovercard-url=3D"/orgs/Etter=
+cap/hovercard" href=3D"https://github.com/Ettercap">Ettercap</a></span><!--
+--><span class=3D"path-divider">/</span><!--
+--><strong itemprop=3D"name"><a data-pjax=3D"#js-repo-pjax-container" href=
+=3D"https://github.com/Ettercap/ettercap">ettercap</a></strong>
+
+</h1>
+
+    </div>
+   =20
+<nav class=3D"reponav js-repo-nav js-sidenav-container-pjax container" item=
+scope=3D"" itemtype=3D"http://schema.org/BreadcrumbList" role=3D"navigation=
+" data-pjax=3D"#js-repo-pjax-container">
+
+  <span itemscope=3D"" itemtype=3D"http://schema.org/ListItem" itemprop=3D"=
+itemListElement">
+    <a class=3D"js-selected-navigation-item reponav-item" itemprop=3D"url" =
+data-hotkey=3D"g c" data-selected-links=3D"repo_source repo_downloads repo_=
+commits repo_releases repo_tags repo_branches repo_packages /Ettercap/etter=
+cap" href=3D"https://github.com/Ettercap/ettercap">
+      <svg class=3D"octicon octicon-code" viewBox=3D"0 0 14 16" version=3D"=
+1.1" width=3D"14" height=3D"16" aria-hidden=3D"true"><path fill-rule=3D"eve=
+nodd" d=3D"M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 1=
+1.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop=3D"name">Code</span>
+      <meta itemprop=3D"position" content=3D"1">
+</a>  </span>
+
+    <span itemscope=3D"" itemtype=3D"http://schema.org/ListItem" itemprop=
+=3D"itemListElement">
+      <a itemprop=3D"url" data-hotkey=3D"g i" class=3D"js-selected-navigati=
+on-item selected reponav-item" aria-current=3D"page" data-selected-links=3D=
+"repo_issues repo_labels repo_milestones /Ettercap/ettercap/issues" href=3D=
+"https://github.com/Ettercap/ettercap/issues">
+        <svg class=3D"octicon octicon-issue-opened" viewBox=3D"0 0 14 16" v=
+ersion=3D"1.1" width=3D"14" height=3D"16" aria-hidden=3D"true"><path fill-r=
+ule=3D"evenodd" d=3D"M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 =
+5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 =
+7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop=3D"name">Issues</span>
+        <span class=3D"Counter">44</span>
+        <meta itemprop=3D"position" content=3D"2">
+</a>    </span>
+
+  <span itemscope=3D"" itemtype=3D"http://schema.org/ListItem" itemprop=3D"=
+itemListElement">
+    <a data-hotkey=3D"g p" itemprop=3D"url" class=3D"js-selected-navigation=
+-item reponav-item" data-selected-links=3D"repo_pulls checks /Ettercap/ette=
+rcap/pulls" href=3D"https://github.com/Ettercap/ettercap/pulls">
+      <svg class=3D"octicon octicon-git-pull-request" viewBox=3D"0 0 12 16"=
+ version=3D"1.1" width=3D"12" height=3D"16" aria-hidden=3D"true"><path fill=
+-rule=3D"evenodd" d=3D"M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.7=
+8 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.=
+993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-=
+.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.8=
+9-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 =
+0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.=
+2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.=
+65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></p=
+ath></svg>
+      <span itemprop=3D"name">Pull requests</span>
+      <span class=3D"Counter">4</span>
+      <meta itemprop=3D"position" content=3D"3">
+</a>  </span>
+
+
+    <a data-hotkey=3D"g b" class=3D"js-selected-navigation-item reponav-ite=
+m" data-selected-links=3D"repo_projects new_repo_project repo_project /Ette=
+rcap/ettercap/projects" href=3D"https://github.com/Ettercap/ettercap/projec=
+ts">
+      <svg class=3D"octicon octicon-project" viewBox=3D"0 0 15 16" version=
+=3D"1.1" width=3D"15" height=3D"16" aria-hidden=3D"true"><path fill-rule=3D=
+"evenodd" d=3D"M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v1=
+4zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"=
+></path></svg>
+      Projects
+      <span class=3D"Counter">0</span>
+</a>
+
+    <a class=3D"js-selected-navigation-item reponav-item" data-hotkey=3D"g =
+w" data-selected-links=3D"repo_wiki /Ettercap/ettercap/wiki" href=3D"https:=
+//github.com/Ettercap/ettercap/wiki">
+      <svg class=3D"octicon octicon-book" viewBox=3D"0 0 16 16" version=3D"=
+1.1" width=3D"16" height=3D"16" aria-hidden=3D"true"><path fill-rule=3D"eve=
+nodd" d=3D"M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h=
+4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c=
+0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H=
+9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+  <a class=3D"js-selected-navigation-item reponav-item" data-selected-links=
+=3D"repo_graphs repo_contributors dependency_graph pulse alerts /Ettercap/e=
+ttercap/pulse" href=3D"https://github.com/Ettercap/ettercap/pulse">
+    <svg class=3D"octicon octicon-graph" viewBox=3D"0 0 16 16" version=3D"1=
+.1" width=3D"16" height=3D"16" aria-hidden=3D"true"><path fill-rule=3D"even=
+odd" d=3D"M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z">=
+</path></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class=3D"container new-discussion-timeline experiment-repo-nav  ">
+  <div class=3D"repository-content ">
+
+   =20
+  <div class=3D"issues-listing js-check-all-container" data-pjax=3D"">
+   =20
+      <div class=3D"signup-prompt-bg rounded-1">
+      <div class=3D"signup-prompt p-4 text-center mb-4 rounded-1">
+        <div class=3D"position-relative">
+          <!-- '"` --><!-- </textarea></xmp> --><form action=3D"https://git=
+hub.com/site/dismiss_signup_prompt" accept-charset=3D"UTF-8" method=3D"post=
+"><input name=3D"utf8" type=3D"hidden" value=3D"=E2=9C=93"><input type=3D"h=
+idden" name=3D"authenticity_token" value=3D"iXq7XRSMYSNo7S7FJ2X4gPspn0RVBFB=
+hhIrXV2snFaDLCPDFJ7TDrfB716Kta1RJsJfCeMMo3gTIgMLVJnhR+w=3D=3D">
+            <button type=3D"submit" class=3D"position-absolute top-0 right-=
+0 btn-link link-gray" data-ga-click=3D"(Logged out) Sign up prompt, clicked=
+ Dismiss, text:dismiss">
+              Dismiss
+            </button>
+</form>          <h3 class=3D"pt-2">Join GitHub today</h3>
+          <p class=3D"col-6 mx-auto">GitHub is home to over 28 million deve=
+lopers working together to host and review code, manage projects, and build=
+ software together.</p>
+          <a class=3D"btn btn-primary" href=3D"https://github.com/join?sour=
+ce=3Dprompt-issue-show" data-ga-click=3D"(Logged out) Sign up prompt, click=
+ed Sign up, text:sign-up">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id=3D"show_issue" class=3D"js-issues-results">
+
+   =20
+  <div id=3D"partial-discussion-header" class=3D"gh-header js-details-conta=
+iner Details js-socket-channel js-updatable-content issue" data-channel=3D"=
+issue:184687372" data-url=3D"/Ettercap/ettercap/issues/765/show_partial?par=
+tial=3Dissues%2Ftitle">
+
+  <div class=3D"gh-header-show ">
+      <div class=3D"gh-header-actions">
+
+         =20
+<details class=3D"details-reset details-overlay details-overlay-dark float-=
+right">
+  <summary class=3D"btn btn-sm btn-primary" aria-haspopup=3D"dialog" data-g=
+a-click=3D"Issues, create new issue, view:issue_show location:issue_header =
+style:button logged_in:false">
+   =20
+    New issue
+  </summary>
+  <details-dialog class=3D"Box Box--overlay d-flex flex-column anim-fade-in=
+ fast overflow-auto" aria-label=3D"Sign up for GitHub">
+    <button class=3D"position-absolute p-4 right-0 btn-link muted-link" typ=
+e=3D"button" aria-label=3D"Close dialog" data-close-dialog=3D"">
+      <svg class=3D"octicon octicon-x" viewBox=3D"0 0 12 16" version=3D"1.1=
+" width=3D"12" height=3D"16" aria-hidden=3D"true"><path fill-rule=3D"evenod=
+d" d=3D"M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 =
+4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+    <div class=3D"p-4 d-flex flex-column">
+            <div class=3D"mt-3 mb-2 text-center">
+  <svg height=3D"60" class=3D"octicon octicon-comment-discussion text-blue"=
+ viewBox=3D"0 0 16 16" version=3D"1.1" width=3D"60" aria-hidden=3D"true"><p=
+ath fill-rule=3D"evenodd" d=3D"M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 =
+1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c=
+0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L=
+11.5 8H6V2h9v6z"></path></svg>
+</div>
+
+<div class=3D"px-4">
+  <p class=3D"text-center mb-4">
+  <strong>Have a question about this project?</strong> Sign up for a free G=
+itHub account to open an issue and contact its maintainers and the communit=
+y.
+  </p>
+
+  <form class=3D"js-signup-form" autocomplete=3D"off" action=3D"https://git=
+hub.com/join?return_to=3D%2FEttercap%2Fettercap%2Fissues%2Fnew" accept-char=
+set=3D"UTF-8" method=3D"post"><input name=3D"utf8" type=3D"hidden" value=3D=
+"=E2=9C=93"><input type=3D"hidden" name=3D"authenticity_token" value=3D"4H8=
+FlDcruCr7oCXZSCx+K15Hr2E0qVX+z5mfRjh/m6KExIfg85XnqWUU1Q6JJB59QWBxWeyTI1ezHH=
+iwkn/7gQ=3D=3D">    <auto-check src=3D"/signup_check/username" csrf=3D"WTKG=
+lIY6pmd5H/h/C/UOZ9zCu0tb4mPcR0rmj/w5ippldLU0DImjJ9H7NTWzZejnk7DbZ0epAPSXWEY=
++YhBxRA=3D=3D">
+      <dl class=3D"form-group"><dt class=3D"input-label"><label name=3D"use=
+r[login]" autocapitalize=3D"off" autofocus=3D"autofocus" for=3D"user_login_=
+issues">Pick a username</label></dt><dd><input name=3D"user[login]" autocap=
+italize=3D"off" autofocus=3D"autofocus" class=3D"form-control" type=3D"text=
+" id=3D"user_login_issues"></dd></dl>
+    </auto-check>
+
+    <auto-check src=3D"/signup_check/email" csrf=3D"QFXfBiCV7yJwPaOMEkC6rpw=
+5OG7E2+quej5rUtnKdrblKwmy+P1fiHzWr3We+zTQmrMpcLmM7SiyGgJehXVRWQ=3D=3D">
+      <dl class=3D"form-group"><dt class=3D"input-label"><label name=3D"use=
+r[email]" autocapitalize=3D"off" for=3D"user_email_issues">Email Address</l=
+abel></dt><dd><input name=3D"user[email]" autocapitalize=3D"off" class=3D"f=
+orm-control" type=3D"text" id=3D"user_email_issues"></dd></dl>
+    </auto-check>
+
+    <dl class=3D"form-group"><dt class=3D"input-label"><label name=3D"user[=
+password]" for=3D"user_password_issues">Password</label></dt><dd><input nam=
+e=3D"user[password]" class=3D"form-control" type=3D"password" id=3D"user_pa=
+ssword_issues"></dd></dl>
+
+    <input type=3D"hidden" name=3D"source" class=3D"js-signup-source" value=
+=3D"modal-issues">
+    <input type=3D"text" name=3D"required_field_96cd" id=3D"required_field_=
+96cd" hidden=3D"hidden" class=3D"form-control">
+<input type=3D"hidden" name=3D"timestamp" value=3D"1541940470689" class=3D"=
+form-control">
+<input type=3D"hidden" name=3D"timestamp_secret" value=3D"08f33eaa51f43cf97=
+c7d5ce34a02dc389989456f590a7564dc43fe846e1b220e" class=3D"form-control">
+
+
+    <button class=3D"btn btn-primary mt-2 btn-block" type=3D"submit" data-g=
+a-click=3D"(Logged out) New issue modal, clicked Sign up, text:sign-up">Sig=
+n up for GitHub</button>
+</form>
+  <p class=3D"mt-4 text-gray text-center">By clicking =E2=80=9CSign up for =
+GitHub=E2=80=9D, you agree to our <a href=3D"https://help.github.com/terms"=
+ target=3D"_blank">terms of service</a> and
+  <a href=3D"https://help.github.com/privacy" target=3D"_blank">privacy sta=
+tement</a>. We=E2=80=99ll occasionally send you account related emails.</p>
+  <p class=3D"mt-4 text-gray text-center">Already on GitHub? <a href=3D"htt=
+ps://github.com/login?return_to=3D%2FEttercap%2Fettercap%2Fissues%2Fnew" da=
+ta-ga-click=3D"(Logged out) New issue modal, clicked Sign in, text:sign-in"=
+>Sign in</a> to your account</p>
+</div>
+
+</div>
+  </details-dialog>
+</details>
+      </div>
+
+    <h1 class=3D"gh-header-title">
+      <span class=3D"js-issue-title">
+        DNS_spoof plugin Unable to redirect Victim to a specific website
+      </span>
+      <span class=3D"gh-header-number">#765</span>
+    </h1>
+  </div>
+
+
+  <div class=3D"TableObject gh-header-meta">
+    <div class=3D"TableObject-item">
+        <div class=3D"State State--red">
+          <svg class=3D"octicon octicon-issue-closed" viewBox=3D"0 0 16 16"=
+ version=3D"1.1" width=3D"16" height=3D"16" aria-hidden=3D"true"><path fill=
+-rule=3D"evenodd" d=3D"M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5=
+-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 0 1 2.3 8c0-3.14 2.56-5.7 5.7-5.7 1.=
+83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 0 0 8 1C4.14 1 1 4.14 1 8s3.14 7=
+ 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"></path></sv=
+g>
+          Closed
+        </div>
+    </div>
+    <div class=3D"TableObject-item TableObject-item--primary">
+        <a class=3D"author" data-hovercard-type=3D"user" data-hovercard-url=
+=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercard-link-click=
+" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/GhostN=
+aix">GhostNaix</a>  opened this <span class=3D"noun">Issue</span>
+        <relative-time datetime=3D"2016-10-23T12:29:55Z">Oct 23, 2016</rela=
+tive-time>
+        =C2=B7 42 comments
+    </div>
+  </div>
+</div>
+
+
+    <h2 class=3D"sr-only">Comments</h2>
+    <div id=3D"discussion_bucket" class=3D"clearfix">
+      <div class=3D"discussion-sidebar">
+        <div id=3D"partial-discussion-sidebar" class=3D"js-socket-channel j=
+s-updatable-content" data-channel=3D"issue:184687372" data-url=3D"/Ettercap=
+/ettercap/issues/765/show_partial?partial=3Dissues%2Fsidebar">
+
+
+  <div class=3D"discussion-sidebar-item sidebar-assignee js-discussion-side=
+bar-item">
+  <!-- '"` --><!-- </textarea></xmp> --><form class=3D"js-issue-sidebar-for=
+m" action=3D"https://github.com/Ettercap/ettercap/issues/765?partial=3Dissu=
+es%2Fsidebar%2Fshow%2Fassignees" accept-charset=3D"UTF-8" method=3D"post"><=
+input name=3D"utf8" type=3D"hidden" value=3D"=E2=9C=93"><input type=3D"hidd=
+en" name=3D"_method" value=3D"put"><input type=3D"hidden" name=3D"authentic=
+ity_token" value=3D"gdws2VnNXB6FbW3IL/MiPjo6GCW+Ofct8jOgMvg8+xwSUg1WQP70ihW=
+biX123WiAHA1lxMsyRWD45ay+N+ZPZw=3D=3D">
+   =20
+
+  <div class=3D"discussion-sidebar-heading text-bold">
+    Assignees
+  </div>
+
+    <span class=3D"css-truncate">
+    No one assigned
+</span>
+
+</form></div>
+
+  <div class=3D"discussion-sidebar-item sidebar-labels js-discussion-sideba=
+r-item">
+ =20
+
+
+
+  <div class=3D"discussion-sidebar-heading text-bold">
+    Labels
+  </div>
+
+  <div aria-live=3D"polite" aria-label=3D"Labels">
+    <div class=3D"labels css-truncate">
+    None yet
+</div>
+
+  </div>
+</div>
+
+    <div class=3D"discussion-sidebar-item js-discussion-sidebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --><form class=3D"js-issue-sidebar-for=
+m" action=3D"https://github.com/Ettercap/ettercap/projects/issues/765" acce=
+pt-charset=3D"UTF-8" method=3D"post"><input name=3D"utf8" type=3D"hidden" v=
+alue=3D"=E2=9C=93"><input type=3D"hidden" name=3D"_method" value=3D"put"><i=
+nput type=3D"hidden" name=3D"authenticity_token" value=3D"CC5RLl29nSadmEIyG=
+W5Nq536dwZiUVmLLQ+74JS0TTmdnjYFkmRNZkiXaP/jsw3VJOObyZddgLYBY8ekGc90LQ=3D=3D=
+">
+   =20
+
+  <div class=3D"discussion-sidebar-heading text-bold">
+    Projects
+  </div>
+
+   =20
+<span class=3D"css-truncate sidebar-projects">
+    None yet
+</span>
+
+</form></div>
+
+  <div class=3D"discussion-sidebar-item sidebar-milestone js-discussion-sid=
+ebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --><form class=3D"js-issue-sidebar-for=
+m" action=3D"https://github.com/Ettercap/ettercap/issues/765/set_milestone?=
+partial=3Dissues%2Fsidebar%2Fshow%2Fmilestone" accept-charset=3D"UTF-8" met=
+hod=3D"post"><input name=3D"utf8" type=3D"hidden" value=3D"=E2=9C=93"><inpu=
+t type=3D"hidden" name=3D"_method" value=3D"put"><input type=3D"hidden" nam=
+e=3D"authenticity_token" value=3D"cw1vd9HpJdnWyLG1HgFQytCXMGR+HIhUzpM4dh9A9=
++9VktPDja3mKH9Lh1+BwPOBLtxuhgxnuP8Au18a0hLN/g=3D=3D">
+   =20
+
+  <div class=3D"discussion-sidebar-heading text-bold">
+    Milestone
+  </div>
+
+      No milestone
+
+</form></div>
+
+ =20
+  <div id=3D"partial-users-participants" class=3D"discussion-sidebar-item">
+  <div class=3D"participation">
+
+    <div class=3D"discussion-sidebar-heading text-bold">
+      4 participants
+    </div>
+    <div class=3D"participation-avatars d-flex flex-wrap">
+        <a class=3D"participant-avatar" data-hovercard-type=3D"user" data-h=
+overcard-url=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercar=
+d-link-click" data-octo-dimensions=3D"link_type:self" href=3D"https://githu=
+b.com/GhostNaix">
+          <img class=3D"avatar" src=3D"https://avatars3.githubusercontent.c=
+om/u/20989997?s=3D52&amp;v=3D4" width=3D"26" height=3D"26" alt=3D"@GhostNai=
+x">=20
+</a>        <a class=3D"participant-avatar" data-hovercard-type=3D"user" da=
+ta-hovercard-url=3D"/hovercards?user_id=3D8343121" data-octo-click=3D"hover=
+card-link-click" data-octo-dimensions=3D"link_type:self" href=3D"https://gi=
+thub.com/sgeto">
+          <img class=3D"avatar" src=3D"https://avatars2.githubusercontent.c=
+om/u/8343121?s=3D52&amp;v=3D4" width=3D"26" height=3D"26" alt=3D"@sgeto">=
+=20
+</a>        <a class=3D"participant-avatar" data-hovercard-type=3D"user" da=
+ta-hovercard-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hover=
+card-link-click" data-octo-dimensions=3D"link_type:self" href=3D"https://gi=
+thub.com/koeppea">
+          <img class=3D"avatar" src=3D"https://avatars1.githubusercontent.c=
+om/u/4201853?s=3D52&amp;v=3D4" width=3D"26" height=3D"26" alt=3D"@koeppea">=
+=20
+</a>        <a class=3D"participant-avatar" data-hovercard-type=3D"user" da=
+ta-hovercard-url=3D"/hovercards?user_id=3D17826158" data-octo-click=3D"hove=
+rcard-link-click" data-octo-dimensions=3D"link_type:self" href=3D"https://g=
+ithub.com/Octoberr">
+          <img class=3D"avatar" src=3D"https://avatars0.githubusercontent.c=
+om/u/17826158?s=3D52&amp;v=3D4" width=3D"26" height=3D"26" alt=3D"@Octoberr=
+">=20
+</a>    </div>
+  </div>
+</div>
+
+
+ =20
+
+
+   =20
+
+</div>
+
+      </div>
+
+      <div class=3D"discussion-timeline js-quote-selection-container" data-=
+quote-markdown=3D".js-comment-body" data-issue-and-pr-hovercards-enabled=3D=
+"">
+
+        <div class=3D"js-discussion js-socket-channel" data-channel=3D"mark=
+ed-as-read:issue:184687372">
+
+          <div class=3D"timeline-comment-wrapper js-comment-container mt-0"=
+>
+           =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercard-link-c=
+lick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/Gh=
+ostNaix"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"=
+@GhostNaix" src=3D"https://avatars0.githubusercontent.com/u/20989997?s=3D88=
+&amp;v=3D4"></a>
+
+</div>
+
+
+           =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issue-184687372">
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"d97cc491f525ccda75a2564468781b51" data-unfurl-authentic=
+ity-token=3D"7eVegx+/TkJjH7nEIDnrEOZG5+yBq8wkrll8sTEPUC+zzv8PnsGrgI80x4es6n=
+PhRItelxqelKdK8IU5F9nzFw=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issue-184687372">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issue-18468=
+7372-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-issue-1=
+84687372" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issue-184687372">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D20989997" data-octo-c=
+lick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/GhostNaix">GhostNaix</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issue-184687=
+372" id=3D"issue-184687372-permalink" class=3D"timestamp js-timestamp"><rel=
+ative-time datetime=3D"2016-10-23T12:29:55Z">Oct 23, 2016</relative-time></=
+a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+           =20
+  <span class=3D"d-inline-block text-gray-light">=E2=80=A2</span>
+
+  <details class=3D"details-overlay details-reset d-inline-block dropdown j=
+s-load-contents" data-deferred-details-content-url=3D"/_render_node/MDU6SXN=
+zdWUxODQ2ODczNzI=3D/comments/comment_edit_history_log">
+    <summary class=3D"btn-link no-underline text-gray js-notice">
+      <div class=3D"position-relative">
+        <span>
+            edited
+        </span>
+        <svg height=3D"11" class=3D"octicon octicon-triangle-down v-align-m=
+iddle" viewBox=3D"0 0 12 16" version=3D"1.1" width=3D"8" aria-hidden=3D"tru=
+e"><path fill-rule=3D"evenodd" d=3D"M0 5l6 6 6-6H0z"></path></svg>
+      </div>
+    </summary>
+    <details-menu class=3D"anim-scale-in dropdown-menu dropdown-menu-se py-=
+0" style=3D"width:352px">
+      <include-fragment class=3D"octocat-spinner my-3" aria-label=3D"Loadin=
+g..."></include-fragment>
+    </details-menu>
+  </details>
+
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>The network scan in Ettercap v0.8.2 detected the victim pc whi=
+ch is my Windows 7 machine  and my internet gateway which is my router so I=
+ set my target 1 as the victim machine and target 2 as the router and proce=
+eded to ARP poison them and Activated the DNS_spoof plugin however when I s=
+witch over to my victim machine ,the windows 7 with Google chrome and visit=
+ed google.com I get an =E2=80=9CNET:ERR_CERT_AUTHORITY_INVALID=E2=80=9D {th=
+e your connection is not private error} but when I goto an =E2=80=98http=E2=
+=80=99 website I was able to enter without any error now I know that the br=
+owser is recognising the ARP poison but the problem is when I visit <a href=
+=3D"http://www.addictinggames.com/" rel=3D"nofollow">http://www.addictingga=
+mes.com/</a>  it successfully redirected to my rogue website but when I got=
+o another website http it failed to display my website</p>
+<p>I=E2=80=99am running this in kali linux 2016.2</p>
+<p>Please tell me what I=E2=80=99am doing wrong or verify this is a bug</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+          </div>
+
+         =20
+
+  <div id=3D"js-timeline-progressive-loader" data-timeline-item-src=3D"Ette=
+rcap/ettercap/timeline?id=3DMDU6SXNzdWUxODQ2ODczNzI%3D&amp;variables%5Bafte=
+r%5D=3DY3Vyc29yOnYyOpPPAAABWE8rpFAAqTI1OTc0NDk3NA%3D%3D&amp;variables%5Bbef=
+ore%5D=3DY3Vyc29yOnYyOpPPAAABWFOzDOgAqTI1OTk2MzM0NA%3D%3D&amp;variables%5Bf=
+irst%5D=3D60"></div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NTY1NTU3Ng=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D8343121" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/sge=
+to"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@sget=
+o" src=3D"https://avatars1.githubusercontent.com/u/8343121?s=3D88&amp;v=3D4=
+"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25565557=
+6">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"51d4109f76056c5b75b07222e24c06e8">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"51d4109f76056c5b75b07222e24c06e8" data-unfurl-authentic=
+ity-token=3D"JPL1hzCDer7p4UEbv4uy7GNEUXxhwGASO6LGpoCG2DV62VQLsf2ffAXKP1gzWC=
+odwYnoB/r1OJHfCz8uplB7DQ=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-255655576">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-255655576-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-255655576" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-255655576">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D8343121" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/sgeto">sgeto</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-255655576" id=3D"issuecomment-255655576-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-24T06:10:04Z">Oct 24, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>no bug. you can't redirect https traffic without getting an SS=
+L/TLS error on the victim's machine. And if the victim has previously conne=
+cted to a site using https the browser will remember it and won't downgrade=
+ to http.  Chrome even hardens it by not allowing you to add exceptions for=
+ certain domains (including their owns)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions has-reactions js-reactions-container ">
+    <!-- '"` --><!-- </textarea></xmp> --><form class=3D"js-pick-reaction" =
+action=3D"https://github.com/users/Ettercap/reactions" accept-charset=3D"UT=
+F-8" method=3D"post"><input name=3D"utf8" type=3D"hidden" value=3D"=E2=9C=
+=93"><input type=3D"hidden" name=3D"_method" value=3D"put"><input type=3D"h=
+idden" name=3D"authenticity_token" value=3D"zSg/xbO/Zdr15iU8x0PE24XQ8+5kfSY=
+sQ7it6p+G2xCfNfj94CUXdLUFMGsl6USKGBYKr1hb1w3TufANOI6sog=3D=3D">
+      <input type=3D"hidden" name=3D"input[subjectId]" value=3D"MDEyOklzc3V=
+lQ29tbWVudDI1NTY1NTU3Ng=3D=3D">
+
+      <div class=3D"comment-reactions-options">
+          <button disabled=3D"" class=3D"btn-link reaction-summary-item too=
+ltipped tooltipped-se tooltipped-multiline " name=3D"input[content]" type=
+=3D"submit" value=3D"THUMBS_UP react" aria-label=3D"mnciitbhu reacted with =
+thumbs up emoji">
+            <g-emoji alias=3D"+1" fallback-src=3D"https://assets-cdn.github=
+.com/images/icons/emoji/unicode/1f44d.png" class=3D"emoji mr-1">=F0=9F=91=
+=8D</g-emoji>
+            1
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NTcwMjQ3NQ=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercard-link-c=
+lick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/Gh=
+ostNaix"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"=
+@GhostNaix" src=3D"https://avatars0.githubusercontent.com/u/20989997?s=3D88=
+&amp;v=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25570247=
+5">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"8f7384d7598482c267c10ec8c6c008c3">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"8f7384d7598482c267c10ec8c6c008c3" data-unfurl-authentic=
+ity-token=3D"xXm7P6+6hWocBMs6w4QmPGij2HVNjuk/Faz4kQABOJCbUhqzLsRgqPAvtXlPV7=
+7Nym5hDta7sbzxBQEZJtebqA=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-255702475">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-255702475-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-255702475" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-255702475">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D20989997" data-octo-c=
+lick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/GhostNaix">GhostNaix</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-255702475" id=3D"issuecomment-255702475-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-24T10:18:21Z">Oct 24, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>Thanks for your clarification<br>
+what about when i was able to redirect  <a href=3D"http://www.addictinggame=
+s.com/" rel=3D"nofollow">http://www.addictinggames.com/</a> but not opther =
+ http sites</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NjE0MTg5OA=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/koe=
+ppea"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@ko=
+eppea" src=3D"https://avatars2.githubusercontent.com/u/4201853?s=3D88&amp;v=
+=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25614189=
+8">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"88138def8eee8310f5a136c7c09d25c2">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"88138def8eee8310f5a136c7c09d25c2" data-unfurl-authentic=
+ity-token=3D"EXNPXMklKwVh3YMc50vmnrJzuCgkqlMNTc8pXgI02eFPWO7QSFvOx432/V9rmH=
+5vEL4BU7+fC46pZtDWJOJ62Q=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256141898">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256141898-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256141898" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256141898">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D4201853" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/koeppea">koeppea</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256141898" id=3D"issuecomment-256141898-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-25T19:00:06Z">Oct 25, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>This is due to the built in list of HSTS web sites.</p>
+<p>As of now I don't know of any way to get into such a SSL session.</p>
+<p>I recommend to manually replace the redirect rule from "any" to&nbsp; sp=
+ecific or to do without redirection at all.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NjE0MjQ0Mg=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/koe=
+ppea"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@ko=
+eppea" src=3D"https://avatars2.githubusercontent.com/u/4201853?s=3D88&amp;v=
+=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25614244=
+2">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"0f14f3376597412958b0c8582eb4966e">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"0f14f3376597412958b0c8582eb4966e" data-unfurl-authentic=
+ity-token=3D"IvCHIjOuNlQ7c//BUrCIFttJBmzzjDFf8+AI55MGSop82yaustDTltdYgYLeYx=
+DneYS/F2i5adwXSfFvtdDpsg=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256142442">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256142442-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256142442" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256142442">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D4201853" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/koeppea">koeppea</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256142442" id=3D"issuecomment-256142442-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-25T19:01:04Z">Oct 25, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>Which&nbsp; platform is running ettercap?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NjIwMzkzMQ=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D8343121" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/sge=
+to"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@sget=
+o" src=3D"https://avatars1.githubusercontent.com/u/8343121?s=3D88&amp;v=3D4=
+"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25620393=
+1">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"27af049fc615b9ccec5aedbad46adf4b">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"27af049fc615b9ccec5aedbad46adf4b" data-unfurl-authentic=
+ity-token=3D"Uj8HZf4gjCNil7Wv/jVp43hhFVLU7uO1f79HV5i/+oAMFKbpf15p4Y68y+xy5v=
+ES2qysKU/buzabFr7fvmlZuA=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256203931">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256203931-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256203931" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256203931">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D8343121" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/sgeto">sgeto</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256203931" id=3D"issuecomment-256203931-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-25T23:03:52Z">Oct 25, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p><a class=3D"user-mention" data-hovercard-type=3D"user" data-ho=
+vercard-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-=
+link-click" data-octo-dimensions=3D"link_type:self" href=3D"https://github.=
+com/koeppea">@koeppea</a> can't you just get rid of the policy by removing =
+the header field "Strict-Transport-Security" via a filter?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NjI3OTg4Ng=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercard-link-c=
+lick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/Gh=
+ostNaix"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"=
+@GhostNaix" src=3D"https://avatars0.githubusercontent.com/u/20989997?s=3D88=
+&amp;v=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25627988=
+6">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"7ffd46cd304ff46626fa883f634cdcb1">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"7ffd46cd304ff46626fa883f634cdcb1" data-unfurl-authentic=
+ity-token=3D"8xPbR+3A20YQzUby6h/CZWaFI804WpdW92aSG4oH196tOHrLbL4+hPzmOLFmzF=
+qUxEiatqNvz9UTz2uTrNF05g=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256279886">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256279886-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256279886" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256279886">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D20989997" data-octo-c=
+lick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/GhostNaix">GhostNaix</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256279886" id=3D"issuecomment-256279886-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-26T08:16:45Z">Oct 26, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>I'am running it on kali linux 2016.2</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NjM5MTk3Mw=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/koe=
+ppea"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@ko=
+eppea" src=3D"https://avatars2.githubusercontent.com/u/4201853?s=3D88&amp;v=
+=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25639197=
+3">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"4d5436d949baf95cd3eec64514689c07">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"4d5436d949baf95cd3eec64514689c07" data-unfurl-authentic=
+ity-token=3D"BQcTz5UI8uQWFJ1BcRjf4iafza8k8wsxZQqFRKn02o5bLLJDFHYXJvo/4wL9y0=
+cThFJ01L/GU7KBo3zMjyJ5tg=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256391973">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256391973-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256391973" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256391973">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D4201853" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/koeppea">koeppea</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256391973" id=3D"issuecomment-256391973-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-26T15:50:58Z">Oct 26, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>In theory yes. The first dependency is that you get the first =
+visit. If the browser recognizes the site being forced to HTTPS it caches t=
+his info and the second visit will be HTTPS right away even if you type htt=
+p://.<br>
+The second dependency is that&nbsp; many browsers have a hard coded list of=
+ websites that are enforced to HTTPS. E.g. Facebook, Google and Yahoo. Ther=
+e is no way strip the header in the initial HTTP response.<br>
+Even more difficult to get into such a HTTPS session is the fact that the b=
+rowser let the user no choice to override the security warning for HSTS web=
+sites.<br>
+The RFC is worth to read. Let me know if I missed a chance.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NjU4MTg3NQ=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D8343121" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/sge=
+to"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@sget=
+o" src=3D"https://avatars1.githubusercontent.com/u/8343121?s=3D88&amp;v=3D4=
+"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25658187=
+5">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"752bbc207d5d278560f0e8d57baae23b">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"752bbc207d5d278560f0e8d57baae23b" data-unfurl-authentic=
+ity-token=3D"z3ZrPvP5wx+MNcOdm599fKudr3xIMjviHom4c+5fHa6RXcqycocm3WAevd4XTO=
+WNCVAWB9MHY2H6IEH7yIm+lg=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256581875">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256581875-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256581875" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256581875">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D8343121" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/sgeto">sgeto</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256581875" id=3D"issuecomment-256581875-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-27T08:39:44Z">Oct 27, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>I remembered something.</p>
+<p>My approach around it was to fool the victim's browser into thinking the=
+ websites' states have changed. You can do this by either injecting a 302 (=
+sometimes 307) or 401 status into the response, or reply with a custom resp=
+onse carrying this code altogether.</p>
+<p>The response code to choose depends on your setup. They all convince the=
+ browser to clear the cached HSTS entry as well as loosen security on hard =
+coded URLs.<br>
+For the hard coded URLs (facebook, google etc) who still demand a secure co=
+nnection, you will also need to present a somewhat valid certificate (self-=
+signed or spoofed is fine) for this to work.</p>
+<p>So far, all browsers I tested fall for this. Those that go for https rig=
+ht away will warn you about the weird but valid certificate, but will also =
+allow you to "proceed and ignore the warning".</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1Njk3NTQyNg=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/koe=
+ppea"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@ko=
+eppea" src=3D"https://avatars2.githubusercontent.com/u/4201853?s=3D88&amp;v=
+=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25697542=
+6">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"4d7e2b1c913c3471ce3904bb78eeebae">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"4d7e2b1c913c3471ce3904bb78eeebae" data-unfurl-authentic=
+ity-token=3D"hhRvpdKGHao/K64DLNsvMr513Y1Ud45uj0xOD9fQd6zYP84pU/j4aNMA0ECgCL=
+fDHLhk9s9C1u1r5beH8QbUlA=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256975426">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256975426-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256975426" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256975426">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D4201853" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/koeppea">koeppea</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256975426" id=3D"issuecomment-256975426-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-28T17:09:18Z">Oct 28, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>Mhh nice trick with the response code. Will think this through=
+...<br>
+Maybe you mind to hand in a pull request?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1Njk4MTg4NQ=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D8343121" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/sge=
+to"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@sget=
+o" src=3D"https://avatars1.githubusercontent.com/u/8343121?s=3D88&amp;v=3D4=
+"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25698188=
+5">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"7f8866bd670a790abf824e392ee092db">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"7f8866bd670a790abf824e392ee092db" data-unfurl-authentic=
+ity-token=3D"BBZVmLX7emrB60g/g8tzIKfvaFkowd1vI6D0fmI8CdhaPfQUNIWfqC3ANnwPGO=
+vRBSLRIrP0hezHCQ32ROqq4A=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-256981885">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-256981885-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-256981885" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-256981885">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D8343121" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/sgeto">sgeto</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-256981885" id=3D"issuecomment-256981885-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-28T17:37:33Z">Oct 28, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>I'm actually just a network administrator not a programmer in =
+the real sense. And I never done a pull request before. I'd be happy to hel=
+p though. How would I do this and what is required?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzA2NTg2Mg=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercard-link-c=
+lick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/Gh=
+ostNaix"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"=
+@GhostNaix" src=3D"https://avatars0.githubusercontent.com/u/20989997?s=3D88=
+&amp;v=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25706586=
+2">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"df9f96130e2f6ed764376b05abae60c0">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"df9f96130e2f6ed764376b05abae60c0" data-unfurl-authentic=
+ity-token=3D"Sf7EnI5pI//RuBtURBSLj+588NXVMIYLeQQpvi2tlb4X1WUQDxfGPT2TZRfIxx=
+N+TLFJrk4F3oidrdA2C3s2hg=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-257065862">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-257065862-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-257065862" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-257065862">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D20989997" data-octo-c=
+lick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/GhostNaix">GhostNaix</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-257065862" id=3D"issuecomment-257065862-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-29T02:32:04Z">Oct 29, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>sgeto &amp; koeppea would you kindly list the steps to Bypass =
+HSTS using Debian jessie or in Kali linux<br>
+Your help is greatly appreciated</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzA2Nzc3OA=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D8343121" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/sge=
+to"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@sget=
+o" src=3D"https://avatars1.githubusercontent.com/u/8343121?s=3D88&amp;v=3D4=
+"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25706777=
+8">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"b28da15315f10bcb5c8f2dd58c40876d">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"b28da15315f10bcb5c8f2dd58c40876d" data-unfurl-authentic=
+ity-token=3D"jS19WGbVhTWZ/yPq36rLBKlAVNgLOSeNJ+fLBZ3k+4HTBtzU56tg93XUXalTeV=
+P1C43to5AMfw7DTjKNuzJYuQ=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-257067778">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-257067778-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-257067778" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-257067778">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D8343121" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/sgeto">sgeto</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-257067778" id=3D"issuecomment-257067778-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-29T03:19:00Z">Oct 29, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>There's no foolproof way yet. But I try to guide you a little.=
+ Can you give me more information about your setup? Commands and programs a=
+nd configurations you are using...</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzA4NDE5NA=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercard-link-c=
+lick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/Gh=
+ostNaix"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"=
+@GhostNaix" src=3D"https://avatars0.githubusercontent.com/u/20989997?s=3D88=
+&amp;v=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25708419=
+4">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"9d59d2d8f9867e74a7b3e2a42ebafddc">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"9d59d2d8f9867e74a7b3e2a42ebafddc" data-unfurl-authentic=
+ity-token=3D"WVmJ+bCIP661E2JbcVFEsaiAT5ngZgY1WFb0aIiGggsHcih1MfbabFk4HBj9gt=
+xACk324ntTXra8/w3grlAhMw=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-257084194">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-257084194-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-257084194" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-257084194">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D20989997" data-octo-c=
+lick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/GhostNaix">GhostNaix</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-257084194" id=3D"issuecomment-257084194-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-29T10:36:39Z">Oct 29, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+           =20
+  <span class=3D"d-inline-block text-gray-light">=E2=80=A2</span>
+
+  <details class=3D"details-overlay details-reset d-inline-block dropdown j=
+s-load-contents" data-deferred-details-content-url=3D"/_render_node/MDEyOkl=
+zc3VlQ29tbWVudDI1NzA4NDE5NA=3D=3D/comments/comment_edit_history_log">
+    <summary class=3D"btn-link no-underline text-gray js-notice">
+      <div class=3D"position-relative">
+        <span>
+            edited
+        </span>
+        <svg height=3D"11" class=3D"octicon octicon-triangle-down v-align-m=
+iddle" viewBox=3D"0 0 12 16" version=3D"1.1" width=3D"8" aria-hidden=3D"tru=
+e"><path fill-rule=3D"evenodd" d=3D"M0 5l6 6 6-6H0z"></path></svg>
+      </div>
+    </summary>
+    <details-menu class=3D"anim-scale-in dropdown-menu dropdown-menu-se py-=
+0" style=3D"width:352px">
+      <include-fragment class=3D"octocat-spinner my-3" aria-label=3D"Loadin=
+g..."></include-fragment>
+    </details-menu>
+  </details>
+
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>Sure i'am using the OS Kali linux 2016.2<br>
+I'am  running Ettercap GUI<br>
+this is my ettercap.dns file:</p>
+<p>[etter.dns.txt](<a href=3D"https://github.com/Ettercap/ettercap/files/55=
+9883/etter.dns.txt">https://github.com/Ettercap/ettercap/files/559883/etter=
+.dns.txt</a></p>
+<p>And this is my conf file<br>
+<a href=3D"https://github.com/Ettercap/ettercap/files/559886/etter.conf.txt=
+">etter.conf.txt</a></p>
+<p>I also using the arp poison and the dns spoof modules</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzEwMjM4Ng=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D8343121" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/sge=
+to"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@sget=
+o" src=3D"https://avatars1.githubusercontent.com/u/8343121?s=3D88&amp;v=3D4=
+"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25710238=
+6">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"ae4aa94e8a86c6d8b97737573ad72b19">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"ae4aa94e8a86c6d8b97737573ad72b19" data-unfurl-authentic=
+ity-token=3D"s5SmaYhFllDSs4r+tGNv6MdCkebU9/Dh0xi0fQYJqgTtvwflCTtzkj6Y9L04sP=
+cZZY8onU/CqGI3sU31IN8JPA=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-257102386">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-257102386-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-257102386" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-257102386">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D8343121" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/sgeto">sgeto</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-257102386" id=3D"issuecomment-257102386-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-29T16:51:02Z">Oct 29, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>Pretty generic configs. They seem fine. An unrelated advice wo=
+uld be to uncomment all Microsoft domains since you're intending to spoof e=
+very DNS query.</p>
+<p>I am not home right now, but I can tell you right away that my advice in=
+volves creating  custom responses. There are many ways but Apache's rewrite=
+ module should be enough for you since you're hosting websites locally. You=
+ can ask Google about it, or me again in a few hours. :-D</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzExMzY2Mg=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/koe=
+ppea"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@ko=
+eppea" src=3D"https://avatars2.githubusercontent.com/u/4201853?s=3D88&amp;v=
+=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25711366=
+2">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"743d5d6ec550e5d1e848e40836536ede">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"743d5d6ec550e5d1e848e40836536ede" data-unfurl-authentic=
+ity-token=3D"ReW3QuFJAwsIUf06OyHZ3fFPjhEJ/Okodd64+mEWRw4bzhbOYDfmyeR6g3m38k=
+EsU4I3apLJsauRd0FyR8DkNg=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-257113662">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-257113662-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-257113662" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-257113662">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D4201853" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/koeppea">koeppea</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-257113662" id=3D"issuecomment-257113662-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-29T20:19:28Z">Oct 29, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>HSTS or RFC6797 has been designed not to be bypassed or circum=
+vented.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzExNjExNw=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/koe=
+ppea"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@ko=
+eppea" src=3D"https://avatars2.githubusercontent.com/u/4201853?s=3D88&amp;v=
+=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25711611=
+7">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"f9fc96ef4665c0a14d2a38c154987ca7">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"f9fc96ef4665c0a14d2a38c154987ca7" data-unfurl-authentic=
+ity-token=3D"COTzWWJxnvGAQDH0dvR496oz+waX1FHiVQ8JmoD4/vxWz1LV4w97M2xrT7f6J+=
+AGCP5CfQzhCWGxpvASpi5dxA=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-257116117">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-257116117-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-257116117" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-257116117">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+    <span class=3D"timeline-comment-label tooltipped tooltipped-multiline t=
+ooltipped-s" aria-label=3D"This user has previously committed to the etterc=
+ap repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D4201853" data-octo-cl=
+ick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/koeppea">koeppea</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-257116117" id=3D"issuecomment-257116117-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-29T21:08:29Z">Oct 29, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <blockquote>
+<p>My approach around it was to fool the victim's browser into thinking the=
+ websites' states have changed. You can do this by either injecting a 302 (=
+sometimes 307) or 401 status into the response, or reply with a custom resp=
+onse carrying this code altogether.</p>
+</blockquote>
+<p>Have you tested this? I didn't found a caveat in the RFC that matches yo=
+ur suggestion.</p>
+<blockquote>
+<p>They all convince the browser to clear the cached HSTS entry as well as =
+loosen security on hard coded URLs.</p>
+</blockquote>
+<p>I only can read that a successful "secure" connection is able to modify =
+the cached HSTS information. Especially the section <a href=3D"https://tool=
+s.ietf.org/html/rfc6797#section-12.2" rel=3D"nofollow">No User Recourse</a>=
+ and <a href=3D"https://tools.ietf.org/html/rfc6797#section-12.3" rel=3D"no=
+follow">HSTS Pre-Loaded List</a> makes me suspicious.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzEzMjI3MQ=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D20989997" data-octo-click=3D"hovercard-link-c=
+lick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/Gh=
+ostNaix"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"=
+@GhostNaix" src=3D"https://avatars0.githubusercontent.com/u/20989997?s=3D88=
+&amp;v=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25713227=
+1">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"762ea4cddd14e35a025cc8ad1f03cfa0">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"762ea4cddd14e35a025cc8ad1f03cfa0" data-unfurl-authentic=
+ity-token=3D"2MMslNvK4+bGjhhTm1xEMQzasxZSxxLhTAQX01cGTmqG6I0YWrQGJCqlZhAXj9=
+zArhcKbcnySmKore5bcdDtUg=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timeline-comment-actions">
+   =20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class=3D"details-overlay details-reset position-relative d-inline-=
+block js-dropdown-details " id=3D"details-issuecomment-257132271">
+  <summary class=3D"btn-link timeline-comment-action" aria-haspopup=3D"true=
+" aria-label=3D"Show options">
+    <svg aria-label=3D"Show options" class=3D"octicon octicon-kebab-horizon=
+tal" viewBox=3D"0 0 13 16" version=3D"1.1" width=3D"13" height=3D"16" aria-=
+hidden=3D"true"><path fill-rule=3D"evenodd" d=3D"M1.5 9a1.5 1.5 0 1 0 0-3 1=
+.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0=
+ 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path></svg>
+  </summary>
+  <div class=3D"dropdown-menu dropdown-menu-sw show-more-popover text-gray-=
+dark anim-scale-in" role=3D"menu">
+        <clipboard-copy class=3D"dropdown-item btn-link" for=3D"issuecommen=
+t-257132271-permalink" aria-label=3D"Copy link" data-toggle-for=3D"details-=
+issuecomment-257132271" role=3D"menuitem">
+    Copy link
+  </clipboard-copy>
+
+        <button type=3D"button" class=3D"dropdown-item btn-link d-none js-c=
+omment-quote-reply" data-toggle-for=3D"details-issuecomment-257132271">
+    Quote reply
+  </button>
+
+     =20
+  </div>
+</details>
+
+  </div>
+
+   =20
+
+
+
+  <h3 class=3D"timeline-comment-header-text f5 text-normal">
+
+
+    <strong class=3D"css-truncate">
+     =20
+
+  <a class=3D"author text-inherit css-truncate-target" data-hovercard-type=
+=3D"user" data-hovercard-url=3D"/hovercards?user_id=3D20989997" data-octo-c=
+lick=3D"hovercard-link-click" data-octo-dimensions=3D"link_type:self" href=
+=3D"https://github.com/GhostNaix">GhostNaix</a>
+ =20
+
+    </strong>
+
+    commented
+
+    <a href=3D"https://github.com/Ettercap/ettercap/issues/765#issuecomment=
+-257132271" id=3D"issuecomment-257132271-permalink" class=3D"timestamp js-t=
+imestamp"><relative-time datetime=3D"2016-10-30T05:00:54Z">Oct 30, 2016</re=
+lative-time></a>
+
+
+    <span class=3D"js-comment-fragment">
+      <include-fragment class=3D"js-comment-edit-history d-inline">
+      </include-fragment>
+    </span>
+  </h3>
+</div>
+
+
+    <div class=3D"edit-comment-hide">
+
+     =20
+<task-lists disabled=3D"" sortable=3D"">
+<table class=3D"d-block">
+  <tbody class=3D"d-block">
+    <tr class=3D"d-block">
+      <td class=3D"d-block comment-body markdown-body  js-comment-body">
+
+          <p>Sure please lead the way, sgeto</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+       =20
+
+<div class=3D"comment-reactions  js-reactions-container ">
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+ =20
+ =20
+<div class=3D"js-timeline-item js-timeline-progressive-focus-container" dat=
+a-gid=3D"MDEyOklzc3VlQ29tbWVudDI1NzEzODM3MA=3D=3D">
+ =20
+   =20
+  <div class=3D"timeline-comment-wrapper js-comment-container">
+
+ =20
+
+<div class=3D"avatar-parent-child timeline-comment-avatar">
+    <a class=3D"d-inline-block" data-hovercard-type=3D"user" data-hovercard=
+-url=3D"/hovercards?user_id=3D4201853" data-octo-click=3D"hovercard-link-cl=
+ick" data-octo-dimensions=3D"link_type:self" href=3D"https://github.com/koe=
+ppea"><img class=3D"avatar rounded-1" height=3D"44" width=3D"44" alt=3D"@ko=
+eppea" src=3D"https://avatars2.githubusercontent.com/u/4201853?s=3D88&amp;v=
+=3D4"></a>
+
+</div>
+
+
+ =20
+<div class=3D"timeline-comment-group js-minimizable-comment-group targetabl=
+e-comment-container-nojs js-targetable-comment" id=3D"issuecomment-25713837=
+0">
+    <div class=3D"minimized-comment d-none ">
+       =20
+
+<details class=3D"Details-element details-reset border rounded-1 bg-white" =
+data-body-version=3D"e37a7fa1026c1628e12fac99b65f68aa">
+    <summary class=3D"bg-gray border-bottom-0 py-0 px-2">
+      <div class=3D"d-flex flex-justify-between flex-items-center">
+        <h3 class=3D"timeline-comment-header-text f5 text-gray text-normal =
+text-italic">
+              This comment has been minimized.
+
+        </h3>
+      <div class=3D"text-gray text-small">
+        <a rel=3D"nofollow" class=3D"link-gray" href=3D"https://github.com/=
+login?return_to=3Dhttps%3A%2F%2Fgithub.com%2FEttercap%2Fettercap%2Fissues%2=
+F765">Sign in to view</a>
+      </div>
+    </div>
+  </summary>
+</details>
+
+
+    </div>
+  <div class=3D"unminimized-comment comment previewable-edit js-comment js-=
+task-list-container timeline-comment targetable-comment-container-nojs  " d=
+ata-body-version=3D"e37a7fa1026c1628e12fac99b65f68aa" data-unfurl-authentic=
+ity-token=3D"qHIMTEBLzMnPZ32Wxj8VQhXxVKBT/FOgJ/buT1z1F072Wa3AwTUpCyNMA9VK7I=
+2ztzzt28jJCyPDXxfHeiO0dg=3D=3D">
+
+   =20
+<div class=3D"timeline-comment-header clearfix">
+  <div class=3D"timelin

@@ -1,0 +1,2295 @@
+From: <Saved by WebKit>
+Subject: Is TCP packet filtering possible on mobile platforms? - Stack Overflow
+Date: Sun, 17 Nov 2018 19:38:11 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_D423_78BEDB16.0DF043AC"
+
+------=_NextPart_000_D423_78BEDB16.0DF043AC
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://stackoverflow.com/questions/27107192/is-tcp-packet-filtering-possible-on-mobile-platforms
+
+<html lang=3D"en" itemscope=3D"" itemtype=3D"http://schema.org/QAPage"><hea=
+d><meta charset=3D"UTF-8">
+               =20
+
+                <title>Is TCP packet filtering possible on mobile platforms=
+? - Stack Overflow</title>
+                <link rel=3D"shortcut icon" href=3D"https://cdn.sstatic.net=
+/Sites/stackoverflow/img/favicon.ico?v=3D4f32ecc8f43d">
+                <link rel=3D"apple-touch-icon image_src" href=3D"https://cd=
+n.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=3Dc78bd457575a=
+">
+               =20
+               =20
+               =20
+               =20
+               =20
+                <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://=
+cdn.sstatic.net/Shared/stacks.css?v=3Daaf0ba27d97b">
+                <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://=
+cdn.sstatic.net/Sites/stackoverflow/mobile.css?v=3D0c5694fb722d">
+               =20
+                    <meta name=3D"viewport" content=3D"width=3Ddevice-width=
+, height=3Ddevice-height, initial-scale=3D1.0, minimum-scale=3D1.0">
+                               =20
+               =20
+               =20
+            <link rel=3D"alternate" type=3D"application/atom+xml" title=3D"=
+Feed for question 'Is TCP packet filtering possible on mobile platforms?'" =
+href=3D"https://stackoverflow.com/feeds/question/27107192">
+       =20
+
+               =20
+            <link rel=3D"preload" href=3D"https://adservice.google.co.id/ad=
+sid/integrator.js?domain=3Dstackoverflow.com"><link rel=3D"preload" href=3D=
+"https://adservice.google.com/adsid/integrator.js?domain=3Dstackoverflow.co=
+m"></head>
+            <body class=3D"no-message-slide question-single">
+
+<div class=3D"topbar _old">
+    <div class=3D"network-items">
+                <a href=3D"https://stackexchange.com/" class=3D"topbar-icon=
+ js-site-switcher-button icon-site-switcher-bubble">
+                    <span class=3D"hidden">Stack Exchange</span>
+                    <i class=3D"icon-hamburger"></i>
+                </a>
+            <div class=3D"icon-site-name">
+                <a href=3D"https://stackoverflow.com/">Stack Overflow</a>
+            </div>
+   =20
+                <div class=3D"login-links-container">
+                        <a href=3D"https://stackoverflow.com/users/signup?s=
+src=3Dhead&amp;returnurl=3Dhttps%3a%2f%2fstackoverflow.com%2fquestions%2f27=
+107192%2fis-tcp-packet-filtering-possible-on-mobile-platforms" class=3D"sig=
+nup">sign up</a>
+                    <a href=3D"https://stackoverflow.com/users/login?ssrc=
+=3Dhead&amp;returnurl=3Dhttps%3a%2f%2fstackoverflow.com%2fquestions%2f27107=
+192%2fis-tcp-packet-filtering-possible-on-mobile-platforms">log in</a>
+                </div>
+    </div>
+    <div class=3D"js-topbar-dialog-corral">
+
+
+
+<div class=3D"topbar-dialog siteSwitcher-dialog dno">
+    <div class=3D"header">
+        <h3><a href=3D"https://stackoverflow.com/">current community</a></h=
+3>
+        <a href=3D"https://stackoverflow.com/questions/27107192/is-tcp-pack=
+et-filtering-possible-on-mobile-platforms#" class=3D"icon-close js-close-bu=
+tton">
+            <span class=3D"hidden">Close</span>
+        </a>
+
+    </div>
+    <div class=3D"modal-content current-site-container">
+        <ul class=3D"current-site">
+                                 <li>
+                             <div class=3D"related-links">
+            <a href=3D"https://meta.stackoverflow.com/" data-gps-track=3D"s=
+ite_switcher.click({ item_type:4 })">meta</a>
+                            <a href=3D"https://chat.stackoverflow.com/" dat=
+a-gps-track=3D"site_switcher.click({ item_type:6 })">chat</a>
+    </div>
+    <a href=3D"https://stackoverflow.com/" class=3D"current-site-link site-=
+link js-gps-track grid gs8 gsx" data-id=3D"1" data-gps-track=3D"site_switch=
+er.click({ item_type:3 })">
+        <div class=3D"favicon favicon-stackoverflow site-icon grid--cell" t=
+itle=3D"Stack Overflow"></div>
+        <span class=3D"grid--cell fl1">
+            Stack Overflow
+        </span>
+    </a>
+
+                     </li>
+        </ul>
+    </div>
+   =20
+        <div class=3D"header" id=3D"your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+
+    <div class=3D"modal-content" id=3D"your-communities-section">
+           =20
+            <div class=3D"call-to-login">
+<a href=3D"https://stackoverflow.com/users/signup?ssrc=3Dsite_switcher&amp;=
+returnurl=3D%2fusers%2fstory%2fcurrent" class=3D"js-gps-track" data-gps-tra=
+ck=3D"site_switcher.click({ item_type:10 })">Sign up</a> or <a href=3D"http=
+s://stackoverflow.com/users/login?ssrc=3Dsite_switcher&amp;returnurl=3Dhttp=
+s%3a%2f%2fstackoverflow.com%2fquestions%2f27107192%2fis-tcp-packet-filterin=
+g-possible-on-mobile-platforms" class=3D"js-gps-track" data-gps-track=3D"si=
+te_switcher.click({ item_type:11 })">log in</a> to view your list.
+            </div>
+    </div>
+    <div class=3D"header">
+        <h3><a href=3D"https://stackexchange.com/sites">more stack exchange=
+ communities</a>
+        </h3>
+        <div class=3D"float-right">
+            <a href=3D"https://stackoverflow.blog/">company blog</a>
+        </div>
+    </div>
+    <div class=3D"modal-content">
+            <div class=3D"child-content"></div>
+    </div>
+</div>
+    </div>
+</div>
+
+    <div id=3D"js-gdpr-consent-banner" class=3D"p16 bg-black-700 ff-sans fc=
+-white ps-fixed b0 l0 r0 z-banner" role=3D"banner" aria-hidden=3D"false">
+        <div class=3D"wmx8 mx-auto grid jc-center ff-row-nowrap" role=3D"al=
+ertdialog" aria-describedby=3D"notice-message">
+            <div class=3D"grid--cell mr12" aria-label=3D"notice-message">
+                <p class=3D"mb0 lh-lg">
+                    By using our site, you acknowledge that you have read a=
+nd understand our <a class=3D"s-link s-link__inherit td-underline fc-white"=
+ target=3D"_blank" href=3D"https://stackoverflow.com/legal/cookie-policy">C=
+ookie Policy</a>, <a class=3D"s-link s-link__inherit td-underline fc-white"=
+ target=3D"_blank" href=3D"https://stackoverflow.com/legal/privacy-policy">=
+Privacy Policy</a>, and our <a class=3D"s-link s-link__inherit td-underline=
+ fc-white" target=3D"_blank" href=3D"https://stackoverflow.com/legal/terms-=
+of-service/public">Terms of Service</a>.
+                </p>
+            </div>
+            <a class=3D"grid--cell fc-white js-notice-close" aria-label=3D"=
+notice-dismiss">
+                <svg aria-hidden=3D"true" class=3D"svg-icon m0 iconClear" w=
+idth=3D"18" height=3D"18" viewBox=3D"0 0 18 18"><path d=3D"M15 4.41L13.59 3=
+ 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.4=
+1 9z"></path></svg>
+            </a>
+        </div>
+    </div>
+
+   =20
+
+               =20
+                    <nav class=3D"nav">
+                        <ul>
+                                <li class=3D"current "><a href=3D"https://s=
+tackoverflow.com/questions" title=3D"Questions">Questions</a></li>
+
+    <li><a href=3D"https://stackoverflow.com/jobs" title=3D"Jobs">Jobs</a><=
+/li>
+                                <li><a href=3D"https://stackoverflow.com/ta=
+gs" title=3D"Tags">Tags</a></li>
+
+                                <li><a href=3D"https://stackoverflow.com/us=
+ers" title=3D"Users">Users</a></li>
+
+                                <li><a href=3D"https://stackoverflow.com/he=
+lp/badges" title=3D"Badges">Badges</a></li>
+
+                                <li class=3D"nav-askquestion"><a href=3D"ht=
+tps://stackoverflow.com/questions/ask" title=3D"Ask">Ask</a></li>
+
+                        </ul>
+                    </nav>
+
+                <div id=3D"notify-container">
+                </div>
+
+
+
+           =20
+
+
+
+                <main class=3D"snippet-hidden">
+                   =20
+
+
+
+<div itemscope=3D"" itemtype=3D"http://schema.org/Question">
+
+
+<div class=3D"question" id=3D"question" data-questionid=3D"27107192">
+    <link itemprop=3D"image" href=3D"https://cdn.sstatic.net/Sites/stackove=
+rflow/img/apple-touch-icon.png?v=3Dc78bd457575a">
+    <header class=3D"-summary">
+        <div class=3D"-votes vote">
+    <input type=3D"hidden" name=3D"_id_" value=3D"27107192">
+    <input type=3D"hidden" name=3D"_ltu_">
+        <a class=3D"vote-up-off" title=3D"This question shows research effo=
+rt; it is useful and clear (click again to undo)
+">up vote</a>
+        <span itemprop=3D"upvoteCount" class=3D"vote-count-post mobile-vote=
+-count">6</span>
+        <a class=3D"vote-down-off" title=3D"This question does not show any=
+ research effort; it is unclear or not useful (click again to undo)
+">down vote</a>
+
+        <a class=3D"star-off" href=3D"https://stackoverflow.com/questions/2=
+7107192/is-tcp-packet-filtering-possible-on-mobile-platforms#" title=3D"Thi=
+s is a favorite question (click again to undo)">favorite</a>
+</div><!-- / votes -->
+
+        <div class=3D"-details">
+            <h2 itemprop=3D"name">
+
+                    <a href=3D"https://stackoverflow.com/questions/27107192=
+/is-tcp-packet-filtering-possible-on-mobile-platforms" class=3D"question-hy=
+perlink">Is TCP packet filtering possible on mobile platforms?</a>
+            </h2>
+            <div class=3D"-tags">
+                   =20
+                        <a href=3D"https://stackoverflow.com/questions/tagg=
+ed/android" class=3D"post-tag">android</a>
+                   =20
+                   =20
+                        <a href=3D"https://stackoverflow.com/questions/tagg=
+ed/ios" class=3D"post-tag">ios</a>
+                   =20
+                   =20
+                        <a href=3D"https://stackoverflow.com/questions/tagg=
+ed/networking" class=3D"post-tag">networking</a>
+                   =20
+                   =20
+                        <a href=3D"https://stackoverflow.com/questions/tagg=
+ed/tcp" class=3D"post-tag">tcp</a>
+                   =20
+                   =20
+                        <a href=3D"https://stackoverflow.com/questions/tagg=
+ed/port" class=3D"post-tag">port</a>
+                   =20
+            </div>
+        </div><!-- / details -->
+    </header>
+
+    <div class=3D"post-text" itemprop=3D"text">
+
+<p>I'm interested on having my mobile app run in the background and filter =
+TCP packets.</p>
+
+<p>I know I'll face restrictions due to sandboxing, each OS privilege level=
+s and how iOS handles background tasks so I want to confirm if it's possibl=
+e to do it on iOS and Android.</p>
+
+<p>Do Android and iOS allow you to analyze and modify packets going through=
+ TCP ports? If it's possible how? Could I do it while my app remains on the=
+ background?</p>
+    </div><!-- / post-text -->
+
+    <footer>
+        <div class=3D"util-bar post-menu">
+            <a href=3D"https://stackoverflow.com/q/27107192" title=3D"short=
+ permalink to this question" class=3D"short-link" id=3D"link-post-27107192"=
+>share</a>
+                    <a href=3D"https://stackoverflow.com/posts/27107192/edi=
+t" title=3D"">improve this question</a>
+
+
+
+
+</div>
+<div class=3D"menu-popup-container" data-postid=3D"27107192" style=3D"displ=
+ay:none;"></div>
+
+        <div class=3D"user-info owner">
+		<div class=3D"user-action-time">
+            asked <span title=3D"2014-11-24 14:32:22Z" class=3D"relativetim=
+e">Nov 24 '14 at 14:32</span>
+		</div>
+		<div class=3D"user-gravatar">
+            <a href=3D"https://stackoverflow.com/users/535967/lisovaccaro">=
+<div class=3D"gravatar-wrapper-30"><img src=3D"https://www.gravatar.com/ava=
+tar/02c46fb58177c19c7a1b57f670bddbd1?s=3D30&amp;d=3Didenticon&amp;r=3DPG" a=
+lt=3D"" width=3D"30" height=3D"30"></div></a>
+		</div>
+		<div class=3D"user-details">
+            <a href=3D"https://stackoverflow.com/users/535967/lisovaccaro">=
+lisovaccaro</a><br>
+            <span class=3D"reputation-score" title=3D"reputation score " di=
+r=3D"ltr">6,482</span><span title=3D"76 gold badges"><span class=3D"badge1"=
+>=E2=97=8F</span><span class=3D"badgecount">76</span></span><span title=3D"=
+208 silver badges"><span class=3D"badge2">=E2=97=8F</span><span class=3D"ba=
+dgecount">208</span></span><span title=3D"348 bronze badges"><span class=3D=
+"badge3">=E2=97=8F</span><span class=3D"badgecount">348</span></span>
+		</div>
+	</div>
+
+<div class=3D"user-info">
+		<div class=3D"user-action-time">
+            <a href=3D"https://stackoverflow.com/posts/27107192/revisions" =
+title=3D"show all edits to this post">edited <span title=3D"2015-01-08 21:4=
+6:13Z" class=3D"relativetime">Jan 8 '15 at 21:46</span></a>
+		</div>
+		<div class=3D"user-details">
+             <br>
+		</div>
+	</div>
+    </footer>
+
+
+
+<div id=3D"comments-27107192" class=3D"comments-wrap comments js-comments-c=
+ontainer dno">
+    <ul class=3D"comments-list js-comments-list" data-remaining-comments-co=
+unt=3D"0" data-canpost=3D"false" data-cansee=3D"true" data-comments-unavail=
+able=3D"false" data-addlink-disabled=3D"true">
+    </ul>
+    <div class=3D"comment-form">
+        <div id=3D"comments-link-27107192" class=3D"comment-link-container"=
+ data-rep=3D"50" data-anon=3D"true">
+
+            <a class=3D"js-add-link comments-link disabled-link " title=3D"=
+Use comments to ask for more information or suggest improvements. Avoid ans=
+wering questions in comments." onclick=3D"">add a comment</a><span class=3D=
+"js-link-separator dno">&nbsp;|&nbsp;</span><a class=3D"js-show-link commen=
+ts-link dno" title=3D"expand to show all comments on this post" href=3D"htt=
+ps://stackoverflow.com/questions/27107192/is-tcp-packet-filtering-possible-=
+on-mobile-platforms#" onclick=3D""></a>
+        </div>
+
+    </div>
+</div></div>
+
+
+
+<style>.everyoneloves__top-leaderboard:empty,.everyoneloves__mid-leaderboar=
+d:empty{                margin-bottom:0;
+}</style>
+        <div id=3D"dfp-m-aq" class=3D"everyonelovesstackoverflow " style=3D=
+"" data-google-query-id=3D"CJ6yst63294CFZUeaAod-qkC6w" data-clc-prefilled=
+=3D"true" data-clc-ready=3D"true"><div id=3D"google_ads_iframe_/248424177/s=
+tackoverflow.com/mobile-below-question/question-pages_0__container__" style=
+=3D"border-top-width: 0pt; border-right-width: 0pt; border-bottom-width: 0p=
+t; border-left-width: 0pt; border-top-style: none; border-right-style: none=
+; border-bottom-style: none; border-left-style: none; border-color: initial=
+; border-image: initial; "><iframe id=3D"google_ads_iframe_/248424177/stack=
+overflow.com/mobile-below-question/question-pages_0" title=3D"3rd party ad =
+content" name=3D"google_ads_iframe_/248424177/stackoverflow.com/mobile-belo=
+w-question/question-pages_0" width=3D"300" height=3D"250" scrolling=3D"no" =
+marginwidth=3D"0" marginheight=3D"0" frameborder=3D"0" style=3D"border-top-=
+width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-=
+width: 0px; border-style: initial; border-color: initial; border-image: ini=
+tial; vertical-align: bottom; " srcdoc=3D"" data-google-container-id=3D"1" =
+data-load-complete=3D"true"></iframe></div></div>
+                <a name=3D"tab-top"></a>
+
+    <div class=3D"subheader">
+        <div class=3D"-title">
+            <h2>4 Answers</h2>
+            <span style=3D"display:none;" itemprop=3D"answerCount">4</span>
+        </div>
+
+        <div class=3D"-actions">
+            <form id=3D"answersort" action=3D"https://stackoverflow.com/que=
+stions/27107192/is-tcp-packet-filtering-possible-on-mobile-platforms#tab-to=
+p" class=3D"-sorter" method=3D"get">
+                <label>
+                    order by
+                    <select name=3D"answertab" class=3D"submit-on-change _n=
+aked _link">
+                        <option value=3D"active">active</option>
+                        <option value=3D"oldest">oldest</option>
+                        <option value=3D"votes" selected=3D"selected">votes=
+</option>
+                    </select>
+                </label>
+            </form>
+        </div><!-- / actions -->
+       =20
+       =20
+    </div><!-- / subheader -->
+
+
+
+ =20
+    <a name=3D"27107416"></a>
+    <div class=3D"-summary answer" data-answerid=3D"27107416" itemprop=3D"a=
+cceptedAnswer" itemscope=3D"" itemtype=3D"http://schema.org/Answer" )=3D"">
+        <div class=3D"answer-body">
+
+<div class=3D"-votes vote">
+    <input type=3D"hidden" name=3D"_id_" value=3D"27107416">
+    <input type=3D"hidden" name=3D"_ltu_">
+        <a class=3D"vote-up-off" title=3D"This answer is useful (click agai=
+n to undo)
+">up vote</a>
+        <span itemprop=3D"upvoteCount" class=3D"vote-count-post mobile-vote=
+-count">17</span>
+        <a class=3D"vote-down-off" title=3D"This answer is not useful (clic=
+k again to undo)
+">down vote</a>
+
+
+        <span class=3D"vote-accepted-on load-accepted-answer-date" title=3D=
+"loading when this answer was accepted...">accepted</span>
+</div><!-- / votes -->
+                <div class=3D"post-text" itemprop=3D"text">
+<h2>iOS</h2>
+
+<p>I don't think it is possible on iOS. </p>
+
+<p>I didn't find a public API for network monitoring/packet filtering. Ther=
+e is a possibility that such API exists but it's hidden. But in that case <=
+a href=3D"https://developer.apple.com/app-store/review/guidelines/#function=
+ality" rel=3D"nofollow noreferrer">Apple App Store review guidelines</a> st=
+ates: </p>
+
+<blockquote>
+  <p>2.5 Apps that use non-public APIs will be rejected</p>
+</blockquote>
+
+<p>If you need one specific quote to show that it is not possible, you can =
+use this:</p>
+
+<blockquote>
+  <p>iOS does not support packet tracing directly. However, if you connect =
+your iOS device to a Mac via USB...</p>
+</blockquote>
+
+<p>from <a href=3D"https://developer.apple.com/library/ios/qa/qa1176/_index=
+.html" rel=3D"nofollow noreferrer">official Apple Technical Q&amp;A QA1176<=
+/a>.</p>
+
+<h3>Alternatives</h3>
+
+<p>The next best thing is to a configure a proxy server manually in Setting=
+s and then filter the traffic on the server-side. Running the proxy locally=
+, on the device is not an option because of <a href=3D"https://developer.ap=
+ple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuid=
+e/BackgroundExecution/BackgroundExecution.html" rel=3D"nofollow noreferrer"=
+>limitations</a> of iOS background tasks: </p>
+
+<blockquote>
+  <p>2.16 Multitasking Apps may only use background services for their inte=
+nded purposes: VoIP, audio playback, location, task completion, local notif=
+ications, etc.</p>
+</blockquote>
+
+<p>Also, <a href=3D"http://ramezanpour.net/post/2014/08/03/configure-and-ma=
+nage-vpn-connections-programmatically-in-ios-8/" rel=3D"nofollow noreferrer=
+">this</a> post suggests it might be possible to set-up a VPN connection pr=
+ogrammatically on iOS 8. It would also require to send the traffic of the d=
+evice and I'm not sure about compliance of this method with guidelines.</p>
+
+<h3>Non-alternatives</h3>
+
+<p>Some apps provide functionality of measuring the network traffic. But th=
+ey use dedicated API for network statistics: <a href=3D"https://stackoverfl=
+ow.com/questions/7946699/iphone-data-usage-tracking-monitoring">iPhone Data=
+ Usage Tracking/Monitoring</a>.</p>
+
+<p>There are also ways to packet trace on iOS via USB cable described <a hr=
+ef=3D"https://developer.apple.com/library/mac/qa/qa1176/_index.html#//apple=
+_ref/doc/uid/DTS10001707-CH1-SECIOSPACKETTRACING" rel=3D"nofollow noreferre=
+r">here</a>. </p>
+
+<h2>Android</h2>
+
+<p>On Android you can configure the device to use your app as a <a href=3D"=
+http://developer.android.com/reference/android/net/VpnService.html" rel=3D"=
+nofollow noreferrer">VPN service</a>. But:</p>
+
+<ul>
+<li>It requires you to display a dialog describing the consequences of givi=
+ng a permission to act as a VPN. </li>
+<li>You have to show a persistent notification while VPN is active. An exam=
+ple of app that does it is <a href=3D"https://play.google.com/store/apps/de=
+tails?id=3Djp.co.taosoftware.android.packetcapture" rel=3D"nofollow norefer=
+rer">tPacketCapture</a>.</li>
+</ul>
+
+<p>To ask for user permission, you call <code>VpnService.prepare</code>:</p=
+>
+
+<pre class=3D"default prettyprint prettyprinted" style=3D""><code><span cla=
+ss=3D"kwd">public</span><span class=3D"pln"> </span><span class=3D"kwd">voi=
+d</span><span class=3D"pln"> onClick</span><span class=3D"pun">(</span><spa=
+n class=3D"typ">View</span><span class=3D"pln"> v</span><span class=3D"pun"=
+>)</span><span class=3D"pln"> </span><span class=3D"pun">{</span><span clas=
+s=3D"pln">
+     </span><span class=3D"typ">Intent</span><span class=3D"pln"> intent </=
+span><span class=3D"pun">=3D</span><span class=3D"pln"> </span><span class=
+=3D"typ">VpnService</span><span class=3D"pun">.</span><span class=3D"pln">p=
+repare</span><span class=3D"pun">(</span><span class=3D"pln">getApplication=
+Context</span><span class=3D"pun">());</span><span class=3D"pln">
+     </span><span class=3D"kwd">if</span><span class=3D"pln"> </span><span =
+class=3D"pun">(</span><span class=3D"pln">intent </span><span class=3D"pun"=
+>!=3D</span><span class=3D"pln"> </span><span class=3D"kwd">null</span><spa=
+n class=3D"pun">)</span><span class=3D"pln"> </span><span class=3D"pun">{</=
+span><span class=3D"pln">
+          startActivityForResult</span><span class=3D"pun">(</span><span cl=
+ass=3D"pln">intent</span><span class=3D"pun">,</span><span class=3D"pln"> <=
+/span><span class=3D"lit">0</span><span class=3D"pun">);</span><span class=
+=3D"pln">
+     </span><span class=3D"pun">}</span><span class=3D"pln"> </span><span c=
+lass=3D"kwd">else</span><span class=3D"pln"> </span><span class=3D"pun">{</=
+span><span class=3D"pln">
+          onActivityResult</span><span class=3D"pun">(</span><span class=3D=
+"lit">0</span><span class=3D"pun">,</span><span class=3D"pln"> RESULT_OK</s=
+pan><span class=3D"pun">,</span><span class=3D"pln"> </span><span class=3D"=
+kwd">null</span><span class=3D"pun">);</span><span class=3D"pln">
+     </span><span class=3D"pun">}</span><span class=3D"pln">
+</span><span class=3D"pun">}</span></code></pre>
+
+<p>and handle the result, starting your VpnService. </p>
+
+<pre class=3D"default prettyprint prettyprinted" style=3D""><code><span cla=
+ss=3D"kwd">protected</span><span class=3D"pln"> </span><span class=3D"kwd">=
+void</span><span class=3D"pln"> onActivityResult</span><span class=3D"pun">=
+(</span><span class=3D"kwd">int</span><span class=3D"pln"> requestCode</spa=
+n><span class=3D"pun">,</span><span class=3D"pln"> </span><span class=3D"kw=
+d">int</span><span class=3D"pln"> resultCode</span><span class=3D"pun">,</s=
+pan><span class=3D"pln"> </span><span class=3D"typ">Intent</span><span clas=
+s=3D"pln"> data</span><span class=3D"pun">)</span><span class=3D"pln"> </sp=
+an><span class=3D"pun">{</span><span class=3D"pln">
+    </span><span class=3D"kwd">if</span><span class=3D"pln"> </span><span c=
+lass=3D"pun">(</span><span class=3D"pln">resultCode </span><span class=3D"p=
+un">=3D=3D</span><span class=3D"pln"> RESULT_OK</span><span class=3D"pun">)=
+</span><span class=3D"pln"> </span><span class=3D"pun">{</span><span class=
+=3D"pln">
+        </span><span class=3D"typ">Intent</span><span class=3D"pln"> intent=
+ </span><span class=3D"pun">=3D</span><span class=3D"pln"> </span><span cla=
+ss=3D"kwd">new</span><span class=3D"pln"> </span><span class=3D"typ">Intent=
+</span><span class=3D"pun">(</span><span class=3D"kwd">this</span><span cla=
+ss=3D"pun">,</span><span class=3D"pln"> </span><span class=3D"typ">MyVpnSer=
+vice</span><span class=3D"pun">.</span><span class=3D"kwd">class</span><spa=
+n class=3D"pun">);</span><span class=3D"pln">
+        startService</span><span class=3D"pun">(</span><span class=3D"pln">=
+intent</span><span class=3D"pun">);</span><span class=3D"pln">
+    </span><span class=3D"pun">}</span><span class=3D"pln">
+</span><span class=3D"pun">}</span></code></pre>
+
+<p>Your <code>VpnService</code> have to implement <code>public int onStartC=
+ommand()</code>. The service is treated as a foreground service and should =
+not get killed by the OS. </p>
+
+<p>This question: <a href=3D"https://stackoverflow.com/questions/17766405/a=
+ndroid-vpnservice-to-capture-packets-wont-capture-packets">Android VpnServi=
+ce to capture packets won't capture packets</a> and it's comments shed some=
+ light on the packet handling itself. </p>
+                </div>
+        </div>
+
+        <footer>
+<div class=3D"util-bar post-menu">
+            <a href=3D"https://stackoverflow.com/a/27107416" title=3D"short=
+ permalink to this answer" class=3D"short-link" id=3D"link-post-27107416">s=
+hare</a>
+                    <a href=3D"https://stackoverflow.com/posts/27107416/edi=
+t" title=3D"">improve this answer</a>
+
+
+
+
+</div>
+<div class=3D"menu-popup-container" data-postid=3D"27107416" style=3D"displ=
+ay:none;"></div><div class=3D"user-info ">
+		<div class=3D"user-action-time">
+            answered <span title=3D"2014-11-24 14:42:25Z" class=3D"relative=
+time">Nov 24 '14 at 14:42</span>
+		</div>
+		<div class=3D"user-gravatar">
+            <a href=3D"https://stackoverflow.com/users/1356130/atok"><div c=
+lass=3D"gravatar-wrapper-30"><img src=3D"https://www.gravatar.com/avatar/71=
+a884fac9d80ee3171a4018b1eaf660?s=3D30&amp;d=3Didenticon&amp;r=3DPG" alt=3D"=
+" width=3D"30" height=3D"30"></div></a>
+		</div>
+		<div class=3D"user-details">
+            <a href=3D"https://stackoverflow.com/users/1356130/atok">atok</=
+a><br>
+            <span class=3D"reputation-score" title=3D"reputation score " di=
+r=3D"ltr">3,034</span><span title=3D"19 silver badges"><span class=3D"badge=
+2">=E2=97=8F</span><span class=3D"badgecount">19</span></span><span title=
+=3D"46 bronze badges"><span class=3D"badge3">=E2=97=8F</span><span class=3D=
+"badgecount">46</span></span>
+		</div>
+	</div><div class=3D"user-info">
+		<div class=3D"user-action-time">
+            <a href=3D"https://stackoverflow.com/posts/27107416/revisions" =
+title=3D"show all edits to this post">edited <span title=3D"2017-05-23 12:3=
+2:02Z" class=3D"relativetime">May 23 '17 at 12:32</span></a>
+		</div>
+		<div class=3D"user-gravatar">
+            <a href=3D"https://stackoverflow.com/users/-1/community"><div c=
+lass=3D"gravatar-wrapper-30"><img src=3D"https://www.gravatar.com/avatar/a0=
+07be5a61f6aa8f3e85ae2fc18dd66e?s=3D30&amp;d=3Didenticon&amp;r=3DPG" alt=3D"=
+" width=3D"30" height=3D"30"></div></a>
+		</div>
+		<div class=3D"user-details">
+            <a href=3D"https://stackoverflow.com/users/-1/community">Commun=
+ity</a><span class=3D"mod-flair" title=3D"moderator">=E2=99=A6</span><br>
+            <span class=3D"reputation-score" title=3D"reputation score " di=
+r=3D"ltr">1</span><span title=3D"1 silver badge"><span class=3D"badge2">=E2=
+=97=8F</span><span class=3D"badgecount">1</span></span>
+		</div>
+	</div>        </footer>
+       =20
+
+<div id=3D"comments-27107416" class=3D"comments-wrap comments js-comments-c=
+ontainer ">
+    <ul class=3D"comments-list js-comments-list" data-remaining-comments-co=
+unt=3D"0" data-canpost=3D"false" data-cansee=3D"true" data-comments-unavail=
+able=3D"false" data-addlink-disabled=3D"true">
+
+    <li id=3D"comment-42863276" class=3D"comment js-comment " data-comment-=
+id=3D"42863276">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">I concur, this is not possible=
+ on iOS.</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/183763/thomas-deniau" title=3D"1,958 reputation" class=3D"comment-user">=
+Thomas Deniau</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment42863276_27107416"><span titl=
+e=3D"2014-11-28 12:19:06Z" class=3D"relativetime-clean">Nov 28 '14 at 12:19=
+</span></a></span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    <li id=3D"comment-42918850" class=3D"comment js-comment " data-comment-=
+id=3D"42918850">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">Is there any way to confirm it=
+'s not possible on iOS, maybe the official documentation or app store rules=
+? This is related to a client's request so I want to be able to show him so=
+mething maybe from official sources.</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/535967/lisovaccaro" title=3D"6,482 reputation" class=3D"comment-user own=
+er">lisovaccaro</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment42918850_27107416"><span titl=
+e=3D"2014-12-01 00:07:44Z" class=3D"relativetime-clean">Dec 1 '14 at 0:07</=
+span></a></span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    <li id=3D"comment-42925245" class=3D"comment js-comment " data-comment-=
+id=3D"42925245">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">I updated the answer with anyt=
+hing I managed to find on the topic. Good luck :)</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/1356130/atok" title=3D"3,034 reputation" class=3D"comment-user">atok</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment42925245_27107416"><span titl=
+e=3D"2014-12-01 07:22:41Z" class=3D"relativetime-clean">Dec 1 '14 at 7:22</=
+span></a></span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    <li id=3D"comment-44566237" class=3D"comment js-comment " data-comment-=
+id=3D"44566237">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">hi @atok I've been investigati=
+ng into using VpnService on Android. However to my understanding while it's=
+ possible to read packets this way, it's not possible to modify them and re=
+send them on a transparent way without basically having to reimplement the =
+TCP protocol. Do you know if this is true? Some apps doing this are "Mobilw=
+ol: No root firewall" and "NoRoot Firewall" by GreyShirts.</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/535967/lisovaccaro" title=3D"6,482 reputation" class=3D"comment-user own=
+er">lisovaccaro</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment44566237_27107416"><span titl=
+e=3D"2015-01-22 17:37:50Z" class=3D"relativetime-clean">Jan 22 '15 at 17:37=
+</span></a></span>
+                        <span title=3D"this comment was edited 1 time">
+                            <svg aria-hidden=3D"true" class=3D"svg-icon va-=
+text-bottom o50 iconPencilSm" width=3D"14" height=3D"15" viewBox=3D"0 0 14 =
+15"><path d=3D"M8.37 4.7L2 11.11V13h1.88l6.37-6.43zM12.23 3.83L11.1 2.71a.5=
+.5 0 0 0-.7 0L9.2 3.86l1.88 1.84 1.14-1.16a.5.5 0 0 0 0-.71z"></path></svg>
+                        </span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    <li id=3D"comment-44653207" class=3D"comment js-comment " data-comment-=
+id=3D"44653207">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">my doubt basically is whether =
+with VpnService I can modify the packets and forward them so they keep thei=
+r normal route</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/535967/lisovaccaro" title=3D"6,482 reputation" class=3D"comment-user own=
+er">lisovaccaro</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment44653207_27107416"><span titl=
+e=3D"2015-01-25 19:56:28Z" class=3D"relativetime-clean">Jan 25 '15 at 19:56=
+</span></a></span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    </ul>
+    <div class=3D"comment-form">
+        <div id=3D"comments-link-27107416" class=3D"comment-link-container"=
+ data-rep=3D"50" data-anon=3D"true">
+
+            <a class=3D"js-add-link comments-link disabled-link " title=3D"=
+Use comments to ask for more information or suggest improvements. Avoid com=
+ments like =E2=80=9C+1=E2=80=9D or =E2=80=9Cthanks=E2=80=9D." onclick=3D"">=
+add a comment</a><span class=3D"js-link-separator dno">&nbsp;|&nbsp;</span>=
+<a class=3D"js-show-link comments-link dno" title=3D"expand to show all com=
+ments on this post" href=3D"https://stackoverflow.com/questions/27107192/is=
+-tcp-packet-filtering-possible-on-mobile-platforms#" onclick=3D""></a>
+        </div>
+
+    </div>
+</div>    </div>
+
+
+
+
+
+
+
+
+ =20
+    <a name=3D"27218169"></a>
+    <div class=3D"-summary answer" data-answerid=3D"27218169" itemscope=3D"=
+" itemtype=3D"http://schema.org/Answer" )=3D"">
+        <div class=3D"answer-body">
+
+<div class=3D"-votes vote">
+    <input type=3D"hidden" name=3D"_id_" value=3D"27218169">
+    <input type=3D"hidden" name=3D"_ltu_">
+        <a class=3D"vote-up-off" title=3D"This answer is useful (click agai=
+n to undo)
+">up vote</a>
+        <span itemprop=3D"upvoteCount" class=3D"vote-count-post mobile-vote=
+-count">0</span>
+        <a class=3D"vote-down-off" title=3D"This answer is not useful (clic=
+k again to undo)
+">down vote</a>
+
+
+</div><!-- / votes -->
+                <div class=3D"post-text" itemprop=3D"text">
+<p>On iOS I would say that it depends on whether or not you allow the devic=
+e being jailbroken as an acceptable precondition. There are some references=
+ to <a href=3D"http://jhellenthal.wordpress.com/2014/01/12/packet-filtering=
+-on-the-iphone-theres-an-app-for-that/" rel=3D"nofollow">PF</a> as well as =
+a <a href=3D"https://code.google.com/p/n1mda-dev/wiki/PirniUsageGuide" rel=
+=3D"nofollow">network sniffer</a> (Which I assume must work in a similar wa=
+y) for iOS.</p>
+
+<p>PF is <a href=3D"http://opensource.apple.com/source/xnu/xnu-1699.22.73/b=
+sd/net/pf.c" rel=3D"nofollow">open source</a> but unfortunately built in C.=
+</p>
+                </div>
+        </div>
+
+        <footer>
+<div class=3D"util-bar post-menu">
+            <a href=3D"https://stackoverflow.com/a/27218169" title=3D"short=
+ permalink to this answer" class=3D"short-link" id=3D"link-post-27218169">s=
+hare</a>
+                    <a href=3D"https://stackoverflow.com/posts/27218169/edi=
+t" title=3D"">improve this answer</a>
+
+
+
+
+</div>
+<div class=3D"menu-popup-container" data-postid=3D"27218169" style=3D"displ=
+ay:none;"></div><div class=3D"user-info ">
+		<div class=3D"user-action-time">
+            answered <span title=3D"2014-11-30 20:58:31Z" class=3D"relative=
+time">Nov 30 '14 at 20:58</span>
+		</div>
+		<div class=3D"user-gravatar">
+            <a href=3D"https://stackoverflow.com/users/1091402/rick"><div c=
+lass=3D"gravatar-wrapper-30"><img src=3D"https://i.stack.imgur.com/SUENV.pn=
+g?s=3D30&amp;g=3D1" alt=3D"" width=3D"30" height=3D"30"></div></a>
+		</div>
+		<div class=3D"user-details">
+            <a href=3D"https://stackoverflow.com/users/1091402/rick">Rick</=
+a><br>
+            <span class=3D"reputation-score" title=3D"reputation score " di=
+r=3D"ltr">2,817</span><span title=3D"1 gold badge"><span class=3D"badge1">=
+=E2=97=8F</span><span class=3D"badgecount">1</span></span><span title=3D"21=
+ silver badges"><span class=3D"badge2">=E2=97=8F</span><span class=3D"badge=
+count">21</span></span><span title=3D"47 bronze badges"><span class=3D"badg=
+e3">=E2=97=8F</span><span class=3D"badgecount">47</span></span>
+		</div>
+	</div>        </footer>
+       =20
+
+<div id=3D"comments-27218169" class=3D"comments-wrap comments js-comments-c=
+ontainer ">
+    <ul class=3D"comments-list js-comments-list" data-remaining-comments-co=
+unt=3D"0" data-canpost=3D"false" data-cansee=3D"true" data-comments-unavail=
+able=3D"false" data-addlink-disabled=3D"true">
+
+    <li id=3D"comment-42918817" class=3D"comment js-comment " data-comment-=
+id=3D"42918817">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">so it's not possible without j=
+ailbreaking the phone? Is there any way to confirm this, maybe the official=
+ documentation or app store rules?</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/535967/lisovaccaro" title=3D"6,482 reputation" class=3D"comment-user own=
+er">lisovaccaro</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment42918817_27218169"><span titl=
+e=3D"2014-12-01 00:05:25Z" class=3D"relativetime-clean">Dec 1 '14 at 0:05</=
+span></a></span>
+                        <span title=3D"this comment was edited 1 time">
+                            <svg aria-hidden=3D"true" class=3D"svg-icon va-=
+text-bottom o50 iconPencilSm" width=3D"14" height=3D"15" viewBox=3D"0 0 14 =
+15"><path d=3D"M8.37 4.7L2 11.11V13h1.88l6.37-6.43zM12.23 3.83L11.1 2.71a.5=
+.5 0 0 0-.7 0L9.2 3.86l1.88 1.84 1.14-1.16a.5.5 0 0 0 0-.71z"></path></svg>
+                        </span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    <li id=3D"comment-42926736" class=3D"comment js-comment " data-comment-=
+id=3D"42926736">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">Yes, that's correct. Like @ato=
+k says, a good alternative is probably to set up an external proxy or VPN w=
+hich will filter the traffic for you.</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/1091402/rick" title=3D"2,817 reputation" class=3D"comment-user">Rick</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment42926736_27218169"><span titl=
+e=3D"2014-12-01 08:27:03Z" class=3D"relativetime-clean">Dec 1 '14 at 8:27</=
+span></a></span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    </ul>
+    <div class=3D"comment-form">
+        <div id=3D"comments-link-27218169" class=3D"comment-link-container"=
+ data-rep=3D"50" data-anon=3D"true">
+
+            <a class=3D"js-add-link comments-link disabled-link " title=3D"=
+Use comments to ask for more information or suggest improvements. Avoid com=
+ments like =E2=80=9C+1=E2=80=9D or =E2=80=9Cthanks=E2=80=9D." onclick=3D"">=
+add a comment</a><span class=3D"js-link-separator dno">&nbsp;|&nbsp;</span>=
+<a class=3D"js-show-link comments-link dno" title=3D"expand to show all com=
+ments on this post" href=3D"https://stackoverflow.com/questions/27107192/is=
+-tcp-packet-filtering-possible-on-mobile-platforms#" onclick=3D""></a>
+        </div>
+
+    </div>
+</div>    </div>
+
+ =20
+    <a name=3D"27232075"></a>
+    <div class=3D"-summary answer" data-answerid=3D"27232075" itemscope=3D"=
+" itemtype=3D"http://schema.org/Answer" )=3D"">
+        <div class=3D"answer-body">
+
+<div class=3D"-votes vote">
+    <input type=3D"hidden" name=3D"_id_" value=3D"27232075">
+    <input type=3D"hidden" name=3D"_ltu_">
+        <a class=3D"vote-up-off" title=3D"This answer is useful (click agai=
+n to undo)
+">up vote</a>
+        <span itemprop=3D"upvoteCount" class=3D"vote-count-post mobile-vote=
+-count">0</span>
+        <a class=3D"vote-down-off" title=3D"This answer is not useful (clic=
+k again to undo)
+">down vote</a>
+
+
+</div><!-- / votes -->
+                <div class=3D"post-text" itemprop=3D"text">
+<p><strong>This answer is for Android only</strong></p>
+
+<p>Generally <strong>YES</strong> it is possible!<br>
+There are some problems though.</p>
+
+<p>Here is a List what works and what problems you will encounter.</p>
+
+<p><strong>Filtering via VPN Service</strong>  </p>
+
+<ul>
+<li>Very High impact on Battery</li>
+<li>Proxy support won't work</li>
+<li>Allows modifiying of traffic</li>
+</ul>
+
+<p><strong>Filtering via libpcap</strong>  </p>
+
+<ul>
+<li>Requires root</li>
+<li>Does not allow to modify traffic</li>
+</ul>
+
+<p><strong>Filtering with IPTables/PFTables/libnetfilter</strong></p>
+
+<ul>
+<li>Requires root</li>
+<li>Needs a kernel module</li>
+<li>Won't work on any devices where you have not the kernel source or it is=
+ not integrated</li>
+</ul>
+
+<p><strong>Filtering using Xposed Framework</strong></p>
+
+<ul>
+<li>Requires root</li>
+<li>Will only work with Dalvik Systems</li>
+<li>Won't work with Applications build with NDK</li>
+</ul>
+
+<p><strong>Filtering with Cydia Substrate</strong></p>
+
+<ul>
+<li>Requires root</li>
+<li>Will only work with Dalvik Systems</li>
+<li>Currently in Beta state</li>
+</ul>
+
+<p>So Yes it is possible, but at what costs?<br>
+If you need it just for yourself, you are good by using <code>Cydia Substra=
+te</code> as it supports 100% of Applications but it requires a dalvik syst=
+em.</p>
+
+<p>If you want to publish it to the Store you should use the VPN Service. I=
+t might be possible to create the service using the NDK, then you might hav=
+e lowered the battery problems.</p>
+
+<p>I hope I have helped you in some way.</p>
+                </div>
+        </div>
+
+        <footer>
+<div class=3D"util-bar post-menu">
+            <a href=3D"https://stackoverflow.com/a/27232075" title=3D"short=
+ permalink to this answer" class=3D"short-link" id=3D"link-post-27232075">s=
+hare</a>
+                    <a href=3D"https://stackoverflow.com/posts/27232075/edi=
+t" title=3D"">improve this answer</a>
+
+
+
+
+</div>
+<div class=3D"menu-popup-container" data-postid=3D"27232075" style=3D"displ=
+ay:none;"></div><div class=3D"user-info ">
+		<div class=3D"user-action-time">
+            answered <span title=3D"2014-12-01 15:51:42Z" class=3D"relative=
+time">Dec 1 '14 at 15:51</span>
+		</div>
+		<div class=3D"user-gravatar">
+            <a href=3D"https://stackoverflow.com/users/894872/eun"><div cla=
+ss=3D"gravatar-wrapper-30"><img src=3D"https://www.gravatar.com/avatar/e544=
+5aa5ca7f0e8a683233773825cbc8?s=3D30&amp;d=3Didenticon&amp;r=3DPG" alt=3D"" =
+width=3D"30" height=3D"30"></div></a>
+		</div>
+		<div class=3D"user-details">
+            <a href=3D"https://stackoverflow.com/users/894872/eun">Eun</a><=
+br>
+            <span class=3D"reputation-score" title=3D"reputation score " di=
+r=3D"ltr">3,396</span><span title=3D"1 gold badge"><span class=3D"badge1">=
+=E2=97=8F</span><span class=3D"badgecount">1</span></span><span title=3D"21=
+ silver badges"><span class=3D"badge2">=E2=97=8F</span><span class=3D"badge=
+count">21</span></span><span title=3D"42 bronze badges"><span class=3D"badg=
+e3">=E2=97=8F</span><span class=3D"badgecount">42</span></span>
+		</div>
+	</div>        </footer>
+       =20
+
+<div id=3D"comments-27232075" class=3D"comments-wrap comments js-comments-c=
+ontainer ">
+    <ul class=3D"comments-list js-comments-list" data-remaining-comments-co=
+unt=3D"0" data-canpost=3D"false" data-cansee=3D"true" data-comments-unavail=
+able=3D"false" data-addlink-disabled=3D"true">
+
+    <li id=3D"comment-44566365" class=3D"comment js-comment " data-comment-=
+id=3D"44566365">
+        <div class=3D"js-comment-actions comment-actions">
+            <div class=3D"comment-score">
+            </div>
+                    </div>
+        <div class=3D"comment-text js-comment-text-and-form">
+            <div class=3D"comment-body" style=3D"display: block;">
+                <span class=3D"comment-copy">hi @Eun I've been investigatin=
+g into using VpnService to implement it on Android. I know now it's possibl=
+e without rooting as some apps like "Mobilwol: No root firewall" and "NoRoo=
+t Firewall" by GreyShirts are doing it. However I've been told that while i=
+t's possible to read packets this way, it's not possible to modify them and=
+ resend them on a transparent way without basically having to reimplement t=
+he TCP protocol. Do you know if this is true?</span>
+                    =E2=80=93&nbsp;<a href=3D"https://stackoverflow.com/use=
+rs/535967/lisovaccaro" title=3D"6,482 reputation" class=3D"comment-user own=
+er">lisovaccaro</a>
+                <span class=3D"comment-date" dir=3D"ltr"><a class=3D"commen=
+t-link" href=3D"https://stackoverflow.com/questions/27107192/is-tcp-packet-=
+filtering-possible-on-mobile-platforms#comment44566365_27232075"><span titl=
+e=3D"2015-01-22 17:41:22Z" class=3D"relativetime-clean">Jan 22 '15 at 17:41=
+</span></a></span>
+                                                                           =
+ </div>
+        </div>
+    </li>
+    </ul>
+    <div class=3D"comment-form">
+        <div id=3D"comments-link-27232075" class=3D"comment-link-container"=
+ data-rep=3D"50" data-anon=3D"true">
+
+            <a class=3D"js-add-link comments-link disabled-link " title=3D"=
+Use comments to ask for more information or suggest improvements. Avoid com=
+ments like =E2=80=9C+1=E2=80=9D or =E2=80=9Cthanks=E2=80=9D." onclick=3D"">=
+add a comment</a><span class=3D"js-link-separator dno">&nbsp;|&nbsp;</span>=
+<a class=3D"js-show-link comments-link dno" title=3D"expand to show all com=
+ments on this post" href=3D"https://stackoverflow.com/questions/27107192/is=
+-tcp-packet-filtering-possible-on-mobile-platforms#" onclick=3D""></a>
+        </div>
+
+    </div>
+</div>    </div>
+
+ =20
+    <a name=3D"27370755"></a>
+    <div class=3D"-summary answer" data-answerid=3D"27370755" itemscope=3D"=
+" itemtype=3D"http://schema.org/Answer" )=3D"">
+        <div class=3D"answer-body">
+
+<div class=3D"-votes vote">
+    <input type=3D"hidden" name=3D"_id_" value=3D"27370755">
+    <input type=3D"hidden" name=3D"_ltu_">
+        <a class=3D"vote-up-off" title=3D"This answer is useful (click agai=
+n to undo)
+">up vote</a>
+        <span itemprop=3D"upvoteCount" class=3D"vote-count-post mobile-vote=
+-count">0</span>
+        <a class=3D"vote-down-off" title=3D"This answer is not useful (clic=
+k again to undo)
+">down vote</a>
+
+
+</div><!-- / votes -->
+                <div class=3D"post-text" itemprop=3D"text">
+<p>You can build apps using the Android VPN service that can do interesting=
+ things like filter packets, among other things. You can find a VPN example=
+ in "Android Samples for SDK", which can be found in the <a href=3D"https:/=
+/android.googlesource.com/platform/development/+/master/samples/ToyVpn/src/=
+com/example/android/toyvpn/" rel=3D"nofollow">Google Source Code</a>.</p>
+
+<p>Cliff Robinson<br>
+Community Manager<br>
+<a href=3D"http://backbox.co/" rel=3D"nofollow">BackBox</a></p>
+                </div>
+        </div>
+
+        <footer>
+<div class=3D"util-bar post-menu">
+            <a href=3D"https://stackoverflow.com/a/27370755" title=3D"short=
+ permalink to this answer" class=3D"short-link" id=3D"link-post-27370755">s=
+hare</a>
+                    <a href=3D"https://stackoverflow.com/posts/27370755/edi=
+t" title=3D"">improve this answer</a>
+
+
+
+
+</div>
+<div class=3D"menu-popup-container" data-postid=3D"27370755" style=3D"displ=
+ay:none;"></div><div class=3D"user-info ">
+		<div class=3D"user-action-time">
+            answered <span title=3D"2014-12-09 02:58:08Z" class=3D"relative=
+time">Dec 9 '14 at 2:58</span>
+		</div>
+		<div class=3D"user-gravatar">
+            <a href=3D"https://stackoverflow.com/users/4279662/cliff-a-robi=
+nson"><div class=3D"gravatar-wrapper-30"><img src=3D"https://www.gravatar.c=
+om/avatar/a3c5aed184ef247eb58547a648a4420c?s=3D30&amp;d=3Didenticon&amp;r=
+=3DPG" alt=3D"" width=3D"30" height=3D"30"></div></a>
+		</div>
+		<div class=3D"user-details">
+            <a href=3D"https://stackoverflow.com/users/4279662/cliff-a-robi=
+nson">Cliff A Robinson</a><br>
+            <span class=3D"reputation-score" title=3D"reputation score " di=
+r=3D"ltr">1</span><span title=3D"1 bronze badge"><span class=3D"badge3">=E2=
+=97=8F</span><span class=3D"badgecount">1</span></span>
+		</div>
+	</div>        </footer>
+       =20
+
+<div id=3D"comments-27370755" class=3D"comments-wrap comments js-comments-c=
+ontainer dno">
+    <ul class=3D"comments-list js-comments-list" data-remaining-comments-co=
+unt=3D"0" data-canpost=3D"false" data-cansee=3D"true" data-comments-unavail=
+able=3D"false" data-addlink-disabled=3D"true">
+    </ul>
+    <div class=3D"comment-form">
+        <div id=3D"comments-link-27370755" class=3D"comment-link-container"=
+ data-rep=3D"50" data-anon=3D"true">
+
+            <a class=3D"js-add-link comments-link disabled-link " title=3D"=
+Use comments to ask for more information or suggest improvements. Avoid com=
+ments like =E2=80=9C+1=E2=80=9D or =E2=80=9Cthanks=E2=80=9D." onclick=3D"">=
+add a comment</a><span class=3D"js-link-separator dno">&nbsp;|&nbsp;</span>=
+<a class=3D"js-show-link comments-link dno" title=3D"expand to show all com=
+ments on this post" href=3D"https://stackoverflow.com/questions/27107192/is=
+-tcp-packet-filtering-possible-on-mobile-platforms#" onclick=3D""></a>
+        </div>
+
+    </div>
+</div>    </div>
+
+    <a name=3D"new-answer"></a>
+        <div class=3D"subheader ">
+            <div class=3D"-title">
+                <h2>Your Answer</h2>
+            </div>
+        </div><!-- / subheader -->
+        <form id=3D"post-form" class=3D"wrapper _inner post-form " action=
+=3D"https://stackoverflow.com/questions/27107192/answer/submit" method=3D"p=
+ost">
+            <input type=3D"hidden" id=3D"post-id" value=3D"27107192">
+
+            <fieldset>
+
+<div class=3D"post-editor" data-role=3D"uploader-scrolltotarget"> =20
+
+
+    <div class=3D"field _toolbar">
+        <label for=3D"wmd-input">Body</label>
+        <div class=3D"-item">
+            <div class=3D"-toolbar">
+                <ul>
+                    <li>
+                        <label for=3D"upload-trigger">
+                            <svg aria-hidden=3D"true" class=3D"svg-icon ico=
+nImage" width=3D"18" height=3D"18" viewBox=3D"0 0 18 18"><path d=3D"M1 3c0-=
+1.1.9-2 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3zm4.5 7.5L2 =
+15h14l-4.5-6L8 13.51 5.5 10.5zm0-4.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">=
+</path></svg>
+                            Add picture
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <textarea id=3D"wmd-input" class=3D"wmd-input" name=3D"post-tex=
+t" cols=3D"92" rows=3D"15" tabindex=3D"101"></textarea>
+        </div>
+
+       =20
+        <input type=3D"checkbox" class=3D"overlay-trigger js-overlay-trigge=
+r" id=3D"upload-trigger">
+
+        <div class=3D"overlay">
+            <header class=3D"-header">
+                <div class=3D"-title">
+                    <h2>Upload</h2>
+                </div>
+                <div class=3D"-actions">
+                    <button type=3D"button" class=3D"btn _clear js-close">C=
+ancel</button>
+                    <button type=3D"button" class=3D"btn js-submit">Add pic=
+ture</button>
+                </div>
+            </header>
+            <section class=3D"-body wrapper _inner">
+                <div class=3D"uploader-error form-error" style=3D"display: =
+none"></div>
+               =20
+                <div class=3D"field uploader">
+                    <div class=3D"-area js-area">
+                        <label>
+                            <input type=3D"file" accept=3D"image/*" class=
+=3D"js-image-input">
+                            <i class=3D"-illustration"></i>
+                            <p>
+                                Click here to upload your image
+                                <small>(max 2 MiB)</small>
+                            </p>
+                        </label>
+
+                        <figure class=3D"hidden-important"><img></figure>
+                    </div>
+
+                    <div class=3D"js-restart hidden-important">
+                        <p class=3D"text-centered help-text">
+                            <small><a href=3D"https://stackoverflow.com/que=
+stions/27107192/is-tcp-packet-filtering-possible-on-mobile-platforms#" clas=
+s=3D"js-restart-trigger">Cancel and add another image</a></small>
+                        </p>
+                    </div>
+
+                    <div class=3D"js-image-url">
+                        <p class=3D"js-image-url-info text-centered help-te=
+xt">
+                            <small>You can also provide a <a href=3D"https:=
+//stackoverflow.com/questions/27107192/is-tcp-packet-filtering-possible-on-=
+mobile-platforms#" class=3D"js-image-url-trigger">link from the web</a>.</s=
+mall>
+                        </p>
+
+                        <div class=3D"field _inline-flex js-image-url-field=
+ hidden-important">
+                            <div class=3D"-item _wide">
+                                <input type=3D"url" placeholder=3D"http://e=
+xample.com/image.png">
+                            </div>
+                            <div class=3D"-item">
+                                <button type=3D"button" class=3D"btn _clear=
+ js-image-url-cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+   =20
+   =20
+
+    <div class=3D"edit-block">
+        <input id=3D"fkey" name=3D"fkey" type=3D"hidden" value=3D"dad2ce9a1=
+d8d083eacd36bc31b6f0581c58d3bb3746043a659182e051cb47f7c">
+        <input id=3D"author" name=3D"author" type=3D"text">
+    <input type=3D"hidden" name=3D"i1l" value=3D"Cnjg8V46+GFMw2oWy1efG5LFW8=
+EnD2KwWJP/w5qr0VU=3D"></div>
+</div>
+
+            <p>
+                <a href=3D"https://stackoverflow.com/users/login?returnurl=
+=3Dhttps%3a%2f%2fstackoverflow.com%2fquestions%2f27107192%2fis-tcp-packet-f=
+iltering-possible-on-mobile-platforms" class=3D"btn _secondary">Log in</a>
+            </p>
+                <span class=3D"or">or</span>
+                <div class=3D"field">
+                    <label for=3D"display-name">Name</label>
+                    <div class=3D"-item">
+                        <input id=3D"display-name" name=3D"display-name" ty=
+pe=3D"text" size=3D"40" maxlength=3D"30" value=3D"" tabindex=3D"105">
+                    </div><!-- / item -->
+                </div><!-- / field -->
+                <div class=3D"field">
+                    <label for=3D"m-address">Email</label>
+                    <div class=3D"-item">
+                        <input id=3D"m-address" name=3D"m-address" type=3D"=
+text" size=3D"40" maxlength=3D"100" value=3D"" tabindex=3D"106">
+                    </div><!-- / item -->
+                </div><!-- / field -->
+
+            </fieldset>
+
+            <fieldset class=3D"actions">
+                   =20
+                            <p class=3D"privacy-policy-agreement">
+                               =20
+
+By clicking "Post Your Answer", you acknowledge that you have read our upda=
+ted <a href=3D"https://stackoverflow.com/legal/terms-of-service/public" nam=
+e=3D"tos" target=3D"_blank" class=3D"-link">terms of service</a>, <a href=
+=3D"https://stackoverflow.com/legal/privacy-policy" name=3D"privacy" target=
+=3D"_blank" class=3D"-link">privacy policy</a> and <a href=3D"https://stack=
+overflow.com/legal/cookie-policy" name=3D"cookie" target=3D"_blank" class=
+=3D"-link">cookie policy</a>, and that your continued use of the website is=
+ subject to these policies.
+
+<input type=3D"hidden" name=3D"legalLinksShown" value=3D"1">
+                            </p>
+                        <input id=3D"submit-button" type=3D"submit" value=
+=3D"Post Your Answer" tabindex=3D"110">
+                       =20
+                   =20
+            </fieldset><!-- / actions -->
+        </form><!-- / wrapper -->
+
+
+<div style=3D"display:none" id=3D"prettify-lang">default</div></div>
+                </main>
+
+                <footer class=3D"footer">
+                    <nav class=3D"links">
+                                <a href=3D"https://meta.stackoverflow.com/"=
+>meta</a>
+                                <a href=3D"https://chat.stackoverflow.com/"=
+>chat</a>
+                                <a href=3D"https://stackoverflow.com/tour">=
+tour</a>
+                            <a href=3D"https://stackoverflow.com/help">help=
+</a>
+                            <a href=3D"https://stackoverflow.blog/">blog</a=
+>
+                            <a href=3D"https://stackoverflow.com/legal/priv=
+acy-policy">privacy policy</a>
+                            <a href=3D"https://stackoverflow.com/legal">leg=
+al</a>
+                            <a href=3D"https://stackoverflow.com/contact">c=
+ontact us</a>
+                        <a onclick=3D" StackExchange.switchMobile(&quot;off=
+&quot;) ">full site</a>
+                       =20
+                    </nav>
+
+                        <div class=3D"app-cta">
+                            <a href=3D"https://play.google.com/store/apps/d=
+etails?id=3Dcom.stackexchange.marvin" class=3D"android-mobile-ad" style=3D"=
+"><span class=3D"se-icon favicon favicon-stackexchange"></span> Download th=
+e Stack Exchange Android app</a>
+                            <a href=3D"https://itunes.apple.com/us/app/stac=
+k-exchange/id871299723" class=3D"ios-mobile-ad" style=3D"display: none"><sp=
+an class=3D"se-icon favicon favicon-stackexchange"></span> Download the Sta=
+ck Exchange iOS app</a>
+                        </div>
+
+                    <p class=3D"copyrights">2018 Stack Exchange, Inc</p>
+
+                </footer>
+               =20
+                <div class=3D"overlay-bg js-overlay-bg"></div>
+
+                <div id=3D"footer" class=3D"hidden"></div>
+
+<iframe src=3D"https://tpc.googlesyndication.com/safeframe/1-0-31/html/cont=
+ainer.html" style=3D"visibility: hidden; display: none; "></iframe>
+   =20
+           =20
+<div class=3D"adsbox" id=3D"clc-abd" style=3D"position: absolute; pointer-e=
+vents: none; ">&nbsp;</div><iframe id=3D"google_osd_static_frame_2677931126=
+672" name=3D"google_osd_static_frame" style=3D"display: none; width: 0px; h=
+eight: 0px; " src=3D"wyciwyg://frame/0"></iframe></body></html>
+------=_NextPart_000_D423_78BEDB16.0DF043AC
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://cdn.sstatic.net/Shared/stacks.css?v=aaf0ba27d97b
+
+aHRtbCwgYm9keSwgZGl2LCBzcGFuLCBhcHBsZXQsIG9iamVjdCwgaWZyYW1lLCBoMSwgaDIsIGgz
+LCBoNCwgaDUsIGg2LCBwLCBibG9ja3F1b3RlLCBwcmUsIGEsIGFiYnIsIGFjcm9ueW0sIGFkZHJl
+c3MsIGJpZywgY2l0ZSwgY29kZSwgZGVsLCBkZm4sIGVtLCBpbWcsIGlucywga2JkLCBxLCBzLCBz
+YW1wLCBzbWFsbCwgc3RyaWtlLCBzdHJvbmcsIHN1Yiwgc3VwLCB0dCwgdmFyLCBiLCB1LCBpLCBj
+ZW50ZXIsIGRsLCBkdCwgZGQsIG9sLCB1bCwgbGksIGZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVn
+ZW5kLCB0YWJsZSwgY2FwdGlvbiwgdGJvZHksIHRmb290LCB0aGVhZCwgdHIsIHRoLCB0ZCwgYXJ0
+aWNsZSwgYXNpZGUsIGNhbnZhcywgZGV0YWlscywgZW1iZWQsIGZpZ3VyZSwgZmlnY2FwdGlvbiwg
+Zm9vdGVyLCBoZWFkZXIsIGhncm91cCwgbWVudSwgbmF2LCBvdXRwdXQsIHJ1YnksIHNlY3Rpb24s
+IHN1bW1hcnksIHRpbWUsIG1hcmssIGF1ZGlvLCB2aWRlbyB7IG1hcmdpbi10b3A6IDBweDsgbWFy
+Z2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFk
+ZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBw
+YWRkaW5nLWxlZnQ6IDBweDsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lk
+dGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4
+OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWlt
+YWdlOiBpbml0aWFsOyBmb250OiBpbmhlcml0OyBmb250LXNpemU6IDEwMCU7IHZlcnRpY2FsLWFs
+aWduOiBiYXNlbGluZTsgfQoKYXJ0aWNsZSwgYXNpZGUsIGRldGFpbHMsIGZpZ2NhcHRpb24sIGZp
+Z3VyZSwgZm9vdGVyLCBoZWFkZXIsIGhncm91cCwgbWVudSwgbmF2LCBzZWN0aW9uIHsgZGlzcGxh
+eTogYmxvY2s7IH0KCmJvZHkgeyBsaW5lLWhlaWdodDogMTsgfQoKb2wsIHVsIHsgbGlzdC1zdHls
+ZS10eXBlOiBub25lOyBsaXN0LXN0eWxlLXBvc2l0aW9uOiBpbml0aWFsOyBsaXN0LXN0eWxlLWlt
+YWdlOiBpbml0aWFsOyB9CgpibG9ja3F1b3RlLCBxIHsgcXVvdGVzOiBub25lOyB9CgpibG9ja3F1
+b3RlOjpiZWZvcmUsIGJsb2NrcXVvdGU6OmFmdGVyLCBxOjpiZWZvcmUsIHE6OmFmdGVyIHsgY29u
+dGVudDogbm9uZTsgfQoKdGFibGUgeyBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOyAtd2Via2l0
+LWJvcmRlci1ob3Jpem9udGFsLXNwYWNpbmc6IDBweDsgLXdlYmtpdC1ib3JkZXItdmVydGljYWwt
+c3BhY2luZzogMHB4OyB9CgpzdWIsIHN1cCB7IGZvbnQtc2l6ZTogODAlOyBsaW5lLWhlaWdodDog
+MTsgdmVydGljYWwtYWxpZ246IHN1YjsgfQoKc3VwIHsgdmVydGljYWwtYWxpZ246IHN1cGVyOyB9
+Cgouc3ZnLWljb24geyB2ZXJ0aWNhbC1hbGlnbjogYm90dG9tOyB9Cgouc3ZnLWljb246bm90KC5u
+YXRpdmUpICogeyBmaWxsOiBjdXJyZW50Q29sb3I7IH0KCi5zLWF2YXRhciB7IGRpc3BsYXk6IGlu
+bGluZS1ibG9jazsgcG9zaXRpb246IHJlbGF0aXZlOyB3aWR0aDogMTZweDsgaGVpZ2h0OiAxNnB4
+OyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAzcHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAz
+cHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAzcHg7IGJvcmRlci1ib3R0b20tbGVmdC1y
+YWRpdXM6IDNweDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEzMiwgMTQxLCAxNDkpOyBiYWNrZ3Jv
+dW5kLXNpemU6IDEwMCU7IHZlcnRpY2FsLWFsaWduOiBib3R0b207IGJhY2tncm91bmQtcmVwZWF0
+OiBuby1yZXBlYXQgbm8tcmVwZWF0OyB9Cgoucy1hdmF0YXIgLnMtYXZhdGFyLS1sZXR0ZXIgeyBk
+aXNwbGF5OiBibG9jazsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgZm9udC1zaXplOiAxMXB4
+OyBmb250LXdlaWdodDogYm9sZDsgbGluZS1oZWlnaHQ6IDEuNDU0NTQ1NTsgdGV4dC1hbGlnbjog
+Y2VudGVyOyB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOyAtd2Via2l0LXVzZXItc2VsZWN0OiBu
+b25lOyB9Cgoucy1hdmF0YXIgLnMtYXZhdGFyLS1iYWRnZSB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsg
+cmlnaHQ6IC00cHg7IGJvdHRvbTogLTRweDsgfQoKLnMtYXZhdGFyLnMtYXZhdGFyX19tZCB7IHdp
+ZHRoOiAzMnB4OyBoZWlnaHQ6IDMycHg7IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDVweDsgYm9y
+ZGVyLXRvcC1yaWdodC1yYWRpdXM6IDVweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDVw
+eDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogNXB4OyB9Cgoucy1hdmF0YXIucy1hdmF0YXJf
+X21kIC5zLWF2YXRhci0tbGV0dGVyIHsgZm9udC1zaXplOiAxLjY5ZW07IH0KCi5zLWF2YXRhci5z
+LWF2YXRhcl9fbWQgLnMtYXZhdGFyLS1iYWRnZSB7IC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgx
+LjMpOyB9Cgoucy1hdmF0YXIucy1hdmF0YXJfX2xnIHsgd2lkdGg6IDY0cHg7IGhlaWdodDogNjRw
+eDsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogN3B4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czog
+N3B4OyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogN3B4OyBib3JkZXItYm90dG9tLWxlZnQt
+cmFkaXVzOiA3cHg7IH0KCi5zLWF2YXRhci5zLWF2YXRhcl9fbGcgLnMtYXZhdGFyLS1sZXR0ZXIg
+eyBmb250LXNpemU6IDMuMzhlbTsgfQoKLnMtYXZhdGFyLnMtYXZhdGFyX19sZyAucy1hdmF0YXIt
+LWJhZGdlIHsgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKDIuNCk7IH0KCi5zLWF2YXRhci5zLWF2
+YXRhcl9feGwgeyB3aWR0aDogOTZweDsgaGVpZ2h0OiA5NnB4OyBib3JkZXItdG9wLWxlZnQtcmFk
+aXVzOiAxMHB4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweDsgYm9yZGVyLWJvdHRvbS1y
+aWdodC1yYWRpdXM6IDEwcHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDEwcHg7IH0KCi5z
+LWF2YXRhci5zLWF2YXRhcl9feGwgLnMtYXZhdGFyLS1sZXR0ZXIgeyBmb250LXNpemU6IDUuMDdl
+bTsgfQoKLnMtYXZhdGFyLnMtYXZhdGFyX194bCAucy1hdmF0YXItLWJhZGdlIHsgLXdlYmtpdC10
+cmFuc2Zvcm06IHNjYWxlKDMpOyB9Cgoucy1hdmF0YXIucy1hdmF0YXJfX3h4bCB7IHdpZHRoOiAx
+MjhweDsgaGVpZ2h0OiAxMjhweDsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTRweDsgYm9yZGVy
+LXRvcC1yaWdodC1yYWRpdXM6IDE0cHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxNHB4
+OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAxNHB4OyB9Cgoucy1hdmF0YXIucy1hdmF0YXJf
+X3h4bCAucy1hdmF0YXItLWxldHRlciB7IGZvbnQtc2l6ZTogNi43N2VtOyB9Cgoucy1hdmF0YXIu
+cy1hdmF0YXJfX3h4bCAucy1hdmF0YXItLWJhZGdlIHsgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxl
+KDMpOyB9Cgoucy1iYWRnZSB7IGRpc3BsYXk6IGlubGluZS1mbGV4OyAtd2Via2l0LWp1c3RpZnkt
+Y29udGVudDogY2VudGVyOyBtaW4td2lkdGg6IDBweDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGlu
+Zy1yaWdodDogNnB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDZweDsgYm9y
+ZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRv
+bS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBz
+b2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29s
+aWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBib3Jk
+ZXItdG9wLWxlZnQtcmFkaXVzOiAzcHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAzcHg7IGJv
+cmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAzcHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6
+IDNweDsgZm9udC1zaXplOiAxMnB4OyBmb250LXdlaWdodDogbm9ybWFsOyBsaW5lLWhlaWdodDog
+MjsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyB3aGl0ZS1z
+cGFjZTogbm93cmFwOyBib3JkZXItdG9wLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXJpZ2h0
+LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogdHJhbnNwYXJlbnQ7IGJv
+cmRlci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDM2LCAz
+OSwgNDEpOyBjb2xvcjogcmdiKDI1MCwgMjUwLCAyNTEpOyB9Cgoucy1iYWRnZSAucy10YWctLWRp
+c21pc3MgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgY29sb3I6IHJnYmEoMjUwLCAy
+NTAsIDI1MSwgMC44OTg0MzgpOyB9CgphLnMtYmFkZ2U6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9y
+OiByZ2JhKDAsIDAsIDAsIDApOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7
+IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7IGJvcmRlci1sZWZ0LWNvbG9y
+OiByZ2JhKDAsIDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTIsIDEzLCAxNCk7IGNv
+bG9yOiByZ2IoMjUwLCAyNTAsIDI1MSk7IH0KCmEucy1iYWRnZTpob3ZlciB7IHRleHQtZGVjb3Jh
+dGlvbjogbm9uZTsgfQoKLnMtYmFkZ2UtLWltYWdlIHsgZGlzcGxheTogaW5saW5lLWZsZXg7IC13
+ZWJraXQtYWxpZ24tc2VsZjogY2VudGVyOyBtYXJnaW4tcmlnaHQ6IDFweDsgbWFyZ2luLWxlZnQ6
+IC01cHg7IH0KCi5zLWJhZGdlX190YWcgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjE0LCAyMTcs
+IDIyMCk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIxNCwgMjE3LCAyMjApOyBib3JkZXItYm90
+dG9tLWNvbG9yOiByZ2IoMjE0LCAyMTcsIDIyMCk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjE0
+LCAyMTcsIDIyMCk7IGJhY2tncm91bmQtY29sb3I6IHJnYigyMzksIDI0MCwgMjQxKTsgY29sb3I6
+IHJnYig1OSwgNjQsIDY5KTsgfQoKLnMtYmFkZ2VfX3RhZyAucy10YWctLWRpc21pc3MgeyBiYWNr
+Z3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgY29sb3I6IHJnYmEoNTksIDY0LCA2OSwgMC44OTg0
+MzgpOyB9CgphLnMtYmFkZ2VfX3RhZzpob3ZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDAs
+IDIwNCwgMjA4KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjAwLCAyMDQsIDIwOCk7IGJvcmRl
+ci1ib3R0b20tY29sb3I6IHJnYigyMDAsIDIwNCwgMjA4KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJn
+YigyMDAsIDIwNCwgMjA4KTsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIxMSwgMjE0LCAyMTgpOyBj
+b2xvcjogcmdiKDU5LCA2NCwgNjkpOyB9Cgoucy1iYWRnZV9fZ29sZCB7IGJvcmRlci10b3AtY29s
+b3I6IHJnYigyMzYsIDIyNywgMjAwKTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjM2LCAyMjcs
+IDIwMCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMzYsIDIyNywgMjAwKTsgYm9yZGVyLWxl
+ZnQtY29sb3I6IHJnYigyMzYsIDIyNywgMjAwKTsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwg
+MjQ4LCAyMjYpOyBjb2xvcjogcmdiKDEyLCAxMywgMTQpOyB9Cgoucy1iYWRnZV9fZ29sZCAucy10
+YWctLWRpc21pc3MgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgY29sb3I6IHJnYmEo
+MTIsIDEzLCAxNCwgMC44OTg0MzgpOyB9CgphLnMtYmFkZ2VfX2dvbGQ6aG92ZXIgeyBib3JkZXIt
+dG9wLWNvbG9yOiByZ2IoMjI5LCAyMTcsIDE4MSk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIy
+OSwgMjE3LCAxODEpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjI5LCAyMTcsIDE4MSk7IGJv
+cmRlci1sZWZ0LWNvbG9yOiByZ2IoMjI5LCAyMTcsIDE4MSk7IGJhY2tncm91bmQtY29sb3I6IHJn
+YigyNTUsIDIzNiwgMTc1KTsgY29sb3I6IHJnYigxMiwgMTMsIDE0KTsgfQoKLnMtYmFkZ2VfX3Np
+bHZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMjQsIDIyNSwgMjI3KTsgYm9yZGVyLXJpZ2h0
+LWNvbG9yOiByZ2IoMjI0LCAyMjUsIDIyNyk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMjQs
+IDIyNSwgMjI3KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMjQsIDIyNSwgMjI3KTsgYmFja2dy
+b3VuZC1jb2xvcjogcmdiKDIzNywgMjM4LCAyMzkpOyBjb2xvcjogcmdiKDEyLCAxMywgMTQpOyB9
+Cgoucy1iYWRnZV9fc2lsdmVyIC5zLXRhZy0tZGlzbWlzcyB7IGJhY2tncm91bmQtY29sb3I6IHRy
+YW5zcGFyZW50OyBjb2xvcjogcmdiYSgxMiwgMTMsIDE0LCAwLjg5ODQzOCk7IH0KCmEucy1iYWRn
+ZV9fc2lsdmVyOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIxMSwgMjEyLCAyMTUpOyBi
+b3JkZXItcmlnaHQtY29sb3I6IHJnYigyMTEsIDIxMiwgMjE1KTsgYm9yZGVyLWJvdHRvbS1jb2xv
+cjogcmdiKDIxMSwgMjEyLCAyMTUpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIxMSwgMjEyLCAy
+MTUpOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjEwLCAyMTMsIDIxNSk7IGNvbG9yOiByZ2IoMTIs
+IDEzLCAxNCk7IH0KCi5zLWJhZGdlX19icm9uemUgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjQx
+LCAyMjIsIDIwNCk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDI0MSwgMjIyLCAyMDQpOyBib3Jk
+ZXItYm90dG9tLWNvbG9yOiByZ2IoMjQxLCAyMjIsIDIwNCk7IGJvcmRlci1sZWZ0LWNvbG9yOiBy
+Z2IoMjQxLCAyMjIsIDIwNCk7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNDksIDIzNSwgMjI1KTsg
+Y29sb3I6IHJnYigxMiwgMTMsIDE0KTsgfQoKLnMtYmFkZ2VfX2Jyb256ZSAucy10YWctLWRpc21p
+c3MgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgY29sb3I6IHJnYmEoMTIsIDEzLCAx
+NCwgMC44OTg0MzgpOyB9CgphLnMtYmFkZ2VfX2Jyb256ZTpob3ZlciB7IGJvcmRlci10b3AtY29s
+b3I6IHJnYigyMzYsIDIwOSwgMTg0KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjM2LCAyMDks
+IDE4NCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMzYsIDIwOSwgMTg0KTsgYm9yZGVyLWxl
+ZnQtY29sb3I6IHJnYigyMzYsIDIwOSwgMTg0KTsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0MSwg
+MjA3LCAxODIpOyBjb2xvcjogcmdiKDEyLCAxMywgMTQpOyB9Cgoucy1iYWRnZV9fYm91bnR5IHsg
+Ym9yZGVyLXRvcC1jb2xvcjogdHJhbnNwYXJlbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogdHJhbnNw
+YXJlbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXItbGVmdC1jb2xv
+cjogdHJhbnNwYXJlbnQ7IGJhY2tncm91bmQtY29sb3I6IHJnYigwLCAxMTksIDIwNCk7IGNvbG9y
+OiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5zLWJhZGdlX19ib3VudHkgLnMtdGFnLS1kaXNtaXNz
+IHsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IGNvbG9yOiByZ2JhKDI1NSwgMjU1LCAy
+NTUsIDAuODk4NDM4KTsgfQoKYS5zLWJhZGdlX19ib3VudHk6aG92ZXIgeyBib3JkZXItdG9wLWNv
+bG9yOiByZ2JhKDAsIDAsIDAsIDApOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYmEoMCwgMCwgMCwg
+MCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7IGJvcmRlci1sZWZ0LWNv
+bG9yOiByZ2JhKDAsIDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMCwgODksIDE1Myk7
+IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5zLWJhZGdlX192b3RlcyB7IGJvcmRlci10
+b3AtY29sb3I6IHJnYigyMDAsIDIwNCwgMjA4KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjAw
+LCAyMDQsIDIwOCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMDAsIDIwNCwgMjA4KTsgYm9y
+ZGVyLWxlZnQtY29sb3I6IHJnYigyMDAsIDIwNCwgMjA4KTsgYmFja2dyb3VuZC1jb2xvcjogcmdi
+KDI1NSwgMjU1LCAyNTUpOyBjb2xvcjogcmdiKDU5LCA2NCwgNjkpOyB9Cgoucy1iYWRnZV9fdm90
+ZXMgLnMtdGFnLS1kaXNtaXNzIHsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IGNvbG9y
+OiByZ2JhKDU5LCA2NCwgNjksIDAuODk4NDM4KTsgfQoKYS5zLWJhZGdlX192b3Rlczpob3ZlciB7
+IGJvcmRlci10b3AtY29sb3I6IHJnYigxODcsIDE5MiwgMTk2KTsgYm9yZGVyLXJpZ2h0LWNvbG9y
+OiByZ2IoMTg3LCAxOTIsIDE5Nik7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxODcsIDE5Miwg
+MTk2KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigxODcsIDE5MiwgMTk2KTsgYmFja2dyb3VuZC1j
+b2xvcjogcmdiKDIzMCwgMjMwLCAyMzApOyBjb2xvcjogcmdiKDU5LCA2NCwgNjkpOyB9Cgoucy1i
+YWRnZV9fYW5zd2VyZWQgeyBib3JkZXItdG9wLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXJp
+Z2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogdHJhbnNwYXJlbnQ7
+IGJvcmRlci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDk1
+LCAxODYsIDEyNSk7IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5zLWJhZGdlX19hbnN3
+ZXJlZCAucy10YWctLWRpc21pc3MgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgY29s
+b3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC44OTg0MzgpOyB9CgphLnMtYmFkZ2VfX2Fuc3dlcmVk
+OmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTsgYm9yZGVyLXJpZ2h0
+LWNvbG9yOiByZ2JhKDAsIDAsIDAsIDApOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2JhKDAsIDAs
+IDAsIDApOyBib3JkZXItbGVmdC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTsgYmFja2dyb3VuZC1j
+b2xvcjogcmdiKDY5LCAxNjEsIDk5KTsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgfQoKLnMt
+YmFkZ2VfX3JlcCB7IGJvcmRlci10b3AtY29sb3I6IHJnYig5NSwgMTg2LCAxMjUpOyBib3JkZXIt
+cmlnaHQtY29sb3I6IHJnYig5NSwgMTg2LCAxMjUpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2Io
+OTUsIDE4NiwgMTI1KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig5NSwgMTg2LCAxMjUpOyBiYWNr
+Z3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGNvbG9yOiByZ2IoNjksIDE2MSwgOTkp
+OyB9Cgoucy1iYWRnZV9fcmVwIC5zLXRhZy0tZGlzbWlzcyB7IGJhY2tncm91bmQtY29sb3I6IHRy
+YW5zcGFyZW50OyBjb2xvcjogcmdiYSg2OSwgMTYxLCA5OSwgMC44OTg0MzgpOyB9CgphLnMtYmFk
+Z2VfX3JlcDpob3ZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYig3NywgMTc5LCAxMTApOyBib3Jk
+ZXItcmlnaHQtY29sb3I6IHJnYig3NywgMTc5LCAxMTApOyBib3JkZXItYm90dG9tLWNvbG9yOiBy
+Z2IoNzcsIDE3OSwgMTEwKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig3NywgMTc5LCAxMTApOyBi
+YWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjMwLCAyMzAsIDIzMCk7IGNvbG9yOiByZ2IoNjksIDE2MSwg
+OTkpOyB9Cgoucy1iYWRnZV9fcmVwLWRvd24geyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjIwLCA2
+MSwgNzYpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMjAsIDYxLCA3Nik7IGJvcmRlci1ib3R0
+b20tY29sb3I6IHJnYigyMjAsIDYxLCA3Nik7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjIwLCA2
+MSwgNzYpOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGNvbG9yOiByZ2Io
+MjAxLCAyOSwgNDYpOyB9Cgoucy1iYWRnZV9fcmVwLWRvd24gLnMtdGFnLS1kaXNtaXNzIHsgYmFj
+a2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IGNvbG9yOiByZ2JhKDIwMSwgMjksIDQ2LCAwLjg5
+ODQzOCk7IH0KCmEucy1iYWRnZV9fcmVwLWRvd246aG92ZXIgeyBib3JkZXItdG9wLWNvbG9yOiBy
+Z2IoMjE3LCAzOSwgNTcpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMTcsIDM5LCA1Nyk7IGJv
+cmRlci1ib3R0b20tY29sb3I6IHJnYigyMTcsIDM5LCA1Nyk7IGJvcmRlci1sZWZ0LWNvbG9yOiBy
+Z2IoMjE3LCAzOSwgNTcpOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjMwLCAyMzAsIDIzMCk7IGNv
+bG9yOiByZ2IoMjAxLCAyOSwgNDYpOyB9Cgoucy1iYWRnZV9fbWluaSB7IC13ZWJraXQtYWxpZ24t
+c2VsZjogZmxleC1zdGFydDsgcGFkZGluZy1yaWdodDogNHB4OyBwYWRkaW5nLWxlZnQ6IDNweDsg
+Zm9udC1zaXplOiAxMXB4OyBsaW5lLWhlaWdodDogMS44OyBib3JkZXItdG9wLWNvbG9yOiB0cmFu
+c3BhcmVudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRvbS1j
+b2xvcjogdHJhbnNwYXJlbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgYmFja2dy
+b3VuZC1jb2xvcjogcmdiKDAsIDExOSwgMjA0KTsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsg
+fQoKLnMtYmFkZ2VfX21pbmkgLnMtdGFnLS1kaXNtaXNzIHsgYmFja2dyb3VuZC1jb2xvcjogdHJh
+bnNwYXJlbnQ7IGNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuODk4NDM4KTsgfQoKYS5zLWJh
+ZGdlX19taW5pOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTsgYm9y
+ZGVyLXJpZ2h0LWNvbG9yOiByZ2JhKDAsIDAsIDAsIDApOyBib3JkZXItYm90dG9tLWNvbG9yOiBy
+Z2JhKDAsIDAsIDAsIDApOyBib3JkZXItbGVmdC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTsgYmFj
+a2dyb3VuZC1jb2xvcjogcmdiKDAsIDg5LCAxNTMpOyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUp
+OyB9Cgoucy1iYWRnZV9faW1wb3J0YW50IHsgYm9yZGVyLXRvcC1jb2xvcjogdHJhbnNwYXJlbnQ7
+IGJvcmRlci1yaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHRy
+YW5zcGFyZW50OyBib3JkZXItbGVmdC1jb2xvcjogdHJhbnNwYXJlbnQ7IGJhY2tncm91bmQtY29s
+b3I6IHJnYigyMDEsIDI5LCA0Nik7IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5zLWJh
+ZGdlX19pbXBvcnRhbnQgLnMtdGFnLS1kaXNtaXNzIHsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNw
+YXJlbnQ7IGNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuODk4NDM4KTsgfQoKYS5zLWJhZGdl
+X19pbXBvcnRhbnQ6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDApOyBi
+b3JkZXItcmlnaHQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7IGJvcmRlci1ib3R0b20tY29sb3I6
+IHJnYmEoMCwgMCwgMCwgMCk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2JhKDAsIDAsIDAsIDApOyBi
+YWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTU2LCAyMywgMzYpOyBjb2xvcjogcmdiKDI1NSwgMjU1LCAy
+NTUpOyB9Cgoucy1lbXB0eS1zdGF0ZSB7IGNvbG9yOiByZ2IoMTA2LCAxMTUsIDEyNCk7IHRleHQt
+YWxpZ246IGNlbnRlcjsgbWFyZ2luLWxlZnQ6IGF1dG87IG1hcmdpbi1yaWdodDogYXV0bzsgfQoK
+LnMtZW1wdHktc3RhdGUgcCB7IGZvbnQtc2l6ZTogMTNweDsgbWFyZ2luLWJvdHRvbTogMTJweDsg
+fQoKLnMtZW1wdHktc3RhdGUgcCBzdHJvbmcgeyBjb2xvcjogcmdiKDEyLCAxMywgMTQpOyB9Cgou
+cy1lbXB0eS1zdGF0ZSAucy1idG4geyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IH0KCi5zLWJ0bi1n
+cm91cCB7IH0KCi5zLWJ0bi1ncm91cCAucy1idG4geyBtYXJnaW4tcmlnaHQ6IDBweDsgfQoKLnMt
+YnRuLWdyb3VwIC5zLWJ0bjpub3QoOmZpcnN0LWNoaWxkKSB7IG1hcmdpbi1sZWZ0OiAtMXB4OyB9
+Cgoucy1idG4tZ3JvdXAgLnMtYnRuOm5vdCg6Zmlyc3QtY2hpbGQpOm5vdCg6bGFzdC1jaGlsZCkg
+eyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAwcHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAw
+cHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAwcHg7IGJvcmRlci1ib3R0b20tbGVmdC1y
+YWRpdXM6IDBweDsgfQoKLnMtYnRuLWdyb3VwIC5zLWJ0bjpmaXJzdC1jaGlsZDpub3QoOm9ubHkt
+Y2hpbGQpIHsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDBweDsgYm9yZGVyLWJvdHRvbS1yaWdo
+dC1yYWRpdXM6IDBweDsgfQoKLnMtYnRuLWdyb3VwIC5zLWJ0bjpsYXN0LWNoaWxkOm5vdCg6b25s
+eS1jaGlsZCkgeyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAwcHg7IGJvcmRlci1ib3R0b20tbGVm
+dC1yYWRpdXM6IDBweDsgfQoKLnMtYnRuLWdyb3VwIC5zLWJ0bi5pcy1zZWxlY3RlZCB7IHotaW5k
+ZXg6IDI1OyB9Cgoucy1idG4tZ3JvdXAgLnMtYnRuOmFjdGl2ZSB7IHotaW5kZXg6IDMwOyB9Cgou
+cy1idG4tZ3JvdXAgLnMtYnRuLWdyb3VwLS1jb250YWluZXIgeyB9Cgoucy1idG4tZ3JvdXAgLnMt
+YnRuLWdyb3VwLS1jb250YWluZXIgLnMtYnRuIHsgbWFyZ2luLWxlZnQ6IC0xcHg7IH0KCi5zLWJ0
+bi1ncm91cCAucy1idG4tZ3JvdXAtLWNvbnRhaW5lcjpub3QoOmZpcnN0LWNoaWxkKTpub3QoOmxh
+c3QtY2hpbGQpIC5zLWJ0biB7IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDBweDsgYm9yZGVyLXRv
+cC1yaWdodC1yYWRpdXM6IDBweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDBweDsgYm9y
+ZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMHB4OyB9Cgoucy1idG4tZ3JvdXAgLnMtYnRuLWdyb3Vw
+LS1jb250YWluZXI6Zmlyc3QtY2hpbGQgLnMtYnRuIHsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6
+IDBweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsg
+fQoKLnMtYnRuLWdyb3VwIC5zLWJ0bi1ncm91cC0tY29udGFpbmVyOmxhc3QtY2hpbGQgLnMtYnRu
+IHsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMHB4OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVz
+OiAwcHg7IH0KCi5zLWNhcmQgeyBwb3NpdGlvbjogcmVsYXRpdmU7IHBhZGRpbmctdG9wOiAxMnB4
+OyBwYWRkaW5nLXJpZ2h0OiAxMnB4OyBwYWRkaW5nLWJvdHRvbTogMTJweDsgcGFkZGluZy1sZWZ0
+OiAxMnB4OyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBi
+b3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10
+b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9t
+LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItdG9wLWNvbG9y
+OiByZ2IoMjI4LCAyMzAsIDIzMik7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIyOCwgMjMwLCAy
+MzIpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjI4LCAyMzAsIDIzMik7IGJvcmRlci1sZWZ0
+LWNvbG9yOiByZ2IoMjI4LCAyMzAsIDIzMik7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgYm9yZGVy
+LXRvcC1sZWZ0LXJhZGl1czogM3B4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogM3B4OyBib3Jk
+ZXItYm90dG9tLXJpZ2h0LXJhZGl1czogM3B4OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAz
+cHg7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgLXdlYmtpdC10cmFuc2l0
+aW9uLXByb3BlcnR5OiBib3gtc2hhZG93OyAtd2Via2l0LXRyYW5zaXRpb24tZHVyYXRpb246IDE1
+MG1zOyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBjdWJpYy1iZXppZXIoMC4x
+NjUsIDAuODQsIDAuNDQsIDEpOyAtd2Via2l0LXRyYW5zaXRpb24tZGVsYXk6IGluaXRpYWw7IH0K
+Ci5zLWNhcmQ6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjE0LCAyMTcsIDIyMCk7IGJv
+cmRlci1yaWdodC1jb2xvcjogcmdiKDIxNCwgMjE3LCAyMjApOyBib3JkZXItYm90dG9tLWNvbG9y
+OiByZ2IoMjE0LCAyMTcsIDIyMCk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjE0LCAyMTcsIDIy
+MCk7IC13ZWJraXQtdHJhbnNpdGlvbi1wcm9wZXJ0eTogYm94LXNoYWRvdzsgLXdlYmtpdC10cmFu
+c2l0aW9uLWR1cmF0aW9uOiAxMDBtczsgLXdlYmtpdC10cmFuc2l0aW9uLXRpbWluZy1mdW5jdGlv
+bjogY3ViaWMtYmV6aWVyKDAuMTY1LCAwLjg0LCAwLjQ0LCAxKTsgLXdlYmtpdC10cmFuc2l0aW9u
+LWRlbGF5OiBpbml0aWFsOyB9Cgoucy1jYXJkIHA6bGFzdC1vZi10eXBlIHsgbWFyZ2luLWJvdHRv
+bTogMHB4OyB9Cgoucy1jYXJkX19tdXRlZCB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMzksIDI0
+MCwgMjQxKTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjM5LCAyNDAsIDI0MSk7IGJvcmRlci1i
+b3R0b20tY29sb3I6IHJnYigyMzksIDI0MCwgMjQxKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigy
+MzksIDI0MCwgMjQxKTsgfQoKLnMtY2FyZF9fbXV0ZWQgPiAqIHsgb3BhY2l0eTogMC42NTsgLXdl
+YmtpdC10cmFuc2l0aW9uLXByb3BlcnR5OiBvcGFjaXR5OyAtd2Via2l0LXRyYW5zaXRpb24tZHVy
+YXRpb246IDEwMG1zOyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBjdWJpYy1i
+ZXppZXIoMC4xNjUsIDAuODQsIDAuNDQsIDEpOyAtd2Via2l0LXRyYW5zaXRpb24tZGVsYXk6IGlu
+aXRpYWw7IH0KCi5zLWNhcmRfX211dGVkOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIy
+OCwgMjMwLCAyMzIpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMjgsIDIzMCwgMjMyKTsgYm9y
+ZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIyOCwgMjMwLCAyMzIpOyBib3JkZXItbGVmdC1jb2xvcjog
+cmdiKDIyOCwgMjMwLCAyMzIpOyB9Cgoucy1jYXJkX19tdXRlZDpob3ZlciA+ICogeyBvcGFjaXR5
+OiAwLjg7IC13ZWJraXQtdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3BhY2l0eTsgLXdlYmtpdC10cmFu
+c2l0aW9uLWR1cmF0aW9uOiA3NW1zOyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9u
+OiBjdWJpYy1iZXppZXIoMC4xNjUsIDAuODQsIDAuNDQsIDEpOyAtd2Via2l0LXRyYW5zaXRpb24t
+ZGVsYXk6IGluaXRpYWw7IH0KCi5zLWlucHV0LCAucy10ZXh0YXJlYSB7IHdpZHRoOiAxMDAlOyBt
+YXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1h
+cmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwLjdlbTsgcGFkZGluZy1yaWdodDogMC43ZW07
+IHBhZGRpbmctYm90dG9tOiAwLjdlbTsgcGFkZGluZy1sZWZ0OiAwLjdlbTsgYm9yZGVyLXRvcC13
+aWR0aDogMXB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDog
+MXB4OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9y
+ZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRl
+ci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDE4NywgMTkyLCAxOTYp
+OyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigxODcsIDE5MiwgMTk2KTsgYm9yZGVyLWJvdHRvbS1j
+b2xvcjogcmdiKDE4NywgMTkyLCAxOTYpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDE4NywgMTky
+LCAxOTYpOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDNw
+eDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDNweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRp
+dXM6IDNweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogM3B4OyBib3gtc2hhZG93OiByZ2Jh
+KDE0NSwgMTUzLCAxNjEsIDAuMTk5MjE5KSAwcHggMHB4IDFweCBpbnNldCwgcmdiYSgyNTUsIDI1
+NSwgMjU1LCAwKSAwcHggMHB4IDBweDsgZm9udC1zaXplOiAxM3B4OyBmb250LWZhbWlseTogaW5o
+ZXJpdDsgbGluZS1oZWlnaHQ6IDEuMDIzNjY4NjQ7IH0KCi5zLWlucHV0Ojotd2Via2l0LWlucHV0
+LXBsYWNlaG9sZGVyLCAucy10ZXh0YXJlYTo6LXdlYmtpdC1pbnB1dC1wbGFjZWhvbGRlciB7IGNv
+bG9yOiByZ2IoMTg3LCAxOTIsIDE5Nik7IH0KCi5zLWlucHV0OjotbXMtaW5wdXQtcGxhY2Vob2xk
+ZXIsIC5zLXRleHRhcmVhOjotbXMtaW5wdXQtcGxhY2Vob2xkZXIgeyBjb2xvcjogcmdiKDE4Nywg
+MTkyLCAxOTYpOyB9Cgoucy1pbnB1dDo6cGxhY2Vob2xkZXIsIC5zLXRleHRhcmVhOjpwbGFjZWhv
+bGRlciB7IHBhZGRpbmctdG9wOiAxcHg7IGNvbG9yOiByZ2IoMTg3LCAxOTIsIDE5Nik7IH0KCi5z
+LWlucHV0OjotbXMtY2xlYXIsIC5zLXRleHRhcmVhOjotbXMtY2xlYXIgeyBkaXNwbGF5OiBub25l
+OyB9CgpmaWVsZHNldCB7IG1pbi13aWR0aDogMHB4OyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5n
+LXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMHB4OyBib3Jk
+ZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBib3JkZXItYm90dG9t
+LXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJvcmRlci1zdHlsZTogaW5pdGlh
+bDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IH0KCi5zLWxh
+YmVsIHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMnB4OyBwYWRkaW5nLWJvdHRv
+bTogMHB4OyBwYWRkaW5nLWxlZnQ6IDJweDsgY29sb3I6IHJnYigxMiwgMTMsIDE0KTsgZm9udC1m
+YW1pbHk6IGluaGVyaXQ7IGZvbnQtc2l6ZTogMS4xNTM4NDYxNXJlbTsgZm9udC13ZWlnaHQ6IDcw
+MDsgY3Vyc29yOiBwb2ludGVyOyB9CgpsZWdlbmQucy1sYWJlbCB7IGN1cnNvcjogZGVmYXVsdDsg
+fQoKLnMtbGFiZWwtLXN0YXR1cyB7IG1hcmdpbi1sZWZ0OiA0cHg7IHBhZGRpbmctdG9wOiAycHg7
+IHBhZGRpbmctcmlnaHQ6IDhweDsgcGFkZGluZy1ib3R0b206IDJweDsgcGFkZGluZy1sZWZ0OiA4
+cHg7IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDdweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6
+IDdweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDdweDsgYm9yZGVyLWJvdHRvbS1sZWZ0
+LXJhZGl1czogN3B4OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM5LCAyNDAsIDI0MSk7IGNvbG9y
+OiByZ2IoMTA2LCAxMTUsIDEyNCk7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1zdHlsZTogaXRhbGlj
+OyBmb250LXdlaWdodDogNDAwOyB2ZXJ0aWNhbC1hbGlnbjogdGV4dC1ib3R0b207IH0KCi5zLWxh
+YmVsLS1zdGF0dXMucy1sYWJlbC0tc3RhdHVzX19yZXF1aXJlZCB7IGJhY2tncm91bmQtY29sb3I6
+IHJnYigyMjAsIDYxLCA3Nik7IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5zLWRlc2Ny
+aXB0aW9uIHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMnB4OyBwYWRkaW5nLWJv
+dHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDJweDsgY29sb3I6IHJnYigxMDYsIDExNSwgMTI0KTsg
+Zm9udC1zaXplOiAxMnB4OyB9Cgoucy1pbnB1dC1maWxsIHsgcGFkZGluZy10b3A6IDAuN2VtOyBw
+YWRkaW5nLXJpZ2h0OiAwLjdlbTsgcGFkZGluZy1ib3R0b206IDAuN2VtOyBwYWRkaW5nLWxlZnQ6
+IDAuN2VtOyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsg
+Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRl
+ci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10
+b3AtY29sb3I6IHJnYigxODcsIDE5MiwgMTk2KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTg3
+LCAxOTIsIDE5Nik7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxODcsIDE5MiwgMTk2KTsgYm9y
+ZGVyLWxlZnQtY29sb3I6IHJnYigxODcsIDE5MiwgMTk2KTsgYm9yZGVyLWltYWdlOiBpbml0aWFs
+OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweDsgYmFja2dy
+b3VuZC1jb2xvcjogcmdiKDIzOSwgMjQwLCAyNDEpOyBjb2xvcjogcmdiKDU5LCA2NCwgNjkpOyBm
+b250LWZhbWlseTogaW5oZXJpdDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEu
+MDIzNjY4NjQ7IH0KCi5zLWlucHV0LWZpbGwucy1pbnB1dC1maWxsX19jbGVhciB7IGJvcmRlci10
+b3AtY29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXItcmlnaHQtY29sb3I6IHRyYW5zcGFyZW50OyBi
+b3JkZXItYm90dG9tLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWxlZnQtY29sb3I6IHRyYW5z
+cGFyZW50OyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgfQoKLnMtaW5wdXQtZmlsbC5v
+cmRlci1maXJzdCB7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10b3AtbGVmdC1yYWRp
+dXM6IDNweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogM3B4OyB9Cgoucy1pbnB1dC1maWxs
+Lm9yZGVyLWxhc3QgeyBib3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1yaWdodC1y
+YWRpdXM6IDNweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDNweDsgfQoKLnMtc2VsZWN0
+IHsgcG9zaXRpb246IHJlbGF0aXZlOyB9Cgoucy1zZWxlY3Q6OmJlZm9yZSwgLnMtc2VsZWN0Ojph
+ZnRlciB7IGNvbnRlbnQ6ICcnOyBwb3NpdGlvbjogYWJzb2x1dGU7IHotaW5kZXg6IDI1OyByaWdo
+dDogMTNweDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDU5LCA2NCwgNjkpOyBib3JkZXItcmlnaHQt
+Y29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoNTksIDY0LCA2OSk7
+IGJvcmRlci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7
+IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBi
+b3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3Atd2lkdGg6IDRweDsgYm9yZGVyLXJp
+Z2h0LXdpZHRoOiA0cHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDRweDsgYm9yZGVyLWxlZnQtd2lk
+dGg6IDRweDsgcG9pbnRlci1ldmVudHM6IG5vbmU7IH0KCi5zLXNlbGVjdDo6YmVmb3JlIHsgYm9y
+ZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiA0cHg7IH0KCi5zLXNlbGVj
+dDo6YWZ0ZXIgeyBib3JkZXItdG9wLXdpZHRoOiA0cHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDBw
+eDsgfQoKLnMtc2VsZWN0ID4gc2VsZWN0IHsgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lOyBwb3Np
+dGlvbjogcmVsYXRpdmU7IHdpZHRoOiAxMDAlOyBoZWlnaHQ6IDEwMCU7IHBhZGRpbmctdG9wOiAw
+LjdlbTsgcGFkZGluZy1ib3R0b206IDAuN2VtOyBwYWRkaW5nLWxlZnQ6IDAuN2VtOyBwYWRkaW5n
+LXJpZ2h0OiAzMnB4OyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDog
+MXB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJv
+cmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3JkZXIt
+Ym90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItdG9w
+LWNvbG9yOiByZ2IoMTg3LCAxOTIsIDE5Nik7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDE4Nywg
+MTkyLCAxOTYpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMTg3LCAxOTIsIDE5Nik7IGJvcmRl
+ci1sZWZ0LWNvbG9yOiByZ2IoMTg3LCAxOTIsIDE5Nik7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsg
+Ym9yZGVyLXRvcC1sZWZ0LXJhZGl1czogM3B4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogM3B4
+OyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogM3B4OyBib3JkZXItYm90dG9tLWxlZnQtcmFk
+aXVzOiAzcHg7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgb3V0bGluZS13
+aWR0aDogMHB4OyBvdXRsaW5lLXN0eWxlOiBpbml0aWFsOyBvdXRsaW5lLWNvbG9yOiBpbml0aWFs
+OyBmb250LXNpemU6IDEzcHg7IGZvbnQtZmFtaWx5OiBpbmhlcml0OyBsaW5lLWhlaWdodDogMS4w
+MjM2Njg2NDsgfQoKLnMtc2VsZWN0ID4gc2VsZWN0OjotbW96LWZvY3VzLWlubmVyIHsgb3V0bGlu
+ZS1zdHlsZTogbm9uZSAhaW1wb3J0YW50OyBvdXRsaW5lLXdpZHRoOiBpbml0aWFsICFpbXBvcnRh
+bnQ7IG91dGxpbmUtY29sb3I6IGluaXRpYWwgIWltcG9ydGFudDsgfQoKLnMtc2VsZWN0ID4gc2Vs
+ZWN0OjotbXMtZXhwYW5kIHsgZGlzcGxheTogbm9uZTsgfQoKLnMtY2hlY2tib3hbZGlzYWJsZWRd
+LCAucy1yYWRpb1tkaXNhYmxlZF0geyBvcGFjaXR5OiAwLjU7IGN1cnNvcjogbm90LWFsbG93ZWQ7
+IH0KCi5zLWlucHV0OmZvY3VzLCAucy1pbnB1dC5oYXMtZm9jdXMsIC5zLXRleHRhcmVhOmZvY3Vz
+LCAucy1zZWxlY3QgPiBzZWxlY3Q6Zm9jdXMgeyBwb3NpdGlvbjogcmVsYXRpdmU7IGJvcmRlci10
+b3AtY29sb3I6IHJnYigxMDIsIDE5MSwgMjU1KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTAy
+LCAxOTEsIDI1NSk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxMDIsIDE5MSwgMjU1KTsgYm9y
+ZGVyLWxlZnQtY29sb3I6IHJnYigxMDIsIDE5MSwgMjU1KTsgYm94LXNoYWRvdzogcmdiKDIzOSwg
+MjQwLCAyNDEpIDBweCAwcHggNHB4IGluc2V0LCByZ2JhKDAsIDE0OSwgMjU1LCAwLjE0ODQzOCkg
+MHB4IDBweCAwcHggNHB4OyBvdXRsaW5lLXdpZHRoOiAwcHg7IG91dGxpbmUtc3R5bGU6IGluaXRp
+YWw7IG91dGxpbmUtY29sb3I6IGluaXRpYWw7IH0KCi5zLWlucHV0W2Rpc2FibGVkXSwgLnMtdGV4
+dGFyZWFbZGlzYWJsZWRdLCAucy1zZWxlY3QgPiBzZWxlY3RbZGlzYWJsZWRdLCAucy1pbnB1dFty
+ZWFkLW9ubHldLCAucy10ZXh0YXJlYVtyZWFkLW9ubHldLCAucy1zZWxlY3QgPiBzZWxlY3RbcmVh
+ZC1vbmx5XSB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMjgsIDIzMCwgMjMyKTsgYm9yZGVyLXJp
+Z2h0LWNvbG9yOiByZ2IoMjI4LCAyMzAsIDIzMik7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigy
+MjgsIDIzMCwgMjMyKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMjgsIDIzMCwgMjMyKTsgYmFj
+a2dyb3VuZC1jb2xvcjogcmdiKDIzOSwgMjQwLCAyNDEpOyBib3gtc2hhZG93OiByZ2JhKDE0NSwg
+MTUzLCAxNjEsIDAuMDk3NjU2MykgMHB4IDBweCAycHggaW5zZXQ7IGNvbG9yOiByZ2IoMTg3LCAx
+OTIsIDE5Nik7IH0KCi5zLWlucHV0W2Rpc2FibGVkXSwgLnMtdGV4dGFyZWFbZGlzYWJsZWRdLCAu
+cy1zZWxlY3QgPiBzZWxlY3RbZGlzYWJsZWRdIHsgY3Vyc29yOiBub3QtYWxsb3dlZDsgfQoKLmlz
+LWRpc2FibGVkLCAuaGFzLXN1Y2Nlc3MsIC5oYXMtZXJyb3IsIC5oYXMtd2FybmluZyB7IHBvc2l0
+aW9uOiByZWxhdGl2ZTsgfQoKLmlzLWRpc2FibGVkIC5zLWlucHV0LCAuaGFzLXN1Y2Nlc3MgLnMt
+aW5wdXQsIC5oYXMtZXJyb3IgLnMtaW5wdXQsIC5oYXMtd2FybmluZyAucy1pbnB1dCB7IHBhZGRp
+bmctcmlnaHQ6IDMycHg7IH0KCi5pcy1kaXNhYmxlZCAucy1zZWxlY3QgLnMtaW5wdXQtaWNvbiwg
+Lmhhcy1zdWNjZXNzIC5zLXNlbGVjdCAucy1pbnB1dC1pY29uLCAuaGFzLWVycm9yIC5zLXNlbGVj
+dCAucy1pbnB1dC1pY29uLCAuaGFzLXdhcm5pbmcgLnMtc2VsZWN0IC5zLWlucHV0LWljb24geyBy
+aWdodDogMzJweDsgfQoKLmlzLWRpc2FibGVkIC5zLXRleHRhcmVhLCAuaGFzLXN1Y2Nlc3MgLnMt
+dGV4dGFyZWEsIC5oYXMtZXJyb3IgLnMtdGV4dGFyZWEsIC5oYXMtd2FybmluZyAucy10ZXh0YXJl
+YSB7IHBhZGRpbmctcmlnaHQ6IDQ4cHg7IH0KCi5pcy1kaXNhYmxlZCAucy10ZXh0YXJlYSB+IC5z
+LWlucHV0LWljb24sIC5oYXMtc3VjY2VzcyAucy10ZXh0YXJlYSB+IC5zLWlucHV0LWljb24sIC5o
+YXMtZXJyb3IgLnMtdGV4dGFyZWEgfiAucy1pbnB1dC1pY29uLCAuaGFzLXdhcm5pbmcgLnMtdGV4
+dGFyZWEgfiAucy1pbnB1dC1pY29uIHsgdG9wOiAxLjVlbTsgfQoKLmlzLWRpc2FibGVkIC5zLWlu
+cHV0LW1lc3NhZ2UgYSwgLmhhcy1zdWNjZXNzIC5zLWlucHV0LW1lc3NhZ2UgYSwgLmhhcy1lcnJv
+ciAucy1pbnB1dC1tZXNzYWdlIGEsIC5oYXMtd2FybmluZyAucy1pbnB1dC1tZXNzYWdlIGEgeyB0
+ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsgfQoKLmhhcy13YXJuaW5nIC5zLWlucHV0LCAuaGFz
+LXdhcm5pbmcgLnMtdGV4dGFyZWEsIC5oYXMtd2FybmluZyAucy1jaGVja2JveCwgLmhhcy13YXJu
+aW5nIC5zLXJhZGlvOm5vdCg6Y2hlY2tlZCksIC5oYXMtd2FybmluZyAucy1zZWxlY3QgPiBzZWxl
+Y3QgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjIwLCAxNzYsIDApOyBib3JkZXItcmlnaHQtY29s
+b3I6IHJnYigyMjAsIDE3NiwgMCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMjAsIDE3Niwg
+MCk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjIwLCAxNzYsIDApOyB9CgouaGFzLXdhcm5pbmcg
+LnMtaW5wdXQ6Zm9jdXMsIC5oYXMtd2FybmluZyAucy10ZXh0YXJlYTpmb2N1cywgLmhhcy13YXJu
+aW5nIC5zLWNoZWNrYm94OmZvY3VzLCAuaGFzLXdhcm5pbmcgLnMtcmFkaW86bm90KDpjaGVja2Vk
+KTpmb2N1cywgLmhhcy13YXJuaW5nIC5zLXNlbGVjdCA+IHNlbGVjdDpmb2N1cyB7IGJveC1zaGFk
+b3c6IHJnYigyMzksIDI0MCwgMjQxKSAwcHggMHB4IDRweCAwcHggaW5zZXQsIHJnYmEoMjU1LCAy
+MDcsIDE2LCAwLjM5ODQzOCkgMHB4IDBweCAwcHggNHB4OyB9CgouaGFzLXdhcm5pbmcgLnMtaW5w
+dXQtbWVzc2FnZSB7IGNvbG9yOiByZ2IoMTE4LCA5NCwgMCk7IH0KCi5oYXMtd2FybmluZyAucy1p
+bnB1dC1tZXNzYWdlIGEgeyBjb2xvcjogcmdiKDY3LCA1NCwgMCk7IH0KCi5oYXMtd2FybmluZyAu
+cy1pbnB1dC1tZXNzYWdlIGE6aG92ZXIgeyBjb2xvcjogcmdiKDE2LCAxMywgMCk7IH0KCi5oYXMt
+d2FybmluZyAucy1pbnB1dC1pY29uIHsgY29sb3I6IHJnYigyMjAsIDE3NiwgMCk7IH0KCi5oYXMt
+ZXJyb3IgLnMtaW5wdXQsIC5oYXMtZXJyb3IgLnMtdGV4dGFyZWEsIC5oYXMtZXJyb3IgLnMtY2hl
+Y2tib3gsIC5oYXMtZXJyb3IgLnMtcmFkaW86bm90KDpjaGVja2VkKSwgLmhhcy1lcnJvciAucy1z
+ZWxlY3QgPiBzZWxlY3QgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjIwLCA2MSwgNzYpOyBib3Jk
+ZXItcmlnaHQtY29sb3I6IHJnYigyMjAsIDYxLCA3Nik7IGJvcmRlci1ib3R0b20tY29sb3I6IHJn
+YigyMjAsIDYxLCA3Nik7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjIwLCA2MSwgNzYpOyB9Cgou
+aGFzLWVycm9yIC5zLWlucHV0OmZvY3VzLCAuaGFzLWVycm9yIC5zLXRleHRhcmVhOmZvY3VzLCAu
+aGFzLWVycm9yIC5zLWNoZWNrYm94OmZvY3VzLCAuaGFzLWVycm9yIC5zLXJhZGlvOm5vdCg6Y2hl
+Y2tlZCk6Zm9jdXMsIC5oYXMtZXJyb3IgLnMtc2VsZWN0ID4gc2VsZWN0OmZvY3VzIHsgYm94LXNo
+YWRvdzogcmdiKDIzOSwgMjQwLCAyNDEpIDBweCAwcHggNHB4IDBweCBpbnNldCwgcmdiYSgyMjks
+IDE1NCwgMTYxLCAwLjM5ODQzOCkgMHB4IDBweCAwcHggNHB4OyB9CgouaGFzLWVycm9yIC5zLWlu
+cHV0LW1lc3NhZ2UgeyBjb2xvcjogcmdiKDIwMSwgMjksIDQ2KTsgfQoKLmhhcy1lcnJvciAucy1p
+bnB1dC1tZXNzYWdlIGEgeyBjb2xvcjogcmdiKDY3LCAxMCwgMTUpOyB9CgouaGFzLWVycm9yIC5z
+LWlucHV0LW1lc3NhZ2UgYTpob3ZlciB7IGNvbG9yOiByZ2IoMjMsIDMsIDUpOyB9CgouaGFzLWVy
+cm9yIC5zLWlucHV0LWljb24geyBjb2xvcjogcmdiKDIyMCwgNjEsIDc2KTsgfQoKLmhhcy1zdWNj
+ZXNzIC5zLWlucHV0LCAuaGFzLXN1Y2Nlc3MgLnMtdGV4dGFyZWEsIC5oYXMtc3VjY2VzcyAucy1j
+aGVja2JveCwgLmhhcy1zdWNjZXNzIC5zLXJhZGlvOm5vdCg6Y2hlY2tlZCksIC5oYXMtc3VjY2Vz
+cyAucy1zZWxlY3QgPiBzZWxlY3QgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoOTUsIDE4NiwgMTI1
+KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoOTUsIDE4NiwgMTI1KTsgYm9yZGVyLWJvdHRvbS1j
+b2xvcjogcmdiKDk1LCAxODYsIDEyNSk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoOTUsIDE4Niwg
+MTI1KTsgfQoKLmhhcy1zdWNjZXNzIC5zLWlucHV0OmZvY3VzLCAuaGFzLXN1Y2Nlc3MgLnMtdGV4
+dGFyZWE6Zm9jdXMsIC5oYXMtc3VjY2VzcyAucy1jaGVja2JveDpmb2N1cywgLmhhcy1zdWNjZXNz
+IC5zLXJhZGlvOm5vdCg6Y2hlY2tlZCk6Zm9jdXMsIC5oYXMtc3VjY2VzcyAucy1zZWxlY3QgPiBz
+ZWxlY3Q6Zm9jdXMgeyBib3gtc2hhZG93OiByZ2IoMjM5LCAyNDAsIDI0MSkgMHB4IDBweCA0cHgg
+MHB4IGluc2V0LCByZ2JhKDE2NiwgMjE3LCAxODMsIDAuMzk4NDM4KSAwcHggMHB4IDBweCA0cHg7
+IH0KCi5oYXMtc3VjY2VzcyAucy1pbnB1dC1tZXNzYWdlIHsgY29sb3I6IHJnYig2MSwgMTQzLCA4
+OCk7IH0KCi5oYXMtc3VjY2VzcyAucy1pbnB1dC1tZXNzYWdlIGEgeyBjb2xvcjogcmdiKDIzLCA1
+NCwgMzMpOyB9CgouaGFzLXN1Y2Nlc3MgLnMtaW5wdXQtbWVzc2FnZSBhOmhvdmVyIHsgY29sb3I6
+IHJnYig4LCAxOCwgMTEpOyB9CgouaGFzLXN1Y2Nlc3MgLnMtaW5wdXQtaWNvbiB7IGNvbG9yOiBy
+Z2IoOTUsIDE4NiwgMTI1KTsgfQoKLmlzLWRpc2FibGVkIC5zLXNlbGVjdDo6YmVmb3JlLCAuaXMt
+ZGlzYWJsZWQgLnMtc2VsZWN0OjphZnRlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigxODcsIDE5
+MiwgMTk2KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRvbS1j
+b2xvcjogcmdiKDE4NywgMTkyLCAxOTYpOyBib3JkZXItbGVmdC1jb2xvcjogdHJhbnNwYXJlbnQ7
+IH0KCi5pcy1kaXNhYmxlZCAucy1sYWJlbCwgLmlzLWRpc2FibGVkIC5zLWRlc2NyaXB0aW9uIHsg
+b3BhY2l0eTogMC41OyB9CgouaXMtZGlzYWJsZWQgLnMtaW5wdXQtaWNvbiB7IGNvbG9yOiByZ2Io
+MTg3LCAxOTIsIDE5Nik7IH0KCi5pcy1kaXNhYmxlZCAucy1sYWJlbCB7IGN1cnNvcjogbm90LWFs
+bG93ZWQ7IH0KCi5zLWlucHV0LWljb24geyBwb3NpdGlvbjogYWJzb2x1dGU7IHRvcDogNTAlOyBy
+aWdodDogMC44ZW07IG1hcmdpbi10b3A6IC0wLjY5ZW07IHZlcnRpY2FsLWFsaWduOiB0ZXh0LWJv
+dHRvbSAhaW1wb3J0YW50OyBwb2ludGVyLWV2ZW50czogbm9uZTsgfQoKLnMtaW5wdXQtbWVzc2Fn
+ZSB7IHBhZGRpbmctdG9wOiAycHg7IHBhZGRpbmctcmlnaHQ6IDJweDsgcGFkZGluZy1ib3R0b206
+IDJweDsgcGFkZGluZy1sZWZ0OiAycHg7IGZvbnQtc2l6ZTogMTJweDsgfQoKLnMtaW5wdXRfX3Nt
+LCAucy10ZXh0YXJlYV9fc20sIC5zLWxhYmVsX19zbSwgLnMtc2VsZWN0X19zbSA+IHNlbGVjdCB7
+IGZvbnQtc2l6ZTogMTJweDsgbGluZS1oZWlnaHQ6IDEuMDI1NjQxMDM7IH0KCi5zLWlucHV0X19t
+ZCwgLnMtdGV4dGFyZWFfX21kLCAucy1sYWJlbF9fbWQsIC5zLXNlbGVjdF9fbWQgPiBzZWxlY3Qg
+eyBmb250LXNpemU6IDEuMzA3NjkyMzFyZW07IGxpbmUtaGVpZ2h0OiAxLjIzNTI5NDEyOyB9Cgou
+cy1pbnB1dF9fbGcsIC5zLXRleHRhcmVhX19sZywgLnMtbGFiZWxfX2xnLCAucy1zZWxlY3RfX2xn
+ID4gc2VsZWN0IHsgZm9udC1zaXplOiAxLjYxNTM4NDYycmVtOyBsaW5lLWhlaWdodDogMS4xOTA0
+NzYxOTsgfQoKLnMtaW5wdXRfX3hsLCAucy10ZXh0YXJlYV9feGwsIC5zLWxhYmVsX194bCwgLnMt
+c2VsZWN0X194bCA+IHNlbGVjdCB7IGZvbnQtc2l6ZTogMi4wNzY5MjMwOHJlbTsgbGluZS1oZWln
+aHQ6IDEuMTQ4MTQ4MTU7IH0KCi5zLWlucHV0X19tZCwgLnMtdGV4dGFyZWFfX21kLCAucy1zZWxl
+Y3RfX21kID4gc2VsZWN0IHsgcGFkZGluZy10b3A6IDAuNWVtOyBwYWRkaW5nLWJvdHRvbTogMC41
+ZW07IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDRweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6
+IDRweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDRweDsgYm9yZGVyLWJvdHRvbS1sZWZ0
+LXJhZGl1czogNHB4OyB9Cgoucy1pbnB1dF9fbGcsIC5zLXRleHRhcmVhX19sZywgLnMtc2VsZWN0
+X19sZyA+IHNlbGVjdCB7IHBhZGRpbmctdG9wOiAwLjQ1ZW07IHBhZGRpbmctcmlnaHQ6IDAuNmVt
+OyBwYWRkaW5nLWJvdHRvbTogMC40NWVtOyBwYWRkaW5nLWxlZnQ6IDAuNmVtOyBib3JkZXItdG9w
+LWxlZnQtcmFkaXVzOiA0cHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiA0cHg7IGJvcmRlci1i
+b3R0b20tcmlnaHQtcmFkaXVzOiA0cHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDRweDsg
+fQoKLnMtaW5wdXRfX3hsLCAucy10ZXh0YXJlYV9feGwsIC5zLXNlbGVjdF9feGwgPiBzZWxlY3Qg
+eyBwYWRkaW5nLXRvcDogMC40ZW07IHBhZGRpbmctcmlnaHQ6IDAuNWVtOyBwYWRkaW5nLWJvdHRv
+bTogMC40ZW07IHBhZGRpbmctbGVmdDogMC41ZW07IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDVw
+eDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDVweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRp
+dXM6IDVweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogNXB4OyB9Cgoucy1tb2RhbCB7IGRp
+c3BsYXk6IC13ZWJraXQtYm94OyB2aXNpYmlsaXR5OiBoaWRkZW47IHBvc2l0aW9uOiBmaXhlZDsg
+ei1pbmRleDogLTE7IHRvcDogMHB4OyByaWdodDogMHB4OyBib3R0b206IDBweDsgbGVmdDogMHB4
+OyAtd2Via2l0LWFsaWduLWl0ZW1zOiBjZW50ZXI7IC13ZWJraXQtanVzdGlmeS1jb250ZW50OiBj
+ZW50ZXI7IGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTIsIDEzLCAxNCwgMC40OTYwOTQpOyBvcGFj
+aXR5OiAwOyAtd2Via2l0LXRyYW5zaXRpb24tcHJvcGVydHk6IG9wYWNpdHksIHotaW5kZXgsIHZp
+c2liaWxpdHk7IC13ZWJraXQtdHJhbnNpdGlvbi1kdXJhdGlvbjogMTAwbXMsIDBzLCAwczsgLXdl
+YmtpdC10cmFuc2l0aW9uLXRpbWluZy1mdW5jdGlvbjogY3ViaWMtYmV6aWVyKDAuMTY1LCAwLjg0
+LCAwLjQ0LCAxKSwgaW5pdGlhbCwgaW5pdGlhbDsgLXdlYmtpdC10cmFuc2l0aW9uLWRlbGF5OiAw
+cywgMTAwbXMsIDEwMG1zOyB9Cgoucy1tb2RhbFthcmlhLWhpZGRlbj0iZmFsc2UiXSwgLnMtbW9k
+YWxbYXJpYS1oaWRkZW49ImZhbHNlIl0gLnMtbW9kYWwtLWRpYWxvZyB7IHZpc2liaWxpdHk6IHZp
+c2libGU7IHotaW5kZXg6IDkwMDA7IG9wYWNpdHk6IDE7IH0KCi5zLW1vZGFsLS1kaWFsb2cgeyBv
+dmVyZmxvdy15OiBhdXRvOyB2aXNpYmlsaXR5OiBoaWRkZW47IHBvc2l0aW9uOiBmaXhlZDsgei1p
+bmRleDogLTE7IG1heC13aWR0aDogNjAwcHg7IG1heC1oZWlnaHQ6IDEwMCU7IHBhZGRpbmctdG9w
+OiAyNHB4OyBwYWRkaW5nLXJpZ2h0OiAyNHB4OyBwYWRkaW5nLWJvdHRvbTogMjRweDsgcGFkZGlu
+Zy1sZWZ0OiAyNHB4OyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiA3cHg7IGJvcmRlci10b3Atcmln
+aHQtcmFkaXVzOiA3cHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiA3cHg7IGJvcmRlci1i
+b3R0b20tbGVmdC1yYWRpdXM6IDdweDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAy
+NTUpOyBib3gtc2hhZG93OiByZ2JhKDM2LCAzOSwgNDEsIDAuMTk5MjE5KSAwcHggNHB4IDEycHg7
+IG9wYWNpdHk6IDA7IH0KCi5zLW1vZGFsW2FyaWEtaGlkZGVuPSJmYWxzZSJdIC5zLW1vZGFsLS1k
+aWFsb2cgeyB9CgpAbWVkaWEgc2NyZWVuIGFuZCAoLW1zLWhpZ2gtY29udHJhc3QpLCAoLW1zLWhp
+Z2gtY29udHJhc3Q6IG5vbmUpIHsgCiAgLnMtbW9kYWwtLWRpYWxvZyB7IHRvcDogNTAlOyBsZWZ0
+OiA1MCU7IH0KICAucy1tb2RhbFthcmlhLWhpZGRlbj0iZmFsc2UiXSAucy1tb2RhbC0tZGlhbG9n
+IHsgfQp9Cgoucy1tb2RhbC0tY2xvc2UgeyBwb3NpdGlvbjogYWJzb2x1dGUgIWltcG9ydGFudDsg
+dG9wOiA4cHg7IHJpZ2h0OiA4cHg7IHBhZGRpbmctdG9wOiAxMnB4ICFpbXBvcnRhbnQ7IHBhZGRp
+bmctcmlnaHQ6IDEycHggIWltcG9ydGFudDsgcGFkZGluZy1ib3R0b206IDEycHggIWltcG9ydGFu
+dDsgcGFkZGluZy1sZWZ0OiAxMnB4ICFpbXBvcnRhbnQ7IH0KCi5zLW1vZGFsLS1jbG9zZSAuc3Zn
+LWljb24geyBtYXJnaW4tdG9wOiAwcHggIWltcG9ydGFudDsgbWFyZ2luLXJpZ2h0OiAwcHggIWlt
+cG9ydGFudDsgbWFyZ2luLWJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7IG1hcmdpbi1sZWZ0OiAwcHgg
+IWltcG9ydGFudDsgfQoKLnMtbW9kYWwtLWhlYWRlciB7IG1hcmdpbi1ib3R0b206IDE2cHg7IGNv
+bG9yOiByZ2IoMTIsIDEzLCAxNCk7IGZvbnQtc2l6ZTogMi4wNzY5MjMwOHJlbTsgfQoKLnMtbW9k
+YWwtLWJvZHkgeyBtYXJnaW4tYm90dG9tOiAyNHB4OyB9Cgoucy1tb2RhbC0tZm9vdGVyIHsgbWFy
+Z2luLXRvcDogMjRweDsgfQoKLnMtbW9kYWwuaGFzLWRhbmdlciB7IGJhY2tncm91bmQtY29sb3I6
+IHJnYmEoMTksIDcsIDgsIDAuNDk2MDk0KTsgfQoKLnMtbW9kYWwuaGFzLWRhbmdlciAucy1tb2Rh
+bC0taGVhZGVyIHsgY29sb3I6IHJnYigyMjAsIDYxLCA3Nik7IH0KCi5zLW1vZGFsX19mdWxsIHsg
+fQoKLnMtcHJvZ3Jlc3MsIC5zLXByb2dyZXNzLS1iYXIgeyBwb3NpdGlvbjogcmVsYXRpdmU7IG1p
+bi1oZWlnaHQ6IDRweDsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogM3B4OyBib3JkZXItdG9wLXJp
+Z2h0LXJhZGl1czogM3B4OyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogM3B4OyBib3JkZXIt
+Ym90dG9tLWxlZnQtcmFkaXVzOiAzcHg7IH0KCi5zLXByb2dyZXNzIHsgd2lkdGg6IDEwMCU7IGJh
+Y2tncm91bmQtY29sb3I6IHJnYigyMTQsIDIxNywgMjIwKTsgfQoKLnMtcHJvZ3Jlc3MtLWJhciB7
+IGJhY2tncm91bmQtY29sb3I6IHJnYig2NiwgMjE1LCAxMTUpOyB9Cgoucy1wcm9ncmVzcy0tbGFi
+ZWwgeyBwb3NpdGlvbjogYWJzb2x1dGU7IHdpZHRoOiAxMDAlOyBoZWlnaHQ6IDEwMCU7IGJvcmRl
+ci10b3AtbGVmdC1yYWRpdXM6IDVweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDVweDsgYm9y
+ZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDVweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czog
+NXB4OyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBib3Jk
+ZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10b3At
+c3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0
+eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItdG9wLWNvbG9yOiB0
+cmFuc3BhcmVudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRv
+bS1jb2xvcjogdHJhbnNwYXJlbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9y
+ZGVyLWltYWdlOiBpbml0aWFsOyBmb250LXNpemU6IDEycHg7IGxpbmUtaGVpZ2h0OiAxOyBjb2xv
+cjogcmdiKDEyLCAxMywgMTQpOyB6LWluZGV4OiAyOyB9Cgoucy1wcm9ncmVzc19fYnJhbmQgLnMt
+cHJvZ3Jlc3MtLWJhciB7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDEyNywgMjUpOyB9Cgou
+cy1wcm9ncmVzc19faW5mbyAucy1wcm9ncmVzcy0tYmFyIHsgYmFja2dyb3VuZC1jb2xvcjogcmdi
+KDAsIDE0OSwgMjU1KTsgfQoKLnMtcHJvZ3Jlc3NfX3ByaXZpbGVnZSAucy1wcm9ncmVzcy0tYmFy
+IHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyMCwgMjQwLCAyMjYpOyB9Cgoucy1wcm9ncmVzc19f
+cHJpdmlsZWdlIC5zLXByb2dyZXNzLS1sYWJlbCB7IGJvcmRlci10b3AtY29sb3I6IHJnYig5NSwg
+MTg2LCAxMjUpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYig5NSwgMTg2LCAxMjUpOyBib3JkZXIt
+Ym90dG9tLWNvbG9yOiByZ2IoOTUsIDE4NiwgMTI1KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig5
+NSwgMTg2LCAxMjUpOyB9Cgoucy1wcm9ncmVzc19fcHJpdmlsZWdlLCAucy1wcm9ncmVzc19fcHJp
+dmlsZWdlIC5zLXByb2dyZXNzLS1iYXIsIC5zLXByb2dyZXNzX19iYWRnZSwgLnMtcHJvZ3Jlc3Nf
+X2JhZGdlIC5zLXByb2dyZXNzLS1iYXIgeyBtaW4taGVpZ2h0OiAyZW07IGJvcmRlci10b3AtbGVm
+dC1yYWRpdXM6IDVweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDVweDsgYm9yZGVyLWJvdHRv
+bS1yaWdodC1yYWRpdXM6IDVweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogNXB4OyB9Cgou
+cy1wcm9ncmVzc19fcHJpdmlsZWdlLCAucy1wcm9ncmVzc19fYmFkZ2UgeyBiYWNrZ3JvdW5kLWNv
+bG9yOiB0cmFuc3BhcmVudDsgfQoKLnMtcHJvZ3Jlc3NfX2dvbGQgLnMtcHJvZ3Jlc3MtLWJhciB7
+IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1MCwgMjMwKTsgfQoKLnMtcHJvZ3Jlc3NfX2dv
+bGQgLnMtcHJvZ3Jlc3MtLWxhYmVsIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDI1NSwgMjA0LCAx
+KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjU1LCAyMDQsIDEpOyBib3JkZXItYm90dG9tLWNv
+bG9yOiByZ2IoMjU1LCAyMDQsIDEpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDI1NSwgMjA0LCAx
+KTsgfQoKLnMtcHJvZ3Jlc3NfX3NpbHZlciAucy1wcm9ncmVzcy0tYmFyIHsgYmFja2dyb3VuZC1j
+b2xvcjogcmdiKDIzNCwgMjM1LCAyMzYpOyB9Cgoucy1wcm9ncmVzc19fc2lsdmVyIC5zLXByb2dy
+ZXNzLS1sYWJlbCB7IGJvcmRlci10b3AtY29sb3I6IHJnYigxODAsIDE4NCwgMTg4KTsgYm9yZGVy
+LXJpZ2h0LWNvbG9yOiByZ2IoMTgwLCAxODQsIDE4OCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJn
+YigxODAsIDE4NCwgMTg4KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigxODAsIDE4NCwgMTg4KTsg
+fQoKLnMtcHJvZ3Jlc3NfX2Jyb256ZSAucy1wcm9ncmVzcy0tYmFyIHsgYmFja2dyb3VuZC1jb2xv
+cjogcmdiKDI0OCwgMjMzLCAyMjEpOyB9Cgoucy1wcm9ncmVzc19fYnJvbnplIC5zLXByb2dyZXNz
+LS1sYWJlbCB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDksIDE2NiwgMTMyKTsgYm9yZGVyLXJp
+Z2h0LWNvbG9yOiByZ2IoMjA5LCAxNjYsIDEzMik7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigy
+MDksIDE2NiwgMTMyKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMDksIDE2NiwgMTMyKTsgfQoK
+LnMtdGFibGUgeyBkaXNwbGF5OiB0YWJsZTsgd2lkdGg6IDEwMCU7IG1heC13aWR0aDogMTAwJTsg
+Ym9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsgLXdlYmtpdC1ib3JkZXItaG9yaXpvbnRhbC1zcGFj
+aW5nOiAwcHg7IC13ZWJraXQtYm9yZGVyLXZlcnRpY2FsLXNwYWNpbmc6IDBweDsgZm9udC1zaXpl
+OiAxM3B4OyB9Cgoucy10YWJsZSB0aCwgLnMtdGFibGUgdGQgeyBwYWRkaW5nLXRvcDogOHB4OyBw
+YWRkaW5nLXJpZ2h0OiA4cHg7IHBhZGRpbmctYm90dG9tOiA4cHg7IHBhZGRpbmctbGVmdDogOHB4
+OyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXIt
+dG9wLWNvbG9yOiByZ2IoMjE0LCAyMTcsIDIyMCk7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJv
+cmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMTQsIDIxNywg
+MjIwKTsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7
+IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIxNCwgMjE3LCAyMjApOyB2ZXJ0aWNhbC1hbGlnbjog
+bWlkZGxlOyBjb2xvcjogcmdiKDU5LCA2NCwgNjkpOyB0ZXh0LWFsaWduOiBsZWZ0OyB9Cgoucy10
+YWJsZSB0aC5zLXRhYmxlLS1idWxrLCAucy10YWJsZSB0ZC5zLXRhYmxlLS1idWxrIHsgd2lkdGg6
+IDMwcHg7IH0KCi5zLXRhYmxlIHRoIC5zLWNoZWNrYm94LCAucy10YWJsZSB0ZCAucy1jaGVja2Jv
+eCB7IGRpc3BsYXk6IGJsb2NrOyB9Cgoucy10YWJsZSB0aCB7IGZvbnQtd2VpZ2h0OiBib2xkOyBj
+b2xvcjogcmdiKDEyLCAxMywgMTQpOyB9Cgoucy10YWJsZSB0aGVhZCB0aCB7IHZlcnRpY2FsLWFs
+aWduOiBib3R0b207IHdoaXRlLXNwYWNlOiBub3dyYXA7IGJhY2tncm91bmQtY29sb3I6IHJnYigy
+NTAsIDI1MCwgMjUxKTsgbGluZS1oZWlnaHQ6IDEuMTUzODQ2MTU7IHRleHQtdHJhbnNmb3JtOiB1
+cHBlcmNhc2U7IGxldHRlci1zcGFjaW5nOiAwLjA1ZW07IH0KCi5zLXRhYmxlIHRoZWFkIHRoOm5v
+dCgucy10YWJsZS0tYnVsaykgeyBmb250LXNpemU6IDExcHg7IH0KCi5zLXRhYmxlIHRib2R5IHRo
+IHsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgfQoKLnMtdGFibGUgdHI6bGFzdC1vZi10eXBlIHRkLCAu
+cy10YWJsZSB0cjpsYXN0LW9mLXR5cGUgdGggeyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJv
+cmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjE0LCAy
+MTcsIDIyMCk7IH0KCi5zLXRhYmxlIHRib2R5ICsgdGJvZHkgeyBib3JkZXItdG9wLXdpZHRoOiAy
+cHg7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjE0LCAy
+MTcsIDIyMCk7IH0KCi5zLXRhYmxlLnZhLXRvcCB0aCwgLnMtdGFibGUudmEtdG9wIHRkIHsgdmVy
+dGljYWwtYWxpZ246IHRvcDsgfQoKLnMtdGFibGUudmEtbWlkZGxlIHRoLCAucy10YWJsZS52YS1t
+aWRkbGUgdGQgeyB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyB9Cgoucy10YWJsZS52YS1ib3R0b20g
+dGgsIC5zLXRhYmxlLnZhLWJvdHRvbSB0ZCB7IHZlcnRpY2FsLWFsaWduOiBib3R0b207IH0KCi5z
+LXRhYmxlLnRhLWxlZnQgdGgsIC5zLXRhYmxlLnRhLWxlZnQgdGQgeyB0ZXh0LWFsaWduOiBsZWZ0
+OyB9Cgoucy10YWJsZS50YS1jZW50ZXIgdGgsIC5zLXRhYmxlLnRhLWNlbnRlciB0ZCB7IHRleHQt
+YWxpZ246IGNlbnRlcjsgfQoKLnMtdGFibGUudGEtcmlnaHQgdGgsIC5zLXRhYmxlLnRhLXJpZ2h0
+IHRkIHsgdGV4dC1hbGlnbjogcmlnaHQ7IH0KCi5zLXRhYmxlLnRhLWp1c3RpZnkgdGgsIC5zLXRh
+YmxlLnRhLWp1c3RpZnkgdGQgeyB0ZXh0LWFsaWduOiBqdXN0aWZ5OyB9Cgoucy10YWJsZS5zLXRh
+YmxlX19zdHJpcGVzIHRoZWFkIHRoIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NCwgMjQ1LCAy
+NDYpOyB9Cgoucy10YWJsZS5zLXRhYmxlX19zdHJpcGVzIHRib2R5IHRyOm50aC1jaGlsZChldmVu
+KSB7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTAsIDI1MCwgMjUxKTsgfQoKLnMtdGFibGUucy10
+YWJsZV9fc20gdGgsIC5zLXRhYmxlLnMtdGFibGVfX3NtIHRkIHsgcGFkZGluZy10b3A6IDRweDsg
+cGFkZGluZy1yaWdodDogNHB4OyBwYWRkaW5nLWJvdHRvbTogNHB4OyBwYWRkaW5nLWxlZnQ6IDRw
+eDsgfQoKLnMtdGFibGUucy10YWJsZV9fbGcgdGgsIC5zLXRhYmxlLnMtdGFibGVfX2xnIHRkIHsg
+cGFkZGluZy10b3A6IDEycHg7IHBhZGRpbmctcmlnaHQ6IDEycHg7IHBhZGRpbmctYm90dG9tOiAx
+MnB4OyBwYWRkaW5nLWxlZnQ6IDEycHg7IH0KCi5zLXRhYmxlLnMtdGFibGVfX2IwIHRoLCAucy10
+YWJsZS5zLXRhYmxlX19iMCB0ZCwgLnMtdGFibGUucy10YWJsZV9fYjAgdHI6bGFzdC1vZi10eXBl
+IHRoLCAucy10YWJsZS5zLXRhYmxlX19iMCB0cjpsYXN0LW9mLXR5cGUgdGQgeyBib3JkZXItdG9w
+LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9y
+ZGVyLWJvdHRvbS1jb2xvcjogdHJhbnNwYXJlbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiB0cmFuc3Bh
+cmVudDsgfQoKLnMtdGFibGUucy10YWJsZV9fYjAgdGhlYWQgdGggeyBiYWNrZ3JvdW5kLWNvbG9y
+OiB0cmFuc3BhcmVudDsgdGV4dC10cmFuc2Zvcm06IGluaXRpYWw7IGZvbnQtc2l6ZTogaW5oZXJp
+dDsgbGV0dGVyLXNwYWNpbmc6IGluaXRpYWw7IH0KCi5zLXRhYmxlLnMtdGFibGVfX2IwIHRib2R5
+ICsgdGJvZHkgeyBib3JkZXItdG9wLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXJpZ2h0LWNv
+bG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogdHJhbnNwYXJlbnQ7IGJvcmRl
+ci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXRvcC13aWR0aDogMTJweDsgYm9yZGVy
+LXJpZ2h0LXdpZHRoOiAxMnB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAxMnB4OyBib3JkZXItbGVm
+dC13aWR0aDogMTJweDsgfQoKLnMtdGFibGUucy10YWJsZV9fYnggdHIgPiA6bm90KDpmaXJzdC1j
+aGlsZCkgeyBib3JkZXItbGVmdC1jb2xvcjogdHJhbnNwYXJlbnQ7IH0KCi5zLXRhYmxlLnMtdGFi
+bGVfX2J4IHRyID4gOm5vdCg6bGFzdC1jaGlsZCkgeyBib3JkZXItcmlnaHQtY29sb3I6IHRyYW5z
+cGFyZW50OyB9Cgoucy10YWJsZS5zLXRhYmxlX19ieC1zaW1wbGUgdGgsIC5zLXRhYmxlLnMtdGFi
+bGVfX2J4LXNpbXBsZSB0ZCB7IGJvcmRlci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVy
+LXJpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgfQoKLnMtdGFibGUucy10YWJsZV9fYngtc2ltcGxl
+IHRoZWFkIHRoIHsgYm9yZGVyLXRvcC1jb2xvcjogdHJhbnNwYXJlbnQ7IGJvcmRlci1ib3R0b20t
+Y29sb3I6IHJnYigxODcsIDE5MiwgMTk2KTsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7
+IHRleHQtdHJhbnNmb3JtOiBpbml0aWFsOyBmb250LXNpemU6IGluaGVyaXQ7IGxldHRlci1zcGFj
+aW5nOiBpbml0aWFsOyB9Cgoucy10YWJsZS5zLXRhYmxlX19ieC1zaW1wbGUgdGJvZHkgdHI6Zmly
+c3Qtb2YtdHlwZSB0aCwgLnMtdGFibGUucy10YWJsZV9fYngtc2ltcGxlIHRib2R5IHRyOmZpcnN0
+LW9mLXR5cGUgdGQgeyBib3JkZXItdG9wLWNvbG9yOiB0cmFuc3BhcmVudDsgfQoKLnMtdGFibGUu
+cy10YWJsZV9fYngtc2ltcGxlIHRib2R5IHRyOmxhc3Qtb2YtdHlwZSB0aCwgLnMtdGFibGUucy10
+YWJsZV9fYngtc2ltcGxlIHRib2R5IHRyOmxhc3Qtb2YtdHlwZSB0ZCB7IGJvcmRlci1ib3R0b20t
+Y29sb3I6IHRyYW5zcGFyZW50OyB9Cgoucy10YWJsZS5zLXRhYmxlX19ieC1zaW1wbGUgdGZvb3Qg
+dGgsIC5zLXRhYmxlLnMtdGFibGVfX2J4LXNpbXBsZSB0Zm9vdCB0ZCB7IGJvcmRlci1ib3R0b20t
+Y29sb3I6IHRyYW5zcGFyZW50OyB9Cgoucy10YWJsZSAucy10YWJsZS0tdG90YWxzIHRoLCAucy10
+YWJsZSAucy10YWJsZS0tdG90YWxzIHRkIHsgcGFkZGluZy10b3A6IDEycHg7IGZvbnQtc2l6ZTog
+MS40NjE1Mzg0NnJlbTsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0KCi5zLXRhYmxlLnMtdGFibGVfX3Nv
+cnRhYmxlIHRoZWFkIHRoIHsgY29sb3I6IHJnYigxMDYsIDExNSwgMTI0KTsgY3Vyc29yOiBwb2lu
+dGVyOyB9Cgoucy10YWJsZS5zLXRhYmxlX19zb3J0YWJsZSB0aGVhZCB0aCBhIHsgY29sb3I6IGlu
+aGVyaXQ7IH0KCi5zLXRhYmxlLnMtdGFibGVfX3NvcnRhYmxlIHRoZWFkIHRoIC5zdmctaWNvbiB7
+IHBvc2l0aW9uOiByZWxhdGl2ZTsgYm90dG9tOiAtMXB4OyB9Cgoucy10YWJsZS5zLXRhYmxlX19z
+b3J0YWJsZSB0aGVhZCB0aC5pcy1zb3J0ZWQgeyBjb2xvcjogcmdiKDEyLCAxMywgMTQpOyB9Cgou
+cy10YWJsZSB0ZC5zLXRhYmxlLS1wcm9ncmVzcyB7IGJvcmRlci1yaWdodC1zdHlsZTogbm9uZTsg
+Ym9yZGVyLXJpZ2h0LXdpZHRoOiBpbml0aWFsOyBib3JkZXItcmlnaHQtY29sb3I6IGluaXRpYWw7
+IHRleHQtYWxpZ246IHJpZ2h0OyB9Cgoucy10YWJsZSB0ZC5zLXRhYmxlLS1wcm9ncmVzcy1iYXIg
+eyBib3JkZXItbGVmdC1zdHlsZTogbm9uZTsgYm9yZGVyLWxlZnQtd2lkdGg6IGluaXRpYWw7IGJv
+cmRlci1sZWZ0LWNvbG9yOiBpbml0aWFsOyBwYWRkaW5nLWxlZnQ6IDBweDsgd2lkdGg6IDEyMHB4
+OyB9Cgoucy10YWJsZS0tY2VsbDEgeyB3aWR0aDogOC4zMzMzMzMzMyU7IH0KCi5zLXRhYmxlLS1j
+ZWxsMiB7IHdpZHRoOiAxNi42NjY2NjY2NyU7IH0KCi5zLXRhYmxlLS1jZWxsMyB7IHdpZHRoOiAy
+NSU7IH0KCi5zLXRhYmxlLS1jZWxsNCB7IHdpZHRoOiAzMy4zMzMzMzMzMyU7IH0KCi5zLXRhYmxl
+LS1jZWxsNSB7IHdpZHRoOiA0MS42NjY2NjY2NyU7IH0KCi5zLXRhYmxlLS1jZWxsNiB7IHdpZHRo
+OiA1MCU7IH0KCi5zLXRhYmxlLS1jZWxsNyB7IHdpZHRoOiA1OC4zMzMzMzMzMyU7IH0KCi5zLXRh
+YmxlLS1jZWxsOCB7IHdpZHRoOiA2Ni42NjY2NjY2NyU7IH0KCi5zLXRhYmxlLS1jZWxsOSB7IHdp
+ZHRoOiA3NSU7IH0KCi5zLXRhYmxlLS1jZWxsMTAgeyB3aWR0aDogODMuMzMzMzMzMzMlOyB9Cgou
+cy10YWJsZS0tY2VsbDExIHsgd2lkdGg6IDkxLjY2NjY2NjY3JTsgfQoKLnMtdGFibGUtLWNlbGwx
+MiB7IHdpZHRoOiAxMDAlOyB9Cgoucy1vcHRpb24tdG9nZ2xlIC5zLXJhZGlvIHsgcG9zaXRpb246
+IGFic29sdXRlOyBsZWZ0OiAtOTk5ZW07IG9wYWNpdHk6IDA7IH0KCi5zLW9wdGlvbi10b2dnbGUg
+LnMtb3B0aW9uLXRvZ2dsZS0tb3B0aW9uOm5vdCg6Zmlyc3QtY2hpbGQpIHsgbWFyZ2luLWxlZnQ6
+IC0xcHg7IH0KCi5zLW9wdGlvbi10b2dnbGUgLnMtb3B0aW9uLXRvZ2dsZS0tb3B0aW9uOmZpcnN0
+LW9mLXR5cGUgLnMtbGFiZWwgeyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAzcHggIWltcG9ydGFu
+dDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogM3B4ICFpbXBvcnRhbnQ7IH0KCi5zLW9wdGlv
+bi10b2dnbGUgLnMtb3B0aW9uLXRvZ2dsZS0tb3B0aW9uOmxhc3Qtb2YtdHlwZSAucy1sYWJlbCB7
+IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAzcHggIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1y
+aWdodC1yYWRpdXM6IDNweCAhaW1wb3J0YW50OyB9Cgoucy1vcHRpb24tdG9nZ2xlIC5zLWxhYmVs
+IHsgd2lkdGg6IDEwMCU7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdp
+bi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGluZy10b3A6IDAuOGVtOyBwYWRk
+aW5nLXJpZ2h0OiAxZW07IHBhZGRpbmctYm90dG9tOiAwLjhlbTsgcGFkZGluZy1sZWZ0OiAxZW07
+IGJvcmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7IGJvcmRlci1i
+b3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1zdHls
+ZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6
+IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigy
+MDAsIDIwNCwgMjA4KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjAwLCAyMDQsIDIwOCk7IGJv
+cmRlci1ib3R0b20tY29sb3I6IHJnYigyMDAsIDIwNCwgMjA4KTsgYm9yZGVyLWxlZnQtY29sb3I6
+IHJnYigyMDAsIDIwNCwgMjA4KTsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNv
+bG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGZvbnQtZmFtaWx5OiBpbmhlcml0OyBmb250LXNpemU6
+IGluaGVyaXQ7IGZvbnQtd2VpZ2h0OiA0MDA7IGxpbmUtaGVpZ2h0OiAxOyB0ZXh0LWFsaWduOiBj
+ZW50ZXI7IGN1cnNvcjogcG9pbnRlcjsgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsgfQoKLnMt
+b3B0aW9uLXRvZ2dsZSAucy1sYWJlbDpob3ZlciB7IGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTgz
+LCAxOTIsIDIwMCwgMC4wNDY4NzUpOyB9Cgoucy1vcHRpb24tdG9nZ2xlIC5zLXJhZGlvOmNoZWNr
+ZWQgKyAucy1sYWJlbCB7IHotaW5kZXg6IDI1OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjE0LCAy
+MTcsIDIyMCk7IGJveC1zaGFkb3c6IHJnYmEoMTY3LCAxNzQsIDE4MCwgMC41OTc2NTYpIDBweCAy
+cHggNnB4IDBweCBpbnNldDsgY29sb3I6IHJnYig1OSwgNjQsIDY5KTsgfQoKLnMtb3B0aW9uLXRv
+Z2dsZS5zLW9wdGlvbi10b2dnbGVfX3ByaW1hcnkgLnMtbGFiZWw6aG92ZXIgeyBiYWNrZ3JvdW5k
+LWNvbG9yOiByZ2IoMjMwLCAyNDQsIDI1NSk7IGNvbG9yOiByZ2IoMCwgODksIDE1Myk7IH0KCi5z
+LW9wdGlvbi10b2dnbGUucy1vcHRpb24tdG9nZ2xlX19wcmltYXJ5IC5zLXJhZGlvOmNoZWNrZWQg
+KyAucy1sYWJlbCB7IGJvcmRlci10b3AtY29sb3I6IHJnYigwLCAxMTksIDIwNCk7IGJvcmRlci1y
+aWdodC1jb2xvcjogcmdiKDAsIDExOSwgMjA0KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDAs
+IDExOSwgMjA0KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigwLCAxMTksIDIwNCk7IGJhY2tncm91
+bmQtY29sb3I6IHJnYigwLCAxNDksIDI1NSk7IGJveC1zaGFkb3c6IHJnYmEoMCwgMTE5LCAyMDQs
+IDAuODk4NDM4KSAwcHggMnB4IDZweCAwcHggaW5zZXQ7IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1
+NSk7IH0KCi5zLW9wdGlvbi10b2dnbGUucy1vcHRpb24tdG9nZ2xlX19zd2l0Y2ggLnMtcmFkaW86
+Y2hlY2tlZCArIC5zLWxhYmVsOm5vdCgucy1sYWJlbF9fb2ZmKSB7IGJvcmRlci10b3AtY29sb3I6
+IHJnYig5NSwgMTg2LCAxMjUpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYig5NSwgMTg2LCAxMjUp
+OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoOTUsIDE4NiwgMTI1KTsgYm9yZGVyLWxlZnQtY29s
+b3I6IHJnYig5NSwgMTg2LCAxMjUpOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoOTUsIDE4NiwgMTI1
+KTsgYm94LXNoYWRvdzogcmdiYSg2OSwgMTYxLCA5OSwgMC44OTg0MzgpIDBweCAycHggNnB4IDBw
+eCBpbnNldDsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgfQoKLnMtc2lkZWJhcndpZGdldCB7
+IHBvc2l0aW9uOiByZWxhdGl2ZTsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItcmlnaHQt
+d2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13aWR0aDog
+MXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsg
+Ym9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9y
+ZGVyLXRvcC1jb2xvcjogcmdiKDIxNCwgMjE3LCAyMjApOyBib3JkZXItcmlnaHQtY29sb3I6IHJn
+YigyMTQsIDIxNywgMjIwKTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIxNCwgMjE3LCAyMjAp
+OyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIxNCwgMjE3LCAyMjApOyBib3JkZXItaW1hZ2U6IGlu
+aXRpYWw7IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDNweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRp
+dXM6IDNweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDNweDsgYm9yZGVyLWJvdHRvbS1s
+ZWZ0LXJhZGl1czogM3B4OyBib3gtc2hhZG93OiByZ2JhKDU5LCA2NCwgNjksIDAuMDk3NjU2Mykg
+MHB4IDJweCA4cHg7IGZvbnQtc2l6ZTogMTNweDsgfQoKLnMtc2lkZWJhcndpZGdldDpub3QoLnMt
+YW5jaG9ycykgYTpub3QoLmJ1dHRvbik6bm90KC5zLWJ0bik6bm90KC5wb3N0LXRhZyk6bm90KC5z
+LXNpZGViYXJ3aWRnZXQtLWFjdGlvbiksIC5zLXNpZGViYXJ3aWRnZXQ6bm90KC5zLWFuY2hvcnMp
+IGE6bm90KC5idXR0b24pOm5vdCgucy1idG4pOm5vdCgucG9zdC10YWcpOm5vdCgucy1zaWRlYmFy
+d2lkZ2V0LS1hY3Rpb24pOnZpc2l0ZWQgeyBjb2xvcjogcmdiKDEwNiwgMTE1LCAxMjQpOyB9Cgou
+cy1zaWRlYmFyd2lkZ2V0OjpiZWZvcmUgeyBjb250ZW50OiAnJzsgZGlzcGxheTogYmxvY2s7IG1h
+cmdpbi10b3A6IC0xcHg7IH0KCi5zLXNpZGViYXJ3aWRnZXQ6OmFmdGVyIHsgY29udGVudDogJyc7
+IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9wOiAtMXB4OyByaWdodDogLTFweDsgbGVmdDogLTFweDsg
+aGVpZ2h0OiA1cHg7IGJvcmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1zdHlsZTogc29s
+aWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMTQsIDIxNywgMjIwKTsgYm9yZGVyLXRvcC1sZWZ0
+LXJhZGl1czogM3B4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogM3B4OyBib3JkZXItYm90dG9t
+LXJpZ2h0LXJhZGl1czogM3B4OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAzcHg7IHBvaW50
+ZXItZXZlbnRzOiBub25lOyB9Cgoucy1zaWRlYmFyd2lkZ2V0LS1oZWFkZXIsIC5zLXNpZGViYXJ3
+aWRnZXQtLWNvbnRlbnQgeyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci10b3Atc3R5bGU6
+IHNvbGlkOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjI4LCAyMzAsIDIzMik7IH0KCi5zLXNpZGVi
+YXJ3aWRnZXQtLWhlYWRlcjpmb2N1cywgLnMtc2lkZWJhcndpZGdldC0tY29udGVudDpmb2N1cyB7
+IG91dGxpbmUtc3R5bGU6IG5vbmU7IG91dGxpbmUtd2lkdGg6IGluaXRpYWw7IG91dGxpbmUtY29s
+b3I6IGluaXRpYWw7IH0KCi5zLXNpZGViYXJ3aWRnZXQtLWhlYWRlciB7IHBhZGRpbmctdG9wOiAx
+MnB4OyBwYWRkaW5nLXJpZ2h0OiAxNXB4OyBwYWRkaW5nLWJvdHRvbTogMTJweDsgcGFkZGluZy1s
+ZWZ0OiAxNXB4OyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFjaG1l
+bnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6
+IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTAsIDI1MCwgMjUxKTsgYmFja2dyb3Vu
+ZC1zaXplOiBpbml0aWFsOyBjb2xvcjogcmdiKDEwNiwgMTE1LCAxMjQpOyBmb250LXNpemU6IDEu
+MTUzODQ2MTVyZW07IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGJhY2tncm91bmQtcG9zaXRpb246IGlu
+aXRpYWwgaW5pdGlhbDsgYmFja2dyb3VuZC1yZXBlYXQ6IGluaXRpYWwgaW5pdGlhbDsgfQoKLnMt
+c2lkZWJhcndpZGdldC0taGVhZGVyLnMtc2lkZWJhcndpZGdldF9fc21hbGwtYm9sZC10ZXh0IHsg
+Zm9udC1zaXplOiAxMnB4OyBmb250LXdlaWdodDogYm9sZDsgfQoKLnMtc2lkZWJhcndpZGdldC0t
+aGVhZGVyLnMtc2lkZWJhcndpZGdldF9fc21hbGwtYm9sZC10ZXh0IC4tYWN0aW9uIHsgZm9udC13
+ZWlnaHQ6IG5vcm1hbDsgbGluZS1oZWlnaHQ6IDE1LjZweDsgfQoKLnMtc2lkZWJhcndpZGdldC0t
+aGVhZGVyLnMtc2lkZWJhcndpZGdldF9fY29sbGFwc2luZy1jb250cm9sIHsgY3Vyc29yOiBwb2lu
+dGVyOyB9Cgoucy1zaWRlYmFyd2lkZ2V0LS1oZWFkZXIucy1zaWRlYmFyd2lkZ2V0X19jb2xsYXBz
+aW5nLWNvbnRyb2w6OmJlZm9yZSB7IGNvbnRlbnQ6ICcnOyBmbG9hdDogbGVmdDsgbWFyZ2luLXJp
+Z2h0OiAxMnB4OyBib3JkZXItdG9wLXdpZHRoOiA1cHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDVw
+eDsgYm9yZGVyLWxlZnQtd2lkdGg6IDVweDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRl
+ci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXIt
+bGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXIt
+cmlnaHQtY29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXItYm90dG9tLWNvbG9yOiB0cmFuc3BhcmVu
+dDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDE4NywgMTky
+LCAxOTYpOyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgLXdlYmtpdC10cmFuc2l0aW9uLXByb3Bl
+cnR5OiAtd2Via2l0LXRyYW5zZm9ybTsgLXdlYmtpdC10cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNz
+OyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBjdWJpYy1iZXppZXIoMC40LCAw
+LjQsIDAuNiwgMSk7IC13ZWJraXQtdHJhbnNpdGlvbi1kZWxheTogaW5pdGlhbDsgfQoKLnMtc2lk
+ZWJhcndpZGdldC0taGVhZGVyLnMtc2lkZWJhcndpZGdldF9fY29sbGFwc2luZy1jb250cm9sW2Fy
+aWEtZXhwYW5kZWQ9InRydWUiXTo6YmVmb3JlIHsgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSg5
+MGRlZyk7IH0KCi5zLXNpZGViYXJ3aWRnZXQtLWFjdGlvbiB7IGZsb2F0OiByaWdodDsgbWFyZ2lu
+LXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogNHB4OyBtYXJnaW4t
+bGVmdDogOHB4OyBjb2xvcjogcmdiKDAsIDExOSwgMjA0KTsgZm9udC1zaXplOiAxMXB4OyBsaW5l
+LWhlaWdodDogMTkuNXB4OyB9Cgp0YWJsZS5zLXNpZGViYXJ3aWRnZXQtLWNvbnRlbnQucy1zaWRl
+YmFyd2lkZ2V0X19pdGVtcyB7IHBhZGRpbmctdG9wOiA0cHg7IHBhZGRpbmctcmlnaHQ6IDNweDsg
+cGFkZGluZy1ib3R0b206IDRweDsgcGFkZGluZy1sZWZ0OiAzcHg7IGJvcmRlci1jb2xsYXBzZTog
+c2VwYXJhdGU7IC13ZWJraXQtYm9yZGVyLWhvcml6b250YWwtc3BhY2luZzogMTJweDsgLXdlYmtp
+dC1ib3JkZXItdmVydGljYWwtc3BhY2luZzogMTJweDsgfQoKdGFibGUucy1zaWRlYmFyd2lkZ2V0
+LS1jb250ZW50LnMtc2lkZWJhcndpZGdldF9faXRlbXMgdHIuLWl0ZW0geyBkaXNwbGF5OiB0YWJs
+ZS1yb3c7IH0KCnRhYmxlLnMtc2lkZWJhcndpZGdldC0tY29udGVudC5zLXNpZGViYXJ3aWRnZXRf
+X2l0ZW1zIHRyLi1pdGVtIHRkIHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4
+OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgfQoKLnMtc2lkZWJhcndp
+ZGdldC0tY29udGVudDpub3QodGFibGUpOm5vdCgucy1zaWRlYmFyd2lkZ2V0X19pdGVtcykgeyB9
+Cgoucy1zaWRlYmFyd2lkZ2V0LS1jb250ZW50Om5vdCh0YWJsZSk6bm90KC5zLXNpZGViYXJ3aWRn
+ZXRfX2Jsb2NrLWl0ZW1zKSAucy1zaWRlYmFyd2lkZ2V0LS1pdGVtIHsgfQoKLnMtc2lkZWJhcndp
+ZGdldC0tY29udGVudCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdp
+bi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGluZy10b3A6IDE2cHg7IHBhZGRp
+bmctcmlnaHQ6IDE1cHg7IHBhZGRpbmctYm90dG9tOiAxNnB4OyBwYWRkaW5nLWxlZnQ6IDE1cHg7
+IH0KCi5zLXNpZGViYXJ3aWRnZXQtLWNvbnRlbnQucy1zaWRlYmFyd2lkZ2V0X19pdGVtcyB7IGRp
+c3BsYXk6IGJsb2NrOyBwYWRkaW5nLXRvcDogNHB4OyBwYWRkaW5nLXJpZ2h0OiAxNXB4OyBwYWRk
+aW5nLWJvdHRvbTogNHB4OyBwYWRkaW5nLWxlZnQ6IDE1cHg7IH0KCi5zLXNpZGViYXJ3aWRnZXQt
+LWNvbnRlbnQucy1zaWRlYmFyd2lkZ2V0X19pdGVtcy5zLXNpZGViYXJ3aWRnZXRfX2Jsb2NrLWl0
+ZW1zIC5zLXNpZGViYXJ3aWRnZXQtLWl0ZW0geyBkaXNwbGF5OiBibG9jayAhaW1wb3J0YW50OyB9
+Cgoucy1zaWRlYmFyd2lkZ2V0LS1pdGVtIHsgbWFyZ2luLXRvcDogMTJweDsgbWFyZ2luLXJpZ2h0
+OiAwcHg7IG1hcmdpbi1ib3R0b206IDEycHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCi5zLXNpZGVi
+YXJ3aWRnZXQtLWl0ZW1bYXJpYS1jdXJyZW50PSJ0cnVlIl0sIC5zLXNpZGViYXJ3aWRnZXQtLWl0
+ZW0gPiA6Zmlyc3QtY2hpbGRbYXJpYS1jdXJyZW50PSJ0cnVlIl0sIC5zLXNpZGViYXJ3aWRnZXQt
+LWl0ZW1bYXJpYS1jdXJyZW50PSJwYWdlIl0sIC5zLXNpZGViYXJ3aWRnZXQtLWl0ZW0gPiA6Zmly
+c3QtY2hpbGRbYXJpYS1jdXJyZW50PSJwYWdlIl0geyBwb3NpdGlvbjogcmVsYXRpdmU7IGNvbG9y
+OiByZ2IoMTIsIDEzLCAxNCk7IGZvbnQtd2VpZ2h0OiBib2xkOyB9Cgoucy1zaWRlYmFyd2lkZ2V0
+LS1pdGVtW2FyaWEtY3VycmVudD0idHJ1ZSJdOjpiZWZvcmUsIC5zLXNpZGViYXJ3aWRnZXQtLWl0
+ZW0gPiA6Zmlyc3QtY2hpbGRbYXJpYS1jdXJyZW50PSJ0cnVlIl06OmJlZm9yZSwgLnMtc2lkZWJh
+cndpZGdldC0taXRlbVthcmlhLWN1cnJlbnQ9InBhZ2UiXTo6YmVmb3JlLCAucy1zaWRlYmFyd2lk
+Z2V0LS1pdGVtID4gOmZpcnN0LWNoaWxkW2FyaWEtY3VycmVudD0icGFnZSJdOjpiZWZvcmUgeyBj
+b250ZW50OiAnJzsgcG9zaXRpb246IGFic29sdXRlOyBsZWZ0OiAwcHg7IG1hcmdpbi10b3A6IC02
+cHg7IG1hcmdpbi1sZWZ0OiAtMTZweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDNweDsgYm9yZGVyLWxl
+ZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDI0NCwgMTI4LCAzNik7IH0K
+Ci5zLXNpZGViYXJ3aWRnZXQtLWl0ZW1bYXJpYS1jdXJyZW50PSJ0cnVlIl0gYSwgLnMtc2lkZWJh
+cndpZGdldC0taXRlbSA+IDpmaXJzdC1jaGlsZFthcmlhLWN1cnJlbnQ9InRydWUiXSBhLCAucy1z
+aWRlYmFyd2lkZ2V0LS1pdGVtW2FyaWEtY3VycmVudD0icGFnZSJdIGEsIC5zLXNpZGViYXJ3aWRn
+ZXQtLWl0ZW0gPiA6Zmlyc3QtY2hpbGRbYXJpYS1jdXJyZW50PSJwYWdlIl0gYSwgLnMtc2lkZWJh
+cndpZGdldC0taXRlbVthcmlhLWN1cnJlbnQ9InRydWUiXSBhOnZpc2l0ZWQsIC5zLXNpZGViYXJ3
+aWRnZXQtLWl0ZW0gPiA6Zmlyc3QtY2hpbGRbYXJpYS1jdXJyZW50PSJ0cnVlIl0gYTp2aXNpdGVk
+LCAucy1zaWRlYmFyd2lkZ2V0LS1pdGVtW2FyaWEtY3VycmVudD0icGFnZSJdIGE6dmlzaXRlZCwg
+LnMtc2lkZWJhcndpZGdldC0taXRlbSA+IDpmaXJzdC1jaGlsZFthcmlhLWN1cnJlbnQ9InBhZ2Ui
+XSBhOnZpc2l0ZWQgeyBjb2xvcjogaW5oZXJpdDsgfQoKLnMtc2lkZWJhcndpZGdldC0tc3VibmF2
+IHsgbGlzdC1zdHlsZS10eXBlOiBub25lOyBwYWRkaW5nLWxlZnQ6IDBweDsgfQoKLnMtc2lkZWJh
+cndpZGdldC0tc3VibmF2IGxpIHsgbWFyZ2luLXRvcDogMTJweDsgcGFkZGluZy1sZWZ0OiAxNnB4
+OyBiYWNrZ3JvdW5kLXNpemU6IGF1dG8gMTBweDsgYmFja2dyb3VuZC1pbWFnZTogdXJsKGRhdGE6
+aW1hZ2Uvc3ZnK3htbCwlM0M/eG1sJTIwdmVyc2lvbiUzRCUyMjEuMCUyMiUyMGVuY29kaW5nJTNE
+JTIyVVRGLTglMjI/JTNFJTNDc3ZnJTIwdmVyc2lvbiUzRCUyMjEuMSUyMiUyMHZpZXdCb3glM0Ql
+MjIwJTIwMCUyMDclMjAxMCUyMiUyMHhtbG5zJTNEJTIyaHR0cCUzQS8vd3d3LnczLm9yZy8yMDAw
+L3N2ZyUyMiUzRSUzQ3BhdGglMjBkJTNEJTIybTAuNzIxNTMlMjAwLjY4NDQ2JTIwNC4xMzM2JTIw
+NC4zMDc3LTQuMTMzNiUyMDQuMzA3NyUyMiUyMGZpbGwlM0QlMjJub25lJTIyJTIwc3Ryb2tlJTNE
+JTIyJTIzZDZkOWRjJTIyJTIwc3Ryb2tlLXdpZHRoJTNEJTIyMiUyMi8lM0UlM0Mvc3ZnJTNFKTsg
+YmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdCBuby1yZXBlYXQ7IH0KCi5zLXNpZGViYXJ3aWRn
+ZXQtLXN1Ym5hdiBsaVthcmlhLWN1cnJlbnQ9InRydWUiXSwgLnMtc2lkZWJhcndpZGdldC0tc3Vi
+bmF2IGxpW2FyaWEtY3VycmVudD0icGFnZSJdIHsgYmFja2dyb3VuZC1pbWFnZTogdXJsKGRhdGE6
+aW1hZ2Uvc3ZnK3htbCwlM0M/eG1sJTIwdmVyc2lvbiUzRCUyMjEuMCUyMiUyMGVuY29kaW5nJTNE
+JTIyVVRGLTglMjI/JTNFJTNDc3ZnJTIwdmVyc2lvbiUzRCUyMjEuMSUyMiUyMHZpZXdCb3glM0Ql
+MjIwJTIwMCUyMDclMjAxMCUyMiUyMHhtbG5zJTNEJTIyaHR0cCUzQS8vd3d3LnczLm9yZy8yMDAw
+L3N2ZyUyMiUzRSUzQ3BhdGglMjBkJTNEJTIybTAuNzIxNTMlMjAwLjY4NDQ2JTIwNC4xMzM2JTIw
+NC4zMDc3LTQuMTMzNiUyMDQuMzA3NyUyMiUyMGZpbGwlM0QlMjJub25lJTIyJTIwc3Ryb2tlJTNE
+JTIyJTIzRjQ4MDI0JTIyJTIwc3Ryb2tlLXdpZHRoJTNEJTIyMiUyMi8lM0UlM0Mvc3ZnJTNFKTsg
+Y29sb3I6IHJnYigxMiwgMTMsIDE0KTsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0KCi5zLXNpZGViYXJ3
+aWRnZXQtLXN1Ym5hdiBsaVthcmlhLWN1cnJlbnQ9InRydWUiXSBhLCAucy1zaWRlYmFyd2lkZ2V0
+LS1zdWJuYXYgbGlbYXJpYS1jdXJyZW50PSJwYWdlIl0gYSwgLnMtc2lkZWJhcndpZGdldC0tc3Vi
+bmF2IGxpW2FyaWEtY3VycmVudD0idHJ1ZSJdIGE6dmlzaXRlZCwgLnMtc2lkZWJhcndpZGdldC0t
+c3VibmF2IGxpW2FyaWEtY3VycmVudD0icGFnZSJdIGE6dmlzaXRlZCB7IGNvbG9yOiBpbmhlcml0
+OyB9Cgoucy1zaWRlYmFyd2lkZ2V0X19ibHVlIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIwMywg
+MjEyLCAyMjApOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMDMsIDIxMiwgMjIwKTsgYm9yZGVy
+LWJvdHRvbS1jb2xvcjogcmdiKDIwMywgMjEyLCAyMjApOyBib3JkZXItbGVmdC1jb2xvcjogcmdi
+KDIwMywgMjEyLCAyMjApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI1LCAyMzYsIDI0NCk7IH0K
+Ci5zLXNpZGViYXJ3aWRnZXRfX2JsdWUgLnMtc2lkZWJhcndpZGdldC0taGVhZGVyIHsgYmFja2dy
+b3VuZC1jb2xvcjogcmdiKDIxOCwgMjI5LCAyMzcpOyBjb2xvcjogcmdiKDEwMSwgMTA2LCAxMTAp
+OyB9Cgoucy1zaWRlYmFyd2lkZ2V0X19ibHVlIC5zLXNpZGViYXJ3aWRnZXQtLWhlYWRlciwgLnMt
+c2lkZWJhcndpZGdldF9fYmx1ZSAucy1zaWRlYmFyd2lkZ2V0LS1jb250ZW50IHsgYm9yZGVyLXRv
+cC1jb2xvcjogcmdiKDIwOSwgMjE5LCAyMjcpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMDks
+IDIxOSwgMjI3KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwOSwgMjE5LCAyMjcpOyBib3Jk
+ZXItbGVmdC1jb2xvcjogcmdiKDIwOSwgMjE5LCAyMjcpOyB9Cgoucy1zaWRlYmFyd2lkZ2V0X19i
+bHVlOjphZnRlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDMsIDIxMiwgMjIwKTsgYm9yZGVy
+LXJpZ2h0LWNvbG9yOiByZ2IoMjAzLCAyMTIsIDIyMCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJn
+YigyMDMsIDIxMiwgMjIwKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMDMsIDIxMiwgMjIwKTsg
+fQoKLnMtc2lkZWJhcndpZGdldF9feWVsbG93IHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIzMCwg
+MjIzLCAxOTgpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMzAsIDIyMywgMTk4KTsgYm9yZGVy
+LWJvdHRvbS1jb2xvcjogcmdiKDIzMCwgMjIzLCAxOTgpOyBib3JkZXItbGVmdC1jb2xvcjogcmdi
+KDIzMCwgMjIzLCAxOTgpOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNDgsIDIyMCk7IH0K
+Ci5zLXNpZGViYXJ3aWRnZXRfX3llbGxvdyAucy1zaWRlYmFyd2lkZ2V0LS1oZWFkZXIgeyBiYWNr
+Z3JvdW5kLWNvbG9yOiByZ2IoMjQ3LCAyNDEsIDIxMyk7IGNvbG9yOiByZ2IoMTE1LCAxMTIsIDk5
+KTsgfQoKLnMtc2lkZWJhcndpZGdldF9feWVsbG93IC5zLXNpZGViYXJ3aWRnZXQtLWhlYWRlciwg
+LnMtc2lkZWJhcndpZGdldF9feWVsbG93IC5zLXNpZGViYXJ3aWRnZXQtLWNvbnRlbnQgeyBib3Jk
+ZXItdG9wLWNvbG9yOiByZ2IoMjM3LCAyMzEsIDIwNSk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdi
+KDIzNywgMjMxLCAyMDUpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjM3LCAyMzEsIDIwNSk7
+IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjM3LCAyMzEsIDIwNSk7IH0KCi5zLXNpZGViYXJ3aWRn
+ZXRfX3llbGxvdzo6YWZ0ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjMwLCAyMjMsIDE5OCk7
+IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIzMCwgMjIzLCAxOTgpOyBib3JkZXItYm90dG9tLWNv
+bG9yOiByZ2IoMjMwLCAyMjMsIDE5OCk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjMwLCAyMjMs
+IDE5OCk7IH0KCi5zLXNpZGViYXJ3aWRnZXRfX2dyZWVuIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdi
+KDIxNCwgMjIzLCAyMTcpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMTQsIDIyMywgMjE3KTsg
+Ym9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIxNCwgMjIzLCAyMTcpOyBib3JkZXItbGVmdC1jb2xv
+cjogcmdiKDIxNCwgMjIzLCAyMTcpOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM3LCAyNDgsIDI0
+MSk7IH0KCi5zLXNpZGViYXJ3aWRnZXRfX2dyZWVuIC5zLXNpZGViYXJ3aWRnZXQtLWhlYWRlciB7
+IGJhY2tncm91bmQtY29sb3I6IHJnYigyMzAsIDI0MCwgMjM0KTsgY29sb3I6IHJnYigxMDcsIDEx
+MSwgMTA4KTsgfQoKLnMtc2lkZWJhcndpZGdldF9fZ3JlZW4gLnMtc2lkZWJhcndpZGdldC0taGVh
+ZGVyLCAucy1zaWRlYmFyd2lkZ2V0X19ncmVlbiAucy1zaWRlYmFyd2lkZ2V0LS1jb250ZW50IHsg
+Ym9yZGVyLXRvcC1jb2xvcjogcmdiKDIyMSwgMjMwLCAyMjQpOyBib3JkZXItcmlnaHQtY29sb3I6
+IHJnYigyMjEsIDIzMCwgMjI0KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIyMSwgMjMwLCAy
+MjQpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIyMSwgMjMwLCAyMjQpOyB9Cgoucy1zaWRlYmFy
+d2lkZ2V0X19ncmVlbjo6YWZ0ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjE0LCAyMjMsIDIx
+Nyk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIxNCwgMjIzLCAyMTcpOyBib3JkZXItYm90dG9t
+LWNvbG9yOiByZ2IoMjE0LCAyMjMsIDIxNyk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjE0LCAy
+MjMsIDIxNyk7IH0KCi5zLWNvbGxhcHNpYmxlIHsgLXdlYmtpdC1hbGlnbi1pdGVtczogZmxleC1z
+dGFydDsgfQoKLnMtY29sbGFwc2libGU6OmFmdGVyIHsgY29udGVudDogJyc7IC13ZWJraXQtZmxl
+eC1iYXNpczogMHB4OyBoZWlnaHQ6IDUwcHg7IG1heC1oZWlnaHQ6IDBweDsgLXdlYmtpdC10cmFu
+c2l0aW9uLXByb3BlcnR5OiBoZWlnaHQsIG1heC1oZWlnaHQ7IC13ZWJraXQtdHJhbnNpdGlvbi1k
+dXJhdGlvbjogMTAwbXMsIDBzOyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBs
+aW5lYXIsIGxpbmVhcjsgLXdlYmtpdC10cmFuc2l0aW9uLWRlbGF5OiBpbml0aWFsLCAxMDBtczsg
+fQoKLnMtY29sbGFwc2libGUtLWNvbnRlbnQgeyAtd2Via2l0LWZsZXgtYmFzaXM6IDEwMCU7IG1h
+eC1oZWlnaHQ6IDEwMDAwMDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyAtd2Via2l0LXRyYW5zZm9y
+bS1vcmlnaW4teDogMHB4OyAtd2Via2l0LXRyYW5zZm9ybS1vcmlnaW4teTogMHB4OyB9Cgoucy1j
+b2xsYXBzaWJsZS5pcy1jb2xsYXBzZWQgeyBvdmVyZmxvdy14OiBoaWRkZW47IG92ZXJmbG93LXk6
+IGhpZGRlbjsgLXdlYmtpdC10cmFuc2l0aW9uLXByb3BlcnR5OiBub25lOyAtd2Via2l0LXRyYW5z
+aXRpb24tZHVyYXRpb246IGluaXRpYWw7IC13ZWJraXQtdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rp
+b246IGluaXRpYWw7IC13ZWJraXQtdHJhbnNpdGlvbi1kZWxheTogaW5pdGlhbDsgfQoKLnMtY29s
+bGFwc2libGUuaXMtY29sbGFwc2VkIC5zLWNvbGxhcHNpYmxlLS1jb250ZW50IHsgdmlzaWJpbGl0
+eTogaGlkZGVuOyBtYXgtaGVpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IC0xNTAwcHg7IG9wYWNp
+dHk6IDA7IC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZVkoMCk7IH0KCi5zLWNvbGxhcHNpYmxlLmlz
+LWNvbGxhcHNlZDo6YWZ0ZXIgeyBoZWlnaHQ6IDBweDsgbWF4LWhlaWdodDogNTBweDsgLXdlYmtp
+dC10cmFuc2l0aW9uLXByb3BlcnR5OiBoZWlnaHQ7IC13ZWJraXQtdHJhbnNpdGlvbi1kdXJhdGlv
+bjogMTAwbXM7IC13ZWJraXQtdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGxpbmVhcjsgLXdl
+YmtpdC10cmFuc2l0aW9uLWRlbGF5OiBpbml0aWFsOyB9CgouYm4geyBib3JkZXItdG9wLXN0eWxl
+OiBub25lICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1zdHlsZTogbm9uZSAhaW1wb3J0YW50OyBi
+b3JkZXItYm90dG9tLXN0eWxlOiBub25lICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBu
+b25lICFpbXBvcnRhbnQ7IGJvcmRlci10b3Atd2lkdGg6IDBweCAhaW1wb3J0YW50OyBib3JkZXIt
+cmlnaHQtd2lkdGg6IDBweCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHggIWlt
+cG9ydGFudDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweCAhaW1wb3J0YW50OyB9CgouYmEgeyBib3Jk
+ZXItdG9wLXN0eWxlOiBzb2xpZCAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlk
+ICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkICFpbXBvcnRhbnQ7IGJvcmRl
+ci1sZWZ0LXN0eWxlOiBzb2xpZCAhaW1wb3J0YW50OyBib3JkZXItdG9wLXdpZHRoOiAxcHggIWlt
+cG9ydGFudDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHggIWltcG9ydGFudDsgYm9yZGVyLWJvdHRv
+bS13aWR0aDogMXB4ICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHggIWltcG9ydGFu
+dDsgfQoKLmJ0IHsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQgIWltcG9ydGFudDsgYm9yZGVyLXRv
+cC13aWR0aDogMXB4ICFpbXBvcnRhbnQ7IH0KCi5iciB7IGJvcmRlci1yaWdodC1zdHlsZTogc29s
+aWQgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHggIWltcG9ydGFudDsgfQoKLmJi
+IHsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS13
+aWR0aDogMXB4ICFpbXBvcnRhbnQ7IH0KCi5ibCB7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZCAh
+aW1wb3J0YW50OyBib3JkZXItbGVmdC13aWR0aDogMXB4ICFpbXBvcnRhbnQ7IH0KCi5ieCB7IGJv
+cmRlci1sZWZ0LXN0eWxlOiBzb2xpZCAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtc3R5bGU6IHNv
+bGlkICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC13aWR0aDogMXB4ICFpbXBvcnRhbnQ7IGJvcmRl
+ci1sZWZ0LXdpZHRoOiAxcHggIWltcG9ydGFudDsgfQoKLmJ5IHsgYm9yZGVyLXRvcC1zdHlsZTog
+c29saWQgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQgIWltcG9ydGFudDsg
+Ym9yZGVyLXRvcC13aWR0aDogMXB4ICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20td2lkdGg6IDFw
+eCAhaW1wb3J0YW50OyB9CgouYmF3MCB7IGJvcmRlci10b3Atd2lkdGg6IDBweCAhaW1wb3J0YW50
+OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXdpZHRo
+OiAwcHggIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweCAhaW1wb3J0YW50OyB9Cgou
+YmF3MSB7IGJvcmRlci10b3Atd2lkdGg6IDFweCAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtd2lk
+dGg6IDFweCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHggIWltcG9ydGFudDsg
+Ym9yZGVyLWxlZnQtd2lkdGg6IDFweCAhaW1wb3J0YW50OyB9CgouYmF3MiB7IGJvcmRlci10b3At
+d2lkdGg6IDJweCAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtd2lkdGg6IDJweCAhaW1wb3J0YW50
+OyBib3JkZXItYm90dG9tLXdpZHRoOiAycHggIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtd2lkdGg6
+IDJweCAhaW1wb3J0YW50OyB9CgouYmF3MyB7IGJvcmRlci10b3Atd2lkdGg6IDRweCAhaW1wb3J0
+YW50OyBib3JkZXItcmlnaHQtd2lkdGg6IDRweCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXdp
+ZHRoOiA0cHggIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtd2lkdGg6IDRweCAhaW1wb3J0YW50OyB9
+CgouYmF3NCB7IGJvcmRlci10b3Atd2lkdGg6IDhweCAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQt
+d2lkdGg6IDhweCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXdpZHRoOiA4cHggIWltcG9ydGFu
+dDsgYm9yZGVyLWxlZnQtd2lkdGg6IDhweCAhaW1wb3J0YW50OyB9CgouYnR3MCB7IGJvcmRlci10
+b3Atd2lkdGg6IDBweCAhaW1wb3J0YW50OyB9CgouYnR3MSB7IGJvcmRlci10b3Atd2lkdGg6IDFw
+eCAhaW1wb3J0YW50OyB9CgouYnR3MiB7IGJvcmRlci10b3Atd2lkdGg6IDJweCAhaW1wb3J0YW50
+OyB9CgouYnR3MyB7IGJvcmRlci10b3Atd2l

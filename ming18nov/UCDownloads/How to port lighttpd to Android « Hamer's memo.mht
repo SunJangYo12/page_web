@@ -1,0 +1,925 @@
+From: <Saved by WebKit>
+Subject: How to port lighttpd to Android ? Hamer's memo
+Date: Fri, 15 Nov 2018 19:00:03 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_A89C_D09BDB00.EA992219"
+
+------=_NextPart_000_A89C_D09BDB00.EA992219
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hamer-blog.logdown.com/posts/141723-how-to-port-lighttpd-to-android
+
+<html class=3D"js video maskImage placeholder" lang=3D"en"><!--<![endif]-->=
+<head><meta charset=3D"UTF-8">
+
+<iframe id=3D"facebook-jssdk-iframe" style=3D"width: 0px; height: 0px; bord=
+er-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; borde=
+r-left-width: 0px; border-style: initial; border-color: initial; border-ima=
+ge: initial; " src=3D"javascript:false"></iframe>
+
+<title>How to port lighttpd to Android =C2=AB Hamer's memo</title>
+<meta name=3D"description" content=3D"Porting=E7=9A=84=E9=81=8E=E7=A8=8B=E6=
+=98=AF=E5=8F=83=E8=80=83=E4=BA=86
+https://github.com/3ign0n/android-porting/tree/master/lighttpd
+
+=E9=80=99=E6=AC=A1=E8=A9=A6=E9=A9=97=E7=9A=84=E7=89=88=E6=9C=AC=E6=98=AF li=
+ghttpd ...">
+<meta property=3D"og:title" content=3D"How to port lighttpd to Android =C2=
+=AB Hamer's memo">
+<meta property=3D"og:description" content=3D"Porting=E7=9A=84=E9=81=8E=E7=
+=A8=8B=E6=98=AF=E5=8F=83=E8=80=83=E4=BA=86
+https://github.com/3ign0n/android-porting/tree/master/lighttpd
+
+=E9=80=99=E6=AC=A1=E8=A9=A6=E9=A9=97=E7=9A=84=E7=89=88=E6=9C=AC=E6=98=AF li=
+ghttpd ...">
+<meta property=3D"og:url" content=3D"http://hamer-blog.logdown.com/posts/14=
+1723-how-to-port-lighttpd-to-android">
+<meta property=3D"og:image">
+ =20
+  <meta name=3D"author" content=3D"Hamer">
+  <!-- http://t.co/dKP3o1e -->
+  <meta name=3D"HandheldFriendly" content=3D"True">
+  <meta name=3D"MobileOptimized" content=3D"320">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width,minimum-scale=3D1=
+,maximum-scale=3D1">
+
+ =20
+ =20
+ =20
+
+  <link href=3D"http://cdn-theme.logdown.io/octopress/stylesheets/screen.cs=
+s" media=3D"screen, projection" rel=3D"stylesheet" type=3D"text/css">
+
+  <link href=3D"http://cdn-theme.logdown.io/utils/stylesheets/default_code_=
+highlight.css" media=3D"screen, projection" rel=3D"stylesheet" type=3D"text=
+/css">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts =
+-->
+  <link href=3D"http://fonts.googleapis.com/css?family=3DPT+Serif:regular,i=
+talic,bold,bolditalic" rel=3D"stylesheet" type=3D"text/css">
+  <link href=3D"http://fonts.googleapis.com/css?family=3DPT+Sans:regular,it=
+alic,bold,bolditalic" rel=3D"stylesheet" type=3D"text/css">
+<meta name=3D"robots" content=3D"INDEX,FOLLOW">
+<link rel=3D"image_src" href=3D"http://logdown.com/images/og_plain.jpg">
+
+
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Hamer's memo"=
+ href=3D"http://hamer-blog.logdown.com/posts.rss">
+<link rel=3D"alternate" type=3D"application/atom+xml" title=3D"Hamer's memo=
+" href=3D"http://hamer-blog.logdown.com/posts.atom">
+
+
+
+<link rel=3D"prefetch" href=3D"https://c.disquscdn.com/next/embed/styles/lo=
+unge.d49f53e192b9080ef8880a7c9b24f1c3.css"><link rel=3D"prefetch" href=3D"h=
+ttps://c.disquscdn.com/next/embed/common.bundle.18932c85febf9520158697cdc31=
+f08ae.js"><link rel=3D"prefetch" href=3D"https://c.disquscdn.com/next/embed=
+/lounge.bundle.e7b46487e9e041aabc7c7cff31722578.js"><link rel=3D"prefetch" =
+href=3D"https://disqus.com/next/config.js"><style type=3D"text/css">.MathJa=
+x_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-bor=
+der-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #8=
+3A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #8=
+3A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! importan=
+t; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 25px; height: 18px; cursor=
+: pointer}
+</style><style type=3D"text/css">#MathJax_About {position: fixed; left: 50%=
+; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; ba=
+ckground-color: #DDDDDD; color: black; cursor: default; font-family: messag=
+e-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform:=
+ none; line-height: normal; letter-spacing: normal; word-spacing: normal; w=
+ord-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-ra=
+dius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-b=
+order-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: =
+0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-s=
+hadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dro=
+pshadow(OffX=3D2, OffY=3D2, Color=3D'gray', Positive=3D'true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; w=
+idth: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor:=
+ default; font: menu; text-align: left; text-indent: 0; text-transform: non=
+e; line-height: normal; letter-spacing: normal; word-spacing: normal; word-=
+wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius=
+: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-r=
+adius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px=
+ 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0=
+px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(=
+OffX=3D2, OffY=3D2, Color=3D'gray', Positive=3D'true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -1=
+5px; left: -15px}
+</style><style type=3D"text/css">#MathJax_Zoom {position: absolute; backgro=
+und-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: =
+.5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: =
+normal; text-align: left; text-indent: 0; text-transform: none; line-height=
+: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; =
+white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit=
+-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -=
+khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Mic=
+rosoft.dropshadow(OffX=3D2, OffY=3D2, Color=3D'gray', Positive=3D'true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; di=
+splay: inline-block; width: 100%; height: 100%; border: 0; padding: 0; marg=
+in: 0; background-color: white; opacity: 0; filter: alpha(opacity=3D0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; w=
+idth: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; =
+display: inline-block; border: 0; padding: 0; margin: 0; background-color: =
+white; opacity: 0; filter: alpha(opacity=3D0)}
+</style><style type=3D"text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color=
+: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-inde=
+x: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-ind=
+ex: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type=3D"text/css">.fb_hidden{position:absolute;top:-10000px;=
+z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisibl=
+e{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#0=
+00;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, =
+arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font=
+-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visibl=
+e;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:=
+none;text-transform:none;visibility:visible;white-space:normal;word-spacing=
+:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:=
+0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animati=
+on:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z=
+-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_=
+content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(=
+https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scr=
+oll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absol=
+ute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{=
+left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent=
+;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{backgro=
+und:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-re=
+peat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url=
+(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat sc=
+roll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content=
+ .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-=
+size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{b=
+ackground:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif)=
+ no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:=
+100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transf=
+orm:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http=
+s://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 5=
+0% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top=
+:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:no=
+ne;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.f=
+b_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_d=
+ialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}=
+.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:blo=
+ck;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{backgro=
+und:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;rig=
+ht:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden=
+{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}=
+.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_conten=
+t .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));bor=
+der-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px i=
+nset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis=
+;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-=
+space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%=
+}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-le=
+ft:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header t=
+d.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width=
+:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(=
+#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d=
+;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max=
+-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_h=
+eader .touchable_button input{background:none;border:none;color:#fff;font:b=
+old 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;tex=
+t-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_heade=
+r .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18p=
+x;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_conten=
+t{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.g=
+if) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0=
+;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1=
+px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{=
+float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:=
+rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_cl=
+ose_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinne=
+r 1.2s linear infinite;background-color:transparent;background-image:url(ht=
+tps://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-posi=
+tion:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes =
+rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget =
+span{display:inline-block;position:relative;text-align:justify}.fb_iframe_w=
+idget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_w=
+idget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:1=
+00%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relativ=
+e}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.=
+fb_iframe_widget_fluid span{width:100%}
+.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_b=
+ounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out=
+_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-tim=
+ing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{ani=
+mation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;tr=
+ansition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_cha=
+t_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_c=
+hat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop=
+_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_=
+in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12=
+px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_=
+bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_=
+customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0=
+, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_anima=
+ted_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisib=
+le_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overl=
+ay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;=
+visibility:hidden;width:100%}@keyframes fb_bounce_in_v2{0%{opacity:0;transf=
+orm:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.0=
+3);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);trans=
+form-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%=
+{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{op=
+acity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;=
+transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_o=
+ut_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyf=
+rames fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;t=
+ransform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;tran=
+sform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+<body><div id=3D"MathJax_Message" style=3D"display: none; "></div>
+
+  <header role=3D"banner">
+    <hgroup>
+      <h1><a href=3D"http://hamer-blog.logdown.com/"> Hamer's memo </a></h1=
+>
+      <h2>  </h2>
+    </hgroup>
+  </header>
+  <nav role=3D"navigation">
+    <ul class=3D"subscription" data-subscription=3D"rss">
+      <li>
+        <a href=3D"http://hamer-blog.logdown.com/posts.atom" rel=3D"subscri=
+be-rss" title=3D"subscribe via RSS">RSS</a>
+      </li>
+    </ul>
+
+    <form action=3D"http://hamer-blog.logdown.com/posts/search" method=3D"g=
+et">
+      <fieldset role=3D"search">
+        <input class=3D"search" type=3D"text" name=3D"q" results=3D"0" plac=
+eholder=3D"Search">
+      </fieldset>
+    </form>
+
+
+    <fieldset class=3D"mobile-nav"><select><option value=3D"">Navigate=E2=
+=80=A6</option><option value=3D"http://hamer-blog.logdown.com/">=C2=BB Blog=
+</option><option value=3D"http://hamer-blog.logdown.com/archives">=C2=BB Ar=
+chives</option><option value=3D"http://hamer-blog.logdown.com/pages/about-m=
+e">=C2=BB About Me</option><option value=3D"http://hamer-blog.logdown.com/p=
+osts.atom">=C2=BB RSS</option></select></fieldset><ul class=3D"main-navigat=
+ion">
+      <li><a href=3D"http://hamer-blog.logdown.com/">Blog</a></li>
+      <li><a href=3D"http://hamer-blog.logdown.com/archives">Archives</a></=
+li>
+
+     =20
+       =20
+          <li><a href=3D"http://hamer-blog.logdown.com/pages/about-me">Abou=
+t Me</a></li>
+       =20
+     =20
+
+    </ul>
+  </nav>
+
+
+  <div id=3D"main">
+    <div id=3D"content">
+
+
+      <div>
+
+
+     =20
+
+     =20
+
+     =20
+
+
+
+     =20
+
+
+
+     =20
+
+
+
+
+     =20
+        <article>
+          <header>
+            <h2 class=3D"entry-title">
+               =20
+                  How to port lighttpd to Android
+               =20
+
+               =20
+
+               =20
+            </h2>
+            <p class=3D"meta">
+              <time datetime=3D"2013-09-27 01:50:00 UTC" pubdate=3D"" data-=
+updated=3D"true">September 27, 2013</time>
+               | <a href=3D"http://hamer-blog.logdown.com/posts/141723-how-=
+to-port-lighttpd-to-android#disqus_thread">4 Comments</a>=20
+            </p>
+          </header>
+
+          <div class=3D"entry-content">
+             =20
+
+             =20
+
+
+             =20
+                <p>Porting=E7=9A=84=E9=81=8E=E7=A8=8B=E6=98=AF=E5=8F=83=E8=
+=80=83=E4=BA=86<br>
+<a href=3D"https://github.com/3ign0n/android-porting/tree/master/lighttpd" =
+rel=3D"nofollow" target=3D"_blank">https://github.com/3ign0n/android-portin=
+g/tree/master/lighttpd</a></p>
+
+<p>=E9=80=99=E6=AC=A1=E8=A9=A6=E9=A9=97=E7=9A=84=E7=89=88=E6=9C=AC=E6=98=AF=
+ lighttpd 1.4.32, =E5=8F=AF=E4=BB=A5=E5=BE=9E=E9=80=99=E9=82=8Adownload<br>
+<a href=3D"http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.=
+4.32.tar.bz2" rel=3D"nofollow" target=3D"_blank">http://download.lighttpd.n=
+et/lighttpd/releases-1.4.x/lighttpd-1.4.32.tar.bz2</a></p>
+
+<p>Android =E7=89=88=E6=9C=AC=E6=98=AF 4.2.1 <br>
+CPU: MIPS</p>
+
+<p>=E9=A6=96=E5=85=88=E8=87=AA=E5=B7=B1=E7=9A=84=E7=B7=A8=E8=AD=AF=E7=92=B0=
+=E5=A2=83=E9=9C=80=E8=A6=81=E5=85=88=E5=AE=89=E8=A3=9D pcre dev =E5=A5=97=
+=E4=BB=B6, =E4=B8=94=E4=BD=A0=E7=9A=84host device=E4=B8=8A=E5=88=B0=E6=99=
+=82=E5=80=99=E4=B9=9F=E9=9C=80=E8=A6=81=E6=9C=89pcre library (=E6=80=8E=E9=
+=BA=BCporting pcre, =E8=AB=8B=E5=8F=83=E8=80=83=E5=89=8D=E4=B8=80=E7=AF=87=
+=E6=96=87=E7=AB=A0)</p>
+
+<figure class=3D"figure-code code"><figcaption><span>
+</span></figcaption><div class=3D"highlight"><pre><span class=3D"gp">$ </sp=
+an>sudo apt-get install libpcre3-dev
+</pre></div>
+</figure>
+
+<!-- more -->
+
+<p>=E8=A8=AD=E5=AE=9A=E5=A5=BD=E5=B9=BE=E5=80=8B=E7=92=B0=E5=A2=83=E8=AE=8A=
+=E6=95=B8</p>
+
+<figure class=3D"figure-code code"><figcaption><span>
+</span></figcaption><div class=3D"highlight"><pre><span class=3D"gp">$ </sp=
+an><span class=3D"nb">export </span><span class=3D"nv">ANDROID_DIR</span><s=
+pan class=3D"o">=3D</span>/path/to/your/android/source/directory
+<span class=3D"gp">$ </span><span class=3D"nb">export </span><span class=3D=
+"nv">PATH</span><span class=3D"o">=3D</span><span class=3D"nv">$ANDROID_DIR=
+</span>/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6/bin:<span cla=
+ss=3D"nv">$PATH</span>
+</pre></div>
+</figure>
+
+<p>=E7=84=B6=E5=BE=8C=E6=8A=8Alighttpd=E8=A7=A3=E5=A3=93=E7=B8=AE=E5=88=B0A=
+ndroid source=E7=9A=84=E6=9F=90=E5=80=8B=E8=B7=AF=E5=BE=91, =E6=AF=94=E5=A6=
+=82=E8=AA=AA devices/company/external<br>
+=E5=88=87=E5=88=B0 lighttpd =E8=B3=87=E6=96=99=E5=8C=A3, Apply patch, patch=
+=E5=85=A7=E5=AE=B9=E5=A6=82=E4=B8=8B:</p>
+
+<figure class=3D"figure-code code"><figcaption><span>
+</span></figcaption><div class=3D"highlight"><pre><span class=3D"gd">--- co=
+nfigure.orig 2013-09-27 09:52:17.164547221 +0800
+</span><span class=3D"gi">+++ configure   2013-09-27 09:41:57.712559524 +08=
+00
+</span><span class=3D"gu">@@ -12461,11 +12461,12 @@
+</span> fi
+ { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_header_stdc" &gt;&=
+amp;5
+ $as_echo "$ac_cv_header_stdc" &gt;&amp;6; }
+<span class=3D"gd">-if test $ac_cv_header_stdc =3D yes; then
+</span><span class=3D"gi">+# force to set 1
++#if test $ac_cv_header_stdc =3D yes; then
+</span>=20
+ $as_echo "#define STDC_HEADERS 1" &gt;&gt;confdefs.h
+=20
+<span class=3D"gd">-fi
+</span><span class=3D"gi">+#fi
+</span>=20
+ { $as_echo "$as_me:${as_lineno-$LINENO}: checking for sys/wait.h that is P=
+OSIX.1 compatible" &gt;&amp;5
+ $as_echo_n "checking for sys/wait.h that is POSIX.1 compatible... " &gt;&a=
+mp;6; }
+<span class=3D"gu">@@ -12508,20 +12509,22 @@
+</span>=20
+ fi
+=20
+<span class=3D"gi">+# Android surely has these headers except some, but aut=
+oconf doesn't detect them!!
++# excluded headers are, sys/devpoll.h sys/filio.h sys/event.h  sys/port.h =
+uuid/uuid.h
+</span> for ac_header in arpa/inet.h fcntl.h netinet/in.h stdlib.h string.h=
+ \
+ sys/socket.h sys/time.h unistd.h sys/sendfile.h sys/uio.h \
+<span class=3D"gd">-getopt.h sys/epoll.h sys/select.h poll.h sys/poll.h sys=
+/devpoll.h sys/filio.h \
+-sys/mman.h sys/event.h port.h pwd.h sys/syslimits.h \
+-sys/resource.h sys/un.h syslog.h sys/prctl.h uuid/uuid.h
+</span><span class=3D"gi">+getopt.h sys/epoll.h sys/select.h poll.h sys/pol=
+l.h \
++sys/mman.h pwd.h sys/syslimits.h \
++sys/resource.h sys/un.h syslog.h sys/prctl.h
+</span> do :
+   as_ac_Header=3D`$as_echo "ac_cv_header_$ac_header" | $as_tr_sh`
+ ac_fn_c_check_header_mongrel "$LINENO" "$ac_header" "$as_ac_Header" "$ac_i=
+ncludes_default"
+<span class=3D"gd">-if eval test \"x\$"$as_ac_Header"\" =3D x"yes"; then :
+</span><span class=3D"gi">+#if eval test \"x\$"$as_ac_Header"\" =3D x"yes";=
+ then :
+</span>   cat &gt;&gt;confdefs.h &lt;&lt;_ACEOF
+ #define `$as_echo "HAVE_$ac_header" | $as_tr_cpp` 1
+ _ACEOF
+=20
+<span class=3D"gd">-fi
+</span><span class=3D"gi">+#fi
+</span>=20
+ done
+=20
+<span class=3D"gu">@@ -12683,6 +12686,7 @@
+</span> fi
+=20
+ ac_fn_c_check_type "$LINENO" "off_t" "ac_cv_type_off_t" "$ac_includes_defa=
+ult"
+<span class=3D"gi">+ac_cv_type_off_t=3Dyes
+</span> if test "x$ac_cv_type_off_t" =3D xyes; then :
+=20
+ else
+<span class=3D"gu">@@ -12694,6 +12698,7 @@
+</span> fi
+=20
+ ac_fn_c_check_type "$LINENO" "pid_t" "ac_cv_type_pid_t" "$ac_includes_defa=
+ult"
+<span class=3D"gi">+ac_cv_type_pid_t=3Dyes
+</span> if test "x$ac_cv_type_pid_t" =3D xyes; then :
+=20
+ else
+<span class=3D"gu">@@ -12705,6 +12710,7 @@
+</span> fi
+=20
+ ac_fn_c_check_type "$LINENO" "size_t" "ac_cv_type_size_t" "$ac_includes_de=
+fault"
+<span class=3D"gi">+ac_cv_type_size_t=3Dyes
+</span> if test "x$ac_cv_type_size_t" =3D xyes; then :
+=20
+ else
+<span class=3D"gu">@@ -14462,6 +14468,9 @@
+</span>     for ac_header in zlib.h
+ do :
+   ac_fn_c_check_header_mongrel "$LINENO" "zlib.h" "ac_cv_header_zlib_h" "$=
+ac_includes_default"
+<span class=3D"gi">+# I have no idea to make ac_cv_header_zlib_h yes, but A=
+ndroid surely have zlib.
++# so I force to set "yes"
++ac_cv_header_zlib_h=3Dyes
+</span> if test "x$ac_cv_header_zlib_h" =3D xyes; then :
+   cat &gt;&gt;confdefs.h &lt;&lt;_ACEOF
+ #define HAVE_ZLIB_H 1
+<span class=3D"gu">@@ -16024,12 +16033,14 @@
+</span> do :
+   as_ac_var=3D`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
+ ac_fn_c_check_func "$LINENO" "$ac_func" "$as_ac_var"
+<span class=3D"gd">-if eval test \"x\$"$as_ac_var"\" =3D x"yes"; then :
+</span><span class=3D"gi">+# Android surely supports these functions, but a=
+utoconf cannot detect them
++# I don't know how to fix it, instead apply trickly workaround here
++#if eval test \"x\$"$as_ac_var"\" =3D x"yes"; then :
+</span>   cat &gt;&gt;confdefs.h &lt;&lt;_ACEOF
+ #define `$as_echo "HAVE_$ac_func" | $as_tr_cpp` 1
+ _ACEOF
+=20
+<span class=3D"gd">-fi
+</span><span class=3D"gi">+#fi
+</span> done
+=20
+=20
+<span class=3D"gu">@@ -16074,6 +16085,8 @@
+</span>=20
+ fi
+ { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_sizeof_long" &gt;&=
+amp;5
+<span class=3D"gi">+# force to set 4
++ac_cv_sizeof_long=3D4
+</span> $as_echo "$ac_cv_sizeof_long" &gt;&amp;6; }
+=20
+=20
+<span class=3D"gu">@@ -16095,6 +16108,8 @@
+</span>   if ac_fn_c_compute_int "$LINENO" "(long int) (sizeof (off_t))" "a=
+c_cv_sizeof_off_t"        "$ac_includes_default"; then :
+=20
+ else
+<span class=3D"gi">+  # no idea, checking sizeof off_t is failed
++  ac_cv_type_off_t=3Dno
+</span>   if test "$ac_cv_type_off_t" =3D yes; then
+      { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" &gt=
+;&amp;5
+ $as_echo "$as_me: error: in \`$ac_pwd':" &gt;&amp;2;}
+<span class=3D"gu">@@ -16110,7 +16125,8 @@
+</span> $as_echo "$ac_cv_sizeof_off_t" &gt;&amp;6; }
+=20
+=20
+<span class=3D"gd">-
+</span><span class=3D"gi">+# force to set 8
++ac_cv_sizeof_long=3D8
+</span> cat &gt;&gt;confdefs.h &lt;&lt;_ACEOF
+ #define SIZEOF_OFF_T $ac_cv_sizeof_off_t
+<span class=3D"err"> _ACEOF
+</span></pre></div>
+</figure>
+
+<p>=E5=9F=B7=E8=A1=8C=E4=B8=8B=E8=BF=B0=E6=8C=87=E4=BB=A4, =E7=94=A2=E7=94=
+=9F=E4=B8=80=E4=BA=9B=E9=9C=80=E8=A6=81=E7=9A=84=E6=AA=94=E6=A1=88, =E5=A6=
+=82config.h</p>
+
+<figure class=3D"figure-code code"><figcaption><span>
+</span></figcaption><div class=3D"highlight"><pre>./configure --host<span c=
+lass=3D"o">=3D</span>mipsel-linux <span class=3D"nv">CC</span><span class=
+=3D"o">=3D</span>mipsel-linux-android-gcc <span class=3D"nv">CPP</span><spa=
+n class=3D"o">=3D</span>mipsel-linux-android-cpp <span class=3D"nv">CFLAGS<=
+/span><span class=3D"o">=3D</span><span class=3D"s2">"-nostdlib"</span> <sp=
+an class=3D"nv">CPPFLAGS</span><span class=3D"o">=3D</span><span class=3D"s=
+2">"-I</span><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</spa=
+n><span class=3D"k">}</span><span class=3D"s2">/bionic/libc/include/ -I</sp=
+an><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span cl=
+ass=3D"k">}</span><span class=3D"s2">/bionic/libc/arch-mips/include/ -I</sp=
+an><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span cl=
+ass=3D"k">}</span><span class=3D"s2">/bionic/libc/kernel/common/  -I</span>=
+<span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span class=
+=3D"k">}</span><span class=3D"s2">/bionic/libc/kernel/common/linux -I</span=
+><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span clas=
+s=3D"k">}</span><span class=3D"s2">/bionic/libc/kernel/common/linux/ -I</sp=
+an><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span cl=
+ass=3D"k">}</span><span class=3D"s2">/bionic/libc/kernel/arch-mips -I</span=
+><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span clas=
+s=3D"k">}</span><span class=3D"s2">/development/ndk/platforms/android-9/inc=
+lude -I</span><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</sp=
+an><span class=3D"k">}</span><span class=3D"s2">/prebuilts/ndk/8/platforms/=
+android-14/arch-mips/usr/include"</span> <span class=3D"nv">LDFLAGS</span><=
+span class=3D"o">=3D</span><span class=3D"s2">"-Wl,-rpath-link=3D</span><sp=
+an class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span class=3D=
+"k">}</span><span class=3D"s2">/out/target/product/saturn/system/lib -L</sp=
+an><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><span cl=
+ass=3D"k">}</span><span class=3D"s2">/out/target/product/saturn/system/lib =
+-L</span><span class=3D"k">${</span><span class=3D"nv">ANDROID_DIR</span><s=
+pan class=3D"k">}</span><span class=3D"s2">/out/target/products/system/lib"=
+</span> --without-bzip2
+</pre></div>
+</figure>
+
+<p>=E4=B9=8B=E5=BE=8C=E6=8A=8AAndroid.mk=E7=B7=A8=E5=AF=AB=E5=A5=BD, =E6=94=
+=BE=E5=9C=A8lighttpd=E7=9A=84=E8=B3=87=E6=96=99=E5=8C=A3=E5=85=A7, =E5=85=
+=A7=E5=AE=B9=E5=A6=82=E4=B8=8B, =E7=9B=AE=E5=89=8D=E7=9A=84<code>BUILD_OPTI=
+ON_COMMON_SRC_STATIC</code>=E5=8F=AA=E8=83=BD=E8=A2=AB=E8=A8=AD=E6=88=90fal=
+se, =E5=A6=82=E6=9E=9C=E8=A8=AD=E6=88=90true=E6=9C=83=E6=9C=89link error=E7=
+=9A=84=E6=83=85=E6=B3=81.</p>
+
+<figure class=3D"figure-code code"><figcaption><span>
+</span></figcaption><div class=3D"highlight"><pre><span class=3D"nv">LOCAL_=
+PATH</span><span class=3D"o">:=3D</span> <span class=3D"err">$</span><span =
+class=3D"o">(</span>call my-dir<span class=3D"o">)</span>
+
+<span class=3D"nv">BUILD_OPTION_COMMON_SRC_STATIC</span> <span class=3D"o">=
+:=3D</span> <span class=3D"nb">false</span>
+<span class=3D"nv">BUILD_OPTION_COMMON_CFLAGS</span> <span class=3D"o">+=3D=
+</span> -DHAVE_CONFIG_H -I<span class=3D"nv">$(LOCAL_PATH)</span> -I<span c=
+lass=3D"nv">$(LOCAL_PATH)</span>/src -D_REENTRANT -D__EXTENSIONS__ -D_FILE_=
+OFFSET_BITS<span class=3D"o">=3D</span>64 -D_LARGEFILE_SOURCE -D_LARGE_FILE=
+S -g -Wall
+<span class=3D"nv">BUILD_OPTION_COMMON_LDFLAGS</span> <span class=3D"o">+=
+=3D</span>  -lpcre
+
+<span class=3D"nv">COMMON_LIBNAME</span> <span class=3D"o">:=3D</span> ligh=
+ttpd_common
+
+<span class=3D"c">#########################################################=
+###########################
+##common sources
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> lib<sp=
+an class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span> -W -Wshadow -pedantic -st=
+d<span class=3D"o">=3D</span>gnu99
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span> -ldl
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">src/buffer.c</span> <span class=3D"err">src/log.c</=
+span> <span class=3D"err">src/keyvalue.c</span> <span class=3D"err">src/chu=
+nk.c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/http_chunk.c</span> <span class=3D"err">src/str=
+eam.c</span> <span class=3D"err">src/fdevent.c</span> <span class=3D"err">s=
+rc/stat_cache.c</span> <span class=3D"err">src/plugin.c</span> <span class=
+=3D"err">\</span>
+    <span class=3D"err">src/joblist.c</span> <span class=3D"err">src/etag.c=
+</span> <span class=3D"err">src/array.c</span> <span class=3D"err">src/data=
+_string.c</span> <span class=3D"err">src/data_count.c</span> <span class=3D=
+"err">\</span>
+    <span class=3D"err">src/data_array.c</span> <span class=3D"err">src/dat=
+a_integer.c</span> <span class=3D"err">src/md5.c</span> <span class=3D"err"=
+>src/data_fastcgi.c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/fdevent_select.c</span> <span class=3D"err">src=
+/fdevent_libev.c</span> <span class=3D"err">src/fdevent_poll.c</span> <span=
+ class=3D"err">\</span>
+    <span class=3D"err">src/fdevent_linux_sysepoll.c</span> <span class=3D"=
+err">src/fdevent_solaris_devpoll.c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/fdevent_solaris_port.c</span> <span class=3D"er=
+r">src/fdevent_freebsd_kqueue.c</span> <span class=3D"err">src/data_config.=
+c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/bitset.c</span> <span class=3D"err">src/inet_nt=
+op_cache.c</span> <span class=3D"err">src/crc32.c</span> <span class=3D"err=
+">src/connections-glue.c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/configfile-glue.c</span> <span class=3D"err">sr=
+c/http-header-glue.c</span> <span class=3D"err">src/network_write.c</span> =
+<span class=3D"err">\</span>
+    <span class=3D"err">src/network_linux_sendfile.c</span> <span class=3D"=
+err">src/network_freebsd_sendfile.c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/network_writev.c</span> <span class=3D"err">src=
+/network_solaris_sendfilev.c</span> <span class=3D"err">src/network_openssl=
+.c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/splaytree.c</span> <span class=3D"err">src/stat=
+us_counter.c</span>
+
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+<span class=3D"err">else</span>
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_STATIC_LIBRA=
+RY)</span>
+<span class=3D"err">endif</span>
+
+<span class=3D"c">#########################################################=
+###########################
+##mod_flv_streaming=20
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span> -W -Wshadow -pedantic -st=
+d<span class=3D"o">=3D</span>gnu99
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span>
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"nv">LOCAL_SHARED_LIBRARIES</span> <span class=3D"o">+=3D</sp=
+an> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"err">else</span>
+<span class=3D"nv">LOCAL_WHOLE_STATIC_LIBRARIES</span> <span class=3D"o">+=
+=3D</span> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> -ldl
+<span class=3D"err">endif</span>
+
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">src/mod_flv_streaming.c</span>
+
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> mod_fl=
+v_streaming
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>=20
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+
+<span class=3D"c">#########################################################=
+############################
+##mod_evasive
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span> -W -Wshadow -pedantic -st=
+d<span class=3D"o">=3D</span>gnu99
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span>
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"nv">LOCAL_SHARED_LIBRARIES</span> <span class=3D"o">+=3D</sp=
+an> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"err">else</span>
+<span class=3D"nv">LOCAL_WHOLE_STATIC_LIBRARIES</span> <span class=3D"o">+=
+=3D</span> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> -ldl
+<span class=3D"err">endif</span>
+
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">src/mod_evasive.c</span>
+
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> mod_ev=
+asive
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>=20
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+
+<span class=3D"c">#########################################################=
+############################
+##mod_webdav
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span> -W -Wshadow -pedantic -st=
+d<span class=3D"o">=3D</span>gnu99
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span>
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"nv">LOCAL_SHARED_LIBRARIES</span> <span class=3D"o">+=3D</sp=
+an> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"err">else</span>
+<span class=3D"nv">LOCAL_WHOLE_STATIC_LIBRARIES</span> <span class=3D"o">+=
+=3D</span> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> -ldl
+<span class=3D"err">endif</span>
+
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">src/mod_webdav.c</span>
+
+
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> mod_we=
+bdav
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>=20
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+
+<span class=3D"c">#########################################################=
+############################
+##mod_magnet
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span> -W -Wshadow -pedantic -st=
+d<span class=3D"o">=3D</span>gnu99
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span>
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"nv">LOCAL_SHARED_LIBRARIES</span> <span class=3D"o">+=3D</sp=
+an> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"err">else</span>
+<span class=3D"nv">LOCAL_WHOLE_STATIC_LIBRARIES</span> <span class=3D"o">+=
+=3D</span> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> -ldl
+<span class=3D"err">endif</span>
+
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">src/mod_magnet.c</span> <span class=3D"err">\</span=
+>
+    <span class=3D"err">src/mod_magnet_cache.c</span>
+
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> mod_ma=
+gnet
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>=20
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+
+<span class=3D"c">#########################################################=
+############################
+##mod_cml
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span>
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"nv">LOCAL_SHARED_LIBRARIES</span> <span class=3D"o">+=3D</sp=
+an> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"err">else</span>
+<span class=3D"nv">LOCAL_WHOLE_STATIC_LIBRARIES</span> <span class=3D"o">+=
+=3D</span> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> -ldl
+<span class=3D"err">endif</span>
+
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">src/mod_cml.c</span> <span class=3D"err">\</span>
+    <span class=3D"err">src/mod_cml_lua.c</span> <span class=3D"err">\</spa=
+n>
+    <span class=3D"err">src/mod_cml_funcs.c</span>=20
+
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> mod_cm=
+l
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>=20
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+<span class=3D"c">#########################################################=
+############################
+##mod_trigger_b4_dl
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span> -W -Wshadow -pedantic -st=
+d<span class=3D"o">=3D</span>gnu99
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span>
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"nv">LOCAL_SHARED_LIBRARIES</span> <span class=3D"o">+=3D</sp=
+an> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"err">else</span>
+<span class=3D"nv">LOCAL_WHOLE_STATIC_LIBRARIES</span> <span class=3D"o">+=
+=3D</span> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> -ldl
+<span class=3D"err">endif</span>
+
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">src/mod_trigger_b4_dl.c</span>
+
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> mod_tr=
+igger_b4_dl
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>=20
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+<span class=3D"c">#########################################################=
+############################
+##mod_mysql_vhost
+</span><span class=3D"err">include</span> <span class=3D"err">$(CLEAR_VARS)=
+</span>
+<span class=3D"nv">LOCAL_CFLAGS</span> <span class=3D"o">+=3D</span> <span =
+class=3D"nv">$(BUILD_OPTION_COMMON_CFLAGS)</span> -W -Wshadow -pedantic -st=
+d<span class=3D"o">=3D</span>gnu99
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> <span=
+ class=3D"nv">$(BUILD_OPTION_COMMON_LDFLAGS)</span>
+<span class=3D"err">ifeq</span> <span class=3D"err">($(BUILD_OPTION_COMMON_=
+SRC_STATIC),false)</span>
+<span class=3D"nv">LOCAL_SHARED_LIBRARIES</span> <span class=3D"o">+=3D</sp=
+an> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"err">else</span>
+<span class=3D"nv">LOCAL_WHOLE_STATIC_LIBRARIES</span> <span class=3D"o">+=
+=3D</span> lib<span class=3D"nv">$(COMMON_LIBNAME)</span>
+<span class=3D"nv">LOCAL_LDFLAGS</span> <span class=3D"o">+=3D</span> -ldl
+<span class=3D"err">endif</span>
+
+<span class=3D"nv">LOCAL_SRC_FILES</span> <span class=3D"o">:=3D</span> <sp=
+an class=3D"se">\
+</span>
+    <span class=3D"err">$(am__liblightcomp_la_SOURCES_DIST)</span> <span cl=
+ass=3D"err">\</span>
+    <span class=3D"err">src/mod_mysql_vhost.c</span>
+
+<span class=3D"nv">LOCAL_MODULE</span> <span class=3D"o">:=3D</span> mod_my=
+sql_vhost
+<span class=3D"nv">LOCAL_PRELINK_MODULE</span> <span class=3D"o">:=3D</span=
+> <span class=3D"nb">false</span>=20
+<span class=3D"nv">LOCAL_MODULE_TAGS</span> <span class=3D"o">:=3D</span> s=
+amples
+
+<span class=3D"err">include</span> <span class=3D"err">$(BUILD_SHARED_LIBRA=
+RY)</span>
+<span class=3D"c">#########################################################=
+#####################

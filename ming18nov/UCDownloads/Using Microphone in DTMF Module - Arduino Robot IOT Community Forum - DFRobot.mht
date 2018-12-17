@@ -1,0 +1,2875 @@
+From: <Saved by WebKit>
+Subject: Using Microphone in DTMF Module?-?Arduino Robot IOT Community Forum - DFRobot
+Date: Sun, 17 Nov 2018 19:06:44 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_B256_3177C77D.4A531F6C"
+
+------=_NextPart_000_B256_3177C77D.4A531F6C
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.dfrobot.com/forum/viewtopic.php?f=5&t=1988&p=9049
+
+<html dir=3D"ltr" lang=3D"en-gb"><head><meta charset=3D"UTF-8">
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<meta name=3D"designer" content=3D"SiteSplat http://themeforest.net/user/th=
+emesplat/portfolio?ref=3DThemeSplat">
+<meta content=3D"Arduino Robot IOT Community Forum - DFRobot" property=3D"o=
+g:site_name">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<title>Using Microphone in DTMF Module&nbsp;-&nbsp;Arduino Robot IOT Commun=
+ity Forum - DFRobot</title>
+	<link rel=3D"alternate" type=3D"application/atom+xml" title=3D"Feed - Ardu=
+ino Robot IOT Community Forum - DFRobot" href=3D"https://www.dfrobot.com/fo=
+rum/app.php/feed?sid=3D3884c74f1d6cff136d78c6e95c0b5621">			<link rel=3D"al=
+ternate" type=3D"application/atom+xml" title=3D"Feed - New Topics" href=3D"=
+https://www.dfrobot.com/forum/app.php/feed/topics?sid=3D3884c74f1d6cff136d7=
+8c6e95c0b5621">		<link rel=3D"alternate" type=3D"application/atom+xml" titl=
+e=3D"Feed - Forum - Product Trials" href=3D"https://www.dfrobot.com/forum/a=
+pp.php/feed/forum/5?sid=3D3884c74f1d6cff136d78c6e95c0b5621">	<link rel=3D"a=
+lternate" type=3D"application/atom+xml" title=3D"Feed - Topic - Using Micro=
+phone in DTMF Module" href=3D"https://www.dfrobot.com/forum/app.php/feed/to=
+pic/1988?sid=3D3884c74f1d6cff136d78c6e95c0b5621">
+	<link rel=3D"canonical" href=3D"https://www.dfrobot.com/forum/viewtopic.ph=
+p?t=3D1988">
+
+<!-- Google free font here -->
+<link href=3D"https://fonts.googleapis.com/css?family=3DSource+Sans+Pro:400=
+,600" rel=3D"stylesheet" type=3D"text/css">
+<link href=3D"https://fonts.googleapis.com/css?family=3DAsap:700" rel=3D"st=
+ylesheet" type=3D"text/css">
+
+<!-- CSS files start here -->
+<link href=3D"https://www.dfrobot.com/forum/styles/FLATBOOTS/theme/styleshe=
+et.css" rel=3D"stylesheet">
+
+
+
+<!-- Remove the conditional below to use the custom CSS without FLATBOOTS M=
+ini CMS Extension -->
+<!-- CSS files stop here -->
+
+
+<!-- magic dust -->
+=09
+=09
+<!--Adair 2018-08-22 SEO Start-->
+	<meta name=3D"keywords" content=3D"Arduino Forum, Lattepanda Forum, Roboti=
+cs Forum, IOT Forum ">
+	<meta name=3D"description" content=3D"DFRobot official forum including hun=
+dreds of topics about Arduino shields, sensors, and some other topics about=
+ Lattepanda, Robotics, PCB Service, 3D Printing, powerful tech support for =
+you to ask tech problems!">
+<!--Adair 2018-08-22 SEO Start-->
+<style type=3D"text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{displ=
+ay:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-round=
+ed,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-=
+circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .a=
+t-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height=
+:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_s=
+tyle .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;t=
+op:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opaci=
+ty:.001}#at_complete,#at_error,#at_share,#at_success{position:static!import=
+ant}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16=
+p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sa=
+ns-serif!important;font-size:9pt!important;outline-style:none;outline-width=
+:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15=
+s.mmborder{position:fixed!important;width:250px!important}#at15s{background=
+:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA=
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAl=
+GFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg=3D=3D);float:none;line-height:1em;m=
+argin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at1=
+5s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-lab=
+el{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-al=
+ign:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-bl=
+ock;background-repeat:no-repeat;background-position:top left;margin:0;overf=
+low:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_s=
+tyle .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;bac=
+kground-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2=
+pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_=
+style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;backgroun=
+d-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;h=
+eight:20px;line-height:20px;background-size:20px!important}.at4-icon.circul=
+ar,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded=
+,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4=
+-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;backgr=
+ound-size:1pc;width:1pc;height:1pc;background-position:top left;display:inl=
+ine-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-con=
+tainer .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#a=
+t15s.atm{background:none!important;padding:0!important;width:10pc!important=
+}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{po=
+sition:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom=
+:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-=
+bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_succes=
+s span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at=
+16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{rig=
+ht:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#=
+4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_bran=
+d{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_ite=
+m,#at_share .at_item{background:#fff!important;float:left!important;color:#=
+4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_h=
+over .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width=
+:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!im=
+portant}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_ite=
+m:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focu=
+s,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hove=
+r{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!importan=
+t;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!impor=
+tant;border:1px solid #fff}.at15t{display:block!important;height:1pc!import=
+ant;line-height:1pc!important;padding-left:20px!important;background-positi=
+on:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolb=
+ox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-=
+bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{widt=
+h:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.a=
+ddthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.ad=
+dthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_fa=
+cebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbo=
+x a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursqu=
+are,.addthis_toolbox a.addthis_button_google_plusone,.addthis_toolbox a.add=
+this_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pi=
+nit,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.at-share-=
+tbx-element .google_plusone_iframe_widget>span>div{vertical-align:top!impor=
+tant}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolb=
+ox.addthis_vertical_style span.addthis_follow_label{display:block;white-spa=
+ce:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_=
+toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height=
+:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;floa=
+t:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_=
+toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_p=
+ill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.add=
+this_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_styl=
+e a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_comb=
+o_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_de=
+fault_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clea=
+r:both}.addthis_default_style .addthis_separator,.addthis_default_style .at=
+4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addt=
+his_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300=
+b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:b=
+lock}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthi=
+s_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cur=
+sor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_face=
+book_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis=
+_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.=
+addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!impo=
+rtant;width:20px!important;line-height:20px!important}.addthis_32x32_style =
+.at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2=
+pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflo=
+w:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-he=
+ight:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_s=
+tyle .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!import=
+ant;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:ur=
+l(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXR=
+FWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFV=
+JHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg=3D=3D);z-index:10000001;position:absol=
+ute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185=
+px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif=
+;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:=
+relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt =
+h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9=
+pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:1=
+0px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt =
+a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!impo=
+rtant;height:1px!important;border:0!important}.atm{width:10pc!important;pad=
+ding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,hel=
+vetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(da=
+ta:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHR=
+Tb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIU=
+CAAQDcngCUgqGMqwAAAABJRU5ErkJggg=3D=3D);padding:4px}.atm-f{text-align:right=
+;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1p=
+x solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.=
+atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transpar=
+ent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text=
+-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;f=
+ont-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!imp=
+ortant}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decor=
+ation:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#a=
+t_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vert=
+ical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:blo=
+ck;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addt=
+his.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton=
+:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pintere=
+st_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{ver=
+tical-align:baseline!important}#at16pf{height:auto;text-align:right;padding=
+:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:poin=
+ter;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:1=
+0px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{c=
+olor:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top=
+:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_=
+button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-sha=
+re.addthis_counter_style .addthis_button_google_plusone.wsb-social-share-bu=
+tton{padding-top:0}.body .wsb-social-share.addthis_counter_style .addthis_b=
+utton_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#=
+at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4=
+,.at4-recommended{display:none!important}}@media screen and (max-width:400p=
+x){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:=
+400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow=
+:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-ch=
+ild{border-bottom:1px solid #c5c5c5}}</style><style type=3D"text/css">.at-b=
+randing-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;fo=
+nt-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-bran=
+ding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVB=
+ORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbW=
+FnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1=
+WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.=
+at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10=
+px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no=
+-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image=
+/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2F=
+yZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWod=
+jhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxl=
+zWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-brand=
+ing-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.=
+at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-b=
+randing-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at=
+-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:vis=
+ited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;col=
+or:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:=
+9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-in=
+fo span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;=
+padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';=
+font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-co=
+lor:#0780df}</style><style type=3D"text/css">.at-share-dock.atss{top:auto;l=
+eft:0;right:0;bottom:0;width:100%;max-width:100%;z-index:1000200;box-shadow=
+:0 0 1px 1px #e2dfe2}.at-share-dock.at-share-dock-zindex-hide{z-index:-1!im=
+portant}.at-share-dock.atss-top{bottom:auto;top:0}.at-share-dock a{width:au=
+to;transition:none;color:#fff;text-decoration:none;box-sizing:content-box;-=
+webkit-box-sizing:content-box;-moz-box-sizing:content-box}.at-share-dock a:=
+hover{width:auto}.at-share-dock .at4-count{height:43px;padding:5px 0 0;line=
+-height:20px;background:#fff;font-family:Helvetica neue,arial}.at-share-doc=
+k .at4-count span{width:100%}.at-share-dock .at4-count .at4-share-label{col=
+or:#848484;font-size:10px;letter-spacing:1px}.at-share-dock .at4-count .at4=
+-counter{top:2px;position:relative;display:block;color:#222;font-size:22px}=
+.at-share-dock.at-shfs-medium .at4-count{height:36px;line-height:1pc;paddin=
+g-top:4px}.at-share-dock.at-shfs-medium .at4-count .at4-counter{font-size:1=
+8px}.at-share-dock.at-shfs-medium .at-share-btn .at-icon-wrapper,.at-share-=
+dock.at-shfs-medium a .at-icon-wrapper{padding:6px 0}.at-share-dock.at-shfs=
+-small .at4-count{height:26px;line-height:1;padding-top:3px}.at-share-dock.=
+at-shfs-small .at4-count .at4-share-label{font-size:8px}.at-share-dock.at-s=
+hfs-small .at4-count .at4-counter{font-size:14px}.at-share-dock.at-shfs-sma=
+ll .at-share-btn .at-icon-wrapper,.at-share-dock.at-shfs-small a .at-icon-w=
+rapper{padding:4px 0}</style><style type=3D"text/css">div.at-share-close-co=
+ntrol.ats-dark,div.at-share-open-control-left.ats-dark,div.at-share-open-co=
+ntrol-right.ats-dark{background:#262b30}div.at-share-close-control.ats-ligh=
+t,div.at-share-open-control-left.ats-light,div.at-share-open-control-right.=
+ats-light{background:#fff}div.at-share-close-control.ats-gray,div.at-share-=
+open-control-left.ats-gray,div.at-share-open-control-right.ats-gray{backgro=
+und:#f2f2f2}.atss{position:fixed;top:20%;width:3pc;z-index:100020;backgroun=
+d:none}.at-share-close-control{position:relative;width:3pc;overflow:auto}.a=
+t-share-open-control-left{position:fixed;top:20%;z-index:100020;left:0;widt=
+h:22px}.at-share-close-control .at4-arrow.at-left{float:right}.atss-left{le=
+ft:0;float:left;right:auto}.atss-right{left:auto;float:right;right:0}.atss-=
+right.at-share-close-control .at4-arrow.at-right{position:relative;right:0;=
+overflow:auto}.atss-right.at-share-close-control .at4-arrow{float:left}.at-=
+share-open-control-right{position:fixed;top:20%;z-index:100020;right:0;widt=
+h:22px;float:right}.atss-right .at-share-close-control .at4-arrow{float:lef=
+t}.atss.atss-right a{float:right}.atss.atss-right .at4-share-title{float:ri=
+ght;overflow:hidden}.atss .at-share-btn,.atss a{position:relative;display:b=
+lock;width:3pc;margin:0;outline-offset:-1px;text-align:center;float:left;tr=
+ansition:width .15s ease-in-out;overflow:hidden;background:#e8e8e8;z-index:=
+100030;cursor:pointer}.at-share-btn::-moz-focus-inner{border:0;padding:0}.a=
+tss-right .at-share-btn{float:right}.atss .at-share-btn{border:0;padding:0}=
+.atss .at-share-btn:focus,.atss .at-share-btn:hover,.atss a:focus,.atss a:h=
+over{width:4pc}.atss .at-share-btn .at-icon-wrapper,.atss a .at-icon-wrappe=
+r{display:block;padding:8px 0}.atss .at-share-btn:last-child,.atss a:last-c=
+hild{border:none}.atss .at-share-btn span .at-icon,.atss a span .at-icon{po=
+sition:relative;top:0;left:0;display:block;background-repeat:no-repeat;back=
+ground-position:50% 50%;width:2pc;height:2pc;line-height:2pc;border:none;pa=
+dding:0;margin:0 auto;overflow:hidden;cursor:pointer;cursor:hand}.at4-share=
+ .at-custom-sidebar-counter{font-family:Helvetica neue,arial;vertical-align=
+:top;margin-right:4px;display:inline-block;text-align:center}.at4-share .at=
+-custom-sidebar-count{font-size:17px;line-height:1.25em;color:#222}.at4-sha=
+re .at-custom-sidebar-text{font-size:9px;line-height:1.25em;color:#888;lett=
+er-spacing:1px}.at4-share .at4-share-count-container{position:absolute;left=
+:0;right:auto;top:auto;bottom:0;width:100%;color:#fff;background:inherit}.a=
+t4-share .at4-share-count,.at4-share .at4-share-count-container{line-height=
+:1pc;font-size:10px}.at4-share .at4-share-count{text-indent:0;font-family:A=
+rial,Helvetica Neue,Helvetica,sans-serif;font-weight:200;width:100%;height:=
+1pc}.at4-share .at4-share-count-anchor{padding-bottom:8px;text-decoration:n=
+one;transition:padding .15s ease-in-out .15s,width .15s ease-in-out}</style=
+><style type=3D"text/css">#at4-drawer-outer-container{top:0;width:20pc;posi=
+tion:fixed}#at4-drawer-outer-container.at4-drawer-inline{position:relative}=
+#at4-drawer-outer-container.at4-drawer-inline.at4-drawer-right{float:right;=
+right:0;left:auto}#at4-drawer-outer-container.at4-drawer-inline.at4-drawer-=
+left{float:left;left:0;right:auto}#at4-drawer-outer-container.at4-drawer-sh=
+own,#at4-drawer-outer-container.at4-drawer-shown *{z-index:999999}#at4-draw=
+er-outer-container,#at4-drawer-outer-container .at4-drawer-outer,#at-drawer=
+{height:100%;overflow-y:auto;overflow-x:hidden}.at4-drawer-push-content-rig=
+ht-back{position:relative;right:0}.at4-drawer-push-content-right{position:r=
+elative;left:20pc!important}.at4-drawer-push-content-left-back{position:rel=
+ative;left:0}.at4-drawer-push-content-left{position:relative;right:20pc!imp=
+ortant}#at4-drawer-outer-container.at4-drawer-right{left:auto;right:-20pc}#=
+at4-drawer-outer-container.at4-drawer-left{right:auto;left:-20pc}#at4-drawe=
+r-outer-container.at4-drawer-shown.at4-drawer-right{left:auto;right:0}#at4-=
+drawer-outer-container.at4-drawer-shown.at4-drawer-left{right:auto;left:0}#=
+at-drawer{top:0;z-index:9999999;height:100%;animation-duration:.4s}#at-draw=
+er.drawer-push.at-right{right:-20pc}#at-drawer.drawer-push.at-left{left:-20=
+pc}#at-drawer .at-recommended-label{padding:0 0 0 20px;color:#999;line-heig=
+ht:3pc;font-size:18px;font-weight:300;cursor:default}#at-drawer-arrow{width=
+:30px;height:5pc}#at-drawer-arrow.ats-dark{background:#262b30}#at-drawer-ar=
+row.ats-gray{background:#f2f2f2}#at-drawer-open-arrow{background-image:url(=
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAABcCAYAAAC1OT8uAAAAGXRFW=
+HRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAA=
+AAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8=
++IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUC=
+BDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gP=
+HJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50=
+YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8=
+vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS=
+94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zV=
+HlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChN=
+YWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk3ODNCQjdERUQ3QjExRTM5NjF=
+GRUZBODc3MTIwMTNCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk3ODNCQjdFRUQ3QjExRT=
+M5NjFGRUZBODc3MTIwMTNCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9I=
+nhtcC5paWQ6OTc4M0JCN0JFRDdCMTFFMzk2MUZFRkE4NzcxMjAxM0IiIHN0UmVmOmRvY3VtZW50=
+SUQ9InhtcC5kaWQ6OTc4M0JCN0NFRDdCMTFFMzk2MUZFRkE4NzcxMjAxM0IiLz4gPC9yZGY6RGV=
+zY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7kst=
+zCAAAB4ElEQVR42uyWv0oDQRDGb9dYimgVjliID2Ca9AGfwtZob2Grja1PIFj7EhGCYK99VPBPO=
+kVMp8X5rc6FeN7dfjOksMjAxwXZ3667OzvfLKRr682l5ZV9aDh+fxsnRHhoDzqGLjFBi4XOoFto=
+AxowoB893o/w7WpAl/+QgQMBwwRdTPhUC2lAV/wDA7qy5WOgq9psHejqTqkKdLE7KYCv0JZjMgB=
+gB58raBG6mP1K6j2pT099T+qMUOeeOss1wDcEIA1PnQXy576rAUI0oFMoC7VCnn40Gs8Pd4lAiX=
+NUKmJ0lh1mPzGEWiyUCqAGW3Pwv4IvUJsFO9CHgP3Zr6Te0xwgAf3LxaAjS241pbikCRkOg+nSJ=
+dV4p8HOPl3vvRYI5dtrgVDvvcWovcWovcWovcWovcWovcWovQChWNywNpqvdAKtQp/QNmPUIQ6k=
+wwqt2Xmsxf6GMPM1Pptsbz45CPmXqKb+15Gz4J/LZcDSNIqBlQlbB0afe1mmUDWiCNKFZRq0VKM=
+eXY1CTDq2sJLWsCmoaBBRqNRR6qBKC6qCaj2rDIqaXBGiXHEaom00h1S+K3fVlr6HNuqgvgCh0+=
+owt21bybQn8+mZ78mcEebcM2e5+T2ZX24ZqCph0qn1vgQYAJ/KDpLQr2tPAAAAAElFTkSuQmCC)=
+;background-repeat:no-repeat;width:13px;height:23px;margin:28px 0 0 8px}.at=
+-left #at-drawer-open-arrow{background-position:0 -46px}.ats-dark #at-drawe=
+r-open-arrow{background-position:0 -23px}.ats-dark.at-left #at-drawer-open-=
+arrow{background-position:0 -69px}#at-drawer-arrow.at4-drawer-modern-browse=
+rs{position:fixed;top:40%;background-repeat:no-repeat;background-position:0=
+ 0!important;z-index:9999999}.at4-drawer-inline #at-drawer-arrow{position:a=
+bsolute}#at-drawer-arrow.at4-drawer-modern-browsers.at-right{right:0}#at-dr=
+awer-arrow.at4-drawer-modern-browsers.at-left{left:0}.at4-drawer-push-anima=
+tion-left{transition:left .4s ease-in-out .15s}.at4-drawer-push-animation-r=
+ight{transition:right .4s ease-in-out .15s}#at-drawer.drawer-push.at4-drawe=
+r-push-animation-right{right:0}#at-drawer.drawer-push.at4-drawer-push-anima=
+tion-right-back{right:-20pc!important}#at-drawer.drawer-push.at4-drawer-pus=
+h-animation-left{left:0}#at-drawer.drawer-push.at4-drawer-push-animation-le=
+ft-back{left:-20pc!important}#at-drawer .at4-closebutton.drawer-close{conte=
+nt:'X';color:#999;display:block;position:absolute;margin:0;top:0;right:0;wi=
+dth:3pc;height:45px;line-height:45px;overflow:hidden;opacity:.5}#at-drawer.=
+ats-dark .at4-closebutton.drawer-close{color:#fff}#at-drawer .at4-closebutt=
+on.drawer-close:hover{opacity:1}#at-drawer.ats-dark.at4-recommended .at4-lo=
+go-container a{color:#666}#at-drawer.at4-recommended .at4-recommended-verti=
+cal{padding:0}#at-drawer.at4-recommended .at4-recommended-item .sponsored-l=
+abel{margin:2px 0 0 21px;color:#ddd}#at-drawer.at4-recommended .at4-recomme=
+nded-vertical .at4-recommended-item{position:relative;padding:0;width:20pc;=
+height:180px;margin:0}#at-drawer.at4-recommended .at4-recommended-vertical =
+.at4-recommended-item .at4-recommended-item-img a:after{content:'';position=
+:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.65);z-index:=
+1000000;transition:all .2s ease-in-out}#at-drawer.at4-recommended .at4-reco=
+mmended-vertical .at4-recommended-item.at-hover .at4-recommended-item-img a=
+:after{background:rgba(0,0,0,.8)}#at-drawer .at4-recommended-vertical .at4-=
+recommended-item .at4-recommended-item-img,#at-drawer .at4-recommended-vert=
+ical .at4-recommended-item .at4-recommended-item-img a,#at-drawer .at4-reco=
+mmended-vertical .at4-recommended-item .at4-recommended-item-img img{width:=
+20pc;height:180px;float:none}#at-drawer .at4-recommended-vertical .at4-reco=
+mmended-item .at4-recommended-item-caption{width:100%;position:absolute;bot=
+tom:0;left:0;height:70px}#at-drawer .at4-recommended-vertical .at4-recommen=
+ded-item .at4-recommended-item-caption .at-h4{color:#fff;position:absolute;=
+height:52px;top:0;left:20px;right:20px;margin:0;padding:0;line-height:25px;=
+font-size:20px;font-weight:600;z-index:1000001;text-decoration:none;text-tr=
+ansform:none}#at-drawer.at4-recommended .at4-recommended-vertical .at4-reco=
+mmended-item .at4-recommended-item-caption .at-h4 a:hover{text-decoration:n=
+one}#at-drawer.at4-recommended .at4-recommended-vertical .at4-recommended-i=
+tem .at4-recommended-item-caption .at-h4 a:link{color:#fff}#at-drawer.at4-r=
+ecommended .at4-recommended-vertical .at4-recommended-item .at4-recommended=
+-item-caption small{position:absolute;top:auto;bottom:10px;left:20px;width:=
+auto;color:#ccc}#at-drawer.at4-recommended .at4-logo-container{margin-left:=
+20px}#at-drawer.ats-dark.at4-recommended .at4-logo-container a:hover{color:=
+#fff}#at-drawer.at4-recommended .at-logo{margin:0}</style><style type=3D"te=
+xt/css">.at4-follow.at-mobile{display:none!important}.at4-follow{position:f=
+ixed;top:0;right:0;font-weight:400;color:#666;cursor:default;z-index:10001}=
+.at4-follow .at4-follow-inner{position:relative;padding:10px 24px 10px 15px=
+}.at4-follow-inner,.at-follow-open-control{border:0 solid #c5c5c5;border-wi=
+dth:1px 0 1px 1px;margin-top:-1px}.at4-follow .at4-follow-container{margin-=
+left:9pt}.at4-follow.at4-follow-24 .at4-follow-container{height:24px;line-h=
+eight:23px;font-size:13px}.at4-follow.at4-follow-32 .at4-follow-container{w=
+idth:15pc;height:2pc;line-height:2pc;font-size:14px}.at4-follow .at4-follow=
+-container .at-follow-label{display:inline-block;height:24px;line-height:24=
+px;margin-right:10px;padding:0;cursor:default;float:left}.at4-follow .at4-f=
+ollow-container .at-icon-wrapper{height:24px;width:24px}.at4-follow.ats-tra=
+nsparent .at4-follow-inner,.at-follow-open-control.ats-transparent{border-c=
+olor:transparent}.at4-follow.ats-dark .at4-follow-inner,.at-follow-open-con=
+trol.ats-dark{background:#262b30;border-color:#000;color:#fff}.at4-follow.a=
+ts-dark .at-follow-close-control{background-color:#262b30}.at4-follow.ats-l=
+ight .at4-follow-inner{background:#fff;border-color:#c5c5c5}.at4-follow.ats=
+-gray .at4-follow-inner,.at-follow-open-control.ats-gray{background:#f2f2f2=
+;border-color:#c5c5c5}.at4-follow.ats-light .at4-follow-close-control,.at-f=
+ollow-open-control.ats-light{background:#e5e5e5}.at4-follow .at4-follow-inn=
+er .at4-follow-close-control{position:absolute;top:0;bottom:0;left:0;width:=
+20px;cursor:pointer;display:none}.at4-follow .at4-follow-inner .at4-follow-=
+close-control div{display:block;line-height:20px;text-indent:-9999em;margin=
+-top:calc(50% + 1px);overflow:hidden}.at-follow-open-control div.at4-arrow.=
+at-left{background-position:0 -2px}.at-follow-open-control{position:fixed;h=
+eight:35px;top:0;right:0;padding-top:10px;z-index:10002}.at-follow-btn{marg=
+in:0 5px 5px 0;padding:0;outline-offset:-1px;display:inline-block;box-sizin=
+g:content-box;transition:all .2s ease-in-out}.at-follow-btn:focus,.at-follo=
+w-btn:hover{transform:translateY(-4px)}.at4-follow-24 .at-follow-btn{height=
+:25px;line-height:0;width:25px}</style><style type=3D"text/css">.at-follow-=
+tbx-element .at300b,.at-follow-tbx-element .at300m{display:inline-block;wid=
+th:auto;padding:0;margin:0 2px 5px;outline-offset:-1px;transition:all .2s e=
+ase-in-out}.at-follow-tbx-element .at300b:focus,.at-follow-tbx-element .at3=
+00b:hover,.at-follow-tbx-element .at300m:focus,.at-follow-tbx-element .at30=
+0m:hover{transform:translateY(-4px)}.at-follow-tbx-element .addthis_vertica=
+l_style .at300b,.at-follow-tbx-element .addthis_vertical_style .at300m{disp=
+lay:block}.at-follow-tbx-element .addthis_vertical_style .at300b .addthis_f=
+ollow_label,.at-follow-tbx-element .addthis_vertical_style .at300b .at-icon=
+-wrapper,.at-follow-tbx-element .addthis_vertical_style .at300m .addthis_fo=
+llow_label,.at-follow-tbx-element .addthis_vertical_style .at300m .at-icon-=
+wrapper{display:inline-block;vertical-align:middle;margin-right:5px}.at-fol=
+low-tbx-element .addthis_vertical_style .at300b:focus,.at-follow-tbx-elemen=
+t .addthis_vertical_style .at300b:hover,.at-follow-tbx-element .addthis_ver=
+tical_style .at300m:focus,.at-follow-tbx-element .addthis_vertical_style .a=
+t300m:hover{transform:none}</style><style type=3D"text/css">.at4-jumboshare=
+ .at-share-btn{display:inline-block;margin-right:13px;margin-top:13px}.at4-=
+jumboshare .at-share-btn .at-icon{float:left}.at4-jumboshare .at-share-btn =
+.at300bs{display:inline-block;float:left;cursor:pointer}.at4-jumboshare .at=
+4-mobile .at-share-btn .at-icon,.at4-jumboshare .at4-mobile .at-share-btn .=
+at-icon-wrapper{margin:0;padding:0}.at4-jumboshare .at4-mobile .at-share-bt=
+n{padding:0}.at4-jumboshare .at4-mobile .at-share-btn .at-label{display:non=
+e}.at4-jumboshare .at4-count{font-size:60px;line-height:60px;font-family:He=
+lvetica neue,arial;font-weight:700}.at4-jumboshare .at4-count-container{dis=
+play:table-cell;text-align:center;min-width:200px;vertical-align:middle;bor=
+der-right:1px solid #ccc;padding-right:20px}.at4-jumboshare .at4-share-cont=
+ainer{display:table-cell;vertical-align:middle;padding-left:20px}.at4-jumbo=
+share .at4-share-container.at-share-tbx-element{padding-top:0}.at4-jumbosha=
+re .at4-title{position:relative;font-size:18px;line-height:18px;bottom:2px}=
+.at4-jumboshare .at4-spacer{height:1px;display:block;visibility:hidden;opac=
+ity:0}.at4-jumboshare .at-share-btn{display:inline-block;margin:0 2px;line-=
+height:0;padding:0;overflow:hidden;text-decoration:none;text-transform:none=
+;color:#fff;cursor:pointer;transition:all .2s ease-in-out;border:0;backgrou=
+nd-color:transparent}.at4-jumboshare .at-share-btn:focus,.at4-jumboshare .a=
+t-share-btn:hover{transform:translateY(-4px);color:#fff;text-decoration:non=
+e}.at4-jumboshare .at-label{font-family:helvetica neue,helvetica,arial,sans=
+-serif;font-size:9pt;padding:0 15px 0 0;margin:0;height:2pc;line-height:2pc=
+;background:none}.at4-jumboshare .at-share-btn:hover,.at4-jumboshare .at-sh=
+are-btn:link{text-decoration:none}.at4-jumboshare .at-share-btn::-moz-focus=
+-inner{border:0;padding:0}.at4-jumboshare.at-mobile .at-label{display:none}=
+</style><style type=3D"text/css">.at4-recommendedbox-outer-container{displa=
+y:inline}.at4-recommended-outer{position:static}.at4-recommended{top:20%;ma=
+rgin:0;text-align:center;font-weight:400;font-size:13px;line-height:17px;co=
+lor:#666}.at4-recommended.at-inline .at4-recommended-horizontal{text-align:=
+left}.at4-recommended-recommendedbox{padding:0;z-index:inherit}.at4-recomme=
+nded-recommended{padding:40px 0}.at4-recommended-horizontal{max-height:340p=
+x}.at4-recommended.at-medium .at4-recommended-horizontal{max-height:15pc}.a=
+t4-recommended.at4-minimal.at-medium .at4-recommended-horizontal{padding-to=
+p:10px;max-height:230px}.at4-recommended-text-only .at4-recommended-horizon=
+tal{max-height:130px}.at4-recommended-horizontal{padding-top:5px;overflow-y=
+:hidden}.at4-minimal{background:none;color:#000;border:none!important;box-s=
+hadow:none!important}@media screen and (max-width:900px){.at4-recommended-h=
+orizontal .at4-recommended-item,.at4-recommended-horizontal .at4-recommende=
+d-item .at4-recommended-item-img{width:15pc}}.at4-recommended.at4-minimal .=
+at4-recommended-horizontal .at4-recommended-item .at4-recommended-item-capt=
+ion{padding:0 0 10px}.at4-recommended.at4-minimal .at4-recommended-horizont=
+al .at4-recommended-item-caption{padding:20px 0 0!important}.addthis-smartl=
+ayers .at4-recommended .at-h3.at-recommended-label{margin:0;padding:0;font-=
+weight:300;font-size:18px;line-height:24px;color:#464646;width:100%;display=
+:inline-block;zoom:1}.addthis-smartlayers .at4-recommended.at-inline .at-h3=
+.at-recommended-label{text-align:left}#at4-thankyou .addthis-smartlayers .a=
+t4-recommended.at-inline .at-h3.at-recommended-label{text-align:center}.at4=
+-recommended .at4-recommended-item{display:inline-block;zoom:1;position:rel=
+ative;background:#fff;border:1px solid #c5c5c5;width:200px;margin:10px}.add=
+this_recommended_horizontal .at4-recommended-item{border:none}.at4-recommen=
+ded .at4-recommended-item .sponsored-label{color:#666;font-size:9px;positio=
+n:absolute;top:-20px}.at4-recommended .at4-recommended-item-img .at-tli,.at=
+4-recommended .at4-recommended-item-img a{position:absolute;left:0}.at4-rec=
+ommended.at-inline .at4-recommended-horizontal .at4-recommended-item{margin=
+:10px 20px 0 0}.at4-recommended.at-medium .at4-recommended-horizontal .at4-=
+recommended-item{margin:10px 10px 0 0}.at4-recommended.at-medium .at4-recom=
+mended-item{width:140px;overflow:hidden}.at4-recommended .at4-recommended-i=
+tem .at4-recommended-item-img{position:relative;text-align:center;width:100=
+%;height:200px;line-height:0;overflow:hidden}.at4-recommended .at4-recommen=
+ded-item .at4-recommended-item-img a{display:block;width:100%;height:200px}=
+.at4-recommended.at-medium .at4-recommended-item .at4-recommended-item-img,=
+.at4-recommended.at-medium .at4-recommended-item .at4-recommended-item-img =
+a{height:140px}.at4-recommended .at4-recommended-item .at4-recommended-item=
+-img img{position:absolute;top:0;left:0;min-height:0;min-width:0;max-height=
+:none;max-width:none;margin:0;padding:0}.at4-recommended .at4-recommended-i=
+tem .at4-recommended-item-caption{height:74px;overflow:hidden;padding:20px;=
+text-align:left;-ms-box-sizing:content-box;-o-box-sizing:content-box;box-si=
+zing:content-box}.at4-recommended.at-medium .at4-recommended-item .at4-reco=
+mmended-item-caption{height:50px;padding:15px}.at4-recommended .at4-recomme=
+nded-item .at4-recommended-item-caption .at-h4{height:54px;margin:0 0 5px;p=
+adding:0;overflow:hidden;word-wrap:break-word;font-size:14px;font-weight:40=
+0;line-height:18px;text-align:left}.at4-recommended.at-medium .at4-recommen=
+ded-item .at4-recommended-item-caption .at-h4{font-size:9pt;line-height:1pc=
+;height:33px}.at4-recommended .at4-recommended-item:hover .at4-recommended-=
+item-caption .at-h4{text-decoration:underline}.at4-recommended a:link,.at4-=
+recommended a:visited{text-decoration:none;color:#464646}.at4-recommended .=
+at4-recommended-item .at4-recommended-item-caption .at-h4 a:hover{text-deco=
+ration:underline;color:#000}.at4-recommended .at4-recommended-item .at4-rec=
+ommended-item-caption small{display:block;white-space:nowrap;overflow:hidde=
+n;text-overflow:ellipsis;font-size:11px;color:#666}.at4-recommended.at-medi=
+um .at4-recommended-item .at4-recommended-item-caption small{font-size:9px}=
+.at4-recommended .at4-recommended-vertical{padding:15px 0 0}.at4-recommende=
+d .at4-recommended-vertical .at4-recommended-item{display:block;width:auto;=
+max-width:100%;height:60px;border:none;margin:0 0 15px;box-shadow:none;back=
+ground:none}.at4-recommended-vertical .at4-recommended-item .at4-recommende=
+d-item-img,.at4-recommended-vertical .at4-recommended-item .at4-recommended=
+-item-img img{width:60px;height:60px;float:left}.at4-recommended-vertical .=
+at4-recommended-item .at4-recommended-item-caption{border-top:none;margin:0=
+;height:60px;padding:3px 5px}.at4-recommended .at4-recommended-vertical .at=
+4-recommended-item .at4-recommended-item-caption .at-h4{height:38px;margin:=
+0}.at4-recommended .at4-recommended-vertical .at4-recommended-item .at4-rec=
+ommended-item-caption small{position:absolute;bottom:0}.at4-recommended .at=
+-recommended-label.at-vertical{text-align:left}.at4-no-image-light-recommen=
+ded,.at4-no-image-minimal-recommended{background-color:#f2f2f2!important}.a=
+t4-no-image-gray-recommended{background-color:#e6e6e5!important}.at4-no-ima=
+ge-dark-recommended{background-color:#4e555e!important}.at4-recommended .at=
+4-recommended-item-placeholder-img{background-repeat:no-repeat!important;ba=
+ckground-position:center!important;width:100%!important;height:100%!importa=
+nt}.at4-recommended-horizontal .at4-no-image-dark-recommended .at4-recommen=
+ded-item-placeholder-img{background-image:url(data:image/png;base64,iVBORw0=
+KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZV=
+JlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i7=
+7u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0i=
+YWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ=
+4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodH=
+RwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwd=
+GlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv=
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3R=
+SZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcD=
+pDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0Y=
+W5jZUlEPSJ4bXAuaWlkOjlFNUUyQTg3MTI0RDExRTM4NzAwREJDRjlCQzAyMUVFIiB4bXBNTTpE=
+b2N1bWVudElEPSJ4bXAuZGlkOjlFNUUyQTg4MTI0RDExRTM4NzAwREJDRjlCQzAyMUVFIj4gPHh=
+tcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUU1RTJBODUxMjREMT=
+FFMzg3MDBEQkNGOUJDMDIxRUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUU1RTJBODYxM=
+jREMTFFMzg3MDBEQkNGOUJDMDIxRUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4g=
+PC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6oCfPiAAABfUlEQVR42uyWTU/DMAyGm3b=
+dBxp062hHe+PC//9HCIkDYpNAO7CPAuWN5Eohyhpno2GHWqq8pO78xHHsiLquH4L/l6cwuBAZaO=
+PKs//YBFIJIR59UiAt7huYi90aE/UQakTDLaL26RUEAAJqiefm93T9Bpj1X4O0bY0OIUXCpYBJv=
+YDAUWyAUCWliHGTcnpqRMaM72ImRAJVknYG+eb4YEDIBeU0zGnsBLK1ODogYSsLhDwIJeVVk18l=
+zfNA4ERGZNXi59UCIQhiYDilpSm/jp4awLxDvWhlf4/nGe8+LLuSt+SZul28ggaHG6gNVhDR+Iu=
+RFzOoxGKWwG7vVFm5AAQxgcqYpzrjFjR9zwPH5LSuT7XlNr2MQm5LzqjLpncNNaM+s8M27Y60g3=
+FwhoSMzrtUQllgLtRs5pZ2cB4IhbvQbGRZv1NsrhyS8+SI5Mo9RJWpjAI1xqKL+0iEP180vy214=
+JbeR12AyOgsHI7e0NfFyKv0ID1ID+IqPwIMAOeljGQOryBmAAAAAElFTkSuQmCC)!important}=
+.at4-recommended-vertical .at4-no-image-dark-recommended .at4-recommended-i=
+tem-placeholder-img{background-image:url(data:image/png;base64,iVBORw0KGgoA=
+AAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR=
+5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/Ii=
+BpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvY=
+mU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwg=
+MjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8=
+vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbi=
+ByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4b=
+Wxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9=
+Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmV=
+hdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZU=
+lEPSJ4bXAuaWlkOjAzREMyNTM2MTI0RjExRTM4NzAwREJDRjlCQzAyMUVFIiB4bXBNTTpEb2N1b=
+WVudElEPSJ4bXAuZGlkOjAzREMyNTM3MTI0RjExRTM4NzAwREJDRjlCQzAyMUVFIj4gPHhtcE1N=
+OkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDNEQzI1MzQxMjRGMTFFMzg=
+3MDBEQkNGOUJDMDIxRUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDNEQzI1MzUxMjRGMT=
+FFMzg3MDBEQkNGOUJDMDIxRUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94O=
+nhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5GfbtkAAAAxklEQVR42qRSTQvCMAxduk53mEOH=
+KFPP/v8/5cGTiIibivVFUomlG7gFHvloXpKmJefcPhkmNyvGEWj+IOZA6ckPImoxxVwOLvCvXUz=
+kpayNCpRQK64IbOBnAYGAXMeMslNlU+CzrIEdCkxi5DPAoz6BE8ZuVNdKJuL8rS9sv62IXlCHyP=
+0KqKUKZXK9uwkSLVArfwpVR3b225kXwovibcP+jC4jUtfWPZmfqJJnYlkAM128j1z0nHWKSUbIK=
+DL/msHktwADAPptQo+vkZNLAAAAAElFTkSuQmCC)!important}.at4-recommended-horizon=
+tal .at4-no-image-gray-recommended .at4-recommended-item-placeholder-img,.a=
+t4-recommended-horizontal .at4-no-image-light-recommended .at4-recommended-=
+item-placeholder-img,.at4-recommended-horizontal .at4-no-image-minimal-reco=
+mmended .at4-recommended-item-placeholder-img{background-image:url(data:ima=
+ge/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAAGXRFWHRTb2Z0d=
+2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/=
+eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4Onh=
+tcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlID=
+UuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSR=
+EYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMj=
+Ij4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWR=
+vYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS=
+4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZ=
+XNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRv=
+c2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAzREMyNTMyMTI0RjExRTM4NzAwREJDRjl=
+CQzAyMUVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAzREMyNTMzMTI0RjExRTM4NzAwRE=
+JDRjlCQzAyMUVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5pa=
+WQ6OUU1RTJBODkxMjREMTFFMzg3MDBEQkNGOUJDMDIxRUUiIHN0UmVmOmRvY3VtZW50SUQ9Inht=
+cC5kaWQ6OUU1RTJBOEExMjREMTFFMzg3MDBEQkNGOUJDMDIxRUUiLz4gPC9yZGY6RGVzY3JpcHR=
+pb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6dfDQvAAABg0=
+lEQVR42uyWS0vDQBDH82jaKNW0qUltbl68e/Di98eLBz+CCB5EBaWIpUat/4UJLMuame1j7SEDY=
+bqbKfPLvHbDi8ur8+D/5T4K9kR6xrr27D+xgdS3N9d3PilQFmcNzN6mxkbdhxrQcoGofXkFAUAI=
+NcVzrG2vsP8KmJdtg7SlxoRQouBywOReQOAosUDoklPEpEU5XDciqeB/iRAig6pIO4P8CHysBBD=
+qg0palrR2Alkwjj5RsDUDoRqhorpq6quifRkInKiIPLf4eWIgQoLoWbq0stXXn10DmDeoR2PsL/=
+E84N0Hk5Wypc70dMkGGhzOoeb4gpjW34K6GEFljFkGu6XTZJUCEMQBVCHs6kI60MycB47FyUmo2=
+0oPvYJCzhVnvIsR3zg5ghoRTNpyHKTBBhIJTt6pFsoZ9iLDZswcB5uBULhnho0a66eazaFDca59=
+Hym1e4guQ4rCO4Fu/T4Sw8Gk+c3MghN6H+8CRKVg4tB6fV8XI6/SgXQgHYir/AowAMU5TskhKVU=
+NAAAAAElFTkSuQmCC)!important}.at4-recommended-vertical .at4-no-image-gray-r=
+ecommended .at4-recommended-item-placeholder-img,.at4-recommended-vertical =
+.at4-no-image-light-recommended .at4-recommended-item-placeholder-img,.at4-=
+recommended-vertical .at4-no-image-minimal-recommended .at4-recommended-ite=
+m-placeholder-img{background-image:url(data:image/png;base64,iVBORw0KGgoAAA=
+ANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5c=
+cllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBp=
+ZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU=
+6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMj=
+AxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd=
+3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiBy=
+ZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWx=
+uczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Im=
+h0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhd=
+G9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlE=
+PSJ4bXAuaWlkOjAzREMyNTNBMTI0RjExRTM4NzAwREJDRjlCQzAyMUVFIiB4bXBNTTpEb2N1bWV=
+udElEPSJ4bXAuZGlkOjAzREMyNTNCMTI0RjExRTM4NzAwREJDRjlCQzAyMUVFIj4gPHhtcE1NOk=
+Rlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDNEQzI1MzgxMjRGMTFFMzg3M=
+DBEQkNGOUJDMDIxRUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDNEQzI1MzkxMjRGMTFF=
+Mzg3MDBEQkNGOUJDMDIxRUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94Onh=
+tcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz65Fr9cAAAA0ElEQVR42qRRuQrCQBDd3SSaIgYNos=
+SrtLew8f+xsfAnYmEVRMR4YHwjExjCbsBk4DHHzptjR2+2u7VqJ3efjTNQ/EEMgbgiv46H/QNTD=
+PnhCv/mYiLPI21EIIaaUEVgBj+oETQQypgRtidsXfNJpsACBXo28gWgUd9AjrEL0TXhiSh/XhWu=
+dlZI/kCdLPtFUGMRCni9p6kl+kAq/D5UavmzX2fNd87obsCSfztnrOR0rjvTiRImkoyAQQNRyZ2=
+jhjenGNVBOpF1WZatyV8BBgBJ+irgS/KHdAAAAABJRU5ErkJggg=3D=3D)!important}#at-dr=
+awer.ats-dark,.at4-recommended.ats-dark .at4-recommended-horizontal .at4-re=
+commended-item-caption,.at4-recommended.ats-dark .at4-recommended-vertical =
+.at4-recommended-item-caption{background:#262b30}#at-drawer.ats-gray,.at4-r=
+ecommended.ats-gray .at4-recommended-horizontal .at4-recommended-item-capti=
+on{background:#f2f2f2}#at-drawer.ats-light,.at4-recommended.ats-light .at4-=
+recommended-horizontal .at4-recommended-item-caption{background:#fff}.at4-r=
+ecommended.ats-dark .at4-recommended-vertical .at4-recommended-item{backgro=
+und:none}.at4-recommended.ats-dark .at4-recommended-item .at4-recommended-i=
+tem-caption a:hover,.at4-recommended.ats-dark .at4-recommended-item .at4-re=
+commended-item-caption a:link,.at4-recommended.ats-dark .at4-recommended-it=
+em .at4-recommended-item-caption a:visited,.at4-recommended.ats-dark .at4-r=
+ecommended-item .at4-recommended-item-caption small,.at4-recommended.ats-da=
+rk .at4-recommended-item-caption,.at4-recommended.ats-dark .at-logo a:hover=
+,.at4-recommended.ats-dark .at-recommended-label.at-vertical{color:#fff}.at=
+4-recommended-vertical-logo{padding-top:0;text-align:left}.at4-recommended-=
+vertical-logo .at4-logo-container{line-height:10px}.at4-recommended-horizon=
+tal-logo{text-align:center}.at4-recommended.at-inline .at4-recommended-hori=
+zontal-logo{text-align:left}#at4-thankyou .at4-recommended.at-inline .at4-r=
+ecommended-horizontal{text-align:center}.at4-recommended .at-logo{margin:10=
+px 0 0;padding:0;height:25px;overflow:auto;-ms-box-sizing:content-box;-o-bo=
+x-sizing:content-box;box-sizing:content-box}.at4-recommended.at-inline .at4=
+-recommended-horizontal .at-logo{text-align:left}.at4-recommended .at4-logo=
+-container a.at-sponsored-link{color:#666}.at4-recommended-class .at4-logo-=
+container a:hover,.at4-recommendedbox-outer-container .at4-recommended-reco=
+mmendedbox .at4-logo-container a:hover{color:#000}</style><style type=3D"te=
+xt/css">.at-recommendedjumbo-outer-container{margin:0;padding:0;border:0;ba=
+ckground:none;color:#000}.at-recommendedjumbo-footer{position:relative;widt=
+h:100%;height:510px;overflow:hidden;transition:all .3s ease-in-out}.at-mobi=
+le .at-recommendedjumbo-footer{height:250px}.at-recommendedjumbo-footer #bg=
+-link:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;back=
+ground:rgba(0,0,0,.75)}.at-recommendedjumbo-footer:hover #bg-link:after{bac=
+kground:rgba(0,0,0,.85)}.at-recommendedjumbo-footer *,.at-recommendedjumbo-=
+footer :after,.at-recommendedjumbo-footer :before{box-sizing:border-box}.at=
+-recommendedjumbo-footer:hover #at-recommendedjumbo-footer-bg{animation:atR=
+ecommendedJumboAnimatedBackground 1s ease-in-out 1;animation-fill-mode:forw=
+ards}.at-recommendedjumbo-footer #at-recommendedjumbo-top-holder{position:a=
+bsolute;top:0;padding:0 40px;width:100%}.at-mobile .at-recommendedjumbo-foo=
+ter #at-recommendedjumbo-top-holder{padding:0 20px}.at-recommendedjumbo-foo=
+ter .at-recommendedjumbo-footer-inner{position:relative;text-align:center;f=
+ont-family:helvetica,arial,sans-serif;z-index:2;width:100%}.at-recommendedj=
+umbo-footer #at-recommendedjumbo-label-holder{margin:40px 0 0;max-height:30=
+px}.at-mobile .at-recommendedjumbo-footer #at-recommendedjumbo-label-holder=
+{margin:20px 0 0;max-height:20px}.at-recommendedjumbo-footer #at-recommende=
+djumbo-label{font-weight:300;font-size:24px;line-height:24px;color:#fff;mar=
+gin:0}.at-mobile .at-recommendedjumbo-footer #at-recommendedjumbo-label{fon=
+t-weight:150;font-size:14px;line-height:14px}.at-recommendedjumbo-footer #a=
+t-recommendedjumbo-title-holder{margin:20px 0 0;min-height:3pc;max-height:7=
+8pt}.at-mobile .at-recommendedjumbo-footer #at-recommendedjumbo-title-holde=
+r{margin:10px 0 0;min-height:24px;max-height:54px}.at-recommendedjumbo-foot=
+er #at-recommendedjumbo-content-title{font-size:3pc;line-height:52px;font-w=
+eight:700;margin:0}.at-mobile .at-recommendedjumbo-footer #at-recommendedju=
+mbo-content-title{font-size:24px;line-height:27px}.at-recommendedjumbo-foot=
+er a{text-decoration:none;color:#fff}.at-recommendedjumbo-footer a:visited{=
+color:#fff}.at-recommendedjumbo-footer small{margin:20px 0 0;display:inline=
+-block;height:2pc;line-height:2pc;font-size:14px;color:#ccc;cursor:default}=
+.at-mobile .at-recommendedjumbo-footer small{margin:10px 0 0;height:14px;li=
+ne-height:14px;font-size:9pt}.at-recommendedjumbo-footer .at-logo-container=
+{position:absolute;bottom:20px;margin:auto;left:0;right:0}.at-mobile .at-re=
+commendedjumbo-footer .at-logo-container{bottom:10px}.at-recommendedjumbo-f=
+ooter a.at-sponsored-link{color:#ccc}.at-recommendedjumbo-footer div #at-re=
+commendedjumbo-logo-link{padding:2px 0 0 11px;text-decoration:none;line-hei=
+ght:20px;font-family:helvetica,arial,sans-serif;font-size:9px;color:#ccc}@k=
+eyframes atRecommendedJumboAnimatedBackground{0%{transform:scale(1,1)}to{tr=
+ansform:scale(1.1,1.1)}}</style><style type=3D"text/css">.at-resp-share-ele=
+ment{position:relative;padding:0;margin:0;font-size:0;line-height:0}.at-res=
+p-share-element:after,.at-resp-share-element:before{content:" ";display:tab=
+le}.at-resp-share-element.at-mobile .at4-share-count-container,.at-resp-sha=
+re-element.at-mobile .at-label{display:none}.at-resp-share-element .at-shar=
+e-btn{display:inline-block;*display:inline;*zoom:1;margin:0 2px 5px;padding=
+:0;overflow:hidden;line-height:0;text-decoration:none;text-transform:none;c=
+olor:#fff;cursor:pointer;transition:all .2s ease-in-out;border:0;font-famil=
+y:helvetica neue,helvetica,arial,sans-serif;background-color:transparent}.a=
+t-resp-share-element .at-share-btn::-moz-focus-inner{border:0;padding:0}.at=
+-resp-share-element .at-share-btn:focus,.at-resp-share-element .at-share-bt=
+n:hover{transform:translateY(-4px);color:#fff;text-decoration:none}.at-resp=
+-share-element .at-share-btn .at-icon-wrapper{float:left}.at-resp-share-ele=
+ment .at-share-btn.at-share-btn.at-svc-compact:hover{transform:none}.at-res=
+p-share-element .at-share-btn .at-label{font-family:helvetica neue,helvetic=
+a,arial,sans-serif;font-size:9pt;padding:0 15px 0 0;margin:0 0 0 5px;height=
+:2pc;line-height:2pc;background:none}.at-resp-share-element .at-icon,.at-re=
+sp-share-element .at-label{cursor:pointer}.at-resp-share-element .at4-share=
+-count-container{text-decoration:none;float:right;padding-right:15px;font-s=
+ize:9pt}.at-mobile .at-resp-share-element .at-label{display:none}.at-resp-s=
+hare-element.at-mobile .at-share-btn{margin-right:5px}.at-mobile .at-resp-s=
+hare-element .at-share-btn{padding:5px;margin-right:5px}</style><style type=
+=3D"text/css">.at-share-tbx-element{position:relative;margin:0;color:#fff;f=
+ont-size:0}.at-share-tbx-element,.at-share-tbx-element .at-share-btn{font-f=
+amily:helvetica neue,helvetica,arial,sans-serif;padding:0;line-height:0}.at=
+-share-tbx-element .at-share-btn{cursor:pointer;margin:0 5px 5px 0;display:=
+inline-block;overflow:hidden;border:0;text-decoration:none;text-transform:n=
+one;background-color:transparent;color:inherit;transition:all .2s ease-in-o=
+ut}.at-share-tbx-element .at-share-btn:focus,.at-share-tbx-element .at-shar=
+e-btn:hover{transform:translateY(-4px);outline-offset:-1px;color:inherit}.a=
+t-share-tbx-element .at-share-btn::-moz-focus-inner{border:0;padding:0}.at-=
+share-tbx-element .at-share-btn.at-share-btn.at-svc-compact:hover{transform=
+:none}.at-share-tbx-element .at-icon-wrapper{vertical-align:middle}.at-shar=
+e-tbx-element .at4-share-count,.at-share-tbx-element .at-label{margin:0 7.5=
+px 0 2.5px;text-decoration:none;vertical-align:middle;display:inline-block;=
+background:none;height:0;font-size:inherit;line-height:inherit;color:inheri=
+t}.at-share-tbx-element.at-mobile .at4-share-count,.at-share-tbx-element.at=
+-mobile .at-label{display:none}.at-share-tbx-element .at_native_button{vert=
+ical-align:middle}.at-share-tbx-element .addthis_counter.addthis_bubble_sty=
+le{margin:0 2px;vertical-align:middle;display:inline-block}.at-share-tbx-el=
+ement .fb_iframe_widget{display:block}.at-share-tbx-element.at-share-tbx-na=
+tive .at300b{vertical-align:middle}.at-style-responsive .at-share-btn{paddi=
+ng:5px}.at-style-jumbo{display:table}.at-style-jumbo .at4-spacer{height:1px=
+;display:block;visibility:hidden;opacity:0}.at-style-jumbo .at4-count-conta=
+iner{display:table-cell;text-align:center;min-width:200px;vertical-align:mi=
+ddle;border-right:1px solid #ccc;padding-right:20px}.at-style-jumbo .at4-co=
+unt{font-size:60px;line-height:60px;font-weight:700}.at-style-jumbo .at4-co=
+unt-title{position:relative;font-size:18px;line-height:18px;bottom:2px}.at-=
+style-jumbo .at-share-btn-elements{display:table-cell;vertical-align:middle=
+;padding-left:20px}.at_flat_counter{cursor:pointer;font-family:helvetica,ar=
+ial,sans-serif;font-weight:700;text-transform:uppercase;display:inline-bloc=
+k;position:relative;vertical-align:top;height:auto;margin:0 5px;padding:0 6=
+px;left:-1px;background:#ebebeb;color:#32363b;transition:all .2s ease}.at_f=
+lat_counter:after{top:30%;left:-4px;content:"";position:absolute;border-wid=
+th:5px 8px 5px 0;border-style:solid;border-color:transparent #ebebeb transp=
+arent transparent;display:block;width:0;height:0;transform:translateY(360de=
+g)}.at_flat_counter:hover{background:#e1e2e2}</style><style type=3D"text/cs=
+s">.at4-thankyou-background{top:0;right:0;left:0;bottom:0;-webkit-overflow-=
+scrolling:touch;z-index:9999999;background-image:url(data:image/png;base64,=
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSB=
+JbWFnZVJlYWR5ccllPAAAABtJREFUeNpizCuu/sRABGBiIBKMKqSOQoAAAwC8KgJipENhxwAAAA=
+BJRU5ErkJggg=3D=3D);background:hsla(217,6%,46%,.95)}.at4-thankyou-backgroun=
+d.at-thankyou-shown{position:fixed}.at4-thankyou-inner{position:absolute;wi=
+dth:100%;top:10%;left:50%;margin-left:-50%;text-align:center}.at4-thankyou-=
+mobile .at4-thankyou-inner{top:5%}.thankyou-description{font-weight:400}.at=
+4-thankyou-background .at4lb-inner{position:relative;width:100%;height:100%=
+}.at4-thankyou-background .at4lb-inner .at4x{position:absolute;top:15px;rig=
+ht:15px;display:block;width:20px;height:20px;padding:20px;margin:0;cursor:p=
+ointer;transition:opacity .25s ease-in;opacity:.4;background:url("data:imag=
+e/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfA=
+hkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzI=
+ENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTEvMTMvMTKswDp5AAAAd0lEQVQ4jb2VQRLA=
+IAgDE///Z3qqY1FAhalHMCsCIkVEAIAkkVgvp2lDBgYAnAyHkWotLccNrEd4A7X2TqIdqLfnWBA=
+daF5rJdyJfjtPH5GT37CaGhoVq3nOm/XflUuLUto2pY1d+vRKh0Pp+MrAVtDe2JkvYNQ+jVSEEF=
+mOkggAAAAASUVORK5CYII=3D") no-repeat center center;overflow:hidden;text-ind=
+ent:-99999em;border:1px solid transparent}.at4-thankyou-background .at4lb-i=
+nner .at4x:focus,.at4-thankyou-background .at4lb-inner .at4x:hover{border:1=
+px solid #fff;border-radius:50%;outline:0}.at4-thankyou-background .at4lb-i=
+nner #at4-palogo{position:absolute;bottom:10px;display:inline-block;text-de=
+coration:none;font-family:helvetica,arial,sans-serif;font-size:11px;cursor:=
+pointer;-webkit-transition:opacity .25s ease-in;moz-transition:opacity .25s=
+ ease-in;transition:opacity .25s ease-in;opacity:.5;z-index:100020;color:#f=
+ff;padding:2px 0 0 13px}.at4-thankyou-background .at4lb-inner #at4-palogo .=
+at-branding-addthis,.at4-thankyou-background .at4lb-inner #at4-palogo .at-b=
+randing-info{color:#fff}.at4-thankyou-background .at4lb-inner #at4-palogo:h=
+over,.at4-thankyou-background.ats-dark .at4lb-inner a#at4-palogo:hover{text=
+-decoration:none;color:#fff;opacity:1}.at4-thankyou-background.ats-dark{bac=
+kground-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCA=
+YAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZ=
+GBgeMZABGBiIBKMKqSOQoAAAwB+cQD6hqlbCwAAAABJRU5ErkJggg=3D=3D");background:rg=
+ba(0,0,0,.85)}.at4-thankyou-background .thankyou-title{color:#fff;font-size=
+:38.5px;margin:10px 20px;line-height:38.5px;font-family:helvetica neue,helv=
+etica,arial,sans-serif;font-weight:300}.at4-thankyou-background.ats-dark .t=
+hankyou-description,.at4-thankyou-background.ats-dark .thankyou-title{color=
+:#fff}.at4-thankyou-background .thankyou-description{color:#fff;font-size:1=
+8px;margin:10px 0;line-height:24px;padding:0;font-family:helvetica neue,hel=
+vetica,arial,sans-serif;font-weight:300}.at4-thankyou-background .at4-thank=
+s-icons{padding-top:10px}.at4-thankyou-mobile *{-webkit-overflow-scrolling:=
+touch}#at4-thankyou .at4-recommended-recommendedbox .at-logo{display:none}.=
+at4-thankyou .at-h3{height:49px;line-height:49px;margin:0 50px 0 20px;paddi=
+ng:1px 0 0;font-family:helvetica neue,helvetica,arial,sans-serif;font-size:=
+1pc;font-weight:700;color:#fff;text-shadow:0 1px #000}.at4-thanks{padding-t=
+op:50px;text-align:center}.at4-thanks label{display:block;margin:0 0 15px;f=
+ont-size:1pc;line-height:1pc}.at4-thanks .at4-h2{background:none;border:non=
+e;margin:0 0 10px;padding:0;font-family:helvetica neue,helvetica,arial,sans=
+-serif;font-size:28px;font-weight:300;color:#000}.at4-thanks .at4-thanks-ic=
+ons{position:relative;height:2pc}.at4-thanks .at4-thanks-icons .at-thankyou=
+-label{display:block;padding-bottom:10px;font-size:14px;color:#666}.at4-tha=
+nkyou-layer .at-follow .at-icon-wrapper{width:2pc;height:2pc}</style><style=
+ type=3D"text/css">.at4-recommended-toaster{position:fixed;top:auto;bottom:=
+0;right:0;z-index:100021}.at4-recommended-toaster.ats-light{border:1px soli=
+d #c5c5c5;background:#fff}.at4-recommended-toaster.ats-gray{border:1px soli=
+d #c5c5c5;background:#f2f2f2}.at4-recommended-toaster.ats-dark{background:#=
+262b30;color:#fff}.at4-recommended-toaster .at4-recommended-container{paddi=
+ng-top:0;margin:0}.at4-recommended.at4-recommended-toaster div.at-recommend=
+ed-label{line-height:1pc;font-size:1pc;text-align:left;padding:20px 0 0 20p=
+x}.at4-toaster-outer .at4-recommended .at4-recommended-item .at4-recommende=
+d-item-caption .at-h4{font-size:11px;line-height:11px;margin:10px 0 6px;hei=
+ght:30px}.at4-recommended.at4-recommended-toaster div.at-recommended-label.=
+ats-gray,.at4-recommended.at4-recommended-toaster div.at-recommended-label.=
+ats-light{color:#464646}.at4-recommended.at4-recommended-toaster div.at-rec=
+ommended-label.ats-dark{color:#fff}.at4-toaster-close-control{position:abso=
+lute;top:0;right:0;display:block;width:20px;height:20px;line-height:20px;ma=
+rgin:5px 5px 0 0;padding:0;text-indent:-9999em}.at4-toaster-open-control{po=
+sition:fixed;right:0;bottom:0;z-index:100020}.at4-toaster-outer .at4-recomm=
+ended-item{width:90pt;border:0;margin:9px 10px 0}.at4-toaster-outer .at4-re=
+commended-item:first-child{margin-left:20px}.at4-toaster-outer .at4-recomme=
+nded-item:last-child{margin-right:20px}.at4-toaster-outer .at4-recommended-=
+item .at4-recommended-item-img{max-height:90pt;max-width:90pt}.at4-toaster-=
+outer .at4-recommended-item .at4-recommended-item-img img{height:90pt;width=
+:90pt}.at4-toaster-outer .at4-recommended-item .at4-recommended-item-captio=
+n{height:30px;padding:0;margin:0;height:initial}.at4-toaster-outer .ats-dar=
+k .at4-recommended-item .at4-recommended-item-caption{background:#262b30}.a=
+t4-toaster-outer .at4-recommended .at4-recommended-item .at4-recommended-it=
+em-caption small{width:auto;line-height:14px;margin:0}.at4-toaster-outer .a=
+t4-recommended.ats-dark .at4-recommended-item .at4-recommended-item-caption=
+ small{color:#fff}.at4-recommended-toaster .at-logo{margin:0 0 3px 20px;tex=
+t-align:left}.at4-recommended-toaster .at-logo .at4-logo-container.at-spons=
+ored-logo{position:relative}.at4-toaster-outer .at4-recommended-item .spons=
+ored-label{text-align:right;font-size:10px;color:#666;float:right;position:=
+fixed;bottom:6px;right:20px;top:initial;z-index:99999}</style><style type=
+=3D"text/css">.at4-whatsnext{position:fixed;bottom:0!important;right:0;back=
+ground:#fff;border:1px solid #c5c5c5;margin:-1px;width:390px;height:90pt;ov=
+erflow:hidden;font-size:9pt;font-weight:400;color:#000;z-index:1800000000}.=
+at4-whatsnext a{color:#666}.at4-whatsnext .at-whatsnext-content{height:90pt=
+;position:relative}.at4-whatsnext .at-whatsnext-content .at-branding{positi=
+on:absolute;bottom:15px;right:10px;padding-left:9px;text-decoration:none;li=
+ne-height:10px;font-family:helvetica,arial,sans-serif;font-size:10px;color:=
+#666}.at4-whatsnext .at-whatsnext-content .at-whatsnext-content-inner{posit=
+ion:absolute;top:15px;right:20px;bottom:15px;left:140px;text-align:left;hei=
+ght:105px}.at4-whatsnext .at-whatsnext-content-inner a{display:inline-block=
+}.at4-whatsnext .at-whatsnext-content-inner div.at-h6{text-align:left;margi=
+n:0;padding:0 0 3px;font-size:11px;color:#666;cursor:default}.at4-whatsnext=
+ .at-whatsnext-content .at-h3{text-align:left;margin:5px 0;padding:0;line-h=
+eight:1.2em;font-weight:400;font-size:14px;height:3pc}.at4-whatsnext .at-wh=
+atsnext-content-inner a:link,.at4-whatsnext .at-whatsnext-content-inner a:v=
+isited{text-decoration:none;font-weight:400;color:#464646}.at4-whatsnext .a=
+t-whatsnext-content-inner a:hover{color:#000}.at4-whatsnext .at-whatsnext-c=
+ontent-inner small{position:absolute;bottom:15px;line-height:10px;font-size=
+:11px;color:#666;cursor:default;text-align:left}.at4-whatsnext .at-whatsnex=
+t-content .at-whatsnext-content-img{position:absolute;top:0;left:0;width:90=
+pt;height:90pt;overflow:hidden}.at4-whatsnext .at-whatsnext-content .at-wha=
+tsnext-content-img img{position:absolute;top:0;left:0;max-height:none;max-w=
+idth:none}.at4-whatsnext .at-whatsnext-close-control{position:absolute;top:=
+0;right:0;display:block;width:20px;height:20px;line-height:20px;margin:0 5p=
+x 0 0;padding:0;text-indent:-9999em}.at-whatsnext-open-control{position:fix=
+ed;right:0;bottom:0;z-index:100020}.at4-whatsnext.ats-dark{background:#262b=
+30}.at4-whatsnext.ats-dark .at-whatsnext-content .at-h3,.at4-whatsnext.ats-=
+dark .at-whatsnext-content a.at4-logo:hover,.at4-whatsnext.ats-dark .at-wha=
+tsnext-content-inner a:link,.at4-whatsnext.ats-dark .at-whatsnext-content-i=
+nner a:visited{color:#fff}.at4-whatsnext.ats-light{background:#fff}.at4-wha=
+tsnext.ats-gray{background:#f2f2f2}.at4-whatsnext.at-whatsnext-nophoto{widt=
+h:270px}.at4-whatsnext.at-whatsnext-nophoto .at-whatsnext-content-img{displ=
+ay:none}.at4-whatsnext.at-whatsnext-nophoto .at-whatsnext-content .at-whats=
+next-content-inner{top:15px;right:0;left:20px}.at4-whatsnext.at-whatsnext-n=
+ophoto .at-whatsnext-content .at-whatsnext-content-inner.addthis_32x32_styl=
+e{top:0;right:0;left:0;padding:45px 20px 0;font-size:20px}.at4-whatsnext.at=
+-whatsnext-nophoto .at-whatsnext-content .at-whatsnext-content-inner .at4-i=
+con,.at4-whatsnext.at-whatsnext-nophoto .at-whatsnext-content .at-whatsnext=
+-content-inner .at4-icon-fw,.at4-whatsnext.at-whatsnext-nophoto .at-whatsne=
+xt-content .at-whatsnext-content-inner .whatsnext-msg{vertical-align:middle=
+}.at-whatsnext-img,.at-whatsnext-img-lnk{position:absolute;left:0}</style><=
+style type=3D"text/css">.at4-whatsnextmobile{position:fixed;bottom:0;right:=
+0;left:0;background:#fff;z-index:9999998;height:170px;font-size:28px}.at4-w=
+hatsnextmobile .col-2{height:100%;font-size:1em}.at4-whatsnextmobile .col-2=
+:first-child{max-width:200px;display:inline-block;float:left}.at4-whatsnext=
+mobile .col-2:last-child{position:absolute;left:200px;right:50px;top:0;bott=
+om:0;display:inline-block}.at4-whatsnextmobile .at-whatsnext-content-inner{=
+font-size:1em}.at4-whatsnextmobile .at-whatsnext-content-img img{height:100=
+%;width:100%}.at4-whatsnextmobile .at-close-control{font-size:1em;position:=
+absolute;top:0;right:0;width:50px;height:50px}.at4-whatsnextmobile .at-clos=
+e-control button{width:100%;height:100%;font-size:1em;font-weight:400;text-=
+decoration:none;opacity:.5;padding:0;cursor:pointer;background:0 0;border:0=
+;-webkit-appearance:none}.at4-whatsnextmobile .at-h3,.at4-whatsnextmobile .=
+at-h6{font-size:1em;margin:0;color:#a1a1a1;margin-left:2.5%;margin-top:25px=
+}.at4-whatsnextmobile .at-h3{font-size:1em;line-height:1em;font-weight:500;=
+height:50%}.at4-whatsnextmobile .at-h3 a{font-size:1em;text-decoration:none=
+}.at4-whatsnextmobile .at-h6{font-size:.8em;line-height:.8em;font-weight:50=
+0}.at4-whatsnextmobile .footer{position:absolute;bottom:2px;left:200px;righ=
+t:0;padding-left:2.5%;font-size:1em;line-height:.6em}.at4-whatsnextmobile .=
+footer small{font-size:.6em;color:#a1a1a1}.at4-whatsnextmobile .footer smal=
+l:first-child{margin-right:5%;float:left}.at4-whatsnextmobile .footer small=
+:last-child{margin-right:2.5%;float:right}.at4-whatsnextmobile .at-whatsnex=
+t-content{height:100%}.at4-whatsnextmobile.ats-dark{background:#262b30;colo=
+r:#fff}.at4-whatsnextmobile .at-close-control button{color:#bfbfbf}.at4-wha=
+tsnextmobile.ats-dark a:link,.at4-whatsnextmobile.ats-dark a:visited{color:=
+#fff}.at4-whatsnextmobile.ats-gray{background:#f2f2f2;color:#262b30}.at4-wh=
+atsnextmobile.ats-light{background:#fff;color:#262b30}.at4-whatsnextmobile.=
+ats-dark .footer a:link,.at4-whatsnextmobile.ats-dark .footer a:visited,.at=
+4-whatsnextmobile.ats-gray .footer a:link,.at4-whatsnextmobile.ats-gray .fo=
+oter a:visited,.at4-whatsnextmobile.ats-light .footer a:link,.at4-whatsnext=
+mobile.ats-light .footer a:visited{color:#a1a1a1}.at4-whatsnextmobile.ats-g=
+ray a:link,.at4-whatsnextmobile.ats-gray a:visited,.at4-whatsnextmobile.ats=
+-light a:link,.at4-whatsnextmobile.ats-light a:visited{color:#262b30}@media=
+ only screen and (min-device-width:320px) and (max-device-width:480px){.at4=
+-whatsnextmobile{height:85px;font-size:14px}.at4-whatsnextmobile .col-2:fir=
+st-child{width:75pt}.at4-whatsnextmobile .col-2:last-child{right:25px;left:=
+75pt}.at4-whatsnextmobile .footer{left:75pt}.at4-whatsnextmobile .at-close-=
+control{width:25px;height:25px}.at4-whatsnextmobile .at-h3,.at4-whatsnextmo=
+bile .at-h6{margin-top:12.5px}}</style><style type=3D"text/css">.at-custom-=
+mobile-bar{left:0;right:0;width:100%;height:56px;position:fixed;text-align:=
+center;z-index:100020;background:#fff;overflow:hidden;box-shadow:0 0 10px 0=
+ rgba(0,0,0,.2);font:initial;line-height:normal;top:auto;bottom:0}.at-custo=
+m-mobile-bar.at-custom-mobile-bar-zindex-hide{z-index:-1!important}.at-cust=
+om-mobile-bar.atss-top{top:0;bottom:auto}.at-custom-mobile-bar.atss-bottom{=
+top:auto;bottom:0}.at-custom-mobile-bar .at-custom-mobile-bar-btns{display:=
+inline-block;text-align:center}.at-custom-mobile-bar .at-custom-mobile-bar-=
+counter,.at-custom-mobile-bar .at-share-btn{margin-top:4px}.at-custom-mobil=
+e-bar .at-share-btn{display:inline-block;text-decoration:none;transition:no=
+ne;box-sizing:content-box}.at-custom-mobile-bar .at-custom-mobile-bar-count=
+er{font-family:Helvetica neue,arial;vertical-align:top;margin-left:4px;marg=
+in-right:4px;display:inline-block}.at-custom-mobile-bar .at-custom-mobile-b=
+ar-count{font-size:26px;line-height:1.25em;color:#222}.at-custom-mobile-bar=
+ .at-custom-mobile-bar-text{font-size:9pt;line-height:1.25em;color:#888;let=
+ter-spacing:1px}.at-custom-mobile-bar .at-icon-wrapper{text-align:center;he=
+ight:3pc;width:3pc;margin:0 4px}.at-custom-mobile-bar .at-icon{vertical-ali=
+gn:top;margin:8px;width:2pc;height:2pc}.at-custom-mobile-bar.at-shfs-medium=
+{height:3pc}.at-custom-mobile-bar.at-shfs-medium .at-custom-mobile-bar-coun=
+ter{margin-top:6px}.at-custom-mobile-bar.at-shfs-medium .at-custom-mobile-b=
+ar-count{font-size:18px}.at-custom-mobile-bar.at-shfs-medium .at-custom-mob=
+ile-bar-text{font-size:10px}.at-custom-mobile-bar.at-shfs-medium .at-icon-w=
+rapper{height:40px;width:40px}.at-custom-mobile-bar.at-shfs-medium .at-icon=
+{margin:6px;width:28px;height:28px}.at-custom-mobile-bar.at-shfs-small{heig=
+ht:40px}.at-custom-mobile-bar.at-shfs-small .at-custom-mobile-bar-counter{m=
+argin-top:3px}.at-custom-mobile-bar.at-shfs-small .at-custom-mobile-bar-cou=
+nt{font-size:1pc}.at-custom-mobile-bar.at-shfs-small .at-custom-mobile-bar-=
+text{font-size:10px}.at-custom-mobile-bar.at-shfs-small .at-icon-wrapper{he=
+ight:2pc;width:2pc}.at-custom-mobile-bar.at-shfs-small .at-icon{margin:4px;=
+width:24px;height:24px}</style><style type=3D"text/css">.at-custom-sidebar{=
+top:20%;width:58px;position:fixed;text-align:center;z-index:100020;backgrou=
+nd:#fff;overflow:hidden;box-shadow:0 0 10px 0 rgba(0,0,0,.2);font:initial;l=
+ine-height:normal;top:auto;bottom:0}.at-custom-sidebar.at-custom-sidebar-zi=
+ndex-hide{z-index:-1!important}.at-custom-sidebar.atss-left{left:0;right:au=
+to;float:left;border-radius:0 4px 4px 0}.at-custom-sidebar.atss-right{left:=
+auto;right:0;float:right;border-radius:4px 0 0 4px}.at-custom-sidebar .at-c=
+ustom-sidebar-btns{display:inline-block;text-align:center;padding-top:4px}.=
+at-custom-sidebar .at-custom-sidebar-counter{margin-bottom:8px}.at-custom-s=
+idebar .at-share-btn{display:inline-block;text-decoration:none;transition:n=
+one;box-sizing:content-box}.at-custom-sidebar .at-custom-sidebar-counter{fo=
+nt-family:Helvetica neue,arial;vertical-align:top;margin-left:4px;margin-ri=
+ght:4px;display:inline-block}.at-custom-sidebar .at-custom-sidebar-count{fo=
+nt-size:21px;line-height:1.25em;color:#222}.at-custom-sidebar .at-custom-si=
+debar-text{font-size:10px;line-height:1.25em;color:#888;letter-spacing:1px}=
+.at-custom-sidebar .at-icon-wrapper{text-align:center;margin:0 4px}.at-cust=
+om-sidebar .at-icon{vertical-align:top;margin:9px;width:2pc;height:2pc}.at-=
+custom-sidebar .at-icon-wrapper{position:relative}.at-custom-sidebar .at4-s=
+hare-count,.at-custom-sidebar .at4-share-count-container{line-height:1pc;fo=
+nt-size:10px}.at-custom-sidebar .at4-share-count{text-indent:0;font-family:=
+Arial,Helvetica Neue,Helvetica,sans-serif;font-weight:200;width:100%;height=
+:1pc}.at-custom-sidebar .at4-share-count-anchor .at-icon{margin-top:3px}.at=
+-custom-sidebar .at4-share-count-container{position:absolute;left:0;right:a=
+uto;top:auto;bottom:0;width:100%;color:#fff;background:inherit}</style><sty=
+le type=3D"text/css">.at-image-sharing-mobile-icon{position:absolute;backgr=
+ound:#000 url(//s7.addthis.com/static/44a36d35bafef33aa9455b7d3039a771.png)=
+ no-repeat top center;background-color:rgba(0,0,0,.9);background-image:url(=
+//s7.addthis.com/static/10db525181ee0bbe1a515001be1c7818.svg),none;border-r=
+adius:3px;width:50px;height:40px;top:-9999px;left:-9999px}.at-image-sharing=
+-tool{display:block;position:absolute;text-align:center;z-index:9001;backgr=
+ound:none;overflow:hidden;top:-9999px;left:-9999px;font:initial;line-height=
+:0}.at-image-sharing-tool.addthis-animated{animation-duration:.15s}.at-imag=
+e-sharing-tool.at-orientation-vertical .at-share-btn{display:block}.at-imag=
+e-sharing-tool.at-orientation-horizontal .at-share-btn{display:inline-block=
+}.at-image-sharing-tool.at-image-sharing-tool-size-big .at-icon{width:43px;=
+height:43px}.at-image-sharing-tool.at-image-sharing-tool-size-mobile .at-sh=
+are-btn{margin:0!important}.at-image-sharing-tool.at-image-sharing-tool-siz=
+e-mobile .at-icon-wrapper{height:60px;width:100%;border-radius:0!important}=
+.at-image-sharing-tool.at-image-sharing-tool-size-mobile .at-icon{max-width=
+:100%;height:54px!important;width:54px!important}.at-image-sharing-tool .at=
+-custom-shape.at-image-sharing-tool-btns{margin-right:8px;margin-bottom:8px=
+}.at-image-sharing-tool .at-custom-shape .at-share-btn{margin-top:8px;margi=
+n-left:8px}.at-image-sharing-tool .at-share-btn{line-height:0;text-decorati=
+on:none;transition:none;box-sizing:content-box}.at-image-sharing-tool .at-i=
+con-wrapper{text-align:center;height:100%;width:100%}.at-image-sharing-tool=
+ .at-icon{vertical-align:top;width:2pc;height:2pc;margin:3px}</style><style=
+ type=3D"text/css">.at-expanding-share-button{box-sizing:border-box;positio=
+n:fixed;z-index:9999}.at-expanding-share-button[data-position=3Dbottom-righ=
+t]{bottom:10px;right:10px}.at-expanding-share-button[data-position=3Dbottom=
+-right] .at-expanding-share-button-toggle-bg,.at-expanding-share-button[dat=
+a-position=3Dbottom-right] .at-expanding-share-button-toggle-btn[data-name]=
+:after,.at-expanding-share-button[data-position=3Dbottom-right] .at-icon-wr=
+apper,.at-expanding-share-button[data-position=3Dbottom-right] [data-name]:=
+after{float:right}.at-expanding-share-button[data-position=3Dbottom-right] =
+[data-name]:after{margin-right:10px}.at-expanding-share-button[data-positio=
+n=3Dbottom-right] .at-expanding-share-button-toggle-btn[data-name]:after{ma=
+rgin-right:5px}.at-expanding-share-button[data-position=3Dbottom-right] .at=
+-icon-wrapper{margin-right:-3px}.at-expanding-share-button[data-position=3D=
+bottom-left]{bottom:10px;left:10px}.at-expanding-share-button[data-position=
+=3Dbottom-left] .at-expanding-share-button-toggle-bg,.at-expanding-share-bu=
+tton[data-position=3Dbottom-left] .at-expanding-share-button-toggle-btn[dat=
+a-name]:after,.at-expanding-share-button[data-position=3Dbottom-left] .at-i=
+con-wrapper,.at-expanding-share-button[data-position=3Dbottom-left] [data-n=
+ame]:after{float:left}.at-expanding-share-button[data-position=3Dbottom-lef=
+t] [data-name]:after{margin-left:10px}.at-expanding-share-button[data-posit=
+ion=3Dbottom-left] .at-expanding-share-button-toggle-btn[data-name]:after{m=
+argin-left:5px}.at-expanding-share-button *,.at-expanding-share-button :aft=
+er,.at-expanding-share-button :before{box-sizing:border-box}.at-expanding-s=
+hare-button .at-expanding-share-button-services-list{display:none;list-styl=
+e:none;margin:0 5px;overflow:visible;padding:0}.at-expanding-share-button .=
+at-expanding-share-button-services-list>li{display:block;height:45px;positi=
+on:relative;overflow:visible}.at-expanding-share-button .at-expanding-share=
+-button-toggle-btn,.at-expanding-share-button .at-share-btn{transition:.1s;=
+text-decoration:none}.at-expanding-share-button .at-share-btn{display:block=
+;height:40px;padding:0 3px 0 0}.at-expanding-share-button .at-expanding-sha=
+re-button-toggle-btn{position:relative;overflow:auto}.at-expanding-share-bu=
+tton .at-expanding-share-button-toggle-btn.at-expanding-share-button-hidden=
+[data-name]:after{display:none}.at-expanding-share-button .at-expanding-sha=
+re-button-toggle-bg{box-shadow:0 2px 4px 0 rgba(0,0,0,.3);border-radius:50%=
+;position:relative}.at-expanding-share-button .at-expanding-share-button-to=
+ggle-bg>span{background-image:url("data:image/svg+xml,%3Csvg%20width%3D%223=
+2px%22%20height%3D%2232px%22%20viewBox%3D%220%200%2032%2032%22%20version%3D=
+%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3=
+Eshare%3C%2Ftitle%3E%3Cg%20stroke%3D%22none%22%20stroke-width%3D%221%22%20f=
+ill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23FFFFFF%2=
+2%3E%3Cpath%20d%3D%22M26%2C13.4285714%20C26%2C13.6220248%2025.9293162%2C13.=
+7894338%2025.7879464%2C13.9308036%20L20.0736607%2C19.6450893%20C19.932291%2=
+C19.786459%2019.7648819%2C19.8571429%2019.5714286%2C19.8571429%20C19.377975=
+2%2C19.8571429%2019.2105662%2C19.786459%2019.0691964%2C19.6450893%20C18.927=
+8267%2C19.5037195%2018.8571429%2C19.3363105%2018.8571429%2C19.1428571%20L18=
+.8571429%2C16.2857143%20L16.3571429%2C16.2857143%20C15.6279725%2C16.2857143=
+%2014.9750773%2C16.3080355%2014.3984375%2C16.3526786%20C13.8217977%2C16.397=
+3217%2013.2488868%2C16.477306%2012.6796875%2C16.5926339%20C12.1104882%2C16.=
+7079619%2011.6157015%2C16.8660704%2011.1953125%2C17.0669643%20C10.7749235%2=
+C17.2678581%2010.3824423%2C17.5264121%2010.0178571%2C17.8426339%20C9.653271=
+99%2C18.1588557%209.35565592%2C18.534596%209.125%2C18.9698661%20C8.89434408=
+%2C19.4051361%208.71391434%2C19.9203839%208.58370536%2C20.515625%20C8.45349=
+637%2C21.1108661%208.38839286%2C21.7842224%208.38839286%2C22.5357143%20C8.3=
+8839286%2C22.9449425%208.40699386%2C23.4025272%208.44419643%2C23.9084821%20=
+C8.44419643%2C23.9531252%208.45349693%2C24.0405499%208.47209821%2C24.170758=
+9%20C8.4906995%2C24.3009679%208.5%2C24.3995532%208.5%2C24.4665179%20C8.5%2C=
+24.5781256%208.46837829%2C24.6711306%208.40513393%2C24.7455357%20C8.3418895=
+6%2C24.8199408%208.25446484%2C24.8571429%208.14285714%2C24.8571429%20C8.023=
+80893%2C24.8571429%207.9196433%2C24.7938994%207.83035714%2C24.6674107%20C7.=
+77827355%2C24.6004461%207.72991094%2C24.5186017%207.68526786%2C24.421875%20=
+C7.64062478%2C24.3251483%207.59040206%2C24.2135423%207.53459821%2C24.087053=
+6%20C7.47879436%2C23.9605648%207.43973225%2C23.87128%207.41741071%2C23.8191=
+964%20C6.47246551%2C21.6986501%206%2C20.0208395%206%2C18.7857143%20C6%2C17.=
+3050521%206.19717065%2C16.0662252%206.59151786%2C15.0691964%20C7.79688103%2=
+C12.0706695%2011.0520568%2C10.5714286%2016.3571429%2C10.5714286%20L18.85714=
+29%2C10.5714286%20L18.8571429%2C7.71428571%20C18.8571429%2C7.52083237%2018.=
+9278267%2C7.35342333%2019.0691964%2C7.21205357%20C19.2105662%2C7.07068382%2=
+019.3779752%2C7%2019.5714286%2C7%20C19.7648819%2C7%2019.932291%2C7.07068382=
+%2020.0736607%2C7.21205357%20L25.7879464%2C12.9263393%20C25.9293162%2C13.06=
+7709%2026%2C13.2351181%2026%2C13.4285714%20L26%2C13.4285714%20Z%22%3E%3C%2F=
+path%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-position:center center=
+;background-repeat:no-repeat;transition:transform .4s ease;border-radius:50=
+%;display:block}.at-expanding-share-button .at-icon-wrapper{box-shadow:0 2p=
+x 4px 0 rgba(0,0,0,.3);border-radius:50%;display:inline-block;height:40px;l=
+ine-height:40px;text-align:center;width:40px}.at-expanding-share-button .at=
+-icon{display:inline-block;height:34px;margin:3px 0;vertical-align:top;widt=
+h:34px}.at-expanding-share-button [data-name]:after{box-shadow:0 2px 4px 0 =
+rgba(0,0,0,.3);transform:translate(0, -50%);transition:.4s;background-color=
+:#fff;border-radius:3px;color:#666;content:attr(data-name);font-family:Helv=
+etica Neue,Helvetica,Arial,sans-serif;font-size:9pt;line-height:9pt;font-we=
+ight:500;opacity:0;padding:3px 5px;position:relative;top:20px;white-space:n=
+owrap}.at-expanding-share-button.at-expanding-share-button-show-icons .at-e=
+xpanding-share-button-services-list{display:block}.at-expanding-share-butto=
+n.at-expanding-share-button-animate-in .at-expanding-share-button-toggle-bg=
+>span{transform:rotate(270deg);background-image:url("data:image/svg+xml,%3C=
+svg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D=
+%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2032%2032=
+%22%3E%3Cg%3E%3Cpath%20d%3D%22M18%2014V8h-4v6H8v4h6v6h4v-6h6v-4h-6z%22%20fi=
+ll-rule%3D%22evenodd%22%20fill%3D%22white%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2=
+Fsvg%3E");background-position:center center;background-repeat:no-repeat}.at=
+-expanding-share-button.at-expanding-share-button-animate-in [data-name]:af=
+ter{opacity:1}.at-expanding-share-button.at-hide-label [data-name]:after{di=
+splay:none}.at-expanding-share-button.at-expanding-share-button-desktop .at=
+-expanding-share-button-toggle{height:50px}.at-expanding-share-button.at-ex=
+panding-share-button-desktop .at-icon-wrapper:hover{box-shadow:0 2px 5px 0 =
+rgba(0,0,0,.5)}.at-expanding-share-button.at-expanding-share-button-desktop=
+ .at-expanding-share-button-toggle-bg{height:50px;line-height:50px;width:50=
+px}.at-expanding-share-button.at-expanding-share-button-desktop .at-expandi=
+ng-share-button-toggle-bg>span{height:50px;width:50px}.at-expanding-share-b=
+utton.at-expanding-share-button-desktop .at-expanding-share-button-toggle-b=
+g:after{box-shadow:0 2px 5px 0 rgba(0,0,0,.2);transition:opacity .2s ease;b=
+order-radius:50%;content:'';height:100%;opacity:0;position:absolute;top:0;l=
+eft:0;width:100%}.at-expanding-share-button.at-expanding-share-button-deskt=
+op .at-expanding-share-button-toggle-bg:hover:after{opacity:1}.at-expanding=
+-share-button.at-expanding-share-button-desktop .at-expanding-share-button-=
+toggle-btn[data-name]:after{top:25px}.at-expanding-share-button.at-expandin=
+g-share-button-mobile .at-expanding-share-button-services-list{margin:0}.at=
+-expanding-share-button.at-expanding-share-button-mobile .at-expanding-shar=
+e-button-toggle-btn,.at-expanding-share-button.at-expanding-share-button-mo=
+bile .at-share-btn{outline:0}.at-expanding-share-button.at-expanding-share-=
+button-mobile .at-expanding-share-button-toggle{height:40px;-webkit-tap-hig=
+hlight-color:transparent}.at-expanding-share-button.at-expanding-share-butt=
+on-mobile .at-expanding-share-button-toggle-bg,.at-expanding-share-button.a=
+t-expanding-share-button-mobile .at-expanding-share-button-toggle-bg span{h=
+eight:40px;line-height:40px;width:40px}.at-expanding-share-button.at-expand=
+ing-share-button-mobile .at-expanding-share-button-click-flash{transform:sc=
+ale(0);transition:transform ease,opacity ease-in;background-color:hsla(0,0%=
+,100%,.3);border-radius:50%;height:40px;opacity:1;position:absolute;width:4=
+0px;z-index:10000}.at-expanding-share-button.at-expanding-share-button-mobi=
+le .at-expanding-share-button-click-flash.at-expanding-share-button-click-f=
+lash-animate{transform:scale(1);opacity:0}.at-expanding-share-button.at-exp=
+anding-share-button-mobile+.at-expanding-share-button-mobile-overlay{transi=
+tion:opacity ease;bottom:0;background-color:hsla(0,0%,87%,.7);display:block=
+;height:auto;left:0;opacity:0;position:fixed;right:0;top:0;width:auto;z-ind=
+ex:9998}.at-expanding-share-button.at-expanding-share-button-mobile+.at-exp=
+anding-share-button-mobile-overlay.at-expanding-share-button-hidden{height:=
+0;width:0;z-index:-10000}.at-expanding-share-button.at-expanding-share-butt=
+on-mobile.at-expanding-share-button-animate-in+.at-expanding-share-button-m=
+obile-overlay{transition:opacity ease;opacity:1}</style><style type=3D"text=
+/css">.at-tjin-element .at300b,.at-tjin-element .at300m{display:inline-bloc=
+k;width:auto;padding:0;margin:0 2px 5px;outline-offset:-1px;transition:all =
+.2s ease-in-out}.at-tjin-element .at300b:focus,.at-tjin-element .at300b:hov=
+er,.at-tjin-element .at300m:focus,.at-tjin-element .at300m:hover{transform:=
+translateY(-4px)}.at-tjin-element .addthis_tjin_label{display:none}.at-tjin=
+-element .addthis_vertical_style .at300b,.at-tjin-element .addthis_vertical=
+_style .at300m{display:block}.at-tjin-element .addthis_vertical_style .at30=
+0b .addthis_tjin_label,.at-tjin-element .addthis_vertical_style .at300b .at=
+-icon-wrapper,.at-tjin-element .addthis_vertical_style .at300m .addthis_tji=
+n_label,.at-tjin-element .addthis_vertical_style .at300m .at-icon-wrapper{d=
+isplay:inline-block;vertical-align:middle;margin-right:5px}.at-tjin-element=
+ .addthis_vertical_style .at300b:focus,.at-tjin-element .addthis_vertical_s=
+tyle .at300b:hover,.at-tjin-element .addthis_vertical_style .at300m:focus,.=
+at-tjin-element .addthis_vertical_style .at300m:hover{transform:none}.at-tj=
+in-element .at-tjin-btn{margin:0 5px 5px 0;padding:0;outline-offset:-1px;di=
+splay:inline-block;box-sizing:content-box;transition:all .2s ease-in-out}.a=
+t-tjin-element .at-tjin-btn:focus,.at-tjin-element .at-tjin-btn:hover{trans=
+form:translateY(-4px)}.at-tjin-element .at-tjin-title{margin:0 0 15px}</sty=
+le><style type=3D"text/css">#addthissmartlayerscssready{color:#bada55!impor=
+tant}.addthis-smartlayers,div#at4-follow,div#at4-share,div#at4-thankyou,div=
+#at4-whatsnext{padding:0;margin:0}#at4-follow-label,#at4-share-label,#at4-w=
+hatsnext-label,.at4-recommended-label.hidden{padding:0;border:none;backgrou=
+nd:none;position:absolute;top:0;left:0;height:0;width:0;overflow:hidden;tex=
+t-indent:-9999em}.addthis-smartlayers .at4-arrow:hover{cursor:pointer}.addt=
+his-smartlayers .at4-arrow:after,.addthis-smartlayers .at4-arrow:before{con=
+tent:none}a.at4-logo{background:url(data:image/gif;base64,R0lGODlhBwAHAJEAA=
+P9uQf///wAAAAAAACH5BAkKAAIALAAAAAAHAAcAAAILFH6Ge8EBH2MKiQIAOw=3D=3D) no-rep=
+eat left center}.at4-minimal a.at4-logo{background:url(data:image/gif;base6=
+4,R0lGODlhBwAHAJEAAP9uQf///wAAAAAAACH5BAkKAAIALAAAAAAHAAcAAAILFH6Ge8EBH2MKi=
+QIAOw=3D=3D) no-repeat left center!important}button.at4-closebutton{positio=
+n:absolute;top:0;right:0;padding:0;margin-right:10px;cursor:pointer;backgro=
+und:transparent;border:0;-webkit-appearance:none;font-size:19px;line-height=
+:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2}button.at4-closebutton:ho=
+ver{color:#000;text-decoration:none;cursor:pointer;opacity:.5}div.at4-arrow=
+{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA=
+oCAYAAABpYH0BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAV1JREFUeN=
+rsmesOgyAMhQfxwfrofTM3E10ME2i5Oeppwr9a5OMUCrh1XV+wcvNAAIAA+BiAzrmtUWln27dbj=
+EcC3AdODfo0BdEPhmcO4nIDvDNELi2jggk4/k8dT7skfeKzWIEd4VUpMQKvNB7X+OZSmAZkATWC=
+1xvipbpnLmOosbJZC08CkAeA4E6qFUEMwLAGnlSBPCE8lW8CYnZTcimH2HoT7kSFOx5HBmCnDhT=
+Iu1p5s98G+QZrxGPhZVMY1vgyAQaAAAiAAAgDQACcBOD+BvJtBWfRy7NpJK5tBe4FNzXokywV73=
+4wPHMQlxvgnSGyNoUP/2ACjv/7iSeYKO3YWKzAjvCqlBiBVxqPa3ynexNJwOsN8TJbzL6JNIYYX=
+WpMv4lIIAZgWANPqkCeEJ7KNwExu8lpLlSpAVQarO77TyKdBsyRPuwV0h0gmoGnTWFYzVkYBoAA=
++I/2FmAAt6+b5XM9mFkAAAAASUVORK5CYII=3D);background-repeat:no-repeat;width:2=
+0px;height:20px;margin:0;padding:0;overflow:hidden;text-indent:-9999em;text=
+-align:left;cursor:pointer}#at4-recommendedpanel-outer-container .at4-arrow=
+.at-right,div.at4-arrow.at-right{background-position:-20px 0}#at4-recommend=
+edpanel-outer-container .at4-arrow.at-left,div.at4-arrow.at-left{background=
+-position:0 0}div.at4-arrow.at-down{background-position:-60px 0}div.at4-arr=
+ow.at-up{background-position:-40px 0}.ats-dark div.at4-arrow.at-right{backg=
+round-position:-20px -20px}.ats-dark div.at4-arrow.at-left{background-posit=
+ion:0 -20px}.ats-dark div.at4-arrow.at-down{background-position:-60px -20px=
+}.ats-dark div.at4-arrow.at-up{background-position:-40px -20}.at4-opacity-h=
+idden{opacity:0!important}.at4-opacity-visible{opacity:1!important}.at4-vis=
+ually-hidden{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:=
+0;overflow:hidden}.at4-hidden-off-screen,.at4-hidden-off-screen *{position:=
+absolute!important;top:-9999px!important;left:-9999px!important}.at4-show{d=
+isplay:block!important;opacity:1!important}.at4-show-content{opacity:1!impo=
+rtant;visibility:visible}.at4-hide{display:none!important;opacity:0!importa=
+nt}.at4-hide-content{opacity:0!important;visibility:hidden}.at4-visible{dis=
+play:block!important;opacity:0!important}.at-wordpress-hide{display:none!im=
+portant;opacity:0!important}.addthis-animated{animation-fill-mode:both;anim=
+ation-timing-function:ease-out;animation-duration:.3s}.slideInDown.addthis-=
+animated,.slideInLeft.addthis-animated,.slideInRight.addthis-animated,.slid=
+eInUp.addthis-animated,.slideOutDown.addthis-animated,.slideOutLeft.addthis=
+-animated,.slideOutRight.addthis-animated,.slideOutUp.addthis-animated{anim=
+ation-duration:.4s}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{ani=
+mation-name:fadeIn}@keyframes fadeInUp{0%{opacity:0;transform:translateY(20=
+px)}to{opacity:1;transform:translateY(0)}}.fadeInUp{animation-name:fadeInUp=
+}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}to{opacity:=
+1;transform:translateY(0)}}.fadeInDown{animation-name:fadeInDown}@keyframes=
+ fadeInLeft{0%{opacity:0;transform:translateX(-20px)}to{opacity:1;transform=
+:translateX(0)}}.fadeInLeft{animation-name:fadeInLeft}@keyframes fadeInRigh=
+t{0%{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX=
+(0)}}.fadeInRight{animation-name:fadeInRight}@keyframes fadeOut{0%{opacity:=
+1}to{opacity:0}}.fadeOut{animation-name:fadeOut}@keyframes fadeOutUp{0%{opa=
+city:1;transform:translateY(0)}to{opacity:0;transform:translateY(-20px)}}.f=
+adeOutUp{animation-name:fadeOutUp}@keyframes fadeOutDown{0%{opacity:1;trans=
+form:translateY(0)}to{opacity:0;transform:translateY(20px)}}.fadeOutDown{an=
+imation-name:fadeOutDown}@keyframes fadeOutLeft{0%{opacity:1;transform:tran=
+slateX(0)}to{opacity:0;transform:translateX(-20px)}}.fadeOutLeft{animation-=
+name:fadeOutLeft}@keyframes fadeOutRight{0%{opacity:1;transform:translateX(=
+0)}to{opacity:0;transform:translateX(20px)}}.fadeOutRight{animation-name:fa=
+deOutRight}@keyframes slideInUp{0%{transform:translateY(1500px)}0%,to{opaci=
+ty:1}to{transform:translateY(0)}}.slideInUp{animation-name:slideInUp}.slide=
+InUp.addthis-animated{animation-duration:.4s}@keyframes slideInDown{0%{tran=
+sform:translateY(-850px)}0%,to{opacity:1}to{transform:translateY(0)}}.slide=
+InDown{animation-name:slideInDown}@keyframes slideOutUp{0%{transform:transl=
+ateY(0)}0%,to{opacity:1}to{transform:translateY(-250px)}}.slideOutUp{animat=
+ion-name:slideOutUp}@keyframes slideOutUpFast{0%{transform:translateY(0)}0%=
+,to{opacity:1}to{transform:translateY(-1250px)}}#at4m-menu.slideOutUp{anima=
+tion-name:slideOutUpFast}@keyframes slideOutDown{0%{transform:translateY(0)=
+}0%,to{opacity:1}to{transform:translateY(350px)}}.slideOutDown{animation-na=
+me:slideOutDown}@keyframes slideOutDownFast{0%{transform:translateY(0)}0%,t=
+o{opacity:1}to{transform:translateY(1250px)}}#at4m-menu.slideOutDown{animat=
+ion-name:slideOutDownFast}@keyframes slideInLeft{0%{opacity:0;transform:tra=
+nslateX(-850px)}to{transform:translateX(0)}}.slideInLeft{animation-name:sli=
+deInLeft}@keyframes slideInRight{0%{opacity:0;transform:translateX(1250px)}=
+to{transform:translateX(0)}}.slideInRight{animation-name:slideInRight}@keyf=
+rames slideOutLeft{0%{transform:translateX(0)}to{opacity:0;transform:transl=
+ateX(-350px)}}.slideOutLeft{animation-name:slideOutLeft}@keyframes slideOut=
+Right{0%{transform:translateX(0)}to{opacity:0;transform:translateX(350px)}}=
+.slideOutRight{animation-name:slideOutRight}.at4win{margin:0 auto;backgroun=
+d:#fff;border:1px solid #ebeced;width:25pc;box-shadow:0 0 10px rgba(0,0,0,.=
+3);border-radius:8px;font-family:helvetica neue,helvetica,arial,sans-serif;=
+text-align:left;z-index:9999}.at4win .at4win-header{position:relative;borde=
+r-bottom:1px solid #f2f2f2;background:#fff;height:49px;-webkit-border-top-l=
+eft-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius-tople=
+ft:8px;-moz-border-radius-topright:8px;border-top-left-radius:8px;border-to=
+p-right-radius:8px;cursor:default}.at4win .at4win-header .at-h3,.at4win .at=
+4win-header h3{height:49px;line-height:49px;margin:0 50px 0 0;padding:1px 0=
+ 0;margin-left:20px;font-family:helvetica neue,helvetica,arial,sans-serif;f=
+ont-size:1pc;font-weight:700;text-shadow:0 1px #fff;color:#333}.at4win .at4=
+win-header .at-h3 img,.at4win .at4win-header h3 img{display:inline-block;ma=
+rgin-right:4px}.at4win .at4win-header .at4-close{display:block;position:abs=
+olute;top:0;right:0;background:url("data:image/gif;base64,R0lGODlhFAAUAIABA=
+AAAAP///yH5BAEAAAEALAAAAAAUABQAAAIzBIKpG+YMm5Enpodw1HlCfnkKOIqU1VXk55goVb2h=
+i7Y0q95lfG70uurNaqLgTviyyUoFADs=3D") no-repeat center center;background-rep=
+eat:no-repeat;background-position:center center;border-left:1px solid #d2d2=
+d1;width:49px;height:49px;line-height:49px;overflow:hidden;text-indent:-999=
+9px;text-shadow:none;cursor:pointer;opacity:.5;border:0;transition:opacity =
+.15s ease-in}.at4win .at4win-header .at4-close::-moz-focus-inner{border:0;p=
+adding:0}.at4win .at4win-header .at4-close:hover{opacity:1;background-color=
+:#ebeced;border-top-right-radius:7px}.at4win .at4win-content{position:relat=
+ive;background:#fff;min-height:220px}#at4win-footer{position:relative;backg=
+round:#fff;border-top:1px solid #d2d2d1;-webkit-border-bottom-right-radius:=
+8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius-bottomright:8p=
+x;-moz-border-radius-bottomleft:8px;border-bottom-right-radius:8px;border-b=
+ottom-left-radius:8px;height:11px;line-height:11px;padding:5px 20px;font-si=
+ze:11px;color:#666;-ms-box-sizing:content-box;-o-box-sizing:content-box;box=
+-sizing:content-box}#at4win-footer a{margin-right:10px;text-decoration:none=
+;color:#666}#at4win-footer a:hover{text-decoration:none;color:#000}#at4win-=
+footer a.at4-logo{top:5px;padding-left:10px}#at4win-footer a.at4-privacy{po=
+sition:absolute;top:5px;right:10px;padding-right:14px}.at4win.ats-dark{bord=
+er-color:#555;box-shadow:none}.at4win.ats-dark .at4win-header{background:#1=
+b1b1b;-webkit-border-top-left-radius:6px;-webkit-border-top-right-radius:6p=
+x;-moz-border-radius-topleft:6px;-moz-border-radius-topright:6px;border-top=
+-left-radius:6px;border-top-right-radius:6px}.at4win.ats-dark .at4win-heade=
+r .at4-close{background:url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAA=
+ABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx=
+0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbW=
+UAMTEvMTMvMTKswDp5AAAAd0lEQVQ4jb2VQRLAIAgDE///Z3qqY1FAhalHMCsCIkVEAIAkkVgvp=
+2lDBgYAnAyHkWotLccNrEd4A7X2TqIdqLfnWBAdaF5rJdyJfjtPH5GT37CaGhoVq3nOm/XflUuL=
+Uto2pY1d+vRKh0Pp+MrAVtDe2JkvYNQ+jVSEEFmOkggAAAAASUVORK5CYII=3D") no-repeat =
+center center;background-image:url(//s7.addthis.com/static/fb08f6d50887bd0c=
+aacc86a62bcdcf68.svg),none;border-color:#333}.at4win.ats-dark .at4win-heade=
+r .at4-close:hover{background-color:#000}.at4win.ats-dark .at4win-header .a=
+t-h3,.at4win.ats-dark .at4win-header h3{color:#fff;text-shadow:0 1px #000}.=
+at4win.ats-gray .at4win-header{background:#fff;border-color:#d2d2d1;-webkit=
+-border-top-left-radius:6px;-webkit-border-top-right-radius:6px;-moz-border=
+-radius-topleft:6px;-moz-border-radius-topright:6px;border-top-left-radius:=
+6px;border-top-right-radius:6px}.at4win.ats-gray .at4win-header a.at4-close=
+{border-color:#d2d2d1}.at4win.ats-gray .at4win-header a.at4-close:hover{bac=
+kground-color:#ebeced}.at4win.ats-gray #at4win-footer{border-color:#ebeced}=
+.at4win .clear{clear:both}.at4win ::selection{background:#fe6d4c;color:#fff=
+}.at4win ::-moz-selection{background:#fe6d4c;color:#fff}.at4-icon-fw{displa=
+y:inline-block;background-repeat:no-repeat;background-position:0 0;margin:0=
+ 5px 0 0;overflow:hidden;text-indent:-9999em;cursor:pointer;padding:0;borde=
+r-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%}.at44-follow-=
+container a.aticon{height:2pc;margin:0 5px 5px 0}.at44-follow-container .at=
+4-icon-fw{margin:0}</style></head>
+<body data-spy=3D"scroll" data-target=3D".scrollspy" id=3D"phpbb" class=3D"=
+section-viewtopic ltr ">
+
+
+<link href=3D"https://www.dfrobot.com/catalog/view/theme/default/stylesheet=
+/head.css" rel=3D"stylesheet">
+<link href=3D"https://www.dfrobot.com/catalog/view/theme/default/stylesheet=
+/font/iconfont.css" rel=3D"stylesheet">
+<style>
+	header{
+		padding:0px;
+	}
+	.newHeaderFrame{}
+	.newHeaderFrame .left{float: left;width: 720px;}
+	.newHeaderFrame .right{float: right;width: 420px;}
+	.newHeaderFrame .navigate{
+		clear: both;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 17px 0;
+	}
+	.newHeaderFrame .navigate a {
+		color: #FFFFFF;
+		padding-right: 10px;
+		padding-right: 30px;
+	}
+	.newHeaderFrame .loginBtn a{
+		font-size: 16px;
+	}
+	.newHeaderFrame .loginBtn a i{
+		font-size: 24px;
+		padding-right: 8px;
+	}
+	.newHeaderFrame .logo{
+		float: left;
+	}
+	body .headFrame{height: 0;}
+	/*.pc{display: none}*/
+</style>
+<div id=3D"header2">
+<link href=3D"https://fonts.googleapis.com/css?family=3DRoboto" rel=3D"styl=
+esheet" type=3D"text/css">
+<link href=3D"https://fonts.googleapis.com/css?family=3DRoboto+Condensed|Op=
+en+Sans+Condensed:300" rel=3D"stylesheet" type=3D"text/css">
+
+<!--head =E5=BC=95=E7=94=A8=E7=9A=84 css js-->
+<link href=3D"https://www.dfrobot.com/catalog/view/theme/default/stylesheet=
+/head.css" rel=3D"stylesheet">
+
+
+
+<header class=3D"headFrame"><!-- style=3D" margin-bottom: 70px"-->
+  <div class=3D"container-fluid">
+    <!--PC=E7=89=88=E6=9C=AC-->
+	  <!--<a target=3D"_blank" href=3D'https://www.dfrobot.com/blog-678.html?t=
+racking=3D595ef43a0b5be'><img src=3D'http://image.dfrobot.com/image/activit=
+y/store/7thannivtop.jpg' style=3D'width:100%'/></a>-->
+    <div class=3D"pc row hidden-xs">
+	    <div class=3D"con">
+	    	<div class=3D"left">
+			    <div class=3D"logo">
+			      <a target=3D"_blank" href=3D"https://www.dfrobot.com/"><img src=3D=
+"https://image.dfrobot.com/image/v3/logo.png" title=3D"DFRobot Web Site" al=
+t=3D"DFRobot Web Site" class=3D"img-responsive"></a>
+			    </div>
+			    <div class=3D"searchFrame">
+			    	<form action=3D"https://www.dfrobot.com/index.php" method=3D"get">
+			    	<div class=3D"search">
+						  <span>
+						  	<i class=3D"fa fa-search"></i>
+						  </span>
+						  <span>
+						  	<input type=3D"hidden" name=3D"route" value=3D"product/search">
+						  	<input type=3D"text" placeholder=3D"Search" value=3D"" name=3D"sea=
+rch" class=3D"searchInput">
+						  </span>
+						  <span>
+						  	<i class=3D"fa fa-remove" style=3D"-moz-user-select: none;"></i>
+						  </span>
+						</div>
+                    </form>
+			    </div>
+			    <div class=3D"navigate">
+			    	<a href=3D"https://www.dfrobot.com/">HOME</a>
+			    	<a href=3D"https://www.dfrobot.com//forum" target=3D"_blank">COMMUN=
+ITY</a>
+			    	<a href=3D"https://www.dfrobot.com/wiki/" target=3D"_blank">WIKI</a=
+>
+			    	<a href=3D"https://www.dfrobot.com/index.php?route=3DDFblog/blogs" =
+target=3D"_blank">BLOG</a>
+			    </div>
+		    </div>
+		    <div class=3D"right">
+		    	<div class=3D"cartFrame">
+		    		<!--<b>Notice</b>: Undefined variable: cart in <b>/data/wwwroot/dfr=
+obotcomv3/catalog/view/theme/default/template/common/public.tpl</b> on line=
+ <b>45</b>-->
+		    	</div>
+
+									<div class=3D"login">
+						<span><a href=3D"https://www.dfrobot.com/index.php?route=3Daccount/lo=
+gin"><i class=3D"fa fa-user"></i>LOGIN/SIGN UP</a></span>
+					</div>
+			=09
+
+		    </div>
+	    </div>
+    </div>
+  </div>
+</header>
+
+</div>
+
+ <header id=3D"top" class=3D"navbar navbar-inverse navbar-static-top flat-n=
+av" style=3D"background-color:#313131;">
+  <div class=3D"container newHeaderFrame">
+	  <div class=3D"left">
+		  <div class=3D"logo">
+			  <a href=3D"https://www.dfrobot.com/" data-original-title=3D"" title=3D=
+""><img src=3D"https://www.dfrobot.com/image/v3/logo.png" title=3D"DFRobot =
+Web Site" alt=3D"DFRobot Web Site" class=3D"img-responsive"></a>
+		  </div>
+		  <div class=3D"navigate">
+			  <a href=3D"https://www.dfrobot.com/" target=3D"_blank">HOME</a>
+			  <a href=3D"https://www.dfrobot.com/forum" target=3D"_blank">COMMUNITY<=
+/a>
+			  <a href=3D"https://www.dfrobot.com/wiki/" target=3D"_blank">WIKI</a>
+			  <a href=3D"https://www.dfrobot.com/index.php?route=3DDFblog/blogs" tar=
+get=3D"_blank">BLOG</a>
+		  </div>
+	  </div>
+	  <div class=3D"right">
+		  		  <!-- Main navigation block -->
+<nav class=3D"collapse navbar-collapse flat-nav-collapse" aria-label=3D"Pri=
+mary">
+   =20
+
+	 =20
+	    <ul class=3D"nav navbar-nav navbar-right navbar-nav-fancy">
+	    <!--&lt;!&ndash; IF not S_IS_BOT and S_REGISTER_ENABLED and not (S_SHO=
+W_COPPA or S_REGISTRATION) &ndash;&gt;-->
+		<!--<li><a href=3D"./ucp.php?mode=3Dregister&amp;sid=3D3884c74f1d6cff136d=
+78c6e95c0b5621">Create account</a></li>-->
+	   <!--&lt;!&ndash; ENDIF &ndash;&gt;-->
+	    			<li class=3D"loginBtn"><a href=3D"https://www.dfrobot.com/index.php=
+?route=3Daccount/login"><i class=3D"iconfont icon-use"></i>LOGIN/SIGN UP</a=
+></li>
+			</ul>
+=09
+	</nav>		  	  </div>
+  </div>
+ </header>
+    <div class=3D"search-input search-input-fullscreen hidden-xs">
+	   <form method=3D"get" id=3D"search" action=3D"https://www.dfrobot.com/fo=
+rum/search.php?sid=3D3884c74f1d6cff136d78c6e95c0b5621">
+		   <fieldset>
+		   <input name=3D"keywords" id=3D"keywords" type=3D"text" maxlength=3D"12=
+8" title=3D"Search for keywords" placeholder=3D"Search" value=3D"" autocomp=
+lete=3D"off">
+		   <div class=3D"close">=C3=97</div>
+		   <input type=3D"hidden" name=3D"sid" value=3D"3884c74f1d6cff136d78c6e95=
+c0b5621">
+
+		   </fieldset>
+        </form>
+    </div>
+
+      =20
+<div class=3D"container">
+  <!-- start content -->
+  <div id=3D"content-forum">
+
+  	<div class=3D"breadcrumb-line clearfix" style=3D"margin-top: 10px;">
+		<ul class=3D"breadcrumb">
+		<!-- https://developers.google.com/structured-data/testing-tool/ -->
+	=09
+				   <li><a href=3D"https://www.dfrobot.com/forum/index.php?sid=3D3884c74=
+f1d6cff136d78c6e95c0b5621"><span class=3D"icon fa fa-home"></span></a></li>
+		   		   <li itemtype=3D"http://data-vocabulary.org/Breadcrumb" itemscope=
+=3D""><a href=3D"https://www.dfrobot.com/forum/index.php?sid=3D3884c74f1d6c=
+ff136d78c6e95c0b5621" data-navbar-reference=3D"index" itemprop=3D"url"><spa=
+n itemprop=3D"title">Board index</span></a></li>
+		   	=09
+		  		   <li itemtype=3D"http://data-vocabulary.org/Breadcrumb" itemscope=
+=3D""><a itemprop=3D"url" href=3D"https://www.dfrobot.com/forum/viewforum.p=
+hp?f=3D14&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" data-forum-id=3D"14">=
+<span itemprop=3D"title">General</span></a></li>
+		  		   <li itemtype=3D"http://data-vocabulary.org/Breadcrumb" itemscope=
+=3D""><a itemprop=3D"url" href=3D"https://www.dfrobot.com/forum/viewforum.p=
+hp?f=3D5&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" data-forum-id=3D"5"><s=
+pan itemprop=3D"title">Product Trials</span></a></li>
+		  		</ul>
+					</div>
+
+   =20
+	<div id=3D"page-body">
+
+=09
+   =20
+<div class=3D"side-segment"><h3><a href=3D"https://www.dfrobot.com/forum/vi=
+ewtopic.php?f=3D5&amp;t=3D1988&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">=
+Using Microphone in DTMF Module</a></h3></div>
+<!-- NOTE: remove the style=3D"display: none" when you want to have the for=
+um description on the topic body -->
+
+
+
+
+<div class=3D"row">
+<div class=3D"col-md-4 col-xs-6">
+  <div class=3D"pull-left">
+	<form method=3D"get" id=3D"topic-search" action=3D"https://www.dfrobot.com=
+/forum/search.php?sid=3D3884c74f1d6cff136d78c6e95c0b5621">
+	 <fieldset>
+	<div class=3D"input-group input-group-sm">
+      <input type=3D"text" class=3D"form-control" name=3D"keywords" id=3D"s=
+earch_keywords" value=3D"" placeholder=3D"Search this topic=E2=80=A6">
+      <div class=3D"input-group-btn">
+        <button class=3D"btn btn-default" type=3D"submit" value=3D"Search">=
+<span class=3D"hidden-xs">Search</span><i class=3D"visible-xs fa fa-search =
+fa-btn-fx"></i></button>
+	  </div>
+    </div>
+	 <input type=3D"hidden" name=3D"t" value=3D"1988">
+<input type=3D"hidden" name=3D"sf" value=3D"msgonly">
+<input type=3D"hidden" name=3D"sid" value=3D"3884c74f1d6cff136d78c6e95c0b56=
+21">
+
+	</fieldset>
+    </form>
+   </div>
+</div>
+
+
+<div class=3D"col-md-8">
+  <div class=3D"pull-right">
+     <ul class=3D"pagination pagination-sm hidden-xs">
+		 <li class=3D"active"><a>8 posts</a></li>
+		 <li><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=
+=3D1988&amp;p=3D9049#unread">First unread post</a></li>				=09
+
+		     </ul>
+
+	<div class=3D"visible-xs">
+     <ul class=3D"pagination pagination-sm">
+		<li class=3D"active"><a>8 posts</a></li>		</ul>
+	</div>
+  </div>
+</div>
+
+</div>
+
+<div class=3D"clearfix">
+
+    <div class=3D"pull-left">
+   		 		 <a class=3D"btn btn-default btn-load" href=3D"https://www.dfrobot.=
+com/forum/posting.php?mode=3Dreply&amp;f=3D5&amp;t=3D1988&amp;sid=3D3884c74=
+f1d6cff136d78c6e95c0b5621" role=3D"button" data-loading-text=3D"Loading...&=
+nbsp;&lt;i class=3D'fa-spin fa fa-spinner fa-lg icon-white'&gt;&lt;/i&gt;">=
+<i class=3D"fa fa-plus"></i>&nbsp;Reply</a>
+    	 	   </div>
+   <div class=3D"pull-right">
+    <div class=3D"btn-group hidden-xs">
+   		<a class=3D"btn btn-default" href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?f=3D5&amp;t=3D1988&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621&am=
+p;view=3Dprint" title=3D"Print view" accesskey=3D"p"><i class=3D"fa fa-prin=
+t"></i></a></div>
+
+<div class=3D"btn-group t-subscribe">
+		</div>
+
+
+       </div>
+</div>
+
+<div class=3D"space10"></div>
+ <div class=3D"space10"></div>
+
+
+
+     <a id=3D"unread" class=3D"anchor"></a>
+  <div id=3D"p9042" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9042">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9042" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><img class=3D"post-icon" src=3D"https://www.dfrobot.com/forum/images/ico=
+ns/smile/question.gif" width=3D"16" height=3D"16" alt=3D""><a href=3D"https=
+://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D1988&amp;p=3D9049#p904=
+2">Using Microphone in DTMF Module</a><span class=3D"pull-right post-id hid=
+den-xs"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?p=3D9042&amp=
+;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9042" title=3D"Post">#9042</a></sp=
+an></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">bogdanmyr</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=
+=3D"fa fa-clock-o"></i>&nbsp;Sun May 22, 2016 5:29 am</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9042">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Sun May 22, 2016 5:29 am</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9042&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9042" title=3D"Post">#9042</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">Hello everyone  <img class=3D"smilies" src=3D"h=
+ttps://www.dfrobot.com/forum/images/smilies/icon_e_wink.gif" alt=3D";)" tit=
+le=3D"Wink">  <img class=3D"smilies" src=3D"https://www.dfrobot.com/forum/i=
+mages/smilies/icon_e_smile.gif" alt=3D":)" title=3D"Smile"> <br><br>I recen=
+tely bought DTMF sensor, picture and link below<br><br> <img src=3D"http://=
+image.dfrobot.com/image/cache/data/TOY0047/1231232-900x600.jpg" class=3D"im=
+g-responsive img-post" alt=3D"Image"><br><a href=3D"http://www.dfrobot.com/=
+index.php?route=3Dproduct/product&amp;keyword=3Ddtm&amp;product_id=3D1070" =
+class=3D"postlink">http://www.dfrobot.com/index.php?route=3Dproduct/product=
+&amp;keyword=3Ddtm&amp;product_id=3D1070</a><br><br>I set it up and can rea=
+d DTMF signal over 3.5 jack but I could not find any information how to use=
+ microphone in order to listen DTMF sound. Like if I want to push buttons o=
+n my phone and it will made dtmf sound , then microphone can read it and sh=
+ow me numbers in arduino terminal , just like with 3.5 jack but via Microph=
+one.<br><br>If anyone has any information about it, please help.</div>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9042" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full pro=
+file</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D=
+"username">bogdanmyr</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;4</li>			=
+		 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Thu May 05, 2016 =
+8:23 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;Off=
+-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+  <div id=3D"p9049" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9049">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9049" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D198=
+8&amp;p=3D9049#p9049">Re: Using Microphone in DTMF Module</a><span class=3D=
+"pull-right post-id hidden-xs"><a href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?p=3D9049&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9049" title=
+=3D"Post">#9049</a></span></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">Leff</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=3D"fa=
+ fa-clock-o"></i>&nbsp;Mon May 23, 2016 9:33 am</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9049">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Mon May 23, 2016 9:33 am</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9049&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9049" title=3D"Post">#9049</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">Hi bogdanmyr,<br><br>Welcome, so do you want to=
+ generate the sound using this module when you hit the number on your phone=
+? If so, you can connect a buzzer with SPK1 or SPK2.<br><br><div class=3D"i=
+nline-attachment">		=09
+			=09
+				<div class=3D"file">
+			<div class=3D"attach-image"><img class=3D"img-post" src=3D"https://www.d=
+frobot.com/forum/download/file.php?id=3D511&amp;sid=3D3884c74f1d6cff136d78c=
+6e95c0b5621" alt=3D"20160523173056.png" onclick=3D"viewableArea(this);"></d=
+iv>
+						<small><i class=3D"fa fa-eye"></i> 20160523173056.png (330.12 KiB) Vi=
+ewed 6955 times</small>
+		</div>
+			=09
+	=09
+	=09
+		</div><br><br>And in the library, I found, fortunately, there is a functi=
+on called <strong>playDTMF()</strong>, (like below), with it, you could pla=
+y the sound.<br><br><div class=3D"codebox"><span>Code:&nbsp;<a href=3D"http=
+s://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D1988&amp;p=3D9049#" o=
+nclick=3D"selectCode(this); return false;">Select all</a></span><pre><code>=
+void DTMF::playDTMF()<br>{<br>&nbsp; const int _freq1[] =3D {<br>&nbsp; 133=
+6, 1209, 1336, 1477,<br>&nbsp; 1209, 1336, 1477, 1209,<br>&nbsp; 1336, 1477=
+, 1209, 1477,<br>&nbsp; 1633, 1633, 1633, 1633<br>&nbsp; };<br>&nbsp; const=
+ int _freq2[] =3D {<br>&nbsp; 941, 697, 697, 697,<br>&nbsp; 770, 770, 770, =
+852,<br>&nbsp; 852, 852, 941, 941,<br>&nbsp; 697, 770, 852, 941<br>&nbsp; }=
+;<br>&nbsp; <br>&nbsp; int phone_number[] =3D { <br>&nbsp; &nbsp; 1, 2, 3, =
+4, <br>&nbsp; &nbsp; 5, 6, 7, 8,<br>&nbsp; &nbsp; 9, 0, 10, 11, <br>&nbsp; =
+&nbsp; 12, 13, 14, 15<br>&nbsp; &nbsp; };<br><br>&nbsp; int i;<br>&nbsp; fo=
+r(i =3D 0; i &lt; (sizeof(phone_number)/sizeof(int)); i ++) {<br>&nbsp; &nb=
+sp; Serial.print(phone_number[i], 10);<br>&nbsp; &nbsp; Serial.print(' ');E=
+<br>&nbsp; &nbsp; tone(2, _freq1[phone_number[i]], 500);<br>&nbsp; &nbsp; t=
+one(3, _freq2[phone_number[i]], 500);<br>&nbsp; &nbsp; delay(550);<br>&nbsp=
+; }<br><br>&nbsp; Serial.println();<br>}</code></pre></div><br><br>referenc=
+e: <!-- m --><a class=3D"postlink" href=3D"https://www.arduino.cc/en/Refere=
+nce/Tone">https://www.arduino.cc/en/Reference/Tone</a><!-- m --></div>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9049" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full prof=
+ile</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D"=
+username">Leff</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;934</li>	=
+				 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Wed Jan 21, 201=
+5 6:32 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;O=
+ff-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+  <div id=3D"p9063" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9063">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9063" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D198=
+8&amp;p=3D9049#p9063">Re: Using Microphone in DTMF Module</a><span class=3D=
+"pull-right post-id hidden-xs"><a href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?p=3D9063&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9063" title=
+=3D"Post">#9063</a></span></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">bogdanmyr</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=
+=3D"fa fa-clock-o"></i>&nbsp;Tue May 24, 2016 6:43 am</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9063">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Tue May 24, 2016 6:43 am</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9063&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9063" title=3D"Post">#9063</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">Hi Leff , thanks for your reply !<br><br>I don'=
+t want to generate the sound using this module when I hit the number on my =
+phone, but in fact I want the microphone in the module to be able to detect=
+ the sound of the numbers being pressed on my phone and show those numbers =
+on the Arduino terminal. Do you have any idea how to deal with it ?<br><br>=
+Thanks in advance   <img class=3D"smilies" src=3D"https://www.dfrobot.com/f=
+orum/images/smilies/icon_e_geek.gif" alt=3D":geek:" title=3D"Geek"></div>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9063" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full pro=
+file</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D=
+"username">bogdanmyr</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;4</li>			=
+		 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Thu May 05, 2016 =
+8:23 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;Off=
+-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+  <div id=3D"p9073" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9073">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9073" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D198=
+8&amp;p=3D9049#p9073">Re: Using Microphone in DTMF Module</a><span class=3D=
+"pull-right post-id hidden-xs"><a href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?p=3D9073&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9073" title=
+=3D"Post">#9073</a></span></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">Leff</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=3D"fa=
+ fa-clock-o"></i>&nbsp;Tue May 24, 2016 10:00 am</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9073">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Tue May 24, 2016 10:00 am</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9073&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9073" title=3D"Post">#9073</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">I guess it could be directly used, can't it?</d=
+iv>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9073" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full prof=
+ile</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D"=
+username">Leff</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;934</li>	=
+				 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Wed Jan 21, 201=
+5 6:32 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;O=
+ff-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+  <div id=3D"p9086" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9086">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9086" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D198=
+8&amp;p=3D9049#p9086">Re: Using Microphone in DTMF Module</a><span class=3D=
+"pull-right post-id hidden-xs"><a href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?p=3D9086&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9086" title=
+=3D"Post">#9086</a></span></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">bogdanmyr</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=
+=3D"fa fa-clock-o"></i>&nbsp;Wed May 25, 2016 12:32 pm</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9086">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Wed May 25, 2016 12:32 pm</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9086&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9086" title=3D"Post">#9086</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">Hi Leff !<br><br>You are totally right, I just =
+find it out last night and the problem was in my phone, not a sensor or a l=
+ib, ohh   <img class=3D"smilies" src=3D"https://www.dfrobot.com/forum/image=
+s/smilies/icon_e_surprised.gif" alt=3D":o" title=3D"Surprised"> <br>Though =
+the sensitivity of this microphone is very low. Do you know how can I use h=
+igher quality external microphone ?</div>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9086" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full pro=
+file</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D=
+"username">bogdanmyr</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;4</li>			=
+		 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Thu May 05, 2016 =
+8:23 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;Off=
+-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+  <div id=3D"p9094" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9094">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9094" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D198=
+8&amp;p=3D9049#p9094">Re: Using Microphone in DTMF Module</a><span class=3D=
+"pull-right post-id hidden-xs"><a href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?p=3D9094&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9094" title=
+=3D"Post">#9094</a></span></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">Leff</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=3D"fa=
+ fa-clock-o"></i>&nbsp;Thu May 26, 2016 2:18 am</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9094">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Thu May 26, 2016 2:18 am</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9094&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9094" title=3D"Post">#9094</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">Not mentioned after I finding all the places ab=
+out how to do settings on that, seems the only way to enhance the recogniti=
+on is to increase the volume of your phone.</div>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9094" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full prof=
+ile</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D"=
+username">Leff</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;934</li>	=
+				 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Wed Jan 21, 201=
+5 6:32 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;O=
+ff-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+  <div id=3D"p9146" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9146">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9146" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D198=
+8&amp;p=3D9049#p9146">Re: Using Microphone in DTMF Module</a><span class=3D=
+"pull-right post-id hidden-xs"><a href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?p=3D9146&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9146" title=
+=3D"Post">#9146</a></span></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">bogdanmyr</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=
+=3D"fa fa-clock-o"></i>&nbsp;Tue May 31, 2016 4:04 pm</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9146">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Tue May 31, 2016 4:04 pm</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9146&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9146" title=3D"Post">#9146</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">Hi Leff,<br><br>I also haven't find any informa=
+tion about it. <br>Seems like the only way is to buy shield and there are p=
+ins for connecting microphone, so can connect better microphone, hopefully.=
+</div>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9146" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full pro=
+file</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D41422&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D=
+"username">bogdanmyr</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;4</li>			=
+		 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Thu May 05, 2016 =
+8:23 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;Off=
+-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+  <div id=3D"p9152" class=3D"clearfix">
+     <article>
+  <div class=3D"panel forum-answer">
+    <div class=3D"panel-heading">
+	 <div class=3D"clearfix">
+         <div id=3D"profile9152">
+			<div class=3D"avatar-over pull-left">
+									<a href=3D"javascript:void(0)" data-toggle=3D"modal" data-target=
+=3D"#mini9152" title=3D"User mini profile"><img src=3D"https://www.dfrobot.=
+com/forum/styles/FLATBOOTS/theme/images/no_avatar.gif" alt=3D""></a>
+											</div>
+         </div>
+		<div class=3D"side-segment"><h3 style=3D"border-bottom: 4px solid #e5e5e5=
+;"><a href=3D"https://www.dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D198=
+8&amp;p=3D9049#p9152">Re: Using Microphone in DTMF Module</a><span class=3D=
+"pull-right post-id hidden-xs"><a href=3D"https://www.dfrobot.com/forum/vie=
+wtopic.php?p=3D9152&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621#p9152" title=
+=3D"Post">#9152</a></span></h3></div>
+		<div class=3D"clearfix">
+		<div class=3D"text-muted  pull-left">
+				By&nbsp;<a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3D=
+viewprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=
+=3D"username">Leff</a><span class=3D"hidden-xs">&nbsp;-&nbsp;<i class=3D"fa=
+ fa-clock-o"></i>&nbsp;Wed Jun 01, 2016 5:55 am</span>
+				</div>
+		<div class=3D"pull-right">
+		<div role=3D"toolbar" class=3D"btn-toolbar">
+			=09
+		   =20
+				</div>
+		</div>
+		</div>
+
+	 </div>
+	</div>
+
+    <div class=3D"panel-body">
+        <div class=3D"clearfix">
+			<div class=3D"postbody">
+                <div id=3D"post_content9152">
+									 <span class=3D"post-date pull-left visible-xs">-&nbsp;<i class=3D=
+"fa fa-clock-o"></i>&nbsp;Wed Jun 01, 2016 5:55 am</span>
+					 <span class=3D"post-id pull-right visible-xs"><a href=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?p=3D9152&amp;sid=3D3884c74f1d6cff136d78c6e9=
+5c0b5621#p9152" title=3D"Post">#9152</a></span>
+			=09
+				=09
+				=09
+					<span class=3D"hidden hook-bfr-message"></span>
+					<div class=3D"content">Oh, yes, to use a better microphone can improve=
+ the recognition effect.</div>
+
+				=09
+																									                </div>
+							</div>
+        </div>
+    </div>
+
+		   </div>
+
+ </article>
+=20
+ <!-- /.MODAL PROFILE POSTER STARTS HERE -->
+    <div class=3D"modal fade" id=3D"mini9152" tabindex=3D"-1" role=3D"dialo=
+g" aria-hidden=3D"true">
+	 <div class=3D"modal-dialog">
+	  <div class=3D"modal-content">
+		<div class=3D"modal-header">
+			<button type=3D"button" class=3D"close" data-dismiss=3D"modal" aria-hidd=
+en=3D"true"><span class=3D"awe-remove-circle"></span></button>
+			<h4 class=3D"modal-title">User mini profile</h4>
+		</div>
+		<div class=3D"modal-body">
+			<div class=3D"row profile-data">
+			<!-- Left Side Start -->
+				<div class=3D"col-lg-4 col-md-4 col-sm-3 col-xs-12 text-center">
+				    <!-- Profile Avatar Start -->
+					<div class=3D"profile-avatar">
+																		<img src=3D"https://www.dfrobot.com/forum/styles/FLATBOOT=
+S/theme/images/no_avatar.gif" alt=3D"">
+																	</div>
+					<!-- Profile Avatar End -->
+                																			<a class=3D"btn btn-sm btn-default" titl=
+e=3D"" href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dviewprof=
+ile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">View full prof=
+ile</a>
+									</div>
+				<!-- Left Side End -->
+				<!-- Right Side Start -->
+				<div class=3D"col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				 <h3><a href=3D"https://www.dfrobot.com/forum/memberlist.php?mode=3Dvie=
+wprofile&amp;u=3D1218&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621" class=3D"=
+username">Leff</a></h3>
+					<ul class=3D"icon-list list-unstyled">
+					 					 <li><i class=3D"fa fa-comments"></i>&nbsp;Posts:&nbsp;934</li>	=
+				 <li><i class=3D"fa fa-calendar"></i>&nbsp;Joined:&nbsp;Wed Jan 21, 201=
+5 6:32 am</li>					 <li><i class=3D"fa fa-retweet"></i>&nbsp;Status:&nbsp;O=
+ff-line</li>
+                    =20
+					=20
+																				</ul>
+				</div>
+			 <!-- Right Side End -->
+            </div>
+		</div>
+		<div class=3D"modal-footer">
+		    			 					</div>
+	   </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+ <!-- /.MODAL PROFILE POSTER STOPS HERE -->
+
+</div>
+
+
+<div class=3D"clearfix">
+   <div class=3D"pull-left">
+   		 		 <a class=3D"btn btn-default btn-load" href=3D"https://www.dfrobot.=
+com/forum/posting.php?mode=3Dreply&amp;f=3D5&amp;t=3D1988&amp;sid=3D3884c74=
+f1d6cff136d78c6e95c0b5621" role=3D"button" data-loading-text=3D"Loading...&=
+nbsp;&lt;i class=3D'fa-spin fa fa-spinner fa-lg icon-white'&gt;&lt;/i&gt;">=
+<i class=3D"fa fa-plus"></i>&nbsp;Reply</a>
+    	 	  </div>
+
+ <div class=3D"pull-right">
+     <ul class=3D"pagination pagination-sm hidden-xs">
+	 	<li><a title=3D"" href=3D"javascript:void(0);" data-target=3D".sorting" =
+data-toggle=3D"collapse">Options</a></li>     	  <li class=3D"active"><a>8 =
+posts</a></li>
+		=09
+
+		     </ul>
+
+	<div class=3D"visible-xs">
+	<ul class=3D"pagination pagination-sm">
+	 	 <li><a title=3D"" href=3D"javascript:void(0);" data-target=3D".sorting"=
+ data-toggle=3D"collapse"><i class=3D"fa fa-cog"></i></a></li>	 <li><a clas=
+s=3D"pagination-trigger" data-placement=3D"top">Page <strong>1</strong> of =
+<strong>1</strong></a></li>
+	 <li class=3D"active"><a>8 posts</a></li>
+	</ul>
+	</div>
+ </div>
+</div>
+
+<div class=3D"clearfix">
+   <div class=3D"pull-right">
+	<div class=3D"visible-xs">
+	 <ul class=3D"pagination pagination-sm">
+	 		=09
+
+			 </ul>
+	</div>
+   </div>
+</div>
+
+
+<div class=3D"addthis_sharing_toolbox" style=3D"clear: both; " data-url=3D"=
+https://www.dfrobot.com/forum/viewtopic.php?t=3D1988" data-title=3D"Using M=
+icrophone in DTMF Module&nbsp;-&nbsp;Arduino Robot IOT Community Forum - DF=
+Robot"><div id=3D"atstbx" class=3D"at-resp-share-element at-style-responsiv=
+e addthis-smartlayers addthis-animated at4-show" aria-labelledby=3D"at-d743=
+2b54-de5d-449d-ac35-019b344e659f" role=3D"region"><span id=3D"at-d7432b54-d=
+e5d-449d-ac35-019b344e659f" class=3D"at4-visually-hidden">AddThis Sharing B=
+uttons</span><div class=3D"at-share-btn-elements"><a role=3D"button" tabind=
+ex=3D"1" class=3D"at-icon-wrapper at-share-btn at-svc-google_plusone_share"=
+ style=3D"background-color: rgb(220, 78, 65); border-top-left-radius: 0px; =
+border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-botto=
+m-left-radius: 0px; "><span class=3D"at4-visually-hidden">Share to Google+<=
+/span><span class=3D"at-icon-wrapper" style=3D"line-height: 32px; height: 3=
+2px; width: 32px; "><svg xmlns=3D"http://www.w3.org/2000/svg" xmlns:xlink=
+=3D"http://www.w3.org/1999/xlink" viewBox=3D"0 0 32 32" version=3D"1.1" rol=
+e=3D"img" aria-labelledby=3D"at-svg-google_plusone_share-1" class=3D"at-ico=
+n at-icon-google_plusone_share" style=3D"fill: #ffffff; width: 32px; height=
+: 32px; "><title id=3D"at-svg-google_plusone_share-1">Google+</title><g><pa=
+th d=3D"M12 15v2.4h3.97c-.16 1.03-1.2 3.02-3.97 3.02-2.39 0-4.34-1.98-4.34-=
+4.42s1.95-4.42 4.34-4.42c1.36 0 2.27.58 2.79 1.08l1.9-1.83C15.47 9.69 13.89=
+ 9 12 9c-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.72-2.84 6.72-6.84 0-.46-.05-=
+.81-.11-1.16H12zm15 0h-2v-2h-2v2h-2v2h2v2h2v-2h2v-2z" fill-rule=3D"evenodd"=
+></path></g></svg></span></a><a role=3D"button" tabindex=3D"1" class=3D"at-=
+icon-wrapper at-share-btn at-svc-facebook" style=3D"background-color: rgb(5=
+9, 89, 152); border-top-left-radius: 0px; border-top-right-radius: 0px; bor=
+der-bottom-right-radius: 0px; border-bottom-left-radius: 0px; "><span class=
+=3D"at4-visually-hidden">Share to Facebook</span><span class=3D"at-icon-wra=
+pper" style=3D"line-height: 32px; height: 32px; width: 32px; "><svg xmlns=
+=3D"http://www.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999/xlink=
+" viewBox=3D"0 0 32 32" version=3D"1.1" role=3D"img" aria-labelledby=3D"at-=
+svg-facebook-2" class=3D"at-icon at-icon-facebook" style=3D"fill: #ffffff; =
+width: 32px; height: 32px; "><title id=3D"at-svg-facebook-2">Facebook</titl=
+e><g><path d=3D"M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.=
+733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-=
+1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule=3D"evenodd"></path></g></sv=
+g></span></a><a role=3D"button" tabindex=3D"1" class=3D"at-icon-wrapper at-=
+share-btn at-svc-twitter" style=3D"background-color: rgb(29, 161, 242); bor=
+der-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right=
+-radius: 0px; border-bottom-left-radius: 0px; "><span class=3D"at4-visually=
+-hidden">Share to Twitter</span><span class=3D"at-icon-wrapper" style=3D"li=
+ne-height: 32px; height: 32px; width: 32px; "><svg xmlns=3D"http://www.w3.o=
+rg/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999/xlink" viewBox=3D"0 0 32=
+ 32" version=3D"1.1" role=3D"img" aria-labelledby=3D"at-svg-twitter-3" clas=
+s=3D"at-icon at-icon-twitter" style=3D"fill: #ffffff; width: 32px; height: =
+32px; "><title id=3D"at-svg-twitter-3">Twitter</title><g><path d=3D"M27.996=
+ 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037=
+ 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715=
+ 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.=
+044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4=
+.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85=
+a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-=
+.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule=3D"evenodd"></path><=
+/g></svg></span></a><a role=3D"button" tabindex=3D"1" class=3D"at-icon-wrap=
+per at-share-btn at-svc-compact" style=3D"background-color: rgb(255, 101, 8=
+0); border-top-left-radius: 0px; border-top-right-radius: 0px; border-botto=
+m-right-radius: 0px; border-bottom-left-radius: 0px; "><span class=3D"at4-v=
+isually-hidden">Share to More</span><span class=3D"at-icon-wrapper" style=
+=3D"line-height: 32px; height: 32px; width: 32px; "><svg xmlns=3D"http://ww=
+w.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999/xlink" viewBox=3D"=
+0 0 32 32" version=3D"1.1" role=3D"img" aria-labelledby=3D"at-svg-addthis-4=
+" class=3D"at-icon at-icon-addthis" style=3D"fill: #ffffff; width: 32px; he=
+ight: 32px; "><title id=3D"at-svg-addthis-4">AddThis</title><g><path d=3D"M=
+18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule=3D"evenodd"></path></g></svg>=
+</span></a></div></div></div>
+
+<div class=3D"space10"></div>
+<div class=3D"pull-left">
+	<a href=3D"https://www.dfrobot.com/forum/viewforum.php?f=3D5&amp;sid=3D388=
+4c74f1d6cff136d78c6e95c0b5621" accesskey=3D"r"><i class=3D"fa fa-chevron-le=
+ft"></i>&nbsp;Return to =E2=80=9CProduct Trials=E2=80=9D</a>
+</div>
+<div class=3D"space10"></div>
+<div class=3D"space10"></div>
+
+			<div class=3D"hidden-xs">
+	<fieldset class=3D"controls-row">
+        <div class=3D"sorting collapse">
+			<div class=3D"panel panel-default">
+				<div class=3D"panel-body">
+					 <div class=3D"row">
+					<form class=3D"form-horizontal" method=3D"post" action=3D"https://www.=
+dfrobot.com/forum/viewtopic.php?f=3D5&amp;t=3D1988&amp;sid=3D3884c74f1d6cff=
+136d78c6e95c0b5621">
+						<div class=3D"col-md-3 col-sm-3">=20
+                         <label for=3D"st">Display:</label>
+                            <div class=3D"control-row">
+                              <select name=3D"st" id=3D"st"><option value=
+=3D"0" selected=3D"selected">All posts</option><option value=3D"1">1 day</o=
+ption><option value=3D"7">7 days</option><option value=3D"14">2 weeks</opti=
+on><option value=3D"30">1 month</option><option value=3D"90">3 months</opti=
+on><option value=3D"180">6 months</option><option value=3D"365">1 year</opt=
+ion></select>
+                            </div>
+						</div>
+	                    <div class=3D"col-md-3 col-sm-3">=20
+                          <label for=3D"sk">Sort by:</label>
+                            <div class=3D"control-row">
+                              <select name=3D"sk" id=3D"sk"><option value=
+=3D"a">Author</option><option value=3D"t" selected=3D"selected">Post time</=
+option><option value=3D"s">Subject</option></select>
+                            </div>
+						</div>			=09
+						<div class=3D"col-md-3 col-sm-3"> =20
+                           <label for=3D"sd">Sort by:</label>
+                            <div class=3D"control-row">
+							<div class=3D"input-group">
+                             <select name=3D"sd" id=3D"sd"><option value=3D=
+"a" selected=3D"selected">Ascending</option><option value=3D"d">Descending<=
+/option></select>
+							 <span class=3D"input-group-btn">
+                              <button class=3D"btn btn-default" name=3D"sor=
+t" type=3D"submit">Go</button>
+							</span>
+							</div>
+						    </div>  =20
+						</div>
+					</form>
+					<div class=3D"col-md-3 col-sm-3">=20
+                      <label accesskey=3D"j">Jump to:</label>
+                       <div class=3D"control-row">
+                         <div id=3D"jumpbox" class=3D"dropdown">
+  <button class=3D"btn btn-default btn-block dropdown-toggle" type=3D"butto=
+n" data-toggle=3D"dropdown" aria-expanded=3D"true">
+   Select the forum to jump to
+    <span class=3D"caret"></span>
+  </button>
+  <ul class=3D"dropdown-menu jumpbox-dropdown" role=3D"menu" style=3D"width=
+: 100%;">
+  <!-- <li role=3D"presentation" class=3D"dropdown-header">Dropdown header<=
+/li> -->
+    	 		 	 <li role=3D"presentation" class=3D"jumpbox-cat-link"><a role=3D"=
+menuitem" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.p=
+hp?f=3D1&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">Projects</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D2&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;Pr=
+oject Showroom</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D4&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;3D=
+ Printing</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D3&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;Ea=
+sy IoT - the Simplest Solution of IoT</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D6&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;Vi=
+sual Programming - WhenDo, Ardublock, Mind+</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D9&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;Te=
+lematics - OBD modules for cars</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-cat-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D7&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">Products</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D8&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;Ar=
+duino - Shields, Sensors, Modules and Kits</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D18&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;B=
+luno - An Arduino Compatible Bluetooth 4.0 Microcontroller</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D19&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;V=
+ortex - A Kid's First Robot</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D10&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;L=
+attePanda - A Windows 10 Single Board Computer</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D12&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;R=
+obotics</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D13&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;P=
+CB Services</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D20&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;u=
+PyCraft - A Micropython IDE</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-cat-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D14&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">General</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D15&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;S=
+uggestions for DFRobot</a></li>
+	 		 	 <li role=3D"presentation" class=3D"jumpbox-sub-link"><a role=3D"menu=
+item" tabindex=3D"-1" href=3D"https://www.dfrobot.com/forum/viewforum.php?f=
+=3D5&amp;sid=3D3884c74f1d6cff136d78c6e95c0b5621">&nbsp;&nbsp;&nbsp;&nbsp;Pr=
+oduct Trials</a></li>
+	 	  </ul>
+</div>=09
+                       </div>
+					</div>
+                   </div>
+                </div>
+			</div>
+		</div>=20
+	</fieldset>=20
+</div>=09
+
+
+
+	</div> <!-- page-body id in header -->
+  </div> <!-- content-forum in header -->
+ </div><div style=3D"visibility: hidden; height: 1px; width: 1px; position:=
+ absolute; top: -9999px; z-index: 100000; " id=3D"_atssh"><iframe id=3D"_at=
+ssh174" title=3D"AddThis utility frame" style=3D"height: 1px; width: 1px; p=
+osition: absolute; top: 0px; z-index: 100000; border-top-width: 0px; border=
+-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border=
+-style: initial; border-color: initial; border-image: initial; left: 0px; "=
+ src=3D"https://s7.addthis.com/static/sh.e4e8af4de595fdb10ec1459d.html#rand=
+=3D0.18126097554340959&amp;iit=3D1542456234516&amp;tmr=3Dload%3D15424562336=
+56%26core%3D1542456234390%26main%3D1542456234478%26ifr%3D1542456234549&amp;=
+cb=3D0&amp;cdn=3D0&amp;md=3D0&amp;kw=3DArduino%20Forum%2CLattepanda%20Forum=
+%2CRobotics%20Forum%2CIOT%20Forum&amp;ab=3D-&amp;dh=3Dwww.dfrobot.com&amp;d=
+r=3D&amp;du=3Dhttps%3A%2F%2Fwww.dfrobot.com%2Fforum%2Fviewtopic.php%3Ft%3D1=
+988&amp;href=3Dhttps%3A%2F%2Fwww.dfrobot.com%2Fforum%2Fviewtopic.php&amp;dt=
+=3DUsing%20Microphone%20in%20DTMF%20Module%C2%A0-%C2%A0Arduino%20Robot%20IO=
+T%20Community%20Forum%20-%20DFRobot&amp;dbg=3D0&amp;cap=3Dtc%3D0%26ab%3D0&a=
+mp;inst=3D1&amp;jsl=3D1&amp;prod=3Dundefined&amp;lng=3Den&amp;ogt=3Dsite_na=
+me&amp;pc=3Dmen&amp;pub=3Dra-53db4dcb71b1e6a9&amp;ssl=3D1&amp;sid=3D5bf003a=
+a094743ab&amp;srf=3D0.01&amp;ver=3D300&amp;xck=3D0&amp;xtr=3D0&amp;og=3Dsit=
+e_name%3DArduino%2520Robot%2520IOT%2520Community%2520Forum%2520-%2520DFRobo=
+t&amp;csi=3Dundefined&amp;rev=3Dv8.3.32-wp&amp;ct=3D1&amp;xld=3D1&amp;xd=3D=
+1"></iframe></div><style id=3D"service-icons-0"></style> <!-- container in =
+header -->
+
+
+
+
+
+=09
+  =20
+	   =20
+=09
+
+
+<a id=3D"totop" class=3D"top-flat" href=3D"https://www.dfrobot.com/forum/vi=
+ewtopic.php?f=3D5&amp;t=3D1988&amp;p=3D9049" onclick=3D"return false;" styl=
+e=3D"display:none;"></a>
+
+<div class=3D"hidden"><img src=3D"https://www.dfrobot.com/forum/cron.php?cr=
+on_type=3Dcron.task.text_reparser.poll_option&amp;sid=3D3884c74f1d6cff136d7=
+8c6e95c0b5621" width=3D"1" height=3D"1" alt=3D"cron"></div>=20
+
+<!-- injected via core and ajax JS for the return confirmation actions -->
+   <div id=3D"page-footer">
+	<div id=3D"darkenwrapper" data-ajax-error-title=3D"AJAX error" data-ajax-e=
+rror-text=3D"Something went wrong when processing your request." data-ajax-=
+error-text-abort=3D"User aborted request." data-ajax-error-text-timeout=3D"=
+Your request timed out; please try again." data-ajax-error-text-parsererror=
+=3D"Something went wrong with the request and the server returned an invali=
+d reply.">
+		<div id=3D"darken">&nbsp;</div>
+	</div>
+
+	<div id=3D"phpbb_alert" class=3D"alert alert-default phpbb_alert" data-l-e=
+rr=3D"Error" data-l-timeout-processing-req=3D"Request timed out.">
+		<button type=3D"button" class=3D"close alert_close" data-dismiss=3D"alert=
+"><span class=3D"awe-remove-circle"></span></button>
+		<h3 class=3D"alert_title">&nbsp;</h3>
+		 <p class=3D"alert_text"></p>
+	</div>
+=09
+	<div id=3D"phpbb_confirm" class=3D"alert alert-default phpbb_alert">
+		<button type=3D"button" class=3D"close alert_close" data-dismiss=3D"alert=
+"><span class=3D"awe-remove-circle"></span></button>
+		<div class=3D"alert_text"></div>
+	</div>
+  </div>=09
+<!-- injected via core and ajax JS for the return confirmation actions -->
+
+
+
+
+<!-- we use this event to load the JS scripts properly via the extension sy=
+stem -->
+
+
+<!-- injected via a module or an include -->
+
+<!-- injected via a module or an include -->
+
+
+
+
+
+<!-- Google Analytics: change UA-XXXXXXXX-X to be your site's ID. -->
+
+
+
+<div id=3D"footer"><div id=3D"public_footer">
+	<footer>
+		<div class=3D"pc hidden-xs">
+			<div class=3D"subscribe">
+				<div class=3D"footFrame">
+					<div class=3D"left">
+						<span>Sign up for exclusive offers!</span>
+						<div>
+							<!-- Begin MailChimp Signup Form -->
+							<!--<link href=3D"//cdn-images.mailchimp.com/embedcode/slim-10_7.css=
+" rel=3D"stylesheet" type=3D"text/css">-->						=09
+							<div id=3D"mc_embed_signup">
+								<form action=3D"https://dfrobot.us16.list-manage.com/subscribe/post=
+?u=3De384b3074873a648e7d3237cc&amp;id=3D316955a8ff" method=3D"post" id=3D"m=
+c-embedded-subscribe-form" name=3D"mc-embedded-subscribe-form" class=3D"val=
+idate" target=3D"_blank" novalidate=3D"">
+									<div id=3D"mc_embed_signup_scroll" class=3D"footer_scroll">
+										<!--<label for=3D"mce-EMAIL">Subscribe to our mailing list</label=
+>

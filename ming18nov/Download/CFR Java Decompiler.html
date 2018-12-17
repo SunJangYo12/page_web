@@ -1,0 +1,1126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CFR Java Decompiler</title>
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="https://the.bytecode.club/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="https://the.bytecode.club/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/global.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/Postbit.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/css3.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/Majestic.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/Colors.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/Landing.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/star_ratings.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/showthread.min.css" />
+<link type="text/css" rel="stylesheet" href="https://the.bytecode.club/cache/themes/theme13/fontawesome.min.css" />
+<link rel="stylesheet" href="https://the.bytecode.club/images/majestic/fonts/fa.css">
+<link rel="alternate stylesheet" type="text/css" href="" title="red">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/green.css" title="green">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/blue.css" title="blue">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/yellow.css" title="yellow">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/orange.css" title="orange">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/navy.css" title="navy">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/purple.css" title="purple">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/teal.css" title="teal">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/brown.css" title="brown">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/grey.css" title="grey">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/pink.css" title="pink">
+<link rel="alternate stylesheet" type="text/css" href="https://the.bytecode.club/images/majestic/patterns/cement.css" title="cement">
+<script type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/jquery.js?ver=1800"></script>
+<script type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/jquery.plugins.min.js?ver=1800"></script>
+<script type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/general.js?ver=1800"></script>
+<script type="36547a130a076fe7178073dd-text/javascript">
+if (typeof jQuery == 'undefined')
+{
+	document.write(unescape("%3Cscript src='images/majestic/js/j.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="36547a130a076fe7178073dd-text/javascript" src="images/majestic/js/maj.min.js"></script>
+<script type="36547a130a076fe7178073dd-text/javascript" src="images/majestic/js/classie.js"></script>
+<script type="36547a130a076fe7178073dd-text/javascript" src="images/majestic/js/tipsy.js"></script>
+<script language="javascript" type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/myadvertisements.js"></script>
+<script type="36547a130a076fe7178073dd-text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results…";
+	lang.select2_searching = "Searching…";
+
+	var cookieDomain = ".bytecode.club";
+	var cookiePath = "/";
+	var cookiePrefix = "";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait..';
+	var saving_changes = 'Saving changes..';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "a0a2ab79190b31dae017670bbe55ef2d";
+	var rootpath = "https://the.bytecode.club";
+	var imagepath = "https://the.bytecode.club/images/majestic";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://the.bytecode.club/images/majestic/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+// -->
+</script>
+<script language="javascript" type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/myadvertisements.js"></script>
+<script type="36547a130a076fe7178073dd-text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+// -->
+</script>
+
+<script type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/report.js?ver=1800"></script>
+<script src="https://the.bytecode.club/jscripts/jeditable/jeditable.min.js" type="36547a130a076fe7178073dd-text/javascript"></script>
+<script type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/thread.js?ver=1800"></script>
+</head>
+<body>
+<div class="smenu slide-menu-top">
+<div class="wrap">
+<div class="closebtn">
+<li><a href="https://the.bytecode.club/search.php" class="advancesearch"><i class="fa fa-gear advsearch"></i></a></li>
+<li><a href="#" class="close-menu">Close <i class="fa fa-arrow-circle-o-up"></i></a></li>
+</div>
+<div class="sleft" style="float:left;"><form id="searchform" action="search.php" method="post">
+<input type="hidden" value="do_search" name="action">
+<input type="hidden" value="" name="tid">
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="36547a130a076fe7178073dd-"></script><input name="keywords" type="text" value="Search..." class="text_input" onblur="if(this.value==''){this.value='Search...';}" onfocus="if(this.value =='Search...') {this.value=''; }" />
+<input type="submit" value="Click to Search"></input>
+</form>
+</div>
+</div>
+</div>
+<div class="headermain">
+<div class="wrap">
+<div class="header">
+<div class="menuwrap">
+<ul class="majestic">
+<li><a href="https://the.bytecode.club/index.php" id="forums"><i class="fa fa-file-text"></i><strong>Forums</strong><small>Community</small></a>
+<ul>
+<li><a href="https://the.bytecode.club/search.php?action=getnew"><i class="fa fa-link"></i>View New Posts</a></li>
+<li><a href="https://the.bytecode.club/search.php?action=getdaily"><i class="fa fa-link"></i>View Today's Posts</a></li>
+<li><a href="search.php?action=finduserthreads&uid=0"><i class="fa fa-link"></i>My Threads</a></li>
+<li><a href="search.php?action=finduser&uid=0"><i class="fa fa-link"></i>My Posts</a></li>
+</ul>
+</li>
+<li><a href="https://the.bytecode.club/wiki"><i class="fa fa-graduation-cap"></i><strong>Learn</strong><small>TBC Wiki</small></a>
+<ul>
+<li><a href="https://the.bytecode.club/wiki/BCV"><i class="fa fa-code-fork"></i>Bytecode Viewer</a></li>
+<li><a href="https://the.bytecode.club/wiki/JCF"><i class="fa fa-code-fork"></i>Java Cheat Framework</a></li>
+<li><a href="https://the.bytecode.club/wiki"><i class="fa fa-graduation-cap"></i>Wiki</a></li>
+<li><a href="https://the.bytecode.club/library"><i class="fa fa-book"></i>Library</a></li>
+<li><a href="https://the.bytecode.club/wiki/Learn_Java_Reverse_Engineering"><i class="fa fa-code"></i>Learn Java Reverse Engineering</a></li>
+<li><a href="https://the.bytecode.club/wiki/Bytecode#Opcodes"><i class="fa fa-star-o"></i>Bytecode Opcodes</a></li>
+<li><a href="https://the.bytecode.club/wiki/CrackMes"><i class="fa fa-chain-broken"></i>Crack Me's</a>
+</ul>
+</li>
+<li><a href="https://the.bytecode.club/pages.php?page=donate"><i class="fa fa-usd"></i><strong>Donate</strong><small>Donate & Upgrade</small></a></li>
+<li class="nav-toggler toggle-slide-top"><a href="#"><i class="fa fa fa-search"></i><strong>Search</strong><small>Search Forum</small></a></li>
+</ul>
+</div>
+<div class="logo"><a href="https://the.bytecode.club/index.php" alt="The Bytecode Club" title="The Bytecode Club" />
+<img src="https://the.bytecode.club/logo.png" alt="The Bytecode Club" title="The Bytecode Club" />
+</a></div>
+</div>
+</div>
+</div>
+<div class="smallheader" id="navcont">
+<div class="wrap">
+<div class="rblock margin">
+<a class="fixed" title="Switch to Fixed width"><i class="fa fa-indent" style="margin-top: 12px;"></i></a>
+<a class="fluid hidden" title="Switch to Fluid Width"><i class="fa fa-dedent" style="margin-top: 12px;"></i></a>
+</div>
+<div class="rblock">
+<div class="patternchanger">
+<ul>
+<li><a title="Theme Options"><i class="fa fa-image" style="margin-top:12px;"></i></a>
+<ul class="paneldropdown themepanel">
+<div class="colors">
+<span>Theme Colors</span>
+<ul>
+<li class="cred"><a rel="red" class="styleswitch"></a></li>
+<li class="cgreen"><a rel="green" class="styleswitch"></a></li>
+<li class="cblue"><a rel="blue" class="styleswitch"></a></li>
+<li class="cyellow"><a rel="yellow" class="styleswitch"></a></li>
+<li class="corange"><a rel="orange" class="styleswitch"></a></li>
+<li class="cpurple"><a rel="purple" class="styleswitch"></a></li>
+<li class="cnavy"><a rel="navy" class="styleswitch"></a></li>
+<li class="cgrey"><a rel="grey" class="styleswitch"></a></li>
+<li class="cpink"><a rel="pink" class="styleswitch"></a></li>
+<li class="cteal"><a rel="teal" class="styleswitch"></a></li>
+<li class="cbrown"><a rel="brown" class="styleswitch"></a></li>
+<li class="ccement"><a rel="cement" class="styleswitch"></a></li>
+</ul>
+</div>
+<div class="patterns">
+<span>Background Colors</span>
+<ul class="backgrounds">
+<li class="bg1"></li>
+<li class="bg2"></li>
+<li class="bg3"></li>
+<li class="bg4"></li>
+<li class="bg5"></li>
+<li class="bg6"></li>
+<li class="bg7"></li>
+<li class="bg8"></li>
+<li class="bg9"></li>
+<li class="bg10"></li>
+<li class="bg11"></li>
+<li class="bg12"></li>
+</ul>
+</div>
+<div class="images">
+<span>Background Images</span>
+<ul class="backgrounds">
+<li class="bg13"></li>
+<li class="bg14"></li>
+<li class="bg15"></li>
+<li class="bg16"></li>
+<li class="bg17"></li>
+<li class="bg18"></li>
+<li class="bg19"></li>
+<li class="bg20"></li>
+<li class="bg21"></li>
+<li class="bg22"></li>
+<li class="bg23"></li>
+<li class="bg24"></li>
+</ul>
+</div>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="rblock">
+<div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
+<div class="modalContent loginModalContent">
+<div class="loginform">
+<div id="login">
+<form method="post" action="member.php">
+<div style="margin-bottom: 10px;"><span class="fa fa-user logincon"></span><input type="text" value="" style="width: 180px;" maxlength="30" size="25" name="username" class="textbox" /></div>
+<div style="margin-bottom: 10px;"><span class="fa fa-lock logincon"></span><input type="password" value="" style="width: 180px;" size="25" name="password" class="textbox" /></div>
+<div class="remember">
+<label class="smalltext" title="If ticked, your login details will be remembered on this computer, otherwise, you will be logged out as soon as you close your browser."><input type="checkbox" value="yes" checked="checked" name="remember" class="checkbox"> Remember Me</label><br />
+<p1>Not recommended for Shared Computers</p1>
+</div>
+<div class="modalsubmit">
+<input type="submit" value="Login" name="submit" class="button" /><a href="https://the.bytecode.club/member.php?action=lostpw"> <input type="submit" value="Lost Password?" name="submit" class="button" /></a> </span>
+</div>
+<input type="hidden" value="do_login" name="action" />
+<input type="hidden" value="" name="url" />
+</form>
+<p>Not a member? <a href="https://the.bytecode.club/member.php?action=register" class="signupnow">Sign up now</a><span class="fontawesome-arrow-right"></span></p>
+</div>
+</div>
+<div class="modaltext">
+<h1 class="modalh1">Welcome to The Bytecode Club</h1>
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+<p>Come join us today!</p>
+</div>
+</div>
+</div>
+<div class="mnav">
+<ul><li><a href="#test-popup" data-effect="mfp-zoom-out" name="modal" rel="#loginModal" title="Already Have an Account , Please Login" id="inline-popups"><i class="fa fa-sign-in" style="margin-right: 6px;"></i> Login</a></li>
+<li><a href="https://the.bytecode.club/member.php?action=register" title="Need an Account !!!! Create Now"><i class="fa fa-certificate" style="margin-right: 6px;"></i> Create an Account</a></li>
+</ul>
+</div>
+</div>
+<div class="lblock">
+<div class="socialmenu">
+<ul>
+<li><a class="ease-all" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://the.bytecode.club/showthread.php?tid=128" title="Share This Page"><i class="fa fa-facebook"></i></a></li>
+<li><a class="ease-all" target="_blank" href="https://twitter.com/share?status=https://the.bytecode.club/showthread.php?tid=128" title="Tweet This Page"><i class="fa fa-twitter"></i></a></li>
+<li><a class="ease-all" target="_blank" href="https://plus.google.com/share?url=https://the.bytecode.club/showthread.php?tid=128" title="Share This Page"><i class="fa fa-google-plus"></i></a></li></ul>
+</div>
+</div>
+</div>
+</div>
+<div id="container">
+<div id="content">
+<div class="breadcrumb">
+<span class="crumbs"><span class="home"><a href="https://the.bytecode.club" class="navihome"><i class="fa fa-home navhome" style="line-height: 30px;"></i></a></span>
+<span class="crust">
+<a href="https://the.bytecode.club/index.php" class="crumb" rel="up" itemprop="url">
+The Bytecode Club
+</a>
+<span class="arrow">
+<span>&gt;</span>
+</span></span>
+<span class="crust">
+<a href="forumdisplay.php?fid=70" class="crumb" rel="up" itemprop="url">
+Reverse Engineering
+</a>
+<span class="arrow">
+<span>&gt;</span>
+</span></span>
+<span class="crust">
+<a href="forumdisplay.php?fid=8" class="crumb" rel="up" itemprop="url">
+Java Reverse Engineering
+</a>
+<span class="arrow">
+<span>&gt;</span>
+</span></span>
+<span class="crust">
+<a href="forumdisplay.php?fid=66" class="crumb" rel="up" itemprop="url">
+Tutorials, Tools, Libaries &amp; Tricks
+</a>
+<span class="arrow">
+<span>&gt;</span>
+</span></span>
+<span class="crust">
+<a href="showthread.php?tid=128" class="crumb">
+CFR Java Decompiler
+</a>
+<span class="arrow">
+<span>&gt;</span>
+</span>
+</span></span></div>
+<br />
+<div class="newsticker">
+<div class="newsTicker">
+<span class="news-header"><i class="fa fa-microphone"></i> Announcements</span>
+<div class="news-articleWrap">
+<a class="news-article" href="https://the.bytecode.club/pages.php?page=donate" target="_blank">Donate/Upgrade your account here!</a>
+<a class="news-article" href="https://the.bytecode.club/wiki" target="_blank">Check out the official TBC wiki!</a>
+</div></div></div>
+<div class="float_left">
+<div class="sharelinks">
+<a id="socli">Share</a>
+<div id="soclinks">
+<a title="Facebook" href="https://www.facebook.com/share.php?u=https://the.bytecode.club/showthread.php?tid=128" target="_blank" class="soci"><i class="fa fa-facebook-square" style="font-size:18px;"></i></a>
+<a title="Twitter" href="https://twitter.com/home?status=CFR Java Decompiler - https://the.bytecode.club/showthread.php?tid=128" target="_blank" class="soci"><i class="fa fa-twitter-square" style="font-size:18px;"></i></a>
+<a href="https://plus.google.com/share?url=https://the.bytecode.club/showthread.php?tid=128" target="_blank" title="+1 on Google Plus" class="soci"><i class="fa fa-google-plus-square" style="font-size:18px;"></i></a>
+</div>
+</div><br />
+</div>
+<div class="float_right">
+</div>
+<div style="margin-top: 6px; padding-right: 10px;" class="float_right">
+<script type="36547a130a076fe7178073dd-text/javascript">
+		<!--
+			lang.ratings_update_error = "";
+		// -->
+		</script>
+<script type="36547a130a076fe7178073dd-text/javascript" src="https://the.bytecode.club/jscripts/rating.js?ver=1800"></script>
+<strong class="float_left" style="padding-right: 10px;">Thread Rating:</strong>
+<div class="inline_rating">
+<ul class="star_rating star_rating_notrated" id="rating_thread_128">
+<li style="width: 0%" class="current_rating" id="current_rating_128">0 Vote(s) - 0 Average</li>
+<li><a class="one_star" title="1 star out of 5" href="./ratethread.php?tid=128&amp;rating=1&amp;my_post_key=a0a2ab79190b31dae017670bbe55ef2d">1</a></li>
+<li><a class="two_stars" title="2 stars out of 5" href="./ratethread.php?tid=128&amp;rating=2&amp;my_post_key=a0a2ab79190b31dae017670bbe55ef2d">2</a></li>
+<li><a class="three_stars" title="3 stars out of 5" href="./ratethread.php?tid=128&amp;rating=3&amp;my_post_key=a0a2ab79190b31dae017670bbe55ef2d">3</a></li>
+<li><a class="four_stars" title="4 stars out of 5" href="./ratethread.php?tid=128&amp;rating=4&amp;my_post_key=a0a2ab79190b31dae017670bbe55ef2d">4</a></li>
+<li><a class="five_stars" title="5 stars out of 5" href="./ratethread.php?tid=128&amp;rating=5&amp;my_post_key=a0a2ab79190b31dae017670bbe55ef2d">5</a></li>
+</ul>
+</div>
+</div>
+<table border="0" cellspacing="0" cellpadding="8" class="tborder tfixed clear">
+<tr>
+<td class="thead">
+<div class="float_right">
+<span class="smalltext"><strong><a href="javascript:;" id="thread_modes">Thread Modes</a></strong></span>
+</div>
+<div>
+<strong>CFR Java Decompiler</strong>
+</div>
+</td>
+</tr>
+<tr><td id="posts_container">
+<div id="posts">
+<a name="pid356" id="pid356"></a>
+<div class="post " style="" id="post_356">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=1"><img src="https://the.bytecode.club/uploads/avatars/avatar_1.png?dateline=1512631880" alt="" width="70" height="70" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=1"><span style="color:#E74333"><strong><em>Konloch</em></strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Administrator<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/admin.png" alt="Administrators" title="Administrators" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/reverser.png" alt="Reverse Engineers" title="Reverse Engineers" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 473<br />
+Threads: 120<br />
+Joined: Jul 2014
+<br />Reputation:
+<a href="reputation.php?uid=1"><strong class="reputation_positive">22</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=356#pid356">#1</a></strong>
+</div>
+<span class="post_date">11-03-2014, 06:29 AM <span class="post_edit" id="edited_by_356"></span></span>
+</div>
+<div class="post_body scaleimages" id="pid_356">
+CFR is a modern CLI Java Decompiler, you can download it at <a href="http://www.benf.org/other/cfr/" target="_blank" rel="noopener" class="mycode_url">http://www.benf.org/other/cfr/</a><br />
+<br />
+If you're looking for GUI CFR, check out Bytecode Viewer - <a href="https://github.com/Konloch/bytecode-viewer/releases" target="_blank" rel="noopener" class="mycode_url">https://github.com/Konloch/bytecode-viewer/releases</a><br />
+<br />
+To run it, simply use:<br />
+<div class="codeblock"><div class="title">Code:</div><div class="body" dir="ltr"><code>java -jar cfr.jar input.jar --outputdir ./output/</code></div></div>
+</div>
+<div class="post_meta" id="post_meta_356">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=356" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+<a name="pid366" id="pid366"></a>
+<div class="post " style="" id="post_366">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=17"><img src="https://the.bytecode.club/uploads/avatars/avatar_17.png?dateline=1413911762" alt="" width="70" height="62" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=17"><span style="color:#E74333"><strong><em>Bibl</em></strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Administrator<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/admin.png" alt="Administrators" title="Administrators" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/reverser.png" alt="Reverse Engineers" title="Reverse Engineers" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 114<br />
+Threads: 4<br />
+Joined: Sep 2014
+<br />Reputation:
+<a href="reputation.php?uid=17"><strong class="reputation_positive">12</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=366#pid366">#2</a></strong>
+</div>
+<span class="post_date">11-04-2014, 03:52 AM <span class="post_edit" id="edited_by_366"></span></span>
+</div>
+<div class="post_body scaleimages" id="pid_366">
+does this deobfuscate too?
+</div>
+<div class="post_meta" id="post_meta_366">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=17" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=366" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+<a name="pid368" id="pid368"></a>
+<div class="post " style="" id="post_368">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=1"><img src="https://the.bytecode.club/uploads/avatars/avatar_1.png?dateline=1512631880" alt="" width="70" height="70" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=1"><span style="color:#E74333"><strong><em>Konloch</em></strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Administrator<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/admin.png" alt="Administrators" title="Administrators" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/reverser.png" alt="Reverse Engineers" title="Reverse Engineers" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 473<br />
+Threads: 120<br />
+Joined: Jul 2014
+<br />Reputation:
+<a href="reputation.php?uid=1"><strong class="reputation_positive">22</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=368#pid368">#3</a></strong>
+</div>
+<span class="post_date">11-04-2014, 12:02 PM <span class="post_edit" id="edited_by_368"></span></span>
+</div>
+<div class="post_body scaleimages" id="pid_368">
+<blockquote class="mycode_quote"><cite><span> (11-04-2014, 03:52 AM)</span>Bibl Wrote: <a href="https://the.bytecode.club/showthread.php?pid=366#pid366" class="quick_jump">&nbsp;</a></cite>does this deobfuscate too?</blockquote><br />
+I'm not sure, I know FernFlower has the -ren option.
+</div>
+<div class="post_meta" id="post_meta_368">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=368" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+<a name="pid378" id="pid378"></a>
+<div class="post " style="" id="post_378">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=68"><img src="https://the.bytecode.club/uploads/avatars/avatar_68.png?dateline=1415183859" alt="" width="70" height="70" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=68"><span style="color:#3ab920"><strong>lab27</strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Java Expert<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 4<br />
+Threads: 0<br />
+Joined: Nov 2014
+<br />Reputation:
+<a href="reputation.php?uid=68"><strong class="reputation_positive">3</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=378#pid378">#4</a></strong>
+</div>
+<span class="post_date">11-05-2014, 05:59 PM <span class="post_edit" id="edited_by_378"></span></span>
+</div>
+<div class="post_body scaleimages" id="pid_378">
+<blockquote class="mycode_quote"><cite><span> (11-04-2014, 03:52 AM)</span>Bibl Wrote: <a href="https://the.bytecode.club/showthread.php?pid=366#pid366" class="quick_jump">&nbsp;</a></cite>does this deobfuscate too?</blockquote><br />
+Depends what you mean - it has multiple normalisation passes to deal with lots of interesting potential obfuscations, it doesn't trust most of the metadata attributes (signature table, variable name table etc.).  The normalisation passes quite often have a very good effect against obfuscated code, though there's always the classic illegal java rewrites (like replacing a loop with a self-vectoring exception table).<br />
+<br />
+It will however currently not rewrite method names if they've been obfuscated into non-java compatible identifiers - this is because at that point, there's a danger that reflection based invokation will change semantics.<br />
+<br />
+Lee.<br />
+<br />
+(BTW - I wrote it <img src="https://the.bytecode.club/images/newsmilies/wink.png" alt="Wink" title="Wink" class="smilie smilie_59" /> )
+</div>
+<div class="post_meta" id="post_meta_378">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=68" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=378" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+<a name="pid396" id="pid396"></a>
+<div class="post " style="" id="post_396">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=17"><img src="https://the.bytecode.club/uploads/avatars/avatar_17.png?dateline=1413911762" alt="" width="70" height="62" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=17"><span style="color:#E74333"><strong><em>Bibl</em></strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Administrator<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/admin.png" alt="Administrators" title="Administrators" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/reverser.png" alt="Reverse Engineers" title="Reverse Engineers" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 114<br />
+Threads: 4<br />
+Joined: Sep 2014
+<br />Reputation:
+<a href="reputation.php?uid=17"><strong class="reputation_positive">12</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=396#pid396">#5</a></strong>
+</div>
+<span class="post_date">11-06-2014, 08:02 AM <span class="post_edit" id="edited_by_396"></span></span>
+</div>
+<div class="post_body scaleimages" id="pid_396">
+<blockquote class="mycode_quote"><cite><span> (11-05-2014, 05:59 PM)</span>lab27 Wrote: <a href="https://the.bytecode.club/showthread.php?pid=378#pid378" class="quick_jump">&nbsp;</a></cite>classic illegal java rewrites (like replacing a loop with a self-vectoring exception table).</blockquote><br />
+what u mean
+</div>
+<div class="post_meta" id="post_meta_396">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=17" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=396" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+<a name="pid401" id="pid401"></a>
+<div class="post " style="" id="post_401">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=64"><img src="https://the.bytecode.club/images/default_avatar.png" alt="" width="70" height="70" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=64"><span style="color: #808080;">soulija boy</span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Junior Member<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/unverified.png" alt="Unverified Member" title="Unverified Member" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 5<br />
+Threads: 0<br />
+Joined: Nov 2014
+<br />Reputation:
+<a href="reputation.php?uid=64"><strong class="reputation_neutral">0</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=401#pid401">#6</a></strong>
+</div>
+<span class="post_date">11-06-2014, 11:58 AM <span class="post_edit" id="edited_by_401"></span></span>
+</div>
+<div class="post_body scaleimages" id="pid_401">
+<blockquote class="mycode_quote"><cite><span> (11-06-2014, 08:02 AM)</span>Bibl Wrote: <a href="https://the.bytecode.club/showthread.php?pid=396#pid396" class="quick_jump">&nbsp;</a></cite><blockquote class="mycode_quote"><cite><span> (11-05-2014, 05:59 PM)</span>lab27 Wrote: <a href="https://the.bytecode.club/showthread.php?pid=378#pid378" class="quick_jump">&nbsp;</a></cite>classic illegal java rewrites (like replacing a loop with a self-vectoring exception table).</blockquote><br />
+what u mean</blockquote><br />
+what u mean
+</div>
+<div class="post_meta" id="post_meta_401">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=64" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=401" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+ </div>
+</div>
+</div>
+<a name="pid405" id="pid405"></a>
+<div class="post " style="" id="post_405">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=68"><img src="https://the.bytecode.club/uploads/avatars/avatar_68.png?dateline=1415183859" alt="" width="70" height="70" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=68"><span style="color:#3ab920"><strong>lab27</strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Java Expert<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 4<br />
+Threads: 0<br />
+Joined: Nov 2014
+<br />Reputation:
+<a href="reputation.php?uid=68"><strong class="reputation_positive">3</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=405#pid405">#7</a></strong>
+</div>
+<span class="post_date">11-06-2014, 04:47 PM <span class="post_edit" id="edited_by_405">
+<span class="edited_post">(This post was last modified: 11-06-2014, 05:31 PM by <a href="https://the.bytecode.club/member.php?action=profile&amp;uid=68">lab27</a>.)</span>
+</span></span>
+</div>
+<div class="post_body scaleimages" id="pid_405">
+<blockquote class="mycode_quote"><cite><span> (11-06-2014, 11:58 AM)</span>soulija boy Wrote: <a href="https://the.bytecode.club/showthread.php?pid=401#pid401" class="quick_jump">&nbsp;</a></cite><blockquote class="mycode_quote"><cite><span> (11-06-2014, 08:02 AM)</span>Bibl Wrote: <a href="https://the.bytecode.club/showthread.php?pid=396#pid396" class="quick_jump">&nbsp;</a></cite><blockquote class="mycode_quote"><cite><span> (11-05-2014, 05:59 PM)</span>lab27 Wrote: <a href="https://the.bytecode.club/showthread.php?pid=378#pid378" class="quick_jump">&nbsp;</a></cite>classic illegal java rewrites (like replacing a loop with a self-vectoring exception table).</blockquote><br />
+what u mean</blockquote><br />
+what u mean</blockquote><br />
+This.<br />
+<br />
+Take a loop, remove the back jump, replace it with a catch handler at the top.  That one's fairly easy to handle.  Then, wrap the body of the loop in a boolean so it only gets executed every other time via a forward jumping exception handler. <br />
+<br />
+Here's an example:<br />
+<br />
+<div class="codeblock"><div class="title">Code:</div><div class="body" dir="ltr"><code> public static void main(java.lang.String[]);<br />
+   Code:<br />
+      0: new           #16                 // class java/lang/Exception<br />
+      3: dup           <br />
+      4: invokespecial #14                 // Method java/lang/Exception."&lt;init&gt;":()V<br />
+      7: astore        4<br />
+       9: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;<br />
+     12: astore_1      <br />
+     13: ldc           #11                 // int 10<br />
+     15: istore_2      <br />
+     16: iconst_0      <br />
+     17: istore_3      <br />
+     18: aconst_null   <br />
+     19: pop           <br />
+     20: iload_3       <br />
+     21: ifne          27<br />
+     24: aload         4<br />
+     26: athrow        <br />
+     27: aload_1       <br />
+     28: iload_2       <br />
+     29: dup_x1        <br />
+     30: invokevirtual #24                 // Method java/io/PrintStream.print:(I)V<br />
+     33: ifne          37<br />
+     36: return        <br />
+     37: aconst_null   <br />
+     38: pop           <br />
+     39: iconst_1      <br />
+     40: iload_3       <br />
+     41: dup           <br />
+     42: ifne          51<br />
+     45: iinc_w        2, -1<br />
+     51: isub          <br />
+     52: istore_3      <br />
+     53: aload         4<br />
+     55: athrow        <br />
+   Exception table:<br />
+      from    to  target type<br />
+         26    27    38   Class java/lang/Exception<br />
+         19    56    19   Class java/lang/Exception</code></div></div><br />
+<br />
+CFR and Procyon actually make a reasonable job of it, but are still both pretty wildly out.   Fernflower gives up completely and goes home.<br />
+<br />
+You can see what the above does, and you can also see how it's a trivial transformation from the original bytecode - an automated obfuscator could use this trick with no work at all, and it's a lot more effective than simple renaming.<br />
+<br />
+(For reference, you can get this test <a href="http://www.benf.org/files/Ex1.class" target="_blank" rel="noopener" class="mycode_url">here</a>).
+</div>
+<div class="post_meta" id="post_meta_405">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=68" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=405" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+<a name="pid406" id="pid406"></a>
+<div class="post " style="" id="post_406">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=17"><img src="https://the.bytecode.club/uploads/avatars/avatar_17.png?dateline=1413911762" alt="" width="70" height="62" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=17"><span style="color:#E74333"><strong><em>Bibl</em></strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Administrator<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/admin.png" alt="Administrators" title="Administrators" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+<img src="https://the.bytecode.club/images/usergroups/reverser.png" alt="Reverse Engineers" title="Reverse Engineers" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 114<br />
+Threads: 4<br />
+Joined: Sep 2014
+<br />Reputation:
+<a href="reputation.php?uid=17"><strong class="reputation_positive">12</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=406#pid406">#8</a></strong>
+</div>
+<span class="post_date">11-06-2014, 05:53 PM <span class="post_edit" id="edited_by_406"></span></span>
+</div>
+<div class="post_body scaleimages" id="pid_406">
+<blockquote class="mycode_quote"><cite><span> (11-06-2014, 04:47 PM)</span>lab27 Wrote: <a href="https://the.bytecode.club/showthread.php?pid=405#pid405" class="quick_jump">&nbsp;</a></cite><blockquote class="mycode_quote"><cite><span> (11-06-2014, 11:58 AM)</span>soulija boy Wrote: <a href="https://the.bytecode.club/showthread.php?pid=401#pid401" class="quick_jump">&nbsp;</a></cite><blockquote class="mycode_quote"><cite><span> (11-06-2014, 08:02 AM)</span>Bibl Wrote: <a href="https://the.bytecode.club/showthread.php?pid=396#pid396" class="quick_jump">&nbsp;</a></cite><blockquote class="mycode_quote"><cite><span> (11-05-2014, 05:59 PM)</span>lab27 Wrote: <a href="https://the.bytecode.club/showthread.php?pid=378#pid378" class="quick_jump">&nbsp;</a></cite>classic illegal java rewrites (like replacing a loop with a self-vectoring exception table).</blockquote><br />
+what u mean</blockquote><br />
+what u mean</blockquote><br />
+This.<br />
+<br />
+Take a loop, remove the back jump, replace it with a catch handler at the top.  That one's fairly easy to handle.  Then, wrap the body of the loop in a boolean so it only gets executed every other time via a forward jumping exception handler. <br />
+<br />
+Here's an example:<br />
+<br />
+<br />
+<div class="codeblock"><div class="title">Code:</div><div class="body" dir="ltr"><code> public static void main(java.lang.String[]);<br />
+   Code:<br />
+      0: new           #16                 // class java/lang/Exception<br />
+      3: dup           <br />
+      4: invokespecial #14                 // Method java/lang/Exception."&lt;init&gt;":()V<br />
+      7: astore        4<br />
+      9: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;<br />
+     12: astore_1      <br />
+     13: ldc           #11                 // int 10<br />
+     15: istore_2      <br />
+     16: iconst_0      <br />
+     17: istore_3      <br />
+     18: aconst_null   <br />
+     19: pop           <br />
+     20: iload_3       <br />
+     21: ifne          27<br />
+     24: aload         4<br />
+     26: athrow        <br />
+     27: aload_1       <br />
+     28: iload_2       <br />
+     29: dup_x1        <br />
+     30: invokevirtual #24                 // Method java/io/PrintStream.print:(I)V<br />
+     33: ifne          37<br />
+     36: return        <br />
+     37: aconst_null   <br />
+     38: pop           <br />
+     39: iconst_1      <br />
+     40: iload_3       <br />
+     41: dup           <br />
+     42: ifne          51<br />
+     45: iinc_w        2, -1<br />
+     51: isub          <br />
+     52: istore_3      <br />
+     53: aload         4<br />
+     55: athrow        <br />
+   Exception table:<br />
+      from    to  target type<br />
+         26    27    38   Class java/lang/Exception<br />
+         19    56    19   Class java/lang/Exception</code></div></div><br />
+<br />
+CFR and Procyon actually make a reasonable job of it, but are still both pretty wildly out.   Fernflower gives up completely and goes home.<br />
+<br />
+You can see what the above does, and you can also see how it's a trivial transformation from the original bytecode - an automated obfuscator could use this trick with no work at all, and it's a lot more effective than simple renaming.<br />
+<br />
+(For reference, you can get this test <a href="http://www.benf.org/files/Ex1.class" target="_blank" rel="noopener" class="mycode_url">here</a>).</blockquote><br />
+whats the performance for this method, it would be slower i assume?<br />
+also is there a paper or something on this concept
+</div>
+<div class="post_meta" id="post_meta_406">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=17" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=406" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+<a name="pid407" id="pid407"></a>
+<div class="post " style="" id="post_407">
+<div class="post_author">
+<div class="author_avatar"><a href="member.php?action=profile&amp;uid=68"><img src="https://the.bytecode.club/uploads/avatars/avatar_68.png?dateline=1415183859" alt="" width="70" height="70" /></a></div>
+<div class="author_information">
+<strong><span class="largetext"><a href="https://the.bytecode.club/member.php?action=profile&amp;uid=68"><span style="color:#3ab920"><strong>lab27</strong></span></a></span></strong>
+<a href="#" title="Offline" alt="Offline" class="pboffline buddy_status" />Offline</a>
+<br />
+<span class="smalltext">
+Java Expert<br />
+<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+<img src="https://the.bytecode.club/images/usergroups/java.png" alt="Java Experts" title="Java Experts" />
+<div style='margin-top: 3px; padding: 0px;'></div>
+</span>
+</div>
+<div class="author_statistics">
+Posts: 4<br />
+Threads: 0<br />
+Joined: Nov 2014
+<br />Reputation:
+<a href="reputation.php?uid=68"><strong class="reputation_positive">3</strong></a>
+</div>
+</div>
+<div class="post_content">
+<div class="post_head" title="RE: CFR Java Decompiler">
+<div class="float_right" style="vertical-align: top">
+<strong><a href="showthread.php?tid=128&amp;pid=407#pid407">#9</a></strong>
+</div>
+<span class="post_date">11-06-2014, 06:58 PM <span class="post_edit" id="edited_by_407">
+<span class="edited_post">(This post was last modified: 11-06-2014, 07:13 PM by <a href="https://the.bytecode.club/member.php?action=profile&amp;uid=68">lab27</a>.)</span>
+</span></span>
+</div>
+<div class="post_body scaleimages" id="pid_407">
+<blockquote class="mycode_quote"><cite><span> (11-06-2014, 05:53 PM)</span>Bibl Wrote: <a href="https://the.bytecode.club/showthread.php?pid=406#pid406" class="quick_jump">&nbsp;</a></cite>whats the performance for this method, it would be slower i assume?<br />
+also is there a paper or something on this concept</blockquote><br />
+It would certainly be slower, yes.  That's often a price obfuscators are prepared to pay.<br />
+<br />
+I can't remember off the top of my head where I first saw this described, however have a quick google. (eg).<br />
+<br />
+<a href="http://www.zelix.com/klassmaster/docs/obfuscateOptions.html#exception" target="_blank" rel="noopener" class="mycode_url">http://www.zelix.com/klassmaster/docs/ob...#exception</a><br />
+<br />
+<a href="http://journal.info.unlp.edu.ar/journal/journal23/papers/JCST-Jul08-3.pdf" target="_blank" rel="noopener" class="mycode_url">http://journal.info.unlp.edu.ar/journal/...ul08-3.pdf</a> (describes for msil, but the technique is obviously similar.)<br />
+<br />
+For what it's worth - I don't actually test CFR against any obfuscated code due to potential legality issues - I test against my own implementations of concepts such as this, as well as other sorts of evil thoughts that pop into my head (i.e. putting completely inaccurate information in type table, marking every method as synthetic, etc.).
+</div>
+<div class="post_meta" id="post_meta_407">
+</div>
+</div>
+<div class="post_controls">
+<div class="postbit_buttons author_buttons float_left">
+<a href="search.php?action=finduser&amp;uid=68" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+</div>
+<div class="postbit_buttons post_management_buttons float_right">
+<a href="newreply.php?tid=128&amp;replyto=407" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+</div>
+</div>
+</div>
+</div>
+</td></tr>
+<tr>
+<td class="tfoot">
+<div class="float_right">
+<form action="search.php" method="post">
+<input type="hidden" name="action" value="thread" />
+<input type="hidden" name="tid" value="128" />
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="36547a130a076fe7178073dd-"></script><input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+<input type="submit" class="button" value="Search Thread" />
+</form>
+</div>
+<div>
+<strong><a href="showthread.php?tid=128&amp;action=nextoldest" title="Next Oldest"><i class="fa fa-chevron-circle-left nextcon"></i></a> &nbsp; <a href="showthread.php?tid=128&amp;action=nextnewest" title="Next Newest"><i class="fa fa-chevron-circle-right nextcon"></i></a></strong>
+</div>
+</td>
+</tr>
+</table>
+<div class="float_left">
+</div>
+<div style="padding-top: 4px;" class="float_right">
+</div>
+<br class="clear" />
+<br />
+<div class="float_left">
+<ul class="thread_tools">
+<li class="printable"><a href="printthread.php?tid=128">View a Printable Version</a></li>
+<li class="subscription_add"><a href="usercp2.php?action=addsubscription&amp;tid=128&amp;my_post_key=a0a2ab79190b31dae017670bbe55ef2d">Subscribe to this thread</a></li>
+</ul>
+</div>
+<div class="float_right" style="text-align: right;">
+<form action="forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-1"></option>
+<option value="-1">--------------------</option>
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<option value="132"> Introductions</option>
+<option value="3">-- Introductions</option>
+<option value="95">---- Apply For A Usergroup</option>
+<option value="103">------ Approved Applications</option>
+<option value="19"> The Bytecode Club Tools</option>
+<option value="69">-- Bytecode Viewer</option>
+<option value="130">-- Java Cheat Framework</option>
+<option value="131">---- Scripts</option>
+<option value="1"> The Bytecode Club</option>
+<option value="2">-- Announcements</option>
+<option value="4">---- Suggestions</option>
+<option value="18">-- The Lounge/General Discussion</option>
+<option value="28">---- Gaming</option>
+<option value="101">---- Paraphernalia</option>
+<option value="29">-- Graphics &amp; Media</option>
+<option value="86">-- Programming</option>
+<option value="61"> Java Development</option>
+<option value="62">-- Discussion</option>
+<option value="64">-- Help</option>
+<option value="63">-- Learning Center</option>
+<option value="65">-- Snippets</option>
+<option value="70"> Reverse Engineering</option>
+<option value="8">-- Java Reverse Engineering</option>
+<option value="66" selected="selected">---- Tutorials, Tools, Libaries &amp; Tricks</option>
+<option value="91">---- Snippets</option>
+<option value="10">---- Help</option>
+<option value="68">-- Android Reverse Engineering</option>
+<option value="79">---- Tutorials, Tools &amp; Tricks</option>
+<option value="78">---- Help</option>
+<option value="71">-- Native Reverse Engineering</option>
+<option value="72">-- .NET Reverse Engineering</option>
+<option value="93">-- Cryptography/Mathematics</option>
+<option value="73">-- Other</option>
+<option value="11">-- Crack Me's</option>
+<option value="96"> Game Cheating, Botting &amp; Reverse Engineering</option>
+<option value="15">-- Runescape &amp; Private Servers</option>
+<option value="16">-- Minecraft</option>
+<option value="17">-- 8BitMMO</option>
+<option value="97">-- Clash Of Clans</option>
+<option value="98">-- Eldevin</option>
+<option value="102">-- Other</option>
+<option value="109"> Free Open Sourced Clash Of Clans Bot</option>
+<option value="134">-- Discussion</option>
+<option value="135"> Archive</option>
+<option value="127">-- TBC Clash Of Clans Bot</option>
+<option value="110">---- Announcements/Releases</option>
+<option value="118">---- General Discussion</option>
+<option value="111">---- Suggestions/Bug Reports</option>
+<option value="112">---- Development</option>
+<option value="116">---- Help/Support</option>
+<option value="117">---- Share Your Loots!</option>
+<option value="123">---- Botting Clans</option>
+</select>
+<input type="submit" class="button" value="Go" />
+</form>
+<script type="36547a130a076fe7178073dd-text/javascript">
+<!--
+	$(".forumjump").change(function() {
+		var option = $(".forumjump").get(0).selectedIndex.value;
+
+		if(option < 0)
+		{
+			window.location=('forumdisplay.php?fid='+option)
+			return
+		}
+
+		window.location=('forumdisplay.php?fid='+option)
+	})
+//-->
+</script>
+</div>
+<br class="clear" />
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<div onclick="MyAdvertisements.do_click(1);"></br><center>
+<a href="https://the.bytecode.club/pages.php?page=advertise"><img src="https://i.imgur.com/SEhc7PW.png" /></a></br>
+</center></div></div></div><br />
+<div class="mainfooter">
+<div class="wrap">
+<div class="footspan">
+<a href="#" title="Bytecode Club" class="sologo"></a>
+<h3 class="h3description"><span>About The Bytecode Club</span></h3>
+<div class="solline"><span></span><i class="fa fa-asterisk"></i><span></span></div>
+<p>We're a community focused on Reverse Engineering, we try to target Java/Android but we also include other langauges/platforms. We pride ourselves in supporting and free and open sourced applications.</p>
+</div>
+<div class="footspan">
+<h3 class="h3main"><span>TBC Tools</span></h3>
+<ul class="footnav">
+<li><a href="https://bytecodeviewer.com">Bytecode Viewer</a></li>
+<li><a href="https://the.bytecode.club/wiki/JCF">Java Cheat Framework</a></li>
+<li><a href="https://twitter.com/announce420">Announce420</a></li>
+</ul>
+</div>
+<div class="footspan">
+<h3 class="h3main"><span>Resources</span></h3>
+<ul class="footnav">
+<li><a href="https://the.bytecode.club/library/">E-Book Library</a></li>
+<li><a href="https://the.bytecode.club/pages.php?page=tools">Reverse Engineering Tools</a></li>
+<li><a href="https://the.bytecode.club/pages.php?page=crackmes">Crack Me's</a></li>
+<li><a href="https://the.bytecode.club/pages.php?page=opcodes">Java Bytecode Opcodes</a></li>
+</ul>
+</div>
+<div class="footspan">
+<h3 class="h3main"><span>Website</span></h3>
+<ul class="footnav">
+<li><a href="https://the.bytecode.club/stats.php">Stats</a></li>
+<li><a href="https://the.bytecode.club/memberlist.php">Members</a></li>
+<li><a href="https://the.bytecode.club/pages.php?page=donate">Donate/Upgrade</a></li>
+<div class="theme">
+<form method="get" action="/showthread.php" id="theme_select">
+<input type="hidden" name="tid" value="128" />
+<input type="hidden" name="my_post_key" value="a0a2ab79190b31dae017670bbe55ef2d" />
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="36547a130a076fe7178073dd-"></script><select name="theme" onchange="MyBB.changeTheme();">
+<optgroup label="Quick Theme Select">
+<option value="13">TBC</option>
+<option value="15">Default MyBB</option>
+<option value="16">BASSCode RED</option>
+</optgroup>
+</select>
+<input type="submit" class="button" value="Go" />
+</form>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="solfooter">
+<div class="righter"></div>
+<div class="wrap">
+<div class="copyright">
+<div id="debug"></div>
+
+Powered By <a href="https://www.mybb.com" target="_blank">MyBB</a>, &copy; 2002-2018 <a href="https://www.mybb.com" target="_blank">MyBB Group</a>.
+
+
+<img src="https://the.bytecode.club/task.php" width="1" height="1" alt="" />
+
+</div>
+<div class="footermenu">
+<ul>
+<li><a href="mailto:konloch@gmail.com"><i class="fa fa-envelope footicon"></i> Contact Us</a></li>
+<li><a href="/"><i class="fa fa-home footicon"></i> Bytecode Club</a></li>
+<li><a href="https://the.bytecode.club/archive/index.php?thread-128.html"><i class="fa fa-briefcase footicon"></i> Lite (Archive) Mode</a></li>
+<li><a href="https://the.bytecode.club/misc.php?action=syndication"><i class="fa fa-rss footicon"></i> RSS Syndication</a></li>
+</ul>
+</div>
+<a href="#" class="go-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+</div>
+<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="showthread.php?mode=linear&amp;tid=128&amp;pid=356#pid356" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="showthread.php?mode=threaded&amp;tid=128&amp;pid=356#pid356" class="popup_item">Threaded Mode</a></div></div>
+<script type="36547a130a076fe7178073dd-text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+<script type="36547a130a076fe7178073dd-text/javascript">
+		$(".author_avatar img").error(function () {
+			$(this).unbind("error").closest('.author_avatar').remove();
+		});
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="36547a130a076fe7178073dd-" defer=""></script></body>
+</html>

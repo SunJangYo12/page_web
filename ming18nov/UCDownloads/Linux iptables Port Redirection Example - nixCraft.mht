@@ -1,0 +1,1808 @@
+From: <Saved by WebKit>
+Subject: Linux iptables: Port Redirection Example - nixCraft
+Date: Mon, 11 Nov 2018 19:36:12 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_1370_B3D452E7.C4A239C5"
+
+------=_NextPart_000_1370_B3D452E7.C4A239C5
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.cyberciti.biz/faq/linux-port-redirection-with-iptables/
+
+<html lang=3D"en-US" prefix=3D"og: http://ogp.me/ns#" class=3D"no-js"><head=
+><meta charset=3D"UTF-8"><meta name=3D"viewport" content=3D"width=3Ddevice-=
+width, initial-scale=3D1"><link rel=3D"profile" href=3D"https://gmpg.org/xf=
+n/11"><link rel=3D"apple-touch-icon" sizes=3D"57x57" href=3D"https://www.cy=
+berciti.biz/faq/wp-content/themes/cybercity/assets/images/icon/apple-icon-5=
+7x57.png"><link rel=3D"apple-touch-icon" sizes=3D"60x60" href=3D"https://ww=
+w.cyberciti.biz/faq/wp-content/themes/cybercity/assets/images/icon/apple-ic=
+on-60x60.png"><link rel=3D"apple-touch-icon" sizes=3D"72x72" href=3D"https:=
+//www.cyberciti.biz/faq/wp-content/themes/cybercity/assets/images/icon/appl=
+e-icon-72x72.png"><link rel=3D"apple-touch-icon" sizes=3D"76x76" href=3D"ht=
+tps://www.cyberciti.biz/faq/wp-content/themes/cybercity/assets/images/icon/=
+apple-icon-76x76.png"><link rel=3D"apple-touch-icon" sizes=3D"114x114" href=
+=3D"https://www.cyberciti.biz/faq/wp-content/themes/cybercity/assets/images=
+/icon/apple-icon-114x114.png"><link rel=3D"apple-touch-icon" sizes=3D"120x1=
+20" href=3D"https://www.cyberciti.biz/faq/wp-content/themes/cybercity/asset=
+s/images/icon/apple-icon-120x120.png"><link rel=3D"apple-touch-icon" sizes=
+=3D"144x144" href=3D"https://www.cyberciti.biz/faq/wp-content/themes/cyberc=
+ity/assets/images/icon/apple-icon-144x144.png"><link rel=3D"apple-touch-ico=
+n" sizes=3D"152x152" href=3D"https://www.cyberciti.biz/faq/wp-content/theme=
+s/cybercity/assets/images/icon/apple-icon-152x152.png"><link rel=3D"apple-t=
+ouch-icon" sizes=3D"180x180" href=3D"https://www.cyberciti.biz/faq/wp-conte=
+nt/themes/cybercity/assets/images/icon/apple-icon-180x180.png"><link rel=3D=
+"icon" type=3D"image/png" sizes=3D"192x192" href=3D"https://www.cyberciti.b=
+iz/faq/wp-content/themes/cybercity/assets/images/icon/android-icon-192x192.=
+png"><link rel=3D"icon" type=3D"image/png" sizes=3D"32x32" href=3D"https://=
+www.cyberciti.biz/faq/wp-content/themes/cybercity/assets/images/icon/favico=
+n-32x32.png"><link rel=3D"icon" type=3D"image/png" sizes=3D"96x96" href=3D"=
+https://www.cyberciti.biz/faq/wp-content/themes/cybercity/assets/images/ico=
+n/favicon-96x96.png"><link rel=3D"icon" type=3D"image/png" sizes=3D"16x16" =
+href=3D"https://www.cyberciti.biz/faq/wp-content/themes/cybercity/assets/im=
+ages/icon/favicon-16x16.png"><link rel=3D"manifest" href=3D"https://www.cyb=
+erciti.biz/faq/wp-content/themes/cybercity/assets/images/icon/manifest.json=
+"><meta name=3D"msapplication-TileColor" content=3D"#ffffff"><meta name=3D"=
+msapplication-TileImage" content=3D"https://www.cyberciti.biz/faq/wp-conten=
+t/themes/cybercity/assets/images/icon/ms-icon-144x144.png"><meta name=3D"ms=
+application-config" content=3D"https://www.cyberciti.biz/faq/wp-content/the=
+mes/cybercity/assets/images/icons/browserconfig.xml"><meta name=3D"revised"=
+ content=3D"Monday, February 1, 2010, 4:45 pm">  <title>Linux iptables: Por=
+t Redirection Example - nixCraft</title> <link rel=3D"canonical" href=3D"ht=
+tps://www.cyberciti.biz/faq/linux-port-redirection-with-iptables/"><link re=
+l=3D"publisher" href=3D"https://plus.google.com/+CybercitiBiz"><meta proper=
+ty=3D"og:locale" content=3D"en_US"><meta property=3D"og:type" content=3D"ar=
+ticle"><meta property=3D"og:title" content=3D"Linux iptables: Port Redirect=
+ion Example - nixCraft"><meta property=3D"og:description" content=3D"How do=
+ I redirect 80 port to 8123 using iptables?"><meta property=3D"og:url" cont=
+ent=3D"https://www.cyberciti.biz/faq/linux-port-redirection-with-iptables/"=
+><meta property=3D"og:site_name" content=3D"nixCraft"><meta property=3D"art=
+icle:publisher" content=3D"https://www.facebook.com/nixcraft"><meta propert=
+y=3D"article:tag" content=3D"192"><meta property=3D"article:tag" content=3D=
+"chains"><meta property=3D"article:tag" content=3D"destination ip"><meta pr=
+operty=3D"article:tag" content=3D"destination port"><meta property=3D"artic=
+le:tag" content=3D"incoming interface"><meta property=3D"article:tag" conte=
+nt=3D"incoming traffic"><meta property=3D"article:tag" content=3D"interface=
+ name"><meta property=3D"article:tag" content=3D"iptables redirect ip"><met=
+a property=3D"article:tag" content=3D"iptables redirect local port"><meta p=
+roperty=3D"article:tag" content=3D"iptables redirect port 80"><meta propert=
+y=3D"article:tag" content=3D"iptables-save"><meta property=3D"article:tag" =
+content=3D"man page"><meta property=3D"article:tag" content=3D"mask"><meta =
+property=3D"article:tag" content=3D"match"><meta property=3D"article:tag" c=
+ontent=3D"NAT Redirect"><meta property=3D"article:tag" content=3D"nat rules=
+"><meta property=3D"article:tag" content=3D"OUTPUT"><meta property=3D"artic=
+le:tag" content=3D"ports"><meta property=3D"article:tag" content=3D"PREROUT=
+ING"><meta property=3D"article:tag" content=3D"REDIRECT"><meta property=3D"=
+article:tag" content=3D"target"><meta property=3D"article:tag" content=3D"t=
+cp port"><meta property=3D"article:section" content=3D"Iptables"><meta prop=
+erty=3D"article:published_time" content=3D"2010-02-01T16:30:03+00:00"><meta=
+ property=3D"article:modified_time" content=3D"2010-02-01T16:45:00+00:00"><=
+meta property=3D"og:updated_time" content=3D"2010-02-01T16:45:00+00:00"><me=
+ta property=3D"og:image" content=3D"https://www.cyberciti.biz/media/new/cat=
+egory/old/firewall.png"><meta property=3D"og:image:secure_url" content=3D"h=
+ttps://www.cyberciti.biz/media/new/category/old/firewall.png"><meta name=3D=
+"twitter:card" content=3D"summary_large_image"><meta name=3D"twitter:descri=
+ption" content=3D"How do I redirect 80 port to 8123 using iptables?"><meta =
+name=3D"twitter:title" content=3D"Linux iptables: Port Redirection Example =
+- nixCraft"><meta name=3D"twitter:site" content=3D"@nixcraft"><meta name=3D=
+"twitter:image" content=3D"https://www.cyberciti.biz/media/new/category/old=
+/firewall.png"><meta name=3D"twitter:creator" content=3D"@nixcraft">  <link=
+ href=3D"https://fonts.gstatic.com/" crossorigin=3D"anonymous" rel=3D"preco=
+nnect"><link href=3D"https://ajax.googleapis.com/" rel=3D"preconnect"><link=
+ href=3D"https://fonts.googleapis.com/" rel=3D"preconnect"><link rel=3D"alt=
+ernate" type=3D"application/rss+xml" title=3D"nixCraft =C2=BB Feed" href=3D=
+"https://www.cyberciti.biz/faq/feed/"><link rel=3D"alternate" type=3D"appli=
+cation/rss+xml" title=3D"nixCraft =C2=BB Comments Feed" href=3D"https://www=
+.cyberciti.biz/faq/comments/feed/"><link rel=3D"alternate" type=3D"applicat=
+ion/rss+xml" title=3D"nixCraft =C2=BB Linux iptables: Port Redirection Exam=
+ple Comments Feed" href=3D"https://www.cyberciti.biz/faq/linux-port-redirec=
+tion-with-iptables/feed/"><link rel=3D"stylesheet" id=3D"wp-syntax-css-css"=
+ href=3D"https://www.cyberciti.biz/faq/wp-content/plugins/wp-syntax/css/wp-=
+syntax.css?ver=3D1.1" type=3D"text/css" media=3D"all"><link rel=3D"styleshe=
+et" id=3D"parent-style-css" href=3D"https://www.cyberciti.biz/faq/wp-conten=
+t/themes/twentysixteen/style.css?ver=3D4.9.8" type=3D"text/css" media=3D"al=
+l"><link rel=3D"stylesheet" id=3D"twentysixteen-style-css" href=3D"https://=
+www.cyberciti.biz/faq/wp-content/themes/cybercity/style.css?ver=3Dcf1.3" ty=
+pe=3D"text/css" media=3D"all"><link rel=3D"stylesheet" id=3D"genericons-css=
+" href=3D"https://www.cyberciti.biz/faq/wp-content/themes/twentysixteen/gen=
+ericons/genericons.css?ver=3D3.4.1" type=3D"text/css" media=3D"all"> <!--[i=
+f lt IE 10]><link rel=3D'stylesheet' id=3D'twentysixteen-ie-css'  href=3D'h=
+ttps://www.cyberciti.biz/faq/wp-content/themes/twentysixteen/css/ie.css?ver=
+=3D20160816' type=3D'text/css' media=3D'all' /> <![endif]--> <!--[if lt IE =
+9]><link rel=3D'stylesheet' id=3D'twentysixteen-ie8-css'  href=3D'https://w=
+ww.cyberciti.biz/faq/wp-content/themes/twentysixteen/css/ie8.css?ver=3D2016=
+0816' type=3D'text/css' media=3D'all' /> <![endif]--> <!--[if lt IE 8]><lin=
+k rel=3D'stylesheet' id=3D'twentysixteen-ie7-css'  href=3D'https://www.cybe=
+rciti.biz/faq/wp-content/themes/twentysixteen/css/ie7.css?ver=3D20160816' t=
+ype=3D'text/css' media=3D'all' /> <![endif]-->   <!--[if lt IE 9]> <script =
+type=3D'text/javascript' src=3D'https://www.cyberciti.biz/faq/wp-content/th=
+emes/twentysixteen/js/html5.js?ver=3D3.7.3'></script> <![endif]-->   <link =
+rel=3D"EditURI" type=3D"application/rsd+xml" title=3D"RSD" href=3D"https://=
+www.cyberciti.biz/faq/xmlrpc.php?rsd"><link rel=3D"wlwmanifest" type=3D"app=
+lication/wlwmanifest+xml" href=3D"https://www.cyberciti.biz/faq/wp-includes=
+/wlwmanifest.xml"><meta name=3D"generator" content=3D"WordPress 4.9.8"><lin=
+k rel=3D"shortlink" href=3D"https://www.cyberciti.biz/faq/?p=3D6366"><link =
+rel=3D"alternate" type=3D"application/json+oembed" href=3D"https://www.cybe=
+rciti.biz/faq/wp-json/oembed/1.0/embed?url=3Dhttps%3A%2F%2Fwww.cyberciti.bi=
+z%2Ffaq%2Flinux-port-redirection-with-iptables%2F"><link rel=3D"alternate" =
+type=3D"text/xml+oembed" href=3D"https://www.cyberciti.biz/faq/wp-json/oemb=
+ed/1.0/embed?url=3Dhttps%3A%2F%2Fwww.cyberciti.biz%2Ffaq%2Flinux-port-redir=
+ection-with-iptables%2F&amp;format=3Dxml"><style type=3D"text/css">.broken_=
+link, a.broken_link {
+	text-decoration: line-through;
+}</style><link rel=3D"amphtml" href=3D"https://www.cyberciti.biz/faq/linux-=
+port-redirection-with-iptables/amp/">     <link rel=3D"stylesheet" href=3D"=
+https://fonts.googleapis.com/css?family=3DMerriweather%3A400%2C700%2C900%2C=
+400italic%2C700italic%2C900italic:latin%2Clatin-ext%7CMontserrat%3A400%2C70=
+0:latin%2Clatin-ext%7CInconsolata%3A400:latin%2Clatin-ext" media=3D"all"> <=
+/head><body class=3D"post-template-default single single-post postid-6366 s=
+ingle-format-standard wp-custom-logo group-blog"><div id=3D"page" class=3D"=
+site"><div class=3D"site-inner"> <a class=3D"skip-link screen-reader-text" =
+href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-with-iptables/=
+#content">Skip to content</a><header id=3D"masthead" class=3D"site-header" =
+role=3D"banner"><div class=3D"site-header-main"><div class=3D"site-branding=
+"> <a href=3D"https://www.cyberciti.biz/faq/" class=3D"custom-logo-link">
+
+<img data-cfsrc=3D"https://www.cyberciti.biz/media/new/cms/2017/06/new-nixc=
+raft-logo-cyberciti.biz_.png" class=3D"custom-logo" style=3D"visibility:hid=
+den"></a><div class=3D"header-site-info"><div><h1 class=3D"site-title"><a h=
+ref=3D"https://www.cyberciti.biz/faq/" rel=3D"home"><span class=3D"colored"=
+>nix</span>Craft</a></h1><p class=3D"site-description">Linux and Unix tutor=
+ials for new and seasoned sysadmin</p></div></div></div><div id=3D"site-hea=
+der-menu" class=3D"site-header-menu"><nav id=3D"site-navigation" class=3D"m=
+ain-navigation" role=3D"navigation" aria-label=3D"Primary Menu"><div class=
+=3D"menu-faq-container"><ul id=3D"menu-faq" class=3D"primary-menu"><li id=
+=3D"menu-item-145282" class=3D"menu-item menu-item-type-custom menu-item-ob=
+ject-custom menu-item-145282"><a title=3D"nixCraft =E2=80=93 Home Page " hr=
+ef=3D"https://www.cyberciti.biz/">Home</a></li><li id=3D"menu-item-145280" =
+class=3D"menu-item menu-item-type-custom menu-item-object-custom menu-item-=
+145280"><a title=3D"About us" href=3D"https://www.cyberciti.biz/tips/about-=
+us">About</a></li><li id=3D"menu-item-145283" class=3D"menu-item menu-item-=
+type-custom menu-item-object-custom menu-item-145283"><a href=3D"https://ba=
+sh.cyberciti.biz/guide/Main_Page">Linux Shell Scripting TutoriaL</a></li><l=
+i id=3D"menu-item-145281" class=3D"menu-item menu-item-type-custom menu-ite=
+m-object-custom menu-item-145281"><a title=3D"Rss Feed" href=3D"https://www=
+.cyberciti.biz/nixcraft-rss-feed-syndication/">RSS/Feed</a></li><li id=3D"m=
+enu-item-145817" class=3D"menu-item menu-item-type-custom menu-item-object-=
+custom menu-item-145817"><a title=3D"Help support nixCraft" href=3D"https:/=
+/www.cyberciti.biz/tips/donate">Donations</a></li><li id=3D"menu-item-14703=
+1" class=3D"menu-item menu-item-type-custom menu-item-object-custom menu-it=
+em-147031"><a href=3D"https://www.cyberciti.biz/search/">Search</a></li></u=
+l></div></nav></div><div class=3D"mobile-buttons"> <button id=3D"menu-toggl=
+e" class=3D"menu-toggle">Menu</button></div></div><div class=3D"header-imag=
+e"><div class=3D"header-site-info"><div><h1 class=3D"site-title"><a href=3D=
+"https://www.cyberciti.biz/faq/" rel=3D"home"><span class=3D"colored">nix</=
+span>Craft</a></h1><p class=3D"site-description">Linux and Unix tutorials f=
+or new and seasoned sysadmin</p></div></div> <img data-cfsrc=3D"https://www=
+.cyberciti.biz/media/new/cms/2017/06/new-nixcraft-illustration-cyberciti.bi=
+z_.png" sizes=3D"(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-wid=
+th: 1362px) 88vw, 1200px" width=3D"1041" height=3D"194" alt=3D"nixCraft" st=
+yle=3D"visibility:hidden"></div></header><div id=3D"content" class=3D"site-=
+content"><div id=3D"primary" class=3D"content-area"><main id=3D"main" class=
+=3D"site-main" role=3D"main"><article id=3D"post-6366" class=3D"post-6366 p=
+ost type-post status-publish format-standard hentry category-iptables tag-1=
+874 tag-chains tag-destination-ip tag-destination-port tag-incoming-interfa=
+ce tag-incoming-traffic tag-interface-name tag-iptables-redirect-ip tag-ipt=
+ables-redirect-local-port tag-iptables-redirect-port-80 tag-iptables-save t=
+ag-man-page tag-mask tag-match tag-nat-redirect tag-nat-rules tag-output ta=
+g-ports tag-prerouting tag-redirect tag-target tag-tcp-port"><header class=
+=3D"entry-header"><h1 class=3D"entry-title">Linux iptables: Port Redirectio=
+n Example</h1> <span class=3D"last-updated">last updated <time class=3D"ent=
+ry-modified-time" itemprop=3D"dateModified" datetime=3D"2010-02-01T16:45:00=
++00:00">February 1, 2010</time></span> <span class=3D"cat-links">in <span c=
+lass=3D"screen-reader-text">Categories </span><a href=3D"https://www.cyberc=
+iti.biz/faq/category/iptables/" rel=3D"tag">Iptables</a></span></header><di=
+v class=3D"entry-content"><div style=3D"float:right;margin-top:0px;margin-l=
+eft:5px;"><a href=3D"https://www.cyberciti.biz/faq/category/iptables/" titl=
+e=3D"See all Firewall related FAQ"><img data-cfsrc=3D"https://www.cyberciti=
+.biz/media/new/category/old/firewall.png" border=3D"0" style=3D"visibility:=
+hidden"></a></div><p><span class=3D"drop_cap">H</span>ow do I redirect 80 p=
+ort to 8123 using iptables?<br> <span id=3D"more-6366"></span><br> You can =
+easily redirect incoming traffic by inserting rules into PREROUTING chain o=
+f the nat table. You can set destination port using the REDIRECT target.</p=
+><p></p><center><div id=3D"div-gpt-ad-1539716373159-0">  </div></center><p>=
+</p><p></p><h2>Syntax</h2><p>The syntax is as follows to redirect tcp $srcP=
+ortNumber port to $dstPortNumber:</p><div class=3D"wp_syntax" style=3D"posi=
+tion:relative;"><table><tbody><tr><td class=3D"code"><pre class=3D"bash" st=
+yle=3D"font-family:monospace;">iptables <span style=3D"color: #660033;">-t<=
+/span> nat <span style=3D"color: #660033;">-A</span> PREROUTING <span style=
+=3D"color: #660033;">-i</span> eth0 <span style=3D"color: #660033;">-p</spa=
+n> tcp <span style=3D"color: #660033;">--dport</span> <span style=3D"color:=
+ #007800;">$srcPortNumber</span> <span style=3D"color: #660033;">-j</span> =
+REDIRECT <span style=3D"color: #660033;">--to-port</span> <span style=3D"co=
+lor: #007800;">$dstPortNumber</span></pre></td></tr></tbody></table><p clas=
+s=3D"theCode" style=3D"display:none;">iptables -t nat -A PREROUTING -i eth0=
+ -p tcp --dport $srcPortNumber -j REDIRECT --to-port $dstPortNumber</p></di=
+v><p>The syntax is as follows to redirect udp $srcPortNumber port to $dstPo=
+rtNumber:</p><div class=3D"wp_syntax" style=3D"position:relative;"><table><=
+tbody><tr><td class=3D"code"><pre class=3D"bash" style=3D"font-family:monos=
+pace;">iptables <span style=3D"color: #660033;">-t</span> nat <span style=
+=3D"color: #660033;">-A</span> PREROUTING <span style=3D"color: #660033;">-=
+i</span> eth0 <span style=3D"color: #660033;">-p</span> udp <span style=3D"=
+color: #660033;">--dport</span> <span style=3D"color: #007800;">$srcPortNum=
+ber</span> <span style=3D"color: #660033;">-j</span> REDIRECT <span style=
+=3D"color: #660033;">--to-port</span> <span style=3D"color: #007800;">$dstP=
+ortNumber</span></pre></td></tr></tbody></table><p class=3D"theCode" style=
+=3D"display:none;">iptables -t nat -A PREROUTING -i eth0 -p udp --dport $sr=
+cPortNumber -j REDIRECT --to-port $dstPortNumber</p></div><p>Replace eth0 w=
+ith your actual interface name. The following syntax match for source and d=
+estination ips:</p><div class=3D"wp_syntax" style=3D"position:relative;"><t=
+able><tbody><tr><td class=3D"code"><pre class=3D"bash" style=3D"font-family=
+:monospace;">iptables <span style=3D"color: #660033;">-t</span> nat <span s=
+tyle=3D"color: #660033;">-I</span> PREROUTING <span style=3D"color: #660033=
+;">--src</span> <span style=3D"color: #007800;">$SRC_IP_MASK</span> <span s=
+tyle=3D"color: #660033;">--dst</span> <span style=3D"color: #007800;">$DST_=
+IP</span> <span style=3D"color: #660033;">-p</span> tcp <span style=3D"colo=
+r: #660033;">--dport</span> <span style=3D"color: #007800;">$portNumber</sp=
+an> <span style=3D"color: #660033;">-j</span> REDIRECT <span style=3D"color=
+: #660033;">--to-ports</span> <span style=3D"color: #007800;">$rediectPort<=
+/span></pre></td></tr></tbody></table><p class=3D"theCode" style=3D"display=
+:none;">iptables -t nat -I PREROUTING --src $SRC_IP_MASK --dst $DST_IP -p t=
+cp --dport $portNumber -j REDIRECT --to-ports $rediectPort</p></div><h2>Exa=
+mples:</h2><p>The following example redirects TCP port 25 to port 2525:</p>=
+<pre>iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 25 -j REDIRECT --=
+to-port 2525</pre><p>In this example all incoming traffic on port 80 redire=
+ct to port 8123</p><div class=3D"wp_syntax" style=3D"position:relative;"><t=
+able><tbody><tr><td class=3D"code"><pre class=3D"bash" style=3D"font-family=
+:monospace;">iptables <span style=3D"color: #660033;">-t</span> nat <span s=
+tyle=3D"color: #660033;">-I</span> PREROUTING <span style=3D"color: #660033=
+;">--src</span> <span style=3D"color: #000000;">0</span><span style=3D"colo=
+r: #000000; font-weight: bold;">/</span><span style=3D"color: #000000;">0</=
+span> <span style=3D"color: #660033;">--dst</span> 192.168.1.5 <span style=
+=3D"color: #660033;">-p</span> tcp <span style=3D"color: #660033;">--dport<=
+/span> <span style=3D"color: #000000;">80</span> <span style=3D"color: #660=
+033;">-j</span> REDIRECT <span style=3D"color: #660033;">--to-ports</span> =
+<span style=3D"color: #000000;">8123</span></pre></td></tr></tbody></table>=
+<p class=3D"theCode" style=3D"display:none;">iptables -t nat -I PREROUTING =
+--src 0/0 --dst 192.168.1.5 -p tcp --dport 80 -j REDIRECT --to-ports 8123</=
+p></div><p>Quoting from the iptables man page:</p><pre> This  target is onl=
+y valid in the nat table, in the PREROUTING and OUTPUT=20
+       chains, and user-defined chains which are only  called  from  those
+       chains.   It redirects the packet to the machine itself by changing =
+the
+       destination IP  to  the  primary  address  of  the  incoming  interf=
+ace
+       (locally-generated  packets  are  mapped to the 127.0.0.1 address). =
+ It
+       takes one option:
+
+       --to-ports port[-port]
+              This specifies a destination port or  range  of  ports  to  u=
+se:
+              without  this,  the  destination port is never altered.  This=
+ is
+              only valid if the rule also specifies -p tcp or -p udp.
+</pre><p>The OUTPUT chain example:</p><div class=3D"wp_syntax" style=3D"pos=
+ition:relative;"><table><tbody><tr><td class=3D"code"><pre class=3D"bash" s=
+tyle=3D"font-family:monospace;">iptables <span style=3D"color: #660033;">-t=
+</span> nat <span style=3D"color: #660033;">-I</span> OUTPUT <span style=3D=
+"color: #660033;">--src</span> <span style=3D"color: #000000;">0</span><spa=
+n style=3D"color: #000000; font-weight: bold;">/</span><span style=3D"color=
+: #000000;">0</span> <span style=3D"color: #660033;">--dst</span> 192.168.1=
+.5 <span style=3D"color: #660033;">-p</span> tcp <span style=3D"color: #660=
+033;">--dport</span> <span style=3D"color: #000000;">80</span> <span style=
+=3D"color: #660033;">-j</span> REDIRECT <span style=3D"color: #660033;">--t=
+o-ports</span> <span style=3D"color: #000000;">8123</span></pre></td></tr><=
+/tbody></table><p class=3D"theCode" style=3D"display:none;">iptables -t nat=
+ -I OUTPUT --src 0/0 --dst 192.168.1.5 -p tcp --dport 80 -j REDIRECT --to-p=
+orts 8123</p></div><h3>How Do I View NAT Rules?</h3><p>Type the following c=
+ommand:</p><div class=3D"wp_syntax" style=3D"position:relative;"><table><tb=
+ody><tr><td class=3D"code"><pre class=3D"bash" style=3D"font-family:monospa=
+ce;">iptables <span style=3D"color: #660033;">-t</span> nat <span style=3D"=
+color: #660033;">-L</span> <span style=3D"color: #660033;">-n</span> <span =
+style=3D"color: #660033;">-v</span></pre></td></tr></tbody></table><p class=
+=3D"theCode" style=3D"display:none;">iptables -t nat -L -n -v</p></div><h3>=
+How Do I Save NAT Redirect Rules?</h3><p>Type the following command:</p><di=
+v class=3D"wp_syntax" style=3D"position:relative;"><table><tbody><tr><td cl=
+ass=3D"code"><pre class=3D"bash" style=3D"font-family:monospace;">iptables-=
+save</pre></td></tr></tbody></table><p class=3D"theCode" style=3D"display:n=
+one;">iptables-save</p></div><h4>References:</h4><ul><li>man page =E2=80=93=
+ iptables</li></ul><p> <ins class=3D"adsbygoogle" style=3D"display:block; t=
+ext-align:center;" data-ad-layout=3D"in-article" data-ad-format=3D"fluid" d=
+ata-ad-client=3D"ca-pub-7825705102693166" data-ad-slot=3D"7939549758"></ins=
+> </p><div class=3D"author-info"><div class=3D"author-avatar"></div><div cl=
+ass=3D"author-description"><h2 class=3D"author-title"><span class=3D"author=
+-heading">Posted by:</span> <span class=3D"vcard author"><span class=3D"fn"=
+> Vivek Gite</span></span></h2><p class=3D"author-bio"> The author is the c=
+reator of nixCraft and a seasoned sysadmin, DevOps engineer, and a trainer =
+for the Linux operating system/Unix shell scripting. Get the <strong>latest=
+ tutorials on SysAdmin, Linux/Unix and open source topics via <a href=3D"ht=
+tps://www.cyberciti.biz/atom/atom.xml">RSS/XML feed</a></strong> or <a href=
+=3D"https://www.cyberciti.biz/subscribe-to-weekly-linux-unix-newsletter-for=
+-sysadmin/">weekly email newsletter</a>.</p></div></div></div><footer class=
+=3D"entry-footer"> <a href=3D"https://www.nixcraft.com/">GOT FEEDBACK? CLIC=
+K HERE TO JOIN THE DISCUSSION</a></footer></article><aside id=3D"content-bo=
+ttom-widgets" class=3D"content-bottom-widgets" role=3D"complementary"><div =
+class=3D"widget-area"><section id=3D"text-384338383" class=3D"widget widget=
+_text"><div class=3D"textwidget"><div class=3D"support"><h2 class=3D"suppor=
+t-title">Your support makes a big difference:</h2><p>I have a small favor t=
+o ask. More people are reading the nixCraft. Many of you block advertising =
+which is your right, and advertising revenues are not sufficient to cover m=
+y operating costs. So you can see why I need to ask for your help. The nixC=
+raft takes a lot of my time and hard work to produce. If everyone who reads=
+ nixCraft, who likes it, helps fund it, my future would be more secure. You=
+ can donate as little as $1 to support nixCraft:</p><p><a class=3D"social_b=
+tn support" href=3D"https://www.patreon.com/nixcraft" target=3D"_blank" rel=
+=3D"noopener">Become a Supporter</a> <a class=3D"social_btn support" href=
+=3D"https://www.cyberciti.biz/tips/donate" target=3D"_blank" rel=3D"noopene=
+r">Make a contribution via Paypal/Bitcoin</a></p></div></div></section></di=
+v></aside><div id=3D"comments" class=3D"comments-area"><h2 class=3D"comment=
+s-title"> <img class=3D"comments-image" data-cfsrc=3D"https://www.cyberciti=
+.biz/faq/wp-content/themes/cybercity/assets/images/comment.png" title=3D"Co=
+mments" style=3D"visibility:hidden"> 23 comment</h2><ol class=3D"comment-li=
+st"><li id=3D"comment-47246" class=3D"comment even thread-even depth-1"><ar=
+ticle id=3D"div-comment-47246" class=3D"comment-body"><footer class=3D"comm=
+ent-meta"><div class=3D"comment-author vcard"> <b class=3D"fn">tapas mishra=
+</b> <span class=3D"says">says:</span></div><div class=3D"comment-metadata"=
+> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-with-ipta=
+bles/#comment-47246"> <time datetime=3D"2010-05-08T12:21:23+00:00"> May 8, =
+2010 at 12:21 pm </time> </a></div></footer><div class=3D"comment-content">=
+<p>Just came across this one.Never tried but good idea.</p></div></article>=
+</li><li id=3D"comment-54934" class=3D"comment odd alt thread-odd thread-al=
+t depth-1"><article id=3D"div-comment-54934" class=3D"comment-body"><footer=
+ class=3D"comment-meta"><div class=3D"comment-author vcard"> <b class=3D"fn=
+">Nir</b> <span class=3D"says">says:</span></div><div class=3D"comment-meta=
+data"> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-with=
+-iptables/#comment-54934"> <time datetime=3D"2011-01-16T20:55:03+00:00"> Ja=
+nuary 16, 2011 at 8:55 pm </time> </a></div></footer><div class=3D"comment-=
+content"><p>gotta love this site.</p><p>thanks for the 1000th time ;)</p></=
+div></article></li><li id=3D"comment-55402" class=3D"comment even thread-ev=
+en depth-1"><article id=3D"div-comment-55402" class=3D"comment-body"><foote=
+r class=3D"comment-meta"><div class=3D"comment-author vcard"> <b class=3D"f=
+n">Piyush</b> <span class=3D"says">says:</span></div><div class=3D"comment-=
+metadata"> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-=
+with-iptables/#comment-55402"> <time datetime=3D"2011-02-07T06:30:29+00:00"=
+> February 7, 2011 at 6:30 am </time> </a></div></footer><div class=3D"comm=
+ent-content"><p>Hi,</p><p>Nice Article=E2=80=A6 !!!</p><p>Please check my q=
+uery and update me if it is possible by iptables or any other software=E2=
+=80=A6</p><p>I have 2 application servers (i.e. A and B)</p><p>A ip is :- 1=
+92.168.11.22 and port :- 7013 (single lan card)</p><p>B ip is :- 10.10.10.2=
+2 and port :- 8014 (single lan card)</p><p>Now i want to set port fowarding=
+/ redirection. When any client request to 192.168.11.22:7013 it will redire=
+ct to 10.10.10.22:8014 . How it is possible by iptables or any other way ?<=
+/p><p>Thank you.</p></div></article></li><li id=3D"comment-55403" class=3D"=
+comment odd alt thread-odd thread-alt depth-1"><article id=3D"div-comment-5=
+5403" class=3D"comment-body"><footer class=3D"comment-meta"><div class=3D"c=
+omment-author vcard"> <b class=3D"fn">Rocky</b> <span class=3D"says">says:<=
+/span></div><div class=3D"comment-metadata"> <a href=3D"https://www.cyberci=
+ti.biz/faq/linux-port-redirection-with-iptables/#comment-55403"> <time date=
+time=3D"2011-02-07T10:24:40+00:00"> February 7, 2011 at 10:24 am </time> </=
+a></div></footer><div class=3D"comment-content"><p>Hi,</p><p>I think for na=
+t , two lan cards are required=E2=80=A6=E2=80=A6</p><p>and can we pass one =
+machine traffic to other which are on internet via port redirection=E2=80=
+=A6.?</p><p>Thansks</p></div></article></li><li id=3D"comment-55747" class=
+=3D"comment even thread-even depth-1"><article id=3D"div-comment-55747" cla=
+ss=3D"comment-body"><footer class=3D"comment-meta"><div class=3D"comment-au=
+thor vcard"> <b class=3D"fn">Mikhail</b> <span class=3D"says">says:</span><=
+/div><div class=3D"comment-metadata"> <a href=3D"https://www.cyberciti.biz/=
+faq/linux-port-redirection-with-iptables/#comment-55747"> <time datetime=3D=
+"2011-02-18T04:50:36+00:00"> February 18, 2011 at 4:50 am </time> </a></div=
+></footer><div class=3D"comment-content"><p>Thank you! I always forget how =
+to redirect</p></div></article></li><li id=3D"comment-62183" class=3D"comme=
+nt odd alt thread-odd thread-alt depth-1"><article id=3D"div-comment-62183"=
+ class=3D"comment-body"><footer class=3D"comment-meta"><div class=3D"commen=
+t-author vcard"> <b class=3D"fn">Steve</b> <span class=3D"says">says:</span=
+></div><div class=3D"comment-metadata"> <a href=3D"https://www.cyberciti.bi=
+z/faq/linux-port-redirection-with-iptables/#comment-62183"> <time datetime=
+=3D"2011-09-06T03:31:01+00:00"> September 6, 2011 at 3:31 am </time> </a></=
+div></footer><div class=3D"comment-content"><p>Well heck. I thought this wa=
+s my answer but adding the iptables rule to redirect outbound port 25 traff=
+ic to port 2525 has no effect. (Ubuntu 10.04)</p><p>Mixmaster is giving me =
+cat fits because ISPs have decided that we are not allowed to send RFC comp=
+liant e-mail any more. Ever. No matter what. Any suggestions?</p></div></ar=
+ticle></li><li id=3D"comment-62190" class=3D"comment even thread-even depth=
+-1"><article id=3D"div-comment-62190" class=3D"comment-body"><footer class=
+=3D"comment-meta"><div class=3D"comment-author vcard"> <b class=3D"fn">Rock=
+y Patel</b> <span class=3D"says">says:</span></div><div class=3D"comment-me=
+tadata"> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-wi=
+th-iptables/#comment-62190"> <time datetime=3D"2011-09-06T10:52:48+00:00"> =
+September 6, 2011 at 10:52 am </time> </a></div></footer><div class=3D"comm=
+ent-content"><p>Hi,</p><p>Can we see packet , means redirection from port 8=
+0 to port 3128 or redirect of confiugred ports in iptables rule.</p><p>My q=
+uestion is that , is there any tool or utility, by use of it we can see how=
+ packet handle by iptables.</p><p>Thanks,<br> ROcky</p></div></article></li=
+><li id=3D"comment-62409" class=3D"comment odd alt thread-odd thread-alt de=
+pth-1"><article id=3D"div-comment-62409" class=3D"comment-body"><footer cla=
+ss=3D"comment-meta"><div class=3D"comment-author vcard"> <b class=3D"fn">Cr=
+0t</b> <span class=3D"says">says:</span></div><div class=3D"comment-metadat=
+a"> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-with-ip=
+tables/#comment-62409"> <time datetime=3D"2011-09-14T01:36:28+00:00"> Septe=
+mber 14, 2011 at 1:36 am </time> </a></div></footer><div class=3D"comment-c=
+ontent"><p>How about redirecting an internal request to go out over a diffe=
+rent interface.</p><p>I got bond0 and wlan0.</p><p>The request for a specif=
+ic server let=E2=80=99s call it foobar on port 443. I always want to go out=
+ over wlan0 and never over bond0.</p></div></article></li><li id=3D"comment=
+-67685" class=3D"comment even thread-even depth-1"><article id=3D"div-comme=
+nt-67685" class=3D"comment-body"><footer class=3D"comment-meta"><div class=
+=3D"comment-author vcard"> <b class=3D"fn">Gary Largeman</b> <span class=3D=
+"says">says:</span></div><div class=3D"comment-metadata"> <a href=3D"https:=
+//www.cyberciti.biz/faq/linux-port-redirection-with-iptables/#comment-67685=
+"> <time datetime=3D"2012-01-31T21:45:31+00:00"> January 31, 2012 at 9:45 p=
+m </time> </a></div></footer><div class=3D"comment-content"><p>God bless yo=
+u. I=E2=80=99ve been looking for these!</p></div></article></li><li id=3D"c=
+omment-67836" class=3D"comment odd alt thread-odd thread-alt depth-1"><arti=
+cle id=3D"div-comment-67836" class=3D"comment-body"><footer class=3D"commen=
+t-meta"><div class=3D"comment-author vcard"> <b class=3D"fn">Elton Rauh</b>=
+ <span class=3D"says">says:</span></div><div class=3D"comment-metadata"> <a=
+ href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-with-iptables=
+/#comment-67836"> <time datetime=3D"2012-02-07T19:49:53+00:00"> February 7,=
+ 2012 at 7:49 pm </time> </a></div></footer><div class=3D"comment-content">=
+<p>all connections are being redirected to the proxy =E2=80=A6 Why, if it i=
+s set different from the 172.16.0.0/12 and those connections I=E2=80=99m al=
+so going through the proxy</p><p>$IPTABLES -A PREROUTING -t nat -p tcp -i e=
+th2 -s 10.18.83.0/24 -d ! 172.16.0.0/12 -m multiport =E2=80=93dports 80,443=
+ -j DNAT =E2=80=93to 172.19.100.206:3128</p></div></article></li><li id=3D"=
+comment-68403" class=3D"comment even thread-even depth-1"><article id=3D"di=
+v-comment-68403" class=3D"comment-body"><footer class=3D"comment-meta"><div=
+ class=3D"comment-author vcard"> <b class=3D"fn">Josh</b> <span class=3D"sa=
+ys">says:</span></div><div class=3D"comment-metadata"> <a href=3D"https://w=
+ww.cyberciti.biz/faq/linux-port-redirection-with-iptables/#comment-68403"> =
+<time datetime=3D"2012-03-15T21:08:31+00:00"> March 15, 2012 at 9:08 pm </t=
+ime> </a></div></footer><div class=3D"comment-content"><p>Thanks, this was =
+very helpful :)</p></div></article></li><li id=3D"comment-69172" class=3D"c=
+omment odd alt thread-odd thread-alt depth-1"><article id=3D"div-comment-69=
+172" class=3D"comment-body"><footer class=3D"comment-meta"><div class=3D"co=
+mment-author vcard"> <b class=3D"fn">Oliver</b> <span class=3D"says">says:<=
+/span></div><div class=3D"comment-metadata"> <a href=3D"https://www.cyberci=
+ti.biz/faq/linux-port-redirection-with-iptables/#comment-69172"> <time date=
+time=3D"2012-05-03T10:15:28+00:00"> May 3, 2012 at 10:15 am </time> </a></d=
+iv></footer><div class=3D"comment-content"><p>Hi, I=E2=80=99ve got a quite =
+funny setup. I connect with ssh to server1 and establish a tunnel. Packets =
+are generated I mark the packets on the OUTPUT chain and redirect them with=
+ ip route through a vpn gateway. This works fine.</p><p>But I want to redir=
+ect the port from 80 to 3028 and this does not work on the output chain. Th=
+e rule is ignored. How can I redirect the port on the Postrouting chain?</p=
+></div></article></li><li id=3D"comment-71427" class=3D"comment even thread=
+-even depth-1"><article id=3D"div-comment-71427" class=3D"comment-body"><fo=
+oter class=3D"comment-meta"><div class=3D"comment-author vcard"> <b class=
+=3D"fn">Marian</b> <span class=3D"says">says:</span></div><div class=3D"com=
+ment-metadata"> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirec=
+tion-with-iptables/#comment-71427"> <time datetime=3D"2012-09-04T10:25:18+0=
+0:00"> September 4, 2012 at 10:25 am </time> </a></div></footer><div class=
+=3D"comment-content"><p>single rule doesnt work if You have a big script. C=
+ould You please publish complete firewall script with all settings ?</p></d=
+iv></article></li><li id=3D"comment-91990" class=3D"comment odd alt thread-=
+odd thread-alt depth-1"><article id=3D"div-comment-91990" class=3D"comment-=
+body"><footer class=3D"comment-meta"><div class=3D"comment-author vcard"> <=
+b class=3D"fn">PacoBell</b> <span class=3D"says">says:</span></div><div cla=
+ss=3D"comment-metadata"> <a href=3D"https://www.cyberciti.biz/faq/linux-por=
+t-redirection-with-iptables/#comment-91990"> <time datetime=3D"2013-05-07T0=
+6:35:57+00:00"> May 7, 2013 at 6:35 am </time> </a></div></footer><div clas=
+s=3D"comment-content"><p>Does this syntax guarantee the return path from $d=
+stPortNumber back to $srcPortNumber as well? I tried this out and it seems =
+that my client can receive packets on the dstPort just fine, but those sent=
+ back are lost somehow.</p></div></article></li><li id=3D"comment-97628" cl=
+ass=3D"comment even thread-even depth-1"><article id=3D"div-comment-97628" =
+class=3D"comment-body"><footer class=3D"comment-meta"><div class=3D"comment=
+-author vcard"> <b class=3D"fn">higkoo</b> <span class=3D"says">says:</span=
+></div><div class=3D"comment-metadata"> <a href=3D"https://www.cyberciti.bi=
+z/faq/linux-port-redirection-with-iptables/#comment-97628"> <time datetime=
+=3D"2013-08-30T04:56:59+00:00"> August 30, 2013 at 4:56 am </time> </a></di=
+v></footer><div class=3D"comment-content"><p>Can you do it without iptables=
+?</p></div></article></li><li id=3D"comment-97873" class=3D"comment odd alt=
+ thread-odd thread-alt depth-1"><article id=3D"div-comment-97873" class=3D"=
+comment-body"><footer class=3D"comment-meta"><div class=3D"comment-author v=
+card"> <b class=3D"fn">NeMewSys</b> <span class=3D"says">says:</span></div>=
+<div class=3D"comment-metadata"> <a href=3D"https://www.cyberciti.biz/faq/l=
+inux-port-redirection-with-iptables/#comment-97873"> <time datetime=3D"2013=
+-09-04T18:43:08+00:00"> September 4, 2013 at 6:43 pm </time> </a></div></fo=
+oter><div class=3D"comment-content"><p>If I use this:</p><pre>iptables -t n=
+at -A PREROUTING -i eth0 -p tcp --dport 25 -j REDIRECT --to-port 2525</pre>=
+<p>every packet arriving to port 25 will be forward to 2525, but what happe=
+ns to packets arriving to port 2525? I would like to redirect them to 25, s=
+hould I also add this rule?</p><pre>iptables -t nat -A PREROUTING -i eth0 -=
+p tcp --dport 2525 -j REDIRECT --to-port 25</pre></div></article></li><li i=
+d=3D"comment-100353" class=3D"comment even thread-even depth-1 parent"><art=
+icle id=3D"div-comment-100353" class=3D"comment-body"><footer class=3D"comm=
+ent-meta"><div class=3D"comment-author vcard"> <b class=3D"fn">lorenzo</b> =
+<span class=3D"says">says:</span></div><div class=3D"comment-metadata"> <a =
+href=3D"https://www.cyberciti.biz/faq/linux-port-redirection-with-iptables/=
+#comment-100353"> <time datetime=3D"2013-10-31T09:23:30+00:00"> October 31,=
+ 2013 at 9:23 am </time> </a></div></footer><div class=3D"comment-content">=
+<p>iptables -t nat -A PREROUTING -i venet0 -p tcp =E2=80=93dport 1:20 -j RE=
+DIRECT =E2=80=93to-port 411<br> following request:<br> iptables: No chain/t=
+arget/match by that name.</p></div></article><ol class=3D"children"><li id=
+=3D"comment-117982" class=3D"comment odd alt depth-2"><article id=3D"div-co=
+mment-117982" class=3D"comment-body"><footer class=3D"comment-meta"><div cl=
+ass=3D"comment-author vcard"> <b class=3D"fn">anonymous</b> <span class=3D"=
+says">says:</span></div><div class=3D"comment-metadata"> <a href=3D"https:/=
+/www.cyberciti.biz/faq/linux-port-redirection-with-iptables/#comment-117982=
+"> <time datetime=3D"2014-02-14T03:04:35+00:00"> February 14, 2014 at 3:04 =
+am </time> </a></div></footer><div class=3D"comment-content"><p>lorenzo,</p=
+><p>sysctl net.ipv4.ip_forward=3D1</p><p>NeMewSys,</p><p>You want to redire=
+ct 2525 -&gt; 25, and 25 -&gt; 2525 =C3=A2=E2=82=AC=E2=80=9C why on earth w=
+ould you think that=E2=80=99s a great idea?</p></div></article></li></ol></=
+li><li id=3D"comment-264424" class=3D"comment even thread-odd thread-alt de=
+pth-1 parent"><article id=3D"div-comment-264424" class=3D"comment-body"><fo=
+oter class=3D"comment-meta"><div class=3D"comment-author vcard"> <b class=
+=3D"fn">tux</b> <span class=3D"says">says:</span></div><div class=3D"commen=
+t-metadata"> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirectio=
+n-with-iptables/#comment-264424"> <time datetime=3D"2014-09-12T12:01:25+00:=
+00"> September 12, 2014 at 12:01 pm </time> </a></div></footer><div class=
+=3D"comment-content"><p>I am trying to redirect request on port 80 to 8080 =
+(as tomcat is listening on this);</p><p>Following are the rules I added;</p=
+><p>iptables -I INPUT -p tcp =E2=80=93dport 80 -j ACCEPT<br> iptables -t na=
+t -I PREROUTING -p tcp =E2=80=93dport 80 -j REDIRECT =E2=80=93to-ports 8080=
+</p><p>But, I am unable to see the tomcat page when I hit <a href=3D"http:/=
+/xxx.xx.xx.xx/" rel=3D"nofollow">http://xxx.xx.xx.xx/</a> from outside.</p>=
+<p>But, when I also add the following in the IPTABLES, it works;<br> iptabl=
+es -I INPUT -p tcp =E2=80=93dport 8080 -j ACCEPT</p><p>But, my question is =
+why do I also need to expose port 8080. Because, that way <a href=3D"http:/=
+/xxx.xx.xx.xx:8080/" rel=3D"nofollow">http://xxx.xx.xx.xx:8080/</a> and <a =
+href=3D"http://xxx.xx.xx.xx/" rel=3D"nofollow">http://xxx.xx.xx.xx/</a> wou=
+ld both work.</p><p>could someone help me with a better solution in this re=
+gard.</p><p>-thanks</p></div></article><ol class=3D"children"><li id=3D"com=
+ment-746426" class=3D"comment odd alt depth-2"><article id=3D"div-comment-7=
+46426" class=3D"comment-body"><footer class=3D"comment-meta"><div class=3D"=
+comment-author vcard"> <b class=3D"fn">Federico</b> <span class=3D"says">sa=
+ys:</span></div><div class=3D"comment-metadata"> <a href=3D"https://www.cyb=
+erciti.biz/faq/linux-port-redirection-with-iptables/#comment-746426"> <time=
+ datetime=3D"2015-09-17T22:43:28+00:00"> September 17, 2015 at 10:43 pm </t=
+ime> </a></div></footer><div class=3D"comment-content"><p>As far as I know =
+the PREROUTING rules are applied before the INPUT rules. More in general th=
+e rules from the nat table are applied before the rules in the filter table=
+. So, in your case, any packet going to port 80 is redirected to port 8080 =
+(iptables -t nat -I PREROUTING -p tcp =C3=A2=E2=82=AC=E2=80=9Cdport 80 -j R=
+EDIRECT =C3=A2=E2=82=AC=E2=80=9Cto-ports 8080) and then it is filtered by t=
+he default DROP policy of the INPUT chain, which I assume you are using, in=
+ fact it doesn=E2=80=99t match the ACCEPT rule on port 80 (iptables -I INPU=
+T -p tcp =C3=A2=E2=82=AC=E2=80=9Cdport 80 -j ACCEPT).</p><p>You have alread=
+y verified it, as you said if you add a rule to accept INPUT packets on por=
+t 8080, both <a href=3D"http://xxx.xx.xx.xx:8080/" rel=3D"nofollow">http://=
+xxx.xx.xx.xx:8080/</a> and <a href=3D"http://xxx.xx.xx.xx/" rel=3D"nofollow=
+">http://xxx.xx.xx.xx/</a> work properly. The former because it connects to=
+ port 8080 which is open, the latter because it connects to port 80 and get=
+s redirected to port 8080 which is open.<br> To further verify it you shoul=
+d run iptables -L -n -v more times and check that the packet counter of the=
+ rule iptables -I INPUT -p tcp =C3=A2=E2=82=AC=E2=80=9Cdport 80 -j ACCEPT r=
+emains 0 even if you connect to <a href=3D"http://xxx.xx.xx.xx/" rel=3D"nof=
+ollow">http://xxx.xx.xx.xx/</a> between a run and the other.<br> As last op=
+tion, for debugging purposes, you could add a LOG rule for packets on the 8=
+0 port and study the logs to see if any packet is accepted (syntax is easy,=
+ where the logs are depends on your system). Just remember to add it in the=
+ table just before the related ACCEPT rule and not after, otherwise the LOG=
+ rule would be ignored.</p><p>As last thing, don=E2=80=99t worry about how =
+scary and difficult iptables can seem as everything I=E2=80=99ve told you I=
+=E2=80=99ve learned this afternoon just by googling around and the good old=
+ trial and error ;)<br> Good luck</p></div></article></li></ol></li><li id=
+=3D"comment-328019" class=3D"comment even thread-even depth-1"><article id=
+=3D"div-comment-328019" class=3D"comment-body"><footer class=3D"comment-met=
+a"><div class=3D"comment-author vcard"> <b class=3D"fn">michael</b> <span c=
+lass=3D"says">says:</span></div><div class=3D"comment-metadata"> <a href=3D=
+"https://www.cyberciti.biz/faq/linux-port-redirection-with-iptables/#commen=
+t-328019"> <time datetime=3D"2014-10-06T06:55:49+00:00"> October 6, 2014 at=
+ 6:55 am </time> </a></div></footer><div class=3D"comment-content"><p>Hey I=
+ need help in port Redirection<br> This is my setup and it does not work<br=
+> #iptables -A FORWARD -i eth1 -o eth0 -p tcp =E2=80=93dport 3390 -d 192.16=
+8.200.2 -j ACCEPT<br> #iptables -t nat -A PREROUTING -p tcp -i eth1 =E2=80=
+=93dport 3389 -j DNAT =E2=80=93to 192.168.200.2:3389<br> I have ubuntu serv=
+er 12.04 with two network card<br> This eth0 LAN<br> This eth1 WAN</p><p>I =
+need to access from any to the addresses 192.168.200.2 Port 3390 and redire=
+ct to Port 3389 to (RDP)<br> My firewall is disabled</p></div></article></l=
+i><li id=3D"comment-881216" class=3D"comment odd alt thread-odd thread-alt =
+depth-1"><article id=3D"div-comment-881216" class=3D"comment-body"><footer =
+class=3D"comment-meta"><div class=3D"comment-author vcard"> <b class=3D"fn"=
+>Garima Jain</b> <span class=3D"says">says:</span></div><div class=3D"comme=
+nt-metadata"> <a href=3D"https://www.cyberciti.biz/faq/linux-port-redirecti=
+on-with-iptables/#comment-881216"> <time datetime=3D"2016-06-29T05:19:41+00=
+:00"> June 29, 2016 at 5:19 am </time> </a></div></footer><div class=3D"com=
+ment-content"><p>Is there a way to redirect only the allowed traffic to a s=
+pecific port?<br> Either I am able to redirect or drop but not both of them=
+ together.</p></div></article></li><li id=3D"comment-920746" class=3D"comme=
+nt even thread-even depth-1"><article id=3D"div-comment-920746" class=3D"co=
+mment-body"><footer class=3D"comment-meta"><div class=3D"comment-author vca=
+rd"> <b class=3D"fn">Paul</b> <span class=3D"says">says:</span></div><div c=
+lass=3D"comment-metadata"> <a href=3D"https://www.cyberciti.biz/faq/linux-p=
+ort-redirection-with-iptables/#comment-920746"> <time datetime=3D"2017-09-1=
+5T04:51:03+00:00"> September 15, 2017 at 4:51 am </time> </a></div></footer=
+><div class=3D"comment-content"><p>=E2=80=9Ciptables-save=E2=80=9D</p><p>do=
+esn=E2=80=99t make the config persistent, that just dumps out the running c=
+onfig. You=E2=80=99ll need to backup</p><p>/etc/sysconfig/iptables then run=
+</p><p>iptables-save &gt; /etc/sysconfig/iptables</p><p>to make the running=
+ config persistent accross reboots</p></div></article></li></ol><p class=3D=
+"no-comments">&nbsp;&nbsp;&nbsp; <a title=3D"Got a Linux or Unix question? =
+Post it on our forum to get help!" style=3D"color: #3b5bdb; font-weight: bo=
+ld;" href=3D"https://www.nixcraft.com/">Have a question? Post it on our for=
+um!</a></p></div><nav class=3D"navigation post-navigation" role=3D"navigati=
+on"><h2 class=3D"screen-reader-text">Post navigation</h2><div class=3D"nav-=
+links"><div class=3D"nav-previous"><a href=3D"https://www.cyberciti.biz/faq=
+/debain-ubuntu-install-net-snmpd-server/" rel=3D"prev"><span class=3D"meta-=
+nav" aria-hidden=3D"true">Previous post:</span> <span class=3D"screen-reade=
+r-text">Previous post:</span> <span class=3D"post-title">Debian / Ubuntu Li=
+nux: Install and Configure snmpd Service</span></a></div><div class=3D"nav-=
+next"><a href=3D"https://www.cyberciti.biz/faq/check-ram-in-ubuntu/" rel=3D=
+"next"><span class=3D"meta-nav" aria-hidden=3D"true">Next post:</span> <spa=
+n class=3D"screen-reader-text">Next post:</span> <span class=3D"post-title"=
+>HowTo: Check RAM Size In Ubuntu Linux</span></a></div></div></nav><div cla=
+ss=3D"tags-links">Tagged as: <span class=3D"screen-reader-text">Tags </span=
+><a href=3D"https://www.cyberciti.biz/faq/tag/192/" rel=3D"tag">192</a>, <a=
+ href=3D"https://www.cyberciti.biz/faq/tag/chains/" rel=3D"tag">chains</a>,=
+ <a href=3D"https://www.cyberciti.biz/faq/tag/destination-ip/" rel=3D"tag">=
+destination ip</a>, <a href=3D"https://www.cyberciti.biz/faq/tag/destinatio=
+n-port/" rel=3D"tag">destination port</a>, <a href=3D"https://www.cyberciti=
+.biz/faq/tag/incoming-interface/" rel=3D"tag">incoming interface</a>, <a hr=
+ef=3D"https://www.cyberciti.biz/faq/tag/incoming-traffic/" rel=3D"tag">inco=
+ming traffic</a>, <a href=3D"https://www.cyberciti.biz/faq/tag/interface-na=
+me/" rel=3D"tag">interface name</a>, <a href=3D"https://www.cyberciti.biz/f=
+aq/tag/iptables-redirect-ip/" rel=3D"tag">iptables redirect ip</a>, <a href=
+=3D"https://www.cyberciti.biz/faq/tag/iptables-redirect-local-port/" rel=3D=
+"tag">iptables redirect local port</a>, <a href=3D"https://www.cyberciti.bi=
+z/faq/tag/iptables-redirect-port-80/" rel=3D"tag">iptables redirect port 80=
+</a>, <a href=3D"https://www.cyberciti.biz/faq/tag/iptables-save/" rel=3D"t=
+ag">iptables-save</a>, <a href=3D"https://www.cyberciti.biz/faq/tag/man-pag=
+e/" rel=3D"tag">man page</a>, <a href=3D"https://www.cyberciti.biz/faq/tag/=
+mask/" rel=3D"tag">mask</a>, <a href=3D"https://www.cyberciti.biz/faq/tag/m=
+atch/" rel=3D"tag">match</a>, <a href=3D"https://www.cyberciti.biz/faq/tag/=
+nat-redirect/" rel=3D"tag">NAT Redirect</a>, <a href=3D"https://www.cyberci=
+ti.biz/faq/tag/nat-rules/" rel=3D"tag">nat rules</a>, <a href=3D"https://ww=
+w.cyberciti.biz/faq/tag/output/" rel=3D"tag">OUTPUT</a>, <a href=3D"https:/=
+/www.cyberciti.biz/faq/tag/ports/" rel=3D"tag">ports</a>, <a href=3D"https:=
+//www.cyberciti.biz/faq/tag/prerouting/" rel=3D"tag">PREROUTING</a>, <a hre=
+f=3D"https://www.cyberciti.biz/faq/tag/redirect/" rel=3D"tag">REDIRECT</a>,=
+ <a href=3D"https://www.cyberciti.biz/faq/tag/target/" rel=3D"tag">target</=
+a>, <a href=3D"https://www.cyberciti.biz/faq/tag/tcp-port/" rel=3D"tag">tcp=
+ port</a></div></main></div><aside id=3D"secondary" class=3D"sidebar widget=
+-area" role=3D"complementary"><section id=3D"text-384338389" class=3D"widge=
+t widget_text"><div class=3D"textwidget"><div id=3D"div-gpt-ad-153971630999=
+5-0">  </div></div></section><section id=3D"text-384338396" class=3D"widget=
+ widget_text"><div class=3D"textwidget"><p><iframe src=3D"https://duckduckg=
+o.com/search.html?width=3D280&amp;site=3Dcyberciti.biz&amp;prefill=3DSearch=
+%20nixCraft" style=3D"overflow:hidden;margin:0;padding:0;width:100%;height:=
+40px;" frameborder=3D"0"></iframe></p></div></section><section id=3D"text-3=
+84338388" class=3D"widget widget_text"><div class=3D"textwidget"><div id=3D=
+"div-gpt-ad-1539716208809-0">  </div></div></section><section id=3D"text-38=
+4338385" class=3D"widget widget_text"><h2 class=3D"widget-title">Featured A=
+rticles:</h2><div class=3D"textwidget"><ul><li><a href=3D"https://www.cyber=
+citi.biz/open-source/30-cool-best-open-source-softwares-of-2013/">30 Cool O=
+pen Source Software I Discovered in 2013</a></li><li><a href=3D"https://www=
+.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html">30 Handy Bash =
+Shell Aliases For Linux / Unix / Mac OS X</a></li><li><a href=3D"https://ww=
+w.cyberciti.biz/networking/nmap-command-examples-tutorials/">Top 30 Nmap Co=
+mmand Examples For Sys/Network Admins</a></li><li><a href=3D"https://www.cy=
+berciti.biz/tips/php-security-best-practices-tutorial.html">25 PHP Security=
+ Best Practices For Sys Admins</a></li><li><a href=3D"https://www.cyberciti=
+.biz/tips/top-linux-monitoring-tools.html">20 Linux System Monitoring Tools=
+ Every SysAdmin Should Know</a></li><li><a href=3D"https://www.cyberciti.bi=
+z/tips/linux-security.html">20 Linux Server Hardening Security Tips</a></li=
+><li><a href=3D"https://www.cyberciti.biz/tips/linux-iptables-examples.html=
+">Linux: 20 Iptables Examples For New SysAdmins</a></li><li><a href=3D"http=
+s://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.htm=
+l">Top 20 OpenSSH Server Best Security Practices </a></li><li><a href=3D"ht=
+tps://www.cyberciti.biz/tips/linux-unix-bsd-nginx-webserver-security.html">=
+Top 20 Nginx WebServer Best Security Practices</a></li><li><a href=3D"https=
+://www.cyberciti.biz/tips/check-unix-linux-configuration-file-for-syntax-er=
+rors.html">20 Examples: Make Sure Unix / Linux Configuration Files Are Free=
+ From Syntax Errors</a></li><li><a href=3D"https://www.cyberciti.biz/open-s=
+ource/best-terminal-applications-for-linux-unix-macosx/">15 Greatest Open S=
+ource Terminal Applications Of 2012</a></li><li><a href=3D"https://www.cybe=
+rciti.biz/tips/my-10-unix-command-line-mistakes.html">My 10 UNIX Command Li=
+ne Mistakes</a></li><li><a href=3D"https://www.cyberciti.biz/tips/open-sour=
+ce-project-management-software.html">Top 10 Open Source Web-Based Project M=
+anagement Software</a></li><li><a href=3D"https://www.cyberciti.biz/tips/do=
+wnload-email-client-for-linux-mac-osx-windows.html">Top 5 Email Client For =
+Linux, Mac OS X, and Windows Users</a></li><li><a href=3D"https://www.cyber=
+citi.biz/tips/linux-laptop.html">The Novice Guide To Buying A Linux Laptop<=
+/a></li></ul></div></section><section id=3D"widget_crp-5" class=3D"widget w=
+idget_widget_crp"><h2 class=3D"widget-title">Related Posts:</h2><div class=
+=3D"crp_related_widget"><ul><li><a href=3D"https://www.cyberciti.biz/faq/ho=
+w-to-configure-ufw-to-forward-port-80443-to-internal-server-hosted-on-lan/"=
+><span class=3D"crp_title">How to configure ufw to forward port 80/443 to i=
+nternal server hosted on LAN</span></a></li><li><a href=3D"https://www.cybe=
+rciti.biz/faq/iptables-block-port/"><span class=3D"crp_title">Linux: Block =
+Port With IPtables</span></a></li><li><a href=3D"https://www.cyberciti.biz/=
+faq/how-to-use-iptables-with-multiple-source-destination-ips-addresses/"><s=
+pan class=3D"crp_title">How to use or specify multiple IP addresses in ipta=
+bles source or destination on Linux</span></a></li><li><a href=3D"https://w=
+ww.cyberciti.biz/faq/how-to-add-comments-to-iptables-rules-on-linux/"><span=
+ class=3D"crp_title">How to add comments to iptables rules on Linux</span><=
+/a></li><li><a href=3D"https://www.cyberciti.biz/faq/iptables-open-ftp-port=
+-21/"><span class=3D"crp_title">Iptables Open FTP Port 21 and 20</span></a>=
+</li><li><a href=3D"https://www.cyberciti.biz/faq/kvm-forward-ports-to-gues=
+ts-vm-with-ufw-on-linux/"><span class=3D"crp_title">KVM forward ports to gu=
+ests VM with UFW on Linux</span></a></li><li><a href=3D"https://www.cyberci=
+ti.biz/faq/linux-demilitarized-zone-howto/"><span class=3D"crp_title">Linux=
+ Demilitarized Zone (DMZ) Ethernet Interface Requirements and Configuration=
+</span></a></li><li><a href=3D"https://www.cyberciti.biz/faq/linux-iptables=
+-multiport-range/"><span class=3D"crp_title">Linux: Iptables Forward Multip=
+le Ports</span></a></li><li><a href=3D"https://www.cyberciti.biz/faq/linux-=
+secure-portmap-with-iptables-tcp-wrappers/"><span class=3D"crp_title">Howto=
+ Secure portmap service using iptables and TCP Wrappers under Linux</span><=
+/a></li><li><a href=3D"https://www.cyberciti.biz/faq/restrict-ssh-access-us=
+e-iptable/"><span class=3D"crp_title">Restrict ssh access using Iptable</sp=
+an></a></li><li><a href=3D"https://www.cyberciti.biz/faq/iptables-invert-ip=
+-or-protocol-with/"><span class=3D"crp_title">Iptables: Invert IP, Protocol=
+, Or Interface Test With !</span></a></li><li><a href=3D"https://www.cyberc=
+iti.biz/faq/howto-iptables-show-nat-rules/"><span class=3D"crp_title">Linux=
+: Iptables List and Show All NAT IPTables Rules Command</span></a></li><li>=
+<a href=3D"https://www.cyberciti.biz/faq/configure-iptables-to-allow-deny-a=
+ccess-to-samba/"><span class=3D"crp_title">Samba: Linux Iptables Firewall C=
+onfiguration</span></a></li><li><a href=3D"https://www.cyberciti.biz/faq/ho=
+wto-rhel-linux-open-port-using-iptables/"><span class=3D"crp_title">Redhat =
+/ CentOS / Fedora Linux Open TCP/UDP Ports</span></a></li><li><a href=3D"ht=
+tps://www.cyberciti.biz/faq/linux-open-iptables-firewall-port-22-23/"><span=
+ class=3D"crp_title">How to: Allow telnet and ssh through iptables under Li=
+nux</span></a></li></ul><div class=3D"crp_clear"></div></div></section><sec=
+tion id=3D"text-384338391" class=3D"widget widget_text"><h2 class=3D"widget=
+-title">Sign up for my newsletter</h2><div class=3D"textwidget"><p><a href=
+=3D"https://www.cyberciti.biz/subscribe-to-weekly-linux-unix-newsletter-for=
+-sysadmin/"><img title=3D"" data-cfsrc=3D"https://www.cyberciti.biz/media/n=
+ew/cms/2017/07/inbox-sign-up.001.jpeg" alt=3D"Sign up for my newsletter" bo=
+rder=3D"0" style=3D"visibility:hidden"></a></p></div></section><section id=
+=3D"text-384338394" class=3D"widget widget_text"><div class=3D"textwidget">=
+<p><br> <ins class=3D"adsbygoogle" style=3D"display:block" data-ad-format=
+=3D"autorelaxed" data-ad-client=3D"ca-pub-7825705102693166" data-ad-slot=3D=
+"8885087266"></ins><br> </p></div></section><section id=3D"rss-3" class=3D"=
+widget widget_rss"><h2 class=3D"widget-title"><a class=3D"rsswidget" href=
+=3D"https://www.cyberciti.biz/atom/updated.xml"><img class=3D"rss-widget-ic=
+on" data-cfstyle=3D"border:0" width=3D"14" height=3D"14" data-cfsrc=3D"http=
+s://www.cyberciti.biz/faq/wp-includes/images/rss.png" alt=3D"RSS" style=3D"=
+visibility:hidden"></a> <a class=3D"rsswidget" href=3D"https://www.cybercit=
+i.biz/atom/updated.xml">Recently updated</a></h2><ul><li><a class=3D"rsswid=
+get" href=3D"https://www.cyberciti.biz/faq/how-to-install-lxd-container-hyp=
+ervisor-on-ubuntu-16-04-lts-server/">How to install LXD container hyperviso=
+r on Ubuntu 16.04 LTS</a></li><li><a class=3D"rsswidget" href=3D"https://ww=
+w.cyberciti.biz/faq/ubuntu-linux-how-do-i-install-deb-packages/">Ubuntu Lin=
+ux: How Do I install .deb Packages?</a></li><li><a class=3D"rsswidget" href=
+=3D"https://www.cyberciti.biz/faq/linux-kernel-etcsysctl-conf-security-hard=
+ening/">Linux Kernel /etc/sysctl.conf Security Hardening</a></li><li><a cla=
+ss=3D"rsswidget" href=3D"https://www.cyberciti.biz/faq/howto-deploying-free=
+bsd11-unix-on-google-cloud/">How to install FreeBSD 11 on Google Cloud Comp=
+ute</a></li><li><a class=3D"rsswidget" href=3D"https://www.cyberciti.biz/ti=
+ps/compiling-linux-kernel-26.html">How to compile and install Linux Kernel =
+4.19 from source code</a></li><li><a class=3D"rsswidget" href=3D"https://ww=
+w.cyberciti.biz/faq/creating-hard-links-with-ln-command/">How to create a h=
+ard links in Linux or Unix</a></li><li><a class=3D"rsswidget" href=3D"https=
+://www.cyberciti.biz/faq/dhclient-etcresolvconf-hooks/">Linux Make Sure /et=
+c/resolv.conf Never Get Updated By DHCP Client</a></li><li><a class=3D"rssw=
+idget" href=3D"https://www.cyberciti.biz/faq/what-process-has-open-linux-po=
+rt/">Linux Find Out Which Process Is Listening Upon a Port</a></li><li><a c=
+lass=3D"rsswidget" href=3D"https://www.cyberciti.biz/faq/debian-ubuntu-linu=
+x-apt-get-aptitude-show-package-version-command/">Check Debian/Ubuntu Linux=
+ package version using apt-get/aptitude command</a></li><li><a class=3D"rss=
+widget" href=3D"https://www.cyberciti.biz/faq/linux-command-to-find-sata-ha=
+rddisk-link-speed/">Linux Command To Find SATA Link Speed Such as 1.5 / 3.0=
+ / 6.0 Gbps [ Hard Disk ]</a></li></ul></section></aside></div></div><foote=
+r id=3D"colophon" class=3D"site-footer" role=3D"contentinfo"><div class=3D"=
+site-inner"><div class=3D"site-content"><div class=3D"flex-content"><div cl=
+ass=3D"site-branding"> <a href=3D"https://www.cyberciti.biz/faq/" class=3D"=
+custom-logo-link" rel=3D"home" itemprop=3D"url"><img width=3D"42" height=3D=
+"46" data-cfsrc=3D"https://www.cyberciti.biz/media/new/faq/2017/06/new-nixc=
+raft-logo-cyberciti.biz_.png" class=3D"custom-logo" alt=3D"nixCraft" itempr=
+op=3D"logo" style=3D"visibility:hidden"></a> <span class=3D"copyright">@200=
+0-2018 nixCraft. All rights reserved.</span></div><nav class=3D"secondary-n=
+avigation" role=3D"navigation" aria-label=3D"Secondary Menu"><div class=3D"=
+menu-bottomfaq-container"><ul id=3D"menu-bottomfaq" class=3D"secondary-menu=
+"><li id=3D"menu-item-146087" class=3D"menu-item menu-item-type-custom menu=
+-item-object-custom menu-item-146087"><a href=3D"https://www.cyberciti.biz/=
+tips/privacy">PRIVACY</a></li><li id=3D"menu-item-146088" class=3D"menu-ite=
+m menu-item-type-custom menu-item-object-custom menu-item-146088"><a href=
+=3D"https://www.cyberciti.biz/tips/disclaimer">TERM OF SERVICE</a></li><li =
+id=3D"menu-item-146089" class=3D"menu-item menu-item-type-custom menu-item-=
+object-custom menu-item-146089"><a href=3D"https://www.cyberciti.biz/tips/c=
+ontact-us">CONTACT/EMAIL</a></li><li id=3D"menu-item-146090" class=3D"menu-=
+item menu-item-type-custom menu-item-object-custom menu-item-146090"><a hre=
+f=3D"https://www.cyberciti.biz/tips/donate">DONATIONS</a></li><li id=3D"men=
+u-item-147030" class=3D"menu-item menu-item-type-custom menu-item-object-cu=
+stom menu-item-147030"><a href=3D"https://www.cyberciti.biz/search/">Search=
+</a></li></ul></div></nav></div><div class=3D"flex-content"><div class=3D"f=
+ooter-text"> <span class=3D"hosted">Hosted by <a href=3D"https://www.linode=
+.com/" target=3D"_blank" rel=3D"nofollow">Linode</a></span></div><div class=
+=3D"footer-text"> <span class=3D"content-deliver">DNS &amp; CDN by <a href=
+=3D"https://www.cloudflare.com/" target=3D"_blank" rel=3D"nofollow">Cloudfl=
+are</a></span></div><div class=3D"footer-text"> <span class=3D"content-deli=
+ver">Designed and Developed by <a href=3D"https://prospectone.io/" target=
+=3D"_blank" rel=3D"nofollow"><img data-cfsrc=3D"https://www.cyberciti.biz/f=
+aq/wp-content/themes/cybercity/assets/images/ProspectOne.png" title=3D"Pros=
+pect One" style=3D"visibility:hidden"> Prospect One</a></span></div></div><=
+/div></div></footer></div>       </body></html>
+------=_NextPart_000_1370_B3D452E7.C4A239C5
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://www.cyberciti.biz/faq/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.1
+
+LndwX3N5bnRheCB7IGNvbG9yOiByZ2IoMTcsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2Io
+MjQ5LCAyNDksIDI0OSk7IGJvcmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXJpZ2h0LXdpZHRo
+OiAxcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDFweDsg
+Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRl
+ci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10
+b3AtY29sb3I6IHNpbHZlcjsgYm9yZGVyLXJpZ2h0LWNvbG9yOiBzaWx2ZXI7IGJvcmRlci1ib3R0
+b20tY29sb3I6IHNpbHZlcjsgYm9yZGVyLWxlZnQtY29sb3I6IHNpbHZlcjsgYm9yZGVyLWltYWdl
+OiBpbml0aWFsOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90
+dG9tOiAxLjVlbTsgbWFyZ2luLWxlZnQ6IDBweDsgb3ZlcmZsb3cteDogYXV0bzsgb3ZlcmZsb3ct
+eTogYXV0bzsgfQoKLndwX3N5bnRheCB7IG92ZXJmbG93LXg6IGF1dG87IG92ZXJmbG93LXk6IGhp
+ZGRlbjsgd2lkdGg6IDk5JTsgfQoKLndwX3N5bnRheCB0YWJsZSB7IGJvcmRlci10b3Atc3R5bGU6
+IG5vbmUgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBub25lICFpbXBvcnRhbnQ7IGJv
+cmRlci1ib3R0b20tc3R5bGU6IG5vbmUgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtc3R5bGU6IG5v
+bmUgIWltcG9ydGFudDsgYm9yZGVyLXdpZHRoOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJvcmRlci1j
+b2xvcjogaW5pdGlhbCAhaW1wb3J0YW50OyBib3JkZXItaW1hZ2U6IGluaXRpYWwgIWltcG9ydGFu
+dDsgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZSAhaW1wb3J0YW50OyBtYXJnaW4tdG9wOiAwcHgg
+IWltcG9ydGFudDsgbWFyZ2luLXJpZ2h0OiAwcHggIWltcG9ydGFudDsgbWFyZ2luLWJvdHRvbTog
+MHB4ICFpbXBvcnRhbnQ7IG1hcmdpbi1sZWZ0OiAwcHggIWltcG9ydGFudDsgcGFkZGluZy10b3A6
+IDBweCAhaW1wb3J0YW50OyBwYWRkaW5nLXJpZ2h0OiAwcHggIWltcG9ydGFudDsgcGFkZGluZy1i
+b3R0b206IDBweCAhaW1wb3J0YW50OyBwYWRkaW5nLWxlZnQ6IDBweCAhaW1wb3J0YW50OyB3aWR0
+aDogMTAwJSAhaW1wb3J0YW50OyB9Cgoud3Bfc3ludGF4IGNhcHRpb24geyBtYXJnaW4tdG9wOiAw
+cHggIWltcG9ydGFudDsgbWFyZ2luLXJpZ2h0OiAwcHggIWltcG9ydGFudDsgbWFyZ2luLWJvdHRv
+bTogMHB4ICFpbXBvcnRhbnQ7IG1hcmdpbi1sZWZ0OiAwcHggIWltcG9ydGFudDsgcGFkZGluZy10
+b3A6IDJweCAhaW1wb3J0YW50OyBwYWRkaW5nLXJpZ2h0OiAwcHggIWltcG9ydGFudDsgcGFkZGlu
+Zy1ib3R0b206IDJweCAhaW1wb3J0YW50OyBwYWRkaW5nLWxlZnQ6IDBweCAhaW1wb3J0YW50OyB3
+aWR0aDogMTAwJSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjIxLCAyMzgsIDI1
+NSkgIWltcG9ydGFudDsgdGV4dC1hbGlnbjogbGVmdCAhaW1wb3J0YW50OyBmb250LWZhbWlseTog
+bW9ub3NwYWNlICFpbXBvcnRhbnQ7IGZvbnQtc2l6ZTogMTJweCAhaW1wb3J0YW50OyBsaW5lLWhl
+aWdodDogMS4yZW0gIWltcG9ydGFudDsgfQoKLndwX3N5bnRheCBjYXB0aW9uIGEgeyBjb2xvcjog
+cmdiKDI1LCAxMzAsIDIwOSkgIWltcG9ydGFudDsgdGV4dC1hbGlnbjogbGVmdCAhaW1wb3J0YW50
+OyBmb250LWZhbWlseTogbW9ub3NwYWNlICFpbXBvcnRhbnQ7IGZvbnQtc2l6ZTogMTJweCAhaW1w
+b3J0YW50OyBsaW5lLWhlaWdodDogMTZweCAhaW1wb3J0YW50OyB0ZXh0LWRlY29yYXRpb246IG5v
+bmUgIWltcG9ydGFudDsgfQoKLndwX3N5bnRheCBjYXB0aW9uIGE6aG92ZXIgeyBjb2xvcjogcmdi
+KDI1LCAxMzAsIDIwOSkgIWltcG9ydGFudDsgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmUgIWlt
+cG9ydGFudDsgfQoKLndwX3N5bnRheCBkaXYsIC53cF9zeW50YXggdGQgeyBib3JkZXItdG9wLXN0
+eWxlOiBub25lICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1zdHlsZTogbm9uZSAhaW1wb3J0YW50
+OyBib3JkZXItYm90dG9tLXN0eWxlOiBub25lICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LXN0eWxl
+OiBub25lICFpbXBvcnRhbnQ7IGJvcmRlci13aWR0aDogaW5pdGlhbCAhaW1wb3J0YW50OyBib3Jk
+ZXItY29sb3I6IGluaXRpYWwgIWltcG9ydGFudDsgYm9yZGVyLWltYWdlOiBpbml0aWFsICFpbXBv
+cnRhbnQ7IHRleHQtYWxpZ246IGxlZnQgIWltcG9ydGFudDsgcGFkZGluZy10b3A6IDBweCAhaW1w
+b3J0YW50OyBwYWRkaW5nLXJpZ2h0OiAwcHggIWltcG9ydGFudDsgcGFkZGluZy1ib3R0b206IDBw
+eCAhaW1wb3J0YW50OyBwYWRkaW5nLWxlZnQ6IDBweCAhaW1wb3J0YW50OyB2ZXJ0aWNhbC1hbGln
+bjogdG9wICFpbXBvcnRhbnQ7IH0KCi53cF9zeW50YXggdGQuY29kZSB7IGJhY2tncm91bmQtY29s
+b3I6IHJnYigyMzgsIDIzOCwgMjM4KTsgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50
+KHRyYW5zcGFyZW50IDUwJSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjg5ODQzOCkgNTAlKTsgYmFj
+a2dyb3VuZC1zaXplOiAxcHggMzJweDsgbGluZS1oZWlnaHQ6IG5vcm1hbCAhaW1wb3J0YW50OyB3
+aGl0ZS1zcGFjZTogbm9ybWFsICFpbXBvcnRhbnQ7IHdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7IH0K
+Ci53cF9zeW50YXggcHJlIHsgYmFja2dyb3VuZC1pbWFnZTogaW5pdGlhbCAhaW1wb3J0YW50OyBi
+YWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWwgIWltcG9ydGFudDsgYmFja2dyb3VuZC1vcmln
+aW46IGluaXRpYWwgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsICFpbXBvcnRh
+bnQ7IGJhY2tncm91bmQtY29sb3I6IGluaXRpYWwgIWltcG9ydGFudDsgYmFja2dyb3VuZC1zaXpl
+OiBpbml0aWFsICFpbXBvcnRhbnQ7IGJvcmRlci10b3Atc3R5bGU6IG5vbmUgIWltcG9ydGFudDsg
+Ym9yZGVyLXJpZ2h0LXN0eWxlOiBub25lICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tc3R5bGU6
+IG5vbmUgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtc3R5bGU6IG5vbmUgIWltcG9ydGFudDsgYm9y
+ZGVyLXdpZHRoOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJvcmRlci1jb2xvcjogaW5pdGlhbCAhaW1w
+b3J0YW50OyBib3JkZXItaW1hZ2U6IGluaXRpYWwgIWltcG9ydGFudDsgbWFyZ2luLXRvcDogMHB4
+ICFpbXBvcnRhbnQ7IG1hcmdpbi1yaWdodDogMHB4ICFpbXBvcnRhbnQ7IG1hcmdpbi1ib3R0b206
+IDBweCAhaW1wb3J0YW50OyBtYXJnaW4tbGVmdDogMHB4ICFpbXBvcnRhbnQ7IHdpZHRoOiBhdXRv
+ICFpbXBvcnRhbnQ7IGZsb2F0OiBub25lICFpbXBvcnRhbnQ7IGNsZWFyOiBub25lICFpbXBvcnRh
+bnQ7IG92ZXJmbG93LXg6IHZpc2libGUgIWltcG9ydGFudDsgb3ZlcmZsb3cteTogdmlzaWJsZSAh
+aW1wb3J0YW50OyBmb250LWZhbWlseTogbW9ub3NwYWNlICFpbXBvcnRhbnQ7IGZvbnQtc2l6ZTog
+MTRweCAhaW1wb3J0YW50OyBsaW5lLWhlaWdodDogMTZweCAhaW1wb3J0YW50OyBwYWRkaW5nLXRv
+cDogMHB4ICFpbXBvcnRhbnQ7IHBhZGRpbmctcmlnaHQ6IDRweCAhaW1wb3J0YW50OyBwYWRkaW5n
+LWJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7IHBhZGRpbmctbGVmdDogNHB4ICFpbXBvcnRhbnQ7IHdo
+aXRlLXNwYWNlOiBwcmUgIWltcG9ydGFudDsgLXdlYmtpdC1ib3gtc2hhZG93OiB0cmFuc3BhcmVu
+dCAwcHggMHB4IDBweCAhaW1wb3J0YW50OyBib3gtc2hhZG93OiB0cmFuc3BhcmVudCAwcHggMHB4
+IDBweCAhaW1wb3J0YW50OyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAwcHggIWltcG9ydGFudDsg
+Ym9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDBweCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXJp
+Z2h0LXJhZGl1czogMHB4ICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDBw
+eCAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwcHggMHB4ICFpbXBvcnRhbnQ7IGJh
+Y2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWwgIWltcG9ydGFudDsgfQoKLndwX3N5bnRh
+eCB0ZC5saW5lX251bWJlcnMgcHJlIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyMSwgMjM4LCAy
+NTUpICFpbXBvcnRhbnQ7IGNvbG9yOiBncmF5ICFpbXBvcnRhbnQ7IHRleHQtYWxpZ246IHJpZ2h0
+ICFpbXBvcnRhbnQ7IG1pbi13aWR0aDogMTZweCAhaW1wb3J0YW50OyB9
+------=_NextPart_000_1370_B3D452E7.C4A239C5
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://www.cyberciti.biz/faq/wp-content/themes/twentysixteen/style.css?ver=4.9.8
+
+aHRtbCB7IGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyB9Cgpib2R5IHsgbWFyZ2luLXRvcDogMHB4
+OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4
+OyB9CgphcnRpY2xlLCBhc2lkZSwgZGV0YWlscywgZmlnY2FwdGlvbiwgZmlndXJlLCBmb290ZXIs
+IGhlYWRlciwgbWFpbiwgbWVudSwgbmF2LCBzZWN0aW9uLCBzdW1tYXJ5IHsgZGlzcGxheTogYmxv
+Y2s7IH0KCmF1ZGlvLCBjYW52YXMsIHByb2dyZXNzLCB2aWRlbyB7IGRpc3BsYXk6IGlubGluZS1i
+bG9jazsgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lOyB9CgphdWRpbzpub3QoW2NvbnRyb2xzXSkg
+eyBkaXNwbGF5OiBub25lOyBoZWlnaHQ6IDBweDsgfQoKW2hpZGRlbl0sIHRlbXBsYXRlIHsgZGlz
+cGxheTogbm9uZTsgfQoKYSB7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyB9CgphYmJy
+W3RpdGxlXSB7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1zdHlsZTog
+ZG90dGVkOyBib3JkZXItYm90dG9tLWNvbG9yOiBpbml0aWFsOyB9CgpiLCBzdHJvbmcgeyBmb250
+LXdlaWdodDogNzAwOyB9CgpzbWFsbCB7IGZvbnQtc2l6ZTogODAlOyB9CgpzdWIsIHN1cCB7IGZv
+bnQtc2l6ZTogNzUlOyBsaW5lLWhlaWdodDogMDsgcG9zaXRpb246IHJlbGF0aXZlOyB2ZXJ0aWNh
+bC1hbGlnbjogYmFzZWxpbmU7IH0KCnN1cCB7IHRvcDogLTAuNWVtOyB9CgpzdWIgeyBib3R0b206
+IC0wLjI1ZW07IH0KCmltZyB7IGJvcmRlci10b3Atd2lkdGg6IDBweDsgYm9yZGVyLXJpZ2h0LXdp
+ZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDBweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBw
+eDsgYm9yZGVyLXN0eWxlOiBpbml0aWFsOyBib3JkZXItY29sb3I6IGluaXRpYWw7IGJvcmRlci1p
+bWFnZTogaW5pdGlhbDsgfQoKc3ZnOm5vdCg6cm9vdCkgeyBvdmVyZmxvdy14OiBoaWRkZW47IG92
+ZXJmbG93LXk6IGhpZGRlbjsgfQoKZmlndXJlIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmln
+aHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9CgpociB7IGJv
+eC1zaXppbmc6IGNvbnRlbnQtYm94OyB9Cgpjb2RlLCBrYmQsIHByZSwgc2FtcCB7IGZvbnQtc2l6
+ZTogMWVtOyB9CgpidXR0b24sIGlucHV0LCBvcHRncm91cCwgc2VsZWN0LCB0ZXh0YXJlYSB7IGNv
+bG9yOiBpbmhlcml0OyBmb250OiBpbmhlcml0OyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdo
+dDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCnNlbGVjdCB7
+IHRleHQtdHJhbnNmb3JtOiBub25lOyB9CgpidXR0b24geyBvdmVyZmxvdy14OiB2aXNpYmxlOyBv
+dmVyZmxvdy15OiB2aXNpYmxlOyB9CgpidXR0b24sIGlucHV0LCBzZWxlY3QsIHRleHRhcmVhIHsg
+bWF4LXdpZHRoOiAxMDAlOyB9CgpidXR0b24sIGh0bWwgaW5wdXRbdHlwZT0iYnV0dG9uIl0sIGlu
+cHV0W3R5cGU9InJlc2V0Il0sIGlucHV0W3R5cGU9InN1Ym1pdCJdIHsgLXdlYmtpdC1hcHBlYXJh
+bmNlOiBidXR0b247IGN1cnNvcjogcG9pbnRlcjsgfQoKYnV0dG9uW2Rpc2FibGVkXSwgaHRtbCBp
+bnB1dFtkaXNhYmxlZF0geyBjdXJzb3I6IGRlZmF1bHQ7IG9wYWNpdHk6IDAuNTsgfQoKYnV0dG9u
+OjotbW96LWZvY3VzLWlubmVyLCBpbnB1dDo6LW1vei1mb2N1cy1pbm5lciB7IGJvcmRlci10b3At
+d2lkdGg6IDBweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6
+IDBweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweDsgYm9yZGVyLXN0eWxlOiBpbml0aWFsOyBib3Jk
+ZXItY29sb3I6IGluaXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgcGFkZGluZy10b3A6IDBw
+eDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6
+IDBweDsgfQoKaW5wdXRbdHlwZT0iY2hlY2tib3giXSwgaW5wdXRbdHlwZT0icmFkaW8iXSB7IGJv
+eC1zaXppbmc6IGJvcmRlci1ib3g7IG1hcmdpbi1yaWdodDogMC40Mzc1ZW07IHBhZGRpbmctdG9w
+OiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1s
+ZWZ0OiAwcHg7IH0KCmlucHV0W3R5cGU9ImRhdGUiXTo6LXdlYmtpdC1pbm5lci1zcGluLWJ1dHRv
+biwgaW5wdXRbdHlwZT0iZGF0ZSJdOjotd2Via2l0LW91dGVyLXNwaW4tYnV0dG9uLCBpbnB1dFt0
+eXBlPSJ0aW1lIl06Oi13ZWJraXQtaW5uZXItc3Bpbi1idXR0b24sIGlucHV0W3R5cGU9InRpbWUi
+XTo6LXdlYmtpdC1vdXRlci1zcGluLWJ1dHRvbiwgaW5wdXRbdHlwZT0iZGF0ZXRpbWUtbG9jYWwi
+XTo6LXdlYmtpdC1pbm5lci1zcGluLWJ1dHRvbiwgaW5wdXRbdHlwZT0iZGF0ZXRpbWUtbG9jYWwi
+XTo6LXdlYmtpdC1vdXRlci1zcGluLWJ1dHRvbiwgaW5wdXRbdHlwZT0id2VlayJdOjotd2Via2l0
+LWlubmVyLXNwaW4tYnV0dG9uLCBpbnB1dFt0eXBlPSJ3ZWVrIl06Oi13ZWJraXQtb3V0ZXItc3Bp
+bi1idXR0b24sIGlucHV0W3R5cGU9Im1vbnRoIl06Oi13ZWJraXQtaW5uZXItc3Bpbi1idXR0b24s
+IGlucHV0W3R5cGU9Im1vbnRoIl06Oi13ZWJraXQtb3V0ZXItc3Bpbi1idXR0b24sIGlucHV0W3R5
+cGU9Im51bWJlciJdOjotd2Via2l0LWlubmVyLXNwaW4tYnV0dG9uLCBpbnB1dFt0eXBlPSJudW1i
+ZXIiXTo6LXdlYmtpdC1vdXRlci1zcGluLWJ1dHRvbiB7IGhlaWdodDogYXV0bzsgfQoKaW5wdXRb
+dHlwZT0ic2VhcmNoIl0geyAtd2Via2l0LWFwcGVhcmFuY2U6IHRleHRmaWVsZDsgfQoKaW5wdXRb
+dHlwZT0ic2VhcmNoIl06Oi13ZWJraXQtc2VhcmNoLWNhbmNlbC1idXR0b24sIGlucHV0W3R5cGU9
+InNlYXJjaCJdOjotd2Via2l0LXNlYXJjaC1kZWNvcmF0aW9uIHsgLXdlYmtpdC1hcHBlYXJhbmNl
+OiBub25lOyB9CgpmaWVsZHNldCB7IGJvcmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXJpZ2h0
+LXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lkdGg6
+IDFweDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7
+IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJv
+cmRlci10b3AtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiBy
+Z2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMDksIDIwOSwgMjA5
+KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLWltYWdlOiBp
+bml0aWFsOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9t
+OiAxLjc1ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IG1pbi13aWR0aDogaW5oZXJpdDsgcGFkZGluZy10
+b3A6IDAuODc1ZW07IHBhZGRpbmctcmlnaHQ6IDAuODc1ZW07IHBhZGRpbmctYm90dG9tOiAwLjg3
+NWVtOyBwYWRkaW5nLWxlZnQ6IDAuODc1ZW07IH0KCmZpZWxkc2V0ID4gOmxhc3QtY2hpbGQgeyBt
+YXJnaW4tYm90dG9tOiAwcHg7IH0KCmxlZ2VuZCB7IGJvcmRlci10b3Atd2lkdGg6IDBweDsgYm9y
+ZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDBweDsgYm9yZGVyLWxl
+ZnQtd2lkdGg6IDBweDsgYm9yZGVyLXN0eWxlOiBpbml0aWFsOyBib3JkZXItY29sb3I6IGluaXRp
+YWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdo
+dDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgfQoKdGV4dGFy
+ZWEgeyBvdmVyZmxvdy14OiBhdXRvOyBvdmVyZmxvdy15OiBhdXRvOyB2ZXJ0aWNhbC1hbGlnbjog
+dG9wOyB9CgpvcHRncm91cCB7IGZvbnQtd2VpZ2h0OiA3MDA7IH0KCi5tZW51LWl0ZW0taGFzLWNo
+aWxkcmVuIGE6OmFmdGVyLCAuc29jaWFsLW5hdmlnYXRpb24gYTo6YmVmb3JlLCAuZHJvcGRvd24t
+dG9nZ2xlOjphZnRlciwgLmJ5cG9zdGF1dGhvciA+IGFydGljbGUgLmZuOjphZnRlciwgLmNvbW1l
+bnQtcmVwbHktdGl0bGUgc21hbGwgYTo6YmVmb3JlLCAucGFnaW5hdGlvbiAucHJldjo6YmVmb3Jl
+LCAucGFnaW5hdGlvbiAubmV4dDo6YmVmb3JlLCAucGFnaW5hdGlvbiAubmF2LWxpbmtzOjpiZWZv
+cmUsIC5wYWdpbmF0aW9uIC5uYXYtbGlua3M6OmFmdGVyLCAuc2VhcmNoLXN1Ym1pdDo6YmVmb3Jl
+IHsgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7IGRpc3BsYXk6IGlubGluZS1i
+bG9jazsgZm9udC1mYW1pbHk6IGdlbmVyaWNvbnM7IGZvbnQtc2l6ZTogMTZweDsgZm9udC1zdHls
+ZTogbm9ybWFsOyBmb250LXZhcmlhbnQ6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IDQwMDsgbGluZS1o
+ZWlnaHQ6IDE7IHNwZWFrOiBub25lOyB0ZXh0LWFsaWduOiBjZW50ZXI7IHRleHQtZGVjb3JhdGlv
+bjogaW5oZXJpdDsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IHZlcnRpY2FsLWFsaWduOiB0b3A7IH0K
+CmJvZHksIGJ1dHRvbiwgaW5wdXQsIHNlbGVjdCwgdGV4dGFyZWEgeyBjb2xvcjogcmdiKDI2LCAy
+NiwgMjYpOyBmb250LWZhbWlseTogTWVycml3ZWF0aGVyLCBHZW9yZ2lhLCBzZXJpZjsgZm9udC1z
+aXplOiAxcmVtOyBsaW5lLWhlaWdodDogMS43NTsgfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7
+IGNsZWFyOiBib3RoOyBmb250LXdlaWdodDogNzAwOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1y
+aWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHRleHQtcmVu
+ZGVyaW5nOiBvcHRpbWl6ZWxlZ2liaWxpdHk7IH0KCnAgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdp
+bi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAxLjc1ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IH0K
+CmRmbiwgY2l0ZSwgZW0sIGkgeyBmb250LXN0eWxlOiBpdGFsaWM7IH0KCmJsb2NrcXVvdGUgeyBi
+b3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBib3JkZXItYm90
+dG9tLXdpZHRoOiAwcHg7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5
+bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6
+IHNvbGlkOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IGJvcmRlci1yaWdodC1j
+b2xvcjogcmdiKDI2LCAyNiwgMjYpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjYsIDI2LCAy
+Nik7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IGJvcmRlci1pbWFnZTogaW5p
+dGlhbDsgYm9yZGVyLWxlZnQtd2lkdGg6IDRweDsgY29sb3I6IHJnYigxMDQsIDEwNCwgMTA0KTsg
+Zm9udC1zaXplOiAxLjE4NzVyZW07IGZvbnQtc3R5bGU6IGl0YWxpYzsgbGluZS1oZWlnaHQ6IDEu
+NDczNjg0MjEwNTsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJv
+dHRvbTogMS40NzM2ODQyMTA1ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IG92ZXJmbG93LXg6IGhpZGRl
+bjsgb3ZlcmZsb3cteTogaGlkZGVuOyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAw
+cHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMS4yNjMxNTc4OTVlbTsgfQoK
+YmxvY2txdW90ZSwgcSB7IHF1b3Rlczogbm9uZTsgfQoKYmxvY2txdW90ZTo6YmVmb3JlLCBibG9j
+a3F1b3RlOjphZnRlciwgcTo6YmVmb3JlLCBxOjphZnRlciB7IGNvbnRlbnQ6ICcnOyB9CgpibG9j
+a3F1b3RlIHAgeyBtYXJnaW4tYm90dG9tOiAxLjQ3MzY4NDIxMDVlbTsgfQoKYmxvY2txdW90ZSBj
+aXRlLCBibG9ja3F1b3RlIHNtYWxsIHsgY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgZGlzcGxheTog
+YmxvY2s7IGZvbnQtc2l6ZTogMXJlbTsgbGluZS1oZWlnaHQ6IDEuNzU7IH0KCmJsb2NrcXVvdGUg
+Y2l0ZTo6YmVmb3JlLCBibG9ja3F1b3RlIHNtYWxsOjpiZWZvcmUgeyBjb250ZW50OiDigJTCoDsg
+fQoKYmxvY2txdW90ZSBlbSwgYmxvY2txdW90ZSBpLCBibG9ja3F1b3RlIGNpdGUgeyBmb250LXN0
+eWxlOiBub3JtYWw7IH0KCmJsb2NrcXVvdGUgc3Ryb25nLCBibG9ja3F1b3RlIGIgeyBmb250LXdl
+aWdodDogNDAwOyB9CgpibG9ja3F1b3RlID4gOmxhc3QtY2hpbGQgeyBtYXJnaW4tYm90dG9tOiAw
+cHg7IH0KCmFkZHJlc3MgeyBmb250LXN0eWxlOiBpdGFsaWM7IG1hcmdpbi10b3A6IDBweDsgbWFy
+Z2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDEuNzVlbTsgbWFyZ2luLWxlZnQ6IDBweDsg
+fQoKY29kZSwga2JkLCB0dCwgdmFyLCBzYW1wLCBwcmUgeyBmb250LWZhbWlseTogSW5jb25zb2xh
+dGEsIG1vbm9zcGFjZTsgfQoKcHJlIHsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItcmln
+aHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13aWR0
+aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xp
+ZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsg
+Ym9yZGVyLXRvcC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItcmlnaHQtY29sb3I6
+IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwOSwgMjA5LCAy
+MDkpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItaW1hZ2U6
+IGluaXRpYWw7IGZvbnQtc2l6ZTogMXJlbTsgbGluZS1oZWlnaHQ6IDEuMzEyNTsgbWFyZ2luLXRv
+cDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMS43NWVtOyBtYXJnaW4t
+bGVmdDogMHB4OyBtYXgtd2lkdGg6IDEwMCU7IG92ZXJmbG93LXg6IGF1dG87IG92ZXJmbG93LXk6
+IGF1dG87IHBhZGRpbmctdG9wOiAxLjc1ZW07IHBhZGRpbmctcmlnaHQ6IDEuNzVlbTsgcGFkZGlu
+Zy1ib3R0b206IDEuNzVlbTsgcGFkZGluZy1sZWZ0OiAxLjc1ZW07IHdoaXRlLXNwYWNlOiBwcmUt
+d3JhcDsgd29yZC13cmFwOiBicmVhay13b3JkOyB9Cgpjb2RlIHsgYmFja2dyb3VuZC1jb2xvcjog
+cmdiKDIwOSwgMjA5LCAyMDkpOyBwYWRkaW5nLXRvcDogMC4xMjVlbTsgcGFkZGluZy1yaWdodDog
+MC4yNWVtOyBwYWRkaW5nLWJvdHRvbTogMC4xMjVlbTsgcGFkZGluZy1sZWZ0OiAwLjI1ZW07IH0K
+CmFiYnIsIGFjcm9ueW0geyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20t
+c3R5bGU6IGRvdHRlZDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBj
+dXJzb3I6IGhlbHA7IH0KCm1hcmssIGlucyB7IGJhY2tncm91bmQtaW1hZ2U6IGluaXRpYWw7IGJh
+Y2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7
+IGJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDAsIDEyMiwg
+MjA0KTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUp
+OyBwYWRkaW5nLXRvcDogMC4xMjVlbTsgcGFkZGluZy1yaWdodDogMC4yNWVtOyBwYWRkaW5nLWJv
+dHRvbTogMC4xMjVlbTsgcGFkZGluZy1sZWZ0OiAwLjI1ZW07IHRleHQtZGVjb3JhdGlvbjogbm9u
+ZTsgYmFja2dyb3VuZC1wb3NpdGlvbjogaW5pdGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVh
+dDogaW5pdGlhbCBpbml0aWFsOyB9CgpiaWcgeyBmb250LXNpemU6IDEyNSU7IH0KCmh0bWwgeyBi
+b3gtc2l6aW5nOiBib3JkZXItYm94OyB9CgoqLCA6OmJlZm9yZSwgOjphZnRlciB7IGJveC1zaXpp
+bmc6IGluaGVyaXQ7IH0KCmJvZHkgeyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3Jv
+dW5kLWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNr
+Z3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNiwgMjYsIDI2KTsg
+YmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGlu
+aXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCmhyIHsgYmFja2dy
+b3VuZC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJv
+cmRlci1yaWdodC13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1s
+ZWZ0LXdpZHRoOiAwcHg7IGJvcmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0
+aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGhlaWdodDogMXB4OyBtYXJnaW4tdG9wOiAwcHg7
+IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAxLjc1ZW07IG1hcmdpbi1sZWZ0OiAw
+cHg7IH0KCnVsLCBvbCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdp
+bi1ib3R0b206IDEuNzVlbTsgbWFyZ2luLWxlZnQ6IDEuMjVlbTsgcGFkZGluZy10b3A6IDBweDsg
+cGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBw
+eDsgfQoKdWwgeyBsaXN0LXN0eWxlLXR5cGU6IGRpc2M7IGxpc3Qtc3R5bGUtcG9zaXRpb246IGlu
+aXRpYWw7IGxpc3Qtc3R5bGUtaW1hZ2U6IGluaXRpYWw7IH0KCm9sIHsgbGlzdC1zdHlsZS10eXBl
+OiBkZWNpbWFsOyBsaXN0LXN0eWxlLXBvc2l0aW9uOiBpbml0aWFsOyBsaXN0LXN0eWxlLWltYWdl
+OiBpbml0aWFsOyBtYXJnaW4tbGVmdDogMS41ZW07IH0KCmxpID4gdWwsIGxpID4gb2wgeyBtYXJn
+aW4tYm90dG9tOiAwcHg7IH0KCmRsIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBw
+eDsgbWFyZ2luLWJvdHRvbTogMS43NWVtOyBtYXJnaW4tbGVmdDogMHB4OyB9CgpkdCB7IGZvbnQt
+d2VpZ2h0OiA3MDA7IH0KCmRkIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsg
+bWFyZ2luLWJvdHRvbTogMS43NWVtOyBtYXJnaW4tbGVmdDogMHB4OyB9CgppbWcgeyBoZWlnaHQ6
+IGF1dG87IG1heC13aWR0aDogMTAwJTsgdmVydGljYWwtYWxpZ246IG1pZGRsZTsgfQoKZGVsIHsg
+b3BhY2l0eTogMC44OyB9Cgp0YWJsZSwgdGgsIHRkIHsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBi
+b3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXIt
+bGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0
+eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxl
+OiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItcmln
+aHQtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIw
+OSwgMjA5LCAyMDkpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3Jk
+ZXItaW1hZ2U6IGluaXRpYWw7IH0KCnRhYmxlIHsgYm9yZGVyLWNvbGxhcHNlOiBzZXBhcmF0ZTsg
+LXdlYmtpdC1ib3JkZXItaG9yaXpvbnRhbC1zcGFjaW5nOiAwcHg7IC13ZWJraXQtYm9yZGVyLXZl
+cnRpY2FsLXNwYWNpbmc6IDBweDsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItcmlnaHQt
+d2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDog
+MXB4OyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAx
+Ljc1ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IHRhYmxlLWxheW91dDogZml4ZWQ7IHdpZHRoOiAxMDAl
+OyB9CgpjYXB0aW9uLCB0aCwgdGQgeyBmb250LXdlaWdodDogNDAwOyB0ZXh0LWFsaWduOiBsZWZ0
+OyB9Cgp0aCB7IGJvcmRlci10b3Atd2lkdGg6IDBweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7
+IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweDsgZm9udC13
+ZWlnaHQ6IDcwMDsgfQoKdGQgeyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13
+aWR0aDogMXB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAw
+cHg7IH0KCnRoLCB0ZCB7IHBhZGRpbmctdG9wOiAwLjQzNzVlbTsgcGFkZGluZy1yaWdodDogMC40
+Mzc1ZW07IHBhZGRpbmctYm90dG9tOiAwLjQzNzVlbTsgcGFkZGluZy1sZWZ0OiAwLjQzNzVlbTsg
+fQoKKjo6LXdlYmtpdC1pbnB1dC1wbGFjZWhvbGRlciB7IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEw
+NCk7IGZvbnQtZmFtaWx5OiBNb250c2VycmF0LCAnaGVsdmV0aWNhIG5ldWUnLCBzYW5zLXNlcmlm
+OyB9CgoqOjotbW96LXBsYWNlaG9sZGVyIHsgY29sb3I6IHJnYigxMDQsIDEwNCwgMTA0KTsgZm9u
+dC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRpY2EgbmV1ZScsIHNhbnMtc2VyaWY7IG9wYWNp
+dHk6IDE7IH0KCmlucHV0IHsgbGluZS1oZWlnaHQ6IG5vcm1hbDsgfQoKYnV0dG9uLCBidXR0b25b
+ZGlzYWJsZWRdOmhvdmVyLCBidXR0b25bZGlzYWJsZWRdOmZvY3VzLCBpbnB1dFt0eXBlPSJidXR0
+b24iXSwgaW5wdXRbdHlwZT0iYnV0dG9uIl1bZGlzYWJsZWRdOmhvdmVyLCBpbnB1dFt0eXBlPSJi
+dXR0b24iXVtkaXNhYmxlZF06Zm9jdXMsIGlucHV0W3R5cGU9InJlc2V0Il0sIGlucHV0W3R5cGU9
+InJlc2V0Il1bZGlzYWJsZWRdOmhvdmVyLCBpbnB1dFt0eXBlPSJyZXNldCJdW2Rpc2FibGVkXTpm
+b2N1cywgaW5wdXRbdHlwZT0ic3VibWl0Il0sIGlucHV0W3R5cGU9InN1Ym1pdCJdW2Rpc2FibGVk
+XTpob3ZlciwgaW5wdXRbdHlwZT0ic3VibWl0Il1bZGlzYWJsZWRdOmZvY3VzIHsgYmFja2dyb3Vu
+ZC1pbWFnZTogaW5pdGlhbDsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBiYWNrZ3Jv
+dW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5k
+LWNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlhbDsgYm9yZGVy
+LXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13
+aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7
+IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBib3JkZXItdG9w
+LWxlZnQtcmFkaXVzOiAycHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1i
+b3R0b20tcmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDJweDsg
+Y29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2
+ZXRpY2EgbmV1ZScsIHNhbnMtc2VyaWY7IGZvbnQtd2VpZ2h0OiA3MDA7IGxldHRlci1zcGFjaW5n
+OiAwLjA0Njg3NWVtOyBsaW5lLWhlaWdodDogMTsgcGFkZGluZy10b3A6IDAuODQzNzVlbTsgcGFk
+ZGluZy1yaWdodDogMC44NzVlbTsgcGFkZGluZy1ib3R0b206IDAuNzgxMjVlbTsgcGFkZGluZy1s
+ZWZ0OiAwLjg3NWVtOyB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOyBiYWNrZ3JvdW5kLXBvc2l0
+aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7
+IH0KCmJ1dHRvbjpob3ZlciwgYnV0dG9uOmZvY3VzLCBpbnB1dFt0eXBlPSJidXR0b24iXTpob3Zl
+ciwgaW5wdXRbdHlwZT0iYnV0dG9uIl06Zm9jdXMsIGlucHV0W3R5cGU9InJlc2V0Il06aG92ZXIs
+IGlucHV0W3R5cGU9InJlc2V0Il06Zm9jdXMsIGlucHV0W3R5cGU9InN1Ym1pdCJdOmhvdmVyLCBp
+bnB1dFt0eXBlPSJzdWJtaXQiXTpmb2N1cyB7IGJhY2tncm91bmQtaW1hZ2U6IGluaXRpYWw7IGJh
+Y2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7
+IGJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDAsIDEyMiwg
+MjA0KTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0
+aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCmJ1dHRv
+bjpmb2N1cywgaW5wdXRbdHlwZT0iYnV0dG9uIl06Zm9jdXMsIGlucHV0W3R5cGU9InJlc2V0Il06
+Zm9jdXMsIGlucHV0W3R5cGU9InN1Ym1pdCJdOmZvY3VzIHsgb3V0bGluZS13aWR0aDogdGhpbjsg
+b3V0bGluZS1zdHlsZTogZG90dGVkOyBvdXRsaW5lLWNvbG9yOiBpbml0aWFsOyBvdXRsaW5lLW9m
+ZnNldDogLTRweDsgfQoKaW5wdXRbdHlwZT0iZGF0ZSJdLCBpbnB1dFt0eXBlPSJ0aW1lIl0sIGlu
+cHV0W3R5cGU9ImRhdGV0aW1lLWxvY2FsIl0sIGlucHV0W3R5cGU9IndlZWsiXSwgaW5wdXRbdHlw
+ZT0ibW9udGgiXSwgaW5wdXRbdHlwZT0idGV4dCJdLCBpbnB1dFt0eXBlPSJlbWFpbCJdLCBpbnB1
+dFt0eXBlPSJ1cmwiXSwgaW5wdXRbdHlwZT0icGFzc3dvcmQiXSwgaW5wdXRbdHlwZT0ic2VhcmNo
+Il0sIGlucHV0W3R5cGU9InRlbCJdLCBpbnB1dFt0eXBlPSJudW1iZXIiXSwgdGV4dGFyZWEgeyBi
+YWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFs
+OyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNDcsIDI0
+NywgMjQ3KTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWltYWdlOiAtd2Vi
+a2l0LWxpbmVhci1ncmFkaWVudCh0b3AsIHJnYmEoMjU1LCAyNTUsIDI1NSwgMCksIHJnYmEoMjU1
+LCAyNTUsIDI1NSwgMCkpOyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0
+aDogMXB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7
+IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3Jk
+ZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXIt
+dG9wLWNvbG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIw
+OSwgMjA5LCAyMDkpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJv
+cmRlci1sZWZ0LWNvbG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1pbWFnZTogaW5pdGlh
+bDsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMnB4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czog
+MnB4OyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogMnB4OyBib3JkZXItYm90dG9tLWxlZnQt
+cmFkaXVzOiAycHg7IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IHBhZGRpbmctdG9wOiAwLjYy
+NWVtOyBwYWRkaW5nLXJpZ2h0OiAwLjQzNzVlbTsgcGFkZGluZy1ib3R0b206IDAuNjI1ZW07IHBh
+ZGRpbmctbGVmdDogMC40Mzc1ZW07IHdpZHRoOiAxMDAlOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBp
+bml0aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCmlu
+cHV0W3R5cGU9ImRhdGUiXTpmb2N1cywgaW5wdXRbdHlwZT0idGltZSJdOmZvY3VzLCBpbnB1dFt0
+eXBlPSJkYXRldGltZS1sb2NhbCJdOmZvY3VzLCBpbnB1dFt0eXBlPSJ3ZWVrIl06Zm9jdXMsIGlu
+cHV0W3R5cGU9Im1vbnRoIl06Zm9jdXMsIGlucHV0W3R5cGU9InRleHQiXTpmb2N1cywgaW5wdXRb
+dHlwZT0iZW1haWwiXTpmb2N1cywgaW5wdXRbdHlwZT0idXJsIl06Zm9jdXMsIGlucHV0W3R5cGU9
+InBhc3N3b3JkIl06Zm9jdXMsIGlucHV0W3R5cGU9InNlYXJjaCJdOmZvY3VzLCBpbnB1dFt0eXBl
+PSJ0ZWwiXTpmb2N1cywgaW5wdXRbdHlwZT0ibnVtYmVyIl06Zm9jdXMsIHRleHRhcmVhOmZvY3Vz
+IHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBib3JkZXItdG9wLWNvbG9y
+OiByZ2IoMCwgMTIyLCAyMDQpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigwLCAxMjIsIDIwNCk7
+IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigwLCAxMjIsIDIwNCk7IGJvcmRlci1sZWZ0LWNvbG9y
+OiByZ2IoMCwgMTIyLCAyMDQpOyBjb2xvcjogcmdiKDI2LCAyNiwgMjYpOyBvdXRsaW5lLXdpZHRo
+OiAwcHg7IG91dGxpbmUtc3R5bGU6IGluaXRpYWw7IG91dGxpbmUtY29sb3I6IGluaXRpYWw7IH0K
+Ci5wb3N0LXBhc3N3b3JkLWZvcm0geyBtYXJnaW4tYm90dG9tOiAxLjc1ZW07IH0KCi5wb3N0LXBh
+c3N3b3JkLWZvcm0gbGFiZWwgeyBjb2xvcjogcmdiKDEwNCwgMTA0LCAxMDQpOyBkaXNwbGF5OiBi
+bG9jazsgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRpY2EgbmV1ZScsIHNhbnMtc2Vy
+aWY7IGZvbnQtc2l6ZTogMC44MTI1cmVtOyBsZXR0ZXItc3BhY2luZzogMC4wNzY5MjMwNzdlbTsg
+bGluZS1oZWlnaHQ6IDEuNjE1Mzg0NjE1NDsgbWFyZ2luLWJvdHRvbTogMS43NWVtOyB0ZXh0LXRy
+YW5zZm9ybTogdXBwZXJjYXNlOyB9CgoucG9zdC1wYXNzd29yZC1mb3JtIGlucHV0W3R5cGU9InBh
+c3N3b3JkIl0geyBtYXJnaW4tdG9wOiAwLjQzNzVlbTsgfQoKLnBvc3QtcGFzc3dvcmQtZm9ybSA+
+IDpsYXN0LWNoaWxkIHsgbWFyZ2luLWJvdHRvbTogMHB4OyB9Cgouc2VhcmNoLWZvcm0geyBwb3Np
+dGlvbjogcmVsYXRpdmU7IH0KCmlucHV0W3R5cGU9InNlYXJjaCJdLnNlYXJjaC1maWVsZCB7IGJv
+cmRlci10b3AtbGVmdC1yYWRpdXM6IDJweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDBweDsg
+Ym9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDBweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1
+czogMnB4OyB9Cgouc2VhcmNoLXN1Ym1pdDo6YmVmb3JlIHsgY29udGVudDog75CAOyBmb250LXNp
+emU6IDI0cHg7IGxlZnQ6IDJweDsgbGluZS1oZWlnaHQ6IDQycHg7IHBvc2l0aW9uOiByZWxhdGl2
+ZTsgd2lkdGg6IDQwcHg7IH0KCi5zZWFyY2gtc3VibWl0IHsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1
+czogMHB4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMnB4OyBib3JkZXItYm90dG9tLXJpZ2h0
+LXJhZGl1czogMnB4OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAwcHg7IGJvdHRvbTogMHB4
+OyBvdmVyZmxvdy14OiBoaWRkZW47IG92ZXJmbG93LXk6IGhpZGRlbjsgcGFkZGluZy10b3A6IDBw
+eDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6
+IDBweDsgcG9zaXRpb246IGFic29sdXRlOyByaWdodDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDQy
+cHg7IH0KCmEgeyBjb2xvcjogcmdiKDAsIDEyMiwgMjA0KTsgdGV4dC1kZWNvcmF0aW9uOiBub25l
+OyB9CgphOmhvdmVyLCBhOmZvY3VzLCBhOmFjdGl2ZSB7IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEw
+NCk7IH0KCmE6Zm9jdXMgeyBvdXRsaW5lLXdpZHRoOiB0aGluOyBvdXRsaW5lLXN0eWxlOiBkb3R0
+ZWQ7IG91dGxpbmUtY29sb3I6IGluaXRpYWw7IH0KCmE6aG92ZXIsIGE6YWN0aXZlIHsgb3V0bGlu
+ZS13aWR0aDogMHB4OyBvdXRsaW5lLXN0eWxlOiBpbml0aWFsOyBvdXRsaW5lLWNvbG9yOiBpbml0
+aWFsOyB9CgouZW50cnktY29udGVudCBhLCAuZW50cnktc3VtbWFyeSBhLCAudGF4b25vbXktZGVz
+Y3JpcHRpb24gYSwgLmxvZ2dlZC1pbi1hcyBhLCAuY29tbWVudC1jb250ZW50IGEsIC5waW5nYmFj
+ayAuY29tbWVudC1ib2R5ID4gYSwgLnRleHR3aWRnZXQgYSwgLmVudHJ5LWZvb3RlciBhOmhvdmVy
+LCAuc2l0ZS1pbmZvIGE6aG92ZXIgeyBib3gtc2hhZG93OiBjdXJyZW50Y29sb3IgMHB4IDFweCAw
+cHggMHB4OyB9CgouZW50cnktY29udGVudCBhOmhvdmVyLCAuZW50cnktY29udGVudCBhOmZvY3Vz
+LCAuZW50cnktc3VtbWFyeSBhOmhvdmVyLCAuZW50cnktc3VtbWFyeSBhOmZvY3VzLCAudGF4b25v
+bXktZGVzY3JpcHRpb24gYTpob3ZlciwgLnRheG9ub215LWRlc2NyaXB0aW9uIGE6Zm9jdXMsIC5s
+b2dnZWQtaW4tYXMgYTpob3ZlciwgLmxvZ2dlZC1pbi1hcyBhOmZvY3VzLCAuY29tbWVudC1jb250
+ZW50IGE6aG92ZXIsIC5jb21tZW50LWNvbnRlbnQgYTpmb2N1cywgLnBpbmdiYWNrIC5jb21tZW50
+LWJvZHkgPiBhOmhvdmVyLCAucGluZ2JhY2sgLmNvbW1lbnQtYm9keSA+IGE6Zm9jdXMsIC50ZXh0
+d2lkZ2V0IGE6aG92ZXIsIC50ZXh0d2lkZ2V0IGE6Zm9jdXMgeyBib3gtc2hhZG93OiBub25lOyB9
+Cgouc2l0ZS1oZWFkZXItbWVudSB7IGRpc3BsYXk6IG5vbmU7IC13ZWJraXQtZmxleC1ncm93OiAw
+OyAtd2Via2l0LWZsZXgtc2hyaW5rOiAxOyAtd2Via2l0LWZsZXgtYmFzaXM6IDEwMCU7IG1hcmdp
+bi10b3A6IDAuODc1ZW07IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwLjg3NWVt
+OyBtYXJnaW4tbGVmdDogMHB4OyB9Cgouc2l0ZS1oZWFkZXItbWVudS50b2dnbGVkLW9uLCAubm8t
+anMgLnNpdGUtaGVhZGVyLW1lbnUgeyBkaXNwbGF5OiBibG9jazsgfQoKLm1haW4tbmF2aWdhdGlv
+biB7IGZvbnQtZmFtaWx5OiBNb250c2VycmF0LCAnaGVsdmV0aWNhIG5ldWUnLCBzYW5zLXNlcmlm
+OyB9Cgouc2l0ZS1mb290ZXIgLm1haW4tbmF2aWdhdGlvbiB7IG1hcmdpbi1ib3R0b206IDEuNzVl
+bTsgfQoKLm1haW4tbmF2aWdhdGlvbiB1bCB7IGxpc3Qtc3R5bGUtdHlwZTogbm9uZTsgbGlzdC1z
+dHlsZS1wb3NpdGlvbjogaW5pdGlhbDsgbGlzdC1zdHlsZS1pbWFnZTogaW5pdGlhbDsgbWFyZ2lu
+LXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4t
+bGVmdDogMHB4OyB9CgoubWFpbi1uYXZpZ2F0aW9uIGxpIHsgYm9yZGVyLXRvcC13aWR0aDogMXB4
+OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIwOSwgMjA5
+LCAyMDkpOyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KCi5tYWluLW5hdmlnYXRpb24gYSB7IGNvbG9y
+OiByZ2IoMjYsIDI2LCAyNik7IGRpc3BsYXk6IGJsb2NrOyBsaW5lLWhlaWdodDogMS4zMTI1OyBv
+dXRsaW5lLW9mZnNldDogLTFweDsgcGFkZGluZy10b3A6IDAuODQzNzVlbTsgcGFkZGluZy1yaWdo
+dDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMC44NDM3NWVtOyBwYWRkaW5nLWxlZnQ6IDBweDsgfQoK
+Lm1haW4tbmF2aWdhdGlvbiBhOmhvdmVyLCAubWFpbi1uYXZpZ2F0aW9uIGE6Zm9jdXMgeyBjb2xv
+cjogcmdiKDAsIDEyMiwgMjA0KTsgfQoKLm1haW4tbmF2aWdhdGlvbiAuY3VycmVudC1tZW51LWl0
+ZW0gPiBhLCAubWFpbi1uYXZpZ2F0aW9uIC5jdXJyZW50LW1lbnUtYW5jZXN0b3IgPiBhIHsgZm9u
+dC13ZWlnaHQ6IDcwMDsgfQoKLm1haW4tbmF2aWdhdGlvbiB1bCB1bCB7IGRpc3BsYXk6IG5vbmU7
+IG1hcmdpbi1sZWZ0OiAwLjg3NWVtOyB9Cgoubm8tanMgLm1haW4tbmF2aWdhdGlvbiB1bCB1bCB7
+IGRpc3BsYXk6IGJsb2NrOyB9CgoubWFpbi1uYXZpZ2F0aW9uIHVsIC50b2dnbGVkLW9uIHsgZGlz
+cGxheTogYmxvY2s7IH0KCi5tYWluLW5hdmlnYXRpb24gLnByaW1hcnktbWVudSB7IGJvcmRlci1i
+b3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0
+b20tY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgfQoKLm1haW4tbmF2aWdhdGlvbiAubWVudS1p
+dGVtLWhhcy1jaGlsZHJlbiA+IGEgeyBtYXJnaW4tcmlnaHQ6IDU2cHg7IH0KCi5kcm9wZG93bi10
+b2dnbGUgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXRvcC13aWR0aDog
+MHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBi
+b3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xv
+cjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBib3JkZXItdG9wLWxlZnQtcmFkaXVz
+OiAwcHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAwcHg7IGJvcmRlci1ib3R0b20tcmlnaHQt
+cmFkaXVzOiAwcHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDBweDsgY29sb3I6IHJnYigy
+NiwgMjYsIDI2KTsgY29udGVudDogJyc7IGhlaWdodDogNDhweDsgcGFkZGluZy10b3A6IDBweDsg
+cGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBw
+eDsgcG9zaXRpb246IGFic29sdXRlOyByaWdodDogMHB4OyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsg
+dG9wOiAwcHg7IHdpZHRoOiA0OHB4OyB9CgouZHJvcGRvd24tdG9nZ2xlOjphZnRlciB7IGJvcmRl
+ci10b3Atd2lkdGg6IDBweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20t
+d2lkdGg6IDBweDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTog
+c29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29s
+aWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLXJpZ2h0LWNv
+bG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMDksIDIw
+OSwgMjA5KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLWlt
+YWdlOiBpbml0aWFsOyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBjb250ZW50OiDvkLE7IGZvbnQt
+c2l6ZTogMjRweDsgbGVmdDogMXB4OyBwb3NpdGlvbjogcmVsYXRpdmU7IHdpZHRoOiA0OHB4OyB9
+CgouZHJvcGRvd24tdG9nZ2xlOmhvdmVyLCAuZHJvcGRvd24tdG9nZ2xlOmZvY3VzIHsgYmFja2dy
+b3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IGNvbG9yOiByZ2IoMCwgMTIyLCAyMDQpOyB9CgouZHJv
+cGRvd24tdG9nZ2xlOmZvY3VzIHsgb3V0bGluZS13aWR0aDogdGhpbjsgb3V0bGluZS1zdHlsZTog
+ZG90dGVkOyBvdXRsaW5lLWNvbG9yOiBpbml0aWFsOyBvdXRsaW5lLW9mZnNldDogLTFweDsgfQoK
+LmRyb3Bkb3duLXRvZ2dsZTpmb2N1czo6YWZ0ZXIgeyBib3JkZXItdG9wLWNvbG9yOiB0cmFuc3Bh
+cmVudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRvbS1jb2xv
+cjogdHJhbnNwYXJlbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiB0cmFuc3BhcmVudDsgfQoKLmRyb3Bk
+b3duLXRvZ2dsZS50b2dnbGVkLW9uOjphZnRlciB7IGNvbnRlbnQ6IO+QsjsgfQoKLnNpdGUtaGVh
+ZGVyIC5tYWluLW5hdmlnYXRpb24gKyAuc29jaWFsLW5hdmlnYXRpb24geyBtYXJnaW4tdG9wOiAx
+Ljc1ZW07IH0KCi5zaXRlLWZvb3RlciAuc29jaWFsLW5hdmlnYXRpb24geyBtYXJnaW4tYm90dG9t
+OiAxLjc1ZW07IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiB1bCB7IGxpc3Qtc3R5bGUtdHlwZTogbm9u
+ZTsgbGlzdC1zdHlsZS1wb3NpdGlvbjogaW5pdGlhbDsgbGlzdC1zdHlsZS1pbWFnZTogaW5pdGlh
+bDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogLTAu
+NDM3NWVtOyBtYXJnaW4tbGVmdDogMHB4OyB9Cgouc29jaWFsLW5hdmlnYXRpb24gbGkgeyBmbG9h
+dDogbGVmdDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDAuNDM3NWVtOyBtYXJnaW4t
+Ym90dG9tOiAwLjQzNzVlbTsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLnNvY2lhbC1uYXZpZ2F0aW9u
+IGEgeyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBib3Jk
+ZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10b3At
+c3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0
+eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItdG9wLWNvbG9yOiBy
+Z2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkp
+OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1sZWZ0LWNv
+bG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgYm9yZGVyLXRv
+cC1sZWZ0LXJhZGl1czogNTAlOyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogNTAlOyBib3JkZXIt
+Ym90dG9tLXJpZ2h0LXJhZGl1czogNTAlOyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiA1MCU7
+IGNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IGRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDM1cHg7IHBv
+c2l0aW9uOiByZWxhdGl2ZTsgd2lkdGg6IDM1cHg7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBhOjpi
+ZWZvcmUgeyBjb250ZW50OiDvkJU7IGhlaWdodDogMzNweDsgbGluZS1oZWlnaHQ6IDMzcHg7IHRl
+eHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDMzcHg7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBhOmhv
+dmVyOjpiZWZvcmUsIC5zb2NpYWwtbmF2aWdhdGlvbiBhOmZvY3VzOjpiZWZvcmUgeyBjb2xvcjog
+cmdiKDAsIDEyMiwgMjA0KTsgfQoKLnNvY2lhbC1uYXZpZ2F0aW9uIGFbaHJlZio9ImNvZGVwZW4u
+aW8iXTo6YmVmb3JlIHsgY29udGVudDog74iWOyB9Cgouc29jaWFsLW5hdmlnYXRpb24gYVtocmVm
+Kj0iZGlnZy5jb20iXTo6YmVmb3JlIHsgY29udGVudDog74ihOyB9Cgouc29jaWFsLW5hdmlnYXRp
+b24gYVtocmVmKj0iZHJpYmJibGUuY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IgTsgfQoKLnNv
+Y2lhbC1uYXZpZ2F0aW9uIGFbaHJlZio9ImRyb3Bib3guY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6
+IO+IpTsgfQoKLnNvY2lhbC1uYXZpZ2F0aW9uIGFbaHJlZio9ImZhY2Vib29rLmNvbSJdOjpiZWZv
+cmUgeyBjb250ZW50OiDviIM7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBhW2hyZWYqPSJmbGlja3Iu
+Y29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IkTsgfQoKLnNvY2lhbC1uYXZpZ2F0aW9uIGFbaHJl
+Zio9ImZvdXJzcXVhcmUuY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IpjsgfQoKLnNvY2lhbC1u
+YXZpZ2F0aW9uIGFbaHJlZio9InBsdXMuZ29vZ2xlLmNvbSJdOjpiZWZvcmUgeyBjb250ZW50OiDv
+iIY7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBhW2hyZWYqPSJnaXRodWIuY29tIl06OmJlZm9yZSB7
+IGNvbnRlbnQ6IO+IgDsgfQoKLnNvY2lhbC1uYXZpZ2F0aW9uIGFbaHJlZio9Imluc3RhZ3JhbS5j
+b20iXTo6YmVmb3JlIHsgY29udGVudDog74iVOyB9Cgouc29jaWFsLW5hdmlnYXRpb24gYVtocmVm
+Kj0ibGlua2VkaW4uY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IiDsgfQoKLnNvY2lhbC1uYXZp
+Z2F0aW9uIGFbaHJlZio9InBhdGguY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+ImTsgfQoKLnNv
+Y2lhbC1uYXZpZ2F0aW9uIGFbaHJlZio9InBpbnRlcmVzdC5jb20iXTo6YmVmb3JlIHsgY29udGVu
+dDog74iQOyB9Cgouc29jaWFsLW5hdmlnYXRpb24gYVtocmVmKj0iZ2V0cG9ja2V0LmNvbSJdOjpi
+ZWZvcmUgeyBjb250ZW50OiDviKQ7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBhW2hyZWYqPSJwb2xs
+ZGFkZHkuY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IlzsgfQoKLnNvY2lhbC1uYXZpZ2F0aW9u
+IGFbaHJlZio9InJlZGRpdC5jb20iXTo6YmVmb3JlIHsgY29udGVudDog74iiOyB9Cgouc29jaWFs
+LW5hdmlnYXRpb24gYVtocmVmKj0ic2t5cGUuY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IoDsg
+fQoKLnNvY2lhbC1uYXZpZ2F0aW9uIGFbaHJlZio9InN0dW1ibGV1cG9uLmNvbSJdOjpiZWZvcmUg
+eyBjb250ZW50OiDviKM7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBhW2hyZWYqPSJ0dW1ibHIuY29t
+Il06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IlDsgfQoKLnNvY2lhbC1uYXZpZ2F0aW9uIGFbaHJlZio9
+InR3aXR0ZXIuY29tIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+IgjsgfQoKLnNvY2lhbC1uYXZpZ2F0
+aW9uIGFbaHJlZio9InZpbWVvLmNvbSJdOjpiZWZvcmUgeyBjb250ZW50OiDviJI7IH0KCi5zb2Np
+YWwtbmF2aWdhdGlvbiBhW2hyZWYqPSJ3b3JkcHJlc3MuY29tIl06OmJlZm9yZSwgLnNvY2lhbC1u
+YXZpZ2F0aW9uIGFbaHJlZio9IndvcmRwcmVzcy5vcmciXTo6YmVmb3JlIHsgY29udGVudDog74iF
+OyB9Cgouc29jaWFsLW5hdmlnYXRpb24gYVtocmVmKj0ieW91dHViZS5jb20iXTo6YmVmb3JlIHsg
+Y29udGVudDog74iTOyB9Cgouc29jaWFsLW5hdmlnYXRpb24gYVtocmVmXj0ibWFpbHRvOiJdOjpi
+ZWZvcmUgeyBjb250ZW50OiDvkJA7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBhW2hyZWYqPSJzcG90
+aWZ5LmNvbSJdOjpiZWZvcmUgeyBjb250ZW50OiDvlJU7IH0KCi5zb2NpYWwtbmF2aWdhdGlvbiBh
+W2hyZWYqPSJ0d2l0Y2gudHYiXTo6YmVmb3JlIHsgY29udGVudDog75SWOyB9Cgouc29jaWFsLW5h
+dmlnYXRpb24gYVtocmVmJD0iL2ZlZWQvIl06OmJlZm9yZSB7IGNvbnRlbnQ6IO+QkzsgfQoKLnBv
+c3QtbmF2aWdhdGlvbiB7IGJvcmRlci10b3Atd2lkdGg6IDRweDsgYm9yZGVyLXRvcC1zdHlsZTog
+c29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgYm9yZGVyLWJvdHRvbS13
+aWR0aDogNHB4OyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1jb2xv
+cjogcmdiKDI2LCAyNiwgMjYpOyBjbGVhcjogYm90aDsgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQs
+ICdoZWx2ZXRpY2EgbmV1ZScsIHNhbnMtc2VyaWY7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJp
+Z2h0OiA3LjY5MjMlOyBtYXJnaW4tYm90dG9tOiAzLjVlbTsgbWFyZ2luLWxlZnQ6IDcuNjkyMyU7
+IH0KCi5wb3N0LW5hdmlnYXRpb24gYSB7IGNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IGRpc3BsYXk6
+IGJsb2NrOyBwYWRkaW5nLXRvcDogMS43NWVtOyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmct
+Ym90dG9tOiAxLjc1ZW07IHBhZGRpbmctbGVmdDogMHB4OyB9CgoucG9zdC1uYXZpZ2F0aW9uIHNw
+YW4geyBkaXNwbGF5OiBibG9jazsgfQoKLnBvc3QtbmF2aWdhdGlvbiAubWV0YS1uYXYgeyBjb2xv
+cjogcmdiKDEwNCwgMTA0LCAxMDQpOyBmb250LXNpemU6IDAuODEyNXJlbTsgbGV0dGVyLXNwYWNp
+bmc6IDAuMDc2OTIzMDc3ZW07IGxpbmUtaGVpZ2h0OiAxLjYxNTM4NDYxNTQ7IG1hcmdpbi1ib3R0
+b206IDAuNTM4NDYxNTM4NWVtOyB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOyB9CgoucG9zdC1u
+YXZpZ2F0aW9uIC5wb3N0LXRpdGxlIHsgZGlzcGxheTogaW5saW5lOyBmb250LWZhbWlseTogTW9u
+dHNlcnJhdCwgJ2hlbHZldGljYSBuZXVlJywgc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxLjQzNzVy
+ZW07IGZvbnQtd2VpZ2h0OiA3MDA7IGxpbmUtaGVpZ2h0OiAxLjIxNzM5MTMwNDM7IHRleHQtcmVu
+ZGVyaW5nOiBvcHRpbWl6ZWxlZ2liaWxpdHk7IH0KCi5wb3N0LW5hdmlnYXRpb24gYTpob3ZlciAu
+cG9zdC10aXRsZSwgLnBvc3QtbmF2aWdhdGlvbiBhOmZvY3VzIC5wb3N0LXRpdGxlIHsgY29sb3I6
+IHJnYigwLCAxMjIsIDIwNCk7IH0KCi5wb3N0LW5hdmlnYXRpb24gZGl2ICsgZGl2IHsgYm9yZGVy
+LXRvcC13aWR0aDogNHB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xv
+cjogcmdiKDI2LCAyNiwgMjYpOyB9CgoucGFnaW5hdGlvbiB7IGJvcmRlci10b3Atd2lkdGg6IDRw
+eDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigyNiwgMjYs
+IDI2KTsgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRpY2EgbmV1ZScsIHNhbnMtc2Vy
+aWY7IGZvbnQtc2l6ZTogMS4xODc1cmVtOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDog
+Ny42OTIzJTsgbWFyZ2luLWJvdHRvbTogMi45NDczNjg0MjFlbTsgbWFyZ2luLWxlZnQ6IDcuNjky
+MyU7IG1pbi1oZWlnaHQ6IDU2cHg7IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoKLnBhZ2luYXRpb246
+OmJlZm9yZSwgLnBhZ2luYXRpb246OmFmdGVyIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI2LCAy
+NiwgMjYpOyBjb250ZW50OiAnJzsgaGVpZ2h0OiA1MnB4OyBwb3NpdGlvbjogYWJzb2x1dGU7IHRv
+cDogMHB4OyB3aWR0aDogNTJweDsgei1pbmRleDogMDsgfQoKLnBhZ2luYXRpb246OmJlZm9yZSB7
+IHJpZ2h0OiAwcHg7IH0KCi5wYWdpbmF0aW9uOjphZnRlciB7IHJpZ2h0OiA1NHB4OyB9CgoucGFn
+aW5hdGlvbiBhOmhvdmVyLCAucGFnaW5hdGlvbiBhOmZvY3VzIHsgY29sb3I6IHJnYigyNiwgMjYs
+IDI2KTsgfQoKLnBhZ2luYXRpb24gLm5hdi1saW5rcyB7IHBhZGRpbmctcmlnaHQ6IDEwNnB4OyBw
+b3NpdGlvbjogcmVsYXRpdmU7IH0KCi5wYWdpbmF0aW9uIC5uYXYtbGlua3M6OmJlZm9yZSwgLnBh
+Z2luYXRpb24gLm5hdi1saW5rczo6YWZ0ZXIgeyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBm
+b250LXNpemU6IDMycHg7IGxpbmUtaGVpZ2h0OiA1MXB4OyBvcGFjaXR5OiAwLjM7IHBvc2l0aW9u
+OiBhYnNvbHV0ZTsgd2lkdGg6IDUycHg7IHotaW5kZXg6IDE7IH0KCi5wYWdpbmF0aW9uIC5uYXYt
+bGlua3M6OmJlZm9yZSB7IGNvbnRlbnQ6IO+QqTsgcmlnaHQ6IC0xcHg7IH0KCi5wYWdpbmF0aW9u
+IC5uYXYtbGlua3M6OmFmdGVyIHsgY29udGVudDog75CwOyByaWdodDogNTVweDsgfQoKLnBhZ2lu
+YXRpb24gLmN1cnJlbnQgLnNjcmVlbi1yZWFkZXItdGV4dCB7IHBvc2l0aW9uOiBzdGF0aWMgIWlt
+cG9ydGFudDsgfQoKLnBhZ2luYXRpb24gLnBhZ2UtbnVtYmVycyB7IGRpc3BsYXk6IG5vbmU7IGxl
+dHRlci1zcGFjaW5nOiAwLjAxMzE1Nzg5NWVtOyBsaW5lLWhlaWdodDogMTsgbWFyZ2luLXRvcDog
+MHB4OyBtYXJnaW4tcmlnaHQ6IDAuNzM2ODQyMTA1M2VtOyBtYXJnaW4tYm90dG9tOiAwcHg7IG1h
+cmdpbi1sZWZ0OiAtMC43MzY4NDIxMDUzZW07IHBhZGRpbmctdG9wOiAwLjgxNTc4OTQ3MzdlbTsg
+cGFkZGluZy1yaWdodDogMC43MzY4NDIxMDUzZW07IHBhZGRpbmctYm90dG9tOiAwLjM5NDczNjg0
+MjFlbTsgcGFkZGluZy1sZWZ0OiAwLjczNjg0MjEwNTNlbTsgdGV4dC10cmFuc2Zvcm06IHVwcGVy
+Y2FzZTsgfQoKLnBhZ2luYXRpb24gLmN1cnJlbnQgeyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZv
+bnQtd2VpZ2h0OiA3MDA7IH0KCi5wYWdpbmF0aW9uIC5wcmV2LCAucGFnaW5hdGlvbiAubmV4dCB7
+IGJhY2tncm91bmQtY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgY29sb3I6IHJnYigyNTUsIDI1NSwg
+MjU1KTsgZGlzcGxheTogaW5saW5lLWJsb2NrOyBoZWlnaHQ6IDUycHg7IG1hcmdpbi10b3A6IDBw
+eDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBw
+eDsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IHBhZGRpbmctdG9wOiAw
+cHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0
+OiAwcHg7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9wOiAwcHg7IHdpZHRoOiA1MnB4OyB6LWluZGV4
+OiAyOyB9CgoucGFnaW5hdGlvbiAucHJldjo6YmVmb3JlLCAucGFnaW5hdGlvbiAubmV4dDo6YmVm
+b3JlIHsgZm9udC1zaXplOiAzMnB4OyBoZWlnaHQ6IDUzcHg7IGxpbmUtaGVpZ2h0OiA1MnB4OyBw
+b3NpdGlvbjogcmVsYXRpdmU7IHdpZHRoOiA1M3B4OyB9CgoucGFnaW5hdGlvbiAucHJldjpob3Zl
+ciwgLnBhZ2luYXRpb24gLnByZXY6Zm9jdXMsIC5wYWdpbmF0aW9uIC5uZXh0OmhvdmVyLCAucGFn
+aW5hdGlvbiAubmV4dDpmb2N1cyB7IGJhY2tncm91bmQtY29sb3I6IHJnYigwLCAxMjIsIDIwNCk7
+IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5wYWdpbmF0aW9uIC5wcmV2OmZvY3VzLCAu
+cGFnaW5hdGlvbiAubmV4dDpmb2N1cyB7IG91dGxpbmUtd2lkdGg6IDBweDsgb3V0bGluZS1zdHls
+ZTogaW5pdGlhbDsgb3V0bGluZS1jb2xvcjogaW5pdGlhbDsgfQoKLnBhZ2luYXRpb24gLnByZXYg
+eyByaWdodDogNTRweDsgfQoKLnBhZ2luYXRpb24gLnByZXY6OmJlZm9yZSB7IGNvbnRlbnQ6IO+Q
+sDsgbGVmdDogLTFweDsgdG9wOiAtMXB4OyB9CgoucGFnaW5hdGlvbiAubmV4dCB7IHJpZ2h0OiAw
+cHg7IH0KCi5wYWdpbmF0aW9uIC5uZXh0OjpiZWZvcmUgeyBjb250ZW50OiDvkKk7IHJpZ2h0OiAt
+MXB4OyB0b3A6IC0xcHg7IH0KCi5pbWFnZS1uYXZpZ2F0aW9uLCAuY29tbWVudC1uYXZpZ2F0aW9u
+IHsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVy
+LXRvcC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7
+IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjA5
+LCAyMDksIDIwOSk7IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IGZvbnQtZmFtaWx5OiBNb250
+c2VycmF0LCAnaGVsdmV0aWNhIG5ldWUnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDAuODEyNXJl
+bTsgbGluZS1oZWlnaHQ6IDEuNjE1Mzg0NjE1NDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmln
+aHQ6IDcuNjkyMyU7IG1hcmdpbi1ib3R0b206IDIuMTUzODQ2MTUzOGVtOyBtYXJnaW4tbGVmdDog
+Ny42OTIzJTsgcGFkZGluZy10b3A6IDEuMDc2OTIzMDc2OWVtOyBwYWRkaW5nLXJpZ2h0OiAwcHg7
+IHBhZGRpbmctYm90dG9tOiAxLjA3NjkyMzA3NjllbTsgcGFkZGluZy1sZWZ0OiAwcHg7IH0KCi5j
+b21tZW50LW5hdmlnYXRpb24geyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsg
+fQoKLmNvbW1lbnRzLXRpdGxlICsgLmNvbW1lbnQtbmF2aWdhdGlvbiB7IGJvcmRlci1ib3R0b20t
+d2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWJvdHRvbS1j
+b2xvcjogaW5pdGlhbDsgbWFyZ2luLWJvdHRvbTogMHB4OyB9CgouaW1hZ2UtbmF2aWdhdGlvbiAu
+bmF2LXByZXZpb3VzOm5vdCg6ZW1wdHkpLCAuaW1hZ2UtbmF2aWdhdGlvbiAubmF2LW5leHQ6bm90
+KDplbXB0eSksIC5jb21tZW50LW5hdmlnYXRpb24gLm5hdi1wcmV2aW91czpub3QoOmVtcHR5KSwg
+LmNvbW1lbnQtbmF2aWdhdGlvbiAubmF2LW5leHQ6bm90KDplbXB0eSkgeyBkaXNwbGF5OiBpbmxp
+bmUtYmxvY2s7IH0KCi5pbWFnZS1uYXZpZ2F0aW9uIC5uYXYtcHJldmlvdXM6bm90KDplbXB0eSkg
+KyAubmF2LW5leHQ6bm90KDplbXB0eSk6OmJlZm9yZSwgLmNvbW1lbnQtbmF2aWdhdGlvbiAubmF2
+LXByZXZpb3VzOm5vdCg6ZW1wdHkpICsgLm5hdi1uZXh0Om5vdCg6ZW1wdHkpOjpiZWZvcmUgeyBj
+b250ZW50OiAnLyc7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgb3BhY2l0eTogMC43OyBwYWRkaW5n
+LXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAwLjUzODQ2MTUzOGVtOyBwYWRkaW5nLWJvdHRvbTog
+MHB4OyBwYWRkaW5nLWxlZnQ6IDAuNTM4NDYxNTM4ZW07IH0KCi5zYXlzLCAuc2NyZWVuLXJlYWRl
+ci10ZXh0IHsgY2xpcDogcmVjdCgxcHggMXB4IDFweCAxcHgpOyBoZWlnaHQ6IDFweDsgb3ZlcmZs
+b3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IHBvc2l0aW9uOiBhYnNvbHV0ZSAhaW1w
+b3J0YW50OyB3aWR0aDogMXB4OyB3b3JkLXdyYXA6IG5vcm1hbCAhaW1wb3J0YW50OyB9Cgouc2l0
+ZSAuc2tpcC1saW5rIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0MSwgMjQxLCAyNDEpOyBib3gt
+c2hhZG93OiByZ2JhKDAsIDAsIDAsIDAuMTk5MjE5KSAwcHggMHB4IDFweCAxcHg7IGNvbG9yOiBy
+Z2IoMzMsIDExNywgMTU1KTsgZGlzcGxheTogYmxvY2s7IGZvbnQtZmFtaWx5OiBNb250c2VycmF0
+LCAnaGVsdmV0aWNhIG5ldWUnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDE0cHg7IGZvbnQtd2Vp
+Z2h0OiA3MDA7IGxlZnQ6IC05OTk5ZW07IG91dGxpbmUtc3R5bGU6IG5vbmU7IG91dGxpbmUtd2lk
+dGg6IGluaXRpYWw7IG91dGxpbmUtY29sb3I6IGluaXRpYWw7IHBhZGRpbmctdG9wOiAxNXB4OyBw
+YWRkaW5nLXJpZ2h0OiAyM3B4OyBwYWRkaW5nLWJvdHRvbTogMTRweDsgcGFkZGluZy1sZWZ0OiAy
+M3B4OyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IHRleHQtdHJhbnNmb3JtOiBub25lOyB0b3A6IC05
+OTk5ZW07IH0KCi5sb2dnZWQtaW4gLnNpdGUgLnNraXAtbGluayB7IGJveC1zaGFkb3c6IHJnYmEo
+MCwgMCwgMCwgMC4xOTkyMTkpIDBweCAwcHggMnB4IDJweDsgZm9udC1mYW1pbHk6ICdvcGVuIHNh
+bnMnLCBzYW5zLXNlcmlmOyB9Cgouc2l0ZSAuc2tpcC1saW5rOmZvY3VzIHsgY2xpcDogYXV0bzsg
+aGVpZ2h0OiBhdXRvOyBsZWZ0OiA2cHg7IHRvcDogN3B4OyB3aWR0aDogYXV0bzsgei1pbmRleDog
+MTAwMDAwOyB9CgouYWxpZ25sZWZ0IHsgZmxvYXQ6IGxlZnQ7IG1hcmdpbi10b3A6IDAuMzc1ZW07
+IG1hcmdpbi1yaWdodDogMS43NWVtOyBtYXJnaW4tYm90dG9tOiAxLjc1ZW07IG1hcmdpbi1sZWZ0
+OiAwcHg7IH0KCi5hbGlnbnJpZ2h0IHsgZmxvYXQ6IHJpZ2h0OyBtYXJnaW4tdG9wOiAwLjM3NWVt
+OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMS43NWVtOyBtYXJnaW4tbGVmdDog
+MS43NWVtOyB9CgouYWxpZ25jZW50ZXIgeyBjbGVhcjogYm90aDsgZGlzcGxheTogYmxvY2s7IG1h
+cmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiBhdXRvOyBtYXJnaW4tYm90dG9tOiAxLjc1ZW07
+IG1hcmdpbi1sZWZ0OiBhdXRvOyB9CgpibG9ja3F1b3RlLmFsaWdubGVmdCB7IG1hcmdpbi10b3A6
+IDAuMzE1Nzg5NDczN2VtOyBtYXJnaW4tcmlnaHQ6IDEuNDczNjg0MjEwNWVtOyBtYXJnaW4tYm90
+dG9tOiAxLjQ3MzY4NDIxMWVtOyBtYXJnaW4tbGVmdDogMHB4OyB9CgpibG9ja3F1b3RlLmFsaWdu
+cmlnaHQgeyBtYXJnaW4tdG9wOiAwLjMxNTc4OTQ3MzdlbTsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1h
+cmdpbi1ib3R0b206IDEuNDczNjg0MjExZW07IG1hcmdpbi1sZWZ0OiAxLjQ3MzY4NDIxMDVlbTsg
+fQoKYmxvY2txdW90ZS5hbGlnbmNlbnRlciB7IG1hcmdpbi1ib3R0b206IDEuNDczNjg0MjExZW07
+IH0KCi5jbGVhcjo6YmVmb3JlLCAuY2xlYXI6OmFmdGVyLCBibG9ja3F1b3RlOjpiZWZvcmUsIGJs
+b2NrcXVvdGU6OmFmdGVyLCAuZW50cnktY29udGVudDo6YmVmb3JlLCAuZW50cnktY29udGVudDo6
+YWZ0ZXIsIC5lbnRyeS1zdW1tYXJ5OjpiZWZvcmUsIC5lbnRyeS1zdW1tYXJ5OjphZnRlciwgLmNv
+bW1lbnQtY29udGVudDo6YmVmb3JlLCAuY29tbWVudC1jb250ZW50OjphZnRlciwgLnNpdGUtY29u
+dGVudDo6YmVmb3JlLCAuc2l0ZS1jb250ZW50OjphZnRlciwgLnNpdGUtbWFpbiA+IGFydGljbGU6
+OmJlZm9yZSwgLnNpdGUtbWFpbiA+IGFydGljbGU6OmFmdGVyLCAucHJpbWFyeS1tZW51OjpiZWZv
+cmUsIC5wcmltYXJ5LW1lbnU6OmFmdGVyLCAuc29jaWFsLWxpbmtzLW1lbnU6OmJlZm9yZSwgLnNv
+Y2lhbC1saW5rcy1tZW51OjphZnRlciwgLnRleHR3aWRnZXQ6OmJlZm9yZSwgLnRleHR3aWRnZXQ6
+OmFmdGVyLCAuY29udGVudC1ib3R0b20td2lkZ2V0czo6YmVmb3JlLCAuY29udGVudC1ib3R0b20t
+d2lkZ2V0czo6YWZ0ZXIgeyBjb250ZW50OiAnJzsgZGlzcGxheTogdGFibGU7IH0KCi5jbGVhcjo6
+YWZ0ZXIsIGJsb2NrcXVvdGU6OmFmdGVyLCAuZW50cnktY29udGVudDo6YWZ0ZXIsIC5lbnRyeS1z
+dW1tYXJ5OjphZnRlciwgLmNvbW1lbnQtY29udGVudDo6YWZ0ZXIsIC5zaXRlLWNvbnRlbnQ6OmFm
+dGVyLCAuc2l0ZS1tYWluID4gYXJ0aWNsZTo6YWZ0ZXIsIC5wcmltYXJ5LW1lbnU6OmFmdGVyLCAu
+c29jaWFsLWxpbmtzLW1lbnU6OmFmdGVyLCAudGV4dHdpZGdldDo6YWZ0ZXIsIC5jb250ZW50LWJv
+dHRvbS13aWRnZXRzOjphZnRlciB7IGNsZWFyOiBib3RoOyB9Cgoud2lkZ2V0IHsgYm9yZGVyLXRv
+cC13aWR0aDogNHB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjog
+cmdiKDI2LCAyNiwgMjYpOyBtYXJnaW4tYm90dG9tOiAzLjVlbTsgcGFkZGluZy10b3A6IDEuNzVl
+bTsgfQoKLndpZGdldC1hcmVhID4gOmxhc3QtY2hpbGQsIC53aWRnZXQgPiA6bGFzdC1jaGlsZCB7
+IG1hcmdpbi1ib3R0b206IDBweDsgfQoKLndpZGdldCAud2lkZ2V0LXRpdGxlIHsgZm9udC1mYW1p
+bHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRpY2EgbmV1ZScsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTog
+MXJlbTsgbGV0dGVyLXNwYWNpbmc6IDAuMDQ2ODc1ZW07IGxpbmUtaGVpZ2h0OiAxLjMxMjU7IG1h
+cmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDEuNzVlbTsg
+bWFyZ2luLWxlZnQ6IDBweDsgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsgfQoKLndpZGdldCAu
+d2lkZ2V0LXRpdGxlOmVtcHR5IHsgbWFyZ2luLWJvdHRvbTogMHB4OyB9Cgoud2lkZ2V0LXRpdGxl
+IGEgeyBjb2xvcjogcmdiKDI2LCAyNiwgMjYpOyB9Cgoud2lkZ2V0LndpZGdldF9jYWxlbmRhciB0
+YWJsZSB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206
+IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLndpZGdldF9jYWxlbmRhciB0ZCwgLndpZGdldF9j
+YWxlbmRhciB0aCB7IGxpbmUtaGVpZ2h0OiAyLjU2MjU7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRp
+bmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IHRl
+eHQtYWxpZ246IGNlbnRlcjsgfQoKLndpZGdldF9jYWxlbmRhciBjYXB0aW9uIHsgZm9udC13ZWln
+aHQ6IDkwMDsgbWFyZ2luLWJvdHRvbTogMS43NWVtOyB9Cgoud2lkZ2V0X2NhbGVuZGFyIHRib2R5
+IGEgeyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMCwgMTIyLCAyMDQpOyBjb2xvcjogcmdiKDI1NSwg
+MjU1LCAyNTUpOyBkaXNwbGF5OiBibG9jazsgZm9udC13ZWlnaHQ6IDcwMDsgfQoKLndpZGdldF9j
+YWxlbmRhciB0Ym9keSBhOmhvdmVyLCAud2lkZ2V0X2NhbGVuZGFyIHRib2R5IGE6Zm9jdXMgeyBi
+YWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IGNvbG9yOiByZ2IoMjU1LCAyNTUs
+IDI1NSk7IH0KCi53aWRnZXRfcmVjZW50X2VudHJpZXMgLnBvc3QtZGF0ZSB7IGNvbG9yOiByZ2Io
+MTA0LCAxMDQsIDEwNCk7IGRpc3BsYXk6IGJsb2NrOyBmb250LWZhbWlseTogTW9udHNlcnJhdCwg
+J2hlbHZldGljYSBuZXVlJywgc2Fucy1zZXJpZjsgZm9udC1zaXplOiAwLjgxMjVyZW07IGxpbmUt
+aGVpZ2h0OiAxLjYxNTM4NDYxNTsgbWFyZ2luLWJvdHRvbTogMC41Mzg0NjE1MzhlbTsgfQoKLndp
+ZGdldF9yZWNlbnRfZW50cmllcyBsaTpsYXN0LWNoaWxkIC5wb3N0LWRhdGUgeyBtYXJnaW4tYm90
+dG9tOiAwcHg7IH0KCi53aWRnZXRfcnNzIC5yc3N3aWRnZXQgaW1nIHsgbWFyZ2luLXRvcDogLTAu
+Mzc1ZW07IH0KCi53aWRnZXRfcnNzIC5yc3MtZGF0ZSwgLndpZGdldF9yc3MgY2l0ZSB7IGNvbG9y
+OiByZ2IoMTA0LCAxMDQsIDEwNCk7IGRpc3BsYXk6IGJsb2NrOyBmb250LWZhbWlseTogTW9udHNl
+cnJhdCwgJ2hlbHZldGljYSBuZXVlJywgc2Fucy1zZXJpZjsgZm9udC1zaXplOiAwLjgxMjVyZW07
+IGZvbnQtc3R5bGU6IG5vcm1hbDsgbGluZS1oZWlnaHQ6IDEuNjE1Mzg0NjE1OyBtYXJnaW4tYm90
+dG9tOiAwLjUzODQ2MTUzOGVtOyB9Cgoud2lkZ2V0X3JzcyAucnNzU3VtbWFyeTpsYXN0LWNoaWxk
+IHsgbWFyZ2luLWJvdHRvbTogMi4xNTM4NDYxNTM4ZW07IH0KCi53aWRnZXRfcnNzIGxpOmxhc3Qt
+Y2hpbGQgOmxhc3QtY2hpbGQgeyBtYXJnaW4tYm90dG9tOiAwcHg7IH0KCi50YWdjbG91ZCBhIHsg
+Ym9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJv
+dHRvbS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxl
+OiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTog
+c29saWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIw
+OSwgMjA5LCAyMDkpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9y
+ZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItbGVmdC1jb2xvcjog
+cmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGJvcmRlci10b3AtbGVm
+dC1yYWRpdXM6IDJweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDJweDsgYm9yZGVyLWJvdHRv
+bS1yaWdodC1yYWRpdXM6IDJweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMnB4OyBkaXNw
+bGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtZmFtaWx5OiBNb250c2VycmF0LCAnaGVsdmV0aWNhIG5l
+dWUnLCBzYW5zLXNlcmlmOyBsaW5lLWhlaWdodDogMTsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4t
+cmlnaHQ6IDAuMTg3NWVtOyBtYXJnaW4tYm90dG9tOiAwLjQzNzVlbTsgbWFyZ2luLWxlZnQ6IDBw
+eDsgcGFkZGluZy10b3A6IDAuNTYyNWVtOyBwYWRkaW5nLXJpZ2h0OiAwLjQzNzVlbTsgcGFkZGlu
+Zy1ib3R0b206IDAuNWVtOyBwYWRkaW5nLWxlZnQ6IDAuNDM3NWVtOyB9CgoudGFnY2xvdWQgdWwg
+eyBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCi50YWdjbG91ZCB1
+bCBsaSB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgfQoKLnRhZ2Nsb3VkIGE6aG92ZXIsIC50YWdj
+bG91ZCBhOmZvY3VzIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDAsIDEyMiwgMjA0KTsgYm9yZGVy
+LXJpZ2h0LWNvbG9yOiByZ2IoMCwgMTIyLCAyMDQpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2Io
+MCwgMTIyLCAyMDQpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDAsIDEyMiwgMjA0KTsgY29sb3I6
+IHJnYigwLCAxMjIsIDIwNCk7IG91dGxpbmUtd2lkdGg6IDBweDsgb3V0bGluZS1zdHlsZTogaW5p
+dGlhbDsgb3V0bGluZS1jb2xvcjogaW5pdGlhbDsgfQoKLnNpdGUgeyBiYWNrZ3JvdW5kLWNvbG9y
+OiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5zaXRlLWlubmVyIHsgbWFyZ2luLXRvcDogMHB4OyBt
+YXJnaW4tcmlnaHQ6IGF1dG87IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IGF1dG87
+IG1heC13aWR0aDogMTMyMHB4OyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KCi5zaXRlLWNvbnRlbnQg
+eyB3b3JkLXdyYXA6IGJyZWFrLXdvcmQ7IH0KCiNjb250ZW50W3RhYmluZGV4PSItMSJdOmZvY3Vz
+IHsgb3V0bGluZS13aWR0aDogMHB4OyBvdXRsaW5lLXN0eWxlOiBpbml0aWFsOyBvdXRsaW5lLWNv
+bG9yOiBpbml0aWFsOyB9Cgouc2l0ZS1tYWluIHsgbWFyZ2luLWJvdHRvbTogMy41ZW07IH0KCi5z
+aXRlLW1haW4gPiA6bGFzdC1jaGlsZCB7IG1hcmdpbi1ib3R0b206IDBweDsgfQoKLnNpdGUtaGVh
+ZGVyIHsgcGFkZGluZy10b3A6IDIuNjI1ZW07IHBhZGRpbmctcmlnaHQ6IDcuNjkyMyU7IHBhZGRp
+bmctYm90dG9tOiAyLjYyNWVtOyBwYWRkaW5nLWxlZnQ6IDcuNjkyMyU7IH0KCi5zaXRlLWhlYWRl
+ci1tYWluIHsgLXdlYmtpdC1hbGlnbi1pdGVtczogY2VudGVyOyAtd2Via2l0LWZsZXgtd3JhcDog
+d3JhcDsgfQoKLnNpdGUtYnJhbmRpbmcgeyBtYXJnaW4tdG9wOiAwLjg3NWVtOyBtYXJnaW4tcmln
+aHQ6IGF1dG87IG1hcmdpbi1ib3R0b206IDAuODc1ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IG1heC13
+aWR0aDogMTAwJTsgbWluLXdpZHRoOiAwcHg7IG92ZXJmbG93LXg6IGhpZGRlbjsgb3ZlcmZsb3ct
+eTogaGlkZGVuOyB9CgouY3VzdG9tLWxvZ28tbGluayB7IGRpc3BsYXk6IGJsb2NrOyB9CgouY3Vz
+dG9tLWxvZ28geyBtYXgtd2lkdGg6IDE4MHB4OyB9Cgouc2l0ZS10aXRsZSB7IGZvbnQtZmFtaWx5
+OiBNb250c2VycmF0LCAnaGVsdmV0aWNhIG5ldWUnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEu
+NDM3NXJlbTsgZm9udC13ZWlnaHQ6IDcwMDsgbGluZS1oZWlnaHQ6IDEuMjE3MzkxMzA0MzsgbWFy
+Z2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJn
+aW4tbGVmdDogMHB4OyB9Cgouc2l0ZS1icmFuZGluZyAuc2l0ZS10aXRsZSBhIHsgY29sb3I6IHJn
+YigyNiwgMjYsIDI2KTsgfQoKLnNpdGUtYnJhbmRpbmcgLnNpdGUtdGl0bGUgYTpob3ZlciwgLnNp
+dGUtYnJhbmRpbmcgLnNpdGUtdGl0bGUgYTpmb2N1cyB7IGNvbG9yOiByZ2IoMCwgMTIyLCAyMDQp
+OyB9Cgoud3AtY3VzdG9tLWxvZ28gLnNpdGUtdGl0bGUgeyBtYXJnaW4tdG9wOiAwLjYwODY5NTY1
+MmVtOyB9Cgouc2l0ZS1kZXNjcmlwdGlvbiB7IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IGRp
+c3BsYXk6IG5vbmU7IGZvbnQtc2l6ZTogMC44MTI1cmVtOyBmb250LXdlaWdodDogNDAwOyBsaW5l
+LWhlaWdodDogMS4wNzY5MjMwNzY5OyBtYXJnaW4tdG9wOiAwLjUzODQ2MTUzOGVtOyBtYXJnaW4t
+cmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9CgoubWVu
+dS10b2dnbGUgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXRvcC13aWR0
+aDogMXB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4
+OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVy
+LXJpZ2h0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1s
+ZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkpOyBi
+b3JkZXItcmlnaHQtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLWJvdHRvbS1jb2xv
+cjogcmdiKDIwOSwgMjA5LCAyMDkpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIwOSwgMjA5LCAy
+MDkpOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IGZvbnQt
+c2l6ZTogMC44MTI1cmVtOyBtYXJnaW4tdG9wOiAxLjA3NjkyMzA3N2VtOyBtYXJnaW4tcmlnaHQ6
+IDBweDsgbWFyZ2luLWJvdHRvbTogMS4wNzY5MjMwNzdlbTsgbWFyZ2luLWxlZnQ6IDBweDsgcGFk
+ZGluZy10b3A6IDAuNzY5MjMwNzY5ZW07IHBhZGRpbmctcmlnaHQ6IDAuNzY5MjMwNzY5ZW07IHBh
+ZGRpbmctYm90dG9tOiAwLjc2OTIzMDc2OWVtOyBwYWRkaW5nLWxlZnQ6IDAuNzY5MjMwNzY5ZW07
+IH0KCi5uby1qcyAubWVudS10b2dnbGUgeyBkaXNwbGF5OiBub25lOyB9CgoubWVudS10b2dnbGU6
+aG92ZXIsIC5tZW51LXRvZ2dsZTpmb2N1cyB7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50
+OyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMCwgMTIyLCAyMDQpOyBib3JkZXItcmlnaHQtY29sb3I6
+IHJnYigwLCAxMjIsIDIwNCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigwLCAxMjIsIDIwNCk7
+IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMCwgMTIyLCAyMDQpOyBjb2xvcjogcmdiKDAsIDEyMiwg
+MjA0KTsgfQoKLm1lbnUtdG9nZ2xlLnRvZ2dsZWQtb24sIC5tZW51LXRvZ2dsZS50b2dnbGVkLW9u
+OmhvdmVyLCAubWVudS10b2dnbGUudG9nZ2xlZC1vbjpmb2N1cyB7IGJhY2tncm91bmQtY29sb3I6
+IHJnYigyNiwgMjYsIDI2KTsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDI2LCAyNiwgMjYpOyBib3Jk
+ZXItcmlnaHQtY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdi
+KDI2LCAyNiwgMjYpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDI2LCAyNiwgMjYpOyBjb2xvcjog
+cmdiKDI1NSwgMjU1LCAyNTUpOyB9CgoubWVudS10b2dnbGU6Zm9jdXMgeyBvdXRsaW5lLXdpZHRo
+OiAwcHg7IG91dGxpbmUtc3R5bGU6IGluaXRpYWw7IG91dGxpbmUtY29sb3I6IGluaXRpYWw7IH0K
+Ci5tZW51LXRvZ2dsZS50b2dnbGVkLW9uOmZvY3VzIHsgb3V0bGluZS13aWR0aDogdGhpbjsgb3V0
+bGluZS1zdHlsZTogZG90dGVkOyBvdXRsaW5lLWNvbG9yOiBpbml0aWFsOyB9CgouaGVhZGVyLWlt
+YWdlIHsgY2xlYXI6IGJvdGg7IG1hcmdpbi10b3A6IDAuODc1ZW07IG1hcmdpbi1yaWdodDogMHB4
+OyBtYXJnaW4tYm90dG9tOiAwLjg3NWVtOyBtYXJnaW4tbGVmdDogMHB4OyB9CgouaGVhZGVyLWlt
+YWdlIGEgeyBkaXNwbGF5OiBibG9jazsgfQoKLmhlYWRlci1pbWFnZSBhOmhvdmVyIGltZywgLmhl
+YWRlci1pbWFnZSBhOmZvY3VzIGltZyB7IG9wYWNpdHk6IDAuODU7IH0KCi5zaXRlLW1haW4gPiBh
+cnRpY2xlIHsgbWFyZ2luLWJvdHRvbTogMy41ZW07IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoKLmVu
+dHJ5LWhlYWRlciwgLmVudHJ5LXN1bW1hcnksIC5lbnRyeS1jb250ZW50LCAuZW50cnktZm9vdGVy
+LCAucGFnZS1jb250ZW50IHsgbWFyZ2luLXJpZ2h0OiA3LjY5MjMlOyBtYXJnaW4tbGVmdDogNy42
+OTIzJTsgfQoKLmVudHJ5LXRpdGxlIHsgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRp
+Y2EgbmV1ZScsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMS43NXJlbTsgZm9udC13ZWlnaHQ6IDcw
+MDsgbGluZS1oZWlnaHQ6IDEuMjU7IG1hcmdpbi1ib3R0b206IDFlbTsgfQoKLmVudHJ5LXRpdGxl
+IGEgeyBjb2xvcjogcmdiKDI2LCAyNiwgMjYpOyB9CgouZW50cnktdGl0bGUgYTpob3ZlciwgLmVu
+dHJ5LXRpdGxlIGE6Zm9jdXMgeyBjb2xvcjogcmdiKDAsIDEyMiwgMjA0KTsgfQoKLnBvc3QtdGh1
+bWJuYWlsIHsgZGlzcGxheTogYmxvY2s7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiA3
+LjY5MjMlOyBtYXJnaW4tYm90dG9tOiAxLjc1ZW07IG1hcmdpbi1sZWZ0OiA3LjY5MjMlOyB9Cgou
+cG9zdC10aHVtYm5haWwgaW1nIHsgZGlzcGxheTogYmxvY2s7IH0KCi5uby1zaWRlYmFyIC5wb3N0
+LXRodW1ibmFpbCBpbWcgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogYXV0bzsgbWFy
+Z2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogYXV0bzsgfQoKYS5wb3N0LXRodW1ibmFpbDpo
+b3ZlciwgYS5wb3N0LXRodW1ibmFpbDpmb2N1cyB7IG9wYWNpdHk6IDAuODU7IH0KCi5lbnRyeS1j
+b250ZW50LCAuZW50cnktc3VtbWFyeSB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDksIDIwOSwg
+MjA5KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1ib3R0
+b20tY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMDks
+IDIwOSwgMjA5KTsgfQoKLmVudHJ5LWNvbnRlbnQgaDEsIC5lbnRyeS1zdW1tYXJ5IGgxLCAuY29t
+bWVudC1jb250ZW50IGgxLCAudGV4dHdpZGdldCBoMSB7IGZvbnQtc2l6ZTogMS43NXJlbTsgbGlu
+ZS1oZWlnaHQ6IDEuMjU7IG1hcmdpbi10b3A6IDJlbTsgbWFyZ2luLWJvdHRvbTogMWVtOyB9Cgou
+ZW50cnktY29udGVudCBoMiwgLmVudHJ5LXN1bW1hcnkgaDIsIC5jb21tZW50LWNvbnRlbnQgaDIs
+IC50ZXh0d2lkZ2V0IGgyIHsgZm9udC1zaXplOiAxLjQzNzVyZW07IGxpbmUtaGVpZ2h0OiAxLjIx
+NzM5MTMwNDM7IG1hcmdpbi10b3A6IDIuNDM0NzgyNjA4N2VtOyBtYXJnaW4tYm90dG9tOiAxLjIx
+NzM5MTMwNDNlbTsgfQoKLmVudHJ5LWNvbnRlbnQgaDMsIC5lbnRyeS1zdW1tYXJ5IGgzLCAuY29t
+bWVudC1jb250ZW50IGgzLCAudGV4dHdpZGdldCBoMyB7IGZvbnQtc2l6ZTogMS4xODc1cmVtOyBs
+aW5lLWhlaWdodDogMS4xMDUyNjMxNTc5OyBtYXJnaW4tdG9wOiAyLjk0NzM2ODQyMTFlbTsgbWFy
+Z2luLWJvdHRvbTogMS40NzM2ODQyMTA1ZW07IH0KCi5lbnRyeS1jb250ZW50IGg0LCAuZW50cnkt
+Y29udGVudCBoNSwgLmVudHJ5LWNvbnRlbnQgaDYsIC5lbnRyeS1zdW1tYXJ5IGg0LCAuZW50cnkt
+c3VtbWFyeSBoNSwgLmVudHJ5LXN1bW1hcnkgaDYsIC5jb21tZW50LWNvbnRlbnQgaDQsIC5jb21t
+ZW50LWNvbnRlbnQgaDUsIC5jb21tZW50LWNvbnRlbnQgaDYsIC50ZXh0d2lkZ2V0IGg0LCAudGV4
+dHdpZGdldCBoNSwgLnRleHR3aWRnZXQgaDYgeyBmb250LXNpemU6IDFyZW07IGxpbmUtaGVpZ2h0
+OiAxLjMxMjU7IG1hcmdpbi10b3A6IDMuNWVtOyBtYXJnaW4tYm90dG9tOiAxLjc1ZW07IH0KCi5l
+bnRyeS1jb250ZW50IGg0LCAuZW50cnktc3VtbWFyeSBoNCwgLmNvbW1lbnQtY29udGVudCBoNCwg
+LnRleHR3aWRnZXQgaDQgeyBsZXR0ZXItc3BhY2luZzogMC4xNDA2MjVlbTsgdGV4dC10cmFuc2Zv
+cm06IHVwcGVyY2FzZTsgfQoKLmVudHJ5LWNvbnRlbnQgaDYsIC5lbnRyeS1zdW1tYXJ5IGg2LCAu
+Y29tbWVudC1jb250ZW50IGg2LCAudGV4dHdpZGdldCBoNiB7IGZvbnQtc3R5bGU6IGl0YWxpYzsg
+fQoKLmVudHJ5LWNvbnRlbnQgaDEsIC5lbnRyeS1jb250ZW50IGgyLCAuZW50cnktY29udGVudCBo
+MywgLmVudHJ5LWNvbnRlbnQgaDQsIC5lbnRyeS1jb250ZW50IGg1LCAuZW50cnktY29udGVudCBo
+NiwgLmVudHJ5LXN1bW1hcnkgaDEsIC5lbnRyeS1zdW1tYXJ5IGgyLCAuZW50cnktc3VtbWFyeSBo
+MywgLmVudHJ5LXN1bW1hcnkgaDQsIC5lbnRyeS1zdW1tYXJ5IGg1LCAuZW50cnktc3VtbWFyeSBo
+NiwgLmNvbW1lbnQtY29udGVudCBoMSwgLmNvbW1lbnQtY29udGVudCBoMiwgLmNvbW1lbnQtY29u
+dGVudCBoMywgLmNvbW1lbnQtY29udGVudCBoNCwgLmNvbW1lbnQtY29udGVudCBoNSwgLmNvbW1l
+bnQtY29udGVudCBoNiwgLnRleHR3aWRnZXQgaDEsIC50ZXh0d2lkZ2V0IGgyLCAudGV4dHdpZGdl
+dCBoMywgLnRleHR3aWRnZXQgaDQsIC50ZXh0d2lkZ2V0IGg1LCAudGV4dHdpZGdldCBoNiB7IGZv
+bnQtd2VpZ2h0OiA5MDA7IH0KCi5lbnRyeS1jb250ZW50IGgxOmZpcnN0LWNoaWxkLCAuZW50cnkt
+Y29udGVudCBoMjpmaXJzdC1jaGlsZCwgLmVudHJ5LWNvbnRlbnQgaDM6Zmlyc3QtY2hpbGQsIC5l
+bnRyeS1jb250ZW50IGg0OmZpcnN0LWNoaWxkLCAuZW50cnktY29udGVudCBoNTpmaXJzdC1jaGls
+ZCwgLmVudHJ5LWNvbnRlbnQgaDY6Zmlyc3QtY2hpbGQsIC5lbnRyeS1zdW1tYXJ5IGgxOmZpcnN0
+LWNoaWxkLCAuZW50cnktc3VtbWFyeSBoMjpmaXJzdC1jaGlsZCwgLmVudHJ5LXN1bW1hcnkgaDM6
+Zmlyc3QtY2hpbGQsIC5lbnRyeS1zdW1tYXJ5IGg0OmZpcnN0LWNoaWxkLCAuZW50cnktc3VtbWFy
+eSBoNTpmaXJzdC1jaGlsZCwgLmVudHJ5LXN1bW1hcnkgaDY6Zmlyc3QtY2hpbGQsIC5jb21tZW50
+LWNvbnRlbnQgaDE6Zmlyc3QtY2hpbGQsIC5jb21tZW50LWNvbnRlbnQgaDI6Zmlyc3QtY2hpbGQs
+IC5jb21tZW50LWNvbnRlbnQgaDM6Zmlyc3QtY2hpbGQsIC5jb21tZW50LWNvbnRlbnQgaDQ6Zmly
+c3QtY2hpbGQsIC5jb21tZW50LWNvbnRlbnQgaDU6Zmlyc3QtY2hpbGQsIC5jb21tZW50LWNvbnRl
+bnQgaDY6Zmlyc3QtY2hpbGQsIC50ZXh0d2lkZ2V0IGgxOmZpcnN0LWNoaWxkLCAudGV4dHdpZGdl
+dCBoMjpmaXJzdC1jaGlsZCwgLnRleHR3aWRnZXQgaDM6Zmlyc3QtY2hpbGQsIC50ZXh0d2lkZ2V0
+IGg0OmZpcnN0LWNoaWxkLCAudGV4dHdpZGdldCBoNTpmaXJzdC1jaGlsZCwgLnRleHR3aWRnZXQg
+aDY6Zmlyc3QtY2hpbGQgeyBtYXJnaW4tdG9wOiAwcHg7IH0KCi5wb3N0LW5hdmlnYXRpb24gLnBv
+c3QtdGl0bGUsIC5lbnRyeS10aXRsZSwgLmNvbW1lbnRzLXRpdGxlIHsgLXdlYmtpdC1oeXBoZW5z
+OiBhdXRvOyB9Cgpib2R5Om5vdCguc2VhcmNoLXJlc3VsdHMpIC5lbnRyeS1zdW1tYXJ5IHsgY29s
+b3I6IHJnYigxMDQsIDEwNCwgMTA0KTsgZm9udC1zaXplOiAxLjE4NzVyZW07IGxpbmUtaGVpZ2h0
+OiAxLjQ3MzY4NDIxMDU7IG1hcmdpbi1ib3R0b206IDEuNDczNjg0MjEwNWVtOyB9Cgpib2R5Om5v
+dCguc2VhcmNoLXJlc3VsdHMpIC5lbnRyeS1oZWFkZXIgKyAuZW50cnktc3VtbWFyeSB7IG1hcmdp
+bi10b3A6IC0wLjczNjg0MjEwNWVtOyB9Cgpib2R5Om5vdCguc2VhcmNoLXJlc3VsdHMpIC5lbnRy
+eS1zdW1tYXJ5IHAsIGJvZHk6bm90KC5zZWFyY2gtcmVzdWx0cykgLmVudHJ5LXN1bW1hcnkgYWRk
+cmVzcywgYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50cnktc3VtbWFyeSBociwgYm9keTpu
+b3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50cnktc3VtbWFyeSB1bCwgYm9keTpub3QoLnNlYXJjaC1y
+ZXN1bHRzKSAuZW50cnktc3VtbWFyeSBvbCwgYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50
+cnktc3VtbWFyeSBkbCwgYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50cnktc3VtbWFyeSBk
+ZCwgYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50cnktc3VtbWFyeSB0YWJsZSB7IG1hcmdp
+bi1ib3R0b206IDEuNDczNjg0MjEwNWVtOyB9Cgpib2R5Om5vdCguc2VhcmNoLXJlc3VsdHMpIC5l
+bnRyeS1zdW1tYXJ5IGxpID4gdWwsIGJvZHk6bm90KC5zZWFyY2gtcmVzdWx0cykgLmVudHJ5LXN1
+bW1hcnkgbGkgPiBvbCB7IG1hcmdpbi1ib3R0b206IDBweDsgfQoKYm9keTpub3QoLnNlYXJjaC1y
+ZXN1bHRzKSAuZW50cnktc3VtbWFyeSB0aCwgYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50
+cnktc3VtbWFyeSB0ZCB7IHBhZGRpbmctdG9wOiAwLjM2ODQyMTA1MjZlbTsgcGFkZGluZy1yaWdo
+dDogMC4zNjg0MjEwNTI2ZW07IHBhZGRpbmctYm90dG9tOiAwLjM2ODQyMTA1MjZlbTsgcGFkZGlu
+Zy1sZWZ0OiAwLjM2ODQyMTA1MjZlbTsgfQoKYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50
+cnktc3VtbWFyeSBmaWVsZHNldCB7IG1hcmdpbi1ib3R0b206IDEuNDczNjg0MjEwNWVtOyBwYWRk
+aW5nLXRvcDogMC4zNjg0MjEwNTI2ZW07IHBhZGRpbmctcmlnaHQ6IDAuMzY4NDIxMDUyNmVtOyBw
+YWRkaW5nLWJvdHRvbTogMC4zNjg0MjEwNTI2ZW07IHBhZGRpbmctbGVmdDogMC4zNjg0MjEwNTI2
+ZW07IH0KCmJvZHk6bm90KC5zZWFyY2gtcmVzdWx0cykgLmVudHJ5LXN1bW1hcnkgYmxvY2txdW90
+ZSB7IGJvcmRlci10b3AtY29sb3I6IGN1cnJlbnRjb2xvcjsgYm9yZGVyLXJpZ2h0LWNvbG9yOiBj
+dXJyZW50Y29sb3I7IGJvcmRlci1ib3R0b20tY29sb3I6IGN1cnJlbnRjb2xvcjsgYm9yZGVyLWxl
+ZnQtY29sb3I6IGN1cnJlbnRjb2xvcjsgfQoKYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50
+cnktc3VtbWFyeSBibG9ja3F1b3RlID4gOmxhc3QtY2hpbGQgeyBtYXJnaW4tYm90dG9tOiAwcHg7
+IH0KCmJvZHk6bm90KC5zZWFyY2gtcmVzdWx0cykgLmVudHJ5LXN1bW1hcnkgLmFsaWdubGVmdCB7
+IG1hcmdpbi10b3A6IDAuMjYzMTU3ODk0N2VtOyBtYXJnaW4tcmlnaHQ6IDEuNDczNjg0MjEwNWVt
+OyBtYXJnaW4tYm90dG9tOiAxLjQ3MzY4NDIxMDVlbTsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKYm9k
+eTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50cnktc3VtbWFyeSAuYWxpZ25yaWdodCB7IG1hcmdp
+bi10b3A6IDAuMjYzMTU3ODk0N2VtOyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTog
+MS40NzM2ODQyMTA1ZW07IG1hcmdpbi1sZWZ0OiAxLjQ3MzY4NDIxMDVlbTsgfQoKYm9keTpub3Qo
+LnNlYXJjaC1yZXN1bHRzKSAuZW50cnktc3VtbWFyeSAuYWxpZ25jZW50ZXIgeyBtYXJnaW4tYm90
+dG9tOiAxLjQ3MzY4NDIxMDVlbTsgfQoKLmVudHJ5LWNvbnRlbnQgPiA6bGFzdC1jaGlsZCwgLmVu
+dHJ5LXN1bW1hcnkgPiA6bGFzdC1jaGlsZCwgYm9keTpub3QoLnNlYXJjaC1yZXN1bHRzKSAuZW50
+cnktc3VtbWFyeSA+IDpsYXN0LWNoaWxkLCAucGFnZS1jb250ZW50ID4gOmxhc3QtY2hpbGQsIC5j
+b21tZW50LWNvbnRlbnQgPiA6bGFzdC1jaGlsZCwgLnRleHR3aWRnZXQgPiA6bGFzdC1jaGlsZCB7
+IG1hcmdpbi1ib3R0b206IDBweDsgfQoKLm1vcmUtbGluayB7IHdoaXRlLXNwYWNlOiBub3dyYXA7
+IH0KCi5hdXRob3ItaW5mbyB7IGJvcmRlci1jb2xvcjogaW5oZXJpdDsgYm9yZGVyLXRvcC1zdHls
+ZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6
+IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3Atd2lkdGg6IDFweDsg
+Ym9yZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVy
+LWxlZnQtd2lkdGg6IDBweDsgY2xlYXI6IGJvdGg7IHBhZGRpbmctdG9wOiAxLjc1ZW07IHBhZGRp
+bmctYm90dG9tOiAxLjc1ZW07IH0KCi5hdXRob3ItYXZhdGFyIC5hdmF0YXIgeyBmbG9hdDogbGVm
+dDsgaGVpZ2h0OiA0MnB4OyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMS43NWVtOyBt
+YXJnaW4tYm90dG9tOiAxLjc1ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IHdpZHRoOiA0MnB4OyB9Cgou
+YXV0aG9yLWRlc2NyaXB0aW9uID4gOmxhc3QtY2hpbGQgeyBtYXJnaW4tYm90dG9tOiAwcHg7IH0K
+Ci5lbnRyeS1jb250ZW50IC5hdXRob3ItdGl0bGUgeyBjbGVhcjogbm9uZTsgZm9udC1zaXplOiAx
+cmVtOyBmb250LXdlaWdodDogOTAwOyBsaW5lLWhlaWdodDogMS43NTsgbWFyZ2luLXRvcDogMHB4
+OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4
+OyB9CgouYXV0aG9yLWJpbyB7IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IGZvbnQtc2l6ZTog
+MC44MTI1cmVtOyBsaW5lLWhlaWdodDogMS42MTUzODQ2MTU0OyBtYXJnaW4tYm90dG9tOiAxLjYx
+NTM4NDYxNTRlbTsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IH0KCi5h
+dXRob3ItbGluayB7IHdoaXRlLXNwYWNlOiBub3dyYXA7IH0KCi5lbnRyeS1mb290ZXIgeyBjb2xv
+cjogcmdiKDEwNCwgMTA0LCAxMDQpOyBmb250LWZhbWlseTogTW9udHNlcnJhdCwgJ2hlbHZldGlj
+YSBuZXVlJywgc2Fucy1zZXJpZjsgZm9udC1zaXplOiAwLjgxMjVyZW07IGxpbmUtaGVpZ2h0OiAx
+LjYxNTM4NDYxNTQ7IG1hcmdpbi10b3A6IDIuMTUzODQ2MTUzOGVtOyB9CgouZW50cnktZm9vdGVy
+OmVtcHR5IHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRv
+bTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9CgouZW50cnktZm9vdGVyIGEgeyBjb2xvcjogcmdi
+KDEwNCwgMTA0LCAxMDQpOyB9CgouZW50cnktZm9vdGVyIGE6aG92ZXIsIC5lbnRyeS1mb290ZXIg
+YTpmb2N1cyB7IGNvbG9yOiByZ2IoMCwgMTIyLCAyMDQpOyB9CgouZW50cnktZm9vdGVyID4gc3Bh
+bjpub3QoOmxhc3QtY2hpbGQpOjphZnRlciB7IGNvbnRlbnQ6ICcvJzsgZGlzcGxheTogaW5saW5l
+LWJsb2NrOyBvcGFjaXR5OiAwLjc7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDAu
+NTM4NDYxNTM4ZW07IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMC41Mzg0NjE1
+MzhlbTsgfQoKLmVudHJ5LWZvb3RlciAuYXZhdGFyIHsgaGVpZ2h0OiAyMXB4OyBtYXJnaW4tdG9w
+OiAtMC4xNTM4NDYxNTM4ZW07IG1hcmdpbi1yaWdodDogMC41Mzg0NjE1Mzg1ZW07IG1hcmdpbi1i
+b3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgd2lkdGg6IDIxcHg7IH0KCi5zdGlja3ktcG9z
+dCB7IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IGRpc3BsYXk6IGJsb2NrOyBmb250LWZhbWls
+eTogTW9udHNlcnJhdCwgJ2hlbHZldGljYSBuZXVlJywgc2Fucy1zZXJpZjsgZm9udC1zaXplOiAw
+LjgxMjVyZW07IGxldHRlci1zcGFjaW5nOiAwLjA3NjkyMzA3N2VtOyBsaW5lLWhlaWdodDogMS42
+MTUzODQ2MTU0OyBtYXJnaW4tYm90dG9tOiAwLjUzODQ2MTUzODVlbTsgdGV4dC10cmFuc2Zvcm06
+IHVwcGVyY2FzZTsgfQoKLnVwZGF0ZWQ6bm90KC5wdWJsaXNoZWQpIHsgZGlzcGxheTogbm9uZTsg
+fQoKLnN0aWNreSAucG9zdGVkLW9uLCAuYnlsaW5lIHsgZGlzcGxheTogbm9uZTsgfQoKLnNpbmds
+ZSAuYnlsaW5lLCAuZ3JvdXAtYmxvZyAuYnlsaW5lIHsgZGlzcGxheTogaW5saW5lOyB9CgoucGFn
+ZS1oZWFkZXIgeyBib3JkZXItdG9wLXdpZHRoOiA0cHg7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlk
+OyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IG1hcmdpbi10b3A6IDBweDsgbWFy
+Z2luLXJpZ2h0OiA3LjY5MjMlOyBtYXJnaW4tYm90dG9tOiAzLjVlbTsgbWFyZ2luLWxlZnQ6IDcu
+NjkyMyU7IHBhZGRpbmctdG9wOiAxLjc1ZW07IH0KCmJvZHkuZXJyb3I0MDQgLnBhZ2UtaGVhZGVy
+LCBib2R5LnNlYXJjaC1uby1yZXN1bHRzIC5wYWdlLWhlYWRlciB7IGJvcmRlci10b3Atd2lkdGg6
+IDBweDsgYm9yZGVyLXRvcC1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLXRvcC1jb2xvcjogaW5pdGlh
+bDsgcGFkZGluZy10b3A6IDBweDsgfQoKLnBhZ2UtdGl0bGUgeyBmb250LWZhbWlseTogTW9udHNl
+cnJhdCwgJ2hlbHZldGljYSBuZXVlJywgc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxLjQzNzVyZW07
+IGxpbmUtaGVpZ2h0OiAxLjIxNzM5MTMwNDM7IH0KCi50YXhvbm9teS1kZXNjcmlwdGlvbiB7IGNv
+bG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IGZvbnQtc2l6ZTogMC44MTI1cmVtOyBsaW5lLWhlaWdo
+dDogMS42MTUzODQ2MTU0OyB9CgoudGF4b25vbXktZGVzY3JpcHRpb24gcCB7IG1hcmdpbi10b3A6
+IDAuNTM4NDYxNTM4NWVtOyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMS42MTUz
+ODQ2MTU0ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCi50YXhvbm9teS1kZXNjcmlwdGlvbiA+IDps
+YXN0LWNoaWxkIHsgbWFyZ2luLWJvdHRvbTogMHB4OyB9CgoucGFnZS1saW5rcyB7IGNsZWFyOiBi
+b3RoOyBmb250LWZhbWlseTogTW9udHNlcnJhdCwgJ2hlbHZldGljYSBuZXVlJywgc2Fucy1zZXJp
+ZjsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMS43
+NWVtOyBtYXJnaW4tbGVmdDogMHB4OyB9CgoucGFnZS1saW5rcyBhLCAucGFnZS1saW5rcyA+IHNw
+YW4geyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBib3Jk
+ZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10b3At
+c3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0
+eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItdG9wLWNvbG9yOiBy
+Z2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIwOSwgMjA5LCAyMDkp
+OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1sZWZ0LWNv
+bG9yOiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgYm9yZGVyLXRv
+cC1sZWZ0LXJhZGl1czogMnB4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMnB4OyBib3JkZXIt
+Ym90dG9tLXJpZ2h0LXJhZGl1czogMnB4OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAycHg7
+IGRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAwLjgxMjVyZW07IGhlaWdodDogMS44
+NDYxNTM4NDYyZW07IGxpbmUtaGVpZ2h0OiAxLjY5MjMwNzY5MjNlbTsgbWFyZ2luLXJpZ2h0OiAw
+LjMwNzY5MjMwNzdlbTsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMS44NDYxNTM4NDYyZW07
+IH0KCi5wYWdlLWxpbmtzIGEgeyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjYsIDI2LCAyNik7IGJv
+cmRlci10b3AtY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2Io
+MjYsIDI2LCAyNik7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgYm9yZGVy
+LWxlZnQtY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsg
+fQoKLnBhZ2UtbGlua3MgYTpob3ZlciwgLnBhZ2UtbGlua3MgYTpmb2N1cyB7IGJhY2tncm91bmQt
+Y29sb3I6IHJnYigwLCAxMjIsIDIwNCk7IGJvcmRlci10b3AtY29sb3I6IHRyYW5zcGFyZW50OyBi
+b3JkZXItcmlnaHQtY29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXItYm90dG9tLWNvbG9yOiB0cmFu
+c3BhcmVudDsgYm9yZGVyLWxlZnQtY29sb3I6IHRyYW5zcGFyZW50OyBjb2xvcjogcmdiKDI1NSwg
+MjU1LCAyNTUpOyB9CgoucGFnZS1saW5rcyA+IC5wYWdlLWxpbmtzLXRpdGxlIHsgYm9yZGVyLXRv
+cC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0
+aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJv
+cmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBjb2xvcjogcmdiKDI2
+LCAyNiwgMjYpOyBoZWlnaHQ6IGF1dG87IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAw
+cHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGluZy1yaWdodDog
+MC42MTUzODQ2MTU0ZW07IHdpZHRoOiBhdXRvOyB9CgouZW50cnktYXR0YWNobWVudCB7IG1hcmdp
+bi1ib3R0b206IDEuNzVlbTsgfQoKLmVudHJ5LWNhcHRpb24geyBjb2xvcjogcmdiKDEwNCwgMTA0
+LCAxMDQpOyBmb250LXNpemU6IDAuODEyNXJlbTsgZm9udC1zdHlsZTogaXRhbGljOyBsaW5lLWhl
+aWdodDogMS42MTUzODQ2MTU0OyBwYWRkaW5nLXRvcDogMS4wNzY5MjMwNzY5ZW07IH0KCi5lbnRy
+eS1jYXB0aW9uID4gOmxhc3QtY2hpbGQgeyBtYXJnaW4tYm90dG9tOiAwcHg7IH0KCi5jb250ZW50
+LWJvdHRvbS13aWRnZXRzIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDcuNjkyMyU7
+IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDcuNjkyMyU7IH0KCi5jb250ZW50LWJv
+dHRvbS13aWRnZXRzIC53aWRnZXQtYXJlYSB7IG1hcmdpbi1ib3R0b206IDMuNWVtOyB9CgouZm9y
+bWF0LWFzaWRlIC5lbnRyeS10aXRsZSwgLmZvcm1hdC1pbWFnZSAuZW50cnktdGl0bGUsIC5mb3Jt
+YXQtdmlkZW8gLmVudHJ5LXRpdGxlLCAuZm9ybWF0LXF1b3RlIC5lbnRyeS10aXRsZSwgLmZvcm1h
+dC1nYWxsZXJ5IC5lbnRyeS10aXRsZSwgLmZvcm1hdC1zdGF0dXMgLmVudHJ5LXRpdGxlLCAuZm9y
+bWF0LWxpbmsgLmVudHJ5LXRpdGxlLCAuZm9ybWF0LWF1ZGlvIC5lbnRyeS10aXRsZSwgLmZvcm1h
+dC1jaGF0IC5lbnRyeS10aXRsZSB7IGZvbnQtc2l6ZTogMS4xODc1cmVtOyBsaW5lLWhlaWdodDog
+MS40NzM2ODQyMTE7IG1hcmdpbi1ib3R0b206IDEuNDczNjg0MjExZW07IH0KCi5ibG9nIC5mb3Jt
+YXQtc3RhdHVzIC5lbnRyeS10aXRsZSwgLmFyY2hpdmUgLmZvcm1hdC1zdGF0dXMgLmVudHJ5LXRp
+dGxlIHsgZGlzcGxheTogbm9uZTsgfQoKLmNvbW1lbnRzLWFyZWEgeyBtYXJnaW4tdG9wOiAwcHg7
+IG1hcmdpbi1yaWdodDogNy42OTIzJTsgbWFyZ2luLWJvdHRvbTogMy41ZW07IG1hcmdpbi1sZWZ0
+OiA3LjY5MjMlOyB9CgouY29tbWVudC1saXN0ICsgLmNvbW1lbnQtcmVzcG9uZCwgLmNvbW1lbnQt
+bmF2aWdhdGlvbiArIC5jb21tZW50LXJlc3BvbmQgeyBwYWRkaW5nLXRvcDogMS43NWVtOyB9Cgou
+Y29tbWVudHMtdGl0bGUsIC5jb21tZW50LXJlcGx5LXRpdGxlIHsgYm9yZGVyLXRvcC13aWR0aDog
+NHB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDI2LCAy
+NiwgMjYpOyBmb250LWZhbWlseTogTW9udHNlcnJhdCwgJ2hlbHZldGljYSBuZXVlJywgc2Fucy1z
+ZXJpZjsgZm9udC1zaXplOiAxLjQzNzVyZW07IGZvbnQtd2VpZ2h0OiA3MDA7IGxpbmUtaGVpZ2h0
+OiAxLjMxMjU7IHBhZGRpbmctdG9wOiAxLjIxNzM5MTMwNGVtOyB9CgouY29tbWVudHMtdGl0bGUg
+eyBtYXJnaW4tYm90dG9tOiAxLjIxNzM5MTMwNGVtOyB9CgouY29tbWVudC1saXN0IHsgbGlzdC1z
+dHlsZS10eXBlOiBub25lOyBsaXN0LXN0eWxlLXBvc2l0aW9uOiBpbml0aWFsOyBsaXN0LXN0eWxl
+LWltYWdlOiBpbml0aWFsOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJn
+aW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCi5jb21tZW50LWxpc3QgYXJ0aWNs
+ZSwgLmNvbW1lbnQtbGlzdCAucGluZ2JhY2ssIC5jb21tZW50LWxpc3QgLnRyYWNrYmFjayB7IGJv
+cmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3At
+Y29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgcGFkZGluZy10b3A6IDEuNzVlbTsgcGFkZGluZy1y
+aWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMS43NWVtOyBwYWRkaW5nLWxlZnQ6IDBweDsgfQoK
+LmNvbW1lbnQtbGlzdCAuY2hpbGRyZW4geyBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7IGxpc3Qtc3R5
+bGUtcG9zaXRpb246IGluaXRpYWw7IGxpc3Qtc3R5bGUtaW1hZ2U6IGluaXRpYWw7IG1hcmdpbi10
+b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxl
+ZnQ6IDBweDsgfQoKLmNvbW1lbnQtbGlzdCAuY2hpbGRyZW4gPiBsaSB7IHBhZGRpbmctbGVmdDog
+MC44NzVlbTsgfQoKLmNvbW1lbnQtYXV0aG9yIHsgY29sb3I6IHJnYigyNiwgMjYsIDI2KTsgbWFy
+Z2luLWJvdHRvbTogMC40Mzc1ZW07IH0KCi5jb21tZW50LWF1dGhvciAuYXZhdGFyIHsgZmxvYXQ6
+IGxlZnQ7IGhlaWdodDogMjhweDsgbWFyZ2luLXJpZ2h0OiAwLjg3NWVtOyBwb3NpdGlvbjogcmVs
+YXRpdmU7IHdpZHRoOiAyOHB4OyB9CgouYnlwb3N0YXV0aG9yID4gYXJ0aWNsZSAuZm46OmFmdGVy
+IHsgY29udGVudDog74yEOyBsZWZ0OiAzcHg7IHBvc2l0aW9uOiByZWxhdGl2ZTsgdG9wOiA1cHg7
+IH0KCi5jb21tZW50LW1ldGFkYXRhLCAucGluZ2JhY2sgLmVkaXQtbGluayB7IGNvbG9yOiByZ2Io
+MTA0LCAxMDQsIDEwNCk7IGZvbnQtZmFtaWx5OiBNb250c2VycmF0LCAnaGVsdmV0aWNhIG5ldWUn
+LCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDAuODEyNXJlbTsgbGluZS1oZWlnaHQ6IDEuNjE1Mzg0
+NjE1NDsgfQoKLmNvbW1lbnQtbWV0YWRhdGEgeyBtYXJnaW4tYm90dG9tOiAyLjE1Mzg0NjE1Mzhl
+bTsgfQoKLmNvbW1lbnQtbWV0YWRhdGEgYSwgLnBpbmdiYWNrIC5jb21tZW50LWVkaXQtbGluayB7
+IGNvbG9yOiByZ2IoMTA0LCAxMDQsIDEwNCk7IH0KCi5jb21tZW50LW1ldGFkYXRhIGE6aG92ZXIs
+IC5jb21tZW50LW1ldGFkYXRhIGE6Zm9jdXMsIC5waW5nYmFjayAuY29tbWVudC1lZGl0LWxpbms6
+aG92ZXIsIC5waW5nYmFjayAuY29tbWVudC1lZGl0LWxpbms6Zm9jdXMgeyBjb2xvcjogcmdiKDAs
+IDEyMiwgMjA0KTsgfQoKLmNvbW1lbnQtbWV0YWRhdGEgLmVkaXQtbGluaywgLnBpbmdiYWNrIC5l
+ZGl0LWxpbmsgeyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IH0KCi5jb21tZW50LW1ldGFkYXRhIC5l
+ZGl0LWxpbms6OmJlZm9yZSwgLnBpbmdiYWNrIC5lZGl0LWxpbms6OmJlZm9yZSB7IGNvbnRlbnQ6
+ICcvJzsgZGlzcGxheTogaW5saW5lLWJsb2NrOyBvcGFjaXR5OiAwLjc7IHBhZGRpbmctdG9wOiAw
+cHg7IHBhZGRpbmctcmlnaHQ6IDAuNTM4NDYxNTM4ZW07IHBhZGRpbmctYm90dG9tOiAwcHg7IHBh
+ZGRpbmctbGVmdDogMC41Mzg0NjE1MzhlbTsgfQoKLmNvbW1lbnQtY29udGVudCB1bCwgLmNvbW1l
+bnQtY29udGVudCBvbCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdp
+bi1ib3R0b206IDEuNWVtOyBtYXJnaW4tbGVmdDogMS4yNWVtOyB9CgouY29tbWVudC1jb250ZW50
+IGxpID4gdWwsIC5jb21tZW50LWNvbnRlbnQgbGkgPiBvbCB7IG1hcmdpbi1ib3R0b206IDBweDsg
+fQoKLmNvbW1lbnQtcmVwbHktbGluayB7IGJvcmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXJp
+Z2h0LXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lk
+dGg6IDFweDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29s
+aWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7
+IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLXJpZ2h0LWNvbG9y
+OiByZ2IoMjA5LCAyMDksIDIwOSk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMDksIDIwOSwg
+MjA5KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgYm9yZGVyLWltYWdl
+OiBpbml0aWFsOyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAycHg7IGJvcmRlci10b3AtcmlnaHQt
+cmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0
+b20tbGVmdC1yYWRpdXM6IDJweDsgY29sb3I6IHJnYigwLCAxMjIsIDIwNCk7IGRpc3BsYXk6IGlu
+bGluZS1ibG9jazsgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRpY2EgbmV1ZScsIHNh
+bnMtc2VyaWY7IGZvbnQtc2l6ZTogMC44MTI1cmVtOyBsaW5lLWhlaWdodDogMTsgbWFyZ2luLXRv
+cDogMi4xNTM4NDYxNTM4ZW07IHBhZGRpbmctdG9wOiAwLjUzODQ2MTUzODVlbTsgcGFkZGluZy1y
+aWdodDogMC41Mzg0NjE1Mzg1ZW07IHBhZGRpbmctYm90dG9tOiAwLjQ2MTUzODQ2MTVlbTsgcGFk
+ZGluZy1sZWZ0OiAwLjUzODQ2MTUzODVlbTsgfQoKLmNvbW1lbnQtcmVwbHktbGluazpob3Zlciwg
+LmNvbW1lbnQtcmVwbHktbGluazpmb2N1cyB7IGJvcmRlci10b3AtY29sb3I6IGN1cnJlbnRjb2xv
+cjsgYm9yZGVyLXJpZ2h0LWNvbG9yOiBjdXJyZW50Y29sb3I7IGJvcmRlci1ib3R0b20tY29sb3I6
+IGN1cnJlbnRjb2xvcjsgYm9yZGVyLWxlZnQtY29sb3I6IGN1cnJlbnRjb2xvcjsgY29sb3I6IHJn
+YigwLCAxMjIsIDIwNCk7IG91dGxpbmUtd2lkdGg6IDBweDsgb3V0bGluZS1zdHlsZTogaW5pdGlh
+bDsgb3V0bGluZS1jb2xvcjogaW5pdGlhbDsgfQoKLmNvbW1lbnQtZm9ybSB7IHBhZGRpbmctdG9w
+OiAxLjc1ZW07IH0KCi5jb21tZW50LWZvcm0gbGFiZWwgeyBjb2xvcjogcmdiKDEwNCwgMTA0LCAx
+MDQpOyBkaXNwbGF5OiBibG9jazsgZm9udC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRpY2Eg
+bmV1ZScsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMC44MTI1cmVtOyBsZXR0ZXItc3BhY2luZzog
+MC4wNzY5MjMwNzdlbTsgbGluZS1oZWlnaHQ6IDEuNjE1Mzg0NjE1NDsgbWFyZ2luLWJvdHRvbTog
+MC41Mzg0NjE1Mzg1ZW07IHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7IH0KCi5jb21tZW50LWxp
+c3QgLmNvbW1lbnQtZm9ybSB7IHBhZGRpbmctYm90dG9tOiAxLjc1ZW07IH0KCi5jb21tZW50LW5v
+dGVzLCAuY29tbWVudC1hd2FpdGluZy1tb2RlcmF0aW9uLCAubG9nZ2VkLWluLWFzLCAuZm9ybS1h
+bGxvd2VkLXRhZ3MgeyBjb2xvcjogcmdiKDEwNCwgMTA0LCAxMDQpOyBmb250LXNpemU6IDAuODEy
+NXJlbTsgbGluZS1oZWlnaHQ6IDEuNjE1Mzg0NjE1NDsgbWFyZ2luLWJvdHRvbTogMi4xNTM4NDYx
+NTM4ZW07IH0KCi5uby1jb21tZW50cyB7IGJvcmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXRv
+cC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDksIDIwOSwgMjA5KTsgZm9u
+dC1mYW1pbHk6IE1vbnRzZXJyYXQsICdoZWx2ZXRpY2EgbmV1ZScsIHNhbnMtc2VyaWY7IGZvbnQt
+d2VpZ2h0OiA3MDA7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1i
+b3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGluZy10b3A6IDEuNzVlbTsgfQoKLmNv
+bW1lbnQtbmF2aWdhdGlvbiArIC5uby1jb21tZW50cyB7IGJvcmRlci10b3Atd2lkdGg6IDBweDsg
+Ym9yZGVyLXRvcC1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLXRvcC1jb2xvcjogaW5pdGlhbDsgcGFk
+ZGluZy10b3A6IDBweDsgfQoKLmZvcm0tYWxsb3dlZC10YWdzIGNvZGUgeyBmb250LWZhbWlseTog
+SW5jb25zb2xhdGEsIG1vbm9zcGFjZTsgfQoKLmZvcm0tc3VibWl0IHsgbWFyZ2luLWJvdHRvbTog
+MHB4OyB9CgoucmVxdWlyZWQgeyBjb2xvcjogcmdiKDAsIDEyMiwgMjA0KTsgZm9udC1mYW1pbHk6
+IE1lcnJpd2VhdGhlciwgR2VvcmdpYSwgc2VyaWY7IH0KCi5jb21tZW50LXJlcGx5LXRpdGxlIHNt
+YWxsIHsgZm9udC1zaXplOiAxMDAlOyB9CgouY29tbWVudC1yZXBseS10aXRsZSBzbWFsbCBhIHsg
+Ym9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJv
+dHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGlu
+aXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBmbG9h
+dDogcmlnaHQ7IGhlaWdodDogMzJweDsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBo
+aWRkZW47IHdpZHRoOiAyNnB4OyB9CgouY29tbWVudC1yZXBseS10aXRsZSBzbWFsbCBhOmhvdmVy
+LCAuY29tbWVudC1yZXBseS10aXRsZSBzbWFsbCBhOmZvY3VzIHsgY29sb3I6IHJnYigyNiwgMjYs
+IDI2KTsgfQoKLmNvbW1lbnQtcmVwbHktdGl0bGUgc21hbGwgYTo6YmVmb3JlIHsgY29udGVudDog
+75CFOyBmb250LXNpemU6IDMycHg7IHBvc2l0aW9uOiByZWxhdGl2ZTsgdG9wOiAtNXB4OyB9Cgou
+Y29tbWVudC1mb3JtICN3cC1jb21tZW50LWNvb2tpZXMtY29uc2VudCB7IG1hcmdpbi10b3A6IDBw
+eDsgbWFyZ2luLXJpZ2h0OiAxMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAw
+cHg7IH0KCi5jb21tZW50LWZvcm0gLmNvbW1lbnQtZm9ybS1jb29raWVzLWNvbnNlbnQgbGFiZWwg
+eyBkaXNwbGF5OiBpbmxpbmU7IGZvbnQtZmFtaWx5OiBNZXJyaXdlYXRoZXIsIEdlb3JnaWEsIHNl
+cmlmOyBsZXR0ZXItc3BhY2luZzogMHB4OyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgfQoKLnNpZGVi
+YXIgeyBtYXJnaW4tYm90dG9tOiAzLjVlbTsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdo
+dDogNy42OTIzJTsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiA3LjY5MjMlOyB9
+Cgouc2l0ZS1mb290ZXIgeyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiA3LjY5MjMl
+OyBwYWRkaW5nLWJvdHRvbTogMS43NWVtOyBwYWRkaW5nLWxlZnQ6IDcuNjkyMyU7IH0KCi5zaXRl
+LWluZm8geyBjb2xvcjogcmdiKDEwNCwgMTA0LCAxMDQpOyBmb250LXNpemU6IDAuODEyNXJlbTsg
+bGluZS1oZWlnaHQ6IDEuNjE1Mzg0NjE1NDsgfQoKLnNpdGUtaW5mbyBhIHsgY29sb3I6IHJnYigx
+MDQsIDEwNCwgMTA0KTsgfQoKLnNpdGUtaW5mbyBhOmhvdmVyLCAuc2l0ZS1pbmZvIGE6Zm9jdXMg
+eyBjb2xvcjogcmdiKDAsIDEyMiwgMjA0KTsgfQoKLnNpdGUtZm9vdGVyIC5zaXRlLXRpdGxlIHsg

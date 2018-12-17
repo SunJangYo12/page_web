@@ -1,0 +1,4481 @@
+From: <Saved by WebKit>
+Subject: Tutorial MITM Kali Linux
+Date: Mon, 11 Nov 2018 19:56:43 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_1FDB_1E6A687E.E25FB1E6"
+
+------=_NextPart_000_1FDB_1E6A687E.E25FB1E6
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali-linux.html?m=1
+
+<html dir=3D"ltr"><head><meta charset=3D"UTF-8">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewport"=
+>
+<title>Tutorial MITM Kali Linux</title>
+
+<!-- Chrome, Firefox OS and Opera -->
+<meta content=3D"#444444" name=3D"theme-color">
+<!-- Windows Phone -->
+<meta content=3D"#444444" name=3D"msapplication-navbutton-color">
+<meta content=3D"blogger" name=3D"generator">
+<link href=3D"http://geneiry0dan.blogspot.com/favicon.ico" rel=3D"icon" typ=
+e=3D"image/x-icon">
+<link href=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali-li=
+nux.html" rel=3D"canonical">
+<link rel=3D"alternate" type=3D"application/atom+xml" title=3D"ANTI WHITEHA=
+T - Atom" href=3D"http://geneiry0dan.blogspot.com/feeds/posts/default">
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"ANTI WHITEHAT=
+ - RSS" href=3D"http://geneiry0dan.blogspot.com/feeds/posts/default?alt=3Dr=
+ss">
+<link rel=3D"service.post" type=3D"application/atom+xml" title=3D"ANTI WHIT=
+EHAT - Atom" href=3D"https://www.blogger.com/feeds/4461696929350980230/post=
+s/default">
+
+<link rel=3D"alternate" type=3D"application/atom+xml" title=3D"ANTI WHITEHA=
+T - Atom" href=3D"http://geneiry0dan.blogspot.com/feeds/3228118278020636331=
+/comments/default">
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<link href=3D"https://2.bp.blogspot.com/-eH-bjDZjuZY/WPdPDl7uStI/AAAAAAAAAE=
+k/zCFyHuTF9OYd8tCFwfmQAzrgUUm_gUwWQCLcB/s320/Screenshot%2Bfrom%2B2017-04-19=
+%2B18-50-12.png" rel=3D"image_src">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali=
+-linux.html" property=3D"og:url">
+<meta content=3D"Tutorial MITM Kali Linux" property=3D"og:title">
+<meta content=3D" Setelah artikel sebelumnya membahas tentang MITM secara d=
+etail dan insyaallah cukup jelas, kali ini gw akan memberikan tutorial sing=
+kat seb..." property=3D"og:description">
+<meta content=3D"https://2.bp.blogspot.com/-eH-bjDZjuZY/WPdPDl7uStI/AAAAAAA=
+AAEk/zCFyHuTF9OYd8tCFwfmQAzrgUUm_gUwWQCLcB/w1200-h630-p-k-no-nu/Screenshot%=
+2Bfrom%2B2017-04-19%2B18-50-12.png" property=3D"og:image">
+<!--[if IE]> <script> (function() { var html5 =3D ("abbr,article,aside,audi=
+o,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,=
+nav,output," + "progress,section,time,video").split(','); for (var i =3D 0;=
+ i < html5.length; i++) { document.createElement(html5[i]); } try { documen=
+t.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </s=
+cript> <![endif]-->
+<style type=3D"text/css">@font-face{font-family:'Roboto';font-style:italic;=
+font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51=
+TjASc6CsLYl4BO.woff)format('woff');}@font-face{font-family:'Roboto';font-st=
+yle:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnq=
+Eu92Fr1Mu4mxMKTU1Kg.woff)format('woff');}@font-face{font-family:'Roboto';fo=
+nt-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v18/KF=
+OlCnqEu92Fr1MmWUlfBBc-AMP6lQ.woff)format('woff');}</style>
+<style id=3D"page-skin-1" type=3D"text/css"><!--
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-famil=
+y:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{m=
+argin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,n=
+av,section,summary{display:block}audio,canvas,progress,video{display:inline=
+-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}=
+[hidden],template{display:none}a{background:transparent}a:active,a:hover{ou=
+tline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{=
+font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;colo=
+r:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:rel=
+ative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:=
+0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:=
+content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,=
+samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,se=
+lect,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}b=
+utton,select{text-transform:none}button,html input[type=3D"button"],input[t=
+ype=3D"reset"],input[type=3D"submit"]{-webkit-appearance:button;cursor:poin=
+ter}button[disabled],html input[disabled]{cursor:default}button::-moz-focus=
+-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}=
+input[type=3D"checkbox"],input[type=3D"radio"]{box-sizing:border-box;paddin=
+g:0}input[type=3D"number"]::-webkit-inner-spin-button,input[type=3D"number"=
+]::-webkit-outer-spin-button{height:auto}input[type=3D"search"]{-webkit-app=
+earance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-bo=
+x;box-sizing:content-box}input[type=3D"search"]::-webkit-search-cancel-butt=
+on,input[type=3D"search"]::-webkit-search-decoration{-webkit-appearance:non=
+e}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em=
+}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold=
+}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/*!************************************************
+* Blogger Template Style
+* Name: Contempo
+**************************************************/
+body{
+overflow-wrap:break-word;
+word-break:break-word;
+word-wrap:break-word
+}
+.hidden{
+display:none
+}
+.invisible{
+visibility:hidden
+}
+.container::after,.float-container::after{
+clear:both;
+content:'';
+display:table
+}
+.clearboth{
+clear:both
+}
+#comments .comment .comment-actions,.subscribe-popup .FollowByEmail .follow=
+-by-email-submit,.widget.Profile .profile-link,.widget.Profile .profile-lin=
+k.visit-profile{
+background:0 0;
+border:0;
+box-shadow:none;
+color:#2196f3;
+cursor:pointer;
+font-size:14px;
+font-weight:700;
+outline:0;
+text-decoration:none;
+text-transform:uppercase;
+width:auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+height:100vh;
+left:0;
+position:fixed;
+top:0;
+width:100%
+}
+#sharing-dim-overlay{
+background-color:transparent
+}
+input::-ms-clear{
+display:none
+}
+.blogger-logo,.svg-icon-24.blogger-logo{
+fill:#ff9800;
+opacity:1
+}
+.loading-spinner-large{
+-webkit-animation:mspin-rotate 1.568s infinite linear;
+animation:mspin-rotate 1.568s infinite linear;
+height:48px;
+overflow:hidden;
+position:absolute;
+width:48px;
+z-index:200
+}
+.loading-spinner-large>div{
+-webkit-animation:mspin-revrot 5332ms infinite steps(4);
+animation:mspin-revrot 5332ms infinite steps(4)
+}
+.loading-spinner-large>div>div{
+-webkit-animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+background-size:100%;
+height:48px;
+width:3888px
+}
+.mspin-black-large>div>div,.mspin-grey_54-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_black_large.svg)
+}
+.mspin-white-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_white_large.svg)
+}
+.mspin-grey_54-large{
+opacity:.54
+}
+@-webkit-keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@-webkit-keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@-webkit-keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+@keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+.skip-navigation{
+background-color:#fff;
+box-sizing:border-box;
+color:#000;
+display:block;
+height:0;
+left:0;
+line-height:50px;
+overflow:hidden;
+padding-top:0;
+position:fixed;
+text-align:center;
+top:0;
+-webkit-transition:box-shadow .3s,height .3s,padding-top .3s;
+transition:box-shadow .3s,height .3s,padding-top .3s;
+width:100%;
+z-index:900
+}
+.skip-navigation:focus{
+box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4=
+px -1px rgba(0,0,0,.2);
+height:50px
+}
+#main{
+outline:0
+}
+.main-heading{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.Attribution{
+margin-top:1em;
+text-align:center
+}
+.Attribution .blogger img,.Attribution .blogger svg{
+vertical-align:bottom
+}
+.Attribution .blogger img{
+margin-right:.5em
+}
+.Attribution div{
+line-height:24px;
+margin-top:.5em
+}
+.Attribution .copyright,.Attribution .image-attribution{
+font-size:.7em;
+margin-top:1.5em
+}
+.BLOG_mobile_video_class{
+display:none
+}
+.bg-photo{
+background-attachment:scroll!important
+}
+body .CSS_LIGHTBOX{
+z-index:900
+}
+.extendable .show-less,.extendable .show-more{
+border-color:#2196f3;
+color:#2196f3;
+margin-top:8px
+}
+.extendable .show-less.hidden,.extendable .show-more.hidden{
+display:none
+}
+.inline-ad{
+display:none;
+max-width:100%;
+overflow:hidden
+}
+.adsbygoogle{
+display:block
+}
+#cookieChoiceInfo{
+bottom:0;
+top:auto
+}
+iframe.b-hbp-video{
+border:0
+}
+.post-body img{
+max-width:100%
+}
+.post-body iframe{
+max-width:100%
+}
+.post-body a[imageanchor=3D"1"]{
+display:inline-block
+}
+.byline{
+margin-right:1em
+}
+.byline:last-child{
+margin-right:0
+}
+.link-copied-dialog{
+max-width:520px;
+outline:0
+}
+.link-copied-dialog .modal-dialog-buttons{
+margin-top:8px
+}
+.link-copied-dialog .goog-buttonset-default{
+background:0 0;
+border:0
+}
+.link-copied-dialog .goog-buttonset-default:focus{
+outline:0
+}
+.paging-control-container{
+margin-bottom:16px
+}
+.paging-control-container .paging-control{
+display:inline-block
+}
+.paging-control-container .comment-range-text::after,.paging-control-contai=
+ner .paging-control{
+color:#2196f3
+}
+.paging-control-container .comment-range-text,.paging-control-container .pa=
+ging-control{
+margin-right:8px
+}
+.paging-control-container .comment-range-text::after,.paging-control-contai=
+ner .paging-control::after{
+content:'\00B7';
+cursor:default;
+padding-left:8px;
+pointer-events:none
+}
+.paging-control-container .comment-range-text:last-child::after,.paging-con=
+trol-container .paging-control:last-child::after{
+content:none
+}
+.byline.reactions iframe{
+height:20px
+}
+.b-notification{
+color:#000;
+background-color:#fff;
+border-bottom:solid 1px #000;
+box-sizing:border-box;
+padding:16px 32px;
+text-align:center
+}
+.b-notification.visible{
+-webkit-transition:margin-top .3s cubic-bezier(.4,0,.2,1);
+transition:margin-top .3s cubic-bezier(.4,0,.2,1)
+}
+.b-notification.invisible{
+position:absolute
+}
+.b-notification-close{
+position:absolute;
+right:8px;
+top:8px
+}
+.no-posts-message{
+line-height:40px;
+text-align:center
+}
+@media screen and (max-width:800px){
+body.item-view .post-body a[imageanchor=3D"1"][style*=3D"float: left;"],bod=
+y.item-view .post-body a[imageanchor=3D"1"][style*=3D"float: right;"]{
+float:none!important;
+clear:none!important
+}
+body.item-view .post-body a[imageanchor=3D"1"] img{
+display:block;
+height:auto;
+margin:0 auto
+}
+body.item-view .post-body>.separator:first-child>a[imageanchor=3D"1"]:first=
+-child{
+margin-top:20px
+}
+.post-body a[imageanchor]{
+display:block
+}
+body.item-view .post-body a[imageanchor=3D"1"]{
+margin-left:0!important;
+margin-right:0!important
+}
+body.item-view .post-body a[imageanchor=3D"1"]+a[imageanchor=3D"1"]{
+margin-top:16px
+}
+}
+.item-control{
+display:none
+}
+#comments{
+border-top:1px dashed rgba(0,0,0,.54);
+margin-top:20px;
+padding:20px
+}
+#comments .comment-thread ol{
+margin:0;
+padding-left:0;
+padding-left:0
+}
+#comments .comment .comment-replybox-single,#comments .comment-thread .comm=
+ent-replies{
+margin-left:60px
+}
+#comments .comment-thread .thread-count{
+display:none
+}
+#comments .comment{
+list-style-type:none;
+padding:0 0 30px;
+position:relative
+}
+#comments .comment .comment{
+padding-bottom:8px
+}
+.comment .avatar-image-container{
+position:absolute
+}
+.comment .avatar-image-container img{
+border-radius:50%
+}
+.avatar-image-container svg,.comment .avatar-image-container .avatar-icon{
+border-radius:50%;
+border:solid 1px #ffffff;
+box-sizing:border-box;
+fill:#ffffff;
+height:35px;
+margin:0;
+padding:7px;
+width:35px
+}
+.comment .comment-block{
+margin-top:10px;
+margin-left:60px;
+padding-bottom:0
+}
+#comments .comment-author-header-wrapper{
+margin-left:40px
+}
+#comments .comment .thread-expanded .comment-block{
+padding-bottom:20px
+}
+#comments .comment .comment-header .user,#comments .comment .comment-header=
+ .user a{
+color:#ffffff;
+font-style:normal;
+font-weight:700
+}
+#comments .comment .comment-actions{
+bottom:0;
+margin-bottom:15px;
+position:absolute
+}
+#comments .comment .comment-actions>*{
+margin-right:8px
+}
+#comments .comment .comment-header .datetime{
+bottom:0;
+color:rgba(255,255,255,.54);
+display:inline-block;
+font-size:13px;
+font-style:italic;
+margin-left:8px
+}
+#comments .comment .comment-footer .comment-timestamp a,#comments .comment =
+.comment-header .datetime a{
+color:rgba(255,255,255,.54)
+}
+#comments .comment .comment-content,.comment .comment-body{
+margin-top:12px;
+word-break:break-word
+}
+.comment-body{
+margin-bottom:12px
+}
+#comments.embed[data-num-comments=3D"0"]{
+border:0;
+margin-top:0;
+padding-top:0
+}
+#comments.embed[data-num-comments=3D"0"] #comment-post-message,#comments.em=
+bed[data-num-comments=3D"0"] div.comment-form>p,#comments.embed[data-num-co=
+mments=3D"0"] p.comment-footer{
+display:none
+}
+#comment-editor-src{
+display:none
+}
+.comments .comments-content .loadmore.loaded{
+max-height:0;
+opacity:0;
+overflow:hidden
+}
+.extendable .remaining-items{
+height:0;
+overflow:hidden;
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.extendable .remaining-items.expanded{
+height:auto
+}
+.svg-icon-24,.svg-icon-24-button{
+cursor:pointer;
+height:24px;
+width:24px;
+min-width:24px
+}
+.touch-icon{
+margin:-12px;
+padding:12px
+}
+.touch-icon:active,.touch-icon:focus{
+background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+svg:not(:root).touch-icon{
+overflow:visible
+}
+html[dir=3Drtl] .rtl-reversible-icon{
+-webkit-transform:scaleX(-1);
+-ms-transform:scaleX(-1);
+transform:scaleX(-1)
+}
+.svg-icon-24-button,.touch-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0
+}
+.touch-icon-button .touch-icon:active,.touch-icon-button .touch-icon:focus{
+background-color:transparent
+}
+.touch-icon-button:active .touch-icon,.touch-icon-button:focus .touch-icon{
+background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+.Profile .default-avatar-wrapper .avatar-icon{
+border-radius:50%;
+border:solid 1px #ffffff;
+box-sizing:border-box;
+fill:#ffffff;
+margin:0
+}
+.Profile .individual .default-avatar-wrapper .avatar-icon{
+padding:25px
+}
+.Profile .individual .avatar-icon,.Profile .individual .profile-img{
+height:120px;
+width:120px
+}
+.Profile .team .default-avatar-wrapper .avatar-icon{
+padding:8px
+}
+.Profile .team .avatar-icon,.Profile .team .default-avatar-wrapper,.Profile=
+ .team .profile-img{
+height:40px;
+width:40px
+}
+.snippet-container{
+margin:0;
+position:relative;
+overflow:hidden
+}
+.snippet-fade{
+bottom:0;
+box-sizing:border-box;
+position:absolute;
+width:96px
+}
+.snippet-fade{
+right:0
+}
+.snippet-fade:after{
+content:'\2026'
+}
+.snippet-fade:after{
+float:right
+}
+.post-bottom{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap
+}
+.post-footer{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1
+}
+.post-footer>*{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto
+}
+.post-footer .byline:last-child{
+margin-right:1em
+}
+.jump-link{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.centered-top-container.sticky{
+left:0;
+position:fixed;
+right:0;
+top:0;
+width:auto;
+z-index:50;
+-webkit-transition-property:opacity,-webkit-transform;
+transition-property:opacity,-webkit-transform;
+transition-property:transform,opacity;
+transition-property:transform,opacity,-webkit-transform;
+-webkit-transition-duration:.2s;
+transition-duration:.2s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1)
+}
+.centered-top-placeholder{
+display:none
+}
+.collapsed-header .centered-top-placeholder{
+display:block
+}
+.centered-top-container .Header .replaced h1,.centered-top-placeholder .Hea=
+der .replaced h1{
+display:none
+}
+.centered-top-container.sticky .Header .replaced h1{
+display:block
+}
+.centered-top-container.sticky .Header .header-widget{
+background:0 0
+}
+.centered-top-container.sticky .Header .header-image-wrapper{
+display:none
+}
+.centered-top-container img,.centered-top-placeholder img{
+max-width:100%
+}
+.collapsible{
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.collapsible,.collapsible>summary{
+display:block;
+overflow:hidden
+}
+.collapsible>:not(summary){
+display:none
+}
+.collapsible[open]>:not(summary){
+display:block
+}
+.collapsible:focus,.collapsible>summary:focus{
+outline:0
+}
+.collapsible>summary{
+cursor:pointer;
+display:block;
+padding:0
+}
+.collapsible:focus>summary,.collapsible>summary:focus{
+background-color:transparent
+}
+.collapsible>summary::-webkit-details-marker{
+display:none
+}
+.collapsible-title{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.collapsible-title .title{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-box-ordinal-group:1;
+-webkit-order:0;
+-ms-flex-order:0;
+order:0;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap
+}
+.collapsible-title .chevron-down,.collapsible[open] .collapsible-title .che=
+vron-up{
+display:block
+}
+.collapsible-title .chevron-up,.collapsible[open] .collapsible-title .chevr=
+on-down{
+display:none
+}
+.flat-button{
+cursor:pointer;
+display:inline-block;
+font-weight:700;
+text-transform:uppercase;
+border-radius:2px;
+padding:8px;
+margin:-8px
+}
+.flat-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+margin:-12px;
+padding:12px;
+cursor:pointer;
+box-sizing:content-box;
+display:inline-block;
+line-height:0
+}
+.flat-icon-button,.flat-icon-button .splash-wrapper{
+border-radius:50%
+}
+.flat-icon-button .splash.animate{
+-webkit-animation-duration:.3s;
+animation-duration:.3s
+}
+.overflowable-container{
+max-height:46px;
+overflow:hidden;
+position:relative
+}
+.overflow-button{
+cursor:pointer
+}
+#overflowable-dim-overlay{
+background:0 0
+}
+.overflow-popup{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px =
+5px 0 rgba(0,0,0,.12);
+background-color:#1d1d1d;
+left:0;
+max-width:calc(100% - 32px);
+position:absolute;
+top:0;
+visibility:hidden;
+z-index:101
+}
+.overflow-popup ul{
+list-style:none
+}
+.overflow-popup .tabs li,.overflow-popup li{
+display:block;
+height:auto
+}
+.overflow-popup .tabs li{
+padding-left:0;
+padding-right:0
+}
+.overflow-button.hidden,.overflow-popup .tabs li.hidden,.overflow-popup li.=
+hidden{
+display:none
+}
+.pill-button{
+background:0 0;
+border:1px solid;
+border-radius:12px;
+cursor:pointer;
+display:inline-block;
+padding:4px 16px;
+text-transform:uppercase
+}
+.ripple{
+position:relative
+}
+.ripple>*{
+z-index:1
+}
+.splash-wrapper{
+bottom:0;
+left:0;
+overflow:hidden;
+pointer-events:none;
+position:absolute;
+right:0;
+top:0;
+z-index:0
+}
+.splash{
+background:#ccc;
+border-radius:100%;
+display:block;
+opacity:.6;
+position:absolute;
+-webkit-transform:scale(0);
+-ms-transform:scale(0);
+transform:scale(0)
+}
+.splash.animate{
+-webkit-animation:ripple-effect .4s linear;
+animation:ripple-effect .4s linear
+}
+@-webkit-keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+@keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+.search{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+line-height:24px;
+width:24px
+}
+.search.focused{
+width:100%
+}
+.search.focused .section{
+width:100%
+}
+.search form{
+z-index:101
+}
+.search h3{
+display:none
+}
+.search form{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:1;
+-webkit-flex:1 0 0;
+-ms-flex:1 0 0px;
+flex:1 0 0;
+border-bottom:solid 1px transparent;
+padding-bottom:8px
+}
+.search form>*{
+display:none
+}
+.search.focused form>*{
+display:block
+}
+.search .search-input label{
+display:none
+}
+.centered-top-placeholder.cloned .search form{
+z-index:30
+}
+.search.focused form{
+border-color:#ffffff;
+position:relative;
+width:auto
+}
+.collapsed-header .centered-top-container .search.focused form{
+border-bottom-color:transparent
+}
+.search-expand{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.search-expand-text{
+display:none
+}
+.search-close{
+display:inline;
+vertical-align:middle
+}
+.search-input{
+-webkit-box-flex:1;
+-webkit-flex:1 0 1px;
+-ms-flex:1 0 1px;
+flex:1 0 1px
+}
+.search-input input{
+background:0 0;
+border:0;
+box-sizing:border-box;
+color:#ffffff;
+display:inline-block;
+outline:0;
+width:calc(100% - 48px)
+}
+.search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #ffffff
+}
+.collapsed-header .centered-top-container .search-action,.collapsed-header =
+.centered-top-container .search-input input{
+color:#ffffff
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #ffffff
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor:foc=
+us,.search-input input.no-cursor:focus{
+outline:0
+}
+.search-focused>*{
+visibility:hidden
+}
+.search-focused .search,.search-focused .search-icon{
+visibility:visible
+}
+.search.focused .search-action{
+display:block
+}
+.search.focused .search-action:disabled{
+opacity:.3
+}
+.widget.Sharing .sharing-button{
+display:none
+}
+.widget.Sharing .sharing-buttons li{
+padding:0
+}
+.widget.Sharing .sharing-buttons li span{
+display:none
+}
+.post-share-buttons{
+position:relative
+}
+.centered-bottom .share-buttons .svg-icon-24,.share-buttons .svg-icon-24{
+fill:#ffffff
+}
+.sharing-open.touch-icon-button:active .touch-icon,.sharing-open.touch-icon=
+-button:focus .touch-icon{
+background-color:transparent
+}
+.share-buttons{
+background-color:#1d1d1d;
+border-radius:2px;
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px =
+5px 0 rgba(0,0,0,.12);
+color:#ffffff;
+list-style:none;
+margin:0;
+padding:8px 0;
+position:absolute;
+top:-11px;
+min-width:200px;
+z-index:101
+}
+.share-buttons.hidden{
+display:none
+}
+.sharing-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+cursor:pointer
+}
+.share-buttons li{
+margin:0;
+height:48px
+}
+.share-buttons li:last-child{
+margin-bottom:0
+}
+.share-buttons li .sharing-platform-button{
+box-sizing:border-box;
+cursor:pointer;
+display:block;
+height:100%;
+margin-bottom:0;
+padding:0 16px;
+position:relative;
+width:100%
+}
+.share-buttons li .sharing-platform-button:focus,.share-buttons li .sharing=
+-platform-button:hover{
+background-color:rgba(128,128,128,.1);
+outline:0
+}
+.share-buttons li svg[class*=3D" sharing-"],.share-buttons li svg[class^=3D=
+sharing-]{
+position:absolute;
+top:10px
+}
+.share-buttons li span.sharing-platform-button{
+position:relative;
+top:0
+}
+.share-buttons li .platform-sharing-text{
+display:block;
+font-size:16px;
+line-height:48px;
+white-space:nowrap
+}
+.share-buttons li .platform-sharing-text{
+margin-left:56px
+}
+.sidebar-container{
+background-color:#1d1d1d;
+max-width:284px;
+overflow-y:auto;
+-webkit-transition-property:-webkit-transform;
+transition-property:-webkit-transform;
+transition-property:transform;
+transition-property:transform,-webkit-transform;
+-webkit-transition-duration:.3s;
+transition-duration:.3s;
+-webkit-transition-timing-function:cubic-bezier(0,0,.2,1);
+transition-timing-function:cubic-bezier(0,0,.2,1);
+width:284px;
+z-index:101;
+-webkit-overflow-scrolling:touch
+}
+.sidebar-container .navigation{
+line-height:0;
+padding:16px
+}
+.sidebar-container .sidebar-back{
+cursor:pointer
+}
+.sidebar-container .widget{
+background:0 0;
+margin:0 16px;
+padding:16px 0
+}
+.sidebar-container .widget .title{
+color:#c5c1c1;
+margin:0
+}
+.sidebar-container .widget ul{
+list-style:none;
+margin:0;
+padding:0
+}
+.sidebar-container .widget ul ul{
+margin-left:1em
+}
+.sidebar-container .widget li{
+font-size:16px;
+line-height:normal
+}
+.sidebar-container .widget+.widget{
+border-top:1px dashed #cccccc
+}
+.BlogArchive li{
+margin:16px 0
+}
+.BlogArchive li:last-child{
+margin-bottom:0
+}
+.Label li a{
+display:inline-block
+}
+.BlogArchive .post-count,.Label .label-count{
+float:right;
+margin-left:.25em
+}
+.BlogArchive .post-count::before,.Label .label-count::before{
+content:'('
+}
+.BlogArchive .post-count::after,.Label .label-count::after{
+content:')'
+}
+.widget.Translate .skiptranslate>div{
+display:block!important
+}
+.widget.Profile .profile-link{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.widget.Profile .team-member .default-avatar-wrapper,.widget.Profile .team-=
+member .profile-img{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin-right:1em
+}
+.widget.Profile .individual .profile-link{
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+.widget.Profile .team .profile-link .profile-name{
+-webkit-align-self:center;
+-ms-flex-item-align:center;
+-ms-grid-row-align:center;
+align-self:center;
+display:block;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+z-index:100
+}
+body.sidebar-visible{
+overflow-y:hidden
+}
+@media screen and (max-width:1439px){
+.sidebar-container{
+bottom:0;
+position:fixed;
+top:0;
+left:0;
+right:auto
+}
+.sidebar-container.sidebar-invisible{
+-webkit-transition-timing-function:cubic-bezier(.4,0,.6,1);
+transition-timing-function:cubic-bezier(.4,0,.6,1);
+-webkit-transform:translateX(-284px);
+-ms-transform:translateX(-284px);
+transform:translateX(-284px)
+}
+}
+@media screen and (min-width:1440px){
+.sidebar-container{
+position:absolute;
+top:0;
+left:0;
+right:auto
+}
+.sidebar-container .navigation{
+display:none
+}
+}
+.dialog{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px =
+5px 0 rgba(0,0,0,.12);
+background:#1d1d1d;
+box-sizing:border-box;
+color:#9ba2a8;
+padding:30px;
+position:fixed;
+text-align:center;
+width:calc(100% - 24px);
+z-index:101
+}
+.dialog input[type=3Demail],.dialog input[type=3Dtext]{
+background-color:transparent;
+border:0;
+border-bottom:solid 1px rgba(155,162,168,.12);
+color:#9ba2a8;
+display:block;
+font-family:Roboto, sans-serif;
+font-size:16px;
+line-height:24px;
+margin:auto;
+padding-bottom:7px;
+outline:0;
+text-align:center;
+width:100%
+}
+.dialog input[type=3Demail]::-webkit-input-placeholder,.dialog input[type=
+=3Dtext]::-webkit-input-placeholder{
+color:#9ba2a8
+}
+.dialog input[type=3Demail]::-moz-placeholder,.dialog input[type=3Dtext]::-=
+moz-placeholder{
+color:#9ba2a8
+}
+.dialog input[type=3Demail]:-ms-input-placeholder,.dialog input[type=3Dtext=
+]:-ms-input-placeholder{
+color:#9ba2a8
+}
+.dialog input[type=3Demail]::placeholder,.dialog input[type=3Dtext]::placeh=
+older{
+color:#9ba2a8
+}
+.dialog input[type=3Demail]:focus,.dialog input[type=3Dtext]:focus{
+border-bottom:solid 2px #2196f3;
+padding-bottom:6px
+}
+.dialog input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #9ba2a8
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input[type=3Dsubmit]{
+font-family:Roboto, sans-serif
+}
+.dialog .goog-buttonset-default{
+color:#2196f3
+}
+.subscribe-popup{
+max-width:364px
+}
+.subscribe-popup h3{
+color:#ffffff;
+font-size:1.8em;
+margin-top:0
+}
+.subscribe-popup .FollowByEmail h3{
+display:none
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit{
+color:#2196f3;
+display:inline-block;
+margin:0 auto;
+margin-top:24px;
+width:auto;
+white-space:normal
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit:disabled{
+cursor:default;
+opacity:.3
+}
+@media (max-width:800px){
+.blog-name div.widget.Subscribe{
+margin-bottom:16px
+}
+body.item-view .blog-name div.widget.Subscribe{
+margin:8px auto 16px auto;
+width:100%
+}
+}
+.tabs{
+list-style:none
+}
+.tabs li{
+display:inline-block
+}
+.tabs li a{
+cursor:pointer;
+display:inline-block;
+font-weight:700;
+text-transform:uppercase;
+padding:12px 8px
+}
+.tabs .selected{
+border-bottom:4px solid #ffffff
+}
+.tabs .selected a{
+color:#ffffff
+}
+body#layout .bg-photo,body#layout .bg-photo-overlay{
+display:none
+}
+body#layout .page_body{
+padding:0;
+position:relative;
+top:0
+}
+body#layout .page{
+display:inline-block;
+left:inherit;
+position:relative;
+vertical-align:top;
+width:540px
+}
+body#layout .centered{
+max-width:954px
+}
+body#layout .navigation{
+display:none
+}
+body#layout .sidebar-container{
+display:inline-block;
+width:40%
+}
+body#layout .hamburger-menu,body#layout .search{
+display:none
+}
+.centered-top-container .svg-icon-24,body.collapsed-header .centered-top-pl=
+aceholder .svg-icon-24{
+fill:#ffffff
+}
+.sidebar-container .svg-icon-24{
+fill:#ffffff
+}
+.centered-bottom .svg-icon-24,body.collapsed-header .centered-top-container=
+ .svg-icon-24{
+fill:#ffffff
+}
+.centered-bottom .share-buttons .svg-icon-24,.share-buttons .svg-icon-24{
+fill:#ffffff
+}
+body{
+background-color:#444444;
+color:#9ba2a8;
+font:15px Roboto, sans-serif;
+margin:0;
+min-height:100vh
+}
+img{
+max-width:100%
+}
+h3{
+color:#9ba2a8;
+font-size:16px
+}
+a{
+text-decoration:none;
+color:#2196f3
+}
+a:visited{
+color:#2196f3
+}
+a:hover{
+color:#2196f3
+}
+blockquote{
+color:#dddddd;
+font:italic 300 15px Roboto, sans-serif;
+font-size:x-large;
+text-align:center
+}
+.pill-button{
+font-size:12px
+}
+.bg-photo-container{
+height:480px;
+overflow:hidden;
+position:absolute;
+width:100%;
+z-index:1
+}
+.bg-photo{
+background:#444444 url(https://themes.googleusercontent.com/image?id=3DrabM=
+T9PC10wCtkMoMM2KrjGV5ejCGidFlmg3elSmmoRNnd0FxKwY5T0RGV948R08752LcEb6qEXa) n=
+o-repeat scroll top center /* Credit: Radius Images (http://www.offset.com/=
+photos/225860) */;;
+background-attachment:scroll;
+background-size:cover;
+-webkit-filter:blur(0px);
+filter:blur(0px);
+height:calc(100% + 2 * 0px);
+left:0px;
+position:absolute;
+top:0px;
+width:calc(100% + 2 * 0px)
+}
+.bg-photo-overlay{
+background:rgba(0,0,0,.26);
+background-size:cover;
+height:480px;
+position:absolute;
+width:100%;
+z-index:2
+}
+.hamburger-menu{
+float:left;
+margin-top:0
+}
+.sticky .hamburger-menu{
+float:none;
+position:absolute
+}
+.search{
+border-bottom:solid 1px rgba(255, 255, 255, 0);
+float:right;
+position:relative;
+-webkit-transition-property:width;
+transition-property:width;
+-webkit-transition-duration:.5s;
+transition-duration:.5s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1);
+z-index:101
+}
+.search .dim-overlay{
+background-color:transparent
+}
+.search form{
+height:36px;
+-webkit-transition-property:border-color;
+transition-property:border-color;
+-webkit-transition-delay:.5s;
+transition-delay:.5s;
+-webkit-transition-duration:.2s;
+transition-duration:.2s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1)
+}
+.search.focused{
+width:calc(100% - 48px)
+}
+.search.focused form{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:1;
+-webkit-flex:1 0 1px;
+-ms-flex:1 0 1px;
+flex:1 0 1px;
+border-color:#ffffff;
+margin-left:-24px;
+padding-left:36px;
+position:relative;
+width:auto
+}
+.item-view .search,.sticky .search{
+right:0;
+float:none;
+margin-left:0;
+position:absolute
+}
+.item-view .search.focused,.sticky .search.focused{
+width:calc(100% - 50px)
+}
+.item-view .search.focused form,.sticky .search.focused form{
+border-bottom-color:#9ba2a8
+}
+.centered-top-placeholder.cloned .search form{
+z-index:30
+}
+.search_button{
+-webkit-box-flex:0;
+-webkit-flex:0 0 24px;
+-ms-flex:0 0 24px;
+flex:0 0 24px;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+.search_button svg{
+margin-top:0
+}
+.search-input{
+height:48px
+}
+.search-input input{
+display:block;
+color:#ffffff;
+font:16px Roboto, sans-serif;
+height:48px;
+line-height:48px;
+padding:0;
+width:100%
+}
+.search-input input::-webkit-input-placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-input input::-moz-placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-input input:-ms-input-placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-input input::placeholder{
+color:#ffffff;
+opacity:.3
+}
+.search-action{
+background:0 0;
+border:0;
+color:#ffffff;
+cursor:pointer;
+display:none;
+height:48px;
+margin-top:0
+}
+.sticky .search-action{
+color:#9ba2a8
+}
+.search.focused .search-action{
+display:block
+}
+.search.focused .search-action:disabled{
+opacity:.3
+}
+.page_body{
+position:relative;
+z-index:20
+}
+.page_body .widget{
+margin-bottom:16px
+}
+.page_body .centered{
+box-sizing:border-box;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column;
+margin:0 auto;
+max-width:922px;
+min-height:100vh;
+padding:24px 0
+}
+.page_body .centered>*{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.page_body .centered>#footer{
+margin-top:auto
+}
+.blog-name{
+margin:24px 0 16px 0
+}
+.item-view .blog-name,.sticky .blog-name{
+box-sizing:border-box;
+margin-left:36px;
+min-height:48px;
+opacity:1;
+padding-top:12px
+}
+.blog-name .subscribe-section-container{
+margin-bottom:32px;
+text-align:center;
+-webkit-transition-property:opacity;
+transition-property:opacity;
+-webkit-transition-duration:.5s;
+transition-duration:.5s
+}
+.item-view .blog-name .subscribe-section-container,.sticky .blog-name .subs=
+cribe-section-container{
+margin:0 0 8px 0
+}
+.blog-name .PageList{
+margin-top:16px;
+padding-top:8px;
+text-align:center
+}
+.blog-name .PageList .overflowable-contents{
+width:100%
+}
+.blog-name .PageList h3.title{
+color:#ffffff;
+margin:8px auto;
+text-align:center;
+width:100%
+}
+.centered-top-container .blog-name{
+-webkit-transition-property:opacity;
+transition-property:opacity;
+-webkit-transition-duration:.5s;
+transition-duration:.5s
+}
+.item-view .return_link{
+margin-bottom:12px;
+margin-top:12px;
+position:absolute
+}
+.item-view .blog-name{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+margin:0 48px 27px 48px
+}
+.item-view .subscribe-section-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.item-view #header,.item-view .Header{
+margin-bottom:5px;
+margin-right:15px
+}
+.item-view .sticky .Header{
+margin-bottom:0
+}
+.item-view .Header p{
+margin:10px 0 0 0;
+text-align:left
+}
+.item-view .post-share-buttons-bottom{
+margin-right:16px
+}
+.sticky{
+background:#1d1d1d;
+box-shadow:0 0 20px 0 rgba(0,0,0,.7);
+box-sizing:border-box;
+margin-left:0
+}
+.sticky #header{
+margin-bottom:8px;
+margin-right:8px
+}
+.sticky .centered-top{
+margin:4px auto;
+max-width:890px;
+min-height:48px
+}
+.sticky .blog-name{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+margin:0 48px
+}
+.sticky .blog-name #header{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+overflow:hidden
+}
+.sticky .blog-name .subscribe-section-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.sticky .Header h1{
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+margin-right:-10px;
+margin-bottom:-10px;
+padding-right:10px;
+padding-bottom:10px
+}
+.sticky .Header p{
+display:none
+}
+.sticky .PageList{
+display:none
+}
+.search-focused>*{
+visibility:visible
+}
+.search-focused .hamburger-menu{
+visibility:visible
+}
+.item-view .search-focused .blog-name,.sticky .search-focused .blog-name{
+opacity:0
+}
+.centered-bottom,.centered-top-container,.centered-top-placeholder{
+padding:0 16px
+}
+.centered-top{
+position:relative
+}
+.item-view .centered-top.search-focused .subscribe-section-container,.stick=
+y .centered-top.search-focused .subscribe-section-container{
+opacity:0
+}
+.page_body.has-vertical-ads .centered .centered-bottom{
+display:inline-block;
+width:calc(100% - 176px)
+}
+.Header h1{
+color:#ffffff;
+font:bold 45px Roboto, sans-serif;
+line-height:normal;
+margin:0 0 13px 0;
+text-align:center;
+width:100%
+}
+.Header h1 a,.Header h1 a:hover,.Header h1 a:visited{
+color:#ffffff
+}
+.item-view .Header h1,.sticky .Header h1{
+font-size:24px;
+line-height:24px;
+margin:0;
+text-align:left
+}
+.sticky .Header h1{
+color:#9ba2a8
+}
+.sticky .Header h1 a,.sticky .Header h1 a:hover,.sticky .Header h1 a:visite=
+d{
+color:#9ba2a8
+}
+.Header p{
+color:#ffffff;
+margin:0 0 13px 0;
+opacity:.8;
+text-align:center
+}
+.widget .title{
+line-height:28px
+}
+.BlogArchive li{
+font-size:16px
+}
+.BlogArchive .post-count{
+color:#9ba2a8
+}
+#page_body .FeaturedPost,.Blog .blog-posts .post-outer-container{
+background:#1d1d1d;
+min-height:40px;
+padding:30px 40px;
+width:auto
+}
+.Blog .blog-posts .post-outer-container:last-child{
+margin-bottom:0
+}
+.Blog .blog-posts .post-outer-container .post-outer{
+border:0;
+position:relative;
+padding-bottom:.25em
+}
+.post-outer-container{
+margin-bottom:16px
+}
+.post:first-child{
+margin-top:0
+}
+.post .thumb{
+float:left;
+height:20%;
+width:20%
+}
+.post-share-buttons-bottom,.post-share-buttons-top{
+float:right
+}
+.post-share-buttons-bottom{
+margin-right:24px
+}
+.post-footer,.post-header{
+clear:left;
+color:rgba(255,255,255,0.54);
+margin:0;
+width:inherit
+}
+.blog-pager{
+text-align:center
+}
+.blog-pager a{
+color:#2196f3
+}
+.blog-pager a:visited{
+color:#2196f3
+}
+.blog-pager a:hover{
+color:#2196f3
+}
+.post-title{
+font:bold 22px Roboto, sans-serif;
+float:left;
+margin:0 0 8px 0;
+max-width:calc(100% - 48px)
+}
+.post-title a{
+font:bold 30px Roboto, sans-serif
+}
+.post-title,.post-title a,.post-title a:hover,.post-title a:visited{
+color:#ffffff
+}
+.post-body{
+color:#9ba2a8;
+font:15px Roboto, sans-serif;
+line-height:1.6em;
+margin:1.5em 0 2em 0;
+display:block
+}
+.post-body img{
+height:inherit
+}
+.post-body .snippet-thumbnail{
+float:left;
+margin:0;
+margin-right:2em;
+max-height:128px;
+max-width:128px
+}
+.post-body .snippet-thumbnail img{
+max-width:100%
+}
+.main .FeaturedPost .widget-content{
+border:0;
+position:relative;
+padding-bottom:.25em
+}
+.FeaturedPost img{
+margin-top:2em
+}
+.FeaturedPost .snippet-container{
+margin:2em 0
+}
+.FeaturedPost .snippet-container p{
+margin:0
+}
+.FeaturedPost .snippet-thumbnail{
+float:none;
+height:auto;
+margin-bottom:2em;
+margin-right:0;
+overflow:hidden;
+max-height:calc(600px + 2em);
+max-width:100%;
+text-align:center;
+width:100%
+}
+.FeaturedPost .snippet-thumbnail img{
+max-width:100%;
+width:100%
+}
+.byline{
+color:rgba(255,255,255,0.54);
+display:inline-block;
+line-height:24px;
+margin-top:8px;
+vertical-align:top
+}
+.byline.post-author:first-child{
+margin-right:0
+}
+.byline.reactions .reactions-label{
+line-height:22px;
+vertical-align:top
+}
+.byline.post-share-buttons{
+position:relative;
+display:inline-block;
+margin-top:0;
+width:100%
+}
+.byline.post-share-buttons .sharing{
+float:right
+}
+.flat-button.ripple:hover{
+background-color:rgba(33,150,243,.12)
+}
+.flat-button.ripple .splash{
+background-color:rgba(33,150,243,.4)
+}
+a.timestamp-link,a:active.timestamp-link,a:visited.timestamp-link{
+color:inherit;
+font:inherit;
+text-decoration:inherit
+}
+.post-share-buttons{
+margin-left:0
+}
+.clear-sharing{
+min-height:24px
+}
+.comment-link{
+color:#2196f3;
+position:relative
+}
+.comment-link .num_comments{
+margin-left:8px;
+vertical-align:top
+}
+#comment-holder .continue{
+display:none
+}
+#comment-editor{
+margin-bottom:20px;
+margin-top:20px
+}
+#comments .comment-form h4,#comments h3.title{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.post-filter-message{
+background-color:rgba(0,0,0,.7);
+color:#fff;
+display:table;
+margin-bottom:16px;
+width:100%
+}
+.post-filter-message div{
+display:table-cell;
+padding:15px 28px
+}
+.post-filter-message div:last-child{
+padding-left:0;
+text-align:right
+}
+.post-filter-message a{
+white-space:nowrap
+}
+.post-filter-message .search-label,.post-filter-message .search-query{
+font-weight:700;
+color:#2196f3
+}
+#blog-pager{
+margin:2em 0
+}
+#blog-pager a{
+color:#2196f3;
+font-size:14px
+}
+.subscribe-button{
+border-color:#ffffff;
+color:#ffffff
+}
+.sticky .subscribe-button{
+border-color:#9ba2a8;
+color:#9ba2a8
+}
+.tabs{
+margin:0 auto;
+padding:0
+}
+.tabs li{
+margin:0 8px;
+vertical-align:top
+}
+.tabs .overflow-button a,.tabs li a{
+color:#cccccc;
+font:700 normal 15px Roboto, sans-serif;
+line-height:18px
+}
+.tabs .overflow-button a{
+padding:12px 8px
+}
+.overflow-popup .tabs li{
+text-align:left
+}
+.overflow-popup li a{
+color:#9ba2a8;
+display:block;
+padding:8px 20px
+}
+.overflow-popup li.selected a{
+color:#ffffff
+}
+a.report_abuse{
+font-weight:400
+}
+.Label li,.Label span.label-size,.byline.post-labels a{
+background-color:#444444;
+border:1px solid #444444;
+border-radius:15px;
+display:inline-block;
+margin:4px 4px 4px 0;
+padding:3px 8px
+}
+.Label a,.byline.post-labels a{
+color:#ffffff
+}
+.Label ul{
+list-style:none;
+padding:0
+}
+.PopularPosts{
+background-color:#444444;
+padding:30px 40px
+}
+.PopularPosts .item-content{
+color:#9ba2a8;
+margin-top:24px
+}
+.PopularPosts a,.PopularPosts a:hover,.PopularPosts a:visited{
+color:#2196f3
+}
+.PopularPosts .post-title,.PopularPosts .post-title a,.PopularPosts .post-t=
+itle a:hover,.PopularPosts .post-title a:visited{
+color:#ffffff;
+font-size:18px;
+font-weight:700;
+line-height:24px
+}
+.PopularPosts,.PopularPosts h3.title a{
+color:#9ba2a8;
+font:15px Roboto, sans-serif
+}
+.main .PopularPosts{
+padding:16px 40px
+}
+.PopularPosts h3.title{
+font-size:14px;
+margin:0
+}
+.PopularPosts h3.post-title{
+margin-bottom:0
+}
+.PopularPosts .byline{
+color:rgba(255,255,255,0.54)
+}
+.PopularPosts .jump-link{
+float:right;
+margin-top:16px
+}
+.PopularPosts .post-header .byline{
+font-size:.9em;
+font-style:italic;
+margin-top:6px
+}
+.PopularPosts ul{
+list-style:none;
+padding:0;
+margin:0
+}
+.PopularPosts .post{
+padding:20px 0
+}
+.PopularPosts .post+.post{
+border-top:1px dashed #cccccc
+}
+.PopularPosts .item-thumbnail{
+float:left;
+margin-right:32px
+}
+.PopularPosts .item-thumbnail img{
+height:88px;
+padding:0;
+width:88px
+}
+.inline-ad{
+margin-bottom:16px
+}
+.desktop-ad .inline-ad{
+display:block
+}
+.adsbygoogle{
+overflow:hidden
+}
+.vertical-ad-container{
+float:right;
+margin-right:16px;
+width:128px
+}
+.vertical-ad-container .AdSense+.AdSense{
+margin-top:16px
+}
+.inline-ad-placeholder,.vertical-ad-placeholder{
+background:#1d1d1d;
+border:1px solid #000;
+opacity:.9;
+vertical-align:middle;
+text-align:center
+}
+.inline-ad-placeholder span,.vertical-ad-placeholder span{
+margin-top:290px;
+display:block;
+text-transform:uppercase;
+font-weight:700;
+color:#ffffff
+}
+.vertical-ad-placeholder{
+height:600px
+}
+.vertical-ad-placeholder span{
+margin-top:290px;
+padding:0 40px
+}
+.inline-ad-placeholder{
+height:90px
+}
+.inline-ad-placeholder span{
+margin-top:36px
+}
+.Attribution{
+color:#9ba2a8
+}
+.Attribution a,.Attribution a:hover,.Attribution a:visited{
+color:#2196f3
+}
+.Attribution svg{
+fill:#ffffff
+}
+.sidebar-container{
+box-shadow:1px 1px 3px rgba(0,0,0,.1)
+}
+.sidebar-container,.sidebar-container .sidebar_bottom{
+background-color:#1d1d1d
+}
+.sidebar-container .navigation,.sidebar-container .sidebar_top_wrapper{
+background-color:#1d1d1d
+}
+.sidebar-container .sidebar_top{
+overflow:auto
+}
+.sidebar-container .sidebar_bottom{
+width:100%;
+padding-top:16px
+}
+.sidebar-container .widget:first-child{
+padding-top:0
+}
+.sidebar_top .widget.Profile{
+padding-bottom:16px
+}
+.widget.Profile{
+margin:0;
+width:100%
+}
+.widget.Profile h2{
+display:none
+}
+.widget.Profile h3.title{
+color:#c5c1c1;
+margin:16px 32px
+}
+.widget.Profile .individual{
+text-align:center
+}
+.widget.Profile .individual .profile-link{
+padding:1em
+}
+.widget.Profile .individual .default-avatar-wrapper .avatar-icon{
+margin:auto
+}
+.widget.Profile .team{
+margin-bottom:32px;
+margin-left:32px;
+margin-right:32px
+}
+.widget.Profile ul{
+list-style:none;
+padding:0
+}
+.widget.Profile li{
+margin:10px 0
+}
+.widget.Profile .profile-img{
+border-radius:50%;
+float:none
+}
+.widget.Profile .profile-link{
+color:#ffffff;
+font-size:.9em;
+margin-bottom:1em;
+opacity:.87;
+overflow:hidden
+}
+.widget.Profile .profile-link.visit-profile{
+border-style:solid;
+border-width:1px;
+border-radius:12px;
+cursor:pointer;
+font-size:12px;
+font-weight:400;
+padding:5px 20px;
+display:inline-block;
+line-height:normal
+}
+.widget.Profile dd{
+color:rgba(238, 238, 238, 0.54);
+margin:0 16px
+}
+.widget.Profile location{
+margin-bottom:1em
+}
+.widget.Profile .profile-textblock{
+font-size:14px;
+line-height:24px;
+position:relative
+}
+body.sidebar-visible .page_body{
+overflow-y:scroll
+}
+body.sidebar-visible .bg-photo-container{
+overflow-y:scroll
+}
+@media screen and (min-width:1440px){
+.sidebar-container{
+margin-top:480px;
+min-height:calc(100% - 480px);
+overflow:visible;
+z-index:32
+}
+.sidebar-container .sidebar_top_wrapper{
+background-color:#1d1d1d;
+height:480px;
+margin-top:-480px
+}
+.sidebar-container .sidebar_top{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+height:480px;
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+-webkit-flex-direction:row;
+-ms-flex-direction:row;
+flex-direction:row;
+max-height:480px
+}
+.sidebar-container .sidebar_bottom{
+max-width:284px;
+width:284px
+}
+body.collapsed-header .sidebar-container{
+z-index:15
+}
+.sidebar-container .sidebar_top:empty{
+display:none
+}
+.sidebar-container .sidebar_top>:only-child{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-align-self:center;
+-ms-flex-item-align:center;
+-ms-grid-row-align:center;
+align-self:center;
+width:100%
+}
+.sidebar_top_wrapper.no-items{
+display:none
+}
+}
+.post-snippet.snippet-container{
+max-height:120px
+}
+.post-snippet .snippet-item{
+line-height:24px
+}
+.post-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, =
+29, 0) 100%);
+background:linear-gradient(to left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, 29, 0=
+) 100%);
+color:#9ba2a8;
+height:24px
+}
+.popular-posts-snippet.snippet-container{
+max-height:72px
+}
+.popular-posts-snippet .snippet-item{
+line-height:24px
+}
+.PopularPosts .popular-posts-snippet .snippet-fade{
+color:#9ba2a8;
+height:24px
+}
+.main .popular-posts-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#444444 0,#444444 20%,rgba(68, 68, =
+68, 0) 100%);
+background:linear-gradient(to left,#444444 0,#444444 20%,rgba(68, 68, 68, 0=
+) 100%)
+}
+.sidebar_bottom .popular-posts-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, =
+29, 0) 100%);
+background:linear-gradient(to left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, 29, 0=
+) 100%)
+}
+.profile-snippet.snippet-container{
+max-height:192px
+}
+.has-location .profile-snippet.snippet-container{
+max-height:144px
+}
+.profile-snippet .snippet-item{
+line-height:24px
+}
+.profile-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, =
+29, 0) 100%);
+background:linear-gradient(to left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, 29, 0=
+) 100%);
+color:rgba(238, 238, 238, 0.54);
+height:24px
+}
+@media screen and (min-width:1440px){
+.profile-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, =
+29, 0) 100%);
+background:linear-gradient(to left,#1d1d1d 0,#1d1d1d 20%,rgba(29, 29, 29, 0=
+) 100%)
+}
+}
+@media screen and (max-width:800px){
+.blog-name{
+margin-top:0
+}
+body.item-view .blog-name{
+margin:0 48px
+}
+.centered-bottom{
+padding:8px
+}
+body.item-view .centered-bottom{
+padding:0
+}
+.page_body .centered{
+padding:10px 0
+}
+body.item-view #header,body.item-view .widget.Header{
+margin-right:0
+}
+body.collapsed-header .centered-top-container .blog-name{
+display:block
+}
+body.collapsed-header .centered-top-container .widget.Header h1{
+text-align:center
+}
+.widget.Header header{
+padding:0
+}
+.widget.Header h1{
+font-size:24px;
+line-height:24px;
+margin-bottom:13px
+}
+body.item-view .widget.Header h1{
+text-align:center
+}
+body.item-view .widget.Header p{
+text-align:center
+}
+.blog-name .widget.PageList{
+padding:0
+}
+body.item-view .centered-top{
+margin-bottom:5px
+}
+.search-action,.search-input{
+margin-bottom:-8px
+}
+.search form{
+margin-bottom:8px
+}
+body.item-view .subscribe-section-container{
+margin:5px 0 0 0;
+width:100%
+}
+#page_body.section div.widget.FeaturedPost,div.widget.PopularPosts{
+padding:16px
+}
+div.widget.Blog .blog-posts .post-outer-container{
+padding:16px
+}
+div.widget.Blog .blog-posts .post-outer-container .post-outer{
+padding:0
+}
+.post:first-child{
+margin:0
+}
+.post-body .snippet-thumbnail{
+margin:0 3vw 3vw 0
+}
+.post-body .snippet-thumbnail img{
+height:20vw;
+width:20vw;
+max-height:128px;
+max-width:128px
+}
+div.widget.PopularPosts div.item-thumbnail{
+margin:0 3vw 3vw 0
+}
+div.widget.PopularPosts div.item-thumbnail img{
+height:20vw;
+width:20vw;
+max-height:88px;
+max-width:88px
+}
+.post-title{
+line-height:1
+}
+.post-title,.post-title a{
+font-size:20px
+}
+#page_body.section div.widget.FeaturedPost h3 a{
+font-size:22px
+}
+.mobile-ad .inline-ad{
+display:block
+}
+.page_body.has-vertical-ads .vertical-ad-container,.page_body.has-vertical-=
+ads .vertical-ad-container ins{
+display:none
+}
+.page_body.has-vertical-ads .centered .centered-bottom,.page_body.has-verti=
+cal-ads .centered .centered-top{
+display:block;
+width:auto
+}
+div.post-filter-message div{
+padding:8px 16px
+}
+}
+@media screen and (min-width:1440px){
+body{
+position:relative
+}
+body.item-view .blog-name{
+margin-left:48px
+}
+.page_body{
+margin-left:284px
+}
+.search{
+margin-left:0
+}
+.search.focused{
+width:100%
+}
+.sticky{
+padding-left:284px
+}
+.hamburger-menu{
+display:none
+}
+body.collapsed-header .page_body .centered-top-container{
+padding-left:284px;
+padding-right:0;
+width:100%
+}
+body.collapsed-header .centered-top-container .search.focused{
+width:100%
+}
+body.collapsed-header .centered-top-container .blog-name{
+margin-left:0
+}
+body.collapsed-header.item-view .centered-top-container .search.focused{
+width:calc(100% - 50px)
+}
+body.collapsed-header.item-view .centered-top-container .blog-name{
+margin-left:40px
+}
+}
+
+--></style>
+<style id=3D"template-skin-1" type=3D"text/css"><!--
+body#layout .hidden,
+body#layout .invisible {
+display: inherit;
+}
+body#layout .navigation {
+display: none;
+}
+body#layout .page,
+body#layout .sidebar_top,
+body#layout .sidebar_bottom {
+display: inline-block;
+left: inherit;
+position: relative;
+vertical-align: top;
+}
+body#layout .page {
+float: right;
+margin-left: 20px;
+width: 55%;
+}
+body#layout .sidebar-container {
+float: right;
+width: 40%;
+}
+body#layout .hamburger-menu {
+display: none;
+}
+--></style>
+<style>
+    .bg-photo {background-image:url(https\:\/\/themes.googleusercontent.com=
+\/image?id=3DrabMT9PC10wCtkMoMM2KrjGV5ejCGidFlmg3elSmmoRNnd0FxKwY5T0RGV948R=
+08752LcEb6qEXa);}
+   =20
+@media (max-width: 480px) { .bg-photo {background-image:url(https\:\/\/them=
+es.googleusercontent.com\/image?id=3DrabMT9PC10wCtkMoMM2KrjGV5ejCGidFlmg3el=
+SmmoRNnd0FxKwY5T0RGV948R08752LcEb6qEXa&options=3Dw480);}}
+@media (max-width: 640px) and (min-width: 481px) { .bg-photo {background-im=
+age:url(https\:\/\/themes.googleusercontent.com\/image?id=3DrabMT9PC10wCtkM=
+oMM2KrjGV5ejCGidFlmg3elSmmoRNnd0FxKwY5T0RGV948R08752LcEb6qEXa&options=3Dw64=
+0);}}
+@media (max-width: 800px) and (min-width: 641px) { .bg-photo {background-im=
+age:url(https\:\/\/themes.googleusercontent.com\/image?id=3DrabMT9PC10wCtkM=
+oMM2KrjGV5ejCGidFlmg3elSmmoRNnd0FxKwY5T0RGV948R08752LcEb6qEXa&options=3Dw80=
+0);}}
+@media (max-width: 1200px) and (min-width: 801px) { .bg-photo {background-i=
+mage:url(https\:\/\/themes.googleusercontent.com\/image?id=3DrabMT9PC10wCtk=
+MoMM2KrjGV5ejCGidFlmg3elSmmoRNnd0FxKwY5T0RGV948R08752LcEb6qEXa&options=3Dw1=
+200);}}
+/* Last tag covers anything over one higher than the previous max-size cap.=
+ */
+@media (min-width: 1201px) { .bg-photo {background-image:url(https\:\/\/the=
+mes.googleusercontent.com\/image?id=3DrabMT9PC10wCtkMoMM2KrjGV5ejCGidFlmg3e=
+lSmmoRNnd0FxKwY5T0RGV948R08752LcEb6qEXa&options=3Dw1600);}}
+  </style>
+
+<link href=3D"https://www.blogger.com/dyn-css/authorization.css?targetBlogI=
+D=3D4461696929350980230&amp;zx=3De323cc02-fa53-44c1-9556-950e7a2ed8e1" medi=
+a=3D"all" onload=3D"if(media!=3D'all')media=3D'all'" rel=3D"stylesheet">
+
+</head>
+<body class=3D"item-view version-1-3-0 variant-indie_dark collapsed-header"=
+ data-js-state=3D"loaded">
+<a class=3D"skip-navigation" href=3D"http://geneiry0dan.blogspot.com/2017/0=
+4/tutorial-mitm-kali-linux.html?m=3D1#main" tabindex=3D"0">
+Langsung ke konten utama
+</a>
+<div class=3D"page">
+<div class=3D"bg-photo-overlay"></div>
+<div class=3D"bg-photo-container">
+<div class=3D"bg-photo"></div>
+</div>
+<div class=3D"page_body">
+<div class=3D"centered">
+<div class=3D"centered-top-placeholder cloned"><div class=3D"centered-top">
+<a class=3D"return_link" href=3D"http://geneiry0dan.blogspot.com/">
+<button class=3D"svg-icon-24-button back-button rtl-reversible-icon flat-ic=
+on-button ripple">
+<svg class=3D"svg-icon-24">
+
+</svg>
+</button>
+</a>
+<div class=3D"search">
+<button aria-label=3D"Telusuri" class=3D"search-expand touch-icon-button">
+<div class=3D"flat-icon-button ripple">
+<svg class=3D"svg-icon-24 search-expand-icon">
+
+</svg>
+</div>
+</button>
+<div class=3D"section" id=3D"search_top" name=3D"Search (Top)"><div class=
+=3D"widget BlogSearch" data-version=3D"2" id=3D"BlogSearch1">
+<h3 class=3D"title">
+Cari Blog Ini
+</h3>
+<div class=3D"widget-content" role=3D"search">
+<form action=3D"http://geneiry0dan.blogspot.com/search" target=3D"_top">
+<div class=3D"search-input">
+<input aria-label=3D"Cari blog ini" autocomplete=3D"off" name=3D"q" placeho=
+lder=3D"Cari blog ini" value=3D"">
+</div>
+<input class=3D"search-action flat-button" type=3D"submit" value=3D"Telusur=
+i">
+</form>
+</div>
+</div></div>
+</div>
+<div class=3D"clearboth"></div>
+<div class=3D"blog-name container">
+<div class=3D"container section" id=3D"header" name=3D"Tajuk"><div class=3D=
+"widget Header" data-version=3D"2" id=3D"Header1">
+<div class=3D"header-widget">
+<div>
+<h1>
+<a href=3D"http://geneiry0dan.blogspot.com/">
+ANTI WHITEHAT
+</a>
+</h1>
+</div>
+<p>
+</p>
+</div>
+</div></div>
+<nav role=3D"navigation">
+<div class=3D"clearboth no-items section" id=3D"page_list_top" name=3D"Daft=
+ar Halaman (Atas)">
+</div>
+</nav>
+</div>
+</div></div>
+
+<div>
+<div class=3D"vertical-ad-container no-items section" id=3D"ads" name=3D"Ik=
+lan">
+</div>
+<main class=3D"centered-bottom" id=3D"main" role=3D"main" tabindex=3D"-1">
+<div class=3D"main section" id=3D"page_body" name=3D"Badan Halaman">
+<div class=3D"widget Blog" data-version=3D"2" id=3D"Blog1">
+<div class=3D"blog-posts hfeed container">
+<article class=3D"post-outer-container">
+<div class=3D"post-outer">
+<div class=3D"post">
+
+<a name=3D"3228118278020636331"></a>
+<h3 class=3D"post-title entry-title">
+Tutorial MITM Kali Linux
+</h3>
+<div class=3D"post-share-buttons post-share-buttons-top">
+<div class=3D"byline post-share-buttons goog-inline-block">
+<div aria-owns=3D"sharing-popup-Blog1-byline-3228118278020636331" class=3D"=
+sharing" data-title=3D"Tutorial MITM Kali Linux">
+<button aria-controls=3D"sharing-popup-Blog1-byline-3228118278020636331" ar=
+ia-label=3D"Berbagi" class=3D"sharing-button touch-icon-button" id=3D"shari=
+ng-button-Blog1-byline-3228118278020636331" role=3D"button" aria-expanded=
+=3D"false" aria-haspopup=3D"true">
+<div class=3D"flat-icon-button ripple">
+<svg class=3D"svg-icon-24">
+
+</svg>
+</div>
+</button>
+<div class=3D"share-buttons-container">
+<ul aria-hidden=3D"true" aria-label=3D"Berbagi" class=3D"share-buttons hidd=
+en" id=3D"sharing-popup-Blog1-byline-3228118278020636331" role=3D"menu">
+<li>
+<span aria-label=3D"Dapatkan link" class=3D"sharing-platform-button sharing=
+-element-link" data-href=3D"https://www.blogger.com/share-post.g?blogID=3D4=
+461696929350980230&amp;postID=3D3228118278020636331&amp;target=3D" data-url=
+=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali-linux.html" =
+role=3D"menuitem" tabindex=3D"-1" title=3D"Dapatkan link">
+<svg class=3D"svg-icon-24 touch-icon sharing-link">
+
+</svg>
+<span class=3D"platform-sharing-text">Dapatkan link</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Facebook" class=3D"sharing-platform-button s=
+haring-element-facebook" data-href=3D"https://www.blogger.com/share-post.g?=
+blogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=3D=
+facebook" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm=
+-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan ke Fac=
+ebook">
+<svg class=3D"svg-icon-24 touch-icon sharing-facebook">
+
+</svg>
+<span class=3D"platform-sharing-text">Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Twitter" class=3D"sharing-platform-button sh=
+aring-element-twitter" data-href=3D"https://www.blogger.com/share-post.g?bl=
+ogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=3Dtw=
+itter" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-ka=
+li-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan ke Twitte=
+r">
+<svg class=3D"svg-icon-24 touch-icon sharing-twitter">
+
+</svg>
+<span class=3D"platform-sharing-text">Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Pinterest" class=3D"sharing-platform-button =
+sharing-element-pinterest" data-href=3D"https://www.blogger.com/share-post.=
+g?blogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=
+=3Dpinterest" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-=
+mitm-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan ke=
+ Pinterest">
+<svg class=3D"svg-icon-24 touch-icon sharing-pinterest">
+
+</svg>
+<span class=3D"platform-sharing-text">Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Google+" class=3D"sharing-platform-button sh=
+aring-element-googlePlus" data-href=3D"https://www.blogger.com/share-post.g=
+?blogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=
+=3Dgoogleplus" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial=
+-mitm-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan k=
+e Google+">
+<svg class=3D"svg-icon-24 touch-icon sharing-googlePlus">
+
+</svg>
+<span class=3D"platform-sharing-text">Google+</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Email" class=3D"sharing-platform-button sharing-element=
+-email" data-href=3D"https://www.blogger.com/share-post.g?blogID=3D44616969=
+29350980230&amp;postID=3D3228118278020636331&amp;target=3Demail" data-url=
+=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali-linux.html" =
+role=3D"menuitem" tabindex=3D"-1" title=3D"Email">
+<svg class=3D"svg-icon-24 touch-icon sharing-email">
+
+</svg>
+<span class=3D"platform-sharing-text">Email</span>
+</span>
+</li>
+<li aria-hidden=3D"true" class=3D"hidden">
+<span aria-label=3D"Bagikan ke aplikasi lainnya" class=3D"sharing-platform-=
+button sharing-element-other" data-url=3D"http://geneiry0dan.blogspot.com/2=
+017/04/tutorial-mitm-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" tit=
+le=3D"Bagikan ke aplikasi lainnya">
+<svg class=3D"svg-icon-24 touch-icon sharing-sharingOther">
+
+</svg>
+<span class=3D"platform-sharing-text">Aplikasi Lainnya</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1">
+<span class=3D"byline post-timestamp">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali=
+-linux.html">
+<a class=3D"timestamp-link" href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/tutorial-mitm-kali-linux.html" rel=3D"bookmark" title=3D"permanent link">
+<time class=3D"published" datetime=3D"2017-04-19T05:30:00-07:00" title=3D"2=
+017-04-19T05:30:00-07:00">
+April 19, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class=3D"post-body entry-content float-container" id=3D"post-body-3228=
+118278020636331">
+<div style=3D"text-align: justify;">
+Setelah artikel sebelumnya membahas tentang MITM secara detail dan insyaall=
+ah cukup jelas, kali ini gw akan memberikan tutorial singkat sebelum bermai=
+n logika untuk jaringan yang lebih besar maka gw akan praktekkan ini di lab=
+ gw pribadi, agar nggak ganggu jaringan lain baca dulu tentang <a href=3D"h=
+ttp://geneiry0dan.blogspot.co.id/2017/04/serangan-hacker-mitm.html">MITM DI=
+SINI</a></div>
+<div style=3D"text-align: justify;">
+<br></div>
+<div style=3D"text-align: justify;">
+Install dulu Kali linux, karena ini gw basik di linux gw masih belum butuh =
+windows, oke mulai mengenal software MITM yang sering gw gunakan untuk meny=
+erang di jaringan yaitu Ettercap seperti pada di bawah ini console dulu buk=
+a terminal kalian seperti pada gambar dibawah ini dan ketikan <b>ettercap -=
+-help</b> untuk melihat perintahnya apa aja :&nbsp;</div>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://2.bp.blogspot.com/-eH-bjDZjuZY/WPdPDl7uStI/AAAAAAAAAEk/z=
+CFyHuTF9OYd8tCFwfmQAzrgUUm_gUwWQCLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B18-50-12.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"217" src=3D"https://2.bp.blogspot.com/-eH-=
+bjDZjuZY/WPdPDl7uStI/AAAAAAAAAEk/zCFyHuTF9OYd8tCFwfmQAzrgUUm_gUwWQCLcB/s320=
+/Screenshot%2Bfrom%2B2017-04-19%2B18-50-12.png" width=3D"320"></a></div>
+<div style=3D"text-align: justify;">
+oke pahami komen komenya, dan sekarang buka ettercap dengan mode GUI untuk =
+lebih nyamanya dengan cara ketik " <b>ettercap --gtk</b> " dan akan tampil =
+seperti pada gambar di bawah ini&nbsp;</div>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://4.bp.blogspot.com/-9D7OyQZSFSk/WPdQtEMaHiI/AAAAAAAAAEw/-=
+TYJU0QWMyYGqcq44DJ3X3Ve2oT0fekvwCLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B18-57-02.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"164" src=3D"https://4.bp.blogspot.com/-9D7=
+OyQZSFSk/WPdQtEMaHiI/AAAAAAAAAEw/-TYJU0QWMyYGqcq44DJ3X3Ve2oT0fekvwCLcB/s320=
+/Screenshot%2Bfrom%2B2017-04-19%2B18-57-02.png" width=3D"320"></a></div>
+<div style=3D"text-align: justify;">
+Setelah muncul gambar seperti di atas yaitu menu ettercap sekarang masuk ke=
+ menu sniff dan pilih unified sniffing yang berada di ettercap di sebelah k=
+iri atas dan pilih ethernet kalian jika menggunakan wifi maka gunakan wlan =
+kalian karena lancard kalian wifi, dan jika Ethernet kalian menggunakan kab=
+el maka gunakan Eth disini gw milih Eth0 perhatikan gambar dibawah ini dan =
+tekan OK</div>
+<div style=3D"text-align: justify;">
+&nbsp;<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://1.bp.blogspot.com/-vpa-FW2AMY4/WPdR2ok14dI/AAAAAAAAAE8/K=
+59AxLKVBc0xHGQU2elXuONLsValuHb3ACLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B19-02-12.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"174" src=3D"https://1.bp.blogspot.com/-vpa=
+-FW2AMY4/WPdR2ok14dI/AAAAAAAAAE8/K59AxLKVBc0xHGQU2elXuONLsValuHb3ACLcB/s320=
+/Screenshot%2Bfrom%2B2017-04-19%2B19-02-12.png" width=3D"320"></a></div>
+</div>
+<div style=3D"text-align: justify;">
+Kemudian masuk ke menu host --&gt; Host List --&gt; Scan For Host dan lihat=
+ hasilnya seperti pada gambar dibawah ini&nbsp;</div>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://2.bp.blogspot.com/-P4WGM4A3N8U/WPdS1cidDCI/AAAAAAAAAFI/9=
+AVpCKaFBrQ3vx_ZZ4Ropr_1oB6n79OBQCLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B19-06-29.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"174" src=3D"https://2.bp.blogspot.com/-P4W=
+GM4A3N8U/WPdS1cidDCI/AAAAAAAAAFI/9AVpCKaFBrQ3vx_ZZ4Ropr_1oB6n79OBQCLcB/s320=
+/Screenshot%2Bfrom%2B2017-04-19%2B19-06-29.png" width=3D"320"></a></div>
+<div style=3D"text-align: justify;">
+Terlihat ada beberapa host yang aktif pada jaringan gw coba perhatikan lagi=
+ gambar di atas, IP address dan juga MAC address terlihat jelas itu menunju=
+kan bahwa komputer yang aktif pada jaringan ! nah sekarang coba lihat IP ad=
+dress kalian berapa , dan cek ip router yang ada pada jaringan kalian denga=
+n cara membuka terminal baru dan ketikan " <b>route -n</b> "</div>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://4.bp.blogspot.com/-lSpsagIJti8/WPdUCQjWnHI/AAAAAAAAAFU/-=
+IdEkEe5rWYkxAYU8CcpYhg39pKOZKX2wCLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B19-11-29.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"73" src=3D"https://4.bp.blogspot.com/-lSps=
+agIJti8/WPdUCQjWnHI/AAAAAAAAAFU/-IdEkEe5rWYkxAYU8CcpYhg39pKOZKX2wCLcB/s320/=
+Screenshot%2Bfrom%2B2017-04-19%2B19-11-29.png" width=3D"320"></a></div>
+<div style=3D"text-align: justify;">
+Oke kalian sudah mengetahui ip dari router kalian sekarang saatnya melakuka=
+n MITM nih dengan cara masukan IP target ke target satu dalam Ettercap sepe=
+rti pada gambar di bawah ini gw masukan di target 1 IP target dan juga targ=
+et 2 Ip router, kalian bisa memasukan semua ip address yang terdaftar di ja=
+ringan ke target satu dan melakukan MITM kepada semua host yang aktif akan =
+tetapi disini gw peraktek cuma satu perhatikan&nbsp;</div>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://2.bp.blogspot.com/-PIswfjpq_1o/WPdVTBM1thI/AAAAAAAAAFg/T=
+Bzw25FjmhU2ar4kLLLLwn_KoZsQLF3FACLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B19-17-03.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"170" src=3D"https://2.bp.blogspot.com/-PIs=
+wfjpq_1o/WPdVTBM1thI/AAAAAAAAAFg/TBzw25FjmhU2ar4kLLLLwn_KoZsQLF3FACLcB/s320=
+/Screenshot%2Bfrom%2B2017-04-19%2B19-17-03.png" width=3D"320"></a></div>
+<div style=3D"text-align: justify;">
+Nah sekarang saatnya jalankan MITM kalian dengan cara masuk ke menu MITM da=
+n jalankan ARP Possioning dan pilih sniff remote conections seperti pada ga=
+mbar di bawah ini&nbsp;</div>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://2.bp.blogspot.com/-62bEEOBIHTU/WPdV9kiFepI/AAAAAAAAAFo/N=
+OJRVYjxn40iWcKGMET8pcDmoVb7AOPeACLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B19-19-48.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"171" src=3D"https://2.bp.blogspot.com/-62b=
+EEOBIHTU/WPdV9kiFepI/AAAAAAAAAFo/NOJRVYjxn40iWcKGMET8pcDmoVb7AOPeACLcB/s320=
+/Screenshot%2Bfrom%2B2017-04-19%2B19-19-48.png" width=3D"320"></a></div>
+Oke sekarang saatnya melakukan start sniffing untuk menjalankan MITM kalian=
+ dengan mode sniffing dengan cara perhatikan di halaman Ettercap kalian di =
+sebelah kiri atas START --&gt; START SNIFFING dan tunggu hingga ada data ya=
+ng masuk dari ip tarrget lihat gambar dibawah ini<br>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<a href=3D"https://3.bp.blogspot.com/-vMlTH6bJTQs/WPdXrLPzgfI/AAAAAAAAAF0/y=
+512C4iXr3skYA4C-o2VRGofIJUudVoqACLcB/s1600/Screenshot%2Bfrom%2B2017-04-19%2=
+B19-26-58.png" imageanchor=3D"1" style=3D"margin-left: 1em; margin-right: 1=
+em;"><img border=3D"0" height=3D"88" src=3D"https://3.bp.blogspot.com/-vMlT=
+H6bJTQs/WPdXrLPzgfI/AAAAAAAAAF0/y512C4iXr3skYA4C-o2VRGofIJUudVoqACLcB/s320/=
+Screenshot%2Bfrom%2B2017-04-19%2B19-26-58.png" width=3D"320"></a></div>
+<div style=3D"text-align: justify;">
+BINGGO kalian bisa mendapatkan password yang target kalian masukan ke web a=
+dmin lihat username admin dan juga password fuckingshit :D kalian tidak han=
+ya bisa sniffing dengan ini kalian bisa merubah paket chatting dan msih ban=
+yak yang kalian bisa lakukan yang akan gw bahas di artikel selanjutnya than=
+ks dan selamat mencoba dan belajar lihat video tutorialnya&nbsp; juga di ba=
+wah ini&nbsp;</div>
+<div class=3D"separator" style=3D"clear: both; text-align: center;">
+<iframe width=3D"320" height=3D"266" class=3D"YOUTUBE-iframe-video" data-th=
+umbnail-src=3D"https://i.ytimg.com/vi/c8gvth5VqRs/0.jpg" src=3D"https://www=
+.youtube.com/embed/c8gvth5VqRs?feature=3Dplayer_embedded" frameborder=3D"0"=
+ allowfullscreen=3D""></iframe></div>
+<div style=3D"text-align: justify;">
+<br></div>
+<div style=3D"text-align: justify;">
+<br></div>
+<br>
+<div style=3D"text-align: justify;">
+<br></div>
+<div style=3D"text-align: justify;">
+<br></div>
+<div style=3D"text-align: justify;">
+<br></div>
+<div style=3D"text-align: justify;">
+<br></div>
+<div style=3D"text-align: justify;">
+<br></div>
+</div>
+<div class=3D"post-bottom">
+<div class=3D"post-footer float-container">
+<div class=3D"post-footer-line post-footer-line-1">
+</div>
+<div class=3D"post-footer-line post-footer-line-2">
+<span class=3D"byline post-labels">
+<span class=3D"byline-label">
+</span>
+<a href=3D"http://geneiry0dan.blogspot.com/search/label/Network%20Hacking" =
+rel=3D"tag">Network Hacking</a>
+<a href=3D"http://geneiry0dan.blogspot.com/search/label/Seni%20Hacking%20Da=
+lam%20Jaringan" rel=3D"tag">Seni Hacking Dalam Jaringan</a>
+<a href=3D"http://geneiry0dan.blogspot.com/search/label/Serangan%20Hacker%2=
+0MITM" rel=3D"tag">Serangan Hacker MITM</a>
+<a href=3D"http://geneiry0dan.blogspot.com/search/label/Sniffing" rel=3D"ta=
+g">Sniffing</a>
+<a href=3D"http://geneiry0dan.blogspot.com/search/label/Tutorial%20MITM%20K=
+ali%20Linux" rel=3D"tag">Tutorial MITM Kali Linux</a>
+</span>
+</div>
+<div class=3D"post-footer-line post-footer-line-3">
+</div>
+</div>
+<div class=3D"post-share-buttons post-share-buttons-bottom">
+<div class=3D"byline post-share-buttons goog-inline-block">
+<div aria-owns=3D"sharing-popup-Blog1-byline-3228118278020636331" class=3D"=
+sharing" data-title=3D"Tutorial MITM Kali Linux">
+<button aria-controls=3D"sharing-popup-Blog1-byline-3228118278020636331" ar=
+ia-label=3D"Berbagi" class=3D"sharing-button touch-icon-button" id=3D"shari=
+ng-button-Blog1-byline-3228118278020636331" role=3D"button" aria-expanded=
+=3D"false" aria-haspopup=3D"true">
+<div class=3D"flat-icon-button ripple">
+<svg class=3D"svg-icon-24">
+
+</svg>
+</div>
+</button>
+<div class=3D"share-buttons-container">
+<ul aria-hidden=3D"true" aria-label=3D"Berbagi" class=3D"share-buttons hidd=
+en" id=3D"sharing-popup-Blog1-byline-3228118278020636331" role=3D"menu">
+<li>
+<span aria-label=3D"Dapatkan link" class=3D"sharing-platform-button sharing=
+-element-link" data-href=3D"https://www.blogger.com/share-post.g?blogID=3D4=
+461696929350980230&amp;postID=3D3228118278020636331&amp;target=3D" data-url=
+=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali-linux.html" =
+role=3D"menuitem" tabindex=3D"-1" title=3D"Dapatkan link">
+<svg class=3D"svg-icon-24 touch-icon sharing-link">
+
+</svg>
+<span class=3D"platform-sharing-text">Dapatkan link</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Facebook" class=3D"sharing-platform-button s=
+haring-element-facebook" data-href=3D"https://www.blogger.com/share-post.g?=
+blogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=3D=
+facebook" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm=
+-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan ke Fac=
+ebook">
+<svg class=3D"svg-icon-24 touch-icon sharing-facebook">
+
+</svg>
+<span class=3D"platform-sharing-text">Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Twitter" class=3D"sharing-platform-button sh=
+aring-element-twitter" data-href=3D"https://www.blogger.com/share-post.g?bl=
+ogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=3Dtw=
+itter" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-ka=
+li-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan ke Twitte=
+r">
+<svg class=3D"svg-icon-24 touch-icon sharing-twitter">
+
+</svg>
+<span class=3D"platform-sharing-text">Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Pinterest" class=3D"sharing-platform-button =
+sharing-element-pinterest" data-href=3D"https://www.blogger.com/share-post.=
+g?blogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=
+=3Dpinterest" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-=
+mitm-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan ke=
+ Pinterest">
+<svg class=3D"svg-icon-24 touch-icon sharing-pinterest">
+
+</svg>
+<span class=3D"platform-sharing-text">Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Bagikan ke Google+" class=3D"sharing-platform-button sh=
+aring-element-googlePlus" data-href=3D"https://www.blogger.com/share-post.g=
+?blogID=3D4461696929350980230&amp;postID=3D3228118278020636331&amp;target=
+=3Dgoogleplus" data-url=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial=
+-mitm-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" title=3D"Bagikan k=
+e Google+">
+<svg class=3D"svg-icon-24 touch-icon sharing-googlePlus">
+
+</svg>
+<span class=3D"platform-sharing-text">Google+</span>
+</span>
+</li>
+<li>
+<span aria-label=3D"Email" class=3D"sharing-platform-button sharing-element=
+-email" data-href=3D"https://www.blogger.com/share-post.g?blogID=3D44616969=
+29350980230&amp;postID=3D3228118278020636331&amp;target=3Demail" data-url=
+=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali-linux.html" =
+role=3D"menuitem" tabindex=3D"-1" title=3D"Email">
+<svg class=3D"svg-icon-24 touch-icon sharing-email">
+
+</svg>
+<span class=3D"platform-sharing-text">Email</span>
+</span>
+</li>
+<li aria-hidden=3D"true" class=3D"hidden">
+<span aria-label=3D"Bagikan ke aplikasi lainnya" class=3D"sharing-platform-=
+button sharing-element-other" data-url=3D"http://geneiry0dan.blogspot.com/2=
+017/04/tutorial-mitm-kali-linux.html" role=3D"menuitem" tabindex=3D"-1" tit=
+le=3D"Bagikan ke aplikasi lainnya">
+<svg class=3D"svg-icon-24 touch-icon sharing-sharingOther">
+
+</svg>
+<span class=3D"platform-sharing-text">Aplikasi Lainnya</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class=3D"comments threaded" data-embed=3D"true" data-num-comments=
+=3D"1" id=3D"comments">
+<a name=3D"comments"></a>
+<h3 class=3D"title">Komentar</h3>
+<div class=3D"comments-content">
+
+
+
+<div id=3D"comment-holder">
+
+<div id=3D"bc_0_2C" kind=3D"c"><div id=3D"bc_0_2CT"><div id=3D"bc_0_1T" cla=
+ss=3D"comment-thread" kind=3D"r" t=3D"0" u=3D"0"><ol id=3D"bc_0_1TB"><li id=
+=3D"bc_0_0B" class=3D"comment" kind=3D"b"><div class=3D"avatar-image-contai=
+ner"><img src=3D"http://lh5.googleusercontent.com/-szhFpD0m0F0/AAAAAAAAAAI/=
+AAAAAAAAAA0/ezuHt-PXCGE/s35-c/photo.jpg"></div><div id=3D"c3660668036643577=
+21" class=3D"comment-block"><div id=3D"bc_0_0M" class=3D"comment-header" ki=
+nd=3D"m"><cite class=3D"user"><a rel=3D"nofollow" href=3D"https://www.blogg=
+er.com/profile/03355554872435347687">Lamperxo Poz</a></cite><span class=3D"=
+icon user"></span><span class=3D"datetime secondary-text"><a rel=3D"nofollo=
+w" href=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-mitm-kali-linux=
+.html?showComment=3D1523357855329#c366066803664357721">10 April 2018 03.57<=
+/a></span></div><p id=3D"bc_0_0MC" class=3D"comment-content">loginnya diman=
+a gan?<br></p><span id=3D"bc_0_0MN" class=3D"comment-actions secondary-text=
+" kind=3D"m"><a kind=3D"i" href=3D"javascript:;" target=3D"_self" o=3D"r">B=
+alas</a><span class=3D"item-control blog-admin pid-1946815841"><a o=3D"d" t=
+arget=3D"_self" href=3D"https://www.blogger.com/delete-comment.g?blogID=3D4=
+461696929350980230&amp;postID=3D366066803664357721">Hapus</a></span></span>=
+</div><div id=3D"bc_0_0BR" class=3D"comment-replies"></div><div id=3D"bc_0_=
+0B_box" class=3D"comment-replybox-single"></div></li></ol><div id=3D"bc_0_1=
+I" class=3D"continue" kind=3D"ci" style=3D"display: none; "><a href=3D"java=
+script:;" target=3D"_self">Tambahkan komentar</a></div><div id=3D"bc_0_1T_b=
+ox" class=3D"comment-replybox-thread"></div><div id=3D"bc_0_1L" class=3D"lo=
+admore loaded" kind=3D"rb"><a href=3D"javascript:;" target=3D"_self">Muat y=
+ang lain...</a></div></div></div></div></div>
+</div>
+<p class=3D"comment-footer">
+</p><div class=3D"comment-form">
+<a name=3D"comment-form"></a>
+<h4 id=3D"comment-post-message">Posting Komentar</h4>
+<a href=3D"https://www.blogger.com/comment-iframe.g?blogID=3D44616969293509=
+80230&amp;postID=3D3228118278020636331&amp;skin=3Dcontempo&amp;blogspotRpcT=
+oken=3D5966530" id=3D"comment-editor-src"></a>
+<iframe allowtransparency=3D"allowtransparency" class=3D"blogger-iframe-col=
+orize blogger-comment-from-post" frameborder=3D"0" height=3D"90px" id=3D"co=
+mment-editor" name=3D"comment-editor" src=3D"https://www.blogger.com/commen=
+t-iframe.g?blogID=3D4461696929350980230&amp;postID=3D3228118278020636331&am=
+p;skin=3Dcontempo&amp;blogspotRpcToken=3D5966530" width=3D"100%" data-resiz=
+ed=3D"true" style=3D"display: block; "></iframe>
+
+
+</div>
+<p></p>
+</section>
+</article>
+</div>
+</div><div class=3D"widget PopularPosts" data-version=3D"2" id=3D"PopularPo=
+sts1">
+<h3 class=3D"title">
+Postingan populer dari blog ini
+</h3>
+<div class=3D"widget-content">
+<div role=3D"feed">
+<article class=3D"post" role=3D"article">
+<h3 class=3D"post-title"><a href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/tutorial-dns-spoofing.html">Tutorial DNS Spoofing </a></h3>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1">
+<span class=3D"byline post-timestamp">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-dns-spoof=
+ing.html">
+<a class=3D"timestamp-link" href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/tutorial-dns-spoofing.html" rel=3D"bookmark" title=3D"permanent link">
+<time class=3D"published" datetime=3D"2017-04-19T07:34:00-07:00" title=3D"2=
+017-04-19T07:34:00-07:00">
+April 19, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class=3D"item-content float-container">
+<div class=3D"item-thumbnail">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-dns-spoofing.ht=
+ml">
+<img alt=3D"Gambar" sizes=3D"72px" src=3D"https://4.bp.blogspot.com/-e0hjiE=
+aKsWY/WPd0IJ0mQZI/AAAAAAAAAGM/qdq6NAI7STg-swGYiOwmHSTmRIjiRiO8gCLcB/s320/dn=
+s-infrastruktur.jpg" srcset=3D"https://4.bp.blogspot.com/-e0hjiEaKsWY/WPd0I=
+J0mQZI/AAAAAAAAAGM/qdq6NAI7STg-swGYiOwmHSTmRIjiRiO8gCLcB/w72-h72-p-k-no-nu/=
+dns-infrastruktur.jpg 72w, https://4.bp.blogspot.com/-e0hjiEaKsWY/WPd0IJ0mQ=
+ZI/AAAAAAAAAGM/qdq6NAI7STg-swGYiOwmHSTmRIjiRiO8gCLcB/w144-h144-p-k-no-nu/dn=
+s-infrastruktur.jpg 144w">
+</a>
+</div>
+<div class=3D"popular-posts-snippet snippet-container r-snippet-container">
+<div class=3D"snippet-item r-snippetized">
+DNS spoofing adalah teknik dimana hacker memanipulasi paket DNS yang ada di=
+ dalam jaringan DNS itu sendiri adalah Domani Name System yang bertugas men=
+erjemahkan IP address menjadi nama domain , dengan tujuan agar user atau pe=
+ngguna internet mudah menghafal IP address&nbsp; <br>=20
+Cenderung manuisa mudah menghafal suatu yang bisa di baca bukan di hitung y=
+ang aslinya IP di arahkan ke Domain , seperti facebook.com lebih mudah di h=
+affal dari pada menghafalkan Ip address dari facebook itu sendiri , dan dis=
+ini efek dari DNS spoofing adalah mengarahkan DNS yang seharusnya benar ke =
+alamat palsu teknik ini sangat bahaya jika di gabungkan dengan Phising dan =
+juga teknik penyebaran Virus bisa menjadi sangat luar biasa !&nbsp; <br>=20
+Kita pahami terlebih dahulu apa itu DNS dan juga cara kerjanya , Suatu host=
+ pada jaringan Transmission=20
+Control Protocol/Internet Protocol (TCP/IP) harus memiliki alamat IP=20
+agar dapat diakses.&nbsp; <br>=20
+Alamat IP yang digunakan sekarang (IP versi 4)=20
+dibentuk dalam format angka long integer 32-bit =E2=80=A6
+</div>
+<a class=3D"snippet-fade r-snippet-fade" href=3D"http://geneiry0dan.blogspo=
+t.com/2017/04/tutorial-dns-spoofing.html"></a>
+</div>
+<div class=3D"jump-link flat-button ripple">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-dns-spoofing.ht=
+ml" title=3D"Tutorial DNS Spoofing ">
+Baca selengkapnya
+</a>
+</div>
+</div>
+</article>
+<article class=3D"post" role=3D"article">
+<h3 class=3D"post-title"><a href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/mengenal-apa-itu-meterpreter.html">Mengenal Apa itu Meterpreter</a></h3>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1">
+<span class=3D"byline post-timestamp">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/mengenal-apa-itu-m=
+eterpreter.html">
+<a class=3D"timestamp-link" href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/mengenal-apa-itu-meterpreter.html" rel=3D"bookmark" title=3D"permanent lin=
+k">
+<time class=3D"published" datetime=3D"2017-04-28T03:57:00-07:00" title=3D"2=
+017-04-28T03:57:00-07:00">
+April 28, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class=3D"item-content float-container">
+<div class=3D"item-thumbnail">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/mengenal-apa-itu-meterpr=
+eter.html">
+<img alt=3D"Gambar" sizes=3D"72px" src=3D"https://lh3.googleusercontent.com=
+/proxy/07tXc_LO7tVzqF4gbh9FU8jwc5ooGdzdCgTee1NigHaLPpdUBt5BE13oCnqSPN-rcQHe=
+xANrz7WnIbUQ" srcset=3D"https://lh3.googleusercontent.com/proxy/07tXc_LO7tV=
+zqF4gbh9FU8jwc5ooGdzdCgTee1NigHaLPpdUBt5BE13oCnqSPN-rcQHexANrz7WnIbUQ=3Dw72=
+-h72-n-k-no-nu 72w, https://lh3.googleusercontent.com/proxy/07tXc_LO7tVzqF4=
+gbh9FU8jwc5ooGdzdCgTee1NigHaLPpdUBt5BE13oCnqSPN-rcQHexANrz7WnIbUQ=3Dw144-h1=
+44-n-k-no-nu 144w">
+</a>
+</div>
+<div class=3D"popular-posts-snippet snippet-container r-snippet-container">
+<div class=3D"snippet-item r-snippetized">
+Oke masih berkecimpung di dunia underground , disini gw akan membahas salah=
+ satu yang kecil dari msfconsole atau metasploit framework , kecil tapi mem=
+atikan , sebuah shellcode yang terbuat dari bahasa ASM atau Assembly ini ti=
+dak bisa di pungkiri lagi , linux , Mac, maupun Windows semua bisa terinjek=
+si oleh setan yang satu ini&nbsp; <br>=20
+Setan ini bernama Meterpreter, sebuah shellcode yang di gunakan oleh hacker=
+ untuk membuat shell atau trojan untuk menyusup kedalam sistem , metodenyap=
+un sangat banyak dan kreatif , banyak yang menggunakan meterpreter untuk me=
+ngambil akses dewa seperti Administrator di windows dan Root dalam linux !!=
+!&nbsp; <br>=20
+Fungsi meterpreter adalah membuat code yang membuka port port berbahaya unt=
+uk meremote , upload dan juga download dari dalam sistem maupun luar sistem=
+ , disini meterpreter di gunakan untuk menerobos ke sistem tertinggi , bisa=
+ berupa trojan ataupun adons yang menyerang web browser , jika di jadikan s=
+atu dengan teknik <b><a href=3D"http://geneiry0dan.blogspot.co.id/2017/04/t=
+utorial-dns-spoofing.html">DNS Spoofing</a></b> yang sudah di bahas bisa me=
+njadi ga=E2=80=A6
+</div>
+<a class=3D"snippet-fade r-snippet-fade" href=3D"http://geneiry0dan.blogspo=
+t.com/2017/04/mengenal-apa-itu-meterpreter.html"></a>
+</div>
+<div class=3D"jump-link flat-button ripple">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/mengenal-apa-itu-meterpr=
+eter.html" title=3D"Mengenal Apa itu Meterpreter">
+Baca selengkapnya
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div></div>
+</main>
+</div>
+<footer class=3D"footer section" id=3D"footer" name=3D"Footer"><div class=
+=3D"widget Attribution" data-version=3D"2" id=3D"Attribution1">
+<div class=3D"widget-content">
+<div class=3D"blogger">
+<a href=3D"https://www.blogger.com/" rel=3D"nofollow">
+<svg class=3D"svg-icon-24">
+
+</svg>
+Diberdayakan oleh Blogger
+</a>
+</div>
+<div class=3D"image-attribution">
+Gambar tema oleh <a href=3D"http://www.offset.com/photos/225860">Radius Ima=
+ges</a>
+</div>
+</div>
+</div></footer>
+</div>
+</div>
+</div>
+<aside class=3D"sidebar-container container sidebar-invisible" role=3D"comp=
+lementary">
+<div class=3D"navigation">
+<button class=3D"svg-icon-24-button flat-icon-button ripple sidebar-back">
+<svg class=3D"svg-icon-24">
+
+</svg>
+</button>
+</div>
+<div class=3D"sidebar_top_wrapper">
+<div class=3D"sidebar_top section" id=3D"sidebar_top" name=3D"Bilah Sisi (A=
+tas)"><div class=3D"widget Profile" data-version=3D"2" id=3D"Profile1">
+<div class=3D"wrapper solo">
+<div class=3D"widget-content individual">
+<a href=3D"https://plus.google.com/108322256443927080402" rel=3D"nofollow">
+<img alt=3D"Foto saya" class=3D"profile-img" height=3D"120" src=3D"http://l=
+h3.googleusercontent.com/-8As3bbGwDPA/AAAAAAAAAAI/AAAAAAAAAA0/8ql6N25d9nY/s=
+120-c-pf/photo.jpg" width=3D"120">
+</a>
+<div class=3D"profile-info">
+<dl class=3D"profile-datablock">
+<dt class=3D"profile-data">
+<a class=3D"profile-link g-profile" href=3D"https://plus.google.com/1083222=
+56443927080402" rel=3D"author nofollow" data-gapiscan=3D"true" data-onload=
+=3D"true" data-gapiattached=3D"true">
+kosong satu Ryodan
+</a>
+<div style=3D"text-indent: 0px; margin-top: 0px; margin-right: 0px; margin-=
+bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; paddin=
+g-bottom: 0px; padding-left: 0px; background-image: initial; background-att=
+achment: initial; background-origin: initial; background-clip: initial; bac=
+kground-color: transparent; background-size: initial; border-top-style: non=
+e; border-right-style: none; border-bottom-style: none; border-left-style: =
+none; float: none; line-height: normal; font-size: 1px; vertical-align: bas=
+eline; display: inline-block; width: 117px; height: 20px; background-positi=
+on: initial initial; background-repeat: initial initial; " id=3D"___follow_=
+0"><iframe ng-non-bindable=3D"" frameborder=3D"0" hspace=3D"0" marginheight=
+=3D"0" marginwidth=3D"0" scrolling=3D"no" style=3D"position: static; top: 0=
+px; width: 117px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; m=
+argin-left: 0px; border-top-style: none; border-right-style: none; border-b=
+ottom-style: none; border-left-style: none; left: 0px; visibility: visible;=
+ height: 20px; " tabindex=3D"0" vspace=3D"0" width=3D"100%" id=3D"I0_154194=
+0985507" name=3D"I0_1541940985507" src=3D"https://apis.google.com/_/widget/=
+render/follow?usegapi=3D1&amp;annotation=3Dbubble&amp;height=3D20&amp;origi=
+n=3Dhttp%3A%2F%2Fgeneiry0dan.blogspot.com&amp;url=3Dhttps%3A%2F%2Fplus.goog=
+le.com%2F108322256443927080402&amp;gsrc=3D3p&amp;ic=3D1&amp;jsh=3Dm%3B%2F_%=
+2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.id.lsq4a7mkHbA.O%2Fam%3DQQ%2Frt%=
+3Dj%2Fd%3D1%2Frs%3DAGLTcCPORtvTwVTKcU76dL6aV2Jgs1JxHw%2Fm%3D__features__#_m=
+ethods=3DonPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Co=
+ncircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=3DI0_1541940985507&amp;_gfid=
+=3DI0_1541940985507&amp;parent=3Dhttp%3A%2F%2Fgeneiry0dan.blogspot.com&amp;=
+pfname=3D&amp;rpctoken=3D20374316" data-gapiattached=3D"true"></iframe></di=
+v>
+</dt>
+</dl>
+<a class=3D"profile-link visit-profile pill-button" href=3D"https://plus.go=
+ogle.com/108322256443927080402" rel=3D"author">
+Kunjungi profil
+</a>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div class=3D"sidebar_bottom section" id=3D"sidebar_bottom" name=3D"Bilah S=
+isi (Bawah)"><div class=3D"widget Text" data-version=3D"2" id=3D"Text1">
+<h3 class=3D"title">
+BACA SANGAT PENTING!!!
+</h3>
+<div class=3D"widget-content">
+Tulisan di blog ini <b>bukan murni tulisan sendiri</b> <b>KECUALI YANG BERL=
+ABEL SHOWOFF BLACKPROJECT UNTUK PORTOFOLIO KAMI</b>, kami menyediakan <b>ar=
+tikel dari tetangga sebelah</b>, kami membuat dengan tujuan <b>belajar <br>=
+<br>TUJUAN UTAMA BLOG INI MENYEDIAKAN KONTEN YANG MUDAH DIPAHAMI DAN ARTIKE=
+L PILIHAN YANG SUDAH DI PELAJARI</b>
+</div>
+</div><div class=3D"widget Label" data-version=3D"2" id=3D"Label1">
+<details class=3D"collapsible extendable">
+<summary>
+<div class=3D"collapsible-title">
+<h3 class=3D"title">
+Label
+</h3>
+<svg class=3D"svg-icon-24 chevron-down">
+
+</svg>
+<svg class=3D"svg-icon-24 chevron-up">
+
+</svg>
+</div>
+</summary>
+<div class=3D"widget-content list-label-widget-content">
+<div class=3D"first-items">
+<ul>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Baypass%20Password%20Windows">Baypass Password Windows</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Berbai%20Macam%20Server">Berbai Macam Server</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Berita%20Hacker">Berita Hacker</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Bisnis%20Hacker">Bisnis Hacker</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/BruteForce">BruteForce</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Cracking%20Password">Cracking Password</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Efek%20dari%20DEFACE%20yang%20BENAR%20di%20dunia%20UNDERGROUND">Efek =
+dari DEFACE yang BENAR di dunia UNDERGROUND</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Hacking%20By%20System">Hacking By System</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Jenis%20Hacker%20Berdasarkan%20Kemampuanya">Jenis Hacker Berdasarkan =
+Kemampuanya</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/JOB%27s">JOB's</a></li>
+</ul>
+</div>
+<div class=3D"remaining-items">
+<ul>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Langkah%20Hacker%20Menyerang%20Dalam%20Jaringan%20Perkantoran">Langka=
+h Hacker Menyerang Dalam Jaringan Perkantoran</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Membuat%20Koneksi%20Dengan%20UTP">Membuat Koneksi Dengan UTP</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Membuat%20Trojan%20Dengan%20Metasploit">Membuat Trojan Dengan Metaspl=
+oit</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Mengenal%20Apa%20itu%20Meterpreter">Mengenal Apa itu Meterpreter</a><=
+/li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Mengenal%20BruteForce%20Password">Mengenal BruteForce Password</a></l=
+i>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Mengenal%20Jaringan%20TCP%2FIP%20Dan%20Komunikasinya">Mengenal Jaring=
+an TCP/IP Dan Komunikasinya</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Mengenal%20MSF%20Atau%20Metasploit">Mengenal MSF Atau Metasploit</a><=
+/li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Mengenal%20ROOT%20System">Mengenal ROOT System</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Mengenal%20Sistem%20Oprasi">Mengenal Sistem Oprasi</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/MENGENAL%20SOCIAL%20ENGINEERING">MENGENAL SOCIAL ENGINEERING</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Meterpreter">Meterpreter</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/MSF">MSF</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Network%20Hacking">Network Hacking</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Scanning%20Jaringan%20Dengan%20NMAP">Scanning Jaringan Dengan NMAP</a=
+></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Seni%20Hacking%20Dalam%20Jaringan">Seni Hacking Dalam Jaringan</a></l=
+i>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Seni%20Menyusup%20Hacker">Seni Menyusup Hacker</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Serangan%20Hacker%20MITM">Serangan Hacker MITM</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Server">Server</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Sniffing">Sniffing</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Social%20Engineering">Social Engineering</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Strategi%20Hacker">Strategi Hacker</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Strategi%20Peretasan%20Sistem">Strategi Peretasan Sistem</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/System">System</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Tutorial%20Dan%20Pengertian%20DDoS">Tutorial Dan Pengertian DDoS</a><=
+/li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Tutorial%20Dan%20Pengertian%20IP%20Soofing">Tutorial Dan Pengertian I=
+P Soofing</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Tutorial%20Dan%20Pengertian%20Phising">Tutorial Dan Pengertian Phisin=
+g</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Tutorial%20DNS%20Spoofing">Tutorial DNS Spoofing</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Tutorial%20MITM%20Kali%20Linux">Tutorial MITM Kali Linux</a></li>
+<li><a class=3D"label-name" href=3D"http://geneiry0dan.blogspot.com/search/=
+label/Wifi%20Cracking">Wifi Cracking</a></li>
+</ul>
+</div>
+<span class=3D"show-more pill-button">Tampilkan selengkapnya</span>
+<span class=3D"show-less hidden pill-button">Tampilkan lebih sedikit</span>
+</div>
+</details>
+</div><div class=3D"widget LinkList" data-version=3D"2" id=3D"LinkList1">
+<h3 class=3D"title">
+Link Referensi Pengetahuan
+</h3>
+<div class=3D"widget-content">
+<ul>
+<li><a href=3D"https://www.humayraa.com/">HUMAYRAA</a></li>
+<li><a href=3D"http://blogs.masterweb.com/">BLOG-MASTERWEB</a></li>
+<li><a href=3D"https://errorcybernews.com/">ERRORCYBERNEWS</a></li>
+<li><a href=3D"http://dosen.gufron.com/">DOSEN.GUFRON</a></li>
+<li><a href=3D"http://indonesiaindonesia.com/">INDONESIAINDONESIA.COM</a></=
+li>
+<li><a href=3D"http://www.meretas.com/">MERETAS</a></li>
+<li><a href=3D"http://haztak21.blogspot.co.id/">HAZTAK21</a></li>
+<li><a href=3D"http://simalungunhack.blogspot.co.id/">SIMALUNGUNHACK</a></l=
+i>
+<li><a href=3D"https://habibahmadpurba.wordpress.com/">HABIBAHMADPURBA</a><=
+/li>
+<li><a href=3D"http://www.ilmuhacking.com/">ILMU HACKING</a></li>
+<li><a href=3D"https://alingunawan.blogspot.co.id/">ALINGUNAWAN</a></li>
+<li><a href=3D"http://www.diarypc.com/">DIARYPC</a></li>
+</ul>
+</div>
+</div><div class=3D"widget PopularPosts" data-version=3D"2" id=3D"PopularPo=
+sts2">
+<h3 class=3D"title">
+Populer Artikel
+</h3>
+<div class=3D"widget-content">
+<div role=3D"feed">
+<article class=3D"post" role=3D"article">
+<h3 class=3D"post-title"><a href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/tutorial-dns-spoofing.html">Tutorial DNS Spoofing </a></h3>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1">
+<span class=3D"byline post-timestamp">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-dns-spoof=
+ing.html">
+<a class=3D"timestamp-link" href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/tutorial-dns-spoofing.html" rel=3D"bookmark" title=3D"permanent link">
+<time class=3D"published" datetime=3D"2017-04-19T07:34:00-07:00" title=3D"2=
+017-04-19T07:34:00-07:00">
+April 19, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class=3D"item-content float-container">
+<div class=3D"item-thumbnail">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-dns-spoofing.ht=
+ml">
+<img alt=3D"Gambar" sizes=3D"72px" src=3D"https://4.bp.blogspot.com/-e0hjiE=
+aKsWY/WPd0IJ0mQZI/AAAAAAAAAGM/qdq6NAI7STg-swGYiOwmHSTmRIjiRiO8gCLcB/s320/dn=
+s-infrastruktur.jpg" srcset=3D"https://4.bp.blogspot.com/-e0hjiEaKsWY/WPd0I=
+J0mQZI/AAAAAAAAAGM/qdq6NAI7STg-swGYiOwmHSTmRIjiRiO8gCLcB/w72-h72-p-k-no-nu/=
+dns-infrastruktur.jpg 72w, https://4.bp.blogspot.com/-e0hjiEaKsWY/WPd0IJ0mQ=
+ZI/AAAAAAAAAGM/qdq6NAI7STg-swGYiOwmHSTmRIjiRiO8gCLcB/w144-h144-p-k-no-nu/dn=
+s-infrastruktur.jpg 144w">
+</a>
+</div>
+<div class=3D"popular-posts-snippet snippet-container r-snippet-container">
+<div class=3D"snippet-item r-snippetized">
+DNS spoofing adalah teknik dimana hacker memanipulasi paket DNS yang ada di=
+ dalam jaringan DNS itu sendiri adalah Domani Name System yang bertugas men=
+erjemahkan IP address menjadi nama domain , dengan tujuan agar user atau pe=
+ngguna internet mudah menghafal IP address&nbsp; <br>=20
+Cenderung manuisa mudah menghafal suatu yang bisa di baca bukan di hitung y=
+ang aslinya IP di arahkan ke Domain , seperti facebook.com lebih mudah di h=
+affal dari pada menghafalkan Ip address dari facebook itu sendiri , dan dis=
+ini efek dari DNS spoofing adalah mengarahkan DNS yang seharusnya benar ke =
+alamat palsu teknik ini sangat bahaya jika di gabungkan dengan Phising dan =
+juga teknik penyebaran Virus bisa menjadi sangat luar biasa !&nbsp; <br>=20
+Kita pahami terlebih dahulu apa itu DNS dan juga cara kerjanya , Suatu host=
+ pada jaringan Transmission=20
+Control Protocol/Internet Protocol (TCP/IP) harus memiliki alamat IP=20
+agar dapat diakses.&nbsp; <br>=20
+Alamat IP yang digunakan sekarang (IP versi 4)=20
+dibentuk dalam format angka long integer 32-bit =E2=80=A6
+</div>
+<a class=3D"snippet-fade r-snippet-fade" href=3D"http://geneiry0dan.blogspo=
+t.com/2017/04/tutorial-dns-spoofing.html"></a>
+</div>
+<div class=3D"jump-link flat-button ripple">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/tutorial-dns-spoofing.ht=
+ml" title=3D"Tutorial DNS Spoofing ">
+Baca selengkapnya
+</a>
+</div>
+</div>
+</article>
+<article class=3D"post" role=3D"article">
+<h3 class=3D"post-title"><a href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/scanning-jaringan-dengan-nmap.html">Scanning Jaringan Dengan NMAP</a></h3>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1">
+<span class=3D"byline post-timestamp">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/scanning-jaringan-=
+dengan-nmap.html">
+<a class=3D"timestamp-link" href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/scanning-jaringan-dengan-nmap.html" rel=3D"bookmark" title=3D"permanent li=
+nk">
+<time class=3D"published" datetime=3D"2017-04-24T12:40:00-07:00" title=3D"2=
+017-04-24T12:40:00-07:00">
+April 24, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class=3D"item-content float-container">
+<div class=3D"item-thumbnail">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/scanning-jaringan-dengan=
+-nmap.html">
+<img alt=3D"Gambar" sizes=3D"72px" src=3D"https://1.bp.blogspot.com/-oa5PTg=
+CoMkI/WP5UV6mIJkI/AAAAAAAAAHU/2eipTdbIlHUSBLGo-sPZatogbtbHKevXwCLcB/s320/Sc=
+reenshot%2Bfrom%2B2017-04-25%2B02-38-39.png" srcset=3D"https://1.bp.blogspo=
+t.com/-oa5PTgCoMkI/WP5UV6mIJkI/AAAAAAAAAHU/2eipTdbIlHUSBLGo-sPZatogbtbHKevX=
+wCLcB/w72-h72-p-k-no-nu/Screenshot%2Bfrom%2B2017-04-25%2B02-38-39.png 72w, =
+https://1.bp.blogspot.com/-oa5PTgCoMkI/WP5UV6mIJkI/AAAAAAAAAHU/2eipTdbIlHUS=
+BLGo-sPZatogbtbHKevXwCLcB/w144-h144-p-k-no-nu/Screenshot%2Bfrom%2B2017-04-2=
+5%2B02-38-39.png 144w">
+</a>
+</div>
+<div class=3D"popular-posts-snippet snippet-container r-snippet-container">
+<div class=3D"snippet-item r-snippetized">
+Sekrang gw kembali update informasi tentang scanning jaringan sebelumnya ji=
+ka kalian belum mendengar atau hanya mempelajari kulit dari jaringan kali i=
+ni gw akan berikan metode belajar dengan cara yang langsung kalian peraktek=
+an , tujuan dari informasi ini adalah untuk memahami cara belajar dan juga =
+mempelajari jaringan dari sebuah sistem komunikasi&nbsp; <br>=20
+Jika kita pelajari lagi sistem jaringan adalah sistem komunikasi antara hos=
+t satu dengan yang lain, dengan menggunakan protocol TCP/IP dan juga UPD un=
+tuk melakukan komunikasi antara host satu dengan yang lain, dan ada dua jen=
+is type jaringan berjalan yaitu&nbsp; Jaringan Kabel&nbsp;Jaringan Nirkabel=
+ atau wireless&nbsp;=20
+Kalian sudah paham apa itu wireless mari pelajari lagi singkatnya disini <a=
+ href=3D"http://geneiry0dan.blogspot.co.id/2017/04/wifi-cracking-dan-mengen=
+al-teknologi.html">LINK WIRELESS</a> dan juga jaringan Kabel kalian bisa pe=
+lajari disini <a href=3D"http://geneiry0dan.blogspot.co.id/2017/04/mengenal=
+-jaringan-tcpip-dan-udp.html">LINK</a> , dalam jaringan ada beberapa alat y=
+ang harus kalian pelajari dan tidak mungkin gw menuliskan semuanya dalam ar=
+tikel ini , mungkin akan gw tuliskan di artikel lain dengan tema yang berbe=
+da , conto=E2=80=A6
+</div>
+<a class=3D"snippet-fade r-snippet-fade" href=3D"http://geneiry0dan.blogspo=
+t.com/2017/04/scanning-jaringan-dengan-nmap.html"></a>
+</div>
+<div class=3D"jump-link flat-button ripple">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/scanning-jaringan-dengan=
+-nmap.html" title=3D"Scanning Jaringan Dengan NMAP">
+Baca selengkapnya
+</a>
+</div>
+</div>
+</article>
+<article class=3D"post" role=3D"article">
+<h3 class=3D"post-title"><a href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/mengenal-apa-itu-meterpreter.html">Mengenal Apa itu Meterpreter</a></h3>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1">
+<span class=3D"byline post-timestamp">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/mengenal-apa-itu-m=
+eterpreter.html">
+<a class=3D"timestamp-link" href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/mengenal-apa-itu-meterpreter.html" rel=3D"bookmark" title=3D"permanent lin=
+k">
+<time class=3D"published" datetime=3D"2017-04-28T03:57:00-07:00" title=3D"2=
+017-04-28T03:57:00-07:00">
+April 28, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class=3D"item-content float-container">
+<div class=3D"item-thumbnail">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/mengenal-apa-itu-meterpr=
+eter.html">
+<img alt=3D"Gambar" sizes=3D"72px" src=3D"https://lh3.googleusercontent.com=
+/proxy/07tXc_LO7tVzqF4gbh9FU8jwc5ooGdzdCgTee1NigHaLPpdUBt5BE13oCnqSPN-rcQHe=
+xANrz7WnIbUQ" srcset=3D"https://lh3.googleusercontent.com/proxy/07tXc_LO7tV=
+zqF4gbh9FU8jwc5ooGdzdCgTee1NigHaLPpdUBt5BE13oCnqSPN-rcQHexANrz7WnIbUQ=3Dw72=
+-h72-n-k-no-nu 72w, https://lh3.googleusercontent.com/proxy/07tXc_LO7tVzqF4=
+gbh9FU8jwc5ooGdzdCgTee1NigHaLPpdUBt5BE13oCnqSPN-rcQHexANrz7WnIbUQ=3Dw144-h1=
+44-n-k-no-nu 144w">
+</a>
+</div>
+<div class=3D"popular-posts-snippet snippet-container r-snippet-container">
+<div class=3D"snippet-item r-snippetized">
+Oke masih berkecimpung di dunia underground , disini gw akan membahas salah=
+ satu yang kecil dari msfconsole atau metasploit framework , kecil tapi mem=
+atikan , sebuah shellcode yang terbuat dari bahasa ASM atau Assembly ini ti=
+dak bisa di pungkiri lagi , linux , Mac, maupun Windows semua bisa terinjek=
+si oleh setan yang satu ini&nbsp; <br>=20
+Setan ini bernama Meterpreter, sebuah shellcode yang di gunakan oleh hacker=
+ untuk membuat shell atau trojan untuk menyusup kedalam sistem , metodenyap=
+un sangat banyak dan kreatif , banyak yang menggunakan meterpreter untuk me=
+ngambil akses dewa seperti Administrator di windows dan Root dalam linux !!=
+!&nbsp; <br>=20
+Fungsi meterpreter adalah membuat code yang membuka port port berbahaya unt=
+uk meremote , upload dan juga download dari dalam sistem maupun luar sistem=
+ , disini meterpreter di gunakan untuk menerobos ke sistem tertinggi , bisa=
+ berupa trojan ataupun adons yang menyerang web browser , jika di jadikan s=
+atu dengan teknik <b><a href=3D"http://geneiry0dan.blogspot.co.id/2017/04/t=
+utorial-dns-spoofing.html">DNS Spoofing</a></b> yang sudah di bahas bisa me=
+njadi ga=E2=80=A6
+</div>
+<a class=3D"snippet-fade r-snippet-fade" href=3D"http://geneiry0dan.blogspo=
+t.com/2017/04/mengenal-apa-itu-meterpreter.html"></a>
+</div>
+<div class=3D"jump-link flat-button ripple">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/mengenal-apa-itu-meterpr=
+eter.html" title=3D"Mengenal Apa itu Meterpreter">
+Baca selengkapnya
+</a>
+</div>
+</div>
+</article>
+<article class=3D"post" role=3D"article">
+<h3 class=3D"post-title"><a href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/seni-hacking-dalam-jaringan.html">Seni Hacking Dalam Jaringan</a></h3>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1">
+<span class=3D"byline post-timestamp">
+<meta content=3D"http://geneiry0dan.blogspot.com/2017/04/seni-hacking-dalam=
+-jaringan.html">
+<a class=3D"timestamp-link" href=3D"http://geneiry0dan.blogspot.com/2017/04=
+/seni-hacking-dalam-jaringan.html" rel=3D"bookmark" title=3D"permanent link=
+">
+<time class=3D"published" datetime=3D"2017-04-19T01:56:00-07:00" title=3D"2=
+017-04-19T01:56:00-07:00">
+April 19, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+<div class=3D"item-content float-container">
+<div class=3D"item-thumbnail">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/seni-hacking-dalam-jarin=
+gan.html">
+<img alt=3D"Gambar" sizes=3D"72px" src=3D"https://1.bp.blogspot.com/-lnil9C=
+TH5p8/WPWcbLb6qFI/AAAAAAAAADg/dTVWtCtjFokBaCjW8aoZzo1rybPtj2AKQCLcB/s320/ne=
+twork.png" srcset=3D"https://1.bp.blogspot.com/-lnil9CTH5p8/WPWcbLb6qFI/AAA=
+AAAAAADg/dTVWtCtjFokBaCjW8aoZzo1rybPtj2AKQCLcB/w72-h72-p-k-no-nu/network.pn=
+g 72w, https://1.bp.blogspot.com/-lnil9CTH5p8/WPWcbLb6qFI/AAAAAAAAADg/dTVWt=
+CtjFokBaCjW8aoZzo1rybPtj2AKQCLcB/w144-h144-p-k-no-nu/network.png 144w">
+</a>
+</div>
+<div class=3D"popular-posts-snippet snippet-container r-snippet-container">
+<div class=3D"snippet-item r-snippetized">
+Seni Hacking Dalam Jaringan gw bilang jika hacking adalah seni, karena semu=
+a devloper aplikasi dan pengembangan teknologi di penuhi dengan karya karya=
+ yang sangat kreatif dan juga sangat menarik, dan ini di dapat karena liarn=
+ya pola pikir dari mereka untuk menggunakan logikanya untuk mencapai semua =
+tujuanya yang luar biasa yang saat ini kita gunakan ini&nbsp; <br>=20
+Gw di artikel kali ini akan menceritakan ( Bukan sekedar cerita ) artikel y=
+ang ini renaca akan gw buat untuk sitemap agar semua pembaca bisa belajar s=
+ecara teratur dan juga terarah, karena di blog ini membahas Hacking dan Ilm=
+u komputer maka akan gw selesaikan dulu utang gw yang masalah Seni Hacking,=
+ dan sekarang masuk ke Network Hacking , Seni Hacking dalam jaringan&nbsp; =
+<br>=20
+Jika kalian sudah membaca artikel sebelumnya yang berjudul Skill Hacker bac=
+a dulu dah <a href=3D"http://geneiry0dan.blogspot.co.id/2017/04/jenis-hacke=
+r-berdasarkan-kemampuanya.html">DISINI</a> setelah itu kalian akan paham de=
+ngan maksut gw mengurutkan artikel dan tutorial , sebelum menuliskan tutori=
+ak gw akan berikan ilustrasi ilustrasi hacking dalam jaringan baru akan=E2=
+=80=A6
+</div>
+<a class=3D"snippet-fade r-snippet-fade" href=3D"http://geneiry0dan.blogspo=
+t.com/2017/04/seni-hacking-dalam-jaringan.html"></a>
+</div>
+<div class=3D"jump-link flat-button ripple">
+<a href=3D"http://geneiry0dan.blogspot.com/2017/04/seni-hacking-dalam-jarin=
+gan.html" title=3D"Seni Hacking Dalam Jaringan">
+Baca selengkapnya
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div><div class=3D"widget ReportAbuse" data-version=3D"2" id=3D"ReportAbus=
+e1">
+<h3 class=3D"title">
+<a class=3D"report_abuse" href=3D"https://www.blogger.com/go/report-abuse" =
+rel=3D"noopener nofollow" target=3D"_blank">
+Laporkan Penyalahgunaan
+</a>
+</h3>
+</div></div>
+</aside>
+
+
+
+
+<iframe name=3D"oauth2relay1824411450" id=3D"oauth2relay1824411450" src=3D"=
+https://accounts.google.com/o/oauth2/postmessageRelay?parent=3Dhttp%3A%2F%2=
+Fgeneiry0dan.blogspot.com&amp;jsh=3Dm%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2=
+Fk%3Doz.gapi.id.lsq4a7mkHbA.O%2Fam%3DQQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCPORtv=
+TwVTKcU76dL6aV2Jgs1JxHw%2Fm%3D__features__#rpctoken=3D255923534&amp;forcese=
+cure=3D1" style=3D"width: 1px; height: 1px; position: absolute; top: -100px=
+; " tabindex=3D"-1" aria-hidden=3D"true"></iframe>
+
+<header class=3D"centered-top-container sticky animating" role=3D"banner" s=
+tyle=3D"-webkit-transform: translate3d(0px, 0px, 0px); opacity: 1; ">
+<div class=3D"centered-top">
+<a class=3D"return_link" href=3D"http://geneiry0dan.blogspot.com/">
+<button class=3D"svg-icon-24-button back-button rtl-reversible-icon flat-ic=
+on-button ripple">
+<svg class=3D"svg-icon-24">
+
+</svg>
+</button>
+</a>
+<div class=3D"search">
+<button aria-label=3D"Telusuri" class=3D"search-expand touch-icon-button">
+<div class=3D"flat-icon-button ripple">
+<svg class=3D"svg-icon-24 search-expand-icon">
+
+</svg>
+</div>
+</button>
+<div class=3D"section" id=3D"search_top" name=3D"Search (Top)"><div class=
+=3D"widget BlogSearch" data-version=3D"2" id=3D"BlogSearch1">
+<h3 class=3D"title">
+Cari Blog Ini
+</h3>
+<div class=3D"widget-content" role=3D"search">
+<form action=3D"http://geneiry0dan.blogspot.com/search" target=3D"_top">
+<div class=3D"search-input">
+<input aria-label=3D"Cari blog ini" autocomplete=3D"off" name=3D"q" placeho=
+lder=3D"Cari blog ini" value=3D"">
+</div>
+<input class=3D"search-action flat-button" type=3D"submit" value=3D"Telusur=
+i" disabled=3D"">
+</form>
+</div>
+</div></div>
+<div class=3D"dim-overlay hidden"></div></div>
+<div class=3D"clearboth"></div>
+<div class=3D"blog-name container">
+<div class=3D"container section" id=3D"header" name=3D"Tajuk"><div class=3D=
+"widget Header" data-version=3D"2" id=3D"Header1">
+<div class=3D"header-widget">
+<div>
+<h1>
+<a href=3D"http://geneiry0dan.blogspot.com/">
+ANTI WHITEHAT
+</a>
+</h1>
+</div>
+<p>
+</p>
+</div>
+</div></div>
+<nav role=3D"navigation">
+<div class=3D"clearboth no-items section" id=3D"page_list_top" name=3D"Daft=
+ar Halaman (Atas)">
+</div>
+</nav>
+</div>
+</div>
+</header><div class=3D"dim-overlay hidden" id=3D"subscribe-dim-overlay"></d=
+iv><div class=3D"dim-overlay hidden"></div></body></html>
+------=_NextPart_000_1FDB_1E6A687E.E25FB1E6
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4461696929350980230&zx=e323cc02-fa53-44c1-9556-950e7a2ed8e1
+
+
+------=_NextPart_000_1FDB_1E6A687E.E25FB1E6
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://2.bp.blogspot.com/-eH-bjDZjuZY/WPdPDl7uStI/AAAAAAAAAEk/zCFyHuTF9OYd8tCFwfmQAzrgUUm_gUwWQCLcB/s320/Screenshot%2Bfrom%2B2017-04-19%2B18-50-12.png
+
+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
+1kMtn/zNH9vU
