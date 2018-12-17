@@ -1,0 +1,1811 @@
+From: <Saved by WebKit>
+Subject: Android Uploading Camera Image, Video to Server with Progress Bar
+Date: Mon, 9 Dec 2018 18:54:57 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_A65B_EE73362A.C480FFE2"
+
+------=_NextPart_000_A65B_EE73362A.C480FFE2
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.androidhive.info/2014/12/android-uploading-camera-image-video-to-server-with-progress-bar/amp/
+
+<html amp=3D"" lang=3D"en-US" amp-version=3D"1811272154520" style=3D"paddin=
+g-top: 0px !important; " class=3D"i-amphtml-singledoc i-amphtml-standalone"=
+><head><meta charset=3D"UTF-8"><style amp-runtime=3D"">html{overflow-x:hidd=
+en!important}body,html{height:auto!important}html.i-amphtml-fie{height:100%=
+!important;width:100%!important}body{margin:0!important;-webkit-text-size-a=
+djust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-a=
+djust:100%}[hidden]{display:none!important}html.i-amphtml-singledoc.i-ampht=
+ml-embedded{-ms-touch-action:pan-y;touch-action:pan-y}html.i-amphtml-fie>bo=
+dy,html.i-amphtml-singledoc>body{overflow:visible!important}html.i-amphtml-=
+fie:not(.i-amphtml-inabox)>body,html.i-amphtml-singledoc:not(.i-amphtml-ina=
+box)>body{position:relative!important}html.i-amphtml-webview>body{overflow-=
+x:hidden!important;overflow-y:visible!important;min-height:100vh!important}=
+html.i-amphtml-ios-embed-legacy>body{overflow-x:hidden!important;overflow-y=
+:auto!important;position:absolute!important}html.i-amphtml-ios-embed{overfl=
+ow-y:auto!important;position:static}#i-amphtml-wrapper{overflow-x:hidden!im=
+portant;overflow-y:auto!important;position:absolute!important;top:0!importa=
+nt;left:0!important;right:0!important;bottom:0!important;margin:0!important=
+;display:block!important}html.i-amphtml-ios-embed.i-amphtml-ios-overscroll,=
+html.i-amphtml-ios-embed.i-amphtml-ios-overscroll>#i-amphtml-wrapper{-webki=
+t-overflow-scrolling:touch!important}#i-amphtml-wrapper>body{position:relat=
+ive!important;border-top:1px solid transparent!important}html.i-amphtml-ios=
+-embed-sd{overflow:hidden!important;position:static!important}html.i-amphtm=
+l-ios-embed-sd>body,html.i-amphtml-singledoc.i-amphtml-ios-embed-sd>body{po=
+sition:absolute!important;top:0!important;left:0!important;right:0!importan=
+t;bottom:0!important;overflow:hidden!important}.i-amphtml-body-minheight>bo=
+dy{min-height:calc(100vh + 1px)}.i-amphtml-element{display:inline-block}.i-=
+amphtml-blurry-placeholder{-webkit-transition:opacity 0.3s cubic-bezier(0.0=
+,0.0,0.2,1)!important;transition:opacity 0.3s cubic-bezier(0.0,0.0,0.2,1)!i=
+mportant}[layout=3Dnodisplay]:not(.i-amphtml-element){display:none!importan=
+t}.i-amphtml-layout-fixed,[layout=3Dfixed][width][height]:not(.i-amphtml-la=
+yout-fixed){display:inline-block;position:relative}.i-amphtml-layout-respon=
+sive,[layout=3Dresponsive][width][height]:not(.i-amphtml-layout-responsive)=
+,[width][height][sizes]:not(.i-amphtml-layout-responsive){display:block;pos=
+ition:relative}.i-amphtml-layout-intrinsic{display:inline-block;position:re=
+lative;max-width:100%}.i-amphtml-intrinsic-sizer{max-width:100%;display:blo=
+ck!important}.i-amphtml-layout-container,.i-amphtml-layout-fixed-height,[la=
+yout=3Dcontainer],[layout=3Dfixed-height][height]{display:block;position:re=
+lative}.i-amphtml-layout-fill,[layout=3Dfill]:not(.i-amphtml-layout-fill){d=
+isplay:block;overflow:hidden!important;position:absolute;top:0;left:0;botto=
+m:0;right:0}.i-amphtml-layout-flex-item,[layout=3Dflex-item]:not(.i-amphtml=
+-layout-flex-item){display:block;position:relative;-webkit-box-flex:1;-ms-f=
+lex:1 1 auto;flex:1 1 auto}.i-amphtml-layout-fluid{position:relative}.i-amp=
+html-layout-size-defined{overflow:hidden!important}.i-amphtml-layout-awaiti=
+ng-size{position:absolute!important;top:auto!important;bottom:auto!importan=
+t}i-amphtml-sizer{display:block!important}.i-amphtml-blurry-placeholder,.i-=
+amphtml-fill-content{display:block;height:0;max-height:100%;max-width:100%;=
+min-height:100%;min-width:100%;width:0;margin:auto}.i-amphtml-layout-size-d=
+efined .i-amphtml-fill-content{position:absolute;top:0;left:0;bottom:0;righ=
+t:0}.i-amphtml-layout-intrinsic .i-amphtml-sizer{max-width:100%}.i-amphtml-=
+replaced-content,.i-amphtml-screen-reader{padding:0!important;border:none!i=
+mportant}.i-amphtml-screen-reader{position:fixed!important;top:0px!importan=
+t;left:0px!important;width:4px!important;height:4px!important;opacity:0!imp=
+ortant;overflow:hidden!important;margin:0!important;display:block!important=
+;visibility:visible!important}.i-amphtml-screen-reader~.i-amphtml-screen-re=
+ader{left:8px!important}.i-amphtml-screen-reader~.i-amphtml-screen-reader~.=
+i-amphtml-screen-reader{left:12px!important}.i-amphtml-screen-reader~.i-amp=
+html-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader{left:1=
+6px!important}.i-amphtml-unresolved{position:relative;overflow:hidden!impor=
+tant}#i-amphtml-wrapper.i-amphtml-scroll-disabled,.i-amphtml-scroll-disable=
+d{overflow-x:hidden!important;overflow-y:hidden!important}.i-amphtml-select=
+-disabled{-webkit-user-select:none!important;-moz-user-select:none!importan=
+t;-ms-user-select:none!important;user-select:none!important}.i-amphtml-notb=
+uilt,[layout]:not(.i-amphtml-element){position:relative;overflow:hidden!imp=
+ortant;color:transparent!important}.i-amphtml-notbuilt:not(.i-amphtml-layou=
+t-container)>*,[layout]:not([layout=3Dcontainer]):not(.i-amphtml-element)>*=
+{display:none}.i-amphtml-ghost{visibility:hidden!important}.i-amphtml-eleme=
+nt>[placeholder],[layout]:not(.i-amphtml-element)>[placeholder]{display:blo=
+ck}.i-amphtml-element>[placeholder].amp-hidden,.i-amphtml-element>[placehol=
+der].hidden{visibility:hidden}.i-amphtml-element:not(.amp-notsupported)>[fa=
+llback],.i-amphtml-layout-container>[placeholder].amp-hidden,.i-amphtml-lay=
+out-container>[placeholder].hidden{display:none}.i-amphtml-layout-size-defi=
+ned>[fallback],.i-amphtml-layout-size-defined>[placeholder]{position:absolu=
+te!important;top:0!important;left:0!important;right:0!important;bottom:0!im=
+portant;z-index:1}.i-amphtml-notbuilt>[placeholder]{display:block!important=
+}.i-amphtml-hidden-by-media-query{display:none!important}.i-amphtml-element=
+-error{background:red!important;color:#fff!important;position:relative!impo=
+rtant}.i-amphtml-element-error:before{content:attr(error-message)}i-amp-scr=
+oll-container,i-amphtml-scroll-container{position:absolute;top:0;left:0;rig=
+ht:0;bottom:0;display:block}i-amp-scroll-container.amp-active,i-amphtml-scr=
+oll-container.amp-active{overflow:auto;-webkit-overflow-scrolling:touch}.i-=
+amphtml-loading-container{display:block!important;z-index:1}.i-amphtml-notb=
+uilt>.i-amphtml-loading-container{display:block!important}.i-amphtml-loadin=
+g-container.amp-hidden{visibility:hidden}amp-list[resizable-children]>.i-am=
+phtml-loading-container.amp-hidden{display:none!important}.i-amphtml-loader=
+-line{position:absolute;top:0;left:0;right:0;height:1px;overflow:hidden!imp=
+ortant;background-color:hsla(0,0%,59.2%,0.2);display:block}.i-amphtml-loade=
+r-moving-line{display:block;position:absolute;width:100%;height:100%!import=
+ant;background-color:hsla(0,0%,59.2%,0.65);z-index:2}@-webkit-keyframes i-a=
+mphtml-loader-line-moving{0%{-webkit-transform:translateX(-100%);transform:=
+translateX(-100%)}to{-webkit-transform:translateX(100%);transform:translate=
+X(100%)}}@keyframes i-amphtml-loader-line-moving{0%{-webkit-transform:trans=
+lateX(-100%);transform:translateX(-100%)}to{-webkit-transform:translateX(10=
+0%);transform:translateX(100%)}}.i-amphtml-loader-line.amp-active .i-amphtm=
+l-loader-moving-line{-webkit-animation:i-amphtml-loader-line-moving 4s ease=
+ infinite;animation:i-amphtml-loader-line-moving 4s ease infinite}.i-amphtm=
+l-loader{position:absolute;display:block;height:10px;top:50%;left:50%;-webk=
+it-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) t=
+ranslateY(-50%);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;w=
+hite-space:nowrap}.i-amphtml-loader.amp-active .i-amphtml-loader-dot{-webki=
+t-animation:i-amphtml-loader-dots 2s infinite;animation:i-amphtml-loader-do=
+ts 2s infinite}.i-amphtml-loader-dot{position:relative;display:inline-block=
+;height:10px;width:10px;margin:2px;border-radius:100%;background-color:rgba=
+(0,0,0,0.3);box-shadow:2px 2px 2px 1px rgba(0,0,0,0.2);will-change:transfor=
+m}.i-amphtml-loader .i-amphtml-loader-dot:first-child{-webkit-animation-del=
+ay:0s;animation-delay:0s}.i-amphtml-loader .i-amphtml-loader-dot:nth-child(=
+2){-webkit-animation-delay:.1s;animation-delay:.1s}.i-amphtml-loader .i-amp=
+html-loader-dot:nth-child(3){-webkit-animation-delay:.2s;animation-delay:.2=
+s}@-webkit-keyframes i-amphtml-loader-dots{0%,to{-webkit-transform:scale(.7=
+);transform:scale(.7);background-color:rgba(0,0,0,0.3)}50%{-webkit-transfor=
+m:scale(.8);transform:scale(.8);background-color:rgba(0,0,0,0.5)}}@keyframe=
+s i-amphtml-loader-dots{0%,to{-webkit-transform:scale(.7);transform:scale(.=
+7);background-color:rgba(0,0,0,0.3)}50%{-webkit-transform:scale(.8);transfo=
+rm:scale(.8);background-color:rgba(0,0,0,0.5)}}.i-amphtml-element>[overflow=
+]{cursor:pointer;position:relative;z-index:2;visibility:hidden}.i-amphtml-e=
+lement>[overflow].amp-visible{visibility:visible}amp-list[load-more]>[load-=
+more-button],amp-list[load-more]>[load-more-button]>.i-amphtml-loader,amp-l=
+ist[load-more]>[load-more-failed],amp-list[load-more]>[load-more-loading]{v=
+isibility:hidden}amp-list[load-more]>[load-more-button].amp-visible,amp-lis=
+t[load-more]>[load-more-failed].amp-visible,amp-list[load-more]>[load-more-=
+loading].amp-visible{visibility:visible}template{display:none!important}.am=
+p-border-box,.amp-border-box *,.amp-border-box :after,.amp-border-box :befo=
+re{box-sizing:border-box}amp-pixel{display:none!important}amp-instagram{pad=
+ding:64px 0px 0px!important;background-color:#fff}amp-analytics,amp-story-a=
+uto-ads{position:fixed!important;top:0!important;width:1px!important;height=
+:1px!important;overflow:hidden!important;visibility:hidden}amp-iframe ifram=
+e{box-sizing:border-box!important}[amp-access][amp-access-hide]{display:non=
+e}[subscriptions-dialog],body:not(.i-amphtml-subs-ready) [subscriptions-act=
+ion],body:not(.i-amphtml-subs-ready) [subscriptions-section]{display:none!i=
+mportant}[visible-when-invalid]:not(.visible),amp-experiment,amp-live-list>=
+[update],amp-share-tracking,form [submit-error],form [submit-success],form =
+[submitting]{display:none}.i-amphtml-jank-meter{position:fixed;background-c=
+olor:rgba(232,72,95,0.5);bottom:0;right:0;color:#fff;font-size:16px;z-index=
+:1000;padding:5px}amp-accordion{display:block!important}amp-accordion>secti=
+on{float:none!important}amp-accordion>section>*{float:none!important;displa=
+y:block!important;overflow:hidden!important;position:relative!important}.i-=
+amphtml-accordion-content,.i-amphtml-accordion-header,amp-accordion,amp-acc=
+ordion>section{margin:0}.i-amphtml-accordion-header{cursor:pointer;backgrou=
+nd-color:#efefef;padding-right:20px;border:1px solid #dfdfdf}amp-accordion>=
+section>:last-child{display:none!important}amp-accordion>section[expanded]>=
+:last-child{display:block!important}amp-story-page,amp-story[standalone]{di=
+splay:block!important;height:100%!important;margin:0!important;padding:0!im=
+portant;overflow:hidden!important;width:100%!important}amp-story[standalone=
+]{background-color:#fff!important;position:relative!important}amp-story-pag=
+e{background-color:#757575}amp-story .i-amphtml-loader{display:none!importa=
+nt}[amp-fx^=3Dfly-in]{visibility:hidden}amp-addthis[data-widget-type=3Dfloa=
+ting]{position:fixed!important;width:100%!important;height:50px;bottom:0}
+/*# sourceURL=3D/css/amp.css*/</style>
+=09
+	<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1,=
+minimum-scale=3D1,maximum-scale=3D1,user-scalable=3Dno">
+		<title>Android Uploading Camera Image, Video to Server with Progress Bar<=
+/title>
+		<link rel=3D"canonical" href=3D"https://www.androidhive.info/2014/12/andr=
+oid-uploading-camera-image-video-to-server-with-progress-bar/">
+		=09
+	=09
+			<link rel=3D"stylesheet" href=3D"https://fonts.googleapis.com/css?family=
+=3DMerriweather:400,400italic,700,700italic">
+		<style amp-boilerplate=3D"">body{-webkit-animation:-amp-start 8s steps(1,=
+end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal=
+ both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-=
+amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{fr=
+om{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from=
+{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{vi=
+sibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibi=
+lity:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hi=
+dden}to{visibility:visible}}</style>
+	=09
+		<style amp-custom=3D"">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; t=
+he max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. =
+**/
+	/** Force the image into a box of fixed dimensions and use object-fit to s=
+cale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 770px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxy=
+gen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 1.5em;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( https://www.androidhive.info/wp-content/plugins/a=
+mp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline styles */
+.amp-wp-inline-c301377ab2d02ab6d5b05061e4eb9107{clear:both;font-size:0px;he=
+ight:0px;line-height:0px;}.amp-wp-inline-391477d5783c04100dfecb76bb84598c{f=
+loat:none;margin:10px 0 10px 0;text-align:center;}.amp-wp-inline-dc34a6fc5b=
+2b6a280671d6705bb4c36e{height:250px;max-width:300px;}.amp-wp-inline-1c9d4f6=
+a4899b86916242d585ca9f493{height:444.7265625px;max-width:719px;}.amp-wp-inl=
+ine-3a0d38bd9383343e71b04f8fd486656d{float:left;margin:10px 10px 10px 0;}	<=
+/style>
+</head>
+
+<body class=3D"amp-mode-touch amp-mode-keyboard-active" style=3D"opacity: 1=
+; visibility: visible; -webkit-animation-name: none; -webkit-animation-dura=
+tion: initial; -webkit-animation-timing-function: initial; -webkit-animatio=
+n-delay: initial; -webkit-animation-iteration-count: initial; -webkit-anima=
+tion-direction: initial; -webkit-animation-fill-mode: initial; ">
+
+<header id=3D"#top" class=3D"amp-wp-header">
+	<div>
+		<a href=3D"https://www.androidhive.info/">
+							<amp-img src=3D"https://www.androidhive.info/wp-content/uploads/2017=
+/07/cropped-ic_laucher-150x150.png" width=3D"32" height=3D"32" class=3D"amp=
+-wp-site-icon i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-siz=
+e-defined" style=3D"width: 32px; height: 32px; "></amp-img>
+						AndroidHive		</a>
+	</div>
+</header>
+
+<article class=3D"amp-wp-article">
+
+	<header class=3D"amp-wp-article-header">
+		<h1 class=3D"amp-wp-title">Android Uploading Camera Image, Video to Serve=
+r with Progress Bar</h1>
+			<div class=3D"amp-wp-meta amp-wp-byline">
+					<amp-img src=3D"https://secure.gravatar.com/avatar/9578184c8f454a148b0=
+b59dd1d21dfaf?s=3D24&amp;d=3Dmm&amp;r=3Dg" width=3D"24" height=3D"24" layou=
+t=3D"fixed" class=3D"i-amphtml-element i-amphtml-layout-fixed i-amphtml-lay=
+out-size-defined" style=3D"width: 24px; height: 24px; "></amp-img>
+				<span class=3D"amp-wp-author author vcard">Ravi Tamada</span>
+	</div>
+<div class=3D"amp-wp-meta amp-wp-posted-on">
+	<time datetime=3D"2014-12-18T11:25:08+00:00">
+		4 years ago	</time>
+</div>
+	</header>
+
+=09
+	<div class=3D"amp-wp-article-content">
+	=09
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div class=3D"amp-wp-inline-3a0d38bd9383343e71b04f8fd486656d">
+<!-- Middle Content --><ins class=3D"adsbygoogle amp-wp-inline-dc34a6fc5b2b=
+6a280671d6705bb4c36e" data-ad-client=3D"ca-pub-9207768510467156" data-ad-sl=
+ot=3D"2887095024"></ins>
+</div>
+<p>My previous <a href=3D"https://www.androidhive.info/2012/04/android-down=
+loading-file-by-showing-progress-bar/" title=3D"Android download file by pr=
+ogress bar" target=3D"_blank" class=3D"link">tutorial</a> explains how to d=
+ownload a file by showing a progress bar. In this article I am going to exp=
+lain how to upload a file to server by showing the progress bar. Using this=
+ tutorial you can build an app like <strong>Instagram</strong> where you ca=
+n capture image or record a video using camera and then upload to a server.=
+ On the server side, I used PHP language to read the file and moved it to a=
+ particular location.</p>
+<p>The best thing about this article is, it works well with larger file upl=
+oads too without any out of memory errors. I have tested the app by uploadi=
+ng <strong>50MB</strong> file flawlessly.</p>
+<div>
+<amp-img src=3D"data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABA=
+EACAkQBADs=3D" alt=3D"android file upload with progress bar" width=3D"720" =
+height=3D"359" class=3D"alignnone size-full wp-image-26592 amp-wp-enforced-=
+sizes i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-d=
+efined" srcset=3D"https://www.androidhive.info/wp-content/uploads/2014/12/a=
+ndroid-file-upload-with-progress-bar.jpg 720w, https://www.androidhive.info=
+/wp-content/uploads/2014/12/android-file-upload-with-progress-bar-300x150.j=
+pg 300w" sizes=3D"(min-width: 720px) 720px, 100vw"><i-amphtml-sizer style=
+=3D"padding-top: 49.861111111111114%; "></i-amphtml-sizer><div class=3D"i-a=
+mphtml-loading-container i-amphtml-fill-content
+              amp-hidden"><div class=3D"i-amphtml-loader">
+        <div class=3D"i-amphtml-loader-dot"></div>
+        <div class=3D"i-amphtml-loader-dot"></div>
+        <div class=3D"i-amphtml-loader-dot"></div>
+      </div></div></amp-img>
+</div>
+<div class=3D"clear"></div>
+<div class=3D"download_code"><a href=3D"http://download.androidhive.info/do=
+wnload?code=3DgxfUdxyDVZEfLUwAgCPGGkMDC3O2NFm2aqCsv%2BLl5nEX6MphnsfLUxOWTLa=
+guXrPWGDt0QfKGE%2BB0vLcX3b%2FqZrzgBgZrnSxLrhHV2nk%2FuX%2F0RLi495a5njefXXDx5=
+yqvmAqUZ7Lx0%2By17VEaDrnKCJthnj2lhq9h3Eb2xZpA842SRZcGlLaiuc3X8k6GoZyKgiPnA"=
+ target=3D"_blank">DOWNLOAD CODE</a></div>
+<div class=3D"yt_video">
+<label>VIDEO DEMO</label><br><amp-iframe src=3D"https://www.youtube.com/emb=
+ed/TLX0P2_6swI" frameborder=3D"0" allowfullscreen=3D"" class=3D"amp-wp-inli=
+ne-1c9d4f6a4899b86916242d585ca9f493 i-amphtml-element i-amphtml-layout-fixe=
+d-height i-amphtml-layout-size-defined" sandbox=3D"allow-scripts allow-same=
+-origin" height=3D"400" layout=3D"fixed-height" style=3D"height: 400px; "><=
+div placeholder=3D"" class=3D"amp-wp-iframe-placeholder"></div><div class=
+=3D"i-amphtml-loading-container i-amphtml-fill-content
+              amp-hidden"><div class=3D"i-amphtml-loader">
+        <div class=3D"i-amphtml-loader-dot"></div>
+        <div class=3D"i-amphtml-loader-dot"></div>
+        <div class=3D"i-amphtml-loader-dot"></div>
+      </div></div><i-amphtml-scroll-container></i-amphtml-scroll-container>=
+</amp-iframe>
+</div>
+<p></p>
+<h2>Prerequisite</h2>
+<p>As this article uploads the image/video taken from camera, you need to h=
+ave knowledge over android camera module. So I recommend you go through my =
+previous tutorial <a href=3D"https://www.androidhive.info/2013/09/android-w=
+orking-with-camera-api/" title=3D"Android working with camera" target=3D"_b=
+lank" class=3D"link">Android Working with Camera</a> which gives you an ove=
+rview of integrating camera in your android apps.</p>
+<p></p>
+<h2>1. Creating Android Project</h2>
+<p><strong>1</strong>. In Eclipse create a new android project by navigatin=
+g to <strong>File =E2=87=92 New =E2=87=92 Android Application Project</stro=
+ng> and fill out all the required details.</p>
+<p><strong>2</strong>. Open <strong>strings.xml</strong> located under <str=
+ong>res =E2=87=92 values</strong> and add below string values.</p>
+<pre class=3D"brush: xml; title: strings.xml; notranslate" title=3D"strings=
+.xml">
+&lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;
+&lt;resources&gt;
+
+    &lt;string name=3D"app_name"&gt;Camera File Upload&lt;/string&gt;
+    &lt;string name=3D"btnTakePicture"&gt;Capture Image&lt;/string&gt;
+    &lt;string name=3D"btnRecordVideo"&gt;Record Video&lt;/string&gt;
+    &lt;string name=3D"or"&gt;(or)&lt;/string&gt;
+    &lt;string name=3D"btnUploadToServer"&gt;Upload to Server&lt;/string&gt=
+;
+
+&lt;/resources&gt;
+</pre>
+<p>
+<strong>3</strong>. Add below color values in <strong>colors.xml</strong> l=
+ocated under <strong>res =E2=87=92 values</strong> folder.</p>
+<pre class=3D"brush: xml; title: colors.xml; notranslate" title=3D"colors.x=
+ml">
+&lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;
+&lt;resources&gt;
+
+    &lt;color name=3D"view_background"&gt;#e8ecfa&lt;/color&gt;
+    &lt;color name=3D"btn_bg"&gt;#277bec&lt;/color&gt;
+    &lt;color name=3D"white"&gt;#ffffff&lt;/color&gt;
+    &lt;color name=3D"txt_font"&gt;#4e5572&lt;/color&gt;
+    &lt;color name=3D"action_bar"&gt;#1f2649&lt;/color&gt;
+
+&lt;/resources&gt;
+</pre>
+<p>
+<strong>4</strong>. Now under <strong>src</strong> folder create a new clas=
+s named <strong>Config.java</strong>. This class file contains file upload =
+URL and image directory name to save the image/video on mobile memory. You =
+will have to replace the file upload url with yours while testing.</p>
+<pre class=3D"brush: java; title: Config.java; notranslate" title=3D"Config=
+.java">
+package info.androidhive.camerafileupload;
+
+public class Config {
+	// File upload url (replace the ip with your server address)
+	public static final String FILE_UPLOAD_URL =3D "http://192.168.0.104/Andro=
+idFileUpload/fileUpload.php";
+=09
+	// Directory name to store captured images and videos
+    public static final String IMAGE_DIRECTORY_NAME =3D "Android File Uploa=
+d";
+}
+</pre>
+<p>
+<strong>5</strong>. Create a class named <strong>AndroidMultiPartEntity.jav=
+a</strong> and paste below code. This class is a custom MultipartEntity cla=
+ss which provides very important functionality required for this project su=
+ch as progress bar incrementation.</p>
+<pre class=3D"brush: java; title: AndroidMultiPartEntity.java; notranslate"=
+ title=3D"AndroidMultiPartEntity.java">
+package info.androidhive.camerafileupload;
+
+import java.io.FilterOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.charset.Charset;
+
+import org.apache.http.entity.mime.HttpMultipartMode;
+import org.apache.http.entity.mime.MultipartEntity;
+
+@SuppressWarnings("deprecation")
+public class AndroidMultiPartEntity extends MultipartEntity
+
+{
+
+	private final ProgressListener listener;
+
+	public AndroidMultiPartEntity(final ProgressListener listener) {
+		super();
+		this.listener =3D listener;
+	}
+
+	public AndroidMultiPartEntity(final HttpMultipartMode mode,
+			final ProgressListener listener) {
+		super(mode);
+		this.listener =3D listener;
+	}
+
+	public AndroidMultiPartEntity(HttpMultipartMode mode, final String boundar=
+y,
+			final Charset charset, final ProgressListener listener) {
+		super(mode, boundary, charset);
+		this.listener =3D listener;
+	}
+
+	@Override
+	public void writeTo(final OutputStream outstream) throws IOException {
+		super.writeTo(new CountingOutputStream(outstream, this.listener));
+	}
+
+	public static interface ProgressListener {
+		void transferred(long num);
+	}
+
+	public static class CountingOutputStream extends FilterOutputStream {
+
+		private final ProgressListener listener;
+		private long transferred;
+
+		public CountingOutputStream(final OutputStream out,
+				final ProgressListener listener) {
+			super(out);
+			this.listener =3D listener;
+			this.transferred =3D 0;
+		}
+
+		public void write(byte[] b, int off, int len) throws IOException {
+			out.write(b, off, len);
+			this.transferred +=3D len;
+			this.listener.transferred(this.transferred);
+		}
+
+		public void write(int b) throws IOException {
+			out.write(b);
+			this.transferred++;
+			this.listener.transferred(this.transferred);
+		}
+	}
+}
+</pre>
+<p>
+Now we=E2=80=99ll add camera support in our app by creating a simple screen=
+ with two buttons to invoke camera app to capture image or record video.</p=
+>
+<p><strong>6</strong>. Open your <strong>AndroidManifest.xml</strong> file =
+and add required permissions. You can notice that <strong>UploadActivity</s=
+trong> also added in below manifest file. We=E2=80=99ll create it in few mi=
+nutes.</p>
+<p><em>INTERNET</em> =E2=80=93 Required to make network calls<br><em>WRITE_=
+EXTERNAL_STORAGE</em> =E2=80=93 Required to store image/video on to storage=
+<br><em>RECORD_AUDIO</em> =E2=80=93 Required to record audio along with vid=
+eo</p>
+<pre class=3D"brush: xml; title: AndroidManifest.xml; notranslate" title=3D=
+"AndroidManifest.xml">
+&lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;
+&lt;manifest xmlns:android=3D"http://schemas.android.com/apk/res/android"
+    package=3D"info.androidhive.camerafileupload"
+    android:versionCode=3D"1"
+    android:versionName=3D"1.0" &gt;
+
+    &lt;uses-sdk
+        android:minSdkVersion=3D"11"
+        android:targetSdkVersion=3D"21" /&gt;
+
+    &lt;uses-permission android:name=3D"android.permission.INTERNET" /&gt;
+    &lt;uses-permission android:name=3D"android.permission.WRITE_EXTERNAL_S=
+TORAGE" /&gt;
+    &lt;uses-permission android:name=3D"android.permission.RECORD_AUDIO" /&=
+gt;
+
+    &lt;application
+        android:allowBackup=3D"true"
+        android:icon=3D"@drawable/ic_launcher"
+        android:label=3D"@string/app_name"
+        android:theme=3D"@style/AppTheme" &gt;
+        &lt;activity
+            android:name=3D"info.androidhive.camerafileupload.MainActivity"
+            android:label=3D"@string/app_name"
+            android:screenOrientation=3D"portrait" &gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name=3D"android.intent.action.MAIN" /&gt=
+;
+
+                &lt;category android:name=3D"android.intent.category.LAUNCH=
+ER" /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity
+            android:name=3D"info.androidhive.camerafileupload.UploadActivit=
+y"
+            android:screenOrientation=3D"portrait" &gt;
+        &lt;/activity&gt;
+    &lt;/application&gt;
+
+&lt;/manifest&gt;
+</pre>
+<p>
+<strong>7</strong>. Open the layout file of your main activity (<strong>act=
+ivity_main.xml</strong>) and add below code. This creates a layout with two=
+ buttons.</p>
+<pre class=3D"brush: xml; title: activity_main.xml; notranslate" title=3D"a=
+ctivity_main.xml">
+&lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;
+&lt;RelativeLayout xmlns:android=3D"http://schemas.android.com/apk/res/andr=
+oid"
+    xmlns:tools=3D"http://schemas.android.com/tools"
+    android:layout_width=3D"fill_parent"
+    android:layout_height=3D"fill_parent"
+    android:background=3D"@color/view_background"
+    android:baselineAligned=3D"false"
+    android:orientation=3D"vertical" &gt;
+
+    &lt;LinearLayout
+        android:layout_width=3D"fill_parent"
+        android:layout_height=3D"wrap_content"
+        android:layout_centerInParent=3D"true"
+        android:gravity=3D"center"
+        android:orientation=3D"vertical" &gt;
+
+        &lt;!-- Capture picture button --&gt;
+
+        &lt;Button
+            android:id=3D"@+id/btnCapturePicture"
+            android:layout_width=3D"wrap_content"
+            android:layout_height=3D"wrap_content"
+            android:layout_marginBottom=3D"20dp"
+            android:background=3D"@color/btn_bg"
+            android:paddingLeft=3D"20dp"
+            android:paddingRight=3D"20dp"
+            android:text=3D"@string/btnTakePicture"
+            android:textColor=3D"@color/white" /&gt;
+
+        &lt;TextView
+            android:layout_width=3D"wrap_content"
+            android:layout_height=3D"wrap_content"
+            android:layout_marginBottom=3D"20dp"
+            android:gravity=3D"center_horizontal"
+            android:text=3D"@string/or"
+            android:textColor=3D"@color/txt_font" /&gt;
+
+        &lt;!-- Record video button --&gt;
+
+        &lt;Button
+            android:id=3D"@+id/btnRecordVideo"
+            android:layout_width=3D"wrap_content"
+            android:layout_height=3D"wrap_content"
+            android:background=3D"@color/btn_bg"
+            android:paddingLeft=3D"20dp"
+            android:paddingRight=3D"20dp"
+            android:text=3D"@string/btnRecordVideo"
+            android:textColor=3D"@color/white" /&gt;
+    &lt;/LinearLayout&gt;
+
+&lt;/RelativeLayout&gt;
+</pre>
+<p>
+<strong>8</strong>. Add below camera related code in your <strong>MainActiv=
+ity.java</strong> class. This code is directly taken from this <a href=3D"h=
+ttps://www.androidhive.info/2013/09/android-working-with-camera-api/" title=
+=3D"Android working with camera" target=3D"_blank" class=3D"link">tutorial<=
+/a>.</p>
+<p>In brief what this activity will do is,</p>
+<p><strong>&gt;</strong> Camera app will be launched on tapping take pictur=
+e or record video button.<br><strong>&gt;</strong> Once the image / video i=
+s captured, it will be stored on to mobile SDCard.<br><strong>&gt;</strong>=
+ Finally UploadActivity will be launched by passing the SDCard path of the =
+media that is captured. The process of uploading will be done in UploadActi=
+vity.</p>
+<pre class=3D"brush: java; title: MainActivity.java; notranslate" title=3D"=
+MainActivity.java">
+package info.androidhive.camerafileupload;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+=09
+	// LogCat tag
+	private static final String TAG =3D MainActivity.class.getSimpleName();
+=09
+=20
+    // Camera activity request codes
+    private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE =3D 100;
+    private static final int CAMERA_CAPTURE_VIDEO_REQUEST_CODE =3D 200;
+   =20
+    public static final int MEDIA_TYPE_IMAGE =3D 1;
+    public static final int MEDIA_TYPE_VIDEO =3D 2;
+=20
+    private Uri fileUri; // file url to store image/video
+   =20
+    private Button btnCapturePicture, btnRecordVideo;
+=20
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+       =20
+        // Changing action bar background color
+        // These two lines are not needed
+        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseC=
+olor(getResources().getString(R.color.action_bar))));
+=20
+        btnCapturePicture =3D (Button) findViewById(R.id.btnCapturePicture)=
+;
+        btnRecordVideo =3D (Button) findViewById(R.id.btnRecordVideo);
+=20
+        /**
+         * Capture image button click event
+         */
+        btnCapturePicture.setOnClickListener(new View.OnClickListener() {
+=20
+            @Override
+            public void onClick(View v) {
+                // capture picture
+                captureImage();
+            }
+        });
+=20
+        /**
+         * Record video button click event
+         */
+        btnRecordVideo.setOnClickListener(new View.OnClickListener() {
+=20
+            @Override
+            public void onClick(View v) {
+                // record video
+                recordVideo();
+            }
+        });
+=20
+        // Checking camera availability
+        if (!isDeviceSupportCamera()) {
+            Toast.makeText(getApplicationContext(),
+                    "Sorry! Your device doesn't support camera",
+                    Toast.LENGTH_LONG).show();
+            // will close the app if the device does't have camera
+            finish();
+        }
+    }
+=20
+    /**
+     * Checking device has camera hardware or not
+     * */
+    private boolean isDeviceSupportCamera() {
+        if (getApplicationContext().getPackageManager().hasSystemFeature(
+                PackageManager.FEATURE_CAMERA)) {
+            // this device has a camera
+            return true;
+        } else {
+            // no camera on this device
+            return false;
+        }
+    }
+=20
+    /**
+     * Launching camera app to capture image
+     */
+    private void captureImage() {
+        Intent intent =3D new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+=20
+        fileUri =3D getOutputMediaFileUri(MEDIA_TYPE_IMAGE);
+=20
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
+=20
+        // start the image capture Intent
+        startActivityForResult(intent, CAMERA_CAPTURE_IMAGE_REQUEST_CODE);
+    }
+   =20
+    /**
+     * Launching camera app to record video
+     */
+    private void recordVideo() {
+        Intent intent =3D new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
+=20
+        fileUri =3D getOutputMediaFileUri(MEDIA_TYPE_VIDEO);
+=20
+        // set video quality
+        intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
+=20
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image=
+ file
+                                                            // name
+=20
+        // start the video capture Intent
+        startActivityForResult(intent, CAMERA_CAPTURE_VIDEO_REQUEST_CODE);
+    }
+=20
+    /**
+     * Here we store the file url as it will be null after returning from c=
+amera
+     * app
+     */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+=20
+        // save file url in bundle as it will be null on screen orientation
+        // changes
+        outState.putParcelable("file_uri", fileUri);
+    }
+=20
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+=20
+        // get the file url
+        fileUri =3D savedInstanceState.getParcelable("file_uri");
+    }
+=20
+   =20
+=20
+    /**
+     * Receiving activity result method will be called after closing the ca=
+mera
+     * */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent=
+ data) {
+        // if the result is capturing Image
+        if (requestCode =3D=3D CAMERA_CAPTURE_IMAGE_REQUEST_CODE) {
+            if (resultCode =3D=3D RESULT_OK) {
+               =20
+            	// successfully captured the image
+                // launching upload activity
+            	launchUploadActivity(true);
+            =09
+            =09
+            } else if (resultCode =3D=3D RESULT_CANCELED) {
+               =20
+            	// user cancelled Image capture
+                Toast.makeText(getApplicationContext(),
+                        "User cancelled image capture", Toast.LENGTH_SHORT)
+                        .show();
+           =20
+            } else {
+                // failed to capture image
+                Toast.makeText(getApplicationContext(),
+                        "Sorry! Failed to capture image", Toast.LENGTH_SHOR=
+T)
+                        .show();
+            }
+       =20
+        } else if (requestCode =3D=3D CAMERA_CAPTURE_VIDEO_REQUEST_CODE) {
+            if (resultCode =3D=3D RESULT_OK) {
+               =20
+            	// video successfully recorded
+                // launching upload activity
+            	launchUploadActivity(false);
+           =20
+            } else if (resultCode =3D=3D RESULT_CANCELED) {
+               =20
+            	// user cancelled recording
+                Toast.makeText(getApplicationContext(),
+                        "User cancelled video recording", Toast.LENGTH_SHOR=
+T)
+                        .show();
+           =20
+            } else {
+                // failed to record video
+                Toast.makeText(getApplicationContext(),
+                        "Sorry! Failed to record video", Toast.LENGTH_SHORT=
+)
+                        .show();
+            }
+        }
+    }
+   =20
+    private void launchUploadActivity(boolean isImage){
+    	Intent i =3D new Intent(MainActivity.this, UploadActivity.class);
+        i.putExtra("filePath", fileUri.getPath());
+        i.putExtra("isImage", isImage);
+        startActivity(i);
+    }
+    =20
+    /**
+     * ------------ Helper Methods ----------------------=20
+     * */
+=20
+    /**
+     * Creating file uri to store image/video
+     */
+    public Uri getOutputMediaFileUri(int type) {
+        return Uri.fromFile(getOutputMediaFile(type));
+    }
+=20
+    /**
+     * returning image / video
+     */
+    private static File getOutputMediaFile(int type) {
+=20
+        // External sdcard location
+        File mediaStorageDir =3D new File(
+                Environment
+                        .getExternalStoragePublicDirectory(Environment.DIRE=
+CTORY_PICTURES),
+                Config.IMAGE_DIRECTORY_NAME);
+=20
+        // Create the storage directory if it does not exist
+        if (!mediaStorageDir.exists()) {
+            if (!mediaStorageDir.mkdirs()) {
+                Log.d(TAG, "Oops! Failed create "
+                        + Config.IMAGE_DIRECTORY_NAME + " directory");
+                return null;
+            }
+        }
+=20
+        // Create a media file name
+        String timeStamp =3D new SimpleDateFormat("yyyyMMdd_HHmmss",
+                Locale.getDefault()).format(new Date());
+        File mediaFile;
+        if (type =3D=3D MEDIA_TYPE_IMAGE) {
+            mediaFile =3D new File(mediaStorageDir.getPath() + File.separat=
+or
+                    + "IMG_" + timeStamp + ".jpg");
+        } else if (type =3D=3D MEDIA_TYPE_VIDEO) {
+            mediaFile =3D new File(mediaStorageDir.getPath() + File.separat=
+or
+                    + "VID_" + timeStamp + ".mp4");
+        } else {
+            return null;
+        }
+=20
+        return mediaFile;
+    }
+}
+</pre>
+<p>
+Now if you run the app, you should see following output.</p>
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div class=3D"amp-wp-inline-391477d5783c04100dfecb76bb84598c">
+<!-- Middle Content --><ins class=3D"adsbygoogle amp-wp-inline-dc34a6fc5b2b=
+6a280671d6705bb4c36e" data-ad-client=3D"ca-pub-9207768510467156" data-ad-sl=
+ot=3D"2887095024"></ins>
+</div>
+
+<div class=3D"image">
+<amp-img src=3D"data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABA=
+EACAkQBADs=3D" alt=3D"android-file-upload-camera-screen" width=3D"720" heig=
+ht=3D"817" class=3D"alignnone size-full wp-image-26587 amp-wp-enforced-size=
+s i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defin=
+ed" srcset=3D"https://www.androidhive.info/wp-content/uploads/2014/12/andro=
+id-file-upload-camera-screen.jpg 720w, https://www.androidhive.info/wp-cont=
+ent/uploads/2014/12/android-file-upload-camera-screen-264x300.jpg 264w" siz=
+es=3D"(min-width: 720px) 720px, 100vw"><i-amphtml-sizer style=3D"padding-to=
+p: 113.47222222222221%; "></i-amphtml-sizer></amp-img>
+</div>
+<div class=3D"image">
+<amp-img src=3D"data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABA=
+EACAkQBADs=3D" alt=3D"android-file-upload-camera-taking-camera-picture" wid=
+th=3D"720" height=3D"485" class=3D"alignnone size-full wp-image-26585 amp-w=
+p-enforced-sizes i-amphtml-element i-amphtml-layout-responsive i-amphtml-la=
+yout-size-defined" srcset=3D"https://www.androidhive.info/wp-content/upload=
+s/2014/12/android-file-upload-camera-taking-camera-picture.jpg 720w, https:=
+//www.androidhive.info/wp-content/uploads/2014/12/android-file-upload-camer=
+a-taking-camera-picture-300x202.jpg 300w, https://www.androidhive.info/wp-c=
+ontent/uploads/2014/12/android-file-upload-camera-taking-camera-picture-110=
+x73.jpg 110w" sizes=3D"(min-width: 720px) 720px, 100vw"><i-amphtml-sizer st=
+yle=3D"padding-top: 67.36111111111111%; "></i-amphtml-sizer></amp-img>
+</div>
+<p>
+Once you are able to launch camera and capture images, we can move forward =
+and start creating the upload activity.</p>
+<p><strong>9</strong>. Create an xml file under <strong>res =E2=87=92 layou=
+t</strong> folder named <strong>activity_upload.xml</strong>. This layout c=
+ontains <strong>ImageView</strong>, <strong>VideoView</strong> to preview t=
+he captured media and a <strong>ProgressBar</strong> to show uploading prog=
+ress.</p>
+<pre class=3D"brush: xml; title: activity_upload.xml; notranslate" title=3D=
+"activity_upload.xml">
+&lt;?xml version=3D"1.0" encoding=3D"utf-8"?&gt;
+&lt;LinearLayout xmlns:android=3D"http://schemas.android.com/apk/res/androi=
+d"
+    android:layout_width=3D"fill_parent"
+    android:layout_height=3D"fill_parent"
+    android:background=3D"@color/view_background"
+    android:orientation=3D"vertical"
+    android:padding=3D"10dp" &gt;
+
+   =20
+
+    &lt;!-- To display picture taken --&gt;
+
+    &lt;ImageView
+        android:id=3D"@+id/imgPreview"
+        android:layout_width=3D"fill_parent"
+        android:layout_height=3D"200dp"
+        android:visibility=3D"gone"=20
+        android:layout_marginTop=3D"15dp"/&gt;
+
+    &lt;!-- Videoview to preview recorded video --&gt;
+
+    &lt;VideoView
+        android:id=3D"@+id/videoPreview"
+        android:layout_width=3D"fill_parent"
+        android:layout_height=3D"400dp"
+        android:visibility=3D"gone"=20
+        android:layout_marginTop=3D"15dp"/&gt;
+
+    &lt;TextView
+        android:id=3D"@+id/txtPercentage"
+        android:layout_width=3D"wrap_content"
+        android:layout_height=3D"wrap_content"
+        android:layout_gravity=3D"center_horizontal"
+        android:layout_marginBottom=3D"15dp"
+        android:layout_marginTop=3D"15dp"
+        android:textColor=3D"@color/txt_font"
+        android:textSize=3D"30dp" /&gt;
+
+    &lt;ProgressBar
+        android:id=3D"@+id/progressBar"
+        style=3D"?android:attr/progressBarStyleHorizontal"
+        android:layout_width=3D"fill_parent"
+        android:layout_height=3D"20dp"
+        android:layout_marginBottom=3D"35dp"=20
+        android:visibility=3D"gone"/&gt;
+
+    &lt;Button
+        android:id=3D"@+id/btnUpload"
+        android:layout_width=3D"wrap_content"
+        android:layout_height=3D"wrap_content"
+        android:layout_gravity=3D"center_horizontal"
+        android:background=3D"@color/btn_bg"
+        android:paddingLeft=3D"20dp"
+        android:paddingRight=3D"20dp"
+        android:text=3D"@string/btnUploadToServer"
+        android:textColor=3D"@color/white"=20
+        android:layout_marginBottom=3D"20dp"/&gt;
+
+&lt;/LinearLayout&gt;
+</pre>
+<p>
+<strong>10</strong>. Create a class named <strong>UploadActivity.java</stro=
+ng> and paste below code. In this activity</p>
+<p><strong>&gt;</strong> The path of captured camera image/video is receive=
+d from MainActivity and image/video is displayed on the screen for preview =
+purpose.<br><strong>&gt;</strong> <strong>UploadFileToServer</strong> async=
+ method takes care of uploading file to server and updating the Progress Ba=
+r.</p>
+<pre class=3D"brush: java; title: UploadActivity.java; notranslate" title=
+=3D"UploadActivity.java">
+package info.androidhive.camerafileupload;
+
+import info.androidhive.camerafileupload.AndroidMultiPartEntity.ProgressLis=
+tener;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.mime.content.FileBody;
+import org.apache.http.entity.mime.content.StringBody;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.VideoView;
+
+public class UploadActivity extends Activity {
+	// LogCat tag
+	private static final String TAG =3D MainActivity.class.getSimpleName();
+
+	private ProgressBar progressBar;
+	private String filePath =3D null;
+	private TextView txtPercentage;
+	private ImageView imgPreview;
+	private VideoView vidPreview;
+	private Button btnUpload;
+	long totalSize =3D 0;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_upload);
+		txtPercentage =3D (TextView) findViewById(R.id.txtPercentage);
+		btnUpload =3D (Button) findViewById(R.id.btnUpload);
+		progressBar =3D (ProgressBar) findViewById(R.id.progressBar);
+		imgPreview =3D (ImageView) findViewById(R.id.imgPreview);
+		vidPreview =3D (VideoView) findViewById(R.id.videoPreview);
+
+		// Changing action bar background color
+		getActionBar().setBackgroundDrawable(
+				new ColorDrawable(Color.parseColor(getResources().getString(
+						R.color.action_bar))));
+
+		// Receiving the data from previous activity
+		Intent i =3D getIntent();
+
+		// image or video path that is captured in previous activity
+		filePath =3D i.getStringExtra("filePath");
+
+		// boolean flag to identify the media type, image or video
+		boolean isImage =3D i.getBooleanExtra("isImage", true);
+
+		if (filePath !=3D null) {
+			// Displaying the image or video on the screen
+			previewMedia(isImage);
+		} else {
+			Toast.makeText(getApplicationContext(),
+					"Sorry, file path is missing!", Toast.LENGTH_LONG).show();
+		}
+
+		btnUpload.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// uploading the file to server
+				new UploadFileToServer().execute();
+			}
+		});
+
+	}
+
+	/**
+	 * Displaying captured image/video on the screen
+	 * */
+	private void previewMedia(boolean isImage) {
+		// Checking whether captured media is image or video
+		if (isImage) {
+			imgPreview.setVisibility(View.VISIBLE);
+			vidPreview.setVisibility(View.GONE);
+			// bimatp factory
+			BitmapFactory.Options options =3D new BitmapFactory.Options();
+
+			// down sizing image as it throws OutOfMemory Exception for larger
+			// images
+			options.inSampleSize =3D 8;
+
+			final Bitmap bitmap =3D BitmapFactory.decodeFile(filePath, options);
+
+			imgPreview.setImageBitmap(bitmap);
+		} else {
+			imgPreview.setVisibility(View.GONE);
+			vidPreview.setVisibility(View.VISIBLE);
+			vidPreview.setVideoPath(filePath);
+			// start playing
+			vidPreview.start();
+		}
+	}
+
+	/**
+	 * Uploading the file to server
+	 * */
+	private class UploadFileToServer extends AsyncTask&lt;Void, Integer, Strin=
+g&gt; {
+		@Override
+		protected void onPreExecute() {
+			// setting progress bar to zero
+			progressBar.setProgress(0);
+			super.onPreExecute();
+		}
+
+		@Override
+		protected void onProgressUpdate(Integer... progress) {
+			// Making progress bar visible
+			progressBar.setVisibility(View.VISIBLE);
+
+			// updating progress bar value
+			progressBar.setProgress(progress[0]);
+
+			// updating percentage value
+			txtPercentage.setText(String.valueOf(progress[0]) + "%");
+		}
+
+		@Override
+		protected String doInBackground(Void... params) {
+			return uploadFile();
+		}
+
+		@SuppressWarnings("deprecation")
+		private String uploadFile() {
+			String responseString =3D null;
+
+			HttpClient httpclient =3D new DefaultHttpClient();
+			HttpPost httppost =3D new HttpPost(Config.FILE_UPLOAD_URL);
+
+			try {
+				AndroidMultiPartEntity entity =3D new AndroidMultiPartEntity(
+						new ProgressListener() {
+
+							@Override
+							public void transferred(long num) {
+								publishProgress((int) ((num / (float) totalSize) * 100));
+							}
+						});
+
+				File sourceFile =3D new File(filePath);
+
+				// Adding file data to http body
+				entity.addPart("image", new FileBody(sourceFile));
+
+				// Extra parameters if you want to pass to server
+				entity.addPart("website",
+						new StringBody("www.androidhive.info"));
+				entity.addPart("email", new StringBody("abc@gmail.com"));
+
+				totalSize =3D entity.getContentLength();
+				httppost.setEntity(entity);
+
+				// Making server call
+				HttpResponse response =3D httpclient.execute(httppost);
+				HttpEntity r_entity =3D response.getEntity();
+
+				int statusCode =3D response.getStatusLine().getStatusCode();
+				if (statusCode =3D=3D 200) {
+					// Server response
+					responseString =3D EntityUtils.toString(r_entity);
+				} else {
+					responseString =3D "Error occurred! Http Status Code: "
+							+ statusCode;
+				}
+
+			} catch (ClientProtocolException e) {
+				responseString =3D e.toString();
+			} catch (IOException e) {
+				responseString =3D e.toString();
+			}
+
+			return responseString;
+
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+			Log.e(TAG, "Response from server: " + result);
+
+			// showing the server response in an alert dialog
+			showAlert(result);
+
+			super.onPostExecute(result);
+		}
+
+	}
+
+	/**
+	 * Method to show alert dialog
+	 * */
+	private void showAlert(String message) {
+		AlertDialog.Builder builder =3D new AlertDialog.Builder(this);
+		builder.setMessage(message).setTitle("Response from Servers")
+				.setCancelable(false)
+				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int id) {
+						// do nothing
+					}
+				});
+		AlertDialog alert =3D builder.create();
+		alert.show();
+	}
+
+}
+</pre>
+<p>
+Until now we are done with android project. Now let=E2=80=99s quickly creat=
+e the PHP project to receive the file that is being sent from android app. =
+But before that, we need to do small configuration changes to WAMP server.<=
+/p>
+<h2>2. Installing &amp; Configuring WAMP Server</h2>
+<p><strong>1</strong>. Download and install <a rel=3D"nofollow" href=3D"htt=
+p://www.wampserver.com/en/" title=3D"WAMP software" target=3D"_blank" class=
+=3D"link">WAMP</a> software. On windows machine, WAMP will be installed at =
+<strong>C:\wamp</strong> location.</p>
+<p><strong>2</strong>. Open <strong>php.ini</strong> and modify below value=
+s. By default wamp server allows maximum of <strong>2MB</strong> file only =
+to upload. After changing the below values, you can upload the files upto <=
+strong>50MB</strong> size.</p>
+<div class=3D"image">
+<amp-img src=3D"data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABA=
+EACAkQBADs=3D" alt=3D"wamp-server-editing-php.ini-file" width=3D"720" heigh=
+t=3D"412" class=3D"alignnone size-full wp-image-26623 amp-wp-enforced-sizes=
+ i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-define=
+d" srcset=3D"https://www.androidhive.info/wp-content/uploads/2014/12/wamp-s=
+erver-editing-php.ini-file1.png 720w, https://www.androidhive.info/wp-conte=
+nt/uploads/2014/12/wamp-server-editing-php.ini-file1-300x172.png 300w" size=
+s=3D"(min-width: 720px) 720px, 100vw"><i-amphtml-sizer style=3D"padding-top=
+: 57.22222222222222%; "></i-amphtml-sizer></amp-img>
+</div>
+<pre class=3D"brush: php; title: ; notranslate" title=3D"">
+upload_max_filesize =3D 50M
+post_max_size =3D 50M
+max_input_time =3D 300
+max_execution_time =3D 300
+</pre>
+<p><strong>3</strong>. Now restart the WAMP server.</p>
+<p></p>
+<h2>3. Creating PHP Project</h2>
+<p><strong>1</strong>. Go inside <strong>C:\wamp\www</strong> and create a =
+folder named <strong>AndroidFileUpload</strong>. This will be the root dire=
+ctory of our project.</p>
+<p><strong>2</strong>. Now go into <strong>AndroidFileUpload</strong> folde=
+r and create a folder named <strong>uploads</strong> to keep all the upload=
+ed files.</p>
+<p><strong>3</strong>. Create a file named <strong>fileUpload.php</strong> =
+and paste below content. Below php code takes care of receiving the files f=
+rom android app and store them in uploads folder. Upon the processing the f=
+ile, server responds with a JSON message.</p>
+<pre class=3D"brush: php; title: fileUpload.php; notranslate" title=3D"file=
+Upload.php">
+&lt;?php
+
+// Path to move uploaded files
+$target_path =3D "uploads/";
+
+// array for final json respone
+$response =3D array();
+
+// getting server ip address
+$server_ip =3D gethostbyname(gethostname());
+
+// final file url that is being uploaded
+$file_upload_url =3D 'http://' . $server_ip . '/' . 'AndroidFileUpload' . '=
+/' . $target_path;
+
+
+if (isset($_FILES['image']['name'])) {
+    $target_path =3D $target_path . basename($_FILES['image']['name']);
+
+    // reading other post parameters
+    $email =3D isset($_POST['email']) ? $_POST['email'] : '';
+    $website =3D isset($_POST['website']) ? $_POST['website'] : '';
+
+    $response['file_name'] =3D basename($_FILES['image']['name']);
+    $response['email'] =3D $email;
+    $response['website'] =3D $website;
+
+    try {
+        // Throws exception incase file is not being moved
+        if (!move_uploaded_file($_FILES['image']['tmp_name'], $target_path)=
+) {
+            // make error flag true
+            $response['error'] =3D true;
+            $response['message'] =3D 'Could not move the file!';
+        }
+
+        // File successfully uploaded
+        $response['message'] =3D 'File uploaded successfully!';
+        $response['error'] =3D false;
+        $response['file_path'] =3D $file_upload_url . basename($_FILES['ima=
+ge']['name']);
+    } catch (Exception $e) {
+        // Exception occurred. Make error flag true
+        $response['error'] =3D true;
+        $response['message'] =3D $e-&gt;getMessage();
+    }
+} else {
+    // File parameter is missing
+    $response['error'] =3D true;
+    $response['message'] =3D 'Not received any file!F';
+}
+
+// Echo final json response to client
+echo json_encode($response);
+?&gt;
+</pre>
+<p>
+Below is the sample JSON response if the file is uploaded successfully. You=
+ can use <strong>error</strong> value to verify the upload on android side.=
+</p>
+<pre class=3D"brush: php; title: ; notranslate" title=3D"">
+{
+    "file_name": "DSC_0021.JPG",
+    "email": "admin@androidhive.info",
+    "website": "www.androidhive.info",
+    "message": "File uploaded successfully!",
+    "error": false,
+    "file_path": "http://192.168.0.104/AndroidFileUpload/uploads/DSC_0021.J=
+PG"
+}
+</pre>
+<p></p>
+<h2>4. Testing the File Upload (localhost)</h2>
+<p>The following steps shows you how to test the both apps together locally=
+.</p>
+<p><strong>1</strong>. Connect the both the devices (machine running the wa=
+mp server &amp; android mobile) to same wifi network.</p>
+<p><strong>2</strong>. Start the WAMP server.</p>
+<p><strong>3</strong>. Get the ip address of the machine that is running th=
+e PHP project. You can get the ip address by typing <strong>ipconfig</stron=
+g> in command prompt. (On mac os, use <strong>ifconfig</strong> to get the =
+ip address)</p>
+<p><strong>4</strong>. Replace the ip address in <strong>Config.java</stron=
+g> (check 4th step in android project) with your ip address.</p>
+<p><strong>5</strong>. Deploy &amp; run the android app on the mobile.</p>
+<div class=3D"image"><amp-img src=3D"data:image/gif;base64,R0lGODdhAQABAPAA=
+AP///wAAACwAAAAAAQABAEACAkQBADs=3D" alt=3D"android-uploading-camera-picture=
+-to-server" width=3D"720" height=3D"817" class=3D"alignnone size-full wp-im=
+age-26588 amp-wp-enforced-sizes i-amphtml-element i-amphtml-layout-responsi=
+ve i-amphtml-layout-size-defined" srcset=3D"https://www.androidhive.info/wp=
+-content/uploads/2014/12/android-uploading-camera-picture-to-server.jpg 720=
+w, https://www.androidhive.info/wp-content/uploads/2014/12/android-uploadin=
+g-camera-picture-to-server-264x300.jpg 264w" sizes=3D"(min-width: 720px) 72=
+0px, 100vw"><i-amphtml-sizer style=3D"padding-top: 113.47222222222221%; "><=
+/i-amphtml-sizer></amp-img></div>
+<div class=3D"image">
+<amp-img src=3D"data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABA=
+EACAkQBADs=3D" alt=3D"android-uploading-camera-picture-to-server1" width=3D=
+"720" height=3D"817" class=3D"alignnone size-full wp-image-26584 amp-wp-enf=
+orced-sizes i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-=
+size-defined" srcset=3D"https://www.androidhive.info/wp-content/uploads/201=
+4/12/android-uploading-camera-picture-to-server1.jpg 720w, https://www.andr=
+oidhive.info/wp-content/uploads/2014/12/android-uploading-camera-picture-to=
+-server1-264x300.jpg 264w" sizes=3D"(min-width: 720px) 720px, 100vw"><i-amp=
+html-sizer style=3D"padding-top: 113.47222222222221%; "></i-amphtml-sizer><=
+/amp-img>
+</div>
+<div class=3D"image">
+<amp-img src=3D"data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABA=
+EACAkQBADs=3D" alt=3D"android-uploading-camera-picture-to-server2" width=3D=
+"720" height=3D"817" class=3D"alignnone size-full wp-image-26586 amp-wp-enf=
+orced-sizes i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-=
+size-defined" srcset=3D"https://www.androidhive.info/wp-content/uploads/201=
+4/12/android-uploading-camera-picture-to-server2.jpg 720w, https://www.andr=
+oidhive.info/wp-content/uploads/2014/12/android-uploading-camera-picture-to=
+-server2-264x300.jpg 264w" sizes=3D"(min-width: 720px) 720px, 100vw"><i-amp=
+html-sizer style=3D"padding-top: 113.47222222222221%; "></i-amphtml-sizer><=
+/amp-img>
+</div>
+<p>
+<strong>References</strong><br>
+1. <a rel=3D"nofollow" href=3D"http://stackoverflow.com/questions/22874735/=
+upload-large-file-with-progress-bar-and-without-outofmemory-error-in-androi=
+d" title=3D"Android file uploading to server without outofmemory error" tar=
+get=3D"_blank" class=3D"link">Stackoverflow Question</a> about file upload =
+with progress bar.</p>
+<p>2. <a rel=3D"nofollow" href=3D"https://www.iconfinder.com/icons/66782/fi=
+le_upload_icon#size=3D128" title=3D"icon" target=3D"_blank" class=3D"link">=
+Icon</a> that I used as app icon.</p>
+<div class=3D"saboxplugin-wrap">
+<div class=3D"saboxplugin-gravatar"><amp-img alt=3D"" src=3D"data:image/gif=
+;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=3D" srcset=3D"https=
+://secure.gravatar.com/avatar/9578184c8f454a148b0b59dd1d21dfaf?s=3D200&amp;=
+d=3Dmm&amp;r=3Dg 2x" class=3D"avatar avatar-100 photo amp-wp-enforced-sizes=
+ i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-define=
+d" height=3D"100" width=3D"100" sizes=3D"(min-width: 100px) 100px, 100vw" s=
+tyle=3D"width: 100px; "><i-amphtml-sizer style=3D"padding-top: 100%; "></i-=
+amphtml-sizer></amp-img></div>
+<div class=3D"saboxplugin-authorname"><a href=3D"https://www.androidhive.in=
+fo/author/admin/">Ravi Tamada</a></div>
+<div class=3D"saboxplugin-desc">
+<div class=3D"vcard author"><span class=3D"fn">Hi there! I am Founder at an=
+droidhive and programming enthusiast. My skills includes Android, iOS, PHP,=
+ Ruby on Rails and lot more. If you have any idea that you would want me to=
+ develop? Let=E2=80=99s talk: <a href=3D"mailto:ravi@androidhive.info">ravi=
+@androidhive.info</a></span></div>
+</div>
+<div class=3D"clearfix"></div>
+<div class=3D"saboxplugin-socials sabox-colored"></div>
+</div>
+
+<div class=3D"amp-wp-inline-c301377ab2d02ab6d5b05061e4eb9107"></div>	</div>
+
+	<footer class=3D"amp-wp-article-footer">
+			<div class=3D"amp-wp-meta amp-wp-tax-category">
+		Categories: <a href=3D"https://www.androidhive.info/category/cloud-connec=
+tivity/" rel=3D"category tag">Cloud Connectivity</a>	</div>
+
+	<div class=3D"amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href=3D"https://www.androidhive.info/tag/async/" rel=3D"tag">Asy=
+nc</a>, <a href=3D"https://www.androidhive.info/tag/camera/" rel=3D"tag">Ca=
+mera</a>, <a href=3D"https://www.androidhive.info/tag/file-upload/" rel=3D"=
+tag">File Upload</a>, <a href=3D"https://www.androidhive.info/tag/json/" re=
+l=3D"tag">json</a>, <a href=3D"https://www.androidhive.info/tag/php/" rel=
+=3D"tag">PHP</a>, <a href=3D"https://www.androidhive.info/tag/progress-bar/=
+" rel=3D"tag">Progress Bar</a>	</div>
+		<div class=3D"amp-wp-meta amp-wp-comments-link">
+		<a href=3D"https://www.androidhive.info/2014/12/android-uploading-camera-=
+image-video-to-server-with-progress-bar/#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+
+</article>
+
+<footer class=3D"amp-wp-footer">
+	<div>
+		<h2>AndroidHive</h2>
+		<p>
+			<a rel=3D"nofollow" href=3D"https://wordpress.org/">Powered by WordPress=
+</a>
+		</p>
+		<a href=3D"https://www.androidhive.info/2014/12/android-uploading-camera-=
+image-video-to-server-with-progress-bar/amp/#top" class=3D"back-to-top">Bac=
+k to top</a>
+	</div>
+</footer>
+
+
+
+
+</body></html>
+------=_NextPart_000_A65B_EE73362A.C480FFE2
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic
+
+QGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiBNZXJyaXdlYXRoZXI7IGZvbnQtc3R5bGU6IGl0YWxp
+YzsgZm9udC13ZWlnaHQ6IDQwMDsgc3JjOiB1cmwoaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9z
+L21lcnJpd2VhdGhlci92MTkvdS00bTBxeXJpUXdsT3JoU3Zvd0tfbDUtZVJaT2YtVFZyUEhwLndv
+ZmYpIGZvcm1hdCh3b2ZmKTsgfQoKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiBNZXJyaXdlYXRo
+ZXI7IGZvbnQtc3R5bGU6IGl0YWxpYzsgZm9udC13ZWlnaHQ6IDcwMDsgc3JjOiB1cmwoaHR0cHM6
+Ly9mb250cy5nc3RhdGljLmNvbS9zL21lcnJpd2VhdGhlci92MTkvdS00bDBxeXJpUXdsT3JoU3Zv
+d0tfbDUtZVI3MVd2ZjRqdnJEUDNXRy53b2ZmKSBmb3JtYXQod29mZik7IH0KCkBmb250LWZhY2Ug
+eyBmb250LWZhbWlseTogTWVycml3ZWF0aGVyOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQtd2Vp
+Z2h0OiA0MDA7IHNyYzogdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9tZXJyaXdlYXRo
+ZXIvdjE5L3UtNDQwcXlyaVF3bE9yaFN2b3dLX2w1LWZDWktkZVgzcmcud29mZikgZm9ybWF0KHdv
+ZmYpOyB9CgpAZm9udC1mYWNlIHsgZm9udC1mYW1pbHk6IE1lcnJpd2VhdGhlcjsgZm9udC1zdHls
+ZTogbm9ybWFsOyBmb250LXdlaWdodDogNzAwOyBzcmM6IHVybChodHRwczovL2ZvbnRzLmdzdGF0
+aWMuY29tL3MvbWVycml3ZWF0aGVyL3YxOS91LTRuMHF5cmlRd2xPcmhTdm93S19sNTJ4d05aV01m
+OGhQdmhQUS53b2ZmKSBmb3JtYXQod29mZik7IH0=
+------=_NextPart_000_A65B_EE73362A.C480FFE2
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.androidhive.info/wp-content/plugins/amp/assets/images/placeholder-icon.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGAAAABgAQMAAADYVuV7AAAABlBMVEUAAAD///+l2Z/dAAAAAXRS
+TlMAQObYZgAAAJtJREFUOMvd07sNAyEQBNA9ERBSwpVCaVAapVACIQFiLsAMi2UHl1jWTfaiXe1H
+5GlxeKWIiJ9oIhIm+jvA3MAs+AuYpmC7gsNHHFHBJAWbFVxROKuCbwqhq6LAaucAIhvdYIBEWCAT
+bqxm4AQq4ceeBsJYjXDwIliIBolIFnnBoRBZo5yoRPVoRAvoRL95B3+M7xe/Pcb2Ms/KBe/MuxNh
+HM2TAAAAAElFTkSuQmCC
+------=_NextPart_000_A65B_EE73362A.C480FFE2--

@@ -1,0 +1,2890 @@
+From: <Saved by WebKit>
+Subject: PHP htmlspecialchars() Function
+Date: Tue, 10 Dec 2018 05:09:19 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_5F56_20F7BC28.6195853F"
+
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.w3schools.com/php/func_string_htmlspecialchars.asp
+
+<html lang=3D"en-US"><head><meta charset=3D"UTF-8">
+<title>PHP htmlspecialchars() Function</title>
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<meta name=3D"Keywords" content=3D"HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,D=
+OM,Bootstrap,Python,Web development,W3C,tutorials,programming,training,lear=
+ning,quiz,primer,lessons,references,examples,exercises,source code,colors,d=
+emos,tips">
+<meta name=3D"Description" content=3D"Well organized and easy to understand=
+ Web building tutorials with lots of examples of how to use HTML, CSS, Java=
+Script, SQL, PHP, and XML.">
+<link rel=3D"icon" href=3D"https://www.w3schools.com/favicon.ico" type=3D"i=
+mage/x-icon">
+<link rel=3D"stylesheet" href=3D"https://www.w3schools.com/w3css/4/w3.css">
+<style>
+a:hover,a:active{color:#4CAF50}
+table.w3-table-all{margin:20px 0}
+/*OPPSETT AV TOP, TOPNAV, SIDENAV, MAIN, RIGHT OG FOOTER:*/
+.top {
+position:relative;
+background-color:#ffffff;
+height:68px;
+padding-top:20px;
+line-height:50px;
+overflow:hidden;
+z-index:2;
+}
+.w3schools-logo {
+font-family:fontawesome;
+text-decoration:none;
+line-height:1;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position:absolute;
+top:17px;
+}
+.w3schools-logo .dotcom {color:#4CAF50}
+.topnav {
+position:relative;
+z-index:2;
+font-size:17px;
+background-color:#5f5f5f;
+color:#f1f1f1;
+width:100%;
+padding:0;
+letter-spacing:1px;
+font-family:"Segoe UI",Arial,sans-serif;
+}
+.topnav a{
+padding:10px 15px 9px 15px !important;
+}
+.topnav .w3-bar a:hover,.topnav .w3-bar a:focus{
+background-color:#000000 !important;
+color:#ffffff !important;
+}
+.topnav .w3-bar a.active {
+background-color:#4CAF50;
+color:#ffffff;
+}
+a.topnav-icons {
+width:52px !important;
+font-size:20px !important;
+padding-top:11px !important;
+padding-bottom:13px !important;
+}
+a.topnav-icons.fa-home {font-size:22px !important}
+a.topnav-icons.fa-menu {font-size:22px !important}
+a.topnav-localicons {
+font-size:20px !important;
+padding-top:6px !important;
+padding-bottom:12px !important;
+}
+i.fa-caret-down,i.fa-caret-up{width:10px}
+#sidenav h2 {
+font-size:21px;
+padding-left:16px;
+margin:-4px 0 4px 0;
+width:204px;
+}
+#sidenav a {font-family:"Segoe UI",Arial,sans-serif;text-decoration:none;di=
+splay:block;padding:2px 1px 1px 16px}
+#sidenav a:hover,#sidenav a:focus {color:#000000;background-color:#cccccc;}
+#sidenav a.active {background-color:#4CAF50;color:#ffffff}
+#leftmenuinner {
+position:fixed;
+top:0;
+padding-top:112px;
+padding-bottom:0;   =20
+height:100%;
+width:220px;
+background-color:transparent;
+}
+#leftmenuinnerinner {
+height:100%;
+width:100%;
+overflow-y:scroll;
+overflow-x:hidden;
+padding-top:20px;
+}
+#main {padding:16px}
+#mainLeaderboard {height:90px}
+#right {text-align:center;padding:16px 16px 0 0}
+#right a {text-decoration:none}
+#right a:hover {text-decoration:underline}
+#skyscraper {min-height:600px}
+.sidesection {margin-bottom:32px;}
+.bottomad {padding:0 16px 16px 0;float:left;width:auto;}
+.footer a {text-decoration:none;}
+.footer a:hover{text-decoration:underline;}
+#nav_tutorials,#nav_references,#nav_examples{-webkit-overflow-scrolling:tou=
+ch;overflow:auto;}
+#nav_tutorials::-webkit-scrollbar,#nav_references::-webkit-scrollbar,#nav_e=
+xamples::-webkit-scrollbar {width: 12px;}
+#nav_tutorials::-webkit-scrollbar-track,#nav_references::-webkit-scrollbar-=
+track,#nav_examples::-webkit-scrollbar-track {background:#555555;}
+#nav_tutorials::-webkit-scrollbar-thumb,#nav_references::-webkit-scrollbar-=
+thumb,#nav_examples::-webkit-scrollbar-thumb {background: #999999;}
+#nav_tutorials,#nav_references,#nav_examples {
+display:none;
+letter-spacing:0;
+margin-top:44px;
+}
+#nav_tutorials a,#nav_references a,#nav_examples a{
+padding:2px 0 2px 6px!important;
+}
+#nav_tutorials a:focus,#nav_references a:focus,#nav_examples a:focus{
+color: #000;
+background-color: #ccc;
+}
+#nav_tutorials h3,#nav_references h3,#nav_examples h3{
+padding-left:6px;
+}
+.ref_overview{display:none}
+.w3-example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-=
+shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important=
+}
+.nextprev a {font-size:17px;border:1px solid #cccccc;}
+.nextprev a:link,.nextprev a:visited {background-color:#ffffff;color:#00000=
+0;}
+.w3-example a:focus,.nextprev a:focus{box-shadow:0 8px 16px 0 rgba(0,0,0,0.=
+2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+.nextprev a.w3-right,.nextprev a.w3-left {background-color:#4CAF50;color:#f=
+fffff;border-color:#4CAF50}
+#w3-exerciseform {background-color:#555555;padding:16px;color:#ffffff;}
+#w3-exerciseform .exercisewindow {background-color:#ffffff;padding:16px;col=
+or:#000000;}
+#w3-exerciseform .exerciseprecontainer {background-color:#f1f1f1;padding:16=
+px;font-size:120%;}
+#w3-exerciseform .exerciseprecontainer pre {display: block;}
+#w3-exerciseform .exerciseprecontainer pre input {padding:1px;border: 1px s=
+olid transparent;height:1.3em;}
+.w3-theme {color:#fff !important;background-color:#73AD21 !important;backgr=
+ound-color:#4CAF50 !important}
+.w3-theme-border {border-color:#4CAF50 !important}
+.sharethis a:hover {color:inherit;}
+.fa-facebook-square,.fa-twitter-square,.fa-google-plus-square {padding:0 8p=
+x;}
+.fa-facebook-square:hover, .fa-thumbs-o-up:hover {color:#3B5998;}
+.fa-twitter-square:hover {color:#55acee;}
+.fa-google-plus-square:hover {color:#dd4b39;}
+#google_translate_element img {margin-bottom:-1px;}
+#googleSearch {color:#000000;}
+#googleSearch a {padding:0 !important;}
+.searchdiv {max-width:400px;margin:auto;text-align:left;font-size:16px}
+div.cse .gsc-control-cse, div.gsc-control-cse {background-color:transparent=
+;border:none;padding:6px;margin:0px}
+td.gsc-search-button input.gsc-search-button {background-color:#4CAF50;bord=
+er-color:#4CAF50}
+td.gsc-search-button input.gsc-search-button:hover {background-color:#46a04=
+9;}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus=
+, .gsc-search-button {
+box-sizing:content-box; line-height:normal;}
+.gsc-tabsArea div {overflow:visible;}
+/*"nullstille" w3css:*/
+.w3-main{transition:margin-left 0s;}
+/*"nullstilling" slutt*/
+@media (min-width:1675px) {
+#main {width:79%}
+#right {width:21%}
+}
+@media (max-width:992px) {
+.top {height:100px}
+.top img {display:block;margin:auto;}
+.top .w3schools-logo {position:relative;top:0;width:100%;text-align:center;=
+margin:auto}
+.toptext {width:100%;text-align:center}
+#sidenav {width:260px;}
+#sidenav h2 {font-size:26px;width:100%;}
+#sidenav a {padding:3px 2px 3px 24px;font-size:17px}
+#leftmenuinner { =20
+box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+overflow:auto;
+-webkit-overflow-scrolling:touch;
+height:100%;
+position:relative;
+width:auto;
+padding-top:0;
+background-color:#f1f1f1;
+}
+#leftmenuinnerinner {overflow-y:scroll}
+.bottomad {float:none;text-align:center}
+#skyscraper {min-height:60px}
+}
+@media screen and (max-width:600px) {
+.top {height:68px}
+.toptext {display:none}
+}
+@font-face {
+font-family:'fontawesome';
+src: url('../lib/fonts/fontawesome.eot?14663396');
+src:url('../lib/fonts/fontawesome.eot?14663396#iefix') format('embedded-ope=
+ntype'),
+url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:inherit;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0, 0);
+}
+.fa-2x {
+ font-size:2em;
+}
+.fa-home:before {content:'\e800';}
+.fa-menu:before {content: '\f0c9';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-facebook-square:before {content:'\e806';}
+.fa-google-plus-square:before {content:'\e807';}
+.fa-twitter-square:before {content:'\e808';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+span.marked, span.deprecated {
+ color:#e80000;
+ background-color:transparent;
+}
+.intro {font-size:16px}
+.w3-btn, .w3-btn:link, .w3-btn:visited {color:#FFFFFF;background-color:#4CA=
+F50}
+a.w3-btn[href*=3D"exercise.asp"],a.w3-btn[href*=3D"exercise_js.asp"] {margi=
+n:10px 5px 0 0}
+a.btnplayit,a.btnplayit:link,a.btnplayit:visited {background-color:#FFAD33;=
+padding:1px 10px 2px 10px}
+a.btnplayit:hover,a.btnplayit:active {background-color:#ffffff;color:#FFAD3=
+3}
+a.btnplayit:hover {box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);}
+a.btnsmall:link,a.btnsmall:visited,a.btnsmall:active,a.btnsmall:hover {
+float:right;padding:1px 10px 2px 10px;font:15px Verdana, sans-serif;}
+a.btnsmall:hover {box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);}
+a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
+@media screen and (max-width:700px) {
+#mainLeaderboard {height:60px}
+#div-gpt-ad-1422003450156-0 {float:none;margin-left:auto;margin-right:auto}
+#div-gpt-ad-1422003450156-3 {float:none;margin-left:auto;margin-right:auto}
+}
+@media (max-width:1700px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(17)=
+{display:none;}}
+@media (max-width:1600px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(13)=
+{display:none;}}
+@media (max-width:1510px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(12)=
+{display:none;}}
+@media (max-width:1450px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(11)=
+{display:none;}}
+@media (max-width:1330px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(10)=
+{display:none;}}
+@media (max-width:1200px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(9){=
+display:none;}}
+@media (max-width:1100px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(8){=
+display:none;}}
+@media (max-width:1000px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(7){=
+display:none;}}
+@media (max-width:992px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(6){d=
+isplay:none;}}
+@media (max-width:930px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(18){=
+display:none;}}
+@media (max-width:800px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(19){=
+display:none;}}
+@media (max-width:650px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(5){d=
+isplay:none;} #topnav .w3-bar:nth-of-type(1) a:nth-of-type(16){display:none=
+;}}
+@media (max-width:460px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(4){d=
+isplay:none;}}
+@media (max-width:400px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(3){d=
+isplay:none;}}
+.w3-note{background-color:#ffffcc;border-left:6px solid #ffeb3b}
+.w3-warning{background-color:#ffdddd;border-left:6px solid #f44336}
+.w3-info{background-color:#ddffdd;border-left:6px solid #4CAF50}
+hr[id^=3D"ez-insert-after-placeholder"] {margin-top: 0;}
+.phonebr {display:none;}
+@media screen and (max-width: 475px) {.phonebr {display:initial;}}
+</style>
+
+
+
+
+
+
+<link rel=3D"preload" href=3D"https://adservice.google.co.id/adsid/integrat=
+or.js?domain=3Dwww.w3schools.com"><link rel=3D"preload" href=3D"https://ads=
+ervice.google.com/adsid/integrator.js?domain=3Dwww.w3schools.com"></head><b=
+ody>
+<div class=3D"w3-container top">
+  <a class=3D"w3schools-logo notranslate" href=3D"https://www.w3schools.com=
+/">w3schools<span class=3D"dotcom">.com</span></a>
+  <div class=3D"w3-right w3-hide-small w3-wide toptext" style=3D"font-famil=
+y:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+</div>
+
+<div style=3D"display:none;position:absolute;z-index:4;right:52px;height:44=
+px;background-color:#5f5f5f;letter-spacing:normal;" id=3D"googleSearch">
+  <div class=3D"gcse-search"></div>
+</div>
+<div style=3D"display:none;position:absolute;z-index:3;right:111px;height:4=
+4px;background-color:#5f5f5f;text-align:right;padding-top:9px;" id=3D"googl=
+e_translate_element"></div>
+
+<div class=3D"w3-card-2 topnav notranslate" id=3D"topnav">
+  <div style=3D"overflow:auto;">
+    <div class=3D"w3-bar w3-left" style=3D"width:100%;overflow:hidden;heigh=
+t:44px">
+      <a href=3D"javascript:void(0);" class=3D"topnav-icons fa fa-menu w3-h=
+ide-large w3-left w3-bar-item w3-button" onclick=3D"open_menu()" title=3D"M=
+enu"></a>
+      <a href=3D"https://www.w3schools.com/default.asp" class=3D"topnav-ico=
+ns fa fa-home w3-left w3-bar-item w3-button" title=3D"Home"></a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+html/default.asp" title=3D"HTML Tutorial">HTML</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+css/default.asp" title=3D"CSS Tutorial">CSS</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+js/default.asp" title=3D"JavaScript Tutorial">JAVASCRIPT</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+sql/default.asp" title=3D"SQL Tutorial">SQL</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+php/default.asp" title=3D"PHP Tutorial">PHP</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+bootstrap/default.asp" title=3D"Bootstrap Tutorial">BOOTSTRAP</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+howto/default.asp" title=3D"How To">HOW TO</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+jquery/default.asp" title=3D"jQuery Tutorial">JQUERY</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+w3css/default.asp" title=3D"W3.CSS Tutorial">W3.CSS</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+python/default.asp" title=3D"Python Tutorial">PYTHON</a>
+      <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.com/=
+xml/default.asp" title=3D"XML Tutorial">XML</a>
+      <a class=3D"w3-bar-item w3-button" id=3D"topnavbtn_tutorials" href=3D=
+"javascript:void(0);" onclick=3D"w3_open_nav(&quot;tutorials&quot;)" title=
+=3D"Tutorials">MORE <i class=3D"fa fa-caret-down"></i><i class=3D"fa fa-car=
+et-up" style=3D"display:none"></i></a>
+      <a href=3D"javascript:void(0);" class=3D"topnav-icons fa w3-right w3-=
+bar-item w3-button" onclick=3D"open_search(this)" title=3D"Search W3Schools=
+">=EE=A0=82</a>
+      <a href=3D"javascript:void(0);" class=3D"topnav-icons fa w3-right w3-=
+bar-item w3-button" onclick=3D"open_translate(this)" title=3D"Translate W3S=
+chools">=EE=A0=81</a>
+      <a class=3D"w3-bar-item w3-button w3-right" href=3D"https://www.w3sch=
+ools.com/forum/default.asp">FORUM</a>
+      <a class=3D"w3-bar-item w3-button w3-right" id=3D"topnavbtn_examples"=
+ href=3D"javascript:void(0);" onclick=3D"w3_open_nav(&quot;examples&quot;)"=
+ title=3D"Examples">EXAMPLES <i class=3D"fa fa-caret-down"></i><i class=3D"=
+fa fa-caret-up" style=3D"display:none"></i></a>
+      <a class=3D"w3-bar-item w3-button w3-right" id=3D"topnavbtn_reference=
+s" href=3D"javascript:void(0);" onclick=3D"w3_open_nav(&quot;references&quo=
+t;)" title=3D"References">REFERENCES <i class=3D"fa fa-caret-down"></i><i c=
+lass=3D"fa fa-caret-up" style=3D"display:none"></i></a>
+    </div>
+    <div id=3D"nav_tutorials" class=3D"w3-bar-block w3-card-2" style=3D"dis=
+play:none;">
+      <span onclick=3D"w3_close_nav(&quot;tutorials&quot;)" class=3D"w3-but=
+ton w3-xlarge w3-right" style=3D"position:absolute;right:0;font-weight:bold=
+;">=C3=97</span>
+      <div class=3D"w3-row-padding" style=3D"padding:24px 48px">
+        <div class=3D"w3-col l3 m4">
+          <h3>HTML and CSS</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/html/default.asp">Learn HTML</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/css/default.asp">Learn CSS</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3css/default.asp">Learn W3.CSS</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/colors/default.asp">Learn Colors</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/bootstrap/default.asp">Learn Bootstrap 3</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/bootstrap4/default.asp">Learn Bootstrap 4</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/graphics/default.asp">Learn Graphics</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/icons/default.asp">Learn Icons</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/howto/default.asp">Learn How To</a>
+        </div>
+        <div class=3D"w3-col l3 m4"> =20
+          <h3>JavaScript</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/js/default.asp">Learn JavaScript</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/jquery/default.asp">Learn jQuery</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/angular/default.asp">Learn AngularJS</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/js/js_json_intro.asp">Learn JSON</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/js/js_ajax_intro.asp">Learn AJAX</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3js/default.asp">Learn W3.JS</a>
+          <div class=3D"w3-hide-small"><br><br></div>
+        </div>
+        <div class=3D"w3-col l3 m4">
+          <h3>Server Side</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/sql/default.asp">Learn SQL</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/php/default.asp">Learn PHP</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/python/default.asp">Learn Python</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/java/default.asp">Learn Java</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/asp/default.asp">Learn ASP</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/nodejs/default.asp">Learn Node.js</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>         =20
+          <h3>Web Building</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3css/w3css_templates.asp">Web Templates</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/browsers/default.asp">Web Statistics</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/cert/default.asp">Web Certificates</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/tryit/default.asp">Web Editor</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/whatis/default.asp">Web Development</a>
+        </div>
+        <div class=3D"w3-col l3 m4">
+          <h3>XML</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/default.asp">Learn XML</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/ajax_intro.asp">Learn XML AJAX</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/dom_intro.asp">Learn XML DOM</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xml_dtd_intro.asp">Learn XML DTD</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/schema_intro.asp">Learn XML Schema</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xsl_intro.asp">Learn XSLT</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xpath_intro.asp">Learn XPath</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xquery_intro.asp">Learn XQuery</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div id=3D"nav_references" class=3D"w3-bar-block w3-card-2">
+      <span onclick=3D"w3_close_nav(&quot;references&quot;)" class=3D"w3-bu=
+tton w3-xlarge w3-right" style=3D"position:absolute;right:0;font-weight:bol=
+d;">=C3=97</span>
+      <div class=3D"w3-row-padding" style=3D"padding:24px 48px">
+        <div class=3D"w3-col m4">
+          <h3>HTML</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/tags/default.asp">HTML Tag Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/tags/ref_eventattributes.asp">HTML Event Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/colors/default.asp">HTML Color Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/tags/ref_attributes.asp">HTML Attribute Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/tags/ref_canvas.asp">HTML Canvas Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/graphics/svg_reference.asp">HTML SVG Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/graphics/google_maps_reference.asp">Google Maps Reference</a>
+          <h3>Charsets</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/charsets/default.asp">HTML Character Sets</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/charsets/ref_html_ascii.asp">HTML ASCII</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/charsets/ref_html_ansi.asp">HTML ANSI</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/charsets/ref_html_symbols.asp">HTML Symbols</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+        </div>
+        <div class=3D"w3-col m4">
+          <h3>CSS</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/cssref/default.asp">CSS Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/cssref/css3_browsersupport.asp">CSS Browser Support</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/cssref/css_selectors.asp">CSS Selector Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3css/w3css_references.asp">W3.CSS Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/icons/icons_reference.asp">Icon Reference</a>
+          <h3>XML</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/dom_nodetype.asp">XML Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/dom_http.asp">XML Http Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xsl_elementref.asp">XSLT Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/schema_elements_ref.asp">XML Schema Reference</a>
+        </div>
+        <div class=3D"w3-col m4">
+          <h3>JavaScript</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/jsref/default.asp">JavaScript Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/jsref/default.asp">HTML DOM Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/jquery/jquery_ref_overview.asp">jQuery Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/angular/angular_ref_directives.asp">AngularJS Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3js/w3js_references.asp">W3.JS Reference</a>
+          <h3>Server Side</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/php/php_ref_overview.asp">PHP Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/sql/sql_ref_keywords.asp">SQL Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/python/python_reference.asp">Python Reference</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/asp/asp_ref_response.asp">ASP Reference</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div id=3D"nav_examples" class=3D"w3-bar-block w3-card-2">
+      <span onclick=3D"w3_close_nav(&quot;examples&quot;)" class=3D"w3-butt=
+on w3-xlarge w3-right" style=3D"position:absolute;right:0;font-weight:bold;=
+">=C3=97</span>
+      <div class=3D"w3-row-padding" style=3D"padding:24px 48px">
+        <div class=3D"w3-col l3 m6">
+          <h3>HTML/CSS</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/html/html_examples.asp">HTML Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/html/html_exercises.asp">HTML Exercises</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/css/css_examples.asp">CSS Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/css/css_exercises.asp">CSS Exercises</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3css/w3css_examples.asp">W3.CSS Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3css/w3css_templates.asp">W3.CSS Templates</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/howto/default.asp">How To Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/graphics/svg_examples.asp">SVG Examples</a>
+        </div>
+        <div class=3D"w3-col l3 m6">
+          <h3>JavaScript</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/js/js_examples.asp" target=3D"_top">JavaScript Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/js/js_exercises.asp">JavaScript Exercises</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/js/js_dom_examples.asp" target=3D"_top">HTML DOM Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/jquery/jquery_examples.asp" target=3D"_top">jQuery Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/angular/angular_examples.asp" target=3D"_top">AngularJS Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/js/js_ajax_examples.asp" target=3D"_top">AJAX Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/w3js/w3js_examples.asp" target=3D"_top">W3.JS Examples</a>
+        </div>
+        <div class=3D"w3-col l3 m6">
+          <h3>Server Side</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/php/php_examples.asp" target=3D"_top">PHP Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/asp/asp_examples.asp" target=3D"_top">ASP Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/sql/sql_exercises.asp">SQL Exercises</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/python/python_exercises.asp">Python Exercises</a>
+          <h3>XML</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xml_examples.asp" target=3D"_top">XML Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xsl_examples.asp" target=3D"_top">XSLT Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/xpath_examples.asp" target=3D"_top">XPath Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/xml/schema_example.asp" target=3D"_top">XML Schema Examples</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/graphics/svg_examples.asp" target=3D"_top">SVG Examples</a>
+        </div>
+        <div class=3D"w3-col l3 m6">
+          <h3>Quizzes</h3>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DHTML" target=3D"_top">HTML Quiz</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DCSS" target=3D"_top">CSS Quiz</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DJavaScript" target=3D"_top">JavaScript Qu=
+iz</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DBootstrap" target=3D"_top">Bootstrap Quiz=
+</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DjQuery" target=3D"_top">jQuery Quiz</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DPHP" target=3D"_top">PHP Quiz</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DSQL" target=3D"_top">SQL Quiz</a>
+          <a class=3D"w3-bar-item w3-button" href=3D"https://www.w3schools.=
+com/quiztest/quiztest.asp?Qtest=3DXML" target=3D"_top">XML Quiz</a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div class=3D"w3-sidebar w3-collapse" id=3D"sidenav">
+  <div id=3D"leftmenuinner">
+    <div class=3D"w3-light-grey" id=3D"leftmenuinnerinner">
+      <a href=3D"javascript:void(0)" onclick=3D"close_menu()" class=3D"w3-b=
+utton w3-hide-large w3-large w3-display-topright" style=3D"right:16px;paddi=
+ng:3px 12px;font-weight:bold;">=C3=97</a>
+<h2 class=3D"left"><span class=3D"left_h2">PHP</span> Tutorial</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/default.asp">PHP H=
+OME</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_intro.asp">PHP=
+ Intro</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_install.asp">P=
+HP Install</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_syntax.asp">PH=
+P Syntax</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_variables.asp"=
+>PHP Variables</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_echo_print.asp=
+">PHP Echo / Print</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_datatypes.asp"=
+>PHP Data Types</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_string.asp">PH=
+P Strings</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_constants.asp"=
+>PHP Constants</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_operators.asp"=
+>PHP Operators</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_if_else.asp">P=
+HP If...Else...Elseif</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_switch.asp">PH=
+P Switch</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_looping.asp">P=
+HP While Loops</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_looping_for.as=
+p">PHP For Loops</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_functions.asp"=
+>PHP Functions</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_arrays.asp">PH=
+P Arrays</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_arrays_sort.as=
+p">PHP Sorting Arrays</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_superglobals.a=
+sp">PHP Superglobals</a>
+<br>
+<h2 class=3D"left"><span class=3D"left_h2">PHP</span> Forms</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_forms.asp">PHP=
+ Form Handling</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_form_validatio=
+n.asp">PHP Form Validation</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_form_required.=
+asp">PHP Form Required</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_form_url_email=
+.asp">PHP Form URL/E-mail</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_form_complete.=
+asp">PHP Form Complete</a>
+<br>
+<h2 class=3D"left"><span class=3D"left_h2">PHP</span> Advanced</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_arrays_multi.a=
+sp">PHP Arrays Multi</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_date.asp">PHP =
+Date and Time</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_includes.asp">=
+PHP Include</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_file.asp">PHP =
+File Handling</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_file_open.asp"=
+>PHP File Open/Read</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_file_create.as=
+p">PHP File Create/Write</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_file_upload.as=
+p">PHP File Upload</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_cookies.asp">P=
+HP Cookies</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_sessions.asp">=
+PHP Sessions</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_filter.asp">PH=
+P Filters</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_filter_advance=
+d.asp">PHP Filters Advanced</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_error.asp">PHP=
+ Error Handling</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_exception.asp"=
+>PHP Exception</a>
+<br> =20
+<h2 class=3D"left"><span class=3D"left_h2">MySQL</span> Database</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_intro.as=
+p">MySQL Database</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_connect.=
+asp">MySQL Connect</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_create.a=
+sp">MySQL Create DB</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_create_t=
+able.asp">MySQL Create Table</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_insert.a=
+sp">MySQL Insert Data</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_insert_l=
+astid.asp">MySQL Get Last ID</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_insert_m=
+ultiple.asp">MySQL Insert Multiple</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_prepared=
+_statements.asp">MySQL Prepared</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_select.a=
+sp">MySQL Select Data</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_delete.a=
+sp">MySQL Delete Data</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_update.a=
+sp">MySQL Update Data</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_mysql_select_l=
+imit.asp">MySQL Limit Data</a>
+<br>
+<h2 class=3D"left"><span class=3D"left_h2">PHP</span> - XML</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_xml_parsers.as=
+p">PHP XML Parsers</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_xml_simplexml_=
+read.asp">PHP SimpleXML Parser</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_xml_simplexml_=
+get.asp">PHP SimpleXML - Get</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_xml_parser_exp=
+at.asp">PHP XML Expat</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_xml_dom.asp">P=
+HP XML DOM</a>
+<br>
+<h2 class=3D"left"><span class=3D"left_h2">PHP</span> - AJAX</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ajax_intro.asp=
+">AJAX Intro</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ajax_php.asp">=
+AJAX PHP</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ajax_database.=
+asp">AJAX Database</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ajax_xml.asp">=
+AJAX XML</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ajax_livesearc=
+h.asp">AJAX Live Search</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ajax_rss_reade=
+r.asp">AJAX RSS Reader</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ajax_poll.asp"=
+>AJAX Poll</a>
+<br>
+<h2 class=3D"left"><span class=3D"left_h2">PHP</span> Examples</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_examples.asp">=
+PHP Examples</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_quiz.asp">PHP =
+Quiz</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_exercises.asp"=
+>PHP Exercises</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_exam.asp">PHP =
+Certificate</a>
+<br>
+<h2 class=3D"left"><span class=3D"left_h2">PHP</span> Reference</h2>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_overview.a=
+sp">PHP Overview</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_array.asp"=
+>PHP Array</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_calendar.a=
+sp">PHP Calendar</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_date.asp">=
+PHP Date</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_directory.=
+asp">PHP Directory</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_error.asp"=
+>PHP Error</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_filesystem=
+.asp">PHP Filesystem</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_filter.asp=
+">PHP Filter</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_ftp.asp">P=
+HP FTP</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_http.asp">=
+PHP HTTP</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_libxml.asp=
+">PHP Libxml</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_mail.asp">=
+PHP Mail</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_math.asp">=
+PHP Math</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_misc.asp">=
+PHP Misc</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_mysqli.asp=
+">PHP MySQLi</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_simplexml.=
+asp">PHP SimpleXML</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_string.asp=
+">PHP String</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_xml.asp">P=
+HP XML</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_zip.asp">P=
+HP Zip</a>
+<a target=3D"_top" href=3D"https://www.w3schools.com/php/php_ref_timezones.=
+asp">PHP Timezones</a>
+
+      <br><br>
+    </div>
+  </div>
+</div>
+<div class=3D"w3-main w3-light-grey" id=3D"belowtopnav" style=3D"margin-lef=
+t:220px;">
+  <div class=3D"w3-row w3-white">
+    <div class=3D"w3-col l10 m12" id=3D"main">
+      <div id=3D"mainLeaderboard" style=3D"overflow:hidden;">
+        <!-- MainLeaderboard-->
+       =20
+        <div id=3D"div-gpt-ad-1422003450156-2" data-google-query-id=3D"CLqK=
+hMzhk98CFUoejgodsjUKSQ"><div id=3D"google_ads_iframe_/16833175/MainLeaderbo=
+ard_0__container__" style=3D"border-top-width: 0pt; border-right-width: 0pt=
+; border-bottom-width: 0pt; border-left-width: 0pt; border-top-style: none;=
+ border-right-style: none; border-bottom-style: none; border-left-style: no=
+ne; border-color: initial; border-image: initial; display: inline-block; wi=
+dth: 320px; height: 50px; "><iframe frameborder=3D"0" style=3D"border-top-w=
+idth: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-w=
+idth: 0px; border-style: initial; border-color: initial; border-image: init=
+ial; vertical-align: bottom; " src=3D"https://tpc.googlesyndication.com/saf=
+eframe/1-0-31/html/container.html" id=3D"google_ads_iframe_/16833175/MainLe=
+aderboard_0" title=3D"3rd party ad content" name=3D"1-0-31;12380;&lt;!docty=
+pe html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=3D&quot;viewport&quot; con=
+tent=3D&quot;width=3D320, initial-scale=3D1.0, minimum-scale=3D1.0, maximum=
+-scale=3D1.0, user-scalable=3Dno&quot;&gt;&lt;script&gt;var google_casm=3D[=
+];&lt;/script&gt;&lt;/head&gt;&lt;body leftMargin=3D&quot;0&quot; topMargin=
+=3D&quot;0&quot; marginwidth=3D&quot;0&quot; marginheight=3D&quot;0&quot;&g=
+t;&lt;DIV STYLE=3D&quot;position: absolute; left: 0px; top: 0px; visibility=
+: hidden;&quot;&gt;&lt;IMG SRC=3D&quot;https://pagead2.googlesyndication.co=
+m/pagead/gen_204?id=3Dxbid&amp;dbm_b=3DAKAmf-DhAd5bI2PmUrWIs89cLUoqzioW1q3I=
+Rfekgs_KInBC1NEVxu0WA2nzEpJyl1qXpXVX9YwS2j79MEKzkqjJIrchQCRrGHlTNVPvib1mRbB=
+SCOh7FK4&quot; BORDER=3D0 WIDTH=3D1 HEIGHT=3D1 ALT=3D&quot;&quot; STYLE=3D&=
+quot;display:none&quot;&gt;&lt;/DIV&gt;&lt;iframe title=3D&quot;Blank&quot;=
+ src=3D&quot;https://googleads.g.doubleclick.net/xbbe/pixel?d=3DCJyAVxDsqoY=
+BGMW67kkwAQ&amp;v=3DAPEucNXdqZc-MKasnEEA9n7LMx0VojkPxaUHuYvQXzvSV44KyQfK-TR=
+lWXoPm5oG68MCDuEq3tn3BYiUt6lF2vPw6IikkkzFuA&quot; style=3D&quot;display:non=
+e&quot; aria-hidden=3D&quot;true&quot;&gt;&lt;/iframe&gt;&lt;div&gt;&lt;div=
+ style=3D&quot;position:relative; display:inline-block;&quot;&gt;&lt;script=
+&gt;(function(){var h=3Dthis;var k=3DArray.prototype.forEach?function(a,b){=
+Array.prototype.forEach.call(a,b,void 0)}:function(a,b){for(var d=3Da.lengt=
+h,c=3D&quot;string&quot;=3D=3Dtypeof a?a.split(&quot;&quot;):a,e=3D0;e&lt;d=
+;e++)e in c&amp;&amp;b.call(void 0,c[e],e,a)},l=3DArray.prototype.map?funct=
+ion(a,b){return Array.prototype.map.call(a,b,void 0)}:function(a,b){for(var=
+ d=3Da.length,c=3DArray(d),e=3D&quot;string&quot;=3D=3Dtypeof a?a.split(&qu=
+ot;&quot;):a,f=3D0;f&lt;d;f++)f in e&amp;&amp;(c[f]=3Db.call(void 0,e[f],f,=
+a));return c},m=3DArray.prototype.reduce?function(a,b,d){return Array.proto=
+type.reduce.call(a,b,d)}:function(a,b,d){var c=3Dd;k(a,function(d,f){c=3Db.=
+call(void 0,c,d,f,a)});return c};function p(a){for(var b=3D[],d=3D0;d&lt;a;=
+d++)b[d]=3D&quot;&quot;;return b};function q(a){q[&quot; &quot;](a);return =
+a}q[&quot; &quot;]=3Dfunction(){};function r(a,b){if(a)for(var d in a)Objec=
+t.prototype.hasOwnProperty.call(a,d)&amp;&amp;b.call(void 0,a[d],d,a)}var t=
+=3D/https?:\/\/[^\/]+/;function u(a){return(a=3Dt.exec(a))&amp;&amp;a[0]||&=
+quot;&quot;};var v=3D/^https?:\/\/(\w|-)+\.cdn\.ampproject\.(net|org)(\?|\/=
+|$)/;function w(a){a=3Da||x();for(var b=3Dnew y(h.location.href,!1),d=3Dnul=
+l,c=3Da.length-1,e=3Dc;0&lt;=3De;--e){var f=3Da[e];!d&amp;&amp;v.test(f.url=
+)&amp;&amp;(d=3Df);if(f.url&amp;&amp;!f.b){b=3Df;break}}e=3Dnull;f=3Da.leng=
+th&amp;&amp;a[c].url;0!=3Db.depth&amp;&amp;f&amp;&amp;(e=3Da[c]);return new=
+ z(b,e,d)}function x(){var a=3Dh,b=3D[],d=3Dnull;do{var c=3Da;try{var e;if(=
+e=3D!!c&amp;&amp;null!=3Dc.location.href)b:{try{q(c.foo);e=3D!0;break b}cat=
+ch(n){}e=3D!1}var f=3De}catch(n){f=3D!1}if(f){var g=3Dc.location.href;d=3Dc=
+.document&amp;&amp;c.document.referrer||null}else g=3Dd,d=3Dnull;b.push(new=
+ y(g||&quot;&quot;));try{a=3Dc.parent}catch(n){a=3Dnull}}while(a&amp;&amp;c=
+!=3Da);c=3D0;for(a=3Db.length-1;c&lt;=3Da;++c)b[c].depth=3Da-c;c=3Dh;if(c.l=
+ocation&amp;&amp;c.location.ancestorOrigins&amp;&amp;c.location.ancestorOri=
+gins.length=3D=3Db.length-1)for(a=3D1;a&lt;b.length;++a)g=3Db[a],g.url||(g.=
+url=3Dc.location.ancestorOrigins[a-1]||&quot;&quot;,g.b=3D!0);return b}func=
+tion z(a,b,d){this.c=3Da;this.f=3Db;this.a=3Dd}function y(a,b){this.url=3Da=
+;this.b=3D!!b;this.depth=3Dnull};function A(a,b,d,c,e){var f=3D[];r(a,funct=
+ion(a,n){(a=3DB(a,b,d,c,e))&amp;&amp;f.push(n+&quot;=3D&quot;+a)});return f=
+.join(b)}function B(a,b,d,c,e){if(null=3D=3Da)return&quot;&quot;;b=3Db||&qu=
+ot;&amp;&quot;;d=3Dd||&quot;,$&quot;;&quot;string&quot;=3D=3Dtypeof d&amp;&=
+amp;(d=3Dd.split(&quot;&quot;));if(a instanceof Array){if(c=3Dc||0,c&lt;d.l=
+ength){for(var f=3D[],g=3D0;g&lt;a.length;g++)f.push(B(a[g],b,d,c+1,e));ret=
+urn f.join(d[c])}}else if(&quot;object&quot;=3D=3Dtypeof a)return e=3De||0,=
+2&gt;e?encodeURIComponent(A(a,b,d,c,e+1)):&quot;...&quot;;return encodeURIC=
+omponent(String(a))};function C(a,b){this.a=3Da;this.depth=3Db}function D()=
+{function a(a,b){return null=3D=3Da?b:a}var b=3Dx(),d=3DMath.max(b.length-1=
+,0),c=3Dw(b);b=3Dc.c;var e=3Dc.f,f=3Dc.a,g=3D[];f&amp;&amp;g.push(new C([f.=
+url,f.b?2:0],a(f.depth,1)));e&amp;&amp;e!=3Df&amp;&amp;g.push(new C([e.url,=
+2],0));b.url&amp;&amp;b!=3Df&amp;&amp;g.push(new C([b.url,0],a(b.depth,d)))=
+;c=3Dl(g,function(a,b){return g.slice(0,g.length-b)});!b.url||(f||e)&amp;&a=
+mp;b!=3Df||(e=3Du(b.url))&amp;&amp;c.push([new C([e,1],a(b.depth,d))]);c.pu=
+sh([]);return l(c,function(a){return E(d,a)})}function E(a,b){var d=3Dm(b,f=
+unction(a,b){return Math.max(a,b.depth)},-1),c=3Dp(d+2);c[0]=3Da;k(b,functi=
+on(a){return c[a.depth+1]=3Da.a});return c}function F(){var a=3DD();return =
+l(a,function(a){return B(a)})};function G(a){try{var b=3DF();b.pop();for(va=
+r d=3D2083-a.length-5,c=3D0;c&lt;b.length;c++){var e=3DencodeURIComponent(b=
+[c]);if(e.length&lt;=3Dd)return a+&quot;&amp;rfl=3D&quot;+e}return a}catch(=
+f){}return a}var H=3D[&quot;rfl&quot;],I=3Dh;H[0]in I||&quot;undefined&quot=
+;=3D=3Dtypeof I.execScript||I.execScript(&quot;var &quot;+H[0]);for(var J;H=
+.length&amp;&amp;(J=3DH.shift());){var K;if(K=3D!H.length)K=3Dvoid 0!=3D=3D=
+G;K?I[J]=3DG:I[J]&amp;&amp;I[J]!=3D=3DObject.prototype[J]?I=3DI[J]:I=3DI[J]=
+=3D{}};}).call(this);&lt;/script&gt;&lt;script&gt;var url =3D 'https://goog=
+leads.g.doubleclick.net/dbm/ad?dbm_c=3DAKAmf-DoRJdKNpQf6eYv2P5_sd3lvr9zKp7S=
+DjMK92JqOFBHfGq7rnAp9iuSzohSVvAJSTbBFhWh&amp;dbm_d=3DAKAmf-Ca6jjnWtvk3U189Z=
+1g6q-6QfDlO56vMl1B_WWRkEN1RuQ3ehtGqFVn1JGanRTRRDdHgQqDVb1R78BmNJezwMdUwJIEY=
+XnSM8wNsMOqK-89IsfT11THdWITKZpm0jRSaTrbKXv3PzOy_trjVXEMRtPb7N8WTL5pZA5KIt4g=
+a7NbZrF7UMDds5yEbdG8_zHHKwPTAL622ZUwdGGSYvufTAZRhQN3c_qaDmmU5WFxz_ZKM-JnmgT=
+oVKVIm2f4G4G8myaWTJgRzrNWaiAz1H5-CpqGqZBB1PYjHO5cA_NXgwyaTCMXanIHiyjGBqAmOU=
+7oYXXuWlw8UIuufEj2fWeAVG9ohCQPAogoiugq309Z5RYZE4ZQfTUxE48h6CSKtIdA4qV05yPLx=
+R-kRke046q918jO4QXp3lOWBe_1RttkBIUp2rW8PEJaq855YQroPAIuF5A6bOK0sWUsj90w3aFh=
+8DVmY2P1uo7Xf9dJEEfuVqlinNwJhSnC-Lwvn7sSYyg7z3FCi9z5LS1bslSYIkl5A7S-A2jofvD=
+DbB4PIlcn0muceaLho-3vlesQvKxsHWh6bu1CLTwe0BDH9tuikwlzMs7D02yGZIrhojTfGee8E0=
+3HGNhu5DYxTv5Wug7vXqeogDATLrJ7OaiduO2jI2zg-GZfDWmx_o32vsjgYao2t0P33FZNvgn5_=
+yStXnOq8FUcbhH_DYPp7nw_hr9gDeVD7tfdpqfaU1ye2YUXo2dpYh33vRzATVkoLj2q7d4g2wHv=
+PMfesYnrWEZheANoc9R-NvVv9IBHhjyqLc0mK3vwK7iux-9jI6NTrmSfh89f-WvfgRmhXPrcLRY=
+N0aB4FYyqrDONnb6VKt6nBGA0s5UI27u9H-GuO71fTONvOQuUoa9kpqDRuKEoKo7kctZCF5ElTz=
+zyVN3vvqhlb4FMRtSFNTTZCs65i_NQC0uVMa5fwNw0EnvXiHDOtz6ScYV7vdXrMDOoXGmweEckW=
+L3Zo3SOo6UALk4cg2sTc0wawUARyysPBVptpYstjQD5cC9eeUdlnOjsr-24h3nSWLbeanEgQPCE=
+RlKXlpOZtEw2u0zB_g2dr07WfYExsRXOCCGxlSXd_niWjWgJxGsRHerwUEAuJBTtUpEIhWmVVOj=
+DPlULYSjsloKnpoc_REfA3HdmGmDUnHuzH6W9AL_zz82ymoC37M7bDWrNcl6HM4mra3y5iT7CkN=
+Ol4t0akH0FKdwgn5tFkPqTMUxt1AOLrNC50guO2Fjy7GIbU8OdOpLqlWgKPamO2pEfkZbP2zVhR=
+qx9FxWHHnUYm1WJzWj8gcOUHUut6AE9aoLWMqmUZPwvfTViZilQWThjY6gpgSwhmYWXf3lpF4Mr=
+x10y2bljdp0mllvnIz34Ysajt1BnH8-33_8RuRJGqPwUMI5Q9PJxBSIx9czo8txSktx6Qf8f6k0=
+TbfoC8D25TWyR9wFE8eRR-_Il8IFk_xlyyO6zyq_BgKkrV_xRujMloe9KDhwyvBDPmnTbf0wvns=
+4BGHthg7XEN_2o_npQXpA3CR1Ozimb9vmKnVebLt82K3eG_VBzDkteIzTbAOrPx978Wz-uqmjKX=
+7Bizmrv9btI7CUlZjxGS4LsfpBCyeB5tU8Y3YfYtiJpbRpjGxD_Vza0PMNcyMuhP7fPBHPyjK5m=
+xnIjQs2Qlqzep9kQ30etj0Hhc7ON1Ql51QywNHHkV8am668NZLwutGlu3t1ARv32JcQV7vsGFBh=
+0hHdw4liRs4ax7W4ANzT-BkKH8uw0w4YjbVJWQ0xd6m_AWBBgM-nNsxr3Lf5goRrPzcarE5169r=
+LVGGh98yk8J51qsJuWqPPsu2QIPEGRTFNuKF12XJHDi5niSw-kO2GdQa3JHbY6FUh65yAKbzUQk=
+zJtcj-UwaWdu-gyEuV1bn5aUHF8zcQNaMVEVY9LvL9PiUlcACrRZCGOsxLvVvnQFkQtNNJBNP4A=
+jWF0b-gfbT7CIv2ql30BSCEqGiMcep-1A70goglVDLtxwOes5sdxXkvrfR2FsHnRowcYmE1akym=
+7VXc0IgesrZHD1xwaC5tFg0_PSgNKnT72ObZeXbEiuQvPOiGyxZk_YA0SJmpuX8dKcmpzxmUfJe=
+D2yPCTao4U42SO6zpJ1OIDHnpltqbjyS90st0mPmWYmKGz360rNFRsjGGmMjsAqCI9_N8Ij16_6=
+WTxx2KtpzNY7ke6Xaer-Jfl7Egw6hAcYULS_SqImUK_qbzO8Gimt8Z0vrYssd09PiKDqRQlpQG6=
+Zw5QfSmMYPZX9KkMEQTZX3FvRSuXPipnKTq4NwXID-ZDeE3DUFkxLW8BmOF3yUATq-vOiQJbR-d=
+NyU3vAIfU9Uo1nKjQ9Db3BWq_1oQl-bufgo3mdJYztrUGDqcqKJwnqChfUkdS7WsNXQfBG2kvvt=
+uaCeaOe91YI40kgRHXNoznU4GljlT9wjtwgzOA-vvvcpl0W02JCo1sd7ENAH6COK6hq7LVH70G-=
+F_2Da_mU9loeeCfOTEiGMUbhCPGsTD4lSt51eBBYbKvIBeIIC4mx5ildvbm8tg8TOmTxe8XAYJ-=
+wB1u333ktN3c4QURnSyV6C1tZWdR8eNsvzDVhrRZMTrRvz0oOTgsMu6Ktbua2_ov9CGQWuEsmyH=
+RRkL_I8k_TR7txCJIrKmvy-wVZ4obemkSRkbgXImpCRk0CBvh_5GbiV2FU2UMfet_tCoYZLu_IA=
+wE41bcSv1WsO0EiLANvVXBl-Eln0JvzJsY6qYBIZYa&amp;cid=3DCAASEuRokZLYF0YzA0RtO-=
+PrGRj2gw';document.write('&lt;script src=3D&quot;' + (window.rfl ? window.r=
+fl(url) : url) + '&quot;&gt;&lt;/s' + 'cript&gt;');&lt;/script&gt;&lt;/div&=
+gt;&lt;/div&gt;&lt;script src=3D&quot;https://tpc.googlesyndication.com/pag=
+ead/js/r20181205/r20110914/client/ext/m_window_focus_non_hydra.js&quot; asy=
+nc&gt;&lt;/script&gt;&lt;script&gt;function initWindowFocus() {window['wind=
+ow_focus_for_click'] =3Dwfocusnhinit(&quot;https://googleads.g.doubleclick.=
+net/pagead/conversion/?ai\u003dC15YRjpINXLqLB8q8uASy66jIBLSX88JUnKKAio0Ir9u=
+ivcABEAEgj8DuImDpgoCA6A3IAQmpAjYRREm4-9I9qAMByAMCqgTUAU_Qb2-itIVLeSOZoWATVE=
+bxTDozrxottnNiNiH_pH4V4_05B9gMUbF5YRV5LcovcJnxEyAUWNJtJz-R_JNVcSERIF1eI1dfF=
+y-JOFl5NjWh0ZRtCmGI95V3vDC9qmKFmY6Q42QzaMK-DSzBwVcxypNqclMYfmkqSIQHwOTK5prh=
+0LO7qBVN27vHAlKmfgKy92Cmf6_wSHdCgED4XX2AvRq5UdEtazco40xYmQXGFYxbmt_uXewe6LR=
+I1UrHiGx84ud6rIB9tfRk3yUI-HXDpEg-gLHewASU5v-Z8AHgBAOIBfe8i48GkAYBoAZM2AYCgA=
+fU_OB2qAeOzhuoB9XJG6gHudIbqAfZyxuoB8_MG6gHpr4b2AcAoAjZnwGwCALSCAcIgGEQARgBg=
+AoDsBPYmdQF0BMA2BMQghQjGiE4NzQ2MDRlMzBmMmNiNTdkLmFub255bW91cy5nb29nbGU\u002=
+6sigh\u003dOLnmB_0b0uQ\u0026cid\u003dCAQSOwDlZ3AqKr1KUzXIK0X1qo3G_Y5Hil5z2T=
+vaI3Bw-2v88ia_Pe3IaLFzxTs0Tv3ZeuFn9wrf5TFk6oyE&quot;,&quot;&quot;,&quot;CLq=
+KhMzhk98CFUoejgodsjUKSQ&quot;);}if (window.wfocusnhinit) {initWindowFocus()=
+;} else {window['google_wf_async'] =3D initWindowFocus;}&lt;/script&gt;&lt;=
+iframe title=3D&quot;Blank&quot; scrolling=3D&quot;no&quot; frameborder=3D0=
+ height=3D0 width=3D0 src=3D&quot;https://pagead2.googlesyndication.com/pag=
+ead/s/cookie_push.html#aHR0cHM6Ly91bS5zaW1wbGkuZmkvZ3BfbWF0Y2g_Z29vZ2xlX2dp=
+ZD1DQUVTRU5MQmNiRExCVHVZVXRtRTlkTHVBUTgmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1=
+BSE5GMTNKOXZvazB4NXBtakU0XzNsM1JRZkJwU19lejZOaHBfWGlzSTA3T2R3,aHR0cHM6Ly9hc=
+C1zb25hci5zb2Npb21hbnRpYy5jb20vaW1nLzIwMTAtMDctMDEvYWN0aW9uL21hdGNoP2FpZD1n=
+b29nbGUtYXAmZ29vZ2xlX25pZD1zb2Npb21hbnRpY19hcCZnb29nbGVfdWxhPTM0MzkzNDAmaWQ=
+9Jmdvb2dsZV9naWQ9Q0FFU0VHWk9VMW9QaTd4M09lb0xSUDhJSDk4Jmdvb2dsZV9jdmVyPTEmZ2=
+9vZ2xlX3B1c2g9QUhORjEzSjl2b2sweDVwbWpFNF8zbDNSUWZCcFNfZXo2TmhwX1hpc0kwN09kd=
+w=3D=3D,aHR0cHM6Ly9wci1iaC55YnAueWFob28uY29tL3N5bmMvYWR4P2dvb2dsZV9naWQ9Q0F=
+FU0VNS0UzUW80alpRdUNpdkJoQld1RHlFJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QUhORj=
+EzSjl2b2sweDVwbWpFNF8zbDNSUWZCcFNfZXo2TmhwX1hpc0kwN09kdw=3D=3D,aHR0cHM6Ly9j=
+bS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSTBzbWUtNnVXS3hzdkpBdzh=
+kUkF1V0kyZnMta0Z2QmFIRXhzWEFGZmVPeVE=3D&quot; style=3D&quot;position:absolu=
+te&quot; aria-hidden=3D&quot;true&quot;&gt;&lt;/iframe&gt;&lt;script src=3D=
+&quot;https://www.googletagservices.com/activeview/js/current/osd_listener.=
+js?cache=3Dr20110914&quot;&gt;&lt;/script&gt;&lt;script type=3D&quot;text/j=
+avascript&quot;&gt;osdlfm(-1,'','BWgoYjpINXLqLB8q8uASy66jIBACcooCKjQgAABABO=
+AHIAQnIAwLgBAOIBfe8i48GoAZM0ggFCIBhEAE','',3602849209,true,'ud\u003d1\u0026=
+la\u003d0\u0026alp\u003dai\u0026alh\u003d3097283928\u0026',3,'CAASEuRokZLYF=
+0YzA0RtO-PrGRj2gw','https://pagead2.googlesyndication.com/pcs/activeview?xa=
+i\u003dAKAOjsvBmePeIgBqPTS8221DHccH1bpznjZMLpjrdT_-yNFE14EN-LyAG15FkOAw51P2=
+6MQ025BXDAGQr-3XB9yRYo73eN_5hTrDNUX37g\u0026sai\u003dAMfl-YTPFp9NvPGMc7RdqP=
+iKi6wLNboJjgg_AP3otv_fZAPLrRpCDraFR98KLmkios8BJOJwR9HsN_i9r4BZKGkjrUUJt3pKm=
+x5N5r2lRWu7mpLiweYrAg0TWUWZaA4\u0026sig\u003dCg0ArKJSzIqCTu5O4Y7xEAE\u0026c=
+id\u003dCAASEuRokZLYF0YzA0RtO-PrGRj2gw','');&lt;/script&gt;&lt;script src=
+=3D&quot;https://tpc.googlesyndication.com/pagead/js/r20181205/r20110914/cl=
+ient/ext/m_qs_click_protection.js&quot;&gt;&lt;/script&gt;&lt;script&gt;goo=
+gqscp.init([[[[null,1000,99,2,4,null,null,null,1],[null,500,99,2,9,null,nul=
+l,null,1]]],null,null,null,null,null,null,null,0]);&lt;/script&gt;&lt;img s=
+rc=3D&quot;//www.google.com/ads/measurement/l?ebcid=3DALh7CaTsYA1qh1-TTE3b4=
+5PKqNDlTSGvxC8yGiG_WsAthIuP24GdDl0YKp0U3_4sBEj8Y8K936bamSDhP7AOYlxfKx3cr7m3=
+yw&quot; style=3D&quot;display:none;&quot; alt=3D&quot;&quot;&gt;&lt;/img&g=
+t;&lt;script&gt;if (window.top &amp;&amp; window.top.postMessage) {window.t=
+op.postMessage('{&quot;googMsgType&quot;:&quot;adpnt&quot;}','*');}&lt;/scr=
+ipt&gt;&lt;script&gt;(function(){function e(a){return&quot;number&quot;=3D=
+=3Dtypeof a}function f(a,b,c){return a.call.apply(a.bind,arguments)}functio=
+n g(a,b,c){if(!a)throw Error();if(2&lt;arguments.length){var d=3DArray.prot=
+otype.slice.call(arguments,2);return function(){var c=3DArray.prototype.sli=
+ce.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}=
+return function(){return a.apply(b,arguments)}}function h(a,b,c){Function.p=
+rototype.bind&amp;&amp;-1!=3DFunction.prototype.bind.toString().indexOf(&qu=
+ot;native code&quot;)?h=3Df:h=3Dg;return h.apply(null,arguments)};function =
+k(a){this.b=3Dnull;var b=3D{top:10,right:10,bottom:10,left:10};a&amp;&amp;(=
+a=3Da.split(&quot;,&quot;),4!=3Da.length||isNaN(a[0])||isNaN(a[1])||isNaN(a=
+[2])||isNaN(a[3])||(b.top=3D+a[0],b.right=3D+a[1],b.bottom=3D+a[2],b.left=
+=3D+a[3]));this.a=3Db}k.prototype.c=3Dfunction(a){for(var b=3D!1,c=3Da.targ=
+et;c;c=3Dc.parentNode)if(&quot;abgc&quot;=3D=3Dc.id){b=3D!0;break}if(!b){va=
+r d=3Dthis.b.getBoundingClientRect();b=3Dd.width;c=3Dd.height;var l=3Da.cli=
+entX-d.left;d=3Da.clientY-d.top;b=3D!(e(b)&amp;&amp;e(c)&amp;&amp;e(a.clien=
+tX)&amp;&amp;e(a.clientY))||0&gt;=3Db||0&gt;=3Dc||0&gt;l||0&gt;d?!0:l&gt;=
+=3Dthis.a.left&amp;&amp;b-l&gt;=3Dthis.a.right&amp;&amp;d&gt;=3Dthis.a.top&=
+amp;&amp;c-d&gt;=3Dthis.a.bottom}b||(a.preventDefault?a.preventDefault():a.=
+returnValue=3D!1)};function m(a,b){b||(b=3D&quot;&quot;);b=3Dnew k(b);b.b=
+=3Da;a=3Db.b;var c=3Dh(b.c,b);a.addEventListener&amp;&amp;a.addEventListene=
+r(&quot;click&quot;,c,!1);return b}var n=3D[&quot;googleInitIc&quot;],p=3Dt=
+his;n[0]in p||&quot;undefined&quot;=3D=3Dtypeof p.execScript||p.execScript(=
+&quot;var &quot;+n[0]);for(var q;n.length&amp;&amp;(q=3Dn.shift());){var r;=
+if(r=3D!n.length)r=3Dvoid 0!=3D=3Dm;r?p[q]=3Dm:p[q]&amp;&amp;p[q]!=3D=3DObj=
+ect.prototype[q]?p=3Dp[q]:p=3Dp[q]=3D{}};}).call(this);googleInitIc(documen=
+t.body,'10,10,10,10');&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;{&quot;uid&q=
+uot;:1,&quot;hostPeerName&quot;:&quot;https://www.w3schools.com&quot;,&quot=
+;initialGeometry&quot;:&quot;{\&quot;windowCoords_t\&quot;:36,\&quot;window=
+Coords_r\&quot;:480,\&quot;windowCoords_b\&quot;:728,\&quot;windowCoords_l\=
+&quot;:0,\&quot;frameCoords_t\&quot;:128,\&quot;frameCoords_r\&quot;:336,\&=
+quot;frameCoords_b\&quot;:178,\&quot;frameCoords_l\&quot;:16,\&quot;styleZI=
+ndex\&quot;:\&quot;auto\&quot;,\&quot;allowedExpansion_t\&quot;:0,\&quot;al=
+lowedExpansion_r\&quot;:0,\&quot;allowedExpansion_b\&quot;:0,\&quot;allowed=
+Expansion_l\&quot;:0,\&quot;xInView\&quot;:0,\&quot;yInView\&quot;:0}&quot;=
+,&quot;permissions&quot;:&quot;{\&quot;expandByOverlay\&quot;:false,\&quot;=
+expandByPush\&quot;:false,\&quot;readCookie\&quot;:false,\&quot;writeCookie=
+\&quot;:false}&quot;,&quot;metadata&quot;:&quot;{\&quot;shared\&quot;:{\&qu=
+ot;sf_ver\&quot;:\&quot;1-0-31\&quot;,\&quot;ck_on\&quot;:1,\&quot;flash_ve=
+r\&quot;:\&quot;0\&quot;}}&quot;,&quot;reportCreativeGeometry&quot;:false,&=
+quot;isDifferentSourceWindow&quot;:false,&quot;goog_safeframe_hlt&quot;:{},=
+&quot;inFakeDecryptionExperiment&quot;:false}" scrolling=3D"no" marginwidth=
+=3D"0" marginheight=3D"0" width=3D"320" height=3D"50" data-is-safeframe=3D"=
+true" sandbox=3D"allow-forms allow-pointer-lock allow-popups allow-popups-t=
+o-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-us=
+er-activation" data-google-container-id=3D"1" src=3D"wyciwyg://frame/0"></i=
+frame></div></div>
+      =20
+      </div>
+
+<h1>PHP <span class=3D"color_h1">htmlspecialchars()</span> Function</h1>
+<p><a href=3D"https://www.w3schools.com/php/php_ref_string.asp" class=3D"w3=
+-btn w3-white w3-border" title=3D"PHP String Reference">=E2=9D=AE PHP Strin=
+g Reference</a></p>
+
+<div class=3D"w3-example">
+<h3>Example</h3>
+<p>Convert the predefined characters "&lt;" (less than) and "&gt;" (greater=
+ than) to HTML entities: </p>
+<div class=3D"w3-code notranslate">
+ &lt;?php<br>$str =3D "This is some &lt;b&gt;bold&lt;/b&gt; text.";<br>echo=
+ htmlspecialchars($str);<br>
+ ?&gt;</div>
+<p>The HTML output of the code above will be (View Source):</p>
+<div class=3D"w3-code notranslate">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br>
+ This is some &amp;lt;b&amp;gt;bold&amp;lt;/b&amp;gt; text.<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+
+</div>
+<p>The browser output of the code above will be:</p>
+<div class=3D"w3-code notranslate">
+
+ This is some &lt;b&gt;bold&lt;/b&gt; text.</div>
+<a target=3D"_blank" class=3D"w3-btn w3-margin-bottom" href=3D"https://www.=
+w3schools.com/php/showphp.asp?filename=3Ddemo_func_string_htmlspecialchars"=
+>Run example =C2=BB</a>
+</div>
+<hr>
+
+<h2>Definition and Usage</h2>
+
+<p>The htmlspecialchars() function converts some predefined characters to H=
+TML entities.</p>
+<p>The predefined characters are:</p>
+<ul>
+  <li>&amp; (ampersand) becomes &amp;amp;</li>
+  <li>" (double quote) becomes &amp;quot;</li>
+  <li>' (single quote) becomes &amp;#039;</li>
+  <li>&lt; (less than) becomes &amp;lt;</li>
+  <li>&gt; (greater than) becomes &amp;gt;</li>
+</ul>
+<p><strong>Tip:</strong> To convert special HTML entities back to character=
+s,=20
+use the <a href=3D"https://www.w3schools.com/php/func_string_htmlspecialcha=
+rs_decode.asp">
+htmlspecialchars_decode()</a>=20
+function. </p>
+<hr>
+<h2>Syntax</h2>
+
+<div class=3D"w3-code w3-border notranslate"><div>
+
+htmlspecialchars(<em>string,flags,character-set,double_encode</em>)
+
+</div></div><br>
+
+<table class=3D"w3-table-all">=20
+  <tbody><tr>
+    <th style=3D"width:20%">Parameter</th>
+    <th style=3D"width:80%">Description</th>
+  </tr> =20
+  <tr>
+    <td><em>string</em></td>
+    <td>Required. Specifies the string to convert</td>
+  </tr>
+  <tr>
+    <td><em>flags</em></td>
+    <td>Optional. Specifies how to handle quotes, invalid encoding and the =
+used document type.<p>The available quote styles are:</p>
+ <ul>
+    <li>ENT_COMPAT - Default. Encodes only double quotes</li>
+    <li>ENT_QUOTES - Encodes double and single quotes</li>
+    <li>ENT_NOQUOTES - Does not encode any quotes</li>
+ </ul>
+ <p>Invalid encoding:</p>
+ <ul>
+    <li>ENT_IGNORE - Ignores invalid encoding instead of having the functio=
+n  return an empty string. Should be avoided, as it may have security  impl=
+ications.</li>
+    <li>ENT_SUBSTITUTE - Replaces invalid encoding for a specified characte=
+r  set with a Unicode Replacement Character U+FFFD (UTF-8) or &amp;#FFFD;  =
+instead of returning an empty string.</li>
+    <li>ENT_DISALLOWED - Replaces code points that are  invalid in the spec=
+ified doctype with a Unicode Replacement Character  U+FFFD (UTF-8) or &amp;=
+#FFFD;</li>
+ </ul>
+  <p>Additional flags for specifying the used doctype:</p>
+ <ul>
+    <li>ENT_HTML401 - Default. Handle code as HTML 4.01</li>
+    <li>ENT_HTML5 - Handle code as HTML 5</li>
+    <li>ENT_XML1 - Handle code as XML 1</li>
+    <li>ENT_XHTML - Handle code as XHTML</li>
+ </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><em>character-set</em></td>
+    <td>Optional. A string that specifies which character-set to use.<p>All=
+owed values are:</p>
+ <ul>
+     <li>UTF-8 - Default. ASCII compatible multi-byte 8-bit Unicode</li>
+    <li>ISO-8859-1 - Western European</li>
+    <li>ISO-8859-15 - Western European (adds the Euro sign + French  and Fi=
+nnish letters missing in ISO-8859-1)</li>
+    <li>cp866 - DOS-specific Cyrillic charset</li>
+    <li>cp1251 - Windows-specific Cyrillic charset</li>
+    <li>cp1252 - Windows specific charset for Western European</li>
+    <li>KOI8-R - Russian</li>
+    <li>BIG5 - Traditional Chinese, mainly used in Taiwan</li>
+    <li>GB2312 - Simplified Chinese, national standard character set</li>
+    <li>BIG5-HKSCS - Big5 with Hong Kong extensions</li>
+    <li>Shift_JIS - Japanese</li>
+    <li>EUC-JP - Japanese</li>
+    <li>MacRoman - Character-set that was used by Mac OS</li>
+ </ul>
+ <p><b>Note:</b> Unrecognized character-sets will be ignored and replaced b=
+y ISO-8859-1 in versions prior to PHP 5.4. As of PHP 5.4, it will be ignore=
+d an replaced by UTF-8. </p>
+  </td>
+  </tr>
+  <tr>
+    <td><em>double_encode</em></td>
+    <td>Optional. A boolean value that specifies whether to encode existing=
+ html entities or not. <ul>
+    <li>TRUE - Default. Will convert everything</li>
+    <li>FALSE - Will not encode existing html entities</li>
+ </ul>
+  </td>
+  </tr>
+</tbody></table>
+<hr>
+<div id=3D"midcontentadcontainer" style=3D"overflow:auto;text-align:center"=
+>
+<!-- MidContent -->
+
+  <div id=3D"div-gpt-ad-1493883843099-0" style=3D"" data-google-query-id=3D=
+"CKzFhMzhk98CFUyijgodU_INZw"><div id=3D"google_ads_iframe_/16833175/MidCont=
+ent_0__container__" style=3D"border-top-width: 0pt; border-right-width: 0pt=
+; border-bottom-width: 0pt; border-left-width: 0pt; border-top-style: none;=
+ border-right-style: none; border-bottom-style: none; border-left-style: no=
+ne; border-color: initial; border-image: initial; "><iframe id=3D"google_ad=
+s_iframe_/16833175/MidContent_0" title=3D"3rd party ad content" name=3D"goo=
+gle_ads_iframe_/16833175/MidContent_0" width=3D"336" height=3D"280" scrolli=
+ng=3D"no" marginwidth=3D"0" marginheight=3D"0" frameborder=3D"0" style=3D"b=
+order-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; bo=
+rder-left-width: 0px; border-style: initial; border-color: initial; border-=
+image: initial; vertical-align: bottom; " srcdoc=3D"" data-google-container=
+-id=3D"4"></iframe></div></div>
+   =20
+</div>
+<hr>
+<h2>Technical Details</h2>
+<table class=3D"w3-table-all">
+<tbody><tr>
+ <th style=3D"width:20%">Return Value:</th>
+ <td style=3D"width:80%">Returns the converted string<br><br>If the <em>str=
+ing</em> contains invalid encoding, it will return an empty string, unless =
+either the ENT_IGNORE or ENT_SUBSTITUTE flags are set</td>
+</tr>
+<tr>
+  <th>PHP Version:</th>
+  <td>4+</td>
+</tr>
+<tr>
+  <th>Changelog:</th>
+  <td>The default value for the <em>character-set</em> parameter was change=
+d to UTF-8 in PHP 5<br><br>ENT_SUBSTITUTE, ENT_DISALLOWED, ENT_HTML401, ENT=
+_HTML5, ENT_XML1 and ENT_XHTML were added in PHP 5.4<br><br>ENT_IGNORE was =
+added in PHP 5.3<br><br>The <em>double_encode</em> parameter was added in P=
+HP 5.2.3<br>
+ <br>The <em>character-set</em> parameter was added in PHP 4.1</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>More Examples</h2>
+<div class=3D"w3-example">
+<h3>Example 1</h3>
+<p>Convert some predefined characters to HTML entities: </p>
+<div class=3D"w3-code notranslate">
+ &lt;?php<br>
+$str =3D "Jane &amp; 'Tarzan'";<br>
+echo htmlspecialchars($str, ENT_COMPAT); // Will only convert double quotes=
+<br>
+echo "&lt;br&gt;";<br>
+echo htmlspecialchars($str, ENT_QUOTES); // Converts double and single quot=
+es<br>
+echo "&lt;br&gt;";<br>
+echo htmlspecialchars($str, ENT_NOQUOTES); // Does not convert any quotes<b=
+r>
+ ?&gt;</div>
+<p>The HTML output of the code above will be (View Source):</p>
+<div class=3D"w3-code notranslate">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br>
+Jane &amp;amp; 'Tarzan'&lt;br&gt;<br>
+Jane &amp;amp; &amp;#039;Tarzan&amp;#039;&lt;br&gt;<br>
+Jane &amp;amp; 'Tarzan'<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+
+</div>
+<p>The browser output of the code above will be:</p>
+<div class=3D"w3-code notranslate">
+
+Jane &amp; 'Tarzan'<br>
+Jane &amp; 'Tarzan'<br>
+Jane &amp; 'Tarzan'
+</div>
+<a target=3D"_blank" class=3D"w3-btn w3-margin-bottom" href=3D"https://www.=
+w3schools.com/php/showphp.asp?filename=3Ddemo_func_string_htmlspecialchars2=
+">Run example =C2=BB</a>
+</div>
+<br>
+
+<div class=3D"w3-example">
+<h3>Example 2</h3>
+<p>Convert double quotes to HTML entities: </p>
+<div class=3D"w3-code notranslate">
+ &lt;?php<br>
+ $str =3D 'I love "PHP".';<br>echo htmlspecialchars($str, ENT_QUOTES); // C=
+onverts double and single quotes<br>
+ ?&gt;</div>
+<p>The HTML output of the code above will be (View Source):</p>
+<div class=3D"w3-code notranslate">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br>
+ I love &amp;quot;PHP&amp;quot;.<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+
+</div>
+<p>The browser output of the code above will be:</p>
+<div class=3D"w3-code notranslate">
+
+ I love "PHP".</div>
+<a target=3D"_blank" class=3D"w3-btn w3-margin-bottom" href=3D"https://www.=
+w3schools.com/php/showphp.asp?filename=3Ddemo_func_string_htmlspecialchars3=
+">Run example =C2=BB</a>
+</div>
+<hr>
+<a href=3D"https://www.w3schools.com/php/php_ref_string.asp" class=3D"w3-bt=
+n w3-white w3-border" title=3D"PHP String Reference">=E2=9D=AE PHP String R=
+eference</a>
+</div>
+<div class=3D"w3-col l2 m12" id=3D"right">
+
+<div class=3D"sidesection">
+  <div id=3D"skyscraper">
+ =20
+    <div id=3D"div-gpt-ad-1422003450156-5" data-google-query-id=3D"CJnng8zh=
+k98CFQmhjgodmCsO0w"><div id=3D"google_ads_iframe_/16833175/WideSkyScraper_0=
+__container__" style=3D"border-top-width: 0pt; border-right-width: 0pt; bor=
+der-bottom-width: 0pt; border-left-width: 0pt; border-top-style: none; bord=
+er-right-style: none; border-bottom-style: none; border-left-style: none; b=
+order-color: initial; border-image: initial; display: inline-block; width: =
+320px; height: 50px; "><iframe frameborder=3D"0" style=3D"border-top-width:=
+ 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width:=
+ 0px; border-style: initial; border-color: initial; border-image: initial; =
+vertical-align: bottom; " src=3D"https://tpc.googlesyndication.com/safefram=
+e/1-0-31/html/container.html" id=3D"google_ads_iframe_/16833175/WideSkyScra=
+per_0" title=3D"3rd party ad content" name=3D"1-0-31;11845;&lt;!doctype htm=
+l&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=3D&quot;viewport&quot; content=
+=3D&quot;width=3D320, initial-scale=3D1.0, minimum-scale=3D1.0, maximum-sca=
+le=3D1.0, user-scalable=3Dno&quot;&gt;&lt;script&gt;var google_casm=3D[];&l=
+t;/script&gt;&lt;/head&gt;&lt;body leftMargin=3D&quot;0&quot; topMargin=3D&=
+quot;0&quot; marginwidth=3D&quot;0&quot; marginheight=3D&quot;0&quot;&gt;&l=
+t;DIV STYLE=3D&quot;position: absolute; left: 0px; top: 0px; visibility: hi=
+dden;&quot;&gt;&lt;IMG SRC=3D&quot;https://pagead2.googlesyndication.com/pa=
+gead/gen_204?id=3Dxbid&amp;dbm_b=3DAKAmf-AKWyfXSt7DqeLUBECJzNYPUOKCKEAZHuTq=
+KnpkfGHXcbfTNT8gYZvW0PQDNMyoLU7AXIS1FTw4Wccyte1p-xSY9tomks7AIPk3PgHgsEGxlrS=
+bX2A&quot; BORDER=3D0 WIDTH=3D1 HEIGHT=3D1 ALT=3D&quot;&quot; STYLE=3D&quot=
+;display:none&quot;&gt;&lt;/DIV&gt;&lt;iframe title=3D&quot;Blank&quot; src=
+=3D&quot;https://googleads.g.doubleclick.net/xbbe/pixel?d=3DCJyAVxDsqoYBGJS=
+-7kkwAQ&amp;v=3DAPEucNVPXGZU9mSyzGV8KgJfik8IaOxxK0EucXKBoyfKH-laBl3YjUGZg_p=
+hWJfBgnprlLR0AbOSDXVorBbFwnyvni8FSKIVKw&quot; style=3D&quot;display:none&qu=
+ot; aria-hidden=3D&quot;true&quot;&gt;&lt;/iframe&gt;&lt;div&gt;&lt;div sty=
+le=3D&quot;position:relative; display:inline-block;&quot;&gt;&lt;script&gt;=
+(function(){var h=3Dthis;var k=3DArray.prototype.forEach?function(a,b){Arra=
+y.prototype.forEach.call(a,b,void 0)}:function(a,b){for(var d=3Da.length,c=
+=3D&quot;string&quot;=3D=3Dtypeof a?a.split(&quot;&quot;):a,e=3D0;e&lt;d;e+=
++)e in c&amp;&amp;b.call(void 0,c[e],e,a)},l=3DArray.prototype.map?function=
+(a,b){return Array.prototype.map.call(a,b,void 0)}:function(a,b){for(var d=
+=3Da.length,c=3DArray(d),e=3D&quot;string&quot;=3D=3Dtypeof a?a.split(&quot=
+;&quot;):a,f=3D0;f&lt;d;f++)f in e&amp;&amp;(c[f]=3Db.call(void 0,e[f],f,a)=
+);return c},m=3DArray.prototype.reduce?function(a,b,d){return Array.prototy=
+pe.reduce.call(a,b,d)}:function(a,b,d){var c=3Dd;k(a,function(d,f){c=3Db.ca=
+ll(void 0,c,d,f,a)});return c};function p(a){for(var b=3D[],d=3D0;d&lt;a;d+=
++)b[d]=3D&quot;&quot;;return b};function q(a){q[&quot; &quot;](a);return a}=
+q[&quot; &quot;]=3Dfunction(){};function r(a,b){if(a)for(var d in a)Object.=
+prototype.hasOwnProperty.call(a,d)&amp;&amp;b.call(void 0,a[d],d,a)}var t=
+=3D/https?:\/\/[^\/]+/;function u(a){return(a=3Dt.exec(a))&amp;&amp;a[0]||&=
+quot;&quot;};var v=3D/^https?:\/\/(\w|-)+\.cdn\.ampproject\.(net|org)(\?|\/=
+|$)/;function w(a){a=3Da||x();for(var b=3Dnew y(h.location.href,!1),d=3Dnul=
+l,c=3Da.length-1,e=3Dc;0&lt;=3De;--e){var f=3Da[e];!d&amp;&amp;v.test(f.url=
+)&amp;&amp;(d=3Df);if(f.url&amp;&amp;!f.b){b=3Df;break}}e=3Dnull;f=3Da.leng=
+th&amp;&amp;a[c].url;0!=3Db.depth&amp;&amp;f&amp;&amp;(e=3Da[c]);return new=
+ z(b,e,d)}function x(){var a=3Dh,b=3D[],d=3Dnull;do{var c=3Da;try{var e;if(=
+e=3D!!c&amp;&amp;null!=3Dc.location.href)b:{try{q(c.foo);e=3D!0;break b}cat=
+ch(n){}e=3D!1}var f=3De}catch(n){f=3D!1}if(f){var g=3Dc.location.href;d=3Dc=
+.document&amp;&amp;c.document.referrer||null}else g=3Dd,d=3Dnull;b.push(new=
+ y(g||&quot;&quot;));try{a=3Dc.parent}catch(n){a=3Dnull}}while(a&amp;&amp;c=
+!=3Da);c=3D0;for(a=3Db.length-1;c&lt;=3Da;++c)b[c].depth=3Da-c;c=3Dh;if(c.l=
+ocation&amp;&amp;c.location.ancestorOrigins&amp;&amp;c.location.ancestorOri=
+gins.length=3D=3Db.length-1)for(a=3D1;a&lt;b.length;++a)g=3Db[a],g.url||(g.=
+url=3Dc.location.ancestorOrigins[a-1]||&quot;&quot;,g.b=3D!0);return b}func=
+tion z(a,b,d){this.c=3Da;this.f=3Db;this.a=3Dd}function y(a,b){this.url=3Da=
+;this.b=3D!!b;this.depth=3Dnull};function A(a,b,d,c,e){var f=3D[];r(a,funct=
+ion(a,n){(a=3DB(a,b,d,c,e))&amp;&amp;f.push(n+&quot;=3D&quot;+a)});return f=
+.join(b)}function B(a,b,d,c,e){if(null=3D=3Da)return&quot;&quot;;b=3Db||&qu=
+ot;&amp;&quot;;d=3Dd||&quot;,$&quot;;&quot;string&quot;=3D=3Dtypeof d&amp;&=
+amp;(d=3Dd.split(&quot;&quot;));if(a instanceof Array){if(c=3Dc||0,c&lt;d.l=
+ength){for(var f=3D[],g=3D0;g&lt;a.length;g++)f.push(B(a[g],b,d,c+1,e));ret=
+urn f.join(d[c])}}else if(&quot;object&quot;=3D=3Dtypeof a)return e=3De||0,=
+2&gt;e?encodeURIComponent(A(a,b,d,c,e+1)):&quot;...&quot;;return encodeURIC=
+omponent(String(a))};function C(a,b){this.a=3Da;this.depth=3Db}function D()=
+{function a(a,b){return null=3D=3Da?b:a}var b=3Dx(),d=3DMath.max(b.length-1=
+,0),c=3Dw(b);b=3Dc.c;var e=3Dc.f,f=3Dc.a,g=3D[];f&amp;&amp;g.push(new C([f.=
+url,f.b?2:0],a(f.depth,1)));e&amp;&amp;e!=3Df&amp;&amp;g.push(new C([e.url,=
+2],0));b.url&amp;&amp;b!=3Df&amp;&amp;g.push(new C([b.url,0],a(b.depth,d)))=
+;c=3Dl(g,function(a,b){return g.slice(0,g.length-b)});!b.url||(f||e)&amp;&a=
+mp;b!=3Df||(e=3Du(b.url))&amp;&amp;c.push([new C([e,1],a(b.depth,d))]);c.pu=
+sh([]);return l(c,function(a){return E(d,a)})}function E(a,b){var d=3Dm(b,f=
+unction(a,b){return Math.max(a,b.depth)},-1),c=3Dp(d+2);c[0]=3Da;k(b,functi=
+on(a){return c[a.depth+1]=3Da.a});return c}function F(){var a=3DD();return =
+l(a,function(a){return B(a)})};function G(a){try{var b=3DF();b.pop();for(va=
+r d=3D2083-a.length-5,c=3D0;c&lt;b.length;c++){var e=3DencodeURIComponent(b=
+[c]);if(e.length&lt;=3Dd)return a+&quot;&amp;rfl=3D&quot;+e}return a}catch(=
+f){}return a}var H=3D[&quot;rfl&quot;],I=3Dh;H[0]in I||&quot;undefined&quot=
+;=3D=3Dtypeof I.execScript||I.execScript(&quot;var &quot;+H[0]);for(var J;H=
+.length&amp;&amp;(J=3DH.shift());){var K;if(K=3D!H.length)K=3Dvoid 0!=3D=3D=
+G;K?I[J]=3DG:I[J]&amp;&amp;I[J]!=3D=3DObject.prototype[J]?I=3DI[J]:I=3DI[J]=
+=3D{}};}).call(this);&lt;/script&gt;&lt;script&gt;var url =3D 'https://goog=
+leads.g.doubleclick.net/dbm/ad?dbm_c=3DAKAmf-CC_8m7kBxAvWikZqFhhUe9au-sbFak=
+dnGKXyVyl7IyX5oCt1SKSljGSYDwTgGHZqXh8hbX&amp;dbm_d=3DAKAmf-DJVntgh3x6vRHhkf=
+p0m3lUKsY4BlikSZ33HeGoWxg4IFDZyfxdKHOqM3_de6M5wf7v6rnbsBW4C8AJZ5AIxcg_NcT0h=
+uTYsJb522AQSQzkUcQZ77yxJ3x9w5m4ubPkTruBP9etGMwDrMvC04j26917WyCHzrf_Ek8RHHEX=
+RDsz9W4utUPTpTRxZT-RyqR-iQHy_lZiHQqodKX0le6xms93Qa6tOnR8Q9C7CRlGijMHy0vYjsk=
+UqlwdNlaidg23FLe9Z6ORnTqKzz6eFPGAoLN44vSx4wacP2444RjIHtyEN9pEhrn0YhU0FQvW3C=
+mJ0WNA1cDt_00cuW2T3puf8cXxiLO7uTC6xWY5fR65ueUUdPuSB_ms4eAFYkhvnSrVtICafuWzN=
+L3uqadRNDyuw0-0XTGbwX1RS-RNHftx3j8IjfmOK8Su_8ZlczEvmog2PV5Rq1SyGRm5H7Fc718s=
+CFbKwTP1HwKHAv6rSlE69H-Yr1iZOdVwJXLYYIVGYF85BLHqxlX7Gskg3-Xa3ZXpHx6b-8WTP33=
+9ozU6frs7NfGcRoeSqdAll3RKqXVP2h4JHgKzbxvbLkcqK8LVUvfwUDBqJNHjQXOAg-Cj-RtuIG=
+rROgSFqxJTI2yYAWiSpYhHn1_81V9rTVu7SzeCex9hyLi2roXq55ifTrcEp9vltqHpYInj4Asms=
+iiqhD8QHu6MAlXyQT1isxA5V7BAhnGJxW2wwWaAU84kDLhj_blwFRY2Zw-Ml7zVh7zMdYbOf9Yo=
+RU-cfIvgwGCkXnF1php6LbnWxPbtZwjFqGfSLxHlOgQ704fBKfGJa-w5Vs4I7rxkwBQkQe-aVJb=
+YxLVfbBWuzkDzTO0VkVqPyrcMHHD8XRKAIBlxiI2tYr13eVlJc89hL-3SXGZHL4AnLBOdoA--Mk=
+ChXVAN7ZwkjDwawPm_Fy0OKXmF8e8ftis8mJl9zDredZT6hURImDOqJOUb6aNnYOPDo3db9FQ-d=
+1K52rwVNUsSm8WoxixcKQTSF5aSoHIYo7Se9Pa7lyXod4lP0tefM0IfkdnG0K62LSbGme5UQA7X=
+K15IkGNhroDqButn44spAMc1wxv2rQUbbX4LJOksyl_0T6Eyvz_gvPeZRS8MjOBawkQbQaFAXk_=
+QKiWq2IhY6N82DC8_wRl2Wv61GokWTuMb4sPJBUy6FL4VssKAGNMML4W-UCt00Z-NtwnqfpK-tK=
+W1e63dos1zQlXXGWUwKHXk9J_6kk2vs0LoLAAFPdURlBKLyw7edhiRx8tNQryjaVCO_vEEFANGW=
+23zEcnMtgg_BoJjafq8VAmwF7siLvtQ_LLXCT9l7ua4g0tKznw_DD3M55Yc6dbmsePKQ3ERhz30=
+Nfm0l1RAe7Ph_-7ELZMtjq8BZ-y53Ia3PKmsKP115nAszQwYfmDbdmnJb25hVz2a-wKgihDweS-=
+abQq5kKJw8qcXGvyb5rtbcVY4jCOg9xM9F6W8kgufuJABRD7TTqKfGD5biXH385_5dcPu9X_rrA=
+cdCe5Jy_NbShRWrSSeo0E4W3uegYrsQ-qPkf96m6MHh92iPpUII9njOkZYc_Ip72C_l8xXA-DUc=
+rjEWYnYLiciNd0cXNRDeBbw5O4CSqQOrIUe3EBsBBFx3RTvrrIJ2WhU5BIOA6TEUN-aXkbhWnzW=
+jREnh8XzEEZ9sKT2ZvBgF2kGimRITmdiNYv7LBLiyMwyycSS7f1NPxrYVxcSA2cuPyzM9GxoyTn=
+5oY0QQV_r5FNoPUHkBBmh-C7YeG12oxdL6p8CAXsgKfjf4q-juVMucYzzKwujXWnGJD-XkqULGX=
+guBw7K20s5HsYBBq7tpVZbj9sekFHXA-LwUfP8-FqDEtQFvvqC1y3E8q9ZXsBFOV8q8_N9XnX4y=
+yGBPYrVuUt5Y4jGDavhBb_sRsqaDgGVoWFSEY85qKGRWuePIr1brmyLmxatahUm0m0R6SS1HMPq=
+0sR_VjI07Y7fR9Xy3BkKvMqvu_ZqQFndBL2y_yQXgTuhUAc6nrB5b_vJ-YTYjQJC5F48Zzq1gkI=
+5buT2BBTuUtM0X6WWc6TKQb_zJ9Q3x9_fP-jZUx3IS8U2lFX7OvA0oWuRQSm2wucWGxz-5KiRLm=
+Ae3EVUehl7fY50wfjGkZHQO3aN2gaorx6iHXYjRrV5_DOeHhg5zgrSy06nbZuexctxqzeJEYVlI=
+5QCh8yBIsdmqdkNhU7i29jb5k1ZM11dOnTN9b8LDrAH2Hr303COByXvmlfpe3Eohr9-6nlib65w=
+Tse0_zwVYJ0Svjz5jCtga-ZUU_vUco5_xKUHqM88jYS_U2kVCNYHS-pPPeEbyamV_6cljZ-KAVK=
+3leiuQMEJ7qwzAyXAzMZx1SM-iYx_PPJU5yncAQJfHOviVbA5XgpsaLWBaoUG6s0N6UA2h26F3w=
+PqxYHOyiNMzsnK0u_lih65ESYJTgxc5GvnFrZau5rSf1vzT307ylVvBQlfuly31tVWoPA9FKWHv=
+0XBYqNgXuIRm-toX3BhFukLaxmwgQm3aTGGTHvZV08DCsj0nw_VX-lP2FasnLyJFT6mlN2919Z2=
+2Ytdk6sfuisHppQFDLGLYSpHvAkwzst4FUdaoBe978W8A9UMdjU3F1Su-vVE6HbQRQxy-CxzBI2=
+VODySk3s2XfpMDoxzsVAk02G4DmAFW62FFOrpQp8OeWAi-ljlk81_JgEZGz9a_vdx9Y8DCgM_qI=
+FtqAnqqLOHrsyMJXGO6bUI-UjRVTIP3_MpWNs4fu0p&amp;cid=3DCAASEuRo7k2e3DE4muzbbH=
+vFqCNNkg';document.write('&lt;script src=3D&quot;' + (window.rfl ? window.r=
+fl(url) : url) + '&quot;&gt;&lt;/s' + 'cript&gt;');&lt;/script&gt;&lt;/div&=
+gt;&lt;/div&gt;&lt;script src=3D&quot;https://tpc.googlesyndication.com/pag=
+ead/js/r20181205/r20110914/client/ext/m_window_focus_non_hydra.js&quot; asy=
+nc&gt;&lt;/script&gt;&lt;script&gt;function initWindowFocus() {window['wind=
+ow_focus_for_click'] =3Dwfocusnhinit(&quot;https://googleads.g.doubleclick.=
+net/pagead/conversion/?ai\u003dCssc4jpINXJnoBonCugSY17iYDbSX88JU9Ib_iY0I_YH=
+ktusCEAEgj8DuImDpgoCA6A3IAQmpAjYRREm4-9I9qAMByAMCqgTXAU_QoS0dY-1deXth6NRmry=
+uFNrcpGntApaUMAFYO22KrkeCjGEfosGZlHz-pzvLw6eWxdjr2DZ9Zo2XIvoZXO_rf2iIEDxldZ=
+KJpO7TyVwymoPDm0XQ-UgQAMwAgXptKJhRbfAbAH8r_eYpH5Ank3ZKNEwcXhbFUCbQduGKjcIcu=
+hvvlIeyVTcVKFXuRLPewLTg7dPRIkewLIOJo1IQK_U_vDCbuGWTNoyZv2q6HqQBGMzaS1xlKDib=
+44ee8AutSVWj12i4nsKBUzOyrpFu3zFILAQc225CSwASU5v-Z8AHgBAOIBfe8i48GkAYBoAZM2A=
+YCgAfU_OB2qAeOzhuoB9XJG6gHudIbqAfZyxuoB8_MG6gHpr4b2AcAoAjZnwGwCALSCAcIgGEQA=
+RgBgAoDsBPYmdQF0BMA2BMQghQjGiE4NzQ2MDRlMzBmMmNiNTdkLmFub255bW91cy5nb29nbGU\=
+u0026sigh\u003d1gSD6wPgq6w\u0026cid\u003dCAQSOwDlZ3AqKr1KUzXIK0X1qo3G_Y5Hil=
+5z2TvaI3Bw-2v88ia_Pe3IaLFzxTs0Tv3ZeuFn9wrf5TFk6oyE&quot;,&quot;&quot;,&quot=
+;CJnng8zhk98CFQmhjgodmCsO0w&quot;);}if (window.wfocusnhinit) {initWindowFoc=
+us();} else {window['google_wf_async'] =3D initWindowFocus;}&lt;/script&gt;=
+&lt;iframe title=3D&quot;Blank&quot; scrolling=3D&quot;no&quot; frameborder=
+=3D0 height=3D0 width=3D0 src=3D&quot;https://pagead2.googlesyndication.com=
+/pagead/s/cookie_push.html#aHR0cHM6Ly91bS5zaW1wbGkuZmkvZ3BfbWF0Y2g_Z29vZ2xl=
+X2dpZD1DQUVTRU5MQmNiRExCVHVZVXRtRTlkTHVBUTgmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHV=
+zaD1BSE5GMTNKazlqeldhWGNKclhtSlppdVVPM2pWaERNeERFa3o0Y3IyV3hsRUZB,aHR0cHM6L=
+y9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzS2NRWTJ1LVJ1RjVYVTNO=
+MGFRa0d5bzZMc0JIRWtq&quot; style=3D&quot;position:absolute&quot; aria-hidde=
+n=3D&quot;true&quot;&gt;&lt;/iframe&gt;&lt;script src=3D&quot;https://www.g=
+oogletagservices.com/activeview/js/current/osd_listener.js?cache=3Dr2011091=
+4&quot;&gt;&lt;/script&gt;&lt;script type=3D&quot;text/javascript&quot;&gt;=
+osdlfm(-1,'','BD6-VjpINXJnoBonCugSY17iYDQD0hv-JjQgAABABOAHIAQnIAwLgBAOIBfe8=
+i48GoAZM0ggFCIBhEAE','',484061582,true,'ud\u003d1\u0026la\u003d0\u0026alp\u=
+003dai\u0026alh\u003d4248926898\u0026',3,'CAASEuRo7k2e3DE4muzbbHvFqCNNkg','=
+https://pagead2.googlesyndication.com/pcs/activeview?xai\u003dAKAOjss0UO9_R=
+2CS05w2cTh8tP6T9stffh5jFAWikwL08lMjr6xQV-z_SdqEVRn1r7KVUK4QmPvmTJJD7eyxlr6T=
+lq3x5wzJMcovf85onQ\u0026sai\u003dAMfl-YTyzZdF9i8wbaqtoBkSfanHyWIgQ3GC4eTcMS=
+uZbFxx4Okfz5ftBq62jZ4BD6slZiFIwO_jK5ZZcPLIrSGnus_B0p8p6KiqiL7MWs6xW_COvt1zd=
+EF5GKWO8q0\u0026sig\u003dCg0ArKJSzGO4c3RfLE9VEAE\u0026cid\u003dCAASEuRo7k2e=
+3DE4muzbbHvFqCNNkg','');&lt;/script&gt;&lt;script src=3D&quot;https://tpc.g=
+ooglesyndication.com/pagead/js/r20181205/r20110914/client/ext/m_qs_click_pr=
+otection.js&quot;&gt;&lt;/script&gt;&lt;script&gt;googqscp.init([[[[null,10=
+00,99,2,4,null,null,null,1],[null,500,99,2,9,null,null,null,1]]],null,null,=
+null,null,null,null,null,0]);&lt;/script&gt;&lt;img src=3D&quot;//www.googl=
+e.com/ads/measurement/l?ebcid=3DALh7CaT6lyOFnFrv-Zc0iSUUu_OMJYEMkIW8odvtfaa=
+oCugsesZZEs4uz20E2HdJWoETL1DAzFd2qkQeNbEzQ-0kXr-TRLowdA&quot; style=3D&quot=
+;display:none;&quot; alt=3D&quot;&quot;&gt;&lt;/img&gt;&lt;script&gt;if (wi=
+ndow.top &amp;&amp; window.top.postMessage) {window.top.postMessage('{&quot=
+;googMsgType&quot;:&quot;adpnt&quot;}','*');}&lt;/script&gt;&lt;script&gt;(=
+function(){function e(a){return&quot;number&quot;=3D=3Dtypeof a}function f(=
+a,b,c){return a.call.apply(a.bind,arguments)}function g(a,b,c){if(!a)throw =
+Error();if(2&lt;arguments.length){var d=3DArray.prototype.slice.call(argume=
+nts,2);return function(){var c=3DArray.prototype.slice.call(arguments);Arra=
+y.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){retur=
+n a.apply(b,arguments)}}function h(a,b,c){Function.prototype.bind&amp;&amp;=
+-1!=3DFunction.prototype.bind.toString().indexOf(&quot;native code&quot;)?h=
+=3Df:h=3Dg;return h.apply(null,arguments)};function k(a){this.b=3Dnull;var =
+b=3D{top:10,right:10,bottom:10,left:10};a&amp;&amp;(a=3Da.split(&quot;,&quo=
+t;),4!=3Da.length||isNaN(a[0])||isNaN(a[1])||isNaN(a[2])||isNaN(a[3])||(b.t=
+op=3D+a[0],b.right=3D+a[1],b.bottom=3D+a[2],b.left=3D+a[3]));this.a=3Db}k.p=
+rototype.c=3Dfunction(a){for(var b=3D!1,c=3Da.target;c;c=3Dc.parentNode)if(=
+&quot;abgc&quot;=3D=3Dc.id){b=3D!0;break}if(!b){var d=3Dthis.b.getBoundingC=
+lientRect();b=3Dd.width;c=3Dd.height;var l=3Da.clientX-d.left;d=3Da.clientY=
+-d.top;b=3D!(e(b)&amp;&amp;e(c)&amp;&amp;e(a.clientX)&amp;&amp;e(a.clientY)=
+)||0&gt;=3Db||0&gt;=3Dc||0&gt;l||0&gt;d?!0:l&gt;=3Dthis.a.left&amp;&amp;b-l=
+&gt;=3Dthis.a.right&amp;&amp;d&gt;=3Dthis.a.top&amp;&amp;c-d&gt;=3Dthis.a.b=
+ottom}b||(a.preventDefault?a.preventDefault():a.returnValue=3D!1)};function=
+ m(a,b){b||(b=3D&quot;&quot;);b=3Dnew k(b);b.b=3Da;a=3Db.b;var c=3Dh(b.c,b)=
+;a.addEventListener&amp;&amp;a.addEventListener(&quot;click&quot;,c,!1);ret=
+urn b}var n=3D[&quot;googleInitIc&quot;],p=3Dthis;n[0]in p||&quot;undefined=
+&quot;=3D=3Dtypeof p.execScript||p.execScript(&quot;var &quot;+n[0]);for(va=
+r q;n.length&amp;&amp;(q=3Dn.shift());){var r;if(r=3D!n.length)r=3Dvoid 0!=
+=3D=3Dm;r?p[q]=3Dm:p[q]&amp;&amp;p[q]!=3D=3DObject.prototype[q]?p=3Dp[q]:p=
+=3Dp[q]=3D{}};}).call(this);googleInitIc(document.body,'10,10,10,10');&lt;/=
+script&gt;&lt;/body&gt;&lt;/html&gt;{&quot;uid&quot;:2,&quot;hostPeerName&q=
+uot;:&quot;https://www.w3schools.com&quot;,&quot;initialGeometry&quot;:&quo=
+t;{\&quot;windowCoords_t\&quot;:36,\&quot;windowCoords_r\&quot;:480,\&quot;=
+windowCoords_b\&quot;:728,\&quot;windowCoords_l\&quot;:0,\&quot;frameCoords=
+_t\&quot;:8191,\&quot;frameCoords_r\&quot;:320,\&quot;frameCoords_b\&quot;:=
+8241,\&quot;frameCoords_l\&quot;:0,\&quot;styleZIndex\&quot;:\&quot;auto\&q=
+uot;,\&quot;allowedExpansion_t\&quot;:0,\&quot;allowedExpansion_r\&quot;:0,=
+\&quot;allowedExpansion_b\&quot;:0,\&quot;allowedExpansion_l\&quot;:0,\&quo=
+t;xInView\&quot;:0,\&quot;yInView\&quot;:0}&quot;,&quot;permissions&quot;:&=
+quot;{\&quot;expandByOverlay\&quot;:false,\&quot;expandByPush\&quot;:false,=
+\&quot;readCookie\&quot;:false,\&quot;writeCookie\&quot;:false}&quot;,&quot=
+;metadata&quot;:&quot;{\&quot;shared\&quot;:{\&quot;sf_ver\&quot;:\&quot;1-=
+0-31\&quot;,\&quot;ck_on\&quot;:1,\&quot;flash_ver\&quot;:\&quot;0\&quot;}}=
+&quot;,&quot;reportCreativeGeometry&quot;:false,&quot;isDifferentSourceWind=
+ow&quot;:false,&quot;goog_safeframe_hlt&quot;:{},&quot;inFakeDecryptionExpe=
+riment&quot;:false}" scrolling=3D"no" marginwidth=3D"0" marginheight=3D"0" =
+width=3D"320" height=3D"50" data-is-safeframe=3D"true" sandbox=3D"allow-for=
+ms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-sam=
+e-origin allow-scripts allow-top-navigation-by-user-activation" data-google=
+-container-id=3D"2" src=3D"wyciwyg://frame/1"></iframe></div></div>
+ =20
+  </div>
+</div>
+
+<div class=3D"sidesection">
+<h4><a href=3D"https://www.w3schools.com/colors/colors_picker.asp">COLOR PI=
+CKER</a></h4>
+<a href=3D"https://www.w3schools.com/colors/colors_picker.asp">
+<img src=3D"https://www.w3schools.com/images/colorpicker.gif" alt=3D"colorp=
+icker"></a>
+</div>
+
+<div class=3D"sidesection" id=3D"moreAboutSubject">
+</div>
+
+<div class=3D"sidesection w3-light-grey" style=3D"margin-left:auto;margin-r=
+ight:auto;max-width:230px">
+<div class=3D"w3-container w3-dark-grey">
+<h4><a href=3D"https://www.w3schools.com/howto/default.asp" class=3D"w3-hov=
+er-text-white">HOW TO</a></h4>
+</div>
+<div class=3D"w3-container w3-left-align w3-padding-16">
+<a href=3D"https://www.w3schools.com/howto/howto_js_tabs.asp">Tabs</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_css_dropdown.asp">Dropdown=
+s</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_accordion.asp">Accordio=
+ns</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_sidenav.asp">Side Navig=
+ation</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_topnav.asp">Top Navigat=
+ion</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_css_modals.asp">Modal Boxe=
+s</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_progressbar.asp">Progre=
+ss Bars</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_css_parallax.asp">Parallax=
+</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_css_login_form.asp">Login =
+Form</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_html_include.asp">HTML Inc=
+ludes</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_google_maps.asp">Google Ma=
+ps</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_rangeslider.asp">Range =
+Sliders</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_css_tooltip.asp">Tooltips<=
+/a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_slideshow.asp">Slidesho=
+w</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_filter_lists.asp">Filte=
+r List</a><br>
+<a href=3D"https://www.w3schools.com/howto/howto_js_sort_list.asp">Sort Lis=
+t</a><br>
+</div>
+</div>
+
+
+<div class=3D"sidesection">
+<h4>SHARE</h4>
+<div class=3D"w3-text-grey sharethis">
+<a href=3D"http://www.facebook.com/sharer.php?u=3Dhttps://www.w3schools.com=
+/php/func_string_htmlspecialchars.asp" target=3D"_blank" title=3D"Facebook"=
+><span class=3D"fa fa-facebook-square fa-2x"></span></a><a href=3D"https://=
+twitter.com/home?status=3DCurrently%20reading%20https://www.w3schools.com/p=
+hp/func_string_htmlspecialchars.asp" target=3D"_blank" title=3D"Twitter"><s=
+pan class=3D"fa fa-twitter-square fa-2x"></span></a><a href=3D"https://plus=
+.google.com/share?url=3Dhttps://www.w3schools.com/php/func_string_htmlspeci=
+alchars.asp" target=3D"_blank" title=3D"Google+"><span class=3D"fa fa-googl=
+e-plus-square fa-2x"></span></a>
+<br><br>
+<a href=3D"javascript:void(0);" onclick=3D"clickFBLike()" title=3D"Like W3S=
+chools on Facebook">
+<span class=3D"fa fa-thumbs-o-up fa-2x"></span></a>
+<div id=3D"fblikeframe" class=3D"w3-modal">
+<div class=3D"w3-modal-content w3-padding-64 w3-animate-zoom" id=3D"popupDI=
+V"></div>
+</div>
+</div>
+</div>
+
+<div class=3D"sidesection">
+<h4><a target=3D"_blank" href=3D"https://www.w3schools.com/cert/default.asp=
+">CERTIFICATES</a></h4>
+<p>
+<a href=3D"https://www.w3schools.com/cert/cert_html.asp">HTML</a><br>
+<a href=3D"https://www.w3schools.com/cert/cert_css.asp">CSS</a><br>
+<a href=3D"https://www.w3schools.com/cert/cert_javascript.asp">JavaScript</=
+a><br>
+<a href=3D"https://www.w3schools.com/cert/cert_php.asp">PHP</a><br>
+<a href=3D"https://www.w3schools.com/cert/cert_jquery.asp">jQuery</a><br>
+<a href=3D"https://www.w3schools.com/cert/cert_bootstrap.asp">Bootstrap</a>=
+<br>
+<a href=3D"https://www.w3schools.com/cert/cert_xml.asp">XML</a></p>
+<a target=3D"_blank" href=3D"https://www.w3schools.com/cert/default.asp" cl=
+ass=3D"w3-button w3-dark-grey" style=3D"text-decoration:none">
+Read More =C2=BB</a>
+</div>
+
+<div id=3D"stickypos" class=3D"sidesection" style=3D"text-align:center;posi=
+tion:sticky;top:50px;">
+  <div id=3D"stickyadcontainer" style=3D"width: 304px; ">
+    <div style=3D"position:relative;margin:auto;">
+     =20
+        <div id=3D"div-gpt-ad-1472547360578-0"></div>
+     =20
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+<div id=3D"footer" class=3D"footer w3-container w3-white">
+
+<hr>
+
+<div style=3D"overflow:auto">
+  <!-- BottomMediumRectangle -->
+  <div class=3D"bottomad" id=3D"div-gpt-ad-1422003450156-0" data-google-que=
+ry-id=3D"CIfjg8zhk98CFUxijgodv1cJ1g"><div id=3D"google_ads_iframe_/16833175=
+/BottomMediumRectangle_0__container__" style=3D"border-top-width: 0pt; bord=
+er-right-width: 0pt; border-bottom-width: 0pt; border-left-width: 0pt; bord=
+er-top-style: none; border-right-style: none; border-bottom-style: none; bo=
+rder-left-style: none; border-color: initial; border-image: initial; displa=
+y: inline-block; width: 300px; height: 250px; "><iframe frameborder=3D"0" s=
+tyle=3D"border-top-width: 0px; border-right-width: 0px; border-bottom-width=
+: 0px; border-left-width: 0px; border-style: initial; border-color: initial=
+; border-image: initial; vertical-align: bottom; " src=3D"https://tpc.googl=
+esyndication.com/safeframe/1-0-31/html/container.html" id=3D"google_ads_ifr=
+ame_/16833175/BottomMediumRectangle_0" title=3D"3rd party ad content" name=
+=3D"1-0-31;11880;&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=
+=3D&quot;viewport&quot; content=3D&quot;width=3D300, initial-scale=3D1.0, m=
+inimum-scale=3D1.0, maximum-scale=3D1.0, user-scalable=3Dno&quot;&gt;&lt;sc=
+ript&gt;var google_casm=3D[];&lt;/script&gt;&lt;/head&gt;&lt;body leftMargi=
+n=3D&quot;0&quot; topMargin=3D&quot;0&quot; marginwidth=3D&quot;0&quot; mar=
+ginheight=3D&quot;0&quot;&gt;&lt;DIV STYLE=3D&quot;position: absolute; left=
+: 0px; top: 0px; visibility: hidden;&quot;&gt;&lt;IMG SRC=3D&quot;https://p=
+agead2.googlesyndication.com/pagead/gen_204?id=3Dxbid&amp;dbm_b=3DAKAmf-Awi=
+vG3JB0HTCWyQEACTfW5EBj9tSVZGSwjggDzS8gcA-W0gciLStug1-QzxEOLujHg6TibJxJ_9VeI=
+XqUwnNZlrwral_UB2Qyw7Mlg_nvAXgVX_f8&quot; BORDER=3D0 WIDTH=3D1 HEIGHT=3D1 A=
+LT=3D&quot;&quot; STYLE=3D&quot;display:none&quot;&gt;&lt;/DIV&gt;&lt;ifram=
+e title=3D&quot;Blank&quot; src=3D&quot;https://googleads.g.doubleclick.net=
+/xbbe/pixel?d=3DCJyAVxDsqoYBGJ2770kwAQ&amp;v=3DAPEucNWS6YulOfYskW8KgF-uRzXt=
+Z619Y1tm0UB_az1O7ec48uGSCh-xZ9IfSMFOBr4VruosEli7rFvzK6nRaCLaYNmxnDh0XA&quot=
+; style=3D&quot;display:none&quot; aria-hidden=3D&quot;true&quot;&gt;&lt;/i=
+frame&gt;&lt;div&gt;&lt;div style=3D&quot;position:relative; display:inline=
+-block;&quot;&gt;&lt;script&gt;(function(){var h=3Dthis;var k=3DArray.proto=
+type.forEach?function(a,b){Array.prototype.forEach.call(a,b,void 0)}:functi=
+on(a,b){for(var d=3Da.length,c=3D&quot;string&quot;=3D=3Dtypeof a?a.split(&=
+quot;&quot;):a,e=3D0;e&lt;d;e++)e in c&amp;&amp;b.call(void 0,c[e],e,a)},l=
+=3DArray.prototype.map?function(a,b){return Array.prototype.map.call(a,b,vo=
+id 0)}:function(a,b){for(var d=3Da.length,c=3DArray(d),e=3D&quot;string&quo=
+t;=3D=3Dtypeof a?a.split(&quot;&quot;):a,f=3D0;f&lt;d;f++)f in e&amp;&amp;(=
+c[f]=3Db.call(void 0,e[f],f,a));return c},m=3DArray.prototype.reduce?functi=
+on(a,b,d){return Array.prototype.reduce.call(a,b,d)}:function(a,b,d){var c=
+=3Dd;k(a,function(d,f){c=3Db.call(void 0,c,d,f,a)});return c};function p(a)=
+{for(var b=3D[],d=3D0;d&lt;a;d++)b[d]=3D&quot;&quot;;return b};function q(a=
+){q[&quot; &quot;](a);return a}q[&quot; &quot;]=3Dfunction(){};function r(a=
+,b){if(a)for(var d in a)Object.prototype.hasOwnProperty.call(a,d)&amp;&amp;=
+b.call(void 0,a[d],d,a)}var t=3D/https?:\/\/[^\/]+/;function u(a){return(a=
+=3Dt.exec(a))&amp;&amp;a[0]||&quot;&quot;};var v=3D/^https?:\/\/(\w|-)+\.cd=
+n\.ampproject\.(net|org)(\?|\/|$)/;function w(a){a=3Da||x();for(var b=3Dnew=
+ y(h.location.href,!1),d=3Dnull,c=3Da.length-1,e=3Dc;0&lt;=3De;--e){var f=
+=3Da[e];!d&amp;&amp;v.test(f.url)&amp;&amp;(d=3Df);if(f.url&amp;&amp;!f.b){=
+b=3Df;break}}e=3Dnull;f=3Da.length&amp;&amp;a[c].url;0!=3Db.depth&amp;&amp;=
+f&amp;&amp;(e=3Da[c]);return new z(b,e,d)}function x(){var a=3Dh,b=3D[],d=
+=3Dnull;do{var c=3Da;try{var e;if(e=3D!!c&amp;&amp;null!=3Dc.location.href)=
+b:{try{q(c.foo);e=3D!0;break b}catch(n){}e=3D!1}var f=3De}catch(n){f=3D!1}i=
+f(f){var g=3Dc.location.href;d=3Dc.document&amp;&amp;c.document.referrer||n=
+ull}else g=3Dd,d=3Dnull;b.push(new y(g||&quot;&quot;));try{a=3Dc.parent}cat=
+ch(n){a=3Dnull}}while(a&amp;&amp;c!=3Da);c=3D0;for(a=3Db.length-1;c&lt;=3Da=
+;++c)b[c].depth=3Da-c;c=3Dh;if(c.location&amp;&amp;c.location.ancestorOrigi=
+ns&amp;&amp;c.location.ancestorOrigins.length=3D=3Db.length-1)for(a=3D1;a&l=
+t;b.length;++a)g=3Db[a],g.url||(g.url=3Dc.location.ancestorOrigins[a-1]||&q=
+uot;&quot;,g.b=3D!0);return b}function z(a,b,d){this.c=3Da;this.f=3Db;this.=
+a=3Dd}function y(a,b){this.url=3Da;this.b=3D!!b;this.depth=3Dnull};function=
+ A(a,b,d,c,e){var f=3D[];r(a,function(a,n){(a=3DB(a,b,d,c,e))&amp;&amp;f.pu=
+sh(n+&quot;=3D&quot;+a)});return f.join(b)}function B(a,b,d,c,e){if(null=3D=
+=3Da)return&quot;&quot;;b=3Db||&quot;&amp;&quot;;d=3Dd||&quot;,$&quot;;&quo=
+t;string&quot;=3D=3Dtypeof d&amp;&amp;(d=3Dd.split(&quot;&quot;));if(a inst=
+anceof Array){if(c=3Dc||0,c&lt;d.length){for(var f=3D[],g=3D0;g&lt;a.length=
+;g++)f.push(B(a[g],b,d,c+1,e));return f.join(d[c])}}else if(&quot;object&qu=
+ot;=3D=3Dtypeof a)return e=3De||0,2&gt;e?encodeURIComponent(A(a,b,d,c,e+1))=
+:&quot;...&quot;;return encodeURIComponent(String(a))};function C(a,b){this=
+.a=3Da;this.depth=3Db}function D(){function a(a,b){return null=3D=3Da?b:a}v=
+ar b=3Dx(),d=3DMath.max(b.length-1,0),c=3Dw(b);b=3Dc.c;var e=3Dc.f,f=3Dc.a,=
+g=3D[];f&amp;&amp;g.push(new C([f.url,f.b?2:0],a(f.depth,1)));e&amp;&amp;e!=
+=3Df&amp;&amp;g.push(new C([e.url,2],0));b.url&amp;&amp;b!=3Df&amp;&amp;g.p=
+ush(new C([b.url,0],a(b.depth,d)));c=3Dl(g,function(a,b){return g.slice(0,g=
+.length-b)});!b.url||(f||e)&amp;&amp;b!=3Df||(e=3Du(b.url))&amp;&amp;c.push=
+([new C([e,1],a(b.depth,d))]);c.push([]);return l(c,function(a){return E(d,=
+a)})}function E(a,b){var d=3Dm(b,function(a,b){return Math.max(a,b.depth)},=
+-1),c=3Dp(d+2);c[0]=3Da;k(b,function(a){return c[a.depth+1]=3Da.a});return =
+c}function F(){var a=3DD();return l(a,function(a){return B(a)})};function G=
+(a){try{var b=3DF();b.pop();for(var d=3D2083-a.length-5,c=3D0;c&lt;b.length=
+;c++){var e=3DencodeURIComponent(b[c]);if(e.length&lt;=3Dd)return a+&quot;&=
+amp;rfl=3D&quot;+e}return a}catch(f){}return a}var H=3D[&quot;rfl&quot;],I=
+=3Dh;H[0]in I||&quot;undefined&quot;=3D=3Dtypeof I.execScript||I.execScript=
+(&quot;var &quot;+H[0]);for(var J;H.length&amp;&amp;(J=3DH.shift());){var K=
+;if(K=3D!H.length)K=3Dvoid 0!=3D=3DG;K?I[J]=3DG:I[J]&amp;&amp;I[J]!=3D=3DOb=
+ject.prototype[J]?I=3DI[J]:I=3DI[J]=3D{}};}).call(this);&lt;/script&gt;&lt;=
+script&gt;var url =3D 'https://googleads.g.doubleclick.net/dbm/ad?dbm_c=3DA=
+KAmf-AkgrL9FhnQzyNBwZn7pO1wPLt1Tm2hFzd4AbjQu-AS5DNLW9uaLXyUQ0pSB7I3tFGj0brS=
+&amp;dbm_d=3DAKAmf-D7I_eg6sjdJIlwyh1nrK2z1qxP2TsDe63Gm_NBArxDwZEhxHdmllL2up=
+1qdxPe7wl9HVdLt-JvzD6ZpHOZ5p_wyjmEUJiJpXCjx_n3kkmo5RVGGfAea_QkF3r3Zq53vr3n_=
+JTmfS3SUU81VY79TPbje8VsaIsq-6ylglH0oAERs8lGmeB0AjQA9iNRa2aPjQqAiC3N8-r-Y5Uy=
+43R3yr4XqNX14EKv7saN9D0wqAj1pBVF9HMN9unJekCVJr7h3em70sRjGZ6JfZtTsQHaTSmcLTz=
+nH7VP7rfxcVxNxkfoZpNbHZEf_vS1lPOW15JD3rpJvrwiWGmcSo6gNDlzlCvqlKE4qKPG8C3zrV=
+ZIFVq15GS_K9OJ6KnskdQkoy-nIJC92VyxMg0jr3YoAFmSuvtzUMYvmzWJrBHIIzcSz3UVMtAO5=
+jmVIlLLSZeTUK3Pgar7KqYf_MP9iXNw9NcwjpiNxR2BiqHjlEcrHMorSMrcNZ6j6aopemEeH0y9=
+7vqTF5_nxRV4COW_KmxS90-v9iW5N2ANsC_uuQwZlMZ35aeMEau_jS9rrHbwWAAJhn4jZ-YKzFu=
+I73qKAteDOVgY8eABKsQ00yW_q-O0_X7Aodifkqnz4nlYR7-Gi-siO0DYh5Y81BApUugYJDvw5u=
+DzhgEE1mlo-Rodc8f4yPMETqagS9qLbSGHK0wX_p4mcYTnTaDeDpbyqO19yzAr9JBa7-73ojh8L=
+V6scUUX11sBEDWhId7NJxUfgN3xRRcn0zIfDvz7VCJ4BORjpnLcS0M2ClLHCihHKGmmFKEAB0ev=
+_pi5MxutlxVrwyfUdSG94tc2w1G83V4iqvsbyAH0sahvHEny3f8sQgbDMe2ScqGr5_t_Z9sf39h=
+ZrKhpf9NwQj7DZUokuerOZpW_HHsQvshXV5r9Coe0obKdfuwjdiB4CwBhBX3mjtpM6Mr5W0wh-p=
+2Oaw2_jdmq4qKsxvts4wng7XTD_OJO7oPgkDsmK_7_PwBxKtixR9j4gYg8-8Y7xubHdPG5Fdrlq=
+JvZRZE4GlUZYKfR5Cv9YmqjDydfhGx_zlN6y7zXqvVZUcbQAXqJqtSzTMiPQASCXK7_OnzYBzaE=
+PibCHMv2JtkgsMuLkz63PQoGhSra9ylbJ9rgy0LnLCX8frDC5r2ytBXwu7K999bb4li_Rv_3qWW=
+PdLe80auiLYtctcGKPZrSnk-n9mF-tEuNSHuqnG8WRVjUlswlNPDLrIlQlpjmLQy6TY9zWKdcet=
+25O0y0NhsR5uXFkuThx1AoR7QE3FAH-B4day-B2iKg5mS592G8cRLUjNPMnOyyidXIBGLJdiuDq=
+um1iW84nV_FoB5nmE0O0CFVVC3APGljovL5mwVgReqjXmNmdWDM4SfksTRgjtkr4qnuotHlCrvD=
+epc-T8ZPJ9HUyUz3boxW-Ik4iBorSj_t0DiM8S0OjACu8fV_Wg-u4xQ_-wuY-RUC6_JZbHyN4gv=
+jvbRM9pGwO3r9QDb6i6d9k3VPLhOS4Y2RKHHYc6tES6dKSftHtWABOKQII3YAx-gEyGAutDVApv=
+kcKNxc2ypyi606pJIjACgQWiQtUaIz75hQHa2Cqj9HNQzgJxpPR4VW3rUiFYpBzDARaEVLgJiCx=
+-PHwmXuGvB602jhYVWnV0spHeDnm5w3zFoJB-Rt77vINp_93KArNb0qsfOLNeBU1feQ9VCN0VrU=
+I2rdfY_DiUWb8r2fyaxnXGbOQje4V3j-6-Xl5D17V0efR2SvqUVduft40pb-yTEYLafuImiIKg_=
+l7ikx14PIofRhKl4UNxCbZp6acxx0ZXGj-YElk8n9W42fF7AWpQ6cOJKa1M8r3ymueWI0dCxhYv=
+3Uy2qKHoVRmnxlcqMJhbIjcF922bBGPJXHGmOG4nAm4cDx83CFFiofbt7ESM5i0ZeG_dcDhQV-L=
+MZysXEvuIJJhiui1PaaEhcKxR6h-FguLeY_P5OZ-iP51ZNX2zInOIum42PZUKPIvv9PUjGJS1cC=
+W6sAxWYn7Osv5cH_uWcEra2RvfVTNk6dxLFREAVza5ABHojoRUgi_h4LE3QumePWxNBgSfAFSNe=
+gKwDAOQDgPY5_NSNGAsE5VVP-prtJAw14MLKlaPEbneUV2d1nHgBBkbT8dstTk-MerQMuC7NQMG=
+v7dQAvsalpZumOhyjRe9KRgGgzspk6p-bAHKCkStV1AWkYwxkJY6apn3PDdo1Qq3OzZ-TD0yeto=
+RAlrIVbjbcdTseedarj6XLHi-q8eMsoFLOyp5b7UVrHT3G0xsag1lhJzPqv_N4qzz9ulZn8tf0q=
+QFVljHBH8GHim-phQsi37smagbPYQhXqtN0eYVyR8ScpW60NzhBt1jvjea0frv4mGYu7S8wLPYa=
+Fxg9UNKDHRVTvJ58eJzbUQOvK7dH6BsrTVjrcD4fQ-N16yRUrby6-iO7PQMiVIYzaDz7aBfsWkp=
+TS6Z1jxWVt3TEGP7rkFbdXZ41hKanPQ3l7ymipFADE_Ioj5OpAwMLHrZQZEN_xo1eECQt-OzU_M=
+qRjQff3Wa0_qvFQjhlC9v-vmUFP8NEFu5AzisvqeA6pXFkb3A35CVIagHYyQQNsrUxBGKeR_1P3=
+FsHnee903pLoUqp4nM7eipdXln6KgS2YgJnuIg1LMUzt5P7OnIpRzGiTLTVDcsJA1VvTzl8Iwoa=
+C8VALwYURZe9zNqU6o3fUHtCkqNWD33b4i9wh2eX09anLOcbXPPAUZ0IbxY9H90X2UWYHcl7n07=
+l-0VxVlksCKt73Q2IhLq3Z6Q&amp;cid=3DCAASEuRo8ovLh5ohnkhucEPQrmLhBQ';document=
+.write('&lt;script src=3D&quot;' + (window.rfl ? window.rfl(url) : url) + '=
+&quot;&gt;&lt;/s' + 'cript&gt;');&lt;/script&gt;&lt;/div&gt;&lt;/div&gt;&lt=
+;script src=3D&quot;https://tpc.googlesyndication.com/pagead/js/r20181205/r=
+20110914/client/ext/m_window_focus_non_hydra.js&quot; async&gt;&lt;/script&=
+gt;&lt;script&gt;function initWindowFocus() {window['window_focus_for_click=
+'] =3Dwfocusnhinit(&quot;https://googleads.g.doubleclick.net/pagead/convers=
+ion/?ai\u003dCHuYsjpINXIfkBszEuQS_r6WwDbSX88JU0aWH3coIr9uivcABEAEgj8DuImDpg=
+oCA6A3IAQmpAjYRREm4-9I9qAMByAMCqgTYAU_QBHJSt2k9g_6xJd4vuBO8wKcopEKRev9jaefQ=
+JFLFYDzKH9VvC6DCPB2nfB6KFB9JP4jzSsUF5C7BrLLNk7TlqiJWXNvNsyNWfO_e5CqPt10jj3p=
+8WQuWGx8M_N2P3DYejy-LnzCXquNvwYxFg6YaK8q6TM90LmSGybAnmrhVW60MYCAcQ4zxYBVp4g=
+lvXO1IlcD8ma1jj8WP-tFQtBG_M6YIvw0DmVRrO4J11CY81-QFG2dbfc1IY4yagmBIHAqxUQLHX=
+kbIRmyWsYUhbMsxaRekChsF4sAElOb_mfAB4AQDiAX3vIuPBpAGAaAGTNgGAoAH1PzgdqgHjs4b=
+qAfVyRuoB7nSG6gH2csbqAfPzBuoB6a-G9gHAKAI2Z8BsAgC0ggHCIBhEAEYAYAKA7AT2JnUBdA=
+TANgTEIIUIxohODc0NjA0ZTMwZjJjYjU3ZC5hbm9ueW1vdXMuZ29vZ2xl\u0026sigh\u003dDQ=
+EbN12z5gk\u0026cid\u003dCAQSOwDlZ3AqKr1KUzXIK0X1qo3G_Y5Hil5z2TvaI3Bw-2v88ia=
+_Pe3IaLFzxTs0Tv3ZeuFn9wrf5TFk6oyE&quot;,&quot;&quot;,&quot;CIfjg8zhk98CFUxi=
+jgodv1cJ1g&quot;);}if (window.wfocusnhinit) {initWindowFocus();} else {wind=
+ow['google_wf_async'] =3D initWindowFocus;}&lt;/script&gt;&lt;iframe title=
+=3D&quot;Blank&quot; scrolling=3D&quot;no&quot; frameborder=3D0 height=3D0 =
+width=3D0 src=3D&quot;https://pagead2.googlesyndication.com/pagead/s/cookie=
+_push.html#aHR0cHM6Ly9wci1iaC55YnAueWFob28uY29tL3N5bmMvYWR4P2dvb2dsZV9naWQ9=
+Q0FFU0VNS0UzUW80alpRdUNpdkJoQld1RHlFJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QUh=
+ORjEzSm9RV2RfeEtpVnlyVE8yVi1NS1lqS0RkRW5ORmVGbWZTLVJXQjdNZw=3D=3D,aHR0cHM6L=
+y9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzS1l1dHZNUk81WUpuVzg1=
+TEpRV25rTjNBM1g0V3A1&quot; style=3D&quot;position:absolute&quot; aria-hidde=
+n=3D&quot;true&quot;&gt;&lt;/iframe&gt;&lt;script src=3D&quot;https://www.g=
+oogletagservices.com/activeview/js/current/osd_listener.js?cache=3Dr2011091=
+4&quot;&gt;&lt;/script&gt;&lt;script type=3D&quot;text/javascript&quot;&gt;=
+osdlfm(-1,'','BWQAGjpINXIfkBszEuQS_r6WwDQDRpYfdyggAABABOAHIAQnIAwLgBAOIBfe8=
+i48GoAZM0ggFCIBhEAE','',662875230,true,'ud\u003d1\u0026la\u003d0\u0026alp\u=
+003dai\u0026alh\u003d2161250266\u0026',3,'CAASEuRo8ovLh5ohnkhucEPQrmLhBQ','=
+https://pagead2.googlesyndication.com/pcs/activeview?xai\u003dAKAOjsvepEthW=
+2O4qwBvS6nT_G4VflqtSCC5sykSvINYVIWL5Waa_VDG9p1_xOWUtTs0yW96hyWCLneN8FOuTT4o=
+lg042eZUj8Lko-XmFg\u0026sai\u003dAMfl-YQiucpPFyV-C3ehdYzXT2lnUXkgc9h4Eg9jhK=
+td-epmhUekvarp34pHlb2GNtRzKZ6Tahs0XOxTxHEjuSMtXvyhTum6gxVYv_KcGfPiNqIxWNDcD=
+49gmNFiwqw\u0026sig\u003dCg0ArKJSzNN67KS8f3HuEAE\u0026cid\u003dCAASEuRo8ovL=
+h5ohnkhucEPQrmLhBQ','');&lt;/script&gt;&lt;script src=3D&quot;https://tpc.g=
+ooglesyndication.com/pagead/js/r20181205/r20110914/client/ext/m_qs_click_pr=
+otection.js&quot;&gt;&lt;/script&gt;&lt;script&gt;googqscp.init([[[[null,10=
+00,99,2,4,null,null,null,1],[null,500,99,2,9,null,null,null,1]]],null,null,=
+null,null,null,null,null,0]);&lt;/script&gt;&lt;img src=3D&quot;//www.googl=
+e.com/ads/measurement/l?ebcid=3DALh7CaRXF4-DyuvneDUf_63lEyUhNeVwyi25dDdxcZM=
+BS9bThcmg0khViJ6h7HAnTSCGj7x5XkTFccNQ8I1xrkabqdagmZFAAw&quot; style=3D&quot=
+;display:none;&quot; alt=3D&quot;&quot;&gt;&lt;/img&gt;&lt;script&gt;if (wi=
+ndow.top &amp;&amp; window.top.postMessage) {window.top.postMessage('{&quot=
+;googMsgType&quot;:&quot;adpnt&quot;}','*');}&lt;/script&gt;&lt;script&gt;(=
+function(){function e(a){return&quot;number&quot;=3D=3Dtypeof a}function f(=
+a,b,c){return a.call.apply(a.bind,arguments)}function g(a,b,c){if(!a)throw =
+Error();if(2&lt;arguments.length){var d=3DArray.prototype.slice.call(argume=
+nts,2);return function(){var c=3DArray.prototype.slice.call(arguments);Arra=
+y.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){retur=
+n a.apply(b,arguments)}}function h(a,b,c){Function.prototype.bind&amp;&amp;=
+-1!=3DFunction.prototype.bind.toString().indexOf(&quot;native code&quot;)?h=
+=3Df:h=3Dg;return h.apply(null,arguments)};function k(a){this.b=3Dnull;var =
+b=3D{top:10,right:10,bottom:10,left:10};a&amp;&amp;(a=3Da.split(&quot;,&quo=
+t;),4!=3Da.length||isNaN(a[0])||isNaN(a[1])||isNaN(a[2])||isNaN(a[3])||(b.t=
+op=3D+a[0],b.right=3D+a[1],b.bottom=3D+a[2],b.left=3D+a[3]));this.a=3Db}k.p=
+rototype.c=3Dfunction(a){for(var b=3D!1,c=3Da.target;c;c=3Dc.parentNode)if(=
+&quot;abgc&quot;=3D=3Dc.id){b=3D!0;break}if(!b){var d=3Dthis.b.getBoundingC=
+lientRect();b=3Dd.width;c=3Dd.height;var l=3Da.clientX-d.left;d=3Da.clientY=
+-d.top;b=3D!(e(b)&amp;&amp;e(c)&amp;&amp;e(a.clientX)&amp;&amp;e(a.clientY)=
+)||0&gt;=3Db||0&gt;=3Dc||0&gt;l||0&gt;d?!0:l&gt;=3Dthis.a.left&amp;&amp;b-l=
+&gt;=3Dthis.a.right&amp;&amp;d&gt;=3Dthis.a.top&amp;&amp;c-d&gt;=3Dthis.a.b=
+ottom}b||(a.preventDefault?a.preventDefault():a.returnValue=3D!1)};function=
+ m(a,b){b||(b=3D&quot;&quot;);b=3Dnew k(b);b.b=3Da;a=3Db.b;var c=3Dh(b.c,b)=
+;a.addEventListener&amp;&amp;a.addEventListener(&quot;click&quot;,c,!1);ret=
+urn b}var n=3D[&quot;googleInitIc&quot;],p=3Dthis;n[0]in p||&quot;undefined=
+&quot;=3D=3Dtypeof p.execScript||p.execScript(&quot;var &quot;+n[0]);for(va=
+r q;n.length&amp;&amp;(q=3Dn.shift());){var r;if(r=3D!n.length)r=3Dvoid 0!=
+=3D=3Dm;r?p[q]=3Dm:p[q]&amp;&amp;p[q]!=3D=3DObject.prototype[q]?p=3Dp[q]:p=
+=3Dp[q]=3D{}};}).call(this);googleInitIc(document.body,'10,10,10,10');&lt;/=
+script&gt;&lt;/body&gt;&lt;/html&gt;{&quot;uid&quot;:3,&quot;hostPeerName&q=
+uot;:&quot;https://www.w3schools.com&quot;,&quot;initialGeometry&quot;:&quo=
+t;{\&quot;windowCoords_t\&quot;:36,\&quot;windowCoords_r\&quot;:480,\&quot;=
+windowCoords_b\&quot;:728,\&quot;windowCoords_l\&quot;:0,\&quot;frameCoords=
+_t\&quot;:9370,\&quot;frameCoords_r\&quot;:316,\&quot;frameCoords_b\&quot;:=
+9620,\&quot;frameCoords_l\&quot;:16,\&quot;styleZIndex\&quot;:\&quot;auto\&=
+quot;,\&quot;allowedExpansion_t\&quot;:0,\&quot;allowedExpansion_r\&quot;:0=
+,\&quot;allowedExpansion_b\&quot;:0,\&quot;allowedExpansion_l\&quot;:0,\&qu=
+ot;xInView\&quot;:0,\&quot;yInView\&quot;:0}&quot;,&quot;permissions&quot;:=
+&quot;{\&quot;expandByOverlay\&quot;:false,\&quot;expandByPush\&quot;:false=
+,\&quot;readCookie\&quot;:false,\&quot;writeCookie\&quot;:false}&quot;,&quo=
+t;metadata&quot;:&quot;{\&quot;shared\&quot;:{\&quot;sf_ver\&quot;:\&quot;1=
+-0-31\&quot;,\&quot;ck_on\&quot;:1,\&quot;flash_ver\&quot;:\&quot;0\&quot;}=
+}&quot;,&quot;reportCreativeGeometry&quot;:false,&quot;isDifferentSourceWin=
+dow&quot;:false,&quot;goog_safeframe_hlt&quot;:{},&quot;inFakeDecryptionExp=
+eriment&quot;:false}" scrolling=3D"no" marginwidth=3D"0" marginheight=3D"0"=
+ width=3D"300" height=3D"250" data-is-safeframe=3D"true" sandbox=3D"allow-f=
+orms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-s=
+ame-origin allow-scripts allow-top-navigation-by-user-activation" data-goog=
+le-container-id=3D"3" src=3D"wyciwyg://frame/2"></iframe></div></div>
+  <!-- RightBottomMediumRectangle -->
+  <div class=3D"bottomad" id=3D"div-gpt-ad-1422003450156-3" style=3D"displa=
+y: none; "></div>
+</div>
+
+<hr>
+<div class=3D"w3-row w3-center w3-small">
+<div class=3D"w3-col l3 m3 s12">
+<a href=3D"javascript:void(0);" onclick=3D"displayError();return false" sty=
+le=3D"white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class=3D"w3-col l3 m3 s12">
+<a href=3D"javascript:void(0);" target=3D"_blank" onclick=3D"printPage();re=
+turn false;">PRINT PAGE</a>
+</div>
+<div class=3D"w3-col l3 m3 s12">
+<a href=3D"https://www.w3schools.com/forum/default.asp" target=3D"_blank">F=
+ORUM</a>
+</div>
+<div class=3D"w3-col l3 m3 s12">
+<a href=3D"https://www.w3schools.com/about/default.asp" target=3D"_top">ABO=
+UT</a>
+</div>
+</div>
+<hr>
+<div class=3D"w3-light-grey w3-padding w3-center" id=3D"err_form" style=3D"=
+display:none;position:relative">
+<span onclick=3D"this.parentElement.style.display=3D'none'" class=3D"w3-but=
+ton w3-display-topright">=C3=97</span>    =20
+<h2>Your Suggestion:</h2>
+<form>
+<div class=3D"w3-section">     =20
+<label for=3D"err_email">Your E-mail:</label>
+<input class=3D"w3-input" type=3D"text" style=3D"width:100%" id=3D"err_emai=
+l" name=3D"err_email">
+</div>
+<div class=3D"w3-section">     =20
+<label for=3D"err_email">Page address:</label>
+<input class=3D"w3-input" type=3D"text" style=3D"width:100%" id=3D"err_url"=
+ name=3D"err_url" disabled=3D"disabled">
+</div>
+<div class=3D"w3-section">
+<label for=3D"err_email">Description:</label>
+<textarea rows=3D"10" class=3D"w3-input" id=3D"err_desc" name=3D"err_desc" =
+style=3D"width:100%;"></textarea>
+</div>
+<div class=3D"form-group">       =20
+<button type=3D"button" onclick=3D"sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class=3D"w3-container w3-light-grey w3-padding" id=3D"err_sent" style=
+=3D"display:none;position:relative">
+<span onclick=3D"this.parentElement.style.display=3D'none'" class=3D"w3-but=
+ton w3-display-topright">=C3=97</span>    =20
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class=3D"w3-row w3-center w3-small">
+<div class=3D"w3-col l3 m6 s12">
+<div class=3D"top10">
+<h4>Top 10 Tutorials</h4>
+<a href=3D"https://www.w3schools.com/html/default.asp">HTML Tutorial</a><br=
+>
+<a href=3D"https://www.w3schools.com/css/default.asp">CSS Tutorial</a><br>
+<a href=3D"https://www.w3schools.com/js/default.asp">JavaScript Tutorial</a=
+><br>
+<a href=3D"https://www.w3schools.com/howto/default.asp">How To Tutorial</a>=
+<br>
+<a href=3D"https://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a>=
+<br>
+<a href=3D"https://www.w3schools.com/bootstrap/default.asp">Bootstrap Tutor=
+ial</a><br>
+<a href=3D"https://www.w3schools.com/sql/default.asp">SQL Tutorial</a><br>
+<a href=3D"https://www.w3schools.com/php/default.asp">PHP Tutorial</a><br>
+<a href=3D"https://www.w3schools.com/jquery/default.asp">jQuery Tutorial</a=
+><br>
+<a href=3D"https://www.w3schools.com/python/default.asp">Python Tutorial</a=
+><br>
+</div>
+</div>
+<div class=3D"w3-col l3 m6 s12">
+<div class=3D"top10">
+<h4>Top 10 References</h4>
+<a href=3D"https://www.w3schools.com/tags/default.asp">HTML Reference</a><b=
+r>
+<a href=3D"https://www.w3schools.com/cssref/default.asp">CSS Reference</a><=
+br>
+<a href=3D"https://www.w3schools.com/jsref/default.asp">JavaScript Referenc=
+e</a><br>
+<a href=3D"https://www.w3schools.com/w3css/w3css_references.asp">W3.CSS Ref=
+erence</a><br>
+<a href=3D"https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.as=
+p">Bootstrap Reference</a><br>
+<a href=3D"https://www.w3schools.com/sql/sql_ref_keywords.asp">SQL Referenc=
+e</a><br>
+<a href=3D"https://www.w3schools.com/php/php_ref_overview.asp">PHP Referenc=
+e</a><br>
+<a href=3D"https://www.w3schools.com/colors/colors_names.asp">HTML Colors</=
+a><br>
+<a href=3D"https://www.w3schools.com/jquery/jquery_ref_overview.asp">jQuery=
+ Reference</a><br>
+<a href=3D"https://www.w3schools.com/python/python_reference.asp">Python Re=
+ference</a><br>
+</div>
+</div>
+<div class=3D"w3-col l3 m6 s12">
+<div class=3D"top10">
+<h4>Top 10 Examples</h4>
+<a href=3D"https://www.w3schools.com/html/html_examples.asp">HTML Examples<=
+/a><br>
+<a href=3D"https://www.w3schools.com/css/css_examples.asp">CSS Examples</a>=
+<br>
+<a href=3D"https://www.w3schools.com/js/js_examples.asp">JavaScript Example=
+s</a><br>
+<a href=3D"https://www.w3schools.com/howto/default.asp">How To Examples</a>=
+<br>
+<a href=3D"https://www.w3schools.com/w3css/w3css_examples.asp">W3.CSS Examp=
+les</a><br>
+<a href=3D"https://www.w3schools.com/bootstrap/bootstrap_examples.asp">Boot=
+strap Examples</a><br>
+<a href=3D"https://www.w3schools.com/php/php_examples.asp">PHP Examples</a>=
+<br>
+<a href=3D"https://www.w3schools.com/jquery/jquery_examples.asp">jQuery Exa=
+mples</a><br>
+<a href=3D"https://www.w3schools.com/angular/angular_examples.asp">Angular =
+Examples</a><br>
+<a href=3D"https://www.w3schools.com/xml/xml_examples.asp">XML Examples</a>=
+<br>
+</div>
+</div>
+<div class=3D"w3-col l3 m6 s12">
+<div class=3D"top10">
+<h4>Web Certificates</h4>
+<a href=3D"https://www.w3schools.com/cert/default.asp">HTML Certificate</a>=
+<br>
+<a href=3D"https://www.w3schools.com/cert/default.asp">CSS Certificate</a><=
+br>
+<a href=3D"https://www.w3schools.com/cert/default.asp">JavaScript Certifica=
+te</a><br>
+<a href=3D"https://www.w3schools.com/cert/default.asp">jQuery Certificate</=
+a><br>
+<a href=3D"https://www.w3schools.com/cert/default.asp">PHP Certificate</a><=
+br>
+<a href=3D"https://www.w3schools.com/cert/default.asp">Bootstrap Certificat=
+e</a><br>
+<a href=3D"https://www.w3schools.com/cert/default.asp">XML Certificate</a><=
+br>
+</div>
+</div>       =20
+</div>       =20
+
+<hr>
+<div class=3D"w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might =
+be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors=
+, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href=3D"h=
+ttps://www.w3schools.com/about/about_copyright.asp">terms of use</a>,
+<a href=3D"https://www.w3schools.com/about/about_privacy.asp">cookie and pr=
+ivacy policy</a>.
+<a href=3D"https://www.w3schools.com/about/about_copyright.asp">Copyright 1=
+999-2018</a> by Refsnes Data. All Rights Reserved.<br>
+ <a href=3D"https://www.w3schools.com/w3css/">Powered by W3.CSS</a>.<br><br=
+>
+<a href=3D"https://www.w3schools.com/">
+<img style=3D"width:150px;height:28px;border:0" src=3D"https://www.w3school=
+s.com/images/w3schoolscom_gray.gif" alt=3D"W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+
+</div><iframe style=3D"display: none; " name=3D"__cmpLocator" src=3D"wyciwy=
+g://frame/3"></iframe>
+<iframe src=3D"https://tpc.googlesyndication.com/safeframe/1-0-31/html/cont=
+ainer.html" style=3D"visibility: hidden; display: none; "></iframe>
+</body></html>
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://www.w3schools.com/w3css/4/w3.css
+
+aHRtbCB7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7IH0KCiosIDo6YmVmb3JlLCA6OmFmdGVyIHsg
+Ym94LXNpemluZzogaW5oZXJpdDsgfQoKaHRtbCB7IH0KCmJvZHkgeyBtYXJnaW4tdG9wOiAwcHg7
+IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7
+IH0KCmFydGljbGUsIGFzaWRlLCBkZXRhaWxzLCBmaWdjYXB0aW9uLCBmaWd1cmUsIGZvb3Rlciwg
+aGVhZGVyLCBtYWluLCBtZW51LCBuYXYsIHNlY3Rpb24sIHN1bW1hcnkgeyBkaXNwbGF5OiBibG9j
+azsgfQoKYXVkaW8sIGNhbnZhcywgcHJvZ3Jlc3MsIHZpZGVvIHsgZGlzcGxheTogaW5saW5lLWJs
+b2NrOyB9Cgpwcm9ncmVzcyB7IHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgfQoKYXVkaW86bm90
+KFtjb250cm9sc10pIHsgZGlzcGxheTogbm9uZTsgaGVpZ2h0OiAwcHg7IH0KCltoaWRkZW5dLCB0
+ZW1wbGF0ZSB7IGRpc3BsYXk6IG5vbmU7IH0KCmEgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3Bh
+cmVudDsgfQoKYTphY3RpdmUsIGE6aG92ZXIgeyBvdXRsaW5lLXdpZHRoOiAwcHg7IH0KCmFiYnJb
+dGl0bGVdIHsgYm9yZGVyLWJvdHRvbS1zdHlsZTogbm9uZTsgYm9yZGVyLWJvdHRvbS13aWR0aDog
+aW5pdGlhbDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uOiB1
+bmRlcmxpbmU7IH0KCmRmbiB7IGZvbnQtc3R5bGU6IGl0YWxpYzsgfQoKbWFyayB7IGJhY2tncm91
+bmQtaW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dy
+b3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3Vu
+ZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAwKTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBjb2xv
+cjogcmdiKDAsIDAsIDApOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJh
+Y2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCnNtYWxsIHsgZm9udC1zaXplOiA4
+MCU7IH0KCnN1Yiwgc3VwIHsgZm9udC1zaXplOiA3NSU7IGxpbmUtaGVpZ2h0OiAwOyBwb3NpdGlv
+bjogcmVsYXRpdmU7IHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgfQoKc3ViIHsgYm90dG9tOiAt
+MC4yNWVtOyB9CgpzdXAgeyB0b3A6IC0wLjVlbTsgfQoKZmlndXJlIHsgbWFyZ2luLXRvcDogMWVt
+OyBtYXJnaW4tcmlnaHQ6IDQwcHg7IG1hcmdpbi1ib3R0b206IDFlbTsgbWFyZ2luLWxlZnQ6IDQw
+cHg7IH0KCmltZyB7IGJvcmRlci10b3Atc3R5bGU6IG5vbmU7IGJvcmRlci1yaWdodC1zdHlsZTog
+bm9uZTsgYm9yZGVyLWJvdHRvbS1zdHlsZTogbm9uZTsgYm9yZGVyLWxlZnQtc3R5bGU6IG5vbmU7
+IH0KCnN2Zzpub3QoOnJvb3QpIHsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRk
+ZW47IH0KCmNvZGUsIGtiZCwgcHJlLCBzYW1wIHsgZm9udC1mYW1pbHk6IG1vbm9zcGFjZSwgbW9u
+b3NwYWNlOyBmb250LXNpemU6IDFlbTsgfQoKaHIgeyBib3gtc2l6aW5nOiBjb250ZW50LWJveDsg
+aGVpZ2h0OiAwcHg7IG92ZXJmbG93LXg6IHZpc2libGU7IG92ZXJmbG93LXk6IHZpc2libGU7IH0K
+CmJ1dHRvbiwgaW5wdXQsIHNlbGVjdCwgdGV4dGFyZWEgeyBmb250OiBpbmhlcml0OyBtYXJnaW4t
+dG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1s
+ZWZ0OiAwcHg7IH0KCm9wdGdyb3VwIHsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0KCmJ1dHRvbiwgaW5w
+dXQgeyBvdmVyZmxvdy14OiB2aXNpYmxlOyBvdmVyZmxvdy15OiB2aXNpYmxlOyB9CgpidXR0b24s
+IHNlbGVjdCB7IHRleHQtdHJhbnNmb3JtOiBub25lOyB9CgpidXR0b24sIGh0bWwgW3R5cGU9ImJ1
+dHRvbiJdLCBbdHlwZT0icmVzZXQiXSwgW3R5cGU9InN1Ym1pdCJdIHsgLXdlYmtpdC1hcHBlYXJh
+bmNlOiBidXR0b247IH0KCmJ1dHRvbjo6LW1vei1mb2N1cy1pbm5lciwgW3R5cGU9ImJ1dHRvbiJd
+OjotbW96LWZvY3VzLWlubmVyLCBbdHlwZT0icmVzZXQiXTo6LW1vei1mb2N1cy1pbm5lciwgW3R5
+cGU9InN1Ym1pdCJdOjotbW96LWZvY3VzLWlubmVyIHsgYm9yZGVyLXRvcC1zdHlsZTogbm9uZTsg
+Ym9yZGVyLXJpZ2h0LXN0eWxlOiBub25lOyBib3JkZXItYm90dG9tLXN0eWxlOiBub25lOyBib3Jk
+ZXItbGVmdC1zdHlsZTogbm9uZTsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4
+OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgfQoKZmllbGRzZXQgeyBi
+b3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBib3JkZXItYm90
+dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10b3Atc3R5bGU6
+IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0eWxlOiBz
+b2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMTky
+LCAxOTIsIDE5Mik7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDE5MiwgMTkyLCAxOTIpOyBib3Jk
+ZXItYm90dG9tLWNvbG9yOiByZ2IoMTkyLCAxOTIsIDE5Mik7IGJvcmRlci1sZWZ0LWNvbG9yOiBy
+Z2IoMTkyLCAxOTIsIDE5Mik7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgbWFyZ2luLXRvcDogMHB4
+OyBtYXJnaW4tcmlnaHQ6IDJweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMnB4
+OyBwYWRkaW5nLXRvcDogMC4zNWVtOyBwYWRkaW5nLXJpZ2h0OiAwLjYyNWVtOyBwYWRkaW5nLWJv
+dHRvbTogMC43NWVtOyBwYWRkaW5nLWxlZnQ6IDAuNjI1ZW07IH0KCmxlZ2VuZCB7IGNvbG9yOiBp
+bmhlcml0OyBkaXNwbGF5OiB0YWJsZTsgbWF4LXdpZHRoOiAxMDAlOyBwYWRkaW5nLXRvcDogMHB4
+OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDog
+MHB4OyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB9Cgp0ZXh0YXJlYSB7IG92ZXJmbG93LXg6IGF1dG87
+IG92ZXJmbG93LXk6IGF1dG87IH0KClt0eXBlPSJjaGVja2JveCJdLCBbdHlwZT0icmFkaW8iXSB7
+IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBw
+eDsgcGFkZGluZy1sZWZ0OiAwcHg7IH0KClt0eXBlPSJudW1iZXIiXTo6LXdlYmtpdC1pbm5lci1z
+cGluLWJ1dHRvbiwgW3R5cGU9Im51bWJlciJdOjotd2Via2l0LW91dGVyLXNwaW4tYnV0dG9uIHsg
+aGVpZ2h0OiBhdXRvOyB9CgpbdHlwZT0ic2VhcmNoIl0geyAtd2Via2l0LWFwcGVhcmFuY2U6IHRl
+eHRmaWVsZDsgb3V0bGluZS1vZmZzZXQ6IC0ycHg7IH0KClt0eXBlPSJzZWFyY2giXTo6LXdlYmtp
+dC1zZWFyY2gtY2FuY2VsLWJ1dHRvbiwgW3R5cGU9InNlYXJjaCJdOjotd2Via2l0LXNlYXJjaC1k
+ZWNvcmF0aW9uIHsgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lOyB9CgoqOjotd2Via2l0LWlucHV0
+LXBsYWNlaG9sZGVyIHsgY29sb3I6IGluaGVyaXQ7IG9wYWNpdHk6IDAuNTQ7IH0KCio6Oi13ZWJr
+aXQtZmlsZS11cGxvYWQtYnV0dG9uIHsgLXdlYmtpdC1hcHBlYXJhbmNlOiBidXR0b247IGZvbnQ6
+IGluaGVyaXQ7IH0KCmh0bWwsIGJvZHkgeyBmb250LWZhbWlseTogVmVyZGFuYSwgc2Fucy1zZXJp
+ZjsgZm9udC1zaXplOiAxNXB4OyBsaW5lLWhlaWdodDogMS41OyB9CgpodG1sIHsgb3ZlcmZsb3ct
+eDogaGlkZGVuOyB9CgpoMSB7IGZvbnQtc2l6ZTogMzZweDsgfQoKaDIgeyBmb250LXNpemU6IDMw
+cHg7IH0KCmgzIHsgZm9udC1zaXplOiAyNHB4OyB9CgpoNCB7IGZvbnQtc2l6ZTogMjBweDsgfQoK
+aDUgeyBmb250LXNpemU6IDE4cHg7IH0KCmg2IHsgZm9udC1zaXplOiAxNnB4OyB9CgoudzMtc2Vy
+aWYgeyBmb250LWZhbWlseTogc2VyaWY7IH0KCmgxLCBoMiwgaDMsIGg0LCBoNSwgaDYgeyBmb250
+LWZhbWlseTogJ1NlZ29lIFVJJywgQXJpYWwsIHNhbnMtc2VyaWY7IGZvbnQtd2VpZ2h0OiA0MDA7
+IG1hcmdpbi10b3A6IDEwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAxMHB4
+OyBtYXJnaW4tbGVmdDogMHB4OyB9CgoudzMtd2lkZSB7IGxldHRlci1zcGFjaW5nOiA0cHg7IH0K
+CmhyIHsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDBweDsg
+Ym9yZGVyLWxlZnQtd2lkdGg6IDBweDsgYm9yZGVyLXN0eWxlOiBpbml0aWFsOyBib3JkZXItY29s
+b3I6IGluaXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgYm9yZGVyLXRvcC13aWR0aDogMXB4
+OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIzOCwgMjM4
+LCAyMzgpOyBtYXJnaW4tdG9wOiAyMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRv
+bTogMjBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLnczLWltYWdlIHsgbWF4LXdpZHRoOiAxMDAl
+OyBoZWlnaHQ6IGF1dG87IH0KCmltZyB7IHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7IH0KCmEgeyBj
+b2xvcjogaW5oZXJpdDsgfQoKLnczLXRhYmxlLCAudzMtdGFibGUtYWxsIHsgYm9yZGVyLWNvbGxh
+cHNlOiBjb2xsYXBzZTsgLXdlYmtpdC1ib3JkZXItaG9yaXpvbnRhbC1zcGFjaW5nOiAwcHg7IC13
+ZWJraXQtYm9yZGVyLXZlcnRpY2FsLXNwYWNpbmc6IDBweDsgd2lkdGg6IDEwMCU7IGRpc3BsYXk6
+IHRhYmxlOyB9CgoudzMtdGFibGUtYWxsIHsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXIt
+cmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13
+aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBz
+b2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xp
+ZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyBib3JkZXItcmlnaHQtY29s
+b3I6IHJnYigyMDQsIDIwNCwgMjA0KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwNCwgMjA0
+LCAyMDQpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyBib3JkZXItaW1h
+Z2U6IGluaXRpYWw7IH0KCi53My1ib3JkZXJlZCB0ciwgLnczLXRhYmxlLWFsbCB0ciB7IGJvcmRl
+ci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1i
+b3R0b20tY29sb3I6IHJnYigyMjEsIDIyMSwgMjIxKTsgfQoKLnczLXN0cmlwZWQgdGJvZHkgdHI6
+bnRoLWNoaWxkKGV2ZW4pIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0MSwgMjQxLCAyNDEpOyB9
+CgoudzMtdGFibGUtYWxsIHRyOm50aC1jaGlsZChvZGQpIHsgYmFja2dyb3VuZC1jb2xvcjogcmdi
+KDI1NSwgMjU1LCAyNTUpOyB9CgoudzMtdGFibGUtYWxsIHRyOm50aC1jaGlsZChldmVuKSB7IGJh
+Y2tncm91bmQtY29sb3I6IHJnYigyNDEsIDI0MSwgMjQxKTsgfQoKLnczLWhvdmVyYWJsZSB0Ym9k
+eSB0cjpob3ZlciwgLnczLXVsLnczLWhvdmVyYWJsZSBsaTpob3ZlciB7IGJhY2tncm91bmQtY29s
+b3I6IHJnYigyMDQsIDIwNCwgMjA0KTsgfQoKLnczLWNlbnRlcmVkIHRyIHRoLCAudzMtY2VudGVy
+ZWQgdHIgdGQgeyB0ZXh0LWFsaWduOiBjZW50ZXI7IH0KCi53My10YWJsZSB0ZCwgLnczLXRhYmxl
+IHRoLCAudzMtdGFibGUtYWxsIHRkLCAudzMtdGFibGUtYWxsIHRoIHsgcGFkZGluZy10b3A6IDhw
+eDsgcGFkZGluZy1yaWdodDogOHB4OyBwYWRkaW5nLWJvdHRvbTogOHB4OyBwYWRkaW5nLWxlZnQ6
+IDhweDsgZGlzcGxheTogdGFibGUtY2VsbDsgdGV4dC1hbGlnbjogbGVmdDsgdmVydGljYWwtYWxp
+Z246IHRvcDsgfQoKLnczLXRhYmxlIHRoOmZpcnN0LWNoaWxkLCAudzMtdGFibGUgdGQ6Zmlyc3Qt
+Y2hpbGQsIC53My10YWJsZS1hbGwgdGg6Zmlyc3QtY2hpbGQsIC53My10YWJsZS1hbGwgdGQ6Zmly
+c3QtY2hpbGQgeyBwYWRkaW5nLWxlZnQ6IDE2cHg7IH0KCi53My1idG4sIC53My1idXR0b24geyBi
+b3JkZXItdG9wLXN0eWxlOiBub25lOyBib3JkZXItcmlnaHQtc3R5bGU6IG5vbmU7IGJvcmRlci1i
+b3R0b20tc3R5bGU6IG5vbmU7IGJvcmRlci1sZWZ0LXN0eWxlOiBub25lOyBib3JkZXItd2lkdGg6
+IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBk
+aXNwbGF5OiBpbmxpbmUtYmxvY2s7IHBhZGRpbmctdG9wOiA4cHg7IHBhZGRpbmctcmlnaHQ6IDE2
+cHg7IHBhZGRpbmctYm90dG9tOiA4cHg7IHBhZGRpbmctbGVmdDogMTZweDsgdmVydGljYWwtYWxp
+Z246IG1pZGRsZTsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IHRleHQt
+ZGVjb3JhdGlvbjogbm9uZTsgY29sb3I6IGluaGVyaXQ7IGJhY2tncm91bmQtY29sb3I6IGluaGVy
+aXQ7IHRleHQtYWxpZ246IGNlbnRlcjsgY3Vyc29yOiBwb2ludGVyOyB3aGl0ZS1zcGFjZTogbm93
+cmFwOyB9CgoudzMtYnRuOmhvdmVyIHsgYm94LXNoYWRvdzogcmdiYSgwLCAwLCAwLCAwLjE5OTIx
+OSkgMHB4IDhweCAxNnB4IDBweCwgcmdiYSgwLCAwLCAwLCAwLjE4NzUpIDBweCA2cHggMjBweCAw
+cHg7IH0KCi53My1idG4sIC53My1idXR0b24geyAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOyB9
+CgoudzMtZGlzYWJsZWQsIC53My1idG46ZGlzYWJsZWQsIC53My1idXR0b246ZGlzYWJsZWQgeyBj
+dXJzb3I6IG5vdC1hbGxvd2VkOyBvcGFjaXR5OiAwLjM7IH0KCi53My1kaXNhYmxlZCAqLCA6ZGlz
+YWJsZWQgKiB7IHBvaW50ZXItZXZlbnRzOiBub25lOyB9CgoudzMtYnRuLnczLWRpc2FibGVkOmhv
+dmVyLCAudzMtYnRuOmRpc2FibGVkOmhvdmVyIHsgYm94LXNoYWRvdzogbm9uZTsgfQoKLnczLWJh
+ZGdlLCAudzMtdGFnIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDAsIDAsIDApOyBjb2xvcjogcmdi
+KDI1NSwgMjU1LCAyNTUpOyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IHBhZGRpbmctbGVmdDogOHB4
+OyBwYWRkaW5nLXJpZ2h0OiA4cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgfQoKLnczLWJhZGdlIHsg
+Ym9yZGVyLXRvcC1sZWZ0LXJhZGl1czogNTAlOyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogNTAl
+OyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogNTAlOyBib3JkZXItYm90dG9tLWxlZnQtcmFk
+aXVzOiA1MCU7IH0KCi53My11bCB7IGxpc3Qtc3R5bGUtdHlwZTogbm9uZTsgcGFkZGluZy10b3A6
+IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxl
+ZnQ6IDBweDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRv
+bTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9CgoudzMtdWwgbGkgeyBwYWRkaW5nLXRvcDogOHB4
+OyBwYWRkaW5nLXJpZ2h0OiAxNnB4OyBwYWRkaW5nLWJvdHRvbTogOHB4OyBwYWRkaW5nLWxlZnQ6
+IDE2cHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29s
+aWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMjEsIDIyMSwgMjIxKTsgfQoKLnczLXVsIGxp
+Omxhc3QtY2hpbGQgeyBib3JkZXItYm90dG9tLXN0eWxlOiBub25lOyBib3JkZXItYm90dG9tLXdp
+ZHRoOiBpbml0aWFsOyBib3JkZXItYm90dG9tLWNvbG9yOiBpbml0aWFsOyB9CgoudzMtdG9vbHRp
+cCwgLnczLWRpc3BsYXktY29udGFpbmVyIHsgcG9zaXRpb246IHJlbGF0aXZlOyB9CgoudzMtdG9v
+bHRpcCAudzMtdGV4dCB7IGRpc3BsYXk6IG5vbmU7IH0KCi53My10b29sdGlwOmhvdmVyIC53My10
+ZXh0IHsgZGlzcGxheTogaW5saW5lLWJsb2NrOyB9CgoudzMtcmlwcGxlOmFjdGl2ZSB7IG9wYWNp
+dHk6IDAuNTsgfQoKLnczLXJpcHBsZSB7IC13ZWJraXQtdHJhbnNpdGlvbi1wcm9wZXJ0eTogb3Bh
+Y2l0eTsgLXdlYmtpdC10cmFuc2l0aW9uLWR1cmF0aW9uOiAwczsgLXdlYmtpdC10cmFuc2l0aW9u
+LXRpbWluZy1mdW5jdGlvbjogaW5pdGlhbDsgLXdlYmtpdC10cmFuc2l0aW9uLWRlbGF5OiBpbml0
+aWFsOyB9CgoudzMtaW5wdXQgeyBwYWRkaW5nLXRvcDogOHB4OyBwYWRkaW5nLXJpZ2h0OiA4cHg7
+IHBhZGRpbmctYm90dG9tOiA4cHg7IHBhZGRpbmctbGVmdDogOHB4OyBkaXNwbGF5OiBibG9jazsg
+Ym9yZGVyLXRvcC1zdHlsZTogbm9uZTsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBub25lOyBib3JkZXIt
+bGVmdC1zdHlsZTogbm9uZTsgYm9yZGVyLXdpZHRoOiBpbml0aWFsOyBib3JkZXItY29sb3I6IGlu
+aXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBi
+b3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwNCwg
+MjA0LCAyMDQpOyB3aWR0aDogMTAwJTsgfQoKLnczLXNlbGVjdCB7IHBhZGRpbmctdG9wOiA5cHg7
+IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDlweDsgcGFkZGluZy1sZWZ0OiAw
+cHg7IHdpZHRoOiAxMDAlOyBib3JkZXItdG9wLXN0eWxlOiBub25lOyBib3JkZXItcmlnaHQtc3R5
+bGU6IG5vbmU7IGJvcmRlci1sZWZ0LXN0eWxlOiBub25lOyBib3JkZXItd2lkdGg6IGluaXRpYWw7
+IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBib3JkZXItYm90
+dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9t
+LWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IH0KCi53My1kcm9wZG93bi1jbGljaywgLnczLWRy
+b3Bkb3duLWhvdmVyIHsgcG9zaXRpb246IHJlbGF0aXZlOyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7
+IGN1cnNvcjogcG9pbnRlcjsgfQoKLnczLWRyb3Bkb3duLWhvdmVyOmhvdmVyIC53My1kcm9wZG93
+bi1jb250ZW50IHsgZGlzcGxheTogYmxvY2s7IH0KCi53My1kcm9wZG93bi1ob3ZlcjpmaXJzdC1j
+aGlsZCwgLnczLWRyb3Bkb3duLWNsaWNrOmhvdmVyIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIw
+NCwgMjA0LCAyMDQpOyBjb2xvcjogcmdiKDAsIDAsIDApOyB9CgoudzMtZHJvcGRvd24taG92ZXI6
+aG92ZXIgPiAudzMtYnV0dG9uOmZpcnN0LWNoaWxkLCAudzMtZHJvcGRvd24tY2xpY2s6aG92ZXIg
+PiAudzMtYnV0dG9uOmZpcnN0LWNoaWxkIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIwNCwgMjA0
+LCAyMDQpOyBjb2xvcjogcmdiKDAsIDAsIDApOyB9CgoudzMtZHJvcGRvd24tY29udGVudCB7IGN1
+cnNvcjogYXV0bzsgY29sb3I6IHJnYigwLCAwLCAwKTsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1
+NSwgMjU1LCAyNTUpOyBkaXNwbGF5OiBub25lOyBwb3NpdGlvbjogYWJzb2x1dGU7IG1pbi13aWR0
+aDogMTYwcHg7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0
+b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdo
+dDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgei1pbmRleDog
+MTsgfQoKLnczLWNoZWNrLCAudzMtcmFkaW8geyB3aWR0aDogMjRweDsgaGVpZ2h0OiAyNHB4OyBw
+b3NpdGlvbjogcmVsYXRpdmU7IHRvcDogNnB4OyB9CgoudzMtc2lkZWJhciB7IGhlaWdodDogMTAw
+JTsgd2lkdGg6IDIwMHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IHBv
+c2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50OyB6LWluZGV4OiAxOyBvdmVyZmxvdy14OiBhdXRvOyBv
+dmVyZmxvdy15OiBhdXRvOyB9CgoudzMtYmFyLWJsb2NrIC53My1kcm9wZG93bi1ob3ZlciwgLncz
+LWJhci1ibG9jayAudzMtZHJvcGRvd24tY2xpY2sgeyB3aWR0aDogMTAwJTsgfQoKLnczLWJhci1i
+bG9jayAudzMtZHJvcGRvd24taG92ZXIgLnczLWRyb3Bkb3duLWNvbnRlbnQsIC53My1iYXItYmxv
+Y2sgLnczLWRyb3Bkb3duLWNsaWNrIC53My1kcm9wZG93bi1jb250ZW50IHsgbWluLXdpZHRoOiAx
+MDAlOyB9CgoudzMtYmFyLWJsb2NrIC53My1kcm9wZG93bi1ob3ZlciAudzMtYnV0dG9uLCAudzMt
+YmFyLWJsb2NrIC53My1kcm9wZG93bi1jbGljayAudzMtYnV0dG9uIHsgd2lkdGg6IDEwMCU7IHRl
+eHQtYWxpZ246IGxlZnQ7IHBhZGRpbmctdG9wOiA4cHg7IHBhZGRpbmctcmlnaHQ6IDE2cHg7IHBh
+ZGRpbmctYm90dG9tOiA4cHg7IHBhZGRpbmctbGVmdDogMTZweDsgfQoKLnczLW1haW4sICNtYWlu
+IHsgLXdlYmtpdC10cmFuc2l0aW9uLXByb3BlcnR5OiBtYXJnaW4tbGVmdDsgLXdlYmtpdC10cmFu
+c2l0aW9uLWR1cmF0aW9uOiAwLjRzOyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9u
+OiBpbml0aWFsOyAtd2Via2l0LXRyYW5zaXRpb24tZGVsYXk6IGluaXRpYWw7IH0KCi53My1tb2Rh
+bCB7IHotaW5kZXg6IDM7IGRpc3BsYXk6IG5vbmU7IHBhZGRpbmctdG9wOiAxMDBweDsgcG9zaXRp
+b246IGZpeGVkOyBsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMTAwJTsgaGVpZ2h0OiAxMDAl
+OyBvdmVyZmxvdy14OiBhdXRvOyBvdmVyZmxvdy15OiBhdXRvOyBiYWNrZ3JvdW5kLWNvbG9yOiBy
+Z2JhKDAsIDAsIDAsIDAuMzk4NDM4KTsgfQoKLnczLW1vZGFsLWNvbnRlbnQgeyBtYXJnaW4tdG9w
+OiBhdXRvOyBtYXJnaW4tcmlnaHQ6IGF1dG87IG1hcmdpbi1ib3R0b206IGF1dG87IG1hcmdpbi1s
+ZWZ0OiBhdXRvOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IHBvc2l0aW9u
+OiByZWxhdGl2ZTsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5n
+LWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgb3V0bGluZS13aWR0aDogMHB4OyBvdXRs
+aW5lLXN0eWxlOiBpbml0aWFsOyBvdXRsaW5lLWNvbG9yOiBpbml0aWFsOyB3aWR0aDogNjAwcHg7
+IH0KCi53My1iYXIgeyB3aWR0aDogMTAwJTsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15
+OiBoaWRkZW47IH0KCi53My1jZW50ZXIgLnczLWJhciB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsg
+d2lkdGg6IGF1dG87IH0KCi53My1iYXIgLnczLWJhci1pdGVtIHsgcGFkZGluZy10b3A6IDhweDsg
+cGFkZGluZy1yaWdodDogMTZweDsgcGFkZGluZy1ib3R0b206IDhweDsgcGFkZGluZy1sZWZ0OiAx
+NnB4OyBmbG9hdDogbGVmdDsgd2lkdGg6IGF1dG87IGJvcmRlci10b3Atc3R5bGU6IG5vbmU7IGJv
+cmRlci1yaWdodC1zdHlsZTogbm9uZTsgYm9yZGVyLWJvdHRvbS1zdHlsZTogbm9uZTsgYm9yZGVy
+LWxlZnQtc3R5bGU6IG5vbmU7IGJvcmRlci13aWR0aDogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBp
+bml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGRpc3BsYXk6IGJsb2NrOyBvdXRsaW5lLXdp
+ZHRoOiAwcHg7IG91dGxpbmUtc3R5bGU6IGluaXRpYWw7IG91dGxpbmUtY29sb3I6IGluaXRpYWw7
+IH0KCi53My1iYXIgLnczLWRyb3Bkb3duLWhvdmVyLCAudzMtYmFyIC53My1kcm9wZG93bi1jbGlj
+ayB7IHBvc2l0aW9uOiBzdGF0aWM7IGZsb2F0OiBsZWZ0OyB9CgoudzMtYmFyIC53My1idXR0b24g
+eyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB9CgoudzMtYmFyLWJsb2NrIC53My1iYXItaXRlbSB7IHdp
+ZHRoOiAxMDAlOyBkaXNwbGF5OiBibG9jazsgcGFkZGluZy10b3A6IDhweDsgcGFkZGluZy1yaWdo
+dDogMTZweDsgcGFkZGluZy1ib3R0b206IDhweDsgcGFkZGluZy1sZWZ0OiAxNnB4OyB0ZXh0LWFs
+aWduOiBsZWZ0OyBib3JkZXItdG9wLXN0eWxlOiBub25lOyBib3JkZXItcmlnaHQtc3R5bGU6IG5v
+bmU7IGJvcmRlci1ib3R0b20tc3R5bGU6IG5vbmU7IGJvcmRlci1sZWZ0LXN0eWxlOiBub25lOyBi
+b3JkZXItd2lkdGg6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdl
+OiBpbml0aWFsOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyBmbG9hdDogbm9uZTsgb3V0bGluZS13aWR0
+aDogMHB4OyBvdXRsaW5lLXN0eWxlOiBpbml0aWFsOyBvdXRsaW5lLWNvbG9yOiBpbml0aWFsOyB9
+CgoudzMtYmFyLWJsb2NrLnczLWNlbnRlciAudzMtYmFyLWl0ZW0geyB0ZXh0LWFsaWduOiBjZW50
+ZXI7IH0KCi53My1ibG9jayB7IGRpc3BsYXk6IGJsb2NrOyB3aWR0aDogMTAwJTsgfQoKLnczLXJl
+c3BvbnNpdmUgeyBkaXNwbGF5OiBibG9jazsgb3ZlcmZsb3cteDogYXV0bzsgfQoKLnczLWNvbnRh
+aW5lcjo6YWZ0ZXIsIC53My1jb250YWluZXI6OmJlZm9yZSwgLnczLXBhbmVsOjphZnRlciwgLncz
+LXBhbmVsOjpiZWZvcmUsIC53My1yb3c6OmFmdGVyLCAudzMtcm93OjpiZWZvcmUsIC53My1yb3ct
+cGFkZGluZzo6YWZ0ZXIsIC53My1yb3ctcGFkZGluZzo6YmVmb3JlLCAudzMtY2VsbC1yb3c6OmJl
+Zm9yZSwgLnczLWNlbGwtcm93OjphZnRlciwgLnczLWNsZWFyOjphZnRlciwgLnczLWNsZWFyOjpi
+ZWZvcmUsIC53My1iYXI6OmJlZm9yZSwgLnczLWJhcjo6YWZ0ZXIgeyBjb250ZW50OiAnJzsgZGlz
+cGxheTogdGFibGU7IGNsZWFyOiBib3RoOyB9CgoudzMtY29sLCAudzMtaGFsZiwgLnczLXRoaXJk
+LCAudzMtdHdvdGhpcmQsIC53My10aHJlZXF1YXJ0ZXIsIC53My1xdWFydGVyIHsgZmxvYXQ6IGxl
+ZnQ7IHdpZHRoOiAxMDAlOyB9CgoudzMtY29sLnMxIHsgd2lkdGg6IDguMzMzMzMlOyB9CgoudzMt
+Y29sLnMyIHsgd2lkdGg6IDE2LjY2NjY2JTsgfQoKLnczLWNvbC5zMyB7IHdpZHRoOiAyNC45OTk5
+OSU7IH0KCi53My1jb2wuczQgeyB3aWR0aDogMzMuMzMzMzMlOyB9CgoudzMtY29sLnM1IHsgd2lk
+dGg6IDQxLjY2NjY2JTsgfQoKLnczLWNvbC5zNiB7IHdpZHRoOiA0OS45OTk5OSU7IH0KCi53My1j
+b2wuczcgeyB3aWR0aDogNTguMzMzMzMlOyB9CgoudzMtY29sLnM4IHsgd2lkdGg6IDY2LjY2NjY2
+JTsgfQoKLnczLWNvbC5zOSB7IHdpZHRoOiA3NC45OTk5OSU7IH0KCi53My1jb2wuczEwIHsgd2lk
+dGg6IDgzLjMzMzMzJTsgfQoKLnczLWNvbC5zMTEgeyB3aWR0aDogOTEuNjY2NjYlOyB9CgoudzMt
+Y29sLnMxMiB7IHdpZHRoOiA5OS45OTk5OSU7IH0KCkBtZWRpYSAobWluLXdpZHRoOiA2MDFweCkg
+eyAKICAudzMtY29sLm0xIHsgd2lkdGg6IDguMzMzMzMlOyB9CiAgLnczLWNvbC5tMiB7IHdpZHRo
+OiAxNi42NjY2NiU7IH0KICAudzMtY29sLm0zLCAudzMtcXVhcnRlciB7IHdpZHRoOiAyNC45OTk5
+OSU7IH0KICAudzMtY29sLm00LCAudzMtdGhpcmQgeyB3aWR0aDogMzMuMzMzMzMlOyB9CiAgLncz
+LWNvbC5tNSB7IHdpZHRoOiA0MS42NjY2NiU7IH0KICAudzMtY29sLm02LCAudzMtaGFsZiB7IHdp
+ZHRoOiA0OS45OTk5OSU7IH0KICAudzMtY29sLm03IHsgd2lkdGg6IDU4LjMzMzMzJTsgfQogIC53
+My1jb2wubTgsIC53My10d290aGlyZCB7IHdpZHRoOiA2Ni42NjY2NiU7IH0KICAudzMtY29sLm05
+LCAudzMtdGhyZWVxdWFydGVyIHsgd2lkdGg6IDc0Ljk5OTk5JTsgfQogIC53My1jb2wubTEwIHsg
+d2lkdGg6IDgzLjMzMzMzJTsgfQogIC53My1jb2wubTExIHsgd2lkdGg6IDkxLjY2NjY2JTsgfQog
+IC53My1jb2wubTEyIHsgd2lkdGg6IDk5Ljk5OTk5JTsgfQp9CgpAbWVkaWEgKG1pbi13aWR0aDog
+OTkzcHgpIHsgCiAgLnczLWNvbC5sMSB7IHdpZHRoOiA4LjMzMzMzJTsgfQogIC53My1jb2wubDIg
+eyB3aWR0aDogMTYuNjY2NjYlOyB9CiAgLnczLWNvbC5sMyB7IHdpZHRoOiAyNC45OTk5OSU7IH0K
+ICAudzMtY29sLmw0IHsgd2lkdGg6IDMzLjMzMzMzJTsgfQogIC53My1jb2wubDUgeyB3aWR0aDog
+NDEuNjY2NjYlOyB9CiAgLnczLWNvbC5sNiB7IHdpZHRoOiA0OS45OTk5OSU7IH0KICAudzMtY29s
+Lmw3IHsgd2lkdGg6IDU4LjMzMzMzJTsgfQogIC53My1jb2wubDggeyB3aWR0aDogNjYuNjY2NjYl
+OyB9CiAgLnczLWNvbC5sOSB7IHdpZHRoOiA3NC45OTk5OSU7IH0KICAudzMtY29sLmwxMCB7IHdp
+ZHRoOiA4My4zMzMzMyU7IH0KICAudzMtY29sLmwxMSB7IHdpZHRoOiA5MS42NjY2NiU7IH0KICAu
+dzMtY29sLmwxMiB7IHdpZHRoOiA5OS45OTk5OSU7IH0KfQoKLnczLXJlc3QgeyBvdmVyZmxvdy14
+OiBoaWRkZW47IG92ZXJmbG93LXk6IGhpZGRlbjsgfQoKLnczLXN0cmV0Y2ggeyBtYXJnaW4tbGVm
+dDogLTE2cHg7IG1hcmdpbi1yaWdodDogLTE2cHg7IH0KCi53My1jb250ZW50LCAudzMtYXV0byB7
+IG1hcmdpbi1sZWZ0OiBhdXRvOyBtYXJnaW4tcmlnaHQ6IGF1dG87IH0KCi53My1jb250ZW50IHsg
+bWF4LXdpZHRoOiA5ODBweDsgfQoKLnczLWF1dG8geyBtYXgtd2lkdGg6IDExNDBweDsgfQoKLncz
+LWNlbGwtcm93IHsgZGlzcGxheTogdGFibGU7IHdpZHRoOiAxMDAlOyB9CgoudzMtY2VsbCB7IGRp
+c3BsYXk6IHRhYmxlLWNlbGw7IH0KCi53My1jZWxsLXRvcCB7IHZlcnRpY2FsLWFsaWduOiB0b3A7
+IH0KCi53My1jZWxsLW1pZGRsZSB7IHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7IH0KCi53My1jZWxs
+LWJvdHRvbSB7IHZlcnRpY2FsLWFsaWduOiBib3R0b207IH0KCi53My1oaWRlIHsgZGlzcGxheTog
+bm9uZSAhaW1wb3J0YW50OyB9CgoudzMtc2hvdy1ibG9jaywgLnczLXNob3cgeyBkaXNwbGF5OiBi
+bG9jayAhaW1wb3J0YW50OyB9CgoudzMtc2hvdy1pbmxpbmUtYmxvY2sgeyBkaXNwbGF5OiBpbmxp
+bmUtYmxvY2sgIWltcG9ydGFudDsgfQoKQG1lZGlhIChtYXgtd2lkdGg6IDEyMDVweCkgeyAKICAu
+dzMtYXV0byB7IG1heC13aWR0aDogOTUlOyB9Cn0KCkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkg
+eyAKICAudzMtbW9kYWwtY29udGVudCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAx
+MHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAxMHB4OyB3aWR0aDogYXV0byAh
+aW1wb3J0YW50OyB9CiAgLnczLW1vZGFsIHsgcGFkZGluZy10b3A6IDMwcHg7IH0KICAudzMtZHJv
+cGRvd24taG92ZXIudzMtbW9iaWxlIC53My1kcm9wZG93bi1jb250ZW50LCAudzMtZHJvcGRvd24t
+Y2xpY2sudzMtbW9iaWxlIC53My1kcm9wZG93bi1jb250ZW50IHsgcG9zaXRpb246IHJlbGF0aXZl
+OyB9CiAgLnczLWhpZGUtc21hbGwgeyBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7IH0KICAudzMt
+bW9iaWxlIHsgZGlzcGxheTogYmxvY2s7IHdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7IH0KICAudzMt
+YmFyLWl0ZW0udzMtbW9iaWxlLCAudzMtZHJvcGRvd24taG92ZXIudzMtbW9iaWxlLCAudzMtZHJv
+cGRvd24tY2xpY2sudzMtbW9iaWxlIHsgdGV4dC1hbGlnbjogY2VudGVyOyB9CiAgLnczLWRyb3Bk
+b3duLWhvdmVyLnczLW1vYmlsZSwgLnczLWRyb3Bkb3duLWhvdmVyLnczLW1vYmlsZSAudzMtYnRu
+LCAudzMtZHJvcGRvd24taG92ZXIudzMtbW9iaWxlIC53My1idXR0b24sIC53My1kcm9wZG93bi1j
+bGljay53My1tb2JpbGUsIC53My1kcm9wZG93bi1jbGljay53My1tb2JpbGUgLnczLWJ0biwgLncz
+LWRyb3Bkb3duLWNsaWNrLnczLW1vYmlsZSAudzMtYnV0dG9uIHsgd2lkdGg6IDEwMCU7IH0KfQoK
+QG1lZGlhIChtYXgtd2lkdGg6IDc2OHB4KSB7IAogIC53My1tb2RhbC1jb250ZW50IHsgd2lkdGg6
+IDUwMHB4OyB9CiAgLnczLW1vZGFsIHsgcGFkZGluZy10b3A6IDUwcHg7IH0KfQoKQG1lZGlhICht
+aW4td2lkdGg6IDk5M3B4KSB7IAogIC53My1tb2RhbC1jb250ZW50IHsgd2lkdGg6IDkwMHB4OyB9
+CiAgLnczLWhpZGUtbGFyZ2UgeyBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7IH0KICAudzMtc2lk
+ZWJhci53My1jb2xsYXBzZSB7IGRpc3BsYXk6IGJsb2NrICFpbXBvcnRhbnQ7IH0KfQoKQG1lZGlh
+IChtYXgtd2lkdGg6IDk5MnB4KSBhbmQgKG1pbi13aWR0aDogNjAxcHgpIHsgCiAgLnczLWhpZGUt
+bWVkaXVtIHsgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OyB9Cn0KCkBtZWRpYSAobWF4LXdpZHRo
+OiA5OTJweCkgeyAKICAudzMtc2lkZWJhci53My1jb2xsYXBzZSB7IGRpc3BsYXk6IG5vbmU7IH0K
+ICAudzMtbWFpbiB7IG1hcmdpbi1sZWZ0OiAwcHggIWltcG9ydGFudDsgbWFyZ2luLXJpZ2h0OiAw
+cHggIWltcG9ydGFudDsgfQogIC53My1hdXRvIHsgbWF4LXdpZHRoOiAxMDAlOyB9Cn0KCi53My10
+b3AsIC53My1ib3R0b20geyBwb3NpdGlvbjogZml4ZWQ7IHdpZHRoOiAxMDAlOyB6LWluZGV4OiAx
+OyB9CgoudzMtdG9wIHsgdG9wOiAwcHg7IH0KCi53My1ib3R0b20geyBib3R0b206IDBweDsgfQoK
+LnczLW92ZXJsYXkgeyBwb3NpdGlvbjogZml4ZWQ7IGRpc3BsYXk6IG5vbmU7IHdpZHRoOiAxMDAl
+OyBoZWlnaHQ6IDEwMCU7IHRvcDogMHB4OyBsZWZ0OiAwcHg7IHJpZ2h0OiAwcHg7IGJvdHRvbTog
+MHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNDk2MDk0KTsgei1pbmRleDog
+MjsgfQoKLnczLWRpc3BsYXktdG9wbGVmdCB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgbGVmdDogMHB4
+OyB0b3A6IDBweDsgfQoKLnczLWRpc3BsYXktdG9wcmlnaHQgeyBwb3NpdGlvbjogYWJzb2x1dGU7
+IHJpZ2h0OiAwcHg7IHRvcDogMHB4OyB9CgoudzMtZGlzcGxheS1ib3R0b21sZWZ0IHsgcG9zaXRp
+b246IGFic29sdXRlOyBsZWZ0OiAwcHg7IGJvdHRvbTogMHB4OyB9CgoudzMtZGlzcGxheS1ib3R0
+b21yaWdodCB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgcmlnaHQ6IDBweDsgYm90dG9tOiAwcHg7IH0K
+Ci53My1kaXNwbGF5LW1pZGRsZSB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9wOiA1MCU7IGxlZnQ6
+IDUwJTsgfQoKLnczLWRpc3BsYXktbGVmdCB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9wOiA1MCU7
+IGxlZnQ6IDAlOyB9CgoudzMtZGlzcGxheS1yaWdodCB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9w
+OiA1MCU7IHJpZ2h0OiAwJTsgfQoKLnczLWRpc3BsYXktdG9wbWlkZGxlIHsgcG9zaXRpb246IGFi
+c29sdXRlOyBsZWZ0OiA1MCU7IHRvcDogMHB4OyB9CgoudzMtZGlzcGxheS1ib3R0b21taWRkbGUg
+eyBwb3NpdGlvbjogYWJzb2x1dGU7IGxlZnQ6IDUwJTsgYm90dG9tOiAwcHg7IH0KCi53My1kaXNw
+bGF5LWNvbnRhaW5lcjpob3ZlciAudzMtZGlzcGxheS1ob3ZlciB7IGRpc3BsYXk6IGJsb2NrOyB9
+CgoudzMtZGlzcGxheS1jb250YWluZXI6aG92ZXIgc3Bhbi53My1kaXNwbGF5LWhvdmVyIHsgZGlz
+cGxheTogaW5saW5lLWJsb2NrOyB9CgoudzMtZGlzcGxheS1ob3ZlciB7IGRpc3BsYXk6IG5vbmU7
+IH0KCi53My1kaXNwbGF5LXBvc2l0aW9uIHsgcG9zaXRpb246IGFic29sdXRlOyB9CgoudzMtY2ly
+Y2xlIHsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogNTAlOyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1
+czogNTAlOyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogNTAlOyBib3JkZXItYm90dG9tLWxl
+ZnQtcmFkaXVzOiA1MCU7IH0KCi53My1yb3VuZC1zbWFsbCB7IGJvcmRlci10b3AtbGVmdC1yYWRp
+dXM6IDJweDsgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDJweDsgYm9yZGVyLWJvdHRvbS1yaWdo
+dC1yYWRpdXM6IDJweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMnB4OyB9CgoudzMtcm91
+bmQsIC53My1yb3VuZC1tZWRpdW0geyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiA0cHg7IGJvcmRl
+ci10b3AtcmlnaHQtcmFkaXVzOiA0cHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiA0cHg7
+IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDRweDsgfQoKLnczLXJvdW5kLWxhcmdlIHsgYm9y
+ZGVyLXRvcC1sZWZ0LXJhZGl1czogOHB4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogOHB4OyBi
+b3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogOHB4OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVz
+OiA4cHg7IH0KCi53My1yb3VuZC14bGFyZ2UgeyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxNnB4
+OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTZweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRp
+dXM6IDE2cHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDE2cHg7IH0KCi53My1yb3VuZC14
+eGxhcmdlIHsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMzJweDsgYm9yZGVyLXRvcC1yaWdodC1y
+YWRpdXM6IDMycHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAzMnB4OyBib3JkZXItYm90
+dG9tLWxlZnQtcmFkaXVzOiAzMnB4OyB9CgoudzMtcm93LXBhZGRpbmcsIC53My1yb3ctcGFkZGlu
+ZyA+IC53My1oYWxmLCAudzMtcm93LXBhZGRpbmcgPiAudzMtdGhpcmQsIC53My1yb3ctcGFkZGlu
+ZyA+IC53My10d290aGlyZCwgLnczLXJvdy1wYWRkaW5nID4gLnczLXRocmVlcXVhcnRlciwgLncz
+LXJvdy1wYWRkaW5nID4gLnczLXF1YXJ0ZXIsIC53My1yb3ctcGFkZGluZyA+IC53My1jb2wgeyBw
+YWRkaW5nLXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiA4cHg7IHBhZGRpbmctYm90dG9tOiAwcHg7
+IHBhZGRpbmctbGVmdDogOHB4OyB9CgoudzMtY29udGFpbmVyLCAudzMtcGFuZWwgeyBwYWRkaW5n
+LXRvcDogMC4wMWVtOyBwYWRkaW5nLXJpZ2h0OiAxNnB4OyBwYWRkaW5nLWJvdHRvbTogMC4wMWVt
+OyBwYWRkaW5nLWxlZnQ6IDE2cHg7IH0KCi53My1wYW5lbCB7IG1hcmdpbi10b3A6IDE2cHg7IG1h
+cmdpbi1ib3R0b206IDE2cHg7IH0KCi53My1jb2RlLCAudzMtY29kZXNwYW4geyBmb250LWZhbWls
+eTogQ29uc29sYXMsICdjb3VyaWVyIG5ldyc7IGZvbnQtc2l6ZTogMTZweDsgfQoKLnczLWNvZGUg
+eyB3aWR0aDogYXV0bzsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBwYWRk
+aW5nLXRvcDogOHB4OyBwYWRkaW5nLXJpZ2h0OiAxMnB4OyBwYWRkaW5nLWJvdHRvbTogOHB4OyBw
+YWRkaW5nLWxlZnQ6IDEycHg7IGJvcmRlci1sZWZ0LXdpZHRoOiA0cHg7IGJvcmRlci1sZWZ0LXN0
+eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig3NiwgMTc1LCA4MCk7IHdvcmQtd3Jh
+cDogYnJlYWstd29yZDsgfQoKLnczLWNvZGVzcGFuIHsgY29sb3I6IHJnYigyMjAsIDIwLCA2MCk7
+IGJhY2tncm91bmQtY29sb3I6IHJnYigyNDEsIDI0MSwgMjQxKTsgcGFkZGluZy1sZWZ0OiA0cHg7
+IHBhZGRpbmctcmlnaHQ6IDRweDsgZm9udC1zaXplOiAxMTAlOyB9CgoudzMtY2FyZCwgLnczLWNh
+cmQtMiB7IGJveC1zaGFkb3c6IHJnYmEoMCwgMCwgMCwgMC4xNTYyNSkgMHB4IDJweCA1cHggMHB4
+LCByZ2JhKDAsIDAsIDAsIDAuMTE3MTg4KSAwcHggMnB4IDEwcHggMHB4OyB9CgoudzMtY2FyZC00
+LCAudzMtaG92ZXItc2hhZG93OmhvdmVyIHsgYm94LXNoYWRvdzogcmdiYSgwLCAwLCAwLCAwLjE5
+OTIxOSkgMHB4IDRweCAxMHB4IDBweCwgcmdiYSgwLCAwLCAwLCAwLjE4NzUpIDBweCA0cHggMjBw
+eCAwcHg7IH0KCi53My1zcGluIHsgfQoKLnczLWFuaW1hdGUtZmFkaW5nIHsgfQoKLnczLWFuaW1h
+dGUtb3BhY2l0eSB7IH0KCi53My1hbmltYXRlLXRvcCB7IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoK
+LnczLWFuaW1hdGUtbGVmdCB7IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoKLnczLWFuaW1hdGUtcmln
+aHQgeyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KCi53My1hbmltYXRlLWJvdHRvbSB7IHBvc2l0aW9u
+OiByZWxhdGl2ZTsgfQoKLnczLWFuaW1hdGUtem9vbSB7IH0KCi53My1hbmltYXRlLWlucHV0IHsg
+LXdlYmtpdC10cmFuc2l0aW9uLXByb3BlcnR5OiB3aWR0aDsgLXdlYmtpdC10cmFuc2l0aW9uLWR1
+cmF0aW9uOiAwLjRzOyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLWlu
+LW91dDsgLXdlYmtpdC10cmFuc2l0aW9uLWRlbGF5OiBpbml0aWFsOyB9CgoudzMtYW5pbWF0ZS1p
+bnB1dDpmb2N1cyB7IHdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7IH0KCi53My1vcGFjaXR5LCAudzMt
+aG92ZXItb3BhY2l0eTpob3ZlciB7IG9wYWNpdHk6IDAuNjsgfQoKLnczLW9wYWNpdHktb2ZmLCAu
+dzMtaG92ZXItb3BhY2l0eS1vZmY6aG92ZXIgeyBvcGFjaXR5OiAxOyB9CgoudzMtb3BhY2l0eS1t
+YXggeyBvcGFjaXR5OiAwLjI1OyB9CgoudzMtb3BhY2l0eS1taW4geyBvcGFjaXR5OiAwLjc1OyB9
+CgoudzMtZ3JleXNjYWxlLW1heCwgLnczLWdyYXlzY2FsZS1tYXgsIC53My1ob3Zlci1ncmV5c2Nh
+bGU6aG92ZXIsIC53My1ob3Zlci1ncmF5c2NhbGU6aG92ZXIgeyB9CgoudzMtZ3JleXNjYWxlLCAu
+dzMtZ3JheXNjYWxlIHsgfQoKLnczLWdyZXlzY2FsZS1taW4sIC53My1ncmF5c2NhbGUtbWluIHsg
+fQoKLnczLXNlcGlhIHsgfQoKLnczLXNlcGlhLW1heCwgLnczLWhvdmVyLXNlcGlhOmhvdmVyIHsg
+fQoKLnczLXNlcGlhLW1pbiB7IH0KCi53My10aW55IHsgZm9udC1zaXplOiAxMHB4ICFpbXBvcnRh
+bnQ7IH0KCi53My1zbWFsbCB7IGZvbnQtc2l6ZTogMTJweCAhaW1wb3J0YW50OyB9CgoudzMtbWVk
+aXVtIHsgZm9udC1zaXplOiAxNXB4ICFpbXBvcnRhbnQ7IH0KCi53My1sYXJnZSB7IGZvbnQtc2l6
+ZTogMThweCAhaW1wb3J0YW50OyB9CgoudzMteGxhcmdlIHsgZm9udC1zaXplOiAyNHB4ICFpbXBv
+cnRhbnQ7IH0KCi53My14eGxhcmdlIHsgZm9udC1zaXplOiAzNnB4ICFpbXBvcnRhbnQ7IH0KCi53
+My14eHhsYXJnZSB7IGZvbnQtc2l6ZTogNDhweCAhaW1wb3J0YW50OyB9CgoudzMtanVtYm8geyBm
+b250LXNpemU6IDY0cHggIWltcG9ydGFudDsgfQoKLnczLWxlZnQtYWxpZ24geyB0ZXh0LWFsaWdu
+OiBsZWZ0ICFpbXBvcnRhbnQ7IH0KCi53My1yaWdodC1hbGlnbiB7IHRleHQtYWxpZ246IHJpZ2h0
+ICFpbXBvcnRhbnQ7IH0KCi53My1qdXN0aWZ5IHsgdGV4dC1hbGlnbjoganVzdGlmeSAhaW1wb3J0
+YW50OyB9CgoudzMtY2VudGVyIHsgdGV4dC1hbGlnbjogY2VudGVyICFpbXBvcnRhbnQ7IH0KCi53
+My1ib3JkZXItMCB7IGJvcmRlci10b3Atd2lkdGg6IDBweCAhaW1wb3J0YW50OyBib3JkZXItcmln
+aHQtd2lkdGg6IDBweCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHggIWltcG9y
+dGFudDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweCAhaW1wb3J0YW50OyBib3JkZXItc3R5bGU6IGlu
+aXRpYWwgIWltcG9ydGFudDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJvcmRl
+ci1pbWFnZTogaW5pdGlhbCAhaW1wb3J0YW50OyB9CgoudzMtYm9yZGVyIHsgYm9yZGVyLXRvcC13
+aWR0aDogMXB4ICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC13aWR0aDogMXB4ICFpbXBvcnRhbnQ7
+IGJvcmRlci1ib3R0b20td2lkdGg6IDFweCAhaW1wb3J0YW50OyBib3JkZXItbGVmdC13aWR0aDog
+MXB4ICFpbXBvcnRhbnQ7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkICFpbXBvcnRhbnQ7IGJvcmRl
+ci1yaWdodC1zdHlsZTogc29saWQgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29s
+aWQgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkICFpbXBvcnRhbnQ7IGJvcmRl
+ci10b3AtY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KSAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQt
+Y29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KSAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLWNvbG9y
+OiByZ2IoMjA0LCAyMDQsIDIwNCkgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigy
+MDQsIDIwNCwgMjA0KSAhaW1wb3J0YW50OyBib3JkZXItaW1hZ2U6IGluaXRpYWwgIWltcG9ydGFu
+dDsgfQoKLnczLWJvcmRlci10b3AgeyBib3JkZXItdG9wLXdpZHRoOiAxcHggIWltcG9ydGFudDsg
+Ym9yZGVyLXRvcC1zdHlsZTogc29saWQgIWltcG9ydGFudDsgYm9yZGVyLXRvcC1jb2xvcjogcmdi
+KDIwNCwgMjA0LCAyMDQpICFpbXBvcnRhbnQ7IH0KCi53My1ib3JkZXItYm90dG9tIHsgYm9yZGVy
+LWJvdHRvbS13aWR0aDogMXB4ICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlk
+ICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KSAhaW1w
+b3J0YW50OyB9CgoudzMtYm9yZGVyLWxlZnQgeyBib3JkZXItbGVmdC13aWR0aDogMXB4ICFpbXBv
+cnRhbnQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZCAhaW1wb3J0YW50OyBib3JkZXItbGVmdC1j
+b2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpICFpbXBvcnRhbnQ7IH0KCi53My1ib3JkZXItcmlnaHQg
+eyBib3JkZXItcmlnaHQtd2lkdGg6IDFweCAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtc3R5bGU6
+IHNvbGlkICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQp
+ICFpbXBvcnRhbnQ7IH0KCi53My10b3BiYXIgeyBib3JkZXItdG9wLXdpZHRoOiA2cHggIWltcG9y
+dGFudDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQgIWltcG9ydGFudDsgYm9yZGVyLXRvcC1jb2xv
+cjogcmdiKDIwNCwgMjA0LCAyMDQpICFpbXBvcnRhbnQ7IH0KCi53My1ib3R0b21iYXIgeyBib3Jk
+ZXItYm90dG9tLXdpZHRoOiA2cHggIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29s
+aWQgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpICFp
+bXBvcnRhbnQ7IH0KCi53My1sZWZ0YmFyIHsgYm9yZGVyLWxlZnQtd2lkdGg6IDZweCAhaW1wb3J0
+YW50OyBib3JkZXItbGVmdC1zdHlsZTogc29saWQgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29s
+b3I6IHJnYigyMDQsIDIwNCwgMjA0KSAhaW1wb3J0YW50OyB9CgoudzMtcmlnaHRiYXIgeyBib3Jk
+ZXItcmlnaHQtd2lkdGg6IDZweCAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlk
+ICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpICFpbXBv
+cnRhbnQ7IH0KCi53My1zZWN0aW9uLCAudzMtY29kZSB7IG1hcmdpbi10b3A6IDE2cHggIWltcG9y
+dGFudDsgbWFyZ2luLWJvdHRvbTogMTZweCAhaW1wb3J0YW50OyB9CgoudzMtbWFyZ2luIHsgbWFy
+Z2luLXRvcDogMTZweCAhaW1wb3J0YW50OyBtYXJnaW4tcmlnaHQ6IDE2cHggIWltcG9ydGFudDsg
+bWFyZ2luLWJvdHRvbTogMTZweCAhaW1wb3J0YW50OyBtYXJnaW4tbGVmdDogMTZweCAhaW1wb3J0
+YW50OyB9CgoudzMtbWFyZ2luLXRvcCB7IG1hcmdpbi10b3A6IDE2cHggIWltcG9ydGFudDsgfQoK
+LnczLW1hcmdpbi1ib3R0b20geyBtYXJnaW4tYm90dG9tOiAxNnB4ICFpbXBvcnRhbnQ7IH0KCi53
+My1tYXJnaW4tbGVmdCB7IG1hcmdpbi1sZWZ0OiAxNnB4ICFpbXBvcnRhbnQ7IH0KCi53My1tYXJn
+aW4tcmlnaHQgeyBtYXJnaW4tcmlnaHQ6IDE2cHggIWltcG9ydGFudDsgfQoKLnczLXBhZGRpbmct
+c21hbGwgeyBwYWRkaW5nLXRvcDogNHB4ICFpbXBvcnRhbnQ7IHBhZGRpbmctcmlnaHQ6IDhweCAh
+aW1wb3J0YW50OyBwYWRkaW5nLWJvdHRvbTogNHB4ICFpbXBvcnRhbnQ7IHBhZGRpbmctbGVmdDog
+OHB4ICFpbXBvcnRhbnQ7IH0KCi53My1wYWRkaW5nIHsgcGFkZGluZy10b3A6IDhweCAhaW1wb3J0
+YW50OyBwYWRkaW5nLXJpZ2h0OiAxNnB4ICFpbXBvcnRhbnQ7IHBhZGRpbmctYm90dG9tOiA4cHgg
+IWltcG9ydGFudDsgcGFkZGluZy1sZWZ0OiAxNnB4ICFpbXBvcnRhbnQ7IH0KCi53My1wYWRkaW5n
+LWxhcmdlIHsgcGFkZGluZy10b3A6IDEycHggIWltcG9ydGFudDsgcGFkZGluZy1yaWdodDogMjRw
+eCAhaW1wb3J0YW50OyBwYWRkaW5nLWJvdHRvbTogMTJweCAhaW1wb3J0YW50OyBwYWRkaW5nLWxl
+ZnQ6IDI0cHggIWltcG9ydGFudDsgfQoKLnczLXBhZGRpbmctMTYgeyBwYWRkaW5nLXRvcDogMTZw
+eCAhaW1wb3J0YW50OyBwYWRkaW5nLWJvdHRvbTogMTZweCAhaW1wb3J0YW50OyB9CgoudzMtcGFk
+ZGluZy0yNCB7IHBhZGRpbmctdG9wOiAyNHB4ICFpbXBvcnRhbnQ7IHBhZGRpbmctYm90dG9tOiAy
+NHB4ICFpbXBvcnRhbnQ7IH0KCi53My1wYWRkaW5nLTMyIHsgcGFkZGluZy10b3A6IDMycHggIWlt
+cG9ydGFudDsgcGFkZGluZy1ib3R0b206IDMycHggIWltcG9ydGFudDsgfQoKLnczLXBhZGRpbmct
+NDggeyBwYWRkaW5nLXRvcDogNDhweCAhaW1wb3J0YW50OyBwYWRkaW5nLWJvdHRvbTogNDhweCAh
+aW1wb3J0YW50OyB9CgoudzMtcGFkZGluZy02NCB7IHBhZGRpbmctdG9wOiA2NHB4ICFpbXBvcnRh
+bnQ7IHBhZGRpbmctYm90dG9tOiA2NHB4ICFpbXBvcnRhbnQ7IH0KCi53My1sZWZ0IHsgZmxvYXQ6
+IGxlZnQgIWltcG9ydGFudDsgfQoKLnczLXJpZ2h0IHsgZmxvYXQ6IHJpZ2h0ICFpbXBvcnRhbnQ7
+IH0KCi53My1idXR0b246aG92ZXIgeyBjb2xvcjogcmdiKDAsIDAsIDApICFpbXBvcnRhbnQ7IGJh
+Y2tncm91bmQtY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KSAhaW1wb3J0YW50OyB9CgoudzMtdHJh
+bnNwYXJlbnQsIC53My1ob3Zlci1ub25lOmhvdmVyIHsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNw
+YXJlbnQgIWltcG9ydGFudDsgfQoKLnczLWhvdmVyLW5vbmU6aG92ZXIgeyBib3gtc2hhZG93OiBu
+b25lICFpbXBvcnRhbnQ7IH0KCi53My1hbWJlciwgLnczLWhvdmVyLWFtYmVyOmhvdmVyIHsgY29s
+b3I6IHJnYigwLCAwLCAwKSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAx
+OTMsIDcpICFpbXBvcnRhbnQ7IH0KCi53My1hcXVhLCAudzMtaG92ZXItYXF1YTpob3ZlciB7IGNv
+bG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDAsIDI1
+NSwgMjU1KSAhaW1wb3J0YW50OyB9CgoudzMtYmx1ZSwgLnczLWhvdmVyLWJsdWU6aG92ZXIgeyBj
+b2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY29sb3I6IHJn
+YigzMywgMTUwLCAyNDMpICFpbXBvcnRhbnQ7IH0KCi53My1saWdodC1ibHVlLCAudzMtaG92ZXIt
+bGlnaHQtYmx1ZTpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsgYmFja2dy
+b3VuZC1jb2xvcjogcmdiKDEzNSwgMjA2LCAyMzUpICFpbXBvcnRhbnQ7IH0KCi53My1icm93biwg
+LnczLWhvdmVyLWJyb3duOmhvdmVyIHsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KSAhaW1wb3J0
+YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTIxLCA4NSwgNzIpICFpbXBvcnRhbnQ7IH0KCi53
+My1jeWFuLCAudzMtaG92ZXItY3lhbjpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9y
+dGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDAsIDE4OCwgMjEyKSAhaW1wb3J0YW50OyB9Cgou
+dzMtYmx1ZS1ncmV5LCAudzMtaG92ZXItYmx1ZS1ncmV5OmhvdmVyLCAudzMtYmx1ZS1ncmF5LCAu
+dzMtaG92ZXItYmx1ZS1ncmF5OmhvdmVyIHsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KSAhaW1w
+b3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoOTYsIDEyNSwgMTM5KSAhaW1wb3J0YW50OyB9
+CgoudzMtZ3JlZW4sIC53My1ob3Zlci1ncmVlbjpob3ZlciB7IGNvbG9yOiByZ2IoMjU1LCAyNTUs
+IDI1NSkgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDc2LCAxNzUsIDgwKSAhaW1w
+b3J0YW50OyB9CgoudzMtbGlnaHQtZ3JlZW4sIC53My1ob3Zlci1saWdodC1ncmVlbjpob3ZlciB7
+IGNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEz
+OSwgMTk1LCA3NCkgIWltcG9ydGFudDsgfQoKLnczLWluZGlnbywgLnczLWhvdmVyLWluZGlnbzpo
+b3ZlciB7IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSkgIWltcG9ydGFudDsgYmFja2dyb3VuZC1j
+b2xvcjogcmdiKDYzLCA4MSwgMTgxKSAhaW1wb3J0YW50OyB9CgoudzMta2hha2ksIC53My1ob3Zl
+ci1raGFraTpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsgYmFja2dyb3Vu
+ZC1jb2xvcjogcmdiKDI0MCwgMjMwLCAxNDApICFpbXBvcnRhbnQ7IH0KCi53My1saW1lLCAudzMt
+aG92ZXItbGltZTpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsgYmFja2dy
+b3VuZC1jb2xvcjogcmdiKDIwNSwgMjIwLCA1NykgIWltcG9ydGFudDsgfQoKLnczLW9yYW5nZSwg
+LnczLWhvdmVyLW9yYW5nZTpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsg
+YmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMTUyLCAwKSAhaW1wb3J0YW50OyB9CgoudzMtZGVl
+cC1vcmFuZ2UsIC53My1ob3Zlci1kZWVwLW9yYW5nZTpob3ZlciB7IGNvbG9yOiByZ2IoMjU1LCAy
+NTUsIDI1NSkgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgODcsIDM0KSAh
+aW1wb3J0YW50OyB9CgoudzMtcGluaywgLnczLWhvdmVyLXBpbms6aG92ZXIgeyBjb2xvcjogcmdi
+KDI1NSwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY29sb3I6IHJnYigyMzMsIDMw
+LCA5OSkgIWltcG9ydGFudDsgfQoKLnczLXB1cnBsZSwgLnczLWhvdmVyLXB1cnBsZTpob3ZlciB7
+IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSkgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjog
+cmdiKDE1NiwgMzksIDE3NikgIWltcG9ydGFudDsgfQoKLnczLWRlZXAtcHVycGxlLCAudzMtaG92
+ZXItZGVlcC1wdXJwbGU6aG92ZXIgeyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpICFpbXBvcnRh
+bnQ7IGJhY2tncm91bmQtY29sb3I6IHJnYigxMDMsIDU4LCAxODMpICFpbXBvcnRhbnQ7IH0KCi53
+My1yZWQsIC53My1ob3Zlci1yZWQ6aG92ZXIgeyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpICFp
+bXBvcnRhbnQ7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNDQsIDY3LCA1NCkgIWltcG9ydGFudDsg
+fQoKLnczLXNhbmQsIC53My1ob3Zlci1zYW5kOmhvdmVyIHsgY29sb3I6IHJnYigwLCAwLCAwKSAh
+aW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjUzLCAyNDUsIDIzMCkgIWltcG9ydGFu
+dDsgfQoKLnczLXRlYWwsIC53My1ob3Zlci10ZWFsOmhvdmVyIHsgY29sb3I6IHJnYigyNTUsIDI1
+NSwgMjU1KSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMCwgMTUwLCAxMzYpICFp
+bXBvcnRhbnQ7IH0KCi53My15ZWxsb3csIC53My1ob3Zlci15ZWxsb3c6aG92ZXIgeyBjb2xvcjog
+cmdiKDAsIDAsIDApICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDIzNSwg
+NTkpICFpbXBvcnRhbnQ7IH0KCi53My13aGl0ZSwgLnczLWhvdmVyLXdoaXRlOmhvdmVyIHsgY29s
+b3I6IHJnYigwLCAwLCAwKSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAy
+NTUsIDI1NSkgIWltcG9ydGFudDsgfQoKLnczLWJsYWNrLCAudzMtaG92ZXItYmxhY2s6aG92ZXIg
+eyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY29sb3I6
+IHJnYigwLCAwLCAwKSAhaW1wb3J0YW50OyB9CgoudzMtZ3JleSwgLnczLWhvdmVyLWdyZXk6aG92
+ZXIsIC53My1ncmF5LCAudzMtaG92ZXItZ3JheTpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMCwgMCkg
+IWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE1OCwgMTU4LCAxNTgpICFpbXBvcnRh
+bnQ7IH0KCi53My1saWdodC1ncmV5LCAudzMtaG92ZXItbGlnaHQtZ3JleTpob3ZlciwgLnczLWxp
+Z2h0LWdyYXksIC53My1ob3Zlci1saWdodC1ncmF5OmhvdmVyIHsgY29sb3I6IHJnYigwLCAwLCAw
+KSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQxLCAyNDEsIDI0MSkgIWltcG9y
+dGFudDsgfQoKLnczLWRhcmstZ3JleSwgLnczLWhvdmVyLWRhcmstZ3JleTpob3ZlciwgLnczLWRh
+cmstZ3JheSwgLnczLWhvdmVyLWRhcmstZ3JheTpob3ZlciB7IGNvbG9yOiByZ2IoMjU1LCAyNTUs
+IDI1NSkgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDk3LCA5NywgOTcpICFpbXBv
+cnRhbnQ7IH0KCi53My1wYWxlLXJlZCwgLnczLWhvdmVyLXBhbGUtcmVkOmhvdmVyIHsgY29sb3I6
+IHJnYigwLCAwLCAwKSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyMjEs
+IDIyMSkgIWltcG9ydGFudDsgfQoKLnczLXBhbGUtZ3JlZW4sIC53My1ob3Zlci1wYWxlLWdyZWVu
+OmhvdmVyIHsgY29sb3I6IHJnYigwLCAwLCAwKSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9y
+OiByZ2IoMjIxLCAyNTUsIDIyMSkgIWltcG9ydGFudDsgfQoKLnczLXBhbGUteWVsbG93LCAudzMt
+aG92ZXItcGFsZS15ZWxsb3c6aG92ZXIgeyBjb2xvcjogcmdiKDAsIDAsIDApICFpbXBvcnRhbnQ7
+IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjA0KSAhaW1wb3J0YW50OyB9CgoudzMt
+cGFsZS1ibHVlLCAudzMtaG92ZXItcGFsZS1ibHVlOmhvdmVyIHsgY29sb3I6IHJnYigwLCAwLCAw
+KSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjIxLCAyNTUsIDI1NSkgIWltcG9y
+dGFudDsgfQoKLnczLXRleHQtYW1iZXIsIC53My1ob3Zlci10ZXh0LWFtYmVyOmhvdmVyIHsgY29s
+b3I6IHJnYigyNTUsIDE5MywgNykgIWltcG9ydGFudDsgfQoKLnczLXRleHQtYXF1YSwgLnczLWhv
+dmVyLXRleHQtYXF1YTpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7
+IH0KCi53My10ZXh0LWJsdWUsIC53My1ob3Zlci10ZXh0LWJsdWU6aG92ZXIgeyBjb2xvcjogcmdi
+KDMzLCAxNTAsIDI0MykgIWltcG9ydGFudDsgfQoKLnczLXRleHQtbGlnaHQtYmx1ZSwgLnczLWhv
+dmVyLXRleHQtbGlnaHQtYmx1ZTpob3ZlciB7IGNvbG9yOiByZ2IoMTM1LCAyMDYsIDIzNSkgIWlt
+cG9ydGFudDsgfQoKLnczLXRleHQtYnJvd24sIC53My1ob3Zlci10ZXh0LWJyb3duOmhvdmVyIHsg
+Y29sb3I6IHJnYigxMjEsIDg1LCA3MikgIWltcG9ydGFudDsgfQoKLnczLXRleHQtY3lhbiwgLncz
+LWhvdmVyLXRleHQtY3lhbjpob3ZlciB7IGNvbG9yOiByZ2IoMCwgMTg4LCAyMTIpICFpbXBvcnRh
+bnQ7IH0KCi53My10ZXh0LWJsdWUtZ3JleSwgLnczLWhvdmVyLXRleHQtYmx1ZS1ncmV5OmhvdmVy
+LCAudzMtdGV4dC1ibHVlLWdyYXksIC53My1ob3Zlci10ZXh0LWJsdWUtZ3JheTpob3ZlciB7IGNv
+bG9yOiByZ2IoOTYsIDEyNSwgMTM5KSAhaW1wb3J0YW50OyB9CgoudzMtdGV4dC1ncmVlbiwgLncz
+LWhvdmVyLXRleHQtZ3JlZW46aG92ZXIgeyBjb2xvcjogcmdiKDc2LCAxNzUsIDgwKSAhaW1wb3J0
+YW50OyB9CgoudzMtdGV4dC1saWdodC1ncmVlbiwgLnczLWhvdmVyLXRleHQtbGlnaHQtZ3JlZW46
+aG92ZXIgeyBjb2xvcjogcmdiKDEzOSwgMTk1LCA3NCkgIWltcG9ydGFudDsgfQoKLnczLXRleHQt
+aW5kaWdvLCAudzMtaG92ZXItdGV4dC1pbmRpZ286aG92ZXIgeyBjb2xvcjogcmdiKDYzLCA4MSwg
+MTgxKSAhaW1wb3J0YW50OyB9CgoudzMtdGV4dC1raGFraSwgLnczLWhvdmVyLXRleHQta2hha2k6
+aG92ZXIgeyBjb2xvcjogcmdiKDE4MCwgMTcwLCA4MCkgIWltcG9ydGFudDsgfQoKLnczLXRleHQt
+bGltZSwgLnczLWhvdmVyLXRleHQtbGltZTpob3ZlciB7IGNvbG9yOiByZ2IoMjA1LCAyMjAsIDU3
+KSAhaW1wb3J0YW50OyB9CgoudzMtdGV4dC1vcmFuZ2UsIC53My1ob3Zlci10ZXh0LW9yYW5nZTpo
+b3ZlciB7IGNvbG9yOiByZ2IoMjU1LCAxNTIsIDApICFpbXBvcnRhbnQ7IH0KCi53My10ZXh0LWRl
+ZXAtb3JhbmdlLCAudzMtaG92ZXItdGV4dC1kZWVwLW9yYW5nZTpob3ZlciB7IGNvbG9yOiByZ2Io
+MjU1LCA4NywgMzQpICFpbXBvcnRhbnQ7IH0KCi53My10ZXh0LXBpbmssIC53My1ob3Zlci10ZXh0
+LXBpbms6aG92ZXIgeyBjb2xvcjogcmdiKDIzMywgMzAsIDk5KSAhaW1wb3J0YW50OyB9CgoudzMt
+dGV4dC1wdXJwbGUsIC53My1ob3Zlci10ZXh0LXB1cnBsZTpob3ZlciB7IGNvbG9yOiByZ2IoMTU2
+LCAzOSwgMTc2KSAhaW1wb3J0YW50OyB9CgoudzMtdGV4dC1kZWVwLXB1cnBsZSwgLnczLWhvdmVy
+LXRleHQtZGVlcC1wdXJwbGU6aG92ZXIgeyBjb2xvcjogcmdiKDEwMywgNTgsIDE4MykgIWltcG9y
+dGFudDsgfQoKLnczLXRleHQtcmVkLCAudzMtaG92ZXItdGV4dC1yZWQ6aG92ZXIgeyBjb2xvcjog
+cmdiKDI0NCwgNjcsIDU0KSAhaW1wb3J0YW50OyB9CgoudzMtdGV4dC1zYW5kLCAudzMtaG92ZXIt
+dGV4dC1zYW5kOmhvdmVyIHsgY29sb3I6IHJnYigyNTMsIDI0NSwgMjMwKSAhaW1wb3J0YW50OyB9
+CgoudzMtdGV4dC10ZWFsLCAudzMtaG92ZXItdGV4dC10ZWFsOmhvdmVyIHsgY29sb3I6IHJnYigw
+LCAxNTAsIDEzNikgIWltcG9ydGFudDsgfQoKLnczLXRleHQteWVsbG93LCAudzMtaG92ZXItdGV4
+dC15ZWxsb3c6aG92ZXIgeyBjb2xvcjogcmdiKDIxMCwgMTkwLCAxNCkgIWltcG9ydGFudDsgfQoK
+LnczLXRleHQtd2hpdGUsIC53My1ob3Zlci10ZXh0LXdoaXRlOmhvdmVyIHsgY29sb3I6IHJnYigy
+NTUsIDI1NSwgMjU1KSAhaW1wb3J0YW50OyB9CgoudzMtdGV4dC1ibGFjaywgLnczLWhvdmVyLXRl
+eHQtYmxhY2s6aG92ZXIgeyBjb2xvcjogcmdiKDAsIDAsIDApICFpbXBvcnRhbnQ7IH0KCi53My10
+ZXh0LWdyZXksIC53My1ob3Zlci10ZXh0LWdyZXk6aG92ZXIsIC53My10ZXh0LWdyYXksIC53My1o
+b3Zlci10ZXh0LWdyYXk6aG92ZXIgeyBjb2xvcjogcmdiKDExNywgMTE3LCAxMTcpICFpbXBvcnRh
+bnQ7IH0KCi53My10ZXh0LWxpZ2h0LWdyZXksIC53My1ob3Zlci10ZXh0LWxpZ2h0LWdyZXk6aG92
+ZXIsIC53My10ZXh0LWxpZ2h0LWdyYXksIC53My1ob3Zlci10ZXh0LWxpZ2h0LWdyYXk6aG92ZXIg
+eyBjb2xvcjogcmdiKDI0MSwgMjQxLCAyNDEpICFpbXBvcnRhbnQ7IH0KCi53My10ZXh0LWRhcmst
+Z3JleSwgLnczLWhvdmVyLXRleHQtZGFyay1ncmV5OmhvdmVyLCAudzMtdGV4dC1kYXJrLWdyYXks
+IC53My1ob3Zlci10ZXh0LWRhcmstZ3JheTpob3ZlciB7IGNvbG9yOiByZ2IoNTgsIDU4LCA1OCkg
+IWltcG9ydGFudDsgfQoKLnczLWJvcmRlci1hbWJlciwgLnczLWhvdmVyLWJvcmRlci1hbWJlcjpo
+b3ZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyNTUsIDE5MywgNykgIWltcG9ydGFudDsgYm9y
+ZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjU1LCAxOTMsIDcpICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0
+b20tY29sb3I6IHJnYigyNTUsIDE5MywgNykgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6
+IHJnYigyNTUsIDE5MywgNykgIWltcG9ydGFudDsgfQoKLnczLWJvcmRlci1hcXVhLCAudzMtaG92
+ZXItYm9yZGVyLWFxdWE6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMCwgMjU1LCAyNTUp
+ICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDAsIDI1NSwgMjU1KSAhaW1wb3J0
+YW50OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMCwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IGJv
+cmRlci1sZWZ0LWNvbG9yOiByZ2IoMCwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IH0KCi53My1ib3Jk
+ZXItYmx1ZSwgLnczLWhvdmVyLWJvcmRlci1ibHVlOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjog
+cmdiKDMzLCAxNTAsIDI0MykgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMzMs
+IDE1MCwgMjQzKSAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMzMsIDE1MCwg
+MjQzKSAhaW1wb3J0YW50OyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDMzLCAxNTAsIDI0MykgIWlt
+cG9ydGFudDsgfQoKLnczLWJvcmRlci1saWdodC1ibHVlLCAudzMtaG92ZXItYm9yZGVyLWxpZ2h0
+LWJsdWU6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMTM1LCAyMDYsIDIzNSkgIWltcG9y
+dGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTM1LCAyMDYsIDIzNSkgIWltcG9ydGFudDsg
+Ym9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDEzNSwgMjA2LCAyMzUpICFpbXBvcnRhbnQ7IGJvcmRl
+ci1sZWZ0LWNvbG9yOiByZ2IoMTM1LCAyMDYsIDIzNSkgIWltcG9ydGFudDsgfQoKLnczLWJvcmRl
+ci1icm93biwgLnczLWhvdmVyLWJvcmRlci1icm93bjpob3ZlciB7IGJvcmRlci10b3AtY29sb3I6
+IHJnYigxMjEsIDg1LCA3MikgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTIx
+LCA4NSwgNzIpICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxMjEsIDg1LCA3
+MikgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigxMjEsIDg1LCA3MikgIWltcG9y
+dGFudDsgfQoKLnczLWJvcmRlci1jeWFuLCAudzMtaG92ZXItYm9yZGVyLWN5YW46aG92ZXIgeyBi
+b3JkZXItdG9wLWNvbG9yOiByZ2IoMCwgMTg4LCAyMTIpICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdo
+dC1jb2xvcjogcmdiKDAsIDE4OCwgMjEyKSAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLWNvbG9y
+OiByZ2IoMCwgMTg4LCAyMTIpICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMCwg
+MTg4LCAyMTIpICFpbXBvcnRhbnQ7IH0KCi53My1ib3JkZXItYmx1ZS1ncmV5LCAudzMtaG92ZXIt
+Ym9yZGVyLWJsdWUtZ3JleTpob3ZlciwgLnczLWJvcmRlci1ibHVlLWdyYXksIC53My1ob3Zlci1i
+b3JkZXItYmx1ZS1ncmF5OmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDk2LCAxMjUsIDEz
+OSkgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoOTYsIDEyNSwgMTM5KSAhaW1w
+b3J0YW50OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoOTYsIDEyNSwgMTM5KSAhaW1wb3J0YW50
+OyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDk2LCAxMjUsIDEzOSkgIWltcG9ydGFudDsgfQoKLncz
+LWJvcmRlci1ncmVlbiwgLnczLWhvdmVyLWJvcmRlci1ncmVlbjpob3ZlciB7IGJvcmRlci10b3At
+Y29sb3I6IHJnYig3NiwgMTc1LCA4MCkgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiBy
+Z2IoNzYsIDE3NSwgODApICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYig3Niwg
+MTc1LCA4MCkgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig3NiwgMTc1LCA4MCkg
+IWltcG9ydGFudDsgfQoKLnczLWJvcmRlci1saWdodC1ncmVlbiwgLnczLWhvdmVyLWJvcmRlci1s
+aWdodC1ncmVlbjpob3ZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigxMzksIDE5NSwgNzQpICFp
+bXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDEzOSwgMTk1LCA3NCkgIWltcG9ydGFu
+dDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDEzOSwgMTk1LCA3NCkgIWltcG9ydGFudDsgYm9y
+ZGVyLWxlZnQtY29sb3I6IHJnYigxMzksIDE5NSwgNzQpICFpbXBvcnRhbnQ7IH0KCi53My1ib3Jk
+ZXItaW5kaWdvLCAudzMtaG92ZXItYm9yZGVyLWluZGlnbzpob3ZlciB7IGJvcmRlci10b3AtY29s
+b3I6IHJnYig2MywgODEsIDE4MSkgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2Io
+NjMsIDgxLCAxODEpICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYig2MywgODEs
+IDE4MSkgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig2MywgODEsIDE4MSkgIWlt
+cG9ydGFudDsgfQoKLnczLWJvcmRlci1raGFraSwgLnczLWhvdmVyLWJvcmRlci1raGFraTpob3Zl
+ciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyNDAsIDIzMCwgMTQwKSAhaW1wb3J0YW50OyBib3Jk
+ZXItcmlnaHQtY29sb3I6IHJnYigyNDAsIDIzMCwgMTQwKSAhaW1wb3J0YW50OyBib3JkZXItYm90
+dG9tLWNvbG9yOiByZ2IoMjQwLCAyMzAsIDE0MCkgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29s
+b3I6IHJnYigyNDAsIDIzMCwgMTQwKSAhaW1wb3J0YW50OyB9CgoudzMtYm9yZGVyLWxpbWUsIC53
+My1ob3Zlci1ib3JkZXItbGltZTpob3ZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDUsIDIy
+MCwgNTcpICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIwNSwgMjIwLCA1Nykg
+IWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIwNSwgMjIwLCA1NykgIWltcG9y
+dGFudDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMDUsIDIyMCwgNTcpICFpbXBvcnRhbnQ7IH0K
+Ci53My1ib3JkZXItb3JhbmdlLCAudzMtaG92ZXItYm9yZGVyLW9yYW5nZTpob3ZlciB7IGJvcmRl
+ci10b3AtY29sb3I6IHJnYigyNTUsIDE1MiwgMCkgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNv
+bG9yOiByZ2IoMjU1LCAxNTIsIDApICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJn
+YigyNTUsIDE1MiwgMCkgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyNTUsIDE1
+MiwgMCkgIWltcG9ydGFudDsgfQoKLnczLWJvcmRlci1kZWVwLW9yYW5nZSwgLnczLWhvdmVyLWJv
+cmRlci1kZWVwLW9yYW5nZTpob3ZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyNTUsIDg3LCAz
+NCkgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjU1LCA4NywgMzQpICFpbXBv
+cnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyNTUsIDg3LCAzNCkgIWltcG9ydGFudDsg
+Ym9yZGVyLWxlZnQtY29sb3I6IHJnYigyNTUsIDg3LCAzNCkgIWltcG9ydGFudDsgfQoKLnczLWJv
+cmRlci1waW5rLCAudzMtaG92ZXItYm9yZGVyLXBpbms6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9y
+OiByZ2IoMjMzLCAzMCwgOTkpICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIz
+MywgMzAsIDk5KSAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjMzLCAzMCwg
+OTkpICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjMzLCAzMCwgOTkpICFpbXBv
+cnRhbnQ7IH0KCi53My1ib3JkZXItcHVycGxlLCAudzMtaG92ZXItYm9yZGVyLXB1cnBsZTpob3Zl
+ciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigxNTYsIDM5LCAxNzYpICFpbXBvcnRhbnQ7IGJvcmRl
+ci1yaWdodC1jb2xvcjogcmdiKDE1NiwgMzksIDE3NikgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRv
+bS1jb2xvcjogcmdiKDE1NiwgMzksIDE3NikgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6
+IHJnYigxNTYsIDM5LCAxNzYpICFpbXBvcnRhbnQ7IH0KCi53My1ib3JkZXItZGVlcC1wdXJwbGUs
+IC53My1ob3Zlci1ib3JkZXItZGVlcC1wdXJwbGU6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9yOiBy
+Z2IoMTAzLCA1OCwgMTgzKSAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigxMDMs
+IDU4LCAxODMpICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxMDMsIDU4LCAx
+ODMpICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMTAzLCA1OCwgMTgzKSAhaW1w
+b3J0YW50OyB9CgoudzMtYm9yZGVyLXJlZCwgLnczLWhvdmVyLWJvcmRlci1yZWQ6aG92ZXIgeyBi
+b3JkZXItdG9wLWNvbG9yOiByZ2IoMjQ0LCA2NywgNTQpICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdo
+dC1jb2xvcjogcmdiKDI0NCwgNjcsIDU0KSAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLWNvbG9y
+OiByZ2IoMjQ0LCA2NywgNTQpICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjQ0
+LCA2NywgNTQpICFpbXBvcnRhbnQ7IH0KCi53My1ib3JkZXItc2FuZCwgLnczLWhvdmVyLWJvcmRl
+ci1zYW5kOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDI1MywgMjQ1LCAyMzApICFpbXBv
+cnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDI1MywgMjQ1LCAyMzApICFpbXBvcnRhbnQ7
+IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyNTMsIDI0NSwgMjMwKSAhaW1wb3J0YW50OyBib3Jk
+ZXItbGVmdC1jb2xvcjogcmdiKDI1MywgMjQ1LCAyMzApICFpbXBvcnRhbnQ7IH0KCi53My1ib3Jk
+ZXItdGVhbCwgLnczLWhvdmVyLWJvcmRlci10ZWFsOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjog
+cmdiKDAsIDE1MCwgMTM2KSAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigwLCAx
+NTAsIDEzNikgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDAsIDE1MCwgMTM2
+KSAhaW1wb3J0YW50OyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDAsIDE1MCwgMTM2KSAhaW1wb3J0
+YW50OyB9CgoudzMtYm9yZGVyLXllbGxvdywgLnczLWhvdmVyLWJvcmRlci15ZWxsb3c6aG92ZXIg
+eyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjU1LCAyMzUsIDU5KSAhaW1wb3J0YW50OyBib3JkZXIt
+cmlnaHQtY29sb3I6IHJnYigyNTUsIDIzNSwgNTkpICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20t
+Y29sb3I6IHJnYigyNTUsIDIzNSwgNTkpICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiBy
+Z2IoMjU1LCAyMzUsIDU5KSAhaW1wb3J0YW50OyB9CgoudzMtYm9yZGVyLXdoaXRlLCAudzMtaG92
+ZXItYm9yZGVyLXdoaXRlOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDI1NSwgMjU1LCAy
+NTUpICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpICFp
+bXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KSAhaW1wb3J0
+YW50OyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IH0K
+Ci53My1ib3JkZXItYmxhY2ssIC53My1ob3Zlci1ib3JkZXItYmxhY2s6aG92ZXIgeyBib3JkZXIt
+dG9wLWNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiBy
+Z2IoMCwgMCwgMCkgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDAsIDAsIDAp
+ICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsg
+fQoKLnczLWJvcmRlci1ncmV5LCAudzMtaG92ZXItYm9yZGVyLWdyZXk6aG92ZXIsIC53My1ib3Jk
+ZXItZ3JheSwgLnczLWhvdmVyLWJvcmRlci1ncmF5OmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjog
+cmdiKDE1OCwgMTU4LCAxNTgpICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDE1
+OCwgMTU4LCAxNTgpICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxNTgsIDE1
+OCwgMTU4KSAhaW1wb3J0YW50OyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDE1OCwgMTU4LCAxNTgp
+ICFpbXBvcnRhbnQ7IH0KCi53My1ib3JkZXItbGlnaHQtZ3JleSwgLnczLWhvdmVyLWJvcmRlci1s
+aWdodC1ncmV5OmhvdmVyLCAudzMtYm9yZGVyLWxpZ2h0LWdyYXksIC53My1ob3Zlci1ib3JkZXIt
+bGlnaHQtZ3JheTpob3ZlciB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyNDEsIDI0MSwgMjQxKSAh
+aW1wb3J0YW50OyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyNDEsIDI0MSwgMjQxKSAhaW1wb3J0
+YW50OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjQxLCAyNDEsIDI0MSkgIWltcG9ydGFudDsg
+Ym9yZGVyLWxlZnQtY29sb3I6IHJnYigyNDEsIDI0MSwgMjQxKSAhaW1wb3J0YW50OyB9CgoudzMt
+Ym9yZGVyLWRhcmstZ3JleSwgLnczLWhvdmVyLWJvcmRlci1kYXJrLWdyZXk6aG92ZXIsIC53My1i
+b3JkZXItZGFyay1ncmF5LCAudzMtaG92ZXItYm9yZGVyLWRhcmstZ3JheTpob3ZlciB7IGJvcmRl
+ci10b3AtY29sb3I6IHJnYig5NywgOTcsIDk3KSAhaW1wb3J0YW50OyBib3JkZXItcmlnaHQtY29s
+b3I6IHJnYig5NywgOTcsIDk3KSAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2Io
+OTcsIDk3LCA5NykgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig5NywgOTcsIDk3
+KSAhaW1wb3J0YW50OyB9CgoudzMtYm9yZGVyLXBhbGUtcmVkLCAudzMtaG92ZXItYm9yZGVyLXBh
+bGUtcmVkOmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDI1NSwgMjMxLCAyMzEpICFpbXBv
+cnRhbnQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDI1NSwgMjMxLCAyMzEpICFpbXBvcnRhbnQ7
+IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyNTUsIDIzMSwgMjMxKSAhaW1wb3J0YW50OyBib3Jk
+ZXItbGVmdC1jb2xvcjogcmdiKDI1NSwgMjMxLCAyMzEpICFpbXBvcnRhbnQ7IH0KCi53My1ib3Jk
+ZXItcGFsZS1ncmVlbiwgLnczLWhvdmVyLWJvcmRlci1wYWxlLWdyZWVuOmhvdmVyIHsgYm9yZGVy
+LXRvcC1jb2xvcjogcmdiKDIzMSwgMjU1LCAyMzEpICFpbXBvcnRhbnQ7IGJvcmRlci1yaWdodC1j
+b2xvcjogcmdiKDIzMSwgMjU1LCAyMzEpICFpbXBvcnRhbnQ7IGJvcmRlci1ib3R0b20tY29sb3I6
+IHJnYigyMzEsIDI1NSwgMjMxKSAhaW1wb3J0YW50OyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIz
+MSwgMjU1LCAyMzEpICFpbXBvcnRhbnQ7IH0KCi53My1ib3JkZXItcGFsZS15ZWxsb3csIC53My1o
+b3Zlci1ib3JkZXItcGFsZS15ZWxsb3c6aG92ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjU1
+LCAyNTUsIDIwNCkgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjU1LCAyNTUs
+IDIwNCkgIWltcG9ydGFudDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDI1NSwgMjU1LCAyMDQp
+ICFpbXBvcnRhbnQ7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjU1LCAyNTUsIDIwNCkgIWltcG9y
+dGFudDsgfQoKLnczLWJvcmRlci1wYWxlLWJsdWUsIC53My1ob3Zlci1ib3JkZXItcGFsZS1ibHVl
+OmhvdmVyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIzMSwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7
+IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIzMSwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IGJvcmRl
+ci1ib3R0b20tY29sb3I6IHJnYigyMzEsIDI1NSwgMjU1KSAhaW1wb3J0YW50OyBib3JkZXItbGVm
+dC1jb2xvcjogcmdiKDIzMSwgMjU1LCAyNTUpICFpbXBvcnRhbnQ7IH0=
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.w3schools.com/images/colorpicker.gif
+
+R0lGODlhUABEAPf/AGVo/ppm/7VgVGn/aJv/m2JoMZqZ/5wyZ/9om2n+NmUyAWWcmowAAJv/ZwJn
+av+baF5xu6GxJTSZZv3M/v//zc3///7Mzf+YNGiaAwH+/wGa/gAB/gFmAf7+As1p/wOWAQL8AwBp
+/P0BAP+ZAWj/nPsB/P81mf39/WgD/M0BAJjMADM0/gD8lzNmAf4CZlqgX80A/83/zcw0ms3M/f7M
+Af0wAv9pzc2Z/jXOMACZzf9RUv5p/gCWMM7/aP/NaDPNzv9paMwBmQLN/5gz/2j+/mbM/wH+zf7/
+aQCZmDWYNDQ0mP9nAWiZ/8ww/2j/zWgCzQHMZwFmzNGXAKO+l69XmgFmmjJo/5fO/7MGD8wBZ5j/
+zAHNAhO4hZkAzLuYVDMyzMz/mf6Z/v7+mv+amcwAzDAwqcz/MzJmzM7PAP+ZzP8zzZhlAAOzCAAC
+z5iYaf/MmbIHzQDmqjPM/wAzmJgvMrV9Agqx8v2k/f+yTTGX/8AC95v/NgDMmZk1mQAyzC9P/wBK
+/pkA/jKOjtf/R9io+ETX/5kDM5kCmcEqkv+2DPIzrneUygA2sIBNB78Jmv9vIMqxBf/4vf9JAx20
+JKTGDJhlNFKL/5gyAAZ4o+odgzNmmABYvhm1z6sl/wDvSlQTy8POs9P/pyTt06f/0//VrNng0//9
+M/+k0IOtdMwAuLB4Z/b17ir/q+v19DBppf8cZObV8f9WPf/WLPXs++oNyB/59f9LzPfq7pgdr78A
+TdJM/6f3K0ip/0SFANWkuUD1Sf9hVoKTV1P/0q74/3q1/6fG/wbHOlj6//44/rzYzb9x2QTUuRWt
+rd6510ElrlRU3f/5YNDsHWYu/xcg+CKqveTo37HkGN+CJHd2SDU/35wpnq0+49U0AQAfsv+lrCS+
+L//MWf+gLKYgpq2AI9UOIKK1yQBJ3oTWHCL/m1QS5X0m1JhzTLROD6YzAN8gXuEhZABilR56G+Yz
+mOsgt7UYtRCJxh+5mv8+gBK6XK2gfZaeU8F9kMuOu8Kkhfg/Pv///yH5BAEAAP8ALAAAAABQAEQA
+AAj/AP8JHEiwoMGDCBMqXMiwYcJWCyIuWESxokWKEDJq3KjxmUePG2E5HLlwgYOTDjSpVOnqjMuX
+c2LKnBmzW5ubN8so2QnhBMmfBUuhPLmS5UuYNJPaxNlG504l5YBKPSFoaMqiLY+eSaqUadOnO2dJ
+/VnOqoMqK13Vq3c0yiZGMhnBlbkU57QvTncuGjuylVV4VarAw1Qvh+Ec9aIoVvzWj2M/jGxumLxh
+2orLK7LlncG3oUmUgQMPPnx48eLHjylTtox5xZenPTsrTGY1tGBMpA2bVozaserJrDG/fhpV9kGq
+tUOPzr07Sm8/vyu3dg1WiVjjBZNVRYkEk+DB1DiR/7ajwXS9EOYemwM0bfWfP63xgoWAnSDEiJiQ
+6NePidqP/z9wYocQBAqhQT0aJKgBeiE0GAJ7f1ghoRWufWGhfDtxVt8/5UgkyH76MQMggAUWqKCC
+Djo44YTZXGhhXrFhV4pEC3wIoogj/lAigScmmGKDK0rYoot5QYXdCTTWCCISOI64o4E9/hhCkFYM
+eWGRSlRjHChJ2rPkMqKMKMqT5J2YR4pWWBLkM1Z+8Ykz88lWjQR0LmAPH3jywcwyRvRphCiiZCBo
+BgTKYagc5OWhqKJpMuGomgBECsAzX6SDwqXpOOPMJ08Q0hkqdErARZ54xuGnn4MOeuihiy7q6KtM
+SP8qqTSX1orCE7iqcx1QyYQqKql8mHqqEakKuqqhrSoKq6OyRkqrrbfi+oQyUrXygq+jkirsqcVm
+cKwcyeaxbKzNPmurtLiK9NMUvv6q7bCi1JJqLYUcy0urvBAzbrNDQButtNv8VEoSBEuADxQIQxEs
+Cwyz8KcwTjghTC21HEMEEcfUW8TGRfCS7xUg62vAyCMDEMDJAfSLwhAsD4FrIIF46tAJLxCcxMEJ
+QxFHwwyzEvHPTlwsNBEccwzy0VeQTDLKTLfMcicwB9LJrguBYvPNOevMMws+Ax300EQXXQTSICs9
+MtMoOz0E1FF70FArV2Od8848dw002GEXTXbSZqP/fbLabEetrkKoxG1M1p5sbffPeF8hdjFIF2O2
+AX5vA3jUMG/jU0LJcMBBPElMssXoh3sCwumJo0PC6iRErMXrWlw8TAUVDON4MTPkDnkxN/ROsgfA
+o9zE8E2srQcMMOgBcxddyHxcEp5zwMbo1J9uPQi/sM467K+PQvv3FeQu/gy9l38D8Oh7oAvxxCPv
+vh7Md0EP1QRNEb301I9+/enZa08C91rwHvjCNz7yme986VMf+4bnPuTBL37UMkg14nG/6eVvf9jz
+3/+4J0DwFdCA5kugAhfYwOTFj3mDG8gL7oe//G1hf/3THgA7+L0PEuKAIlwfCRv4wPhpjiCguF88
+/3hARAvi4IjW+8UABsA6AjiRAN2LgRRp14oTnGAWuYPFBLZ4wxuE4Yvo24EYdViCMrqPDGiEwwlv
+MJBVUNBzRIwjD75xxDoqcYl4fOITpcjHGFjxjyfYoiAncIcvGlKMiNwBMsrIyBKg8ZFqZB4croOK
++8mRiHSsIw7uiMcB6NGJfZQiIK04yC0W0pBhSKQYF9lIRz6SDJFkXgRXGL1LzlGTm+zkEj9JgFD6
+cZSlJCQqU6lKVjbylbBco0Ba8cbPXXISuORkHj/py1EGspSnPGQxW+lKSPpwc/+wn+daMEQifuAD
+bMjkLxKQADw24J16BAMYQsFHClBgFVa8hQX2Kf/IU6QhDYa0gUARaQs1qIGRtAhCEFKBRnpoAxco
+LMgLWkBRip7zoh/AATs3OoB3erQB8gxpKOxJUgrs86QW8Oc//ynQltqgoAY16DwUSlNHaKMPOO1D
+BAlSiopaFKMZ3ehGP/rOkMpzpCU1KUpTulKWuvSlMZUpTRXqiJz2gQr0EwgqfArUoAo1AUQFqVGR
+WtKlMrWpT4VqVGc61armtBkIWUUBKtpVjX41rEadZ1KVilKVrjStMI0pW2uaUyqA0yCg8Gk8LtoL
+DJxDqHvYw0d70AORikEMkbBnJEjxBlKc1Btj8MZKEUDaltrCBIqIqSJkgAhHUPUQh7hpCg8SDJ//
+tqCxGMitYyPL2wZQ9rc9uKxwxcDZNxj3DaAdg3LHQNrmIuC0JoguamVAXeoiArbY3WlCqmFb3Or2
+HLzlLXApO9zLHve4y12uc0l7D+lGVx7VtS52DyGOrB5kCj71bm7BG949jDe45T2vcdOr3PUioL3u
+hW98r4td5y3kBNioqH5329//llcMAn4DgZm7XgRLV8HVZfAhqECSnlK0ALrNrQqswdtdmGEQwD3C
+EYbrAx+c9wEPSC8QgODce7ggEx+OL2sPcADYzpYhqCiAkpWMARU42ckuNoOUXyzjKh+hxlj2AY63
+jOMde9nHLgjzj4UsAyKbmR9AWQU2llyACDzZ/8nWmLKUB2HlI0AjyzXmcpe9vONXiDnMmRAyIsx8
+ACqsQiqgYLOb3xxnOdPZynfGs54fwOc+/3nMQiY0XMfihiU3mdFypjKk8axlPVcaCH7+c6AzTeR9
+dKYaSsaGPhatAkqgIRpy7oApoCFjaMhCFuDAMh4uwOULPAIYXgaGP1Id5iwgIsSEvoVsphAMN1hb
+H7ZGg7Zv3YFud9sUsqCBuGkgi2Ff4NznXoK6l3BsHbhbB/5wQRbmPe9BE9oXxjlBPqxt7Qhse9ve
+9va4x41udK973bF4t7vdQe95E7rQh+VLKfjtBn//Gw0B7/bAxV3wdB98CQlXOMMb/vBNY2cK/P+2
++LajkfEObJwGHb/Ax0GucB28o+FZILSrN7QKfo8DEv+GBA0CToNEDDwR6A6HsSVxcEnUwB/v9gc5
+ckFyM0t7Q/8AxToqwfWfQ0IKYBc6DUZA9hEkIhFKR/cjnF6DGkjC6SKI+9PJkYK6Tz0Xhsj7AfCN
+9X+cQBVc7zrYBy+Fspc95m1PfA3izngR1P3xKcBC3vUe8fqUIvCVGAfhwW54siNe8YtvvOMhH/nJ
+G8Lkff9HPwKv+c13fgSfV7zoRw95yed956kXyCq2Xok11IHwvze8FK6R9GtwA/QpED0WSG97Olw9
+9wIBRSMUQP1G1KEOa8j+76WAfd9f4xrsuMSAJdpxfCww4PzJN//5GRB5OrifDnyH/kAqQf3qZ//+
++L+/+Pd/ifX7///v536qIH9BUX8K0Aj5l4BrwH/i938OyAABSAdHJn/5UH8IqID4x4D994D+F4D9
+QIAGsQqqsA7roApecIIomIInqAos2IIC8IIwGIMwyIL7cGggeINYFxAAOw==
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.w3schools.com/images/w3schoolscom_gray.gif
+
+R0lGODlhlgAcAOZVAKqqqrOzs/7+/s7Ozv39/crKyrKyssfHx7q6uvv7+/z8/Pr6+tXV1fX19c3N
+zfj4+LCwsPn5+fb29vPz88nJybu7u8bGxq2trb+/v9PT09DQ0MPDw7y8vLm5ufDw8LS0tLGxsczM
+zK6urunp6aurq+vr69nZ2c/Pz8TExNLS0tHR0cvLy7i4uOjo6O/v79bW1sLCwt/f3+Xl5ebm5sXF
+xd3d3b29vcjIyK+vr9vb26ysrLW1tfT09PLy8re3t8DAwMHBwdTU1Pf399zc3La2tt7e3uDg4PHx
+8e7u7tjY2L6+vuPj4+fn5+Hh4dfX1+Li4uzs7OTk5Nra2u3t7erq6v///wAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAFUALAAAAACWABwAAAf/gFUtGwGFhoeIiAYBGzNVj5CRkpOUlZaXmJmam5yQIxAAoaKjpKWi
+IiWdqqusra6YMKays6EHr7e4ubqPAbS+pAgPu8PExZQGv6UXQCEnDkAXACwNxtXWub3Joh9LCZAJ
+MkQf1Nfl5pzZ2gGpVQsTC49QNj3n9faU6b8kMY9LSh9KojySQY9VghgMmhAw9mBIEEf3WuXzFYDa
+kXQ7JlQRsJCVBB8AbEQw5gIEAAsCIrISYWoHjAokRhF5UkIFKX6vJHQAgAFesZIADqRUqQpFhWij
+klQBeqqCkh2kitySgADAj46WBCzwVkkrV0gukAk1lsBnq6GPFgjhQGpJFR5E/0YBkbBgyKgPRx5F
+qKHBwYC/IVSQq+IhSd+/AyY8qBrAwYkBKWKMhDThxYEfG05AhNTjhQXMmsGKTbkghgq/f/0iodRD
+yukBDhyM0FtjBRAgK4ZMrlIjBOLff0+8cPFIwIgZLWZXyTCKhYRHBUbVeJQCgA4QFWQ8UkDBlA52
+MiYCYBKhKikSB7iWADnqgoqhLaC2z5AybNCNA2KWkioJCYtSDLQTCykbjCTAgLQQ4cEjTQxBww3e
+CLECC0RUINAjE8BABAsZeNPAfxh4oAAkJUTTmAappUCNBx8AQAIHITiwQgiKVQWCBTfQ0MsFVFQh
+RFUkwJCECi0C8EQVEvxHAv8KhvVCghFLifVWiwaEgCJiq0XyAFsAdBDjCgXMxkAoLDDgRAWhFLAQ
+CtZtcIAFJkFgwQH/ATAAhj0wQYUKI1bRgGKPjKBRAhOQQ0B3J0myRCghVFIdABoIEwlVVkXAkQmh
+TIcpACv4NEI0QFRRRCgDcNUCSzAQJqUHUmKSQy2DYQjKDnm9xRYqVbAJQQMCKIBBSAoI0INJHGD1
+CA4OSApJCxDQIISWK4jigwlM9NlCKAbcACYFDGhUhQUA4MDDJJT+wNUToeRQRQgAiKDcIzZGMIB1
+TETCWAKs3jcBMiAcsG0GC0YiQHc6bAZJDKFoEMkL6VZBAwAQPCfAr0oMtVP/BcZWgUwFGjghBQMU
+4BAKAiqYYIIG5pFigTARgFvKDgsCAcAHZkFCaU+PGBHKEFV0BwJxkGzQ7gTdidACJAT8KoIER0ip
+QHSlgKAd0mziwE4kSYRiQiSjAhDgw7tWkXRICymwU7GSiKfNKE488kANGcTNAA0xpVDFARDH+sjN
+PukMgLrsXvCuAGgaEIED1m0mwL35jhVBDEHIXQBLG2A1cOKTIAyACpE4sbPDeYv9qw1ln52x2rKI
+8MEHSImCEiVTgEJBFWNC2qfNVeFchd/qSpFmn0zoAMAGvIXiwFAzRIOCqkGhFUl5ACixgFYj1hDK
+ypJMMGutPKCJwxS5hj42/+lVmA0A2pGgbsoBERxOSgFIvhAEA/QnITQAdveATPQDnOB/jTzpW8N0
+cr0iBGF/AmkAe25QhAyAggRNiNJ9EmCCDNDPTAVQHgGawIEBCOABaAJABRzzmNkEYWQ5yIF5QpAS
+XVFjfKU73+nW9oMRyUA/ALiAdqAgCwU94gnsGQUTHgASG/hEc1urQglSFooLZKBPI9jJKETwgoUg
+ARQ0eAsooqad6nRgIVBgYigCFIGHkQIFzzpQDsdFALZgrHwg6cDteLG274mtCB2AQAdwgoQbFOCP
+f6RAEGr1CB4YQQOALMAREpABC7ygTyWgwA2O9gghmGADFcDACa62t0tmUqEDUIBEAwZgAZ5FQAUU
+AFMgU5AlGThyKEJYQgoASQFKJmAJBeAAByjQhK+Y4AYDEIYALMOAlBAgAzcIgvOqoL71cUUBDeDK
+A0JQkHIscxLXNIcAsimRtYViA+96RAt+sAO9EeWcxNifN3GwAQ0wQAMwEJlz0EnPYnDJm7KAQcbq
+yU9XWA+fsoBSPwf6CgK84AOLSIRCE2GAD6RgnwSNqCYCAQA7
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: wyciwyg://frame/3
+
+<html><head><meta charset=3D"UTF-8"></head><body></body></html>
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tpc.googlesyndication.com/safeframe/1-0-31/html/container.html
+
+<html><head><meta charset=3D"UTF-8">
+   =20
+    <title>SafeFrame Container</title>
+   =20
+  </head>
+  <body>
+ =20
+
+</body></html>
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: wyciwyg://frame/0
+
+<html><head><meta charset=3D"UTF-8"></head><body marginwidth=3D"0" marginhe=
+ight=3D"0"></body></html>
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: wyciwyg://frame/1
+
+<html><head><meta charset=3D"UTF-8"></head><body marginwidth=3D"0" marginhe=
+ight=3D"0"></body></html>
+------=_NextPart_000_5F56_20F7BC28.6195853F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: wyciwyg://frame/2
+
+<html><head><meta charset=3D"UTF-8"></head><body marginwidth=3D"0" marginhe=
+ight=3D"0"></body></html>
+------=_NextPart_000_5F56_20F7BC28.6195853F--

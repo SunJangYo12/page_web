@@ -1,0 +1,3608 @@
+From: <Saved by WebKit>
+Subject: Tutorial Teknik Informatika: Tutorial iptables dasar
+Date: Mon, 2 Dec 2018 18:45:39 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_FDA8_EDB265E2.25FD9082"
+
+------=_NextPart_000_FDA8_EDB265E2.25FD9082
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://sayfudinblogz.blogspot.com/2012/04/tutorial-iptables-dasar.html?m=1
+
+<html class=3D"v2" dir=3D"ltr" lang=3D"id"><head><meta charset=3D"UTF-8">
+<link href=3D"https://www.blogger.com/static/v1/widgets/1171200566-widget_c=
+ss_mobile_2_bundle.css" rel=3D"stylesheet" type=3D"text/css">
+<meta content=3D"width=3Ddevice-width,initial-scale=3D1.0,minimum-scale=3D1=
+.0,maximum-scale=3D1.0" name=3D"viewport">
+
+<meta content=3D"blogger" name=3D"generator">
+<link href=3D"https://sayfudinblogz.blogspot.com/favicon.ico" rel=3D"icon" =
+type=3D"image/x-icon">
+<link href=3D"https://sayfudinblogz.blogspot.com/2012/04/tutorial-iptables-=
+dasar.html" rel=3D"canonical">
+<link rel=3D"alternate" type=3D"application/atom+xml" title=3D"Tutorial Tek=
+nik Informatika - Atom" href=3D"https://sayfudinblogz.blogspot.com/feeds/po=
+sts/default">
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Tutorial Tekn=
+ik Informatika - RSS" href=3D"https://sayfudinblogz.blogspot.com/feeds/post=
+s/default?alt=3Drss">
+<link rel=3D"service.post" type=3D"application/atom+xml" title=3D"Tutorial =
+Teknik Informatika - Atom" href=3D"https://www.blogger.com/feeds/2927755096=
+860998226/posts/default">
+
+<link rel=3D"alternate" type=3D"application/atom+xml" title=3D"Tutorial Tek=
+nik Informatika - Atom" href=3D"https://sayfudinblogz.blogspot.com/feeds/89=
+39368635878210062/comments/default">
+<!--[if IE]><script type=3D"text/javascript" src=3D"https://www.blogger.com=
+/static/v1/jsbin/864213505-ieretrofit.js"></script>
+<![endif]-->
+<meta content=3D"https://sayfudinblogz.blogspot.com/2012/04/tutorial-iptabl=
+es-dasar.html" property=3D"og:url">
+<meta content=3D"Tutorial iptables dasar" property=3D"og:title">
+<meta content=3D"blog yang menyediakan kumpulan tutorial,pemrograman, tutor=
+ial php, pemrograman android, pemrograman c#,tutorial jaringan komputer, li=
+nux." property=3D"og:description">
+<!--[if IE]> <script> (function() { var html5 =3D ("abbr,article,aside,audi=
+o,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,=
+nav,output," + "progress,section,time,video").split(','); for (var i =3D 0;=
+ i < html5.length; i++) { document.createElement(html5[i]); } try { documen=
+t.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </s=
+cript> <![endif]-->
+<title>Tutorial Teknik Informatika: Tutorial iptables dasar</title>
+<style id=3D"page-skin-1" type=3D"text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #222222;
+background: #66bbdd none repeat scroll top left;
+padding: 0 10px 10px 10px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #2288bb;
+}
+a:visited {
+text-decoration:none;
+color: #888888;
+}
+a:hover {
+text-decoration:underline;
+color: #33aaff;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1k=
+t/simple/body_gradient_tile_light.png) repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1k=
+t/simple/gradients_light.png) repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 10px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #3399bb;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #3399bb;
+}
+.Header .description {
+font-size: 140%;
+color: #777777;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 30px;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 30px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 1px solid #dddddd;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #dddddd;
+border-left: 0 solid #dddddd;
+border-right: 0 solid #dddddd;
+}
+.tabs-inner .widget ul {
+background: #f5f5f5 url(https://resources.blogblog.com/blogblog/data/1kt/si=
+mple/gradients_light.png) repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #dddddd;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #dddddd;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #000000;
+background-color: #eeeeee;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #eeeeee;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #eeeeee;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid #eeeeee;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #000000;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: transparent;
+color: #222222;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
+}
+.main-inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.main-inner .column-center-inner {
+padding: 0 15px;
+}
+.main-inner .column-center-inner .section {
+margin: 0 15px;
+}
+.post {
+margin: 0 0 25px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 2px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 5px;
+}
+.post-body .tr-caption-container {
+color: #222222;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #666666;
+background-color: #f9f9f9;
+border-bottom: 1px solid #eeeeee;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #eeeeee;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #eeeeee;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAA=
+SCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACx=
+IB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm=
+1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8A=
+ZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj=
+8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur=
+75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYP=
+gAVNngtqatUNgAAAABJRU5ErkJggg=3D=3D);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #f9f9f9;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #eeeeee;
+}
+.blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #ffffff;
+padding: 5px;
+}
+.footer-outer {
+border-top: 0 dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #ffffff;
+}
+.mobile-index-contents {
+color: #222222;
+}
+.mobile-link-button {
+background-color: #2288bb;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #eeeeee;
+color: #000000;
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #dddddd;
+}
+
+--></style>
+<style id=3D"template-skin-1" type=3D"text/css"><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 0;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 0;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("0") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 0;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 0;
+margin-right: -0;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<link href=3D"https://www.blogger.com/dyn-css/authorization.css?targetBlogI=
+D=3D2927755096860998226&amp;zx=3Db14a947f-9a4d-439f-bba7-5374f45a4852" medi=
+a=3D"none" onload=3D"if(media!=3D'all')media=3D'all'" rel=3D"stylesheet">
+
+</head>
+<body class=3D" mobile variant-pale">
+<div class=3D"navbar no-items section" id=3D"navbar" name=3D"Navbar">
+</div>
+<div class=3D"body-fauxcolumns">
+<div class=3D"fauxcolumn-outer body-fauxcolumn-outer">
+<div class=3D"cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left">
+<div class=3D"fauxborder-right"></div>
+<div class=3D"fauxcolumn-inner">
+</div>
+</div>
+<div class=3D"cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+</div>
+<div class=3D"content">
+<div class=3D"content-fauxcolumns">
+<div class=3D"fauxcolumn-outer content-fauxcolumn-outer">
+<div class=3D"cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left">
+<div class=3D"fauxborder-right"></div>
+<div class=3D"fauxcolumn-inner">
+</div>
+</div>
+<div class=3D"cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+</div>
+<div class=3D"content-outer">
+<div class=3D"content-cap-top cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left content-fauxborder-left">
+<div class=3D"fauxborder-right content-fauxborder-right"></div>
+<div class=3D"content-inner">
+<header>
+<div class=3D"header-outer">
+<div class=3D"header-cap-top cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left header-fauxborder-left">
+<div class=3D"fauxborder-right header-fauxborder-right"></div>
+<div class=3D"region-inner header-inner">
+<div class=3D"header section" id=3D"header" name=3D"Tajuk"><div class=3D"wi=
+dget Header" data-version=3D"1" id=3D"Header1">
+<div id=3D"header-inner">
+<div class=3D"titlewrapper">
+<h1 class=3D"title">
+<a href=3D"https://sayfudinblogz.blogspot.com/?m=3D1">
+Tutorial Teknik Informatika
+</a>
+</h1>
+</div>
+<div class=3D"descriptionwrapper">
+<p class=3D"description"><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class=3D"header-cap-bottom cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+</header>
+<div class=3D"tabs-outer">
+<div class=3D"tabs-cap-top cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left tabs-fauxborder-left">
+<div class=3D"fauxborder-right tabs-fauxborder-right"></div>
+<div class=3D"region-inner tabs-inner">
+<div class=3D"tabs no-items section" id=3D"crosscol" name=3D"Seluruh Kolom"=
+></div>
+<div class=3D"tabs no-items section" id=3D"crosscol-overflow" name=3D"Cross=
+-Column 2"></div>
+</div>
+</div>
+<div class=3D"tabs-cap-bottom cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+<div class=3D"main-outer">
+<div class=3D"main-cap-top cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left main-fauxborder-left">
+<div class=3D"fauxborder-right main-fauxborder-right"></div>
+<div class=3D"region-inner main-inner">
+<div class=3D"columns fauxcolumns">
+<div class=3D"fauxcolumn-outer fauxcolumn-center-outer">
+<div class=3D"cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left">
+<div class=3D"fauxborder-right"></div>
+<div class=3D"fauxcolumn-inner">
+</div>
+</div>
+<div class=3D"cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+<div class=3D"fauxcolumn-outer fauxcolumn-left-outer">
+<div class=3D"cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left">
+<div class=3D"fauxborder-right"></div>
+<div class=3D"fauxcolumn-inner">
+</div>
+</div>
+<div class=3D"cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+<div class=3D"fauxcolumn-outer fauxcolumn-right-outer">
+<div class=3D"cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left">
+<div class=3D"fauxborder-right"></div>
+<div class=3D"fauxcolumn-inner">
+</div>
+</div>
+<div class=3D"cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class=3D"columns-inner">
+<div class=3D"column-center-outer">
+<div class=3D"column-center-inner">
+<div class=3D"main section" id=3D"main" name=3D"Utama"><div class=3D"widget=
+ Blog" data-version=3D"1" id=3D"Blog1">
+<div class=3D"blog-posts hfeed">
+<div class=3D"date-outer">
+<h2 class=3D"date-header"><span>Senin, 09 April 2012</span></h2>
+<div class=3D"date-posts">
+<div class=3D"post-outer">
+<div class=3D"post hentry uncustomized-post-template" itemscope=3D"itemscop=
+e" itemtype=3D"http://schema.org/BlogPosting">
+<meta content=3D"2927755096860998226" itemprop=3D"blogId">
+<meta content=3D"8939368635878210062" itemprop=3D"postId">
+<a name=3D"8939368635878210062"></a>
+<h3 class=3D"post-title entry-title" itemprop=3D"name">
+Tutorial iptables dasar
+</h3>
+<div class=3D"post-header">
+<div class=3D"post-header-line-1"></div>
+</div>
+<div class=3D"post-body entry-content" id=3D"post-body-8939368635878210062"=
+ itemprop=3D"articleBody">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>AR-SA</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val=3D"Cambria Math"/>
+   <m:brkBin m:val=3D"before"/>
+   <m:brkBinSub m:val=3D"--"/>
+   <m:smallFrac m:val=3D"off"/>
+   <m:dispDef/>
+   <m:lMargin m:val=3D"0"/>
+   <m:rMargin m:val=3D"0"/>
+   <m:defJc m:val=3D"centerGroup"/>
+   <m:wrapIndent m:val=3D"1440"/>
+   <m:intLim m:val=3D"subSup"/>
+   <m:naryLim m:val=3D"undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"true"
+  DefSemiHidden=3D"true" DefQFormat=3D"false" DefPriority=3D"99"
+  LatentStyleCount=3D"267">
+  <w:LsdException Locked=3D"false" Priority=3D"0" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Normal"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"false" UnhideWhenUsed=3D"f=
+alse"
+   QFormat=3D"true" Name=3D"heading 1"/>
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"heading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"35" QFormat=3D"true" Name=3D=
+"caption"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"false" UnhideWhenUsed=3D"f=
+alse"
+   QFormat=3D"true" Name=3D"Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default Paragraph=
+ Font"/>
+  <w:LsdException Locked=3D"false" Priority=3D"11" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtitle"/>
+  <w:LsdException Locked=3D"false" Priority=3D"22" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Strong"/>
+  <w:LsdException Locked=3D"false" Priority=3D"20" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"59" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Table Grid"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Placeho=
+lder Text"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"No Spacing"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Revisio=
+n"/>
+  <w:LsdException Locked=3D"false" Priority=3D"34" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"List Paragraph"/>
+  <w:LsdException Locked=3D"false" Priority=3D"29" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"30" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"19" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"21" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"31" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"32" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"33" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Book Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"37" Name=3D"Bibliography"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" QFormat=3D"true" Name=3D=
+"TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+ {mso-style-name:"Table Normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-priority:99;
+ mso-style-qformat:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Calibri","sans-serif";
+ mso-bidi-font-family:"Times New Roman";}
+</style>
+<![endif]-->
+
+<br>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; mso-outline-level: 2;">
+<b><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot=
+;; font-size: 18.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;=
+"><a href=3D"https://sayfudinblogz.blogspot.com/2012/04/tutorial-iptables-d=
+asar.html?m=3D1" title=3D"Tutorial iptables dasar 1"><span style=3D"color: =
+windowtext;">Tutorial
+iptables dasar 1</span></a></span></b></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto;">
+<b><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot=
+;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;=
+">Pendahuluan</span></b><span style=3D"font-family: &quot;Times New Roman&q=
+uot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;T=
+imes New Roman&quot;;"></span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">L=
+inux
+memiliki firewall yang sangat kuat di dalamnya, biasanya disebut sebagai
+iptables, lebih tepatnya iptables / Netfilter.&nbsp; Iptables adalah modul
+userspace, dengan demikian kita dapat , berinteraksi dengannya pada command=
+line
+untuk memasukkan aturan firewall ke tabel standar. Netfilter adalah modul
+kernel, yang dibangun dalam kernel, yang benar-benar menyaring. Kita akan
+mempelajari iptables di command line.<br>
+Sebelum kita dapat benar-benar bisa menguasai &nbsp;iptables, kita perlu
+memiliki setidaknya pemahaman dasar dari cara kerjanya. Iptables menggunaka=
+n
+konsep alamat ip, protokol (tcp, udp icmp) dan port. Kita tidak perlu menja=
+di
+ahli dalam hal ini untuk memulai, tetapi hal ini membantu untuk memiliki
+pemahaman umum.</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">I=
+ptables
+menempat aturan ke dalam tabel (INPUT, OUTPUT dan FORWARD) yang memeriksa l=
+alu
+lintas jaringan (paket IP) yang relevan table dan membuat sebuah keputusan
+mengenai apa yang harus dilakukan pada setiap paket berdasarkan hasil dari
+aturan-aturan tersebut, yaitu menerima atau menjatuhkan paket.
+Tindakan-tindakan ini disebut sebagai target, ada dua kemungkinan yang akan
+ditetapkan DROP untuk menjatuhkan paket atau ACCEPT menerima paket.</span><=
+/div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<b><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot=
+;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;=
+">chain</span></b><span style=3D"font-family: &quot;Times New Roman&quot;,&=
+quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times N=
+ew Roman&quot;;"><br>
+Ada 3 chain standar yang digunakan oleh iptables yang kita dapat menambahka=
+n
+aturan untuk memproses paket IP melewati tabel, yaitu :<br>
+<b>INPUT</b> =E2=80=93 Semua paket yang ditujukan untuk host komputer.</spa=
+n></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto;">
+<b><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot=
+;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;=
+">OUTPUT</span></b><span style=3D"font-family: &quot;Times New Roman&quot;,=
+&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times =
+New Roman&quot;;"> =E2=80=93 Semua paket yang berasal dari host komputer.</=
+span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<b><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot=
+;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;=
+">FORWARD</span></b><span style=3D"font-family: &quot;Times New Roman&quot;=
+,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times=
+ New Roman&quot;;"> =E2=80=93 Semua paket yang bukan dari atau untuk komput=
+er host,
+tetapi melalui komputer host. Tabel ini digunakan jika komputer sebagai rou=
+ter.<br>
+Sebagian besar, kita akan berurusan dengan tabel INPUT untuk menyaring pake=
+t
+yang memasuki komputer kita.</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">A=
+turan
+ditambahkan dalam daftar untuk setiap tabel. Sebuah paket diperiksa terhada=
+p
+setiap aturan secara bergiliran, dimulai di bagian atas, dan jika sesuai de=
+ngan
+aturan itu, maka diambil tindakan seperti menerima (ACCEPT) atau jatuh (DRO=
+P)
+paket. Sekali aturan tersebut sesuai, dan tindakan diambil, maka paket akan
+diproses sesuai dengan hasil dan tidak diproses oleh aturan lebih lanjut da=
+lam
+tabel. Jika sebuah paket lewat turun melalui semua aturan dalam tabel dan
+mencapai bagian bawah dicocokkan tanpa aturan apa pun, maka diambil tindaka=
+n
+standar untuk tabel itu. Hal ini disebut sebagai kebijakan default.</span><=
+/div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<b><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot=
+;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;=
+">Konsep
+kebijakan standar dalam tabel menimbulkan dua kemungkinan mendasar bahwa ki=
+ta
+harus terlebih dahulu mempertimbangkannya sebelum kita memutuskan bagaimana
+kita akan mengatur firewall kita.</span></b><span style=3D"font-family: &qu=
+ot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-=
+font-family: &quot;Times New Roman&quot;;"><br>
+1. Kita dapat menetapkan kebijakan default DROP semua paket dan kemudian
+tambahkan aturan untuk secara khusus membiarkan (ACCEPT) paket yang diperca=
+ya
+mungkin dari alamat IP, atau untuk port tertentu pada layanan yang telah ki=
+ta
+jalankan seperti bittorrent, server FTP, Web Server, Samba file server dll<=
+br>
+atau sebaliknya,</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">2=
+.
+Kita dapat menetapkan kebijakan default ACCEPT semua paket dan kemudian
+tambahkan aturan untuk secara khusus blok (DROP) paket yang mungkin dari al=
+amat
+IP tertentu, atau untuk port tertentu di mana kita tidak menjalankan servic=
+enya.<br>
+Umumnya, pilihan 1 di atas adalah untuk tabel INPUT, digunakan untuk mengon=
+trol
+apa yang diperbolehkan untuk mengakses komputer kita dan opsi 2 akan diguna=
+kan
+untuk tabel OUTPUT .</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">P=
+ersiapan :</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">B=
+ekerja
+dengan iptables di command line membutuhkan hak istimewa root, jadi kita pe=
+rlu
+menjadi untuk root untuk hal hal yang akan kita lakukan.</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">C=
+atatan : Sebelum mulai, kita perlu
+mereset iptables dan aturan-aturan firewall yang ada</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">S=
+ayangnya,
+berbagai distro Linux menggunakan berbagai comands untuk memulai, menghenti=
+kan
+dan menyimpan aturan-aturan firewall, sehingga kita mungkin perlu memeriksa
+dokumentasi untuk mengetahui cara untuk melakukan ini pada distro Linux kit=
+a.
+Coba ketik iptables =E2=80=93help di command line</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">#
+iptables --help</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">iptables
+v1.2.9</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">Usage:
+iptables -[AD] chain rule-specification [options]</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+iptables -[RI] chain rulenum rule-specification [options]</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+iptables -D chain rulenum [options]</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+iptables -[LFZ] [chain] [options]</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+iptables -[NX] chain</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+iptables -E old-chain-name new-chain-name</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+iptables -P chain target [options]</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+iptables -h (print this help information)</span></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso=
+-fareast-font-family: &quot;Times New Roman&quot;;">&lt;snip&gt;</span></di=
+v>
+<div class=3D"MsoNormal" style=3D"line-height: normal; mso-margin-bottom-al=
+t: auto; mso-margin-top-alt: auto; text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">D=
+an
+untuk melihat apakah iptables sudah benar benar berjalan di komputer kita, =
+kita
+dapat menggunakan option =E2=80=93L, untuk meload running iptables.</span><=
+/div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;=
+">
+<br></div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;=
+">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>AR-SA</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val=3D"Cambria Math"/>
+   <m:brkBin m:val=3D"before"/>
+   <m:brkBinSub m:val=3D"--"/>
+   <m:smallFrac m:val=3D"off"/>
+   <m:dispDef/>
+   <m:lMargin m:val=3D"0"/>
+   <m:rMargin m:val=3D"0"/>
+   <m:defJc m:val=3D"centerGroup"/>
+   <m:wrapIndent m:val=3D"1440"/>
+   <m:intLim m:val=3D"subSup"/>
+   <m:naryLim m:val=3D"undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"true"
+  DefSemiHidden=3D"true" DefQFormat=3D"false" DefPriority=3D"99"
+  LatentStyleCount=3D"267">
+  <w:LsdException Locked=3D"false" Priority=3D"0" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Normal"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"false" UnhideWhenUsed=3D"f=
+alse"
+   QFormat=3D"true" Name=3D"heading 1"/>
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"heading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"toc 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"35" QFormat=3D"true" Name=3D=
+"caption"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"false" UnhideWhenUsed=3D"f=
+alse"
+   QFormat=3D"true" Name=3D"Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default Paragraph=
+ Font"/>
+  <w:LsdException Locked=3D"false" Priority=3D"11" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtitle"/>
+  <w:LsdException Locked=3D"false" Priority=3D"22" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Strong"/>
+  <w:LsdException Locked=3D"false" Priority=3D"20" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"59" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Table Grid"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Placeho=
+lder Text"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"No Spacing"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" UnhideWhenUsed=3D"false" Name=3D"Revisio=
+n"/>
+  <w:LsdException Locked=3D"false" Priority=3D"34" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"List Paragraph"/>
+  <w:LsdException Locked=3D"false" Priority=3D"29" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"30" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Light Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium List 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Dark List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Shading Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful List Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" Name=3D"Colorful Grid Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"19" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"21" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"31" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Subtle Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"32" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Intense Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"33" SemiHidden=3D"false"
+   UnhideWhenUsed=3D"false" QFormat=3D"true" Name=3D"Book Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"37" Name=3D"Bibliography"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" QFormat=3D"true" Name=3D=
+"TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+ {mso-style-name:"Table Normal";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-priority:99;
+ mso-style-qformat:yes;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:10.0pt;
+ font-family:"Calibri","sans-serif";
+ mso-bidi-font-family:"Times New Roman";}
+</style>
+<![endif]-->
+
+</div>
+<div class=3D"MsoNormal" style=3D"line-height: normal; margin-bottom: .0001=
+pt; margin-bottom: 0cm; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 27=
+4.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0=
+pt 732.8pt;">
+<span style=3D"color: white; font-family: &quot;Courier New&quot;; font-siz=
+e: 10.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;"><span cla=
+ss=3D"msoIns"><ins># <span style=3D"color: black;">iptables -L</span></ins>=
+</span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain INPUT (policy DROP)</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>target&nbsp;&nbsp;&nbsp;&nbsp; prot opt
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp; anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+state RELATED,ESTABLISHED</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp; barney&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+MAC
+00:50:8D:6D:EF:23</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>DROP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp; --&nbsp;
+wilma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+anywhere</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp;
+bart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+MAC
+00:50:8D:FD:D6:32</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;
+--&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+tcp dpt:ftp</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;
+--&nbsp;
+ict&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+state NEW tcp dpt:ssh</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain FORWARD (policy DROP)</ins></span></span></di=
+v>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>target&nbsp;&nbsp;&nbsp;&nbsp; prot opt
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain OUTPUT (policy ACCEPT)</ins></span></span></d=
+iv>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>target&nbsp;&nbsp;&nbsp;&nbsp; prot opt
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Jika iptables berjalan, kita =
+akan melihat
+beberapa aturan umum seperti diatas, jika tidak, kita coba mengecek modul
+iptables dengan lsmod</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># lsmod |grep ip</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ipt_mac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2113&nbsp; 2</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ipt_state&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2113&nbsp; 2</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ip_conntrack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;
+40949&nbsp; 1 ipt_state</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptable_filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;
+3777&nbsp; 1</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ip_tables&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+16577&nbsp; 3 ipt_mac,ipt_state,iptable_filter</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Baik, kita asumsikan iptables=
+ berjalan
+baik, mari kita mulai dengan aturan yang sangat simple untuk mengeset firew=
+all
+yaitu mengizinkan semua koneksi keluar tetapi memblok semua koneksi yang ti=
+dak
+diinginkan. Pada command line kta akan mengetikkan perintah berikut :</ins>=
+</span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -F</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -P INPUT DROP</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -P FORWARD DROP</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -P OUTPUT ACCEPT</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -A INPUT -i lo -j ACCEPT</ins></span></spa=
+n></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -A INPUT -m state --state
+ESTABLISHED,RELATED -j ACCEPT</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -L -v</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>yang
+akan memberikan output sebagai berikut :</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain INPUT (policy DROP 0 packets, 0
+bytes)</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>pkt=
+s bytes target&nbsp;&nbsp;&nbsp;&nbsp; prot
+opt in&nbsp;&nbsp;&nbsp;&nbsp; out&nbsp;&nbsp;&nbsp;&nbsp;
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp; 0 ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp; --&nbs=
+p;
+lo&nbsp;&nbsp;&nbsp;&nbsp; any&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp; 0 ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp; --&nbs=
+p;
+any&nbsp;&nbsp;&nbsp; any&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+state RELATED,ESTABLISHED</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain FORWARD (policy DROP 0 packets, 0
+bytes)</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>pkt=
+s bytes target&nbsp;&nbsp;&nbsp;&nbsp; prot
+opt in&nbsp;&nbsp;&nbsp;&nbsp; out&nbsp;&nbsp;&nbsp;&nbsp; source&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain OUTPUT (policy ACCEPT 0 packets, 0
+bytes)</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>pkt=
+s bytes target&nbsp;&nbsp;&nbsp;&nbsp; prot
+opt in&nbsp;&nbsp;&nbsp;&nbsp; out&nbsp;&nbsp;&nbsp;&nbsp;
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Kita sekarang memiliki firewa=
+ll yang
+memungkinkan semua koneksi keluar tapi memblokir semua koneksi masuk yang t=
+idak
+diinginkan dan juga semua paket forwarder. Baik kita akan melihat setiap
+perintah diatas.</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><ol start=3D"1" style=3D"color: black;" type=3D"1">
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93F), Pertama tama kita menggunakan =E2=80=93F (flush), tujuann=
+ya untuk
+     membersihkan semua aturan yang ada.</ins></span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93P INPUT DROP). Option =E2=80=93P ini menetapkan kebijakan def=
+ault, disini kita
+     menerapkan kebijakan default untuk tabel input adalah DROP, yang maksu=
+dnya
+     bahwa jika sebuah paket masuk tidak sesuai dengna salah satu dari
+     aturan-aturan berikutnya akan dihapus.</ins></span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93P FORWARD DROP), Demikian pula, default untuk tabel FORWARD a=
+dalah DROP,
+     karena kita tidak memfungsikan komputer kita sebagai router.</ins></sp=
+an></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93P OUTPUT ACCEPT), Terakhir untuk kebijakan default yaitu pada=
+ tabel&nbsp;
+     OUTPUT yaitu ACCEPT, yaitu membolehkan semua lalu lintas keluar.</ins>=
+</span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93A INPUT =E2=80=93i lo =E2=80=93j ACCEPT), sekarang kita menam=
+bah beberapa aturan lain.
+     Kita menggunakan =E2=80=93A untuk menambah sebuah aturan ke chain tert=
+entu, INPUT
+     pada contoh ini, kemudian kita menggunakan =E2=80=93i untuk interface,=
+ -j (jump),
+     yaitu tindakan yang akan diambil. Jadi aturan ini akan mengizinkan sem=
+ua
+     paket masuk localhost. Ini umumbnya diperlukan oleh berbagai software
+     aplikasi untuk bisa berkomunikasi dengan adaptor localhost.</ins></spa=
+n></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93A INPUT =E2=80=93m state =E2=80=93state ESTABLISHED,RELATED =
+=E2=80=93j ACCEPT), Ini adalah aturan
+     yang melakukan sebagian besat pekerjaan, dan sekali lagi kita menambah=
+kan
+     (-A) ke chain INPUT. Disini kita menggunakan opsi =E2=80=93m untuk mel=
+oad sebuah
+     modul (state). Modul stat mampu memeriksa keadaan dari sbuah paket dan
+     menentukan apakah NEW, ESTABLISHE atau RELATED, NEW mengacu kepada
+     paket-paket baru yang masuk koneksi yang tidak diprakarsai oleh host.
+     ESTABLISHED dan RELATED mengacu kepada paket paket masuk yang merupaka=
+n
+     bagikan dari koneksi yang telah mapan atau terkait dengan koneksi ters=
+ebut.</ins></span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal;"><span style=3D"font-=
+family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; m=
+so-fareast-font-family: &quot;Times New Roman&quot;;"><span class=3D"msoIns=
+"><ins>(iptables =E2=80=93L =E2=80=93v), Terakhir,
+     kita bisa daptarkan aturan aturan yang baru saja kita tambahkan, dan
+     menampilkannya untuk memeriksa apakan sudah terisi dengan benar.</ins>=
+</span></span></li>
+</ol>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Hal terkahir yang perlu kita =
+lakukan
+adalah menyimpan aturan tersebut, sehingga saat kita reboot, secara otomati=
+s
+aturan tadi akan terload. Sayangnya, perintah untuk melakukan ini, biasanya
+berbeda untuk distro yang berbeda.</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Pada
+Redhat/Fedora lakukan :</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>/sbin/service iptables save</ins></span></span></di=
+v>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ text-align: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Namun, cara termudah bekerja =
+dengan
+iptables ada memasukkan script nya kedalam sebuah file dan membuatnya menja=
+di
+file executable, misalkan kita beri nama firewallku.</ins></span></span></d=
+iv>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>#!/bin/bash</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># file konfigurasi iptables</ins></span></span></di=
+v>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># ChoenKill</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Flush semua aturan dari iptables</ins></span></sp=
+an></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;iptables -F</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Set default untuk chain INPUT, FORWARD
+dan OUTPUT</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;iptables -P INPUT DROP</ins></span></span></d=
+iv>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -P FORWARD DROP</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -P OUTPUT ACCEPT</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Set access untuk localhost</ins></span></span></d=
+iv>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -A INPUT -i lo -j ACCEPT</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Accept packets established dan related
+connections</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -A INPUT -m state --state
+ESTABLISHED,RELATED -j ACCEPT</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Save settings dengan /sbin/service
+iptables save</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># List iptables chains with 'iptables -L
+-v'</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>/sbin/service iptables save</ins></span></span></di=
+v>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -L =E2=80=93v</ins></span></span></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ text-align: justify;">
+<br></div>
+<span style=3D"color: black;">
+
+</span><div class=3D"MsoNormal" style=3D"color: black; line-height: normal;=
+ margin-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># iptables -L</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain INPUT (policy DROP)</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>target&nbsp;&nbsp;&nbsp;&nbsp; prot opt
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp; anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+state RELATED,ESTABLISHED</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp; barney&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+MAC
+00:50:8D:6D:EF:23</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>DROP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+all&nbsp; --&nbsp;
+wilma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+anywhere</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;
+--&nbsp;
+bart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+MAC
+00:50:8D:FD:D6:32</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;
+--&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+tcp dpt:ftp</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;
+--&nbsp;
+ict&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+state NEW tcp dpt:ssh</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain FORWARD (policy DROP)</ins></span></span></di=
+v>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>target&nbsp;&nbsp;&nbsp;&nbsp; prot opt
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain OUTPUT (policy ACCEPT)</ins></span></span></d=
+iv>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>target&nbsp;&nbsp;&nbsp;&nbsp; prot opt
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; text-a=
+lign: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Jika iptables berjalan, kita =
+akan melihat
+beberapa aturan umum seperti diatas, jika tidak, kita coba mengecek modul
+iptables dengan lsmod</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># lsmod |grep ip</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ipt_mac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2113&nbsp; 2</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ipt_state&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2113&nbsp; 2</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ip_conntrack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;
+40949&nbsp; 1 ipt_state</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptable_filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;
+3777&nbsp; 1</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>ip_tables&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+16577&nbsp; 3 ipt_mac,ipt_state,iptable_filter</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; text-a=
+lign: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Baik, kita asumsikan iptables=
+ berjalan
+baik, mari kita mulai dengan aturan yang sangat simple untuk mengeset firew=
+all
+yaitu mengizinkan semua koneksi keluar tetapi memblok semua koneksi yang ti=
+dak
+diinginkan. Pada command line kta akan mengetikkan perintah berikut :</ins>=
+</span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -F</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -P INPUT DROP</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -P FORWARD DROP</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -P OUTPUT ACCEPT</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -A INPUT -i lo -j ACCEPT</ins></span></spa=
+n></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -A INPUT -m state --state
+ESTABLISHED,RELATED -j ACCEPT</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -L -v</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>yang
+akan memberikan output sebagai berikut :</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain INPUT (policy DROP 0 packets, 0
+bytes)</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>pkt=
+s bytes target&nbsp;&nbsp;&nbsp;&nbsp; prot
+opt in&nbsp;&nbsp;&nbsp;&nbsp; out&nbsp;&nbsp;&nbsp;&nbsp;
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp; 0 ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp; --&nbs=
+p;
+lo&nbsp;&nbsp;&nbsp;&nbsp; any&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp; 0 ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp; --&nbs=
+p;
+any&nbsp;&nbsp;&nbsp; any&nbsp;&nbsp;&nbsp;&nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;
+anywhere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+state RELATED,ESTABLISHED</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain FORWARD (policy DROP 0 packets, 0
+bytes)</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>pkt=
+s bytes target&nbsp;&nbsp;&nbsp;&nbsp; prot
+opt in&nbsp;&nbsp;&nbsp;&nbsp; out&nbsp;&nbsp;&nbsp;&nbsp; source&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>Chain OUTPUT (policy ACCEPT 0 packets, 0
+bytes)</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>pkt=
+s bytes target&nbsp;&nbsp;&nbsp;&nbsp; prot
+opt in&nbsp;&nbsp;&nbsp;&nbsp; out&nbsp;&nbsp;&nbsp;&nbsp;
+source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;
+destination</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; text-a=
+lign: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Kita sekarang memiliki firewa=
+ll yang
+memungkinkan semua koneksi keluar tapi memblokir semua koneksi masuk yang t=
+idak
+diinginkan dan juga semua paket forwarder. Baik kita akan melihat setiap
+perintah diatas.</ins></span></span></div>
+<ol start=3D"1" style=3D"color: black;" type=3D"1">
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93F), Pertama tama kita menggunakan =E2=80=93F (flush), tujuann=
+ya untuk
+     membersihkan semua aturan yang ada.</ins></span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93P INPUT DROP). Option =E2=80=93P ini menetapkan kebijakan def=
+ault, disini kita
+     menerapkan kebijakan default untuk tabel input adalah DROP, yang maksu=
+dnya
+     bahwa jika sebuah paket masuk tidak sesuai dengna salah satu dari
+     aturan-aturan berikutnya akan dihapus.</ins></span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93P FORWARD DROP), Demikian pula, default untuk tabel FORWARD a=
+dalah DROP,
+     karena kita tidak memfungsikan komputer kita sebagai router.</ins></sp=
+an></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93P OUTPUT ACCEPT), Terakhir untuk kebijakan default yaitu pada=
+ tabel&nbsp;
+     OUTPUT yaitu ACCEPT, yaitu membolehkan semua lalu lintas keluar.</ins>=
+</span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93A INPUT =E2=80=93i lo =E2=80=93j ACCEPT), sekarang kita menam=
+bah beberapa aturan lain.
+     Kita menggunakan =E2=80=93A untuk menambah sebuah aturan ke chain tert=
+entu, INPUT
+     pada contoh ini, kemudian kita menggunakan =E2=80=93i untuk interface,=
+ -j (jump),
+     yaitu tindakan yang akan diambil. Jadi aturan ini akan mengizinkan sem=
+ua
+     paket masuk localhost. Ini umumbnya diperlukan oleh berbagai software
+     aplikasi untuk bisa berkomunikasi dengan adaptor localhost.</ins></spa=
+n></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal; text-align: justify;"=
+><span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;=
+ font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;;">=
+<span class=3D"msoIns"><ins>(iptables
+     =E2=80=93A INPUT =E2=80=93m state =E2=80=93state ESTABLISHED,RELATED =
+=E2=80=93j ACCEPT), Ini adalah aturan
+     yang melakukan sebagian besat pekerjaan, dan sekali lagi kita menambah=
+kan
+     (-A) ke chain INPUT. Disini kita menggunakan opsi =E2=80=93m untuk mel=
+oad sebuah
+     modul (state). Modul stat mampu memeriksa keadaan dari sbuah paket dan
+     menentukan apakah NEW, ESTABLISHE atau RELATED, NEW mengacu kepada
+     paket-paket baru yang masuk koneksi yang tidak diprakarsai oleh host.
+     ESTABLISHED dan RELATED mengacu kepada paket paket masuk yang merupaka=
+n
+     bagikan dari koneksi yang telah mapan atau terkait dengan koneksi ters=
+ebut.</ins></span></span></li>
+<li class=3D"MsoNormal" style=3D"line-height: normal;"><span style=3D"font-=
+family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; m=
+so-fareast-font-family: &quot;Times New Roman&quot;;"><span class=3D"msoIns=
+"><ins>(iptables =E2=80=93L =E2=80=93v), Terakhir,
+     kita bisa daptarkan aturan aturan yang baru saja kita tambahkan, dan
+     menampilkannya untuk memeriksa apakan sudah terisi dengan benar.</ins>=
+</span></span></li>
+</ol>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; text-a=
+lign: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Hal terkahir yang perlu kita =
+lakukan
+adalah menyimpan aturan tersebut, sehingga saat kita reboot, secara otomati=
+s
+aturan tadi akan terload. Sayangnya, perintah untuk melakukan ini, biasanya
+berbeda untuk distro yang berbeda.</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Pada
+Redhat/Fedora lakukan :</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>/sbin/service iptables save</ins></span></span></di=
+v>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; text-a=
+lign: justify;">
+<span style=3D"font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; =
+font-size: 12pt;"><span class=3D"msoIns"><ins>Namun, cara termudah bekerja =
+dengan
+iptables ada memasukkan script nya kedalam sebuah file dan membuatnya menja=
+di
+file executable, misalkan kita beri nama firewallku.</ins></span></span></d=
+iv>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>#!/bin/bash</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># file konfigurasi iptables</ins></span></span></di=
+v>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># ChoenKill</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Flush semua aturan dari iptables</ins></span></sp=
+an></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;iptables -F</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Set default untuk chain INPUT, FORWARD
+dan OUTPUT</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>&nbsp;iptables -P INPUT DROP</ins></span></span></d=
+iv>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -P FORWARD DROP</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -P OUTPUT ACCEPT</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Set access untuk localhost</ins></span></span></d=
+iv>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -A INPUT -i lo -j ACCEPT</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Accept packets established dan related
+connections</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins><span style=3D"mso-spacerun: yes;">&nbsp;</span>ipt=
+ables -A INPUT -m state --state
+ESTABLISHED,RELATED -j ACCEPT</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># Save settings dengan /sbin/service
+iptables save</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins># List iptables chains with 'iptables -L
+-v'</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>/sbin/service iptables save</ins></span></span></di=
+v>
+<div class=3D"MsoNormal" style=3D"color: black; line-height: normal; margin=
+-bottom: 0.0001pt;">
+<span style=3D"font-family: &quot;Courier New&quot;; font-size: 10pt;"><spa=
+n class=3D"msoIns"><ins>iptables -L =E2=80=93v</ins></span></span></div>
+<div class=3D"MsoNormal" style=3D"color: black;">
+<br></div>
+<div style=3D"clear: both;"></div>
+</div>
+<div class=3D"post-footer">
+<div class=3D"post-footer-line post-footer-line-1">
+<span class=3D"post-author vcard">
+<span class=3D"fn" itemprop=3D"author" itemscope=3D"itemscope" itemtype=3D"=
+http://schema.org/Person">
+<meta content=3D"https://plus.google.com/105508494485730308676" itemprop=3D=
+"url">
+<a href=3D"https://plus.google.com/105508494485730308676" rel=3D"author" ti=
+tle=3D"author profile">
+<span itemprop=3D"name">Tutorial Teknik Informatika</span>
+</a>
+</span>
+</span>
+<span class=3D"post-timestamp">
+di
+<meta content=3D"https://sayfudinblogz.blogspot.com/2012/04/tutorial-iptabl=
+es-dasar.html" itemprop=3D"url">
+<a class=3D"timestamp-link" href=3D"https://sayfudinblogz.blogspot.com/2012=
+/04/tutorial-iptables-dasar.html?m=3D1" rel=3D"bookmark" title=3D"permanent=
+ link"><abbr class=3D"published" itemprop=3D"datePublished" title=3D"2012-0=
+4-09T03:47:00+07:00">03.47</abbr></a>
+</span>
+<span class=3D"post-comment-link">
+</span>
+</div>
+<div class=3D"post-footer-line post-footer-line-2">
+<div class=3D"mobile-link-button goog-inline-block" id=3D"mobile-share-butt=
+on">
+<a href=3D"javascript:void(0);">Berbagi</a>
+</div>
+<div class=3D"goog-inline-block dummy-container"><div style=3D"text-indent:=
+ 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: =
+0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-lef=
+t: 0px; background-image: initial; background-attachment: initial; backgrou=
+nd-origin: initial; background-clip: initial; background-color: transparent=
+; background-size: initial; border-top-style: none; border-right-style: non=
+e; border-bottom-style: none; border-left-style: none; float: none; line-he=
+ight: normal; font-size: 1px; vertical-align: baseline; display: inline-blo=
+ck; width: 32px; height: 20px; background-position: initial initial; backgr=
+ound-repeat: initial initial; " id=3D"___plusone_0"><iframe ng-non-bindable=
+=3D"" frameborder=3D"0" hspace=3D"0" marginheight=3D"0" marginwidth=3D"0" s=
+crolling=3D"no" style=3D"position: static; top: 0px; width: 32px; margin-to=
+p: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top=
+-style: none; border-right-style: none; border-bottom-style: none; border-l=
+eft-style: none; left: 0px; visibility: visible; height: 20px; " tabindex=
+=3D"0" vspace=3D"0" width=3D"100%" id=3D"I0_1543751115752" name=3D"I0_15437=
+51115752" src=3D"https://apis.google.com/se/0/_/+1/fastbutton?usegapi=3D1&a=
+mp;source=3Dblogger%3Ablog%3Aplusone&amp;size=3Dmedium&amp;hl=3Did&amp;orig=
+in=3Dhttps%3A%2F%2Fsayfudinblogz.blogspot.com&amp;url=3Dhttp%3A%2F%2Fsayfud=
+inblogz.blogspot.com%2F2012%2F04%2Ftutorial-iptables-dasar.html&amp;gsrc=3D=
+3p&amp;ic=3D1&amp;jsh=3Dm%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi=
+.id.CJ-DiQbOyGc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCNANXHUi6wJhiiNysM=
+4sUIM4_sfsg%2Fm%3D__features__#_methods=3DonPlusOne%2C_ready%2C_close%2C_op=
+en%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=3DI0=
+_1543751115752&amp;_gfid=3DI0_1543751115752&amp;parent=3Dhttps%3A%2F%2Fsayf=
+udinblogz.blogspot.com&amp;pfname=3D&amp;rpctoken=3D21139101" data-gapiatta=
+ched=3D"true" title=3D"G+"></iframe></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=3D"blog-pager" id=3D"blog-pager">
+<div class=3D"mobile-link-button" id=3D"blog-pager-newer-link">
+<a class=3D"blog-pager-newer-link" href=3D"https://sayfudinblogz.blogspot.c=
+om/2012/04/agonia-senja.html?m=3D1" id=3D"Blog1_blog-pager-newer-link" titl=
+e=3D"Posting Lebih Baru">=E2=80=B9</a>
+</div>
+<div class=3D"mobile-link-button" id=3D"blog-pager-older-link">
+<a class=3D"blog-pager-older-link" href=3D"https://sayfudinblogz.blogspot.c=
+om/2012/04/pengenalan-jaringan-komputer.html?m=3D1" id=3D"Blog1_blog-pager-=
+older-link" title=3D"Posting Lama" uc-prereadstate=3D"preread-doing">=E2=80=
+=BA</a>
+</div>
+<div class=3D"mobile-link-button" id=3D"blog-pager-home-link">
+<a class=3D"home-link" href=3D"https://sayfudinblogz.blogspot.com/?m=3D1">B=
+eranda</a>
+</div>
+<div class=3D"mobile-desktop-link">
+<a class=3D"home-link" href=3D"https://sayfudinblogz.blogspot.com/2012/04/t=
+utorial-iptables-dasar.html?m=3D0">Lihat versi web</a>
+</div>
+</div>
+<div class=3D"clear"></div>
+
+</div></div>
+</div>
+</div>
+<div class=3D"column-left-outer">
+<div class=3D"column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class=3D"column-right-outer">
+<div class=3D"column-right-inner">
+<aside>
+</aside>
+</div>
+</div>
+</div>
+<div style=3D"clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class=3D"main-cap-bottom cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+<footer>
+<div class=3D"footer-outer">
+<div class=3D"footer-cap-top cap-top">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+<div class=3D"fauxborder-left footer-fauxborder-left">
+<div class=3D"fauxborder-right footer-fauxborder-right"></div>
+<div class=3D"region-inner footer-inner">
+<div class=3D"foot no-items section" id=3D"footer-1"></div>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class=3D"foot section" id=3D"footer-3" name=3D"Footer"><div class=3D"w=
+idget Attribution" data-version=3D"1" id=3D"Attribution1">
+<div class=3D"widget-content" style=3D"text-align: center;">
+Diberdayakan oleh <a href=3D"https://www.blogger.com/" target=3D"_blank">Bl=
+ogger</a>.
+</div>
+<div class=3D"clear"></div>
+<span class=3D"widget-item-control">
+<span class=3D"item-control blog-admin">
+<a class=3D"quickedit" href=3D"https://www.blogger.com/rearrange?blogID=3D2=
+927755096860998226&amp;widgetType=3DAttribution&amp;widgetId=3DAttribution1=
+&amp;action=3DeditWidget&amp;sectionId=3Dfooter-3" onclick=3D"return _Widge=
+tManager._PopupConfig(document.getElementById(&quot;Attribution1&quot;));" =
+rel=3D"nofollow" target=3D"configAttribution1" title=3D"Edit">
+<img alt=3D"" height=3D"18" src=3D"https://resources.blogblog.com/img/icon1=
+8_wrench_allbkg.png" width=3D"18">
+</a>
+</span>
+</span>
+<div class=3D"clear"></div>
+</div></div>
+</div>
+</div>
+<div class=3D"footer-cap-bottom cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class=3D"content-cap-bottom cap-bottom">
+<div class=3D"cap-left"></div>
+<div class=3D"cap-right"></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<iframe name=3D"oauth2relay712077502" id=3D"oauth2relay712077502" src=3D"ht=
+tps://accounts.google.com/o/oauth2/postmessageRelay?parent=3Dhttps%3A%2F%2F=
+sayfudinblogz.blogspot.com&amp;jsh=3Dm%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%=
+2Fk%3Doz.gapi.id.CJ-DiQbOyGc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCNANX=
+HUi6wJhiiNysM4sUIM4_sfsg%2Fm%3D__features__#rpctoken=3D461145051&amp;forces=
+ecure=3D1" style=3D"width: 1px; height: 1px; position: absolute; top: -100p=
+x; " tabindex=3D"-1" aria-hidden=3D"true"></iframe></body></html>
+------=_NextPart_000_FDA8_EDB265E2.25FD9082
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://www.blogger.com/static/v1/widgets/1171200566-widget_css_mobile_2_bundle.css
+
+c2VjdGlvbiwgbmF2LCBhcnRpY2xlLCBhc2lkZSwgaGdyb3VwLCBoZWFkZXIsIGZvb3RlciB7IGRp
+c3BsYXk6IGJsb2NrOyB9Cgp0aW1lLCBtYXJrIHsgZGlzcGxheTogaW5saW5lOyB9CgpodG1sIGJv
+ZHkgeyAtd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6IG5vbmU7IG1pbi13aWR0aDogMHB4OyBtYXJn
+aW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdp
+bi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGlu
+Zy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IGZvbnQtc2l6ZTogMC45ZW07IH0KCmh0
+bWwgLmNvbnRlbnQtb3V0ZXIsIGh0bWwgLmNvbnRlbnQtZmF1eGNvbHVtbi1vdXRlciwgaHRtbCAu
+cmVnaW9uLWlubmVyIHsgbWluLXdpZHRoOiAwcHg7IH0KCmh0bWwgLm1haW4taW5uZXIgLmNvbHVt
+bi1yaWdodC1vdXRlciwgaHRtbCAubWFpbi1pbm5lciAuY29sdW1uLWxlZnQtb3V0ZXIgeyBjbGVh
+cjogYm90aDsgfQoKaHRtbCAuY29udGVudC1vdXRlciwgaHRtbCAuY29udGVudC1pbm5lciwgaHRt
+bCAuaGVhZGVyLWlubmVyLCBodG1sIC5oZWFkZXItaW5uZXIgLnNlY3Rpb24sIGh0bWwgLnRhYnMt
+b3V0ZXIsIGh0bWwgLnRhYnMtaW5uZXIsIGh0bWwgLm1haW4taW5uZXIsIGh0bWwgLmZvb3Rlci1v
+dXRlciwgaHRtbCAuZm9vdGVyLWlubmVyLCBodG1sIC5tYWluLWlubmVyIC5jb2x1bW4tY2VudGVy
+LWlubmVyIC5zZWN0aW9uLCBodG1sIC5zZWN0aW9uIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4t
+cmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5n
+LXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRp
+bmctbGVmdDogMHB4OyB9CgpodG1sIC5tYWluLWlubmVyIC5jb2x1bW4tY2VudGVyLWlubmVyLCBo
+dG1sIC5tYWluLWlubmVyIC5jb2x1bW4tbGVmdC1pbm5lciwgaHRtbCAubWFpbi1pbm5lciAuY29s
+dW1uLXJpZ2h0LWlubmVyIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFy
+Z2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5nLXRvcDogMHB4OyBwYWRk
+aW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMHB4OyB9
+CgpodG1sIC5oZWFkZXItb3V0ZXIgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4
+OyBtYXJnaW4tYm90dG9tOiAxMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5nLXRvcDogMHB4
+OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDog
+MHB4OyB9CgpodG1sIC5tYWluLW91dGVyIHsgbWFyZ2luLXRvcDogMTBweDsgbWFyZ2luLXJpZ2h0
+OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGluZy10b3A6
+IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxl
+ZnQ6IDBweDsgfQoKaHRtbCAudGFicy1pbm5lciAud2lkZ2V0IHNlbGVjdCB7IC13ZWJraXQtYXBw
+ZWFyYW5jZTogbm9uZTsgYmFja2dyb3VuZC1pbWFnZTogaW5pdGlhbDsgYmFja2dyb3VuZC1hdHRh
+Y2htZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1j
+bGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgYmFja2dyb3VuZC1z
+aXplOiBpbml0aWFsOyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDog
+MHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJv
+cmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6
+IGluaXRpYWw7IGNvbG9yOiBpbmhlcml0OyB6LWluZGV4OiAxMDsgcG9zaXRpb246IHJlbGF0aXZl
+OyB3aWR0aDogMTAwJTsgZm9udC1zaXplOiAxNHB4OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0
+aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCi5tb2Jp
+bGUgLnRhYnMtaW5uZXIgLlBhZ2VMaXN0IC53aWRnZXQtY29udGVudCB7IGZvbnQtZmFtaWx5OiBB
+cmlhbDsgZm9udC1zaXplOiAxNHB4OyBwYWRkaW5nLXRvcDogNXB4OyBwYWRkaW5nLXJpZ2h0OiAx
+MHB4OyBwYWRkaW5nLWJvdHRvbTogNXB4OyBwYWRkaW5nLWxlZnQ6IDEwcHg7IGhlaWdodDogMjBw
+eDsgfQoKLm1vYmlsZSAudGFicy1pbm5lciAuUGFnZUxpc3QgLndpZGdldC1jb250ZW50IC5wYWdl
+bGlzdC1hcnJvdyB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgaGVpZ2h0OiAxMDAlOyB0b3A6IDBweDsg
+cmlnaHQ6IDBweDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMTBweDsgcGFkZGlu
+Zy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAxMHB4OyBsaW5lLWhlaWdodDogMi41ZW07IH0K
+Cmh0bWwgLkhlYWRlciBoMSB7IGZvbnQtc2l6ZTogMjQwJTsgbWFyZ2luLWJvdHRvbTogMHB4OyB9
+CgpodG1sIC5IZWFkZXIgLmRlc2NyaXB0aW9uIHsgZm9udC1zaXplOiAxMTAlOyBwYWRkaW5nLXRv
+cDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmct
+bGVmdDogMHB4OyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90
+dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCmh0bWwgaDMucG9zdC10aXRsZSB7IGZvbnQt
+c2l6ZTogMTcwJTsgfQoKaHRtbCAucG9zdC1ib2R5IHsgbGluZS1oZWlnaHQ6IDEuMzsgfQoKaHRt
+bCAucG9zdC1ib2R5LCBodG1sIC5wb3N0LWhlYWRlciB7IGZvbnQtc2l6ZTogMTEwJTsgfQoKaHRt
+bCAucG9zdC1ib2R5IGltZyB7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7IG1heC13aWR0aDogMTAw
+JTsgfQoKaHRtbCAubW9iaWxlLWluZGV4LWNvbnRlbnRzIC5wb3N0LWJvZHkgeyBmb250LXNpemU6
+IDEwMCU7IH0KCmh0bWwgLnBvc3QtZm9vdGVyIHsgZm9udC1zaXplOiAxMDAlOyB9CgpodG1sIC5w
+b3N0LWZvb3Rlci1saW5lIHsgbWFyZ2luLXRvcDogMTBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1h
+cmdpbi1ib3R0b206IDEwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCmh0bWwgLmNvbW1lbnRzIGg0
+IHsgZm9udC1zaXplOiAxMzAlOyB9CgpodG1sIC53aWRnZXQgeyBtYXJnaW4tdG9wOiAwcHg7IG1h
+cmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAxMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBj
+bGVhcjogYm90aDsgfQoKaHRtbCAucG9zdC1zaGFyZS1idXR0b25zIHsgZGlzcGxheTogbm9uZTsg
+fQoKaHRtbCAuaGVhZGVyLWlubmVyIC53aWRnZXQgeyBtYXJnaW4tbGVmdDogMHB4OyBtYXJnaW4t
+cmlnaHQ6IDBweDsgfQoKaHRtbCAuaGVhZGVyLWlubmVyIC5IZWFkZXIgLnRpdGxld3JhcHBlciB7
+IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBw
+eDsgcGFkZGluZy1sZWZ0OiAwcHg7IG1hcmdpbi10b3A6IDEwcHg7IG1hcmdpbi1yaWdodDogMTBw
+eDsgbWFyZ2luLWJvdHRvbTogMTBweDsgbWFyZ2luLWxlZnQ6IDEwcHg7IH0KCmh0bWwgLmhlYWRl
+ci1pbm5lciAuSGVhZGVyIC5kZXNjcmlwdGlvbndyYXBwZXIgeyBwYWRkaW5nLXRvcDogMHB4OyBw
+YWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMHB4
+OyBtYXJnaW4tdG9wOiAxMHB4OyBtYXJnaW4tcmlnaHQ6IDEwcHg7IG1hcmdpbi1ib3R0b206IDEw
+cHg7IG1hcmdpbi1sZWZ0OiAxMHB4OyB9CgpodG1sIC5tYWluLWlubmVyIC5kYXRlLW91dGVyIHsg
+cGFkZGluZy10b3A6IDEwcHg7IHBhZGRpbmctcmlnaHQ6IDEwcHg7IHBhZGRpbmctYm90dG9tOiAx
+MHB4OyBwYWRkaW5nLWxlZnQ6IDEwcHg7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAw
+cHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKaHRtbCAucG9zdC1v
+dXRlciB7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0
+b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0
+OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKaHRtbCAucG9z
+dC1mZWVkcyB7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDEwcHg7IHBhZGRpbmct
+Ym90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMTBweDsgfQoKaHRtbCAjYmxvZy1wYWdlciB7IG1h
+cmdpbi10b3A6IDEwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1h
+cmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAxMHB4OyBwYWRkaW5nLXJpZ2h0OiAxMHB4OyBw
+YWRkaW5nLWJvdHRvbTogMTBweDsgcGFkZGluZy1sZWZ0OiAxMHB4OyBmb250LXNpemU6IDEwMCU7
+IH0KCmh0bWwgI2Jsb2ctcGFnZXItb2xkZXItbGluayB7IHdpZHRoOiAzMHB4OyBtYXJnaW4tcmln
+aHQ6IDVweDsgfQoKaHRtbCAjYmxvZy1wYWdlci1uZXdlci1saW5rIHsgd2lkdGg6IDMwcHg7IG1h
+cmdpbi1sZWZ0OiA1cHg7IH0KCmh0bWwgI2Jsb2ctcGFnZXItaG9tZS1saW5rIHsgd2lkdGg6IDE0
+MHB4OyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogYXV0bzsgbWFyZ2luLWJvdHRvbTog
+MHB4OyBtYXJnaW4tbGVmdDogYXV0bzsgfQoKaHRtbCAuYmxvZy1wYWdlci1vbGRlci1saW5rLCBo
+dG1sIC5ibG9nLXBhZ2VyLW5ld2VyLWxpbmsgeyBmb250LXNpemU6IDIwMCU7IGZvbnQtZmFtaWx5
+OiBBcmlhbDsgbGluZS1oZWlnaHQ6IDE3cHggIWltcG9ydGFudDsgfQoKaHRtbCAuYmxvZy1wYWdl
+ci1vbGRlci1saW5rLCBodG1sIC5ob21lLWxpbmssIGh0bWwgLmJsb2ctcGFnZXItbmV3ZXItbGlu
+ayB7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyBkaXNwbGF5OiBibG9jazsgaGVpZ2h0
+OiAyMHB4OyBsaW5lLWhlaWdodDogMjBweDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdo
+dDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgd2lkdGg6IDEw
+MCU7IH0KCmh0bWwgLkJMT0dfbW9iaWxlX3ZpZGVvX2NsYXNzIHsgZGlzcGxheTogaW5saW5lOyB9
+CgpodG1sIC5CTE9HX3ZpZGVvX2NsYXNzIHsgZGlzcGxheTogbm9uZTsgfQoKaHRtbCAubWFpbi1p
+bm5lciAud2lkZ2V0IHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRk
+aW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgbWFyZ2luLXRvcDogMHB4OyBtYXJn
+aW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9Cgpo
+dG1sIGE6aG92ZXIgeyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0KCmh0bWwgLkF0dHJpYnV0aW9u
+IHsgcGFkZGluZy10b3A6IDVweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTog
+MTBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IH0KCmh0bWwgI0hlYWRlcjEgeyBtYXJnaW4tdG9wOiAw
+cHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAw
+cHg7IH0KCi5tb2JpbGUtZGF0ZS1vdXRlciB7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9y
+ZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMjEsIDIy
+MSwgMjIxKTsgbWFyZ2luLWJvdHRvbTogMTVweDsgfQoKLm1vYmlsZS1kYXRlLW91dGVyIGEgeyBk
+aXNwbGF5OiBibG9jazsgfQoKLm1vYmlsZS1kYXRlLW91dGVyID4gZGl2IHsgcG9zaXRpb246IHJl
+bGF0aXZlOyB9CgoubW9iaWxlLWluZGV4LWNvbnRlbnRzIHsgbWFyZ2luLXJpZ2h0OiAyNXB4OyBt
+aW4taGVpZ2h0OiAyNXB4OyB9CgoubW9iaWxlLWluZGV4LXRpdGxlIHsgZm9udC1mYW1pbHk6ICdU
+cmVidWNoZXQgTVMnLCBUcmVidWNoZXQsIFZlcmRhbmEsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTog
+MTIwJTsgZm9udC1zdHlsZTogbm9ybWFsOyBmb250LXZhcmlhbnQ6IG5vcm1hbDsgZm9udC13ZWln
+aHQ6IG5vcm1hbDsgbGluZS1oZWlnaHQ6IG5vcm1hbDsgbWFyZ2luLXRvcDogMC41ZW07IG1hcmdp
+bi1ib3R0b206IDAuNWVtOyB3aWR0aDogMjQwcHg7IH0KCi5tb2JpbGUtaW5kZXgtdGh1bWJuYWls
+IHsgZmxvYXQ6IGxlZnQ7IG1hcmdpbi10b3A6IDAuNGVtOyBtYXJnaW4tcmlnaHQ6IDAuNWVtOyBt
+YXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCi5tb2JpbGUtaW5kZXgtdGh1
+bWJuYWlsIGltZyB7IHdpZHRoOiA3MnB4ICFpbXBvcnRhbnQ7IH0KCmh0bWwgLm1vYmlsZS1pbmRl
+eC1hcnJvdyB7IGZvbnQtc2l6ZTogNDVwdDsgZm9udC1mYW1pbHk6IEFyaWFsOyBkaXNwbGF5OiAt
+d2Via2l0LWJveDsgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjsgaGVpZ2h0OiAxMDAlOyBsaW5l
+LWhlaWdodDogMC4zZW07IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9wOiAwcHg7IHJpZ2h0OiAwcHg7
+IH0KCi5tb2JpbGUtbGluay1idXR0b24geyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBB
+cmlhbDsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMnB4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1
+czogMnB4OyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogMnB4OyBib3JkZXItYm90dG9tLWxl
+ZnQtcmFkaXVzOiAycHg7IGhlaWdodDogMjBweDsgcGFkZGluZy10b3A6IDNweDsgcGFkZGluZy1y
+aWdodDogNnB4OyBwYWRkaW5nLWJvdHRvbTogM3B4OyBwYWRkaW5nLWxlZnQ6IDZweDsgfQoKLm1v
+YmlsZS1kZXNrdG9wLWxpbmsgeyBtYXJnaW4tdG9wOiAxNXB4OyBtYXJnaW4tYm90dG9tOiAwcHg7
+IH0KCmh0bWwgLmNvbW1lbnQtZm9ybSB7IG1heC13aWR0aDogMzIwcHg7IH0KCmh0bWwgI2NvbW1l
+bnQtYWN0aW9ucyB7IG1heC13aWR0aDogMjYwcHg7IH0KCmh0bWwgLlByb2ZpbGUgeyBwYWRkaW5n
+LXRvcDogNXB4OyBwYWRkaW5nLXJpZ2h0OiA1cHg7IHBhZGRpbmctYm90dG9tOiA1cHg7IHBhZGRp
+bmctbGVmdDogNXB4OyB9CgpodG1sIC5BdHRyaWJ1dGlvbiB7IGNsZWFyOiBib3RoOyB9CgpodG1s
+IC5BZFNlbnNlIHsgbGluZS1oZWlnaHQ6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgfQoKaHRtbCB7
+IGhlaWdodDogMTAwJTsgfQoKYm9keSB7IG1pbi1oZWlnaHQ6IDEwMCU7IHBvc2l0aW9uOiByZWxh
+dGl2ZTsgfQoKLmNvbnRlbnQgeyBwb3NpdGlvbjogcmVsYXRpdmU7IHdvcmQtd3JhcDogYnJlYWst
+d29yZDsgfQoKLmNvbnRlbnQtb3V0ZXIsIC5yZWdpb24taW5uZXIgeyBtaW4taGVpZ2h0OiAwcHg7
+IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiBhdXRvOyBtYXJnaW4tYm90dG9tOiAwcHg7
+IG1hcmdpbi1sZWZ0OiBhdXRvOyB9CgouY29sdW1ucyB7IHpvb206IDE7IH0KCi5sb2FkaW5nIC5j
+b2x1bW5zIHsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IH0KCi5jb2x1
+bW5zLWlubmVyIHsgbWluLWhlaWdodDogMHB4OyB9CgouY29sdW1uLWNlbnRlci1vdXRlciwgLmNv
+bHVtbi1sZWZ0LW91dGVyLCAuY29sdW1uLXJpZ2h0LW91dGVyIHsgcG9zaXRpb246IHJlbGF0aXZl
+OyBmbG9hdDogbGVmdDsgfQoKLmNvbHVtbi1jZW50ZXItb3V0ZXIgeyB3aWR0aDogMTAwJTsgfQoK
+LmNvbHVtbi1sZWZ0LW91dGVyIHsgbWFyZ2luLWxlZnQ6IC0xMDAlOyB9CgouZmF1eGNvbHVtbnMg
+eyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KCi5mYXV4Y29sdW1uLW91dGVyIHsgcG9zaXRpb246IGFi
+c29sdXRlOyB0b3A6IDBweDsgYm90dG9tOiAwcHg7IG92ZXJmbG93LXg6IGhpZGRlbjsgb3ZlcmZs
+b3cteTogaGlkZGVuOyB9CgouZmF1eGNvbHVtbi1vdXRlciAuZmF1eGJvcmRlci1sZWZ0LCAuZmF1
+eGNvbHVtbi1vdXRlciAuZmF1eGJvcmRlci1yaWdodCwgLmZhdXhjb2x1bW4taW5uZXIgeyBoZWln
+aHQ6IDEwMCU7IH0KCi5mYXV4Y29sdW1uLWxlZnQtb3V0ZXIgeyBsZWZ0OiAwcHg7IH0KCi5mYXV4
+Y29sdW1uLXJpZ2h0LW91dGVyIHsgcmlnaHQ6IDBweDsgfQoKLmNhcC10b3AsIC5jYXAtYm90dG9t
+IHsgcG9zaXRpb246IHJlbGF0aXZlOyBoZWlnaHQ6IDBweDsgYmFja2dyb3VuZC1yZXBlYXQ6IHJl
+cGVhdCBuby1yZXBlYXQ7IH0KCi5jYXAtdG9wIC5jYXAtbGVmdCwgLmNhcC10b3AgLmNhcC1yaWdo
+dCwgLmNhcC1ib3R0b20gLmNhcC1sZWZ0LCAuY2FwLWJvdHRvbSAuY2FwLXJpZ2h0IHsgaGVpZ2h0
+OiAxMDAlOyBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0IG5vLXJlcGVhdDsgfQoKLmNhcC10
+b3AsIC5jYXAtdG9wIC5jYXAtbGVmdCB7IGJhY2tncm91bmQtcG9zaXRpb246IDAlIDAlOyB9Cgou
+Y2FwLWJvdHRvbSwgLmNhcC1ib3R0b20gLmNhcC1sZWZ0IHsgYmFja2dyb3VuZC1wb3NpdGlvbjog
+MCUgMTAwJTsgfQoKLmNhcC10b3AgLmNhcC1sZWZ0LCAuY2FwLWJvdHRvbSAuY2FwLWxlZnQgeyBm
+bG9hdDogbGVmdDsgfQoKLmNhcC10b3AgLmNhcC1yaWdodCB7IGZsb2F0OiByaWdodDsgYmFja2dy
+b3VuZC1wb3NpdGlvbjogMTAwJSAwJTsgfQoKLmNhcC1ib3R0b20gLmNhcC1yaWdodCB7IGZsb2F0
+OiByaWdodDsgYmFja2dyb3VuZC1wb3NpdGlvbjogMTAwJSAxMDAlOyB9CgouZmF1eGJvcmRlci1s
+ZWZ0IHsgcG9zaXRpb246IHJlbGF0aXZlOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwJSAwJTsgYmFj
+a2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdCByZXBlYXQ7IH0KCi5mYXV4Ym9yZGVyLXJpZ2h0IHsg
+cG9zaXRpb246IGFic29sdXRlOyByaWdodDogMHB4OyBoZWlnaHQ6IDEwMCU7IGJhY2tncm91bmQt
+cG9zaXRpb246IDEwMCUgMCU7IGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQgcmVwZWF0OyB9
+Cgp0YWJsZS5zZWN0aW9uLWNvbHVtbnMgeyBib3JkZXItdG9wLXN0eWxlOiBub25lOyBib3JkZXIt
+cmlnaHQtc3R5bGU6IG5vbmU7IGJvcmRlci1ib3R0b20tc3R5bGU6IG5vbmU7IGJvcmRlci1sZWZ0
+LXN0eWxlOiBub25lOyBib3JkZXItd2lkdGg6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlh
+bDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyB0YWJsZS1sYXlvdXQ6IGZpeGVkOyB3aWR0aDogMTAw
+JTsgcG9zaXRpb246IHJlbGF0aXZlOyB9Cgp0YWJsZS5jb2x1bW5zLTIgdGQuY29sdW1ucy1jZWxs
+IHsgd2lkdGg6IDUwJTsgfQoKdGFibGUuY29sdW1ucy0zIHRkLmNvbHVtbnMtY2VsbCB7IHdpZHRo
+OiAzMy4zMyU7IH0KCnRhYmxlLmNvbHVtbnMtNCB0ZC5jb2x1bW5zLWNlbGwgeyB3aWR0aDogMjUl
+OyB9Cgp0YWJsZS5zZWN0aW9uLWNvbHVtbnMgdGQuY29sdW1ucy1jZWxsIHsgdmVydGljYWwtYWxp
+Z246IHRvcDsgfQoKLmJvZHktZmF1eGNvbHVtbnMsIC5jb250ZW50LWZhdXhjb2x1bW5zIHsgcG9z
+aXRpb246IGFic29sdXRlOyB0b3A6IDBweDsgbGVmdDogMHB4OyB6LWluZGV4OiAtMTsgaGVpZ2h0
+OiAxMDAlOyB3aWR0aDogMTAwJTsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRk
+ZW47IH0KCi5ib2R5LWZhdXhjb2x1bW5zIC5mYXV4Y29sdW1uLW91dGVyIHsgd2lkdGg6IDEwMCU7
+IH0KCi5jb250ZW50LWZhdXhjb2x1bW5zIC5mYXV4Y29sdW1uLW91dGVyIHsgcG9zaXRpb246IHJl
+bGF0aXZlOyBvdmVyZmxvdy14OiB2aXNpYmxlOyBvdmVyZmxvdy15OiB2aXNpYmxlOyBoZWlnaHQ6
+IDEwMCU7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiBhdXRvOyBtYXJnaW4tYm90dG9t
+OiAwcHg7IG1hcmdpbi1sZWZ0OiBhdXRvOyB9CgouY29udGVudC1mYXV4Y29sdW1ucyAuZmF1eGNv
+bHVtbi1sZWZ0IHsgd2lkdGg6IDEwMCU7IH0KCmJvZHkgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdp
+bi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRp
+bmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDFweDsgcGFk
+ZGluZy1sZWZ0OiAwcHg7IH0KCi5jb250ZW50LW91dGVyLCAuaGVhZGVyLW91dGVyLCAudGFicy1v
+dXRlciwgLm1haW4tb3V0ZXIsIC5tYWluLWlubmVyLCAuZm9vdGVyLW91dGVyLCAucG9zdCwgLmNv
+bW1lbnRzLCAud2lkZ2V0LCAuZGF0ZS1oZWFkZXIsIC5pbmxpbmUtYWQgeyBwb3NpdGlvbjogcmVs
+YXRpdmU7IG1pbi1oZWlnaHQ6IDBweDsgfQoKLmZvb3Rlci1vdXRlciB7IG1hcmdpbi1ib3R0b206
+IC0xcHg7IH0KCi5jb250ZW50LWlubmVyIHsgcGFkZGluZy10b3A6IDEwcHg7IHBhZGRpbmctcmln
+aHQ6IDEwcHg7IHBhZGRpbmctYm90dG9tOiAxMHB4OyBwYWRkaW5nLWxlZnQ6IDEwcHg7IH0KCi50
+YWJzLWlubmVyIHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMTVweDsgcGFkZGlu
+Zy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAxNXB4OyB9CgoubWFpbi1pbm5lciB7IHBhZGRp
+bmctdG9wOiAzMHB4OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAzMHB4OyBw
+YWRkaW5nLWxlZnQ6IDBweDsgfQoKLm1haW4taW5uZXIgLmNvbHVtbi1jZW50ZXItaW5uZXIsIC5t
+YWluLWlubmVyIC5jb2x1bW4tbGVmdC1pbm5lciwgLm1haW4taW5uZXIgLmNvbHVtbi1yaWdodC1p
+bm5lciB7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDE1cHg7IHBhZGRpbmctYm90
+dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMTVweDsgfQoKLmZvb3Rlci1pbm5lciB7IHBhZGRpbmct
+dG9wOiAzMHB4OyBwYWRkaW5nLXJpZ2h0OiAxNXB4OyBwYWRkaW5nLWJvdHRvbTogMzBweDsgcGFk
+ZGluZy1sZWZ0OiAxNXB4OyB9Cgouc2VjdGlvbiB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJp
+Z2h0OiAxNXB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAxNXB4OyB9Cgoud2lk
+Z2V0IHsgbWFyZ2luLXRvcDogMzBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206
+IDMwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCi5zZWN0aW9uOmZpcnN0LWNoaWxkIC53aWRnZXQ6
+Zmlyc3QtY2hpbGQgeyBtYXJnaW4tdG9wOiAwcHg7IH0KCi5zZWN0aW9uOmZpcnN0LWNoaWxkICN1
+ZHMtc2VhcmNoQ29udHJvbCArIC53aWRnZXQgeyBtYXJnaW4tdG9wOiAwcHg7IH0KCi5zZWN0aW9u
+Omxhc3QtY2hpbGQgLndpZGdldDpsYXN0LWNoaWxkIHsgbWFyZ2luLWJvdHRvbTogMHB4OyB9Cgou
+dGFiczpmaXJzdC1jaGlsZCAud2lkZ2V0IHsgbWFyZ2luLWJvdHRvbTogMHB4OyB9Cgpib2R5IC5u
+YXZiYXIgeyBoZWlnaHQ6IDMwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBw
+eDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IG1hcmdpbi10b3A6IDBw
+eDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBw
+eDsgfQoKYm9keSAubmF2YmFyIC5OYXZiYXIgeyBwb3NpdGlvbjogYWJzb2x1dGU7IHotaW5kZXg6
+IDEwOyBsZWZ0OiAwcHg7IHdpZHRoOiAxMDAlOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdo
+dDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9w
+OiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1s
+ZWZ0OiAwcHg7IGJhY2tncm91bmQtaW1hZ2U6IG5vbmU7IGJhY2tncm91bmQtYXR0YWNobWVudDog
+aW5pdGlhbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDogaW5p
+dGlhbDsgYmFja2dyb3VuZC1jb2xvcjogaW5pdGlhbDsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFs
+OyBib3JkZXItdG9wLXN0eWxlOiBub25lOyBib3JkZXItcmlnaHQtc3R5bGU6IG5vbmU7IGJvcmRl
+ci1ib3R0b20tc3R5bGU6IG5vbmU7IGJvcmRlci1sZWZ0LXN0eWxlOiBub25lOyBib3JkZXItd2lk
+dGg6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFs
+OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0
+OiBpbml0aWFsIGluaXRpYWw7IH0KCi5oZWFkZXItaW5uZXIgLnNlY3Rpb24geyBtYXJnaW4tdG9w
+OiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0
+OiAwcHg7IH0KCi5oZWFkZXItaW5uZXIgLndpZGdldCB7IG1hcmdpbi1sZWZ0OiAzMHB4OyBtYXJn
+aW4tcmlnaHQ6IDMwcHg7IH0KCi5oZWFkZXItaW5uZXIgLkhlYWRlciB7IG1hcmdpbi10b3A6IDBw
+eDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBw
+eDsgfQoKLmhlYWRlci1pbm5lciAuSGVhZGVyICNoZWFkZXItaW5uZXIgeyBvdmVyZmxvdy14OiBo
+aWRkZW47IG92ZXJmbG93LXk6IGhpZGRlbjsgfQoKLmhlYWRlci1pbm5lciAuSGVhZGVyIC50aXRs
+ZXdyYXBwZXIgeyBwYWRkaW5nLXRvcDogMjJweDsgcGFkZGluZy1yaWdodDogMzBweDsgcGFkZGlu
+Zy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAzMHB4OyB9CgouaGVhZGVyLWlubmVyIC5IZWFk
+ZXIgLmRlc2NyaXB0aW9ud3JhcHBlciB7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6
+IDMwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMzBweDsgbWFyZ2luLWJv
+dHRvbTogMjVweDsgfQoKLkhlYWRlciBoMSB7IG1hcmdpbi1ib3R0b206IDEwcHg7IH0KCi5IZWFk
+ZXIgLmRlc2NyaXB0aW9uIHsgbWFyZ2luLXRvcDogMC41ZW07IG1hcmdpbi1yaWdodDogMHB4OyBt
+YXJnaW4tYm90dG9tOiAxMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5nLXRvcDogMHB4OyBw
+YWRkaW5nLXJpZ2h0OiAycHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMnB4
+OyB9CgphIGltZyB7IGJvcmRlci10b3Atc3R5bGU6IG5vbmU7IGJvcmRlci1yaWdodC1zdHlsZTog
+bm9uZTsgYm9yZGVyLWJvdHRvbS1zdHlsZTogbm9uZTsgYm9yZGVyLWxlZnQtc3R5bGU6IG5vbmU7
+IGJvcmRlci13aWR0aDogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1h
+Z2U6IGluaXRpYWw7IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoKaDEsIGgyLCBoMywgaDQgeyBtYXJn
+aW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdp
+bi1sZWZ0OiAwcHg7IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoKaDEgYTpob3ZlciB7IHRleHQtZGVj
+b3JhdGlvbjogbm9uZTsgfQoKaDMgYTpob3ZlciB7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgfQoK
+LnRhYnMgLndpZGdldCBoMiB7IGRpc3BsYXk6IG5vbmU7IH0KCi50YWJzIC53aWRnZXQgdWwsIC50
+YWJzIC53aWRnZXQgdWwgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJn
+aW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRp
+bmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IG92
+ZXJmbG93LXg6IGhpZGRlbjsgb3ZlcmZsb3cteTogaGlkZGVuOyBsaXN0LXN0eWxlLXR5cGU6IG5v
+bmU7IGxpc3Qtc3R5bGUtcG9zaXRpb246IGluaXRpYWw7IGxpc3Qtc3R5bGUtaW1hZ2U6IGluaXRp
+YWw7IH0KCi50YWJzIC53aWRnZXQgbGksIC50YWJzIC53aWRnZXQgbGkgeyBtYXJnaW4tdG9wOiAw
+cHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAw
+cHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206
+IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IGZsb2F0OiBsZWZ0OyB9CgoudGFicyAud2lkZ2V0IGxp
+IGE6aG92ZXIgeyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0KCi53aWRnZXQgeyBsaW5lLWhlaWdo
+dDogMS40OyB9Cgoud2lkZ2V0IHVsIHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDog
+MHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDEuMjVlbTsgbWFyZ2luLXRv
+cDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVm
+dDogMHB4OyBsaW5lLWhlaWdodDogMS4yOyB9CgouQmxvZ0xpc3QgdWwgeyBwYWRkaW5nLXRvcDog
+MHB4OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVm
+dDogMHB4OyB9CgouQmxvZ0xpc3QgbGkgLmJsb2ctY29udGVudCB7IHBvc2l0aW9uOiByZWxhdGl2
+ZTsgfQoKLndpZGdldCBsaSwgLkJsb2dBcmNoaXZlICNBcmNoaXZlTGlzdCB1bC5mbGF0IGxpIHsg
+cGFkZGluZy10b3A6IDAuMjVlbTsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTog
+MC4yNWVtOyBwYWRkaW5nLWxlZnQ6IDBweDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6
+IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB0ZXh0LWluZGVudDog
+MHB4OyB9Cgoud2lkZ2V0IC5wb3N0LWJvZHkgdWwgeyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5n
+LXJpZ2h0OiAyLjVlbTsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAyLjVlbTsg
+bWFyZ2luLXRvcDogMC41ZW07IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwLjVl
+bTsgbWFyZ2luLWxlZnQ6IDBweDsgbGluZS1oZWlnaHQ6IDEuNDsgfQoKLndpZGdldCAucG9zdC1i
+b2R5IGxpIHsgbWFyZ2luLWJvdHRvbTogMC4yNWVtOyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5n
+LWJvdHRvbTogMHB4OyB9CgouaXRlbS1jb250cm9sIHsgZGlzcGxheTogbm9uZTsgfQoKLml0ZW0t
+Y29udHJvbCBhLCAuaXRlbS1hY3Rpb24gYSB7IHRleHQtZGVjb3JhdGlvbjogbm9uZSAhaW1wb3J0
+YW50OyB9Cgoud2lkZ2V0LWl0ZW0tY29udHJvbCB7IGZsb2F0OiByaWdodDsgaGVpZ2h0OiAyMHB4
+OyBtYXJnaW4tdG9wOiAtMjBweDsgcG9zaXRpb246IHJlbGF0aXZlOyB6LWluZGV4OiAxMDsgfQoK
+LndpZGdldC1pdGVtLWNvbnRyb2wgYSB7IG9wYWNpdHk6IDAuNTsgfQoKLndpZGdldC1pdGVtLWNv
+bnRyb2wgYTpob3ZlciB7IG9wYWNpdHk6IDE7IH0KCi53aWRnZXQgLndpZGdldC1pdGVtLWNvbnRy
+b2wgYSBpbWcgeyBib3JkZXItdG9wLXN0eWxlOiBub25lOyBib3JkZXItcmlnaHQtc3R5bGU6IG5v
+bmU7IGJvcmRlci1ib3R0b20tc3R5bGU6IG5vbmU7IGJvcmRlci1sZWZ0LXN0eWxlOiBub25lOyBi
+b3JkZXItd2lkdGg6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdl
+OiBpbml0aWFsOyBiYWNrZ3JvdW5kLWltYWdlOiBub25lOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6
+IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGlu
+aXRpYWw7IGJhY2tncm91bmQtY29sb3I6IGluaXRpYWw7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlh
+bDsgLXdlYmtpdC1ib3gtc2hhZG93OiBub25lOyBib3gtc2hhZG93OiBub25lOyBiYWNrZ3JvdW5k
+LXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGlu
+aXRpYWw7IH0KCi5wb3N0LWJvZHkgeyB3aWR0aDogMTAwJTsgfQoKLnBvc3QtaGVhZGVyLCAucG9z
+dC1mb290ZXIgeyBsaW5lLWhlaWdodDogMS42OyB9CgoucG9zdC1mb290ZXItbGluZSA+ICogeyBt
+YXJnaW4tcmlnaHQ6IDFlbTsgfQoKLnBvc3QtZm9vdGVyLWxpbmUgPiA6bGFzdC1jaGlsZCB7IG1h
+cmdpbi1yaWdodDogMHB4OyB9CgoucG9zdC10aW1lc3RhbXAgeyBtYXJnaW4tbGVmdDogLTFlbTsg
+fQoKLnBvc3QtZm9vdGVyLWxpbmUgPiA6Zmlyc3QtY2hpbGQgeyBtYXJnaW4tbGVmdDogMHB4OyB9
+CgoucG9zdCAudHItY2FwdGlvbi1jb250YWluZXIgeyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KCi5p
+bmxpbmUtYWQgeyBtYXJnaW4tdG9wOiAyZW07IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90
+dG9tOiAyZW07IG1hcmdpbi1sZWZ0OiAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgbGluZS1oZWln
+aHQ6IDA7IH0KCiNjb21tZW50cyAuY29tbWVudC1hdXRob3IgeyBwYWRkaW5nLWxlZnQ6IDI1cHg7
+IH0KCi5jb21tZW50LWJvZHkgeyBtYXJnaW4tdG9wOiAwLjVlbTsgbWFyZ2luLXJpZ2h0OiAyNXB4
+OyBtYXJnaW4tYm90dG9tOiAwLjVlbTsgbWFyZ2luLWxlZnQ6IDI1cHg7IH0KCi5jb21tZW50LWZv
+b3RlciB7IG1hcmdpbi10b3A6IDAuNWVtOyBtYXJnaW4tcmlnaHQ6IDI1cHg7IG1hcmdpbi1ib3R0
+b206IDEuNWVtOyBtYXJnaW4tbGVmdDogMjVweDsgfQoKLmNvbW1lbnQtYm9keSBwIHsgbWFyZ2lu
+LXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4t
+bGVmdDogMHB4OyB9CgojY29tbWVudHMgLmF2YXRhci1jb21tZW50LWluZGVudCAuY29tbWVudC1h
+dXRob3IgeyBtYXJnaW4tbGVmdDogLTQ1cHg7IHBhZGRpbmctbGVmdDogNDVweDsgfQoKLmRlbGV0
+ZWQtY29tbWVudCB7IGZvbnQtc3R5bGU6IGl0YWxpYzsgb3BhY2l0eTogMC41OyB9CgouUHJvZmls
+ZSBpbWcgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMC43NWVtOyBtYXJnaW4tYm90
+dG9tOiAwLjVlbTsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLlByb2ZpbGUgLnByb2ZpbGUtZGF0YWJs
+b2NrIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTog
+MC41ZW07IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCmR0IHsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0KCnRh
+YmxlLnNlY3Rpb24tY29sdW1ucyB0ZC5maXJzdC5jb2x1bW5zLWNlbGwgeyBib3JkZXItbGVmdC1z
+dHlsZTogbm9uZTsgYm9yZGVyLWxlZnQtd2lkdGg6IGluaXRpYWw7IGJvcmRlci1sZWZ0LWNvbG9y
+OiBpbml0aWFsOyB9CgoucG9zdC1zdW1tYXJ5IHsgcGFkZGluZy10b3A6IDhweDsgfQoKI2xheW91
+dCAuaGVhZGVyLW91dGVyLCAjbGF5b3V0IC50YWJzLW91dGVyLCAjbGF5b3V0IC5tYWluLW91dGVy
+LCAjbGF5b3V0IC5mb290ZXItb3V0ZXIgeyBtYXJnaW4tdG9wOiA1cHg7IG1hcmdpbi1yaWdodDog
+MHB4OyBtYXJnaW4tYm90dG9tOiA1cHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCiNsYXlvdXQgLmNh
+cC10b3AsICNsYXlvdXQgLmNhcC1ib3R0b20geyBkaXNwbGF5OiBub25lOyB9CgojbGF5b3V0IC5y
+ZWdpb24taW5uZXIgeyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAxMHB4OyBwYWRk
+aW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDEwcHg7IG1hcmdpbi10b3A6IDBweDsgbWFy
+Z2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoK
+I2xheW91dCAubWFpbi1pbm5lciAuY29sdW1uLWNlbnRlci1pbm5lciwgI2xheW91dCAubWFpbi1p
+bm5lciAuY29sdW1uLWxlZnQtaW5uZXIsICNsYXlvdXQgLm1haW4taW5uZXIgLmNvbHVtbi1yaWdo
+dC1pbm5lciB7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDVweDsgcGFkZGluZy1i
+b3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiA1cHg7IH0KCi5wb3N0LWZvb3RlciBhYmJyIHsgYm9y
+ZGVyLXRvcC1zdHlsZTogbm9uZTsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBub25lOyBib3JkZXItYm90
+dG9tLXN0eWxlOiBub25lOyBib3JkZXItbGVmdC1zdHlsZTogbm9uZTsgYm9yZGVyLXdpZHRoOiBp
+bml0aWFsOyBib3JkZXItY29sb3I6IGluaXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgfQoK
+LmF1dGhvci1wcm9maWxlIHsgbWFyZ2luLXRvcDogNXB4OyBtYXJnaW4tcmlnaHQ6IDVweDsgbWFy
+Z2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBvdmVyZmxvdy14OiBoaWRkZW47IG92
+ZXJmbG93LXk6IGhpZGRlbjsgfQoKLmF1dGhvci1wcm9maWxlIGltZyB7IGJvcmRlci10b3Atd2lk
+dGg6IDFweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFw
+eDsgYm9yZGVyLWxlZnQtd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRl
+ci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXIt
+bGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMzksIDIzOSwgMjM5KTsg
+Ym9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjM5LCAyMzksIDIzOSk7IGJvcmRlci1ib3R0b20tY29s
+b3I6IHJnYigyMzksIDIzOSwgMjM5KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMzksIDIzOSwg
+MjM5KTsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBmbG9hdDogbGVmdDsgbWFyZ2luLXJpZ2h0OiA1
+cHg7IH0KCiNibG9nLXBhZ2VyLW5ld2VyLWxpbmsgeyBmbG9hdDogbGVmdDsgfQoKI2Jsb2ctcGFn
+ZXItb2xkZXItbGluayB7IGZsb2F0OiByaWdodDsgfQoKI2Jsb2ctcGFnZXIgeyBtYXJnaW4tdG9w
+OiAxZW07IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAxZW07IG1hcmdpbi1sZWZ0
+OiAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15
+OiBoaWRkZW47IH0KCi5iYWNrbGluay10b2dnbGUtemlwcHkgeyBwYWRkaW5nLXJpZ2h0OiAxMXB4
+OyBtYXJnaW4tcmlnaHQ6IDAuMWVtOyBjdXJzb3I6IHBvaW50ZXI7IGJhY2tncm91bmQtaW1hZ2U6
+IHVybChodHRwczovL3Jlc291cmNlcy5ibG9nYmxvZy5jb20vaW1nL3RyaWFuZ2xlX2x0ci5naWYp
+OyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0
+aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IGluaXRpYWw7
+IGJhY2tncm91bmQtc2l6ZTogaW5pdGlhbDsgYmFja2dyb3VuZC1wb3NpdGlvbjogMCUgNTAlOyBi
+YWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0IG5vLXJlcGVhdDsgfQoKLmV4cGFuZGVkLWJhY2ts
+aW5rIC5iYWNrbGluay10b2dnbGUtemlwcHkgeyBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoaHR0cHM6
+Ly9yZXNvdXJjZXMuYmxvZ2Jsb2cuY29tL2ltZy90cmlhbmdsZV9vcGVuLmdpZik7IH0KCi5jb2xs
+YXBzZWQtYmFja2xpbmsgLmNvbGxhcHNlYWJsZSB7IGRpc3BsYXk6IG5vbmU7IH0KCi5zdGF0dXMt
+bXNnLXdyYXAgeyBmb250LXNpemU6IDExMCU7IHdpZHRoOiA5MCU7IG1hcmdpbi10b3A6IDEwcHg7
+IG1hcmdpbi1yaWdodDogYXV0bzsgbWFyZ2luLWJvdHRvbTogMTBweDsgbWFyZ2luLWxlZnQ6IGF1
+dG87IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoKLnN0YXR1cy1tc2ctYm9yZGVyIHsgYm9yZGVyLXRv
+cC13aWR0aDogMXB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0
+aDogMXB4OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsg
+Ym9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJv
+cmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDAsIDAsIDApOyBi
+b3JkZXItcmlnaHQtY29sb3I6IHJnYigwLCAwLCAwKTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdi
+KDAsIDAsIDApOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDAsIDAsIDApOyBib3JkZXItaW1hZ2U6
+IGluaXRpYWw7IG9wYWNpdHk6IDAuNDsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiByZWxhdGl2ZTsg
+fQoKLnN0YXR1cy1tc2ctYmcgeyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7
+IG9wYWNpdHk6IDAuODsgd2lkdGg6IDEwMCU7IHBvc2l0aW9uOiByZWxhdGl2ZTsgei1pbmRleDog
+MTsgfQoKLnN0YXR1cy1tc2ctYm9keSB7IHRleHQtYWxpZ246IGNlbnRlcjsgcGFkZGluZy10b3A6
+IDAuM2VtOyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwLjNlbTsgcGFkZGlu
+Zy1sZWZ0OiAwcHg7IHdpZHRoOiAxMDAlOyBwb3NpdGlvbjogYWJzb2x1dGU7IHotaW5kZXg6IDQ7
+IH0KCi5zdGF0dXMtbXNnLWhpZGRlbiB7IHZpc2liaWxpdHk6IGhpZGRlbjsgcGFkZGluZy10b3A6
+IDAuM2VtOyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwLjNlbTsgcGFkZGlu
+Zy1sZWZ0OiAwcHg7IH0KCi5zdGF0dXMtbXNnLXdyYXAgYSB7IHBhZGRpbmctbGVmdDogMC40ZW07
+IHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOyB9CgoucmVhY3Rpb25zLWxhYmVsIHsgbWFyZ2lu
+LXRvcDogM3B4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4t
+bGVmdDogMHB4OyB9CgoucmVhY3Rpb25zLWxhYmVsLWNlbGwgeyBsaW5lLWhlaWdodDogMi4zZW07
+IH0KCi5yZWFjdGlvbnMtaWZyYW1lIHsgYmFja2dyb3VuZC1pbWFnZTogaW5pdGlhbDsgYmFja2dy
+b3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFj
+a2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgYmFj
+a2dyb3VuZC1zaXplOiBpbml0aWFsOyBoZWlnaHQ6IDIuM2VtOyB3aWR0aDogMTAwJTsgYm9yZGVy
+LXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13
+aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7
+IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5k
+LXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGlu
+aXRpYWw7IH0KCiNjb21tZW50LWFjdGlvbnMgeyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBi
+YWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFs
+OyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50
+OyBiYWNrZ3JvdW5kLXNpemU6IGluaXRpYWw7IGJvcmRlci10b3Atd2lkdGg6IDBweDsgYm9yZGVy
+LXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDBweDsgYm9yZGVyLWxlZnQt
+d2lkdGg6IDBweDsgYm9yZGVyLXN0eWxlOiBpbml0aWFsOyBib3JkZXItY29sb3I6IGluaXRpYWw7
+IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDog
+MHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgcG9zaXRpb246IGFi
+c29sdXRlOyBoZWlnaHQ6IDI1cHg7IGJhY2tncm91bmQtcG9zaXRpb246IGluaXRpYWwgaW5pdGlh
+bDsgYmFja2dyb3VuZC1yZXBlYXQ6IGluaXRpYWwgaW5pdGlhbDsgfQoKI2NvbW1lbnRzIC5ibG9n
+Z2VyLWNvbW1lbnQtaWNvbiwgLmJsb2dnZXItY29tbWVudC1pY29uIHsgbGluZS1oZWlnaHQ6IDE2
+cHg7IGJhY2tncm91bmQtaW1hZ2U6IHVybChodHRwczovL3d3dy5ibG9nZ2VyLmNvbS9pbWcvYjE2
+LXJvdW5kZWQuZ2lmKTsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5k
+LW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNv
+bG9yOiBpbml0aWFsOyBiYWNrZ3JvdW5kLXNpemU6IGluaXRpYWw7IHBhZGRpbmctbGVmdDogMjBw
+eDsgYmFja2dyb3VuZC1wb3NpdGlvbjogMCUgNTAlOyBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVw
+ZWF0IG5vLXJlcGVhdDsgfQoKI2NvbW1lbnRzIC5vcGVuaWQtY29tbWVudC1pY29uLCAub3Blbmlk
+LWNvbW1lbnQtaWNvbiB7IGxpbmUtaGVpZ2h0OiAxNnB4OyBiYWNrZ3JvdW5kLWltYWdlOiB1cmwo
+aHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vaW1nL29wZW5pZDE2LXJvdW5kZWQuZ2lmKTsgYmFja2dy
+b3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFj
+a2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiBpbml0aWFsOyBiYWNrZ3Jv
+dW5kLXNpemU6IGluaXRpYWw7IHBhZGRpbmctbGVmdDogMjBweDsgYmFja2dyb3VuZC1wb3NpdGlv
+bjogMCUgNTAlOyBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0IG5vLXJlcGVhdDsgfQoKI2Nv
+bW1lbnRzIC5hbm9uLWNvbW1lbnQtaWNvbiwgLmFub24tY29tbWVudC1pY29uIHsgbGluZS1oZWln
+aHQ6IDE2cHg7IGJhY2tncm91bmQtaW1hZ2U6IHVybChodHRwczovL3d3dy5ibG9nZ2VyLmNvbS9p
+bWcvYW5vbjE2LXJvdW5kZWQuZ2lmKTsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBi
+YWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNr
+Z3JvdW5kLWNvbG9yOiBpbml0aWFsOyBiYWNrZ3JvdW5kLXNpemU6IGluaXRpYWw7IHBhZGRpbmct
+bGVmdDogMjBweDsgYmFja2dyb3VuZC1wb3NpdGlvbjogMCUgNTAlOyBiYWNrZ3JvdW5kLXJlcGVh
+dDogbm8tcmVwZWF0IG5vLXJlcGVhdDsgfQoKLmNvbW1lbnQtZm9ybSB7IGNsZWFyOiBib3RoOyB9
+CgouY29tbWVudC1saW5rIHsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgfQoKLnBhZ2luZy1jb250cm9s
+LWNvbnRhaW5lciB7IGZsb2F0OiByaWdodDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6
+IDZweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBmb250LXNpemU6IDgw
+JTsgfQoKLnVubmVlZGVkLXBhZ2luZy1jb250cm9sIHsgdmlzaWJpbGl0eTogaGlkZGVuOyB9Cgoj
+Y29tbWVudHMtYmxvY2sgLmF2YXRhci1pbWFnZS1jb250YWluZXIgaW1nIHsgYm9yZGVyLXRvcC13
+aWR0aDogMXB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDog
+MXB4OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9y
+ZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRl
+ci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQp
+OyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KTsgYm9yZGVyLWJvdHRvbS1j
+b2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIwNCwgMjA0
+LCAyMDQpOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGZsb2F0OiByaWdodDsgfQoKI2NvbW1lbnRz
+LWJsb2NrIC5hdmF0YXItaW1hZ2UtY29udGFpbmVyLmF2YXRhci1zdG9jayBpbWcgeyBib3JkZXIt
+dG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdp
+ZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IHBhZGRpbmctdG9wOiAxcHg7IHBhZGRp
+bmctcmlnaHQ6IDFweDsgcGFkZGluZy1ib3R0b206IDFweDsgcGFkZGluZy1sZWZ0OiAxcHg7IH0K
+CiNjb21tZW50cy1ibG9jayAuYXZhdGFyLWltYWdlLWNvbnRhaW5lciB7IGhlaWdodDogMzdweDsg
+bGVmdDogLTQ1cHg7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgd2lkdGg6IDM3cHg7IH0KCiNjb21tZW50
+cy1ibG9jay5hdmF0YXItY29tbWVudC1pbmRlbnQgeyBtYXJnaW4tbGVmdDogNDVweDsgcG9zaXRp
+b246IHJlbGF0aXZlOyB9CgojY29tbWVudHMtYmxvY2suYXZhdGFyLWNvbW1lbnQtaW5kZW50IGRk
+IHsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKaWZyYW1lLmF2YXRhci1ob3ZlcmNhcmQtaWZyYW1lIHsg
+Ym9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJv
+dHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItdG9wLXN0eWxl
+OiBub25lOyBib3JkZXItcmlnaHQtc3R5bGU6IG5vbmU7IGJvcmRlci1ib3R0b20tc3R5bGU6IG5v
+bmU7IGJvcmRlci1sZWZ0LXN0eWxlOiBub25lOyBib3JkZXItY29sb3I6IGluaXRpYWw7IGJvcmRl
+ci1pbWFnZTogaW5pdGlhbDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBw
+YWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgd2lkdGg6IDI1ZW07IGhlaWdo
+dDogOS40ZW07IG1hcmdpbi10b3A6IDAuNWVtOyBtYXJnaW4tcmlnaHQ6IDAuNWVtOyBtYXJnaW4t
+Ym90dG9tOiAwLjVlbTsgbWFyZ2luLWxlZnQ6IDAuNWVtOyB9CgouY29tbWVudHMgeyBjbGVhcjog
+Ym90aDsgbWFyZ2luLXRvcDogMTBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyB9CgouY29tbWVudHMg
+LmNvbW1lbnRzLWNvbnRlbnQgeyBtYXJnaW4tYm90dG9tOiAxNnB4OyB9CgouY29tbWVudHMgLmNv
+bW1lbnQgLmNvbW1lbnQtYWN0aW9ucyBhIHsgcGFkZGluZy1yaWdodDogNXB4OyBwYWRkaW5nLXRv
+cDogNXB4OyB9CgouY29tbWVudHMgLmNvbW1lbnQgLmNvbW1lbnQtYWN0aW9ucyBhOmhvdmVyIHsg
+dGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7IH0KCi5jb21tZW50cyAuY29tbWVudHMtY29udGVu
+dCAuY29tbWVudC10aHJlYWQgb2wgeyBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7IHBhZGRpbmctdG9w
+OiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1s
+ZWZ0OiAwcHg7IHRleHQtYWxpZ246IGxlZnQ7IH0KCi5jb21tZW50cyAuY29tbWVudHMtY29udGVu
+dCAuaW5saW5lLXRocmVhZCB7IHBhZGRpbmctdG9wOiAwLjVlbTsgcGFkZGluZy1yaWdodDogMWVt
+OyBwYWRkaW5nLWJvdHRvbTogMC41ZW07IHBhZGRpbmctbGVmdDogMWVtOyB9CgouY29tbWVudHMg
+LmNvbW1lbnRzLWNvbnRlbnQgLmNvbW1lbnQtdGhyZWFkIHsgbWFyZ2luLXRvcDogOHB4OyBtYXJn
+aW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogOHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9Cgou
+Y29tbWVudHMgLmNvbW1lbnRzLWNvbnRlbnQgLmNvbW1lbnQtdGhyZWFkOmVtcHR5IHsgZGlzcGxh
+eTogbm9uZTsgfQoKLmNvbW1lbnRzIC5jb21tZW50cy1jb250ZW50IC5jb21tZW50LXJlcGxpZXMg
+eyBtYXJnaW4tbGVmdDogMzZweDsgbWFyZ2luLXRvcDogMWVtOyB9CgouY29tbWVudHMgLmNvbW1l
+bnRzLWNvbnRlbnQgLmNvbW1lbnQgeyBtYXJnaW4tYm90dG9tOiAxNnB4OyBwYWRkaW5nLWJvdHRv
+bTogOHB4OyB9CgouY29tbWVudHMgLmNvbW1lbnRzLWNvbnRlbnQgLmNvbW1lbnQ6Zmlyc3QtY2hp
+bGQgeyBwYWRkaW5nLXRvcDogMTZweDsgfQoKLmNvbW1lbnRzIC5jb21tZW50cy1jb250ZW50IC5j
+b21tZW50Omxhc3QtY2hpbGQgeyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0
+b20tc3R5bGU6IGluaXRpYWw7IGJvcmRlci1ib3R0b20tY29sb3I6IGluaXRpYWw7IHBhZGRpbmct
+Ym90dG9tOiAwcHg7IH0KCi5jb21tZW50cyAuY29tbWVudHMtY29udGVudCAuY29tbWVudC1ib2R5
+IHsgcG9zaXRpb246IHJlbGF0aXZlOyB9CgouY29tbWVudHMgLmNvbW1lbnRzLWNvbnRlbnQgLnVz
+ZXIgeyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQtd2VpZ2h0OiBib2xkOyB9CgouY29tbWVudHMg
+LmNvbW1lbnRzLWNvbnRlbnQgLmljb24uYmxvZy1hdXRob3IgeyBkaXNwbGF5OiBpbmxpbmUtYmxv
+Y2s7IGhlaWdodDogMThweDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFy
+Z2luLWJvdHRvbTogLTRweDsgbWFyZ2luLWxlZnQ6IDZweDsgd2lkdGg6IDE4cHg7IH0KCi5jb21t
+ZW50cyAuY29tbWVudHMtY29udGVudCAuZGF0ZXRpbWUgeyBtYXJnaW4tbGVmdDogNnB4OyB9Cgou
+Y29tbWVudHMgLmNvbW1lbnRzLWNvbnRlbnQgLmNvbW1lbnQtaGVhZGVyLCAuY29tbWVudHMgLmNv
+bW1lbnRzLWNvbnRlbnQgLmNvbW1lbnQtY29udGVudCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2lu
+LXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDhweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLmNv
+bW1lbnRzIC5jb21tZW50cy1jb250ZW50IC5jb21tZW50LWNvbnRlbnQgeyB0ZXh0LWFsaWduOiBq
+dXN0aWZ5OyB9CgouY29tbWVudHMgLmNvbW1lbnRzLWNvbnRlbnQgLm93bmVyLWFjdGlvbnMgeyBw
+b3NpdGlvbjogYWJzb2x1dGU7IHJpZ2h0OiAwcHg7IHRvcDogMHB4OyB9CgouY29tbWVudHMgLmNv
+bW1lbnRzLXJlcGx5Ym94IHsgYm9yZGVyLXRvcC1zdHlsZTogbm9uZTsgYm9yZGVyLXJpZ2h0LXN0
+eWxlOiBub25lOyBib3JkZXItYm90dG9tLXN0eWxlOiBub25lOyBib3JkZXItbGVmdC1zdHlsZTog
+bm9uZTsgYm9yZGVyLXdpZHRoOiBpbml0aWFsOyBib3JkZXItY29sb3I6IGluaXRpYWw7IGJvcmRl
+ci1pbWFnZTogaW5pdGlhbDsgaGVpZ2h0OiAyNTBweDsgd2lkdGg6IDEwMCU7IH0KCi5jb21tZW50
+cyAuY29tbWVudC1yZXBseWJveC1zaW5nbGUgeyBtYXJnaW4tbGVmdDogNDhweDsgbWFyZ2luLXRv
+cDogNXB4OyB9CgouY29tbWVudHMgLmNvbW1lbnQtcmVwbHlib3gtdGhyZWFkIHsgbWFyZ2luLXRv
+cDogNXB4OyB9CgouY29tbWVudHMgLmNvbW1lbnRzLWNvbnRlbnQgLmxvYWRtb3JlIGEgeyBkaXNw
+bGF5OiBibG9jazsgcGFkZGluZy10b3A6IDEwcHg7IHBhZGRpbmctcmlnaHQ6IDE2cHg7IHBhZGRp
+bmctYm90dG9tOiAxMHB4OyBwYWRkaW5nLWxlZnQ6IDE2cHg7IHRleHQtYWxpZ246IGNlbnRlcjsg
+fQoKLmNvbW1lbnRzIC50aHJlYWQtdG9nZ2xlIHsgY3Vyc29yOiBwb2ludGVyOyBkaXNwbGF5OiBp
+bmxpbmUtYmxvY2s7IH0KCi5jb21tZW50cyAuY29udGludWUgeyBjdXJzb3I6IHBvaW50ZXI7IH0K
+Ci5jb21tZW50cyAuY29udGludWUgYSB7IGRpc3BsYXk6IGJsb2NrOyBmb250LXdlaWdodDogYm9s
+ZDsgcGFkZGluZy10b3A6IDAuNWVtOyBwYWRkaW5nLXJpZ2h0OiAwLjVlbTsgcGFkZGluZy1ib3R0
+b206IDAuNWVtOyBwYWRkaW5nLWxlZnQ6IDAuNWVtOyB9CgouY29tbWVudHMgLmNvbW1lbnRzLWNv
+bnRlbnQgLmxvYWRtb3JlIHsgY3Vyc29yOiBwb2ludGVyOyBtYXJnaW4tdG9wOiAzZW07IG1heC1o
+ZWlnaHQ6IDNlbTsgfQoKLmNvbW1lbnRzIC5jb21tZW50cy1jb250ZW50IC5sb2FkbW9yZS5sb2Fk
+ZWQgeyBtYXgtaGVpZ2h0OiAwcHg7IG9wYWNpdHk6IDA7IG92ZXJmbG93LXg6IGhpZGRlbjsgb3Zl
+cmZsb3cteTogaGlkZGVuOyB9CgouY29tbWVudHMgLnRocmVhZC1jaHJvbWUudGhyZWFkLWNvbGxh
+cHNlZCB7IGRpc3BsYXk6IG5vbmU7IH0KCi5jb21tZW50cyAudGhyZWFkLXRvZ2dsZSB7IGRpc3Bs
+YXk6IGlubGluZS1ibG9jazsgfQoKLmNvbW1lbnRzIC50aHJlYWQtdG9nZ2xlIC50aHJlYWQtYXJy
+b3cgeyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGhlaWdodDogNnB4OyBtYXJnaW4tdG9wOiAwLjNl
+bTsgbWFyZ2luLXJpZ2h0OiAwLjNlbTsgbWFyZ2luLWJvdHRvbTogMC4zZW07IG1hcmdpbi1sZWZ0
+OiAwLjNlbTsgb3ZlcmZsb3cteDogdmlzaWJsZTsgb3ZlcmZsb3cteTogdmlzaWJsZTsgcGFkZGlu
+Zy1yaWdodDogNHB4OyB3aWR0aDogN3B4OyB9CgouY29tbWVudHMgLnRocmVhZC1leHBhbmRlZCAu
+dGhyZWFkLWFycm93IHsgYmFja2dyb3VuZC1pbWFnZTogdXJsKGRhdGE6aW1hZ2UvcG5nO2Jhc2U2
+NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQWNBQUFBSENBWUFBQURFVWxmVEFBQUFHMGxFUVZS
+NDJtTmd3QWZLeTh2LzQ4STRGZUEwQWFjVkRGUUJBUDl3SmtFL0toVU1BQUFBQUVsRlRrU3VRbUND
+KTsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBzY3JvbGw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0
+aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFy
+ZW50OyBiYWNrZ3JvdW5kLXNpemU6IGluaXRpYWw7IGJhY2tncm91bmQtcG9zaXRpb246IDBweCAw
+cHg7IGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQgbm8tcmVwZWF0OyB9CgouY29tbWVudHMg
+LnRocmVhZC1jb2xsYXBzZWQgLnRocmVhZC1hcnJvdyB7IGJhY2tncm91bmQtaW1hZ2U6IHVybChk
+YXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUFjQUFBQUhDQVlB
+QUFERVVsZlRBQUFBSlVsRVFWUjQybU5nQUlMeTh2TC9ETGdBU0JLbkFwZ2tWZ1hJa2hnS2lOS0ow
+MDVzNGdETGJDWkJpU3hmeWdBQUFBQkpSVTVFcmtKZ2dnPT0pOyBiYWNrZ3JvdW5kLWF0dGFjaG1l
+bnQ6IHNjcm9sbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDog
+aW5pdGlhbDsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IGJhY2tncm91bmQtc2l6ZTog
+aW5pdGlhbDsgYmFja2dyb3VuZC1wb3NpdGlvbjogMHB4IDBweDsgYmFja2dyb3VuZC1yZXBlYXQ6
+IG5vLXJlcGVhdCBuby1yZXBlYXQ7IH0KCi5jb21tZW50cyAuYXZhdGFyLWltYWdlLWNvbnRhaW5l
+ciB7IGZsb2F0OiBsZWZ0OyBtYXgtaGVpZ2h0OiAzNnB4OyBvdmVyZmxvdy14OiBoaWRkZW47IG92
+ZXJmbG93LXk6IGhpZGRlbjsgd2lkdGg6IDM2cHg7IH0KCi5jb21tZW50cyAuYXZhdGFyLWltYWdl
+LWNvbnRhaW5lciBpbWcgeyBtYXgtd2lkdGg6IDM2cHg7IH0KCi5jb21tZW50cyAuY29tbWVudC1i
+bG9jayB7IG1hcmdpbi1sZWZ0OiA0OHB4OyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KCi5jb21tZW50
+cyAuaGlkZGVuIHsgZGlzcGxheTogbm9uZTsgfQoKQG1lZGlhIHNjcmVlbiBhbmQgKG1heC1kZXZp
+Y2Utd2lkdGg6IDQ4MHB4KSB7IAogIC5jb21tZW50cyAuY29tbWVudHMtY29udGVudCAuY29tbWVu
+dC1yZXBsaWVzIHsgbWFyZ2luLWxlZnQ6IDBweDsgfQp9Cgp0YWJsZS50ci1jYXB0aW9uLWNvbnRh
+aW5lciB7IHBhZGRpbmctdG9wOiA0cHg7IHBhZGRpbmctcmlnaHQ6IDRweDsgcGFkZGluZy1ib3R0
+b206IDRweDsgcGFkZGluZy1sZWZ0OiA0cHg7IG1hcmdpbi1ib3R0b206IDAuNWVtOyB9Cgp0ZC50
+ci1jYXB0aW9uIHsgZm9udC1zaXplOiA4MCU7IH0KCi5pY29uLWFjdGlvbiB7IGJvcmRlci10b3At
+c3R5bGU6IG5vbmUgIWltcG9ydGFudDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBub25lICFpbXBvcnRh
+bnQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IG5vbmUgIWltcG9ydGFudDsgYm9yZGVyLWxlZnQtc3R5
+bGU6IG5vbmUgIWltcG9ydGFudDsgbWFyZ2luLXRvcDogMHB4ICFpbXBvcnRhbnQ7IG1hcmdpbi1y
+aWdodDogMHB4ICFpbXBvcnRhbnQ7IG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50OyBtYXJn
+aW4tbGVmdDogMC41ZW0gIWltcG9ydGFudDsgdmVydGljYWwtYWxpZ246IG1pZGRsZTsgfQoKLmNv
+bW1lbnQtYWN0aW9uLWljb24geyB3aWR0aDogMTNweDsgaGVpZ2h0OiAxM3B4OyBtYXJnaW4tdG9w
+OiAzcHg7IH0KCi5kZWxldGUtY29tbWVudC1pY29uIHsgYmFja2dyb3VuZC1pbWFnZTogdXJsKGh0
+dHBzOi8vd3d3LmJsb2dnZXIuY29tL2ltZy9pY29uX2RlbGV0ZTEzLmdpZik7IGJhY2tncm91bmQt
+YXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91
+bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3VuZC1jb2xvcjogaW5pdGlhbDsgYmFja2dyb3VuZC1z
+aXplOiBpbml0aWFsOyBwYWRkaW5nLXRvcDogN3B4OyBwYWRkaW5nLXJpZ2h0OiA3cHg7IHBhZGRp
+bmctYm90dG9tOiA3cHg7IHBhZGRpbmctbGVmdDogN3B4OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAw
+JSA1MCU7IGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQgbm8tcmVwZWF0OyB9CgojY29tbWVu
+dC1wb3B1cCB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdmlzaWJpbGl0eTogaGlkZGVuOyB3aWR0aDog
+MTAwcHg7IGhlaWdodDogMjBweDsgfQoKQG1lZGlhIGFsbCB7IAogIC5CTE9HX21vYmlsZV92aWRl
+b19jbGFzcyB7IGRpc3BsYXk6IG5vbmU7IH0KfQoKQG1lZGlhIGhhbmRoZWxkIHsgCiAgLkJMT0df
+bW9iaWxlX3ZpZGVvX2NsYXNzIHsgZGlzcGxheTogaW5saW5lOyB9CiAgLkJMT0dfdmlkZW9fY2xh
+c3MgeyBkaXNwbGF5OiBub25lOyB9Cn0KCi5wb3N0LXNoYXJlLWJ1dHRvbnMgeyBkaXNwbGF5OiBp
+bmxpbmUtYmxvY2s7IG1hcmdpbi10b3A6IDAuNWVtOyB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyB9
+Cgouc2hhcmUtYnV0dG9uIHsgd2lkdGg6IDIwcHg7IGhlaWdodDogMjBweDsgYmFja2dyb3VuZC1p
+bWFnZTogdXJsKGh0dHBzOi8vd3d3LmJsb2dnZXIuY29tL2ltZy9zaGFyZV9idXR0b25zXzIwXzMu
+cG5nKSAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWwgIWltcG9ydGFu
+dDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWwgIWltcG9ydGFudDsgYmFja2dyb3VuZC1jbGlw
+OiBpbml0aWFsICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY29sb3I6IGluaXRpYWwgIWltcG9ydGFu
+dDsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsICFpbXBvcnRhbnQ7IG92ZXJmbG93LXg6IGhpZGRl
+bjsgb3ZlcmZsb3cteTogaGlkZGVuOyBtYXJnaW4tbGVmdDogLTFweDsgcG9zaXRpb246IHJlbGF0
+aXZlOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwJSA1MCUgIWltcG9ydGFudDsgYmFja2dyb3VuZC1y
+ZXBlYXQ6IG5vLXJlcGVhdCBuby1yZXBlYXQgIWltcG9ydGFudDsgfQoKLmR1bW15LWNvbnRhaW5l
+ciwgLmdvb2dsZS1wbHVzLXNoYXJlLWNvbnRhaW5lciB7IHZlcnRpY2FsLWFsaWduOiB0b3A7IHBh
+ZGRpbmctbGVmdDogMC4zZW07IH0KCmE6aG92ZXIuc2hhcmUtYnV0dG9uIHsgdGV4dC1kZWNvcmF0
+aW9uOiBub25lOyB6LWluZGV4OiAxOyB9Cgouc2hhcmUtYnV0dG9uLWxpbmstdGV4dCB7IGRpc3Bs
+YXk6IGJsb2NrOyB0ZXh0LWluZGVudDogLTk5OTlweDsgfQoKLnNiLWVtYWlsIHsgYmFja2dyb3Vu
+ZC1wb3NpdGlvbjogMHB4IDBweCAhaW1wb3J0YW50OyB9CgphOmhvdmVyLnNiLWVtYWlsIHsgYmFj
+a2dyb3VuZC1wb3NpdGlvbjogMHB4IC0yMHB4ICFpbXBvcnRhbnQ7IH0KCmE6YWN0aXZlLnNiLWVt
+YWlsIHsgYmFja2dyb3VuZC1wb3NpdGlvbjogMHB4IC00MHB4ICFpbXBvcnRhbnQ7IH0KCi5zYi1i
+bG9nIHsgYmFja2dyb3VuZC1wb3NpdGlvbjogLTIwcHggMHB4ICFpbXBvcnRhbnQ7IH0KCmE6aG92
+ZXIuc2ItYmxvZyB7IGJhY2tncm91bmQtcG9zaXRpb246IC0yMHB4IC0yMHB4ICFpbXBvcnRhbnQ7
+IH0KCmE6YWN0aXZlLnNiLWJsb2cgeyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAtMjBweCAtNDBweCAh
+aW1wb3J0YW50OyB9Cgouc2ItdHdpdHRlciB7IGJhY2tncm91bmQtcG9zaXRpb246IC00MHB4IDBw
+eCAhaW1wb3J0YW50OyB9CgphOmhvdmVyLnNiLXR3aXR0ZXIgeyBiYWNrZ3JvdW5kLXBvc2l0aW9u
+OiAtNDBweCAtMjBweCAhaW1wb3J0YW50OyB9CgphOmFjdGl2ZS5zYi10d2l0dGVyIHsgYmFja2dy
+b3VuZC1wb3NpdGlvbjogLTQwcHggLTQwcHggIWltcG9ydGFudDsgfQoKLnNiLWZhY2Vib29rIHsg
+YmFja2dyb3VuZC1wb3NpdGlvbjogLTYwcHggMHB4ICFpbXBvcnRhbnQ7IH0KCmE6aG92ZXIuc2It
+ZmFjZWJvb2sgeyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAtNjBweCAtMjBweCAhaW1wb3J0YW50OyB9
+CgphOmFjdGl2ZS5zYi1mYWNlYm9vayB7IGJhY2tncm91bmQtcG9zaXRpb246IC02MHB4IC00MHB4
+ICFpbXBvcnRhbnQ7IH0KCi5zYi1idXp6IHsgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OyB9Cgou
+c2ItcGludGVyZXN0IHsgYmFja2dyb3VuZC1wb3NpdGlvbjogLTEwMHB4IDBweCAhaW1wb3J0YW50
+OyB9CgphOmhvdmVyLnNiLXBpbnRlcmVzdCB7IGJhY2tncm91bmQtcG9zaXRpb246IC0xMDBweCAt
+MjBweCAhaW1wb3J0YW50OyB9CgphOmFjdGl2ZS5zYi1waW50ZXJlc3QgeyBiYWNrZ3JvdW5kLXBv
+c2l0aW9uOiAtMTAwcHggLTQwcHggIWltcG9ydGFudDsgfQoKLnNiLWdvb2dsZSB7IGJhY2tncm91
+bmQtaW1hZ2U6IHVybChodHRwczovL3d3dy5ibG9nZ2VyLmNvbS9pbWcvcGx1c29uZS9wbHVzb25l
+cHJldmlldy5wbmcpOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQt
+b3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29s
+b3I6IGluaXRpYWw7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlhbDsgaGVpZ2h0OiAyMHB4OyB2ZXJ0
+aWNhbC1hbGlnbjogdG9wOyB3aWR0aDogODJweDsgYmFja2dyb3VuZC1wb3NpdGlvbjogaW5pdGlh
+bCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0IG5vLXJlcGVhdDsgfQoKLmdv
+b2ctaW5saW5lLWJsb2NrIHsgcG9zaXRpb246IHJlbGF0aXZlOyBkaXNwbGF5OiBpbmxpbmUtYmxv
+Y2s7IH0KCiogaHRtbCAuZ29vZy1pbmxpbmUtYmxvY2sgeyBkaXNwbGF5OiBpbmxpbmU7IH0KCjpm
+aXJzdC1jaGlsZCArIGh0bWwgLmdvb2ctaW5saW5lLWJsb2NrIHsgZGlzcGxheTogaW5saW5lOyB9
+CgouZ29vZy1jdXN0b20tYnV0dG9uIHsgbWFyZ2luLXRvcDogMnB4OyBtYXJnaW4tcmlnaHQ6IDJw
+eDsgbWFyZ2luLWJvdHRvbTogMnB4OyBtYXJnaW4tbGVmdDogMnB4OyBib3JkZXItdG9wLXdpZHRo
+OiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7
+IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJvcmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNv
+bG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IHBhZGRpbmctdG9wOiAwcHg7IHBh
+ZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7
+IGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsgY29sb3I6IHJnYigwLCAwLCAwKTsgdGV4
+dC1kZWNvcmF0aW9uOiBub25lOyBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7IGxpc3Qtc3R5bGUtcG9z
+aXRpb246IGluaXRpYWw7IGxpc3Qtc3R5bGUtaW1hZ2U6IGluaXRpYWw7IHZlcnRpY2FsLWFsaWdu
+OiBtaWRkbGU7IGN1cnNvcjogZGVmYXVsdDsgb3V0bGluZS1zdHlsZTogbm9uZTsgb3V0bGluZS13
+aWR0aDogaW5pdGlhbDsgb3V0bGluZS1jb2xvcjogaW5pdGlhbDsgfQoKLmdvb2ctY3VzdG9tLWJ1
+dHRvbi1vdXRlci1ib3gsIC5nb29nLWN1c3RvbS1idXR0b24taW5uZXItYm94IHsgYm9yZGVyLXRv
+cC1zdHlsZTogc29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20t
+c3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6
+IHRyYW5zcGFyZW50OyBib3JkZXItcmlnaHQtY29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXItYm90
+dG9tLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWxlZnQtY29sb3I6IHRyYW5zcGFyZW50OyB2
+ZXJ0aWNhbC1hbGlnbjogdG9wOyB9CgouZ29vZy1jdXN0b20tYnV0dG9uLWNoZWNrZWQgLmdvb2ct
+Y3VzdG9tLWJ1dHRvbi1vdXRlci1ib3gsIC5nb29nLWN1c3RvbS1idXR0b24tY2hlY2tlZCAuZ29v
+Zy1jdXN0b20tYnV0dG9uLWlubmVyLWJveCB7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMDQsIDIw
+NCwgMjA0KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IGJvcmRlci1i
+b3R0b20tY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigy
+MDQsIDIwNCwgMjA0KTsgfQoKLmdvb2ctY3VzdG9tLWJ1dHRvbi1vdXRlci1ib3ggeyBtYXJnaW4t
+dG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1s
+ZWZ0OiAwcHg7IGJvcmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAwcHg7
+IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweDsgcGFkZGlu
+Zy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRk
+aW5nLWxlZnQ6IDBweDsgfQoKLmdvb2ctY3VzdG9tLWJ1dHRvbi1pbm5lci1ib3ggeyBtYXJnaW4t
+dG9wOiAwcHg7IG1hcmdpbi1yaWdodDogLTFweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4t
+bGVmdDogLTFweDsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDFw
+eDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBwYWRk
+aW5nLXRvcDogM3B4OyBwYWRkaW5nLXJpZ2h0OiA0cHg7IHBhZGRpbmctYm90dG9tOiAzcHg7IHBh
+ZGRpbmctbGVmdDogNHB4OyB3aGl0ZS1zcGFjZTogbm93cmFwOyB9CgoqIGh0bWwgLmdvb2ctY3Vz
+dG9tLWJ1dHRvbi1pbm5lci1ib3ggeyBsZWZ0OiAtMXB4OyB9CgoqIGh0bWwgLmdvb2ctY3VzdG9t
+LWJ1dHRvbi1ydGwgLmdvb2ctY3VzdG9tLWJ1dHRvbi1vdXRlci1ib3ggeyBsZWZ0OiAtMXB4OyB9
+CgoqIGh0bWwgLmdvb2ctY3VzdG9tLWJ1dHRvbi1ydGwgLmdvb2ctY3VzdG9tLWJ1dHRvbi1pbm5l
+ci1ib3ggeyByaWdodDogYXV0bzsgfQoKOmZpcnN0LWNoaWxkICsgaHRtbCAuZ29vZy1jdXN0b20t
+YnV0dG9uLWlubmVyLWJveCB7IGxlZnQ6IC0xcHg7IH0KCjpmaXJzdC1jaGlsZCArIGh0bWwgLmdv
+b2ctY3VzdG9tLWJ1dHRvbi1ydGwgLmdvb2ctY3VzdG9tLWJ1dHRvbi1pbm5lci1ib3ggeyBsZWZ0
+OiAxcHg7IH0KCio6OnJvb3QgLmdvb2ctY3VzdG9tLWJ1dHRvbiwgKjo6cm9vdCAuZ29vZy1jdXN0
+b20tYnV0dG9uLW91dGVyLWJveCB7IGxpbmUtaGVpZ2h0OiAwOyB9CgoqOjpyb290IC5nb29nLWN1
+c3RvbS1idXR0b24taW5uZXItYm94IHsgbGluZS1oZWlnaHQ6IG5vcm1hbDsgfQoKLmdvb2ctY3Vz
+dG9tLWJ1dHRvbi1hY3RpdmUsIC5nb29nLWN1c3RvbS1idXR0b24tY2hlY2tlZCB7IGJhY2tncm91
+bmQtY29sb3I6IHJnYigyNTAsIDI0NiwgMTg4KTsgYmFja2dyb3VuZC1wb3NpdGlvbjogMCUgMTAw
+JTsgfQoKLmJsb2ctbW9iaWxlLWxpbmsgeyBwYWRkaW5nLXRvcDogMTVweDsgcGFkZGluZy1yaWdo
+dDogMTVweDsgcGFkZGluZy1ib3R0b206IDE1cHg7IHBhZGRpbmctbGVmdDogMTVweDsgfQoKI21v
+YmlsZS1zaGFyZS1idXR0b24geyBoZWlnaHQ6IDE4cHg7IHBhZGRpbmctdG9wOiAxcHg7IHBhZGRp
+bmctcmlnaHQ6IDEwcHg7IHBhZGRpbmctYm90dG9tOiAxcHg7IHBhZGRpbmctbGVmdDogMTBweDsg
+dGV4dC1hbGlnbjogY2VudGVyOyB2ZXJ0aWNhbC1hbGlnbjogdG9wOyBtYXJnaW4tdG9wOiAwcHg7
+IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7
+IH0KCiNtb2JpbGUtc2hhcmUtYnV0dG9uIGEgeyBkaXNwbGF5OiBibG9jazsgaGVpZ2h0OiAxMDAl
+OyBsaW5lLWhlaWdodDogMThweDsgd2lkdGg6IDEwMCU7IH0KCi5tb2JpbGUtc2hhcmUtcGFuZWwt
+b3V0ZXIgeyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6
+IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGlu
+aXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHJnYig2OCwgNjgsIDY4KTsgYmFja2dyb3VuZC1zaXpl
+OiBpbml0aWFsOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91
+bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCi5tb2JpbGUtc2hhcmUtcGFuZWwtaW5uZXIg
+eyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRp
+YWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7
+IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgYmFja2dyb3VuZC1zaXplOiBp
+bml0aWFsOyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAzcHg7IGJvcmRlci10b3AtcmlnaHQtcmFk
+aXVzOiAzcHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAzcHg7IGJvcmRlci1ib3R0b20t
+bGVmdC1yYWRpdXM6IDNweDsgZm9udC1mYW1pbHk6IEFyaWFsOyBmb250LXNpemU6IDE4cHg7IGNv
+bG9yOiByZ2IoMTAyLCAxMDIsIDEwMik7IGJhY2tncm91bmQtcG9zaXRpb246IGluaXRpYWwgaW5p
+dGlhbDsgYmFja2dyb3VuZC1yZXBlYXQ6IGluaXRpYWwgaW5pdGlhbDsgfQoKLm1vYmlsZSAubW9i
+aWxlLXNoYXJlLXBhbmVsLWlubmVyIGEgeyBkaXNwbGF5OiBibG9jazsgY29sb3I6IHJnYigxMDIs
+IDEwMiwgMTAyKTsgfQoKLm1vYmlsZS1zaGFyZS1wYW5lbC10aXRsZSB7IGJhY2tncm91bmQtaW1h
+Z2U6IGluaXRpYWw7IGJhY2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dyb3VuZC1v
+cmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3VuZC1jb2xv
+cjogcmdiKDI0NSwgMjQ1LCAyNDUpOyBiYWNrZ3JvdW5kLXNpemU6IGluaXRpYWw7IGJvcmRlci1i
+b3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0
+b20tY29sb3I6IHJnYigyMzgsIDIzOCwgMjM4KTsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMnB4
+OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMnB4OyBoZWlnaHQ6IDI1cHg7IGxpbmUtaGVpZ2h0
+OiAyNXB4OyBwYWRkaW5nLXRvcDogMTBweDsgcGFkZGluZy1yaWdodDogMTBweDsgcGFkZGluZy1i
+b3R0b206IDEwcHg7IHBhZGRpbmctbGVmdDogMjBweDsgYmFja2dyb3VuZC1wb3NpdGlvbjogaW5p
+dGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVhdDogaW5pdGlhbCBpbml0aWFsOyB9CgoubW9i
+aWxlIGEubW9iaWxlLXNoYXJlLXBhbmVsLWJ1dHRvbiB7IGJhY2tncm91bmQtaW1hZ2U6IHVybCho
+dHRwczovL3d3dy5ibG9nZ2VyLmNvbS9pbWcvbW9iaWxlX3NoYXJlX2ljb25zNC5wbmcpICFpbXBv
+cnRhbnQ7IGJhY2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbCAhaW1wb3J0YW50OyBiYWNrZ3Jv
+dW5kLW9yaWdpbjogaW5pdGlhbCAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWwg
+IWltcG9ydGFudDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpICFpbXBvcnRh
+bnQ7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlhbCAhaW1wb3J0YW50OyBib3JkZXItYm90dG9tLXdp
+ZHRoOiAxcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLWNvbG9y
+OiByZ2IoMjM4LCAyMzgsIDIzOCk7IGhlaWdodDogNTBweDsgbGluZS1oZWlnaHQ6IDMwcHg7IHBh
+ZGRpbmctdG9wOiAxMHB4OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAxMHB4
+OyBwYWRkaW5nLWxlZnQ6IDY1cHg7IHdpZHRoOiAxMDAlOyBib3gtc2l6aW5nOiBib3JkZXItYm94
+OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwJSA1MCUgIWltcG9ydGFudDsgYmFja2dyb3VuZC1yZXBl
+YXQ6IG5vLXJlcGVhdCBuby1yZXBlYXQgIWltcG9ydGFudDsgfQoKLm1vYmlsZS1zaGFyZS1wYW5l
+bC1idXR0b24tY2xvc2UgeyBmb250LXNpemU6IDI2cHg7IGZsb2F0OiByaWdodDsgaGVpZ2h0OiAy
+NXB4OyBsaW5lLWhlaWdodDogMjVweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjVweDsg
+fQoKLm1vYmlsZSBhLm1vYmlsZS1zaGFyZS1wYW5lbC1idXR0b24tZW1haWwgeyBiYWNrZ3JvdW5k
+LXBvc2l0aW9uOiAxMHB4IDBweCAhaW1wb3J0YW50OyB9CgoubW9iaWxlIGEubW9iaWxlLXNoYXJl
+LXBhbmVsLWJ1dHRvbi1mYWNlYm9vayB7IGJhY2tncm91bmQtcG9zaXRpb246IDEwcHggLTUwcHgg
+IWltcG9ydGFudDsgfQoKLm1vYmlsZSBhLm1vYmlsZS1zaGFyZS1wYW5lbC1idXR0b24tdHdpdHRl
+ciB7IGJhY2tncm91bmQtcG9zaXRpb246IDEwcHggLTEwMHB4ICFpbXBvcnRhbnQ7IH0KCi5tb2Jp
+bGUgYS5tb2JpbGUtc2hhcmUtcGFuZWwtYnV0dG9uLWdvb2dsZXBsdXMgeyBiYWNrZ3JvdW5kLWlt
+YWdlOiB1cmwoaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL2dwbHVzLTMyLnBu
+ZykgIWltcG9ydGFudDsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsICFpbXBvcnRhbnQ7
+IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY2xpcDog
+aW5pdGlhbCAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSkg
+IWltcG9ydGFudDsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJhY2tncm91
+bmQtcG9zaXRpb246IDE5cHggOXB4ICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtcmVwZWF0OiBuby1y
+ZXBlYXQgbm8tcmVwZWF0ICFpbXBvcnRhbnQ7IH0KCi5tb2JpbGUgYS5tb2JpbGUtc2hhcmUtcGFu
+ZWwtYnV0dG9uLWJ1enogeyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAycHg7IGJvcmRlci1i
+b3R0b20tcmlnaHQtcmFkaXVzOiAycHg7IGJhY2tncm91bmQtcG9zaXRpb246IDEwcHggLTE1MHB4
+ICFpbXBvcnRhbnQ7IH0KCi5zdmctaWNvbi0yNCB7IGhlaWdodDogMjRweDsgd2lkdGg6IDI0cHg7
+IH0KCi5jcm9zc2NvbCAuUGFnZUxpc3QgdWwsIC5mb290ZXIgLlBhZ2VMaXN0IHVsIHsgbGlzdC1z
+dHlsZS10eXBlOiBub25lOyBsaXN0LXN0eWxlLXBvc2l0aW9uOiBpbml0aWFsOyBsaXN0LXN0eWxl
+LWltYWdlOiBpbml0aWFsOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJn
+aW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRp
+bmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IH0K
+Ci5jcm9zc2NvbCAuUGFnZUxpc3QgbGksIC5mb290ZXIgLlBhZ2VMaXN0IGxpIHsgbGlzdC1zdHls
+ZS10eXBlOiBub25lOyBsaXN0LXN0eWxlLXBvc2l0aW9uOiBpbml0aWFsOyBsaXN0LXN0eWxlLWlt
+YWdlOiBpbml0aWFsOyBmbG9hdDogbGVmdDsgcGFkZGluZy1yaWdodDogMC43NWVtOyBtYXJnaW4t
+dG9wOiAwLjc1ZW07IG1hcmdpbi1yaWdodDogMC43NWVtOyBtYXJnaW4tYm90dG9tOiAwLjc1ZW07
+IG1hcmdpbi1sZWZ0OiAwLjc1ZW07IGJhY2tncm91bmQtaW1hZ2U6IG5vbmU7IGJhY2tncm91bmQt
+YXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91
+bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3VuZC1jb2xvcjogaW5pdGlhbDsgYmFja2dyb3VuZC1z
+aXplOiBpbml0aWFsOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tn
+cm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCi5jcm9zc2NvbCAuUGFnZUxpc3QgaDIg
+eyBkaXNwbGF5OiBub25lOyB9CgouUGFnZUxpc3QgbGkgYSB7IGZvbnQtd2VpZ2h0OiBub3JtYWw7
+IH0KCi5QYWdlTGlzdCBsaS5zZWxlY3RlZCBhIHsgZm9udC13ZWlnaHQ6IGJvbGQ7IHRleHQtZGVj
+b3JhdGlvbjogbm9uZTsgfQoKLmRlZmF1bHQtYXZhdGFyIHsgZGlzcGxheTogbm9uZTsgfQoKLnBy
+b2ZpbGUtaW1nIHsgZmxvYXQ6IGxlZnQ7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiA1
+cHg7IG1hcmdpbi1ib3R0b206IDVweDsgbWFyZ2luLWxlZnQ6IDVweDsgfQoKLnByb2ZpbGUtZGF0
+YSB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBw
+eDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLnByb2ZpbGUtZGF0YWJsb2NrIHsgbWFyZ2luLXRvcDog
+MC41ZW07IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwLjVlbTsgbWFyZ2luLWxl
+ZnQ6IDBweDsgfQoKLnByb2ZpbGUtbmFtZS1saW5rIHsgYmFja2dyb3VuZC1pbWFnZTogaW5pdGlh
+bDsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5kLW9yaWdpbjogaW5p
+dGlhbDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiBpbml0aWFs
+OyBiYWNrZ3JvdW5kLXNpemU6IGluaXRpYWw7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7IGRpc3Bs
+YXk6IGlubGluZS1ibG9jazsgbWF4LXdpZHRoOiAxMDAlOyBtaW4taGVpZ2h0OiAyMHB4OyBwYWRk
+aW5nLWxlZnQ6IDIwcHg7IGJhY2tncm91bmQtcG9zaXRpb246IDAlIDAlOyBiYWNrZ3JvdW5kLXJl
+cGVhdDogbm8tcmVwZWF0IG5vLXJlcGVhdDsgfQoKLnByb2ZpbGUtdGV4dGJsb2NrIHsgbWFyZ2lu
+LXRvcDogMC41ZW07IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwLjVlbTsgbWFy
+Z2luLWxlZnQ6IDBweDsgfQ==
+------=_NextPart_000_FDA8_EDB265E2.25FD9082
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://resources.blogblog.com/blogblog/data/1kt/simple/body_gradient_tile_light.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEX///+nxBvIAAAAAXRSTlOZ
+yTXzhgAAAApJREFUCB1jwAsAAB4AAfeYTFwAAAAASUVORK5CYII=
+------=_NextPart_000_FDA8_EDB265E2.25FD9082
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://resources.blogblog.com/blogblog/data/1kt/simple/gradients_light.png
+
+iVBORw0KGgoAAAANSUhEUgAAABQAAARMCAYAAACZG7OEAAABWklEQVR42u3cwQ0CQQwEQS/cl2jI
+PzCQ0BAEBnHrqgBW7hvxZSW5VaOjqlbng5dq1v6gZMmSJbtQsmTJkiWfK9kokiVLlizZKJIlS5Ys
+2YWSJUuWLHnXZKNIlixZsmSjSJYsWbJkF0qWLFmyZMnbJBtFsmTJko0iWbJkyZIlu1CyZMmSJe+a
+bBTJkiVLlmwUyZIlS5bsQsmSJUsekmwUyZIlS5Ys2SiSJUuWLNmFkiVLlixZ8nmTjSJZsmTJRpEs
+WbJkyZJdKFmyZMn/mbyS3LsvzLxRJEuWLFmyZMmSJUs2imTJkiVLlixZsmTJU5ONIlmyZMmSJUuW
+LFnytGSjSJYsWbJkyZIlSx4+CgAAAAAAAAAAAAAAAAAAAAAAAADwYytJ6/8fHlX16n7wMe/Bp2TJ
+fim+oWTfULJvKNk3/NaFK8m1AAAAAAAAAAAAAAAAAAAAAAAAAADgE2/S1Gnyf8/liwAAAABJRU5E
+rkJggg==
+------=_NextPart_000_FDA8_EDB265E2.25FD9082
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2927755096860998226&zx=b14a947f-9a4d-439f-bba7-5374f45a4852
+
+
+------=_NextPart_000_FDA8_EDB265E2.25FD9082
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&source=blogger%3Ablog%3Aplusone&size=medium&hl=id&origin=https%3A%2F%2Fsayfudinblogz.blogspot.com&url=http%3A%2F%2Fsayfudinblogz.blogspot.com%2F2012%2F04%2Ftutorial-iptables-dasar.html&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.id.CJ-DiQbOyGc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCNANXHUi6wJhiiNysM4sUIM4_sfsg%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&id=I0_1543751115752&_gfid=I0_1543751115752&parent=https%3A%2F%2Fsayfudinblogz.blogspot.com&pfname=&rpctoken=21139101
+
+<html lang=3D"in" dir=3D"ltr"><head><meta charset=3D"UTF-8"><base href=3D"h=
+ttps://apis.google.com/se/0/wm/1/"></head><body class=3D"kv8eNc " marginwid=
+th=3D"0" marginheight=3D"0"><div id=3D"root"><style>
+    .ozWidgetRioButton_ {
+        border: 1px solid #d5d5d5;
+        border: 1px solid rgba(0,0,0,.17);
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+        box-shadow: 0 1px 0 rgba(0,0,0,.05);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: background-color .218s,border-color .218s,box-s=
+hadow .218s;
+        transition: background-color .218s,border-color .218s,box-shadow .2=
+18s;
+        -webkit-user-select: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        background-image: none;
+        color: #262626;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: auto
+    }
+
+    .ozWidgetRioButton_:hover {
+        border: 1px solid #aaa;
+        border: 1px solid rgba(0,0,0,.25);
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 1px 0 rgba(0,0,0,0.1)
+    }
+
+    .ozWidgetRioButton_:active {
+        background-color: #e5e5e5;
+        border: 1px solid #aaa;
+        border: 1px solid rgba(0,0,0,.25);
+        -webkit-box-shadow: inset 0 1px 0 #ddd;
+        box-shadow: inset 0 1px 0 #ddd;
+        color: #262626
+    }
+
+    .ozWidgetRioButtonIcon_ {
+        float: left
+    }
+
+    .ozWidgetRioButtonSvg_ {
+        display: block
+    }
+
+    .ozWidgetRioButtonContentWrapper_ {
+        height: 100%;
+        width: 100%
+    }
+
+    .ozWidgetRioPlusOneButton_,.ozWidgetRioPlusOneButton_:hover,.ozWidgetRi=
+oPlusOneButton_:active {
+        color: #db4437
+    }
+
+    .ozWidgetRioButtonPlusOne_ {
+        fill: #db4437
+    }
+
+    .ozPlusoneStarholder_ {
+        float: left;
+        white-space: nowrap
+    }
+
+    .ozPlusonePublisherButton_ {
+        cursor: pointer;
+        display: block;
+        outline: 0;
+        position: relative;
+        text-decoration: none
+    }
+
+    .ozWidgetRioButtonPlusOneSvgFallback {
+        position: absolute;
+    }
+    </style><a href=3D"https://plus.google.com/share?app=3D110&amp;url=3Dht=
+tp%3A%2F%2Fsayfudinblogz.blogspot.com%2F2012%2F04%2Ftutorial-iptables-dasar=
+.html" target=3D"_blank" onclick=3D"window.open(this.href,'','scrollbars=3D=
+1,resizable=3D1,width=3D400,height=3D620');return false;"><div id=3D"pluson=
+e" dir=3D"ltr"><span id=3D"widget_bounds"><div class=3D"ozPlusoneStarholder=
+_"><div style=3D"height:20px;width:32px;" class=3D"ozWidgetRioButton_ ozWid=
+getRioButtonPlusOne_" id=3D"button" title=3D"G+" role=3D"button" tabindex=
+=3D"0"><div class=3D"ozWidgetRioButtonContentWrapper_"><div style=3D" margi=
+n:0px 0px 0 0px;" class=3D"ozWidgetRioButtonIcon_"><style>
+        .ozWidgetRioButtonPlusOneSvgFallback-18 {
+          background: OZ_SPRITE_GPLUS_BUTTON_SVG_GPLUS_18_BG;
+          width: OZ_SPRITE_GPLUS_BUTTON_SVG_GPLUS_18_WIDTH;
+          height: OZ_SPRITE_GPLUS_BUTTON_SVG_GPLUS_18_HEIGHT;
+        }
+      </style><svg version=3D"1.1" xmlns=3D"http://www.w3.org/2000/svg" pre=
+serveAspectRatio=3D"xMidYMid meet" width=3D"30px" height=3D"18px" viewBox=
+=3D"-10 -6 60 36" class=3D"ozWidgetRioButtonSvg_ ozWidgetRioButtonPlusOne_"=
+><path d=3D"M30 7h-3v4h-4v3h4v4h3v-4h4v-3h-4V7z"></path><path d=3D"M11 9.9v=
+4h5.4C16 16.3 14 18 11 18c-3.3 0-5.9-2.8-5.9-6S7.7 6 11 6c1.5 0 2.8.5 3.8 1=
+.5l2.9-2.9C15.9 3 13.7 2 11 2 5.5 2 1 6.5 1 12s4.5 10 10 10c5.8 0 9.6-4.1 9=
+.6-9.8 0-.7-.1-1.5-.2-2.2H11z"></path></svg><div class=3D"ozWidgetRioButton=
+PlusOneSvgFallback_ ozWidgetRioButtonPlusOneSvgFallback_-18"></div></div></=
+div></div></div></span></div></a></div></body></html>
+------=_NextPart_000_FDA8_EDB265E2.25FD9082
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fsayfudinblogz.blogspot.com&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.id.CJ-DiQbOyGc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCNANXHUi6wJhiiNysM4sUIM4_sfsg%2Fm%3D__features__#rpctoken=461145051&forcesecure=1
+
+<html><head><meta charset=3D"UTF-8"><title></title><meta http-equiv=3D"X-UA=
+-Compatible" content=3D"IE=3Dedge"><meta name=3D"viewport" content=3D"width=
+=3Ddevice-width, initial-scale=3D1, minimum-scale=3D1, maximum-scale=3D1, u=
+ser-scalable=3D0"></head><body></body></html>
+------=_NextPart_000_FDA8_EDB265E2.25FD9082--

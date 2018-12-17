@@ -1,0 +1,1663 @@
+From: <Saved by WebKit>
+Subject: How to convert a string to UTF-8 in Java - Quora
+Date: Fri, 6 Dec 2018 18:36:51 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_836A_9DF236DE.9DF1EC01"
+
+------=_NextPart_000_836A_9DF236DE.9DF1EC01
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.quora.com/How-do-I-convert-a-string-to-UTF-8-in-Java
+
+<html lang=3D"en"><head><meta charset=3D"UTF-8"><link rel=3D"icon" href=3D"=
+https://qsf.fs.quoracdn.net/-3-images.favicon.ico-26-ae77b637b1e7ed2c.ico">=
+<meta name=3D"viewport" content=3D"initial-scale=3D1, maximum-scale=3D1, us=
+er-scalable=3Dno, width=3Ddevice-width, minimum-scale=3D1" id=3D"viewport">=
+<meta name=3D"theme-color" content=3D"#b92b27"><meta property=3D"al:android=
+:url" content=3D"intent://www.quora.com/How-do-I-convert-a-string-to-UTF-8-=
+in-Java#Intent;scheme=3Dqhttp;package=3Dcom.quora.android;S.market_referrer=
+=3Dlaunch_url=3Dhttps%3A%2F%2Fwww.quora.com%2FHow-do-I-convert-a-string-to-=
+UTF-8-in-Java&amp;logging_data=3Duid%3DNone;end"><meta property=3D"al:andro=
+id:package" content=3D"com.quora.android"><link href=3D"https://qsc.fs.quor=
+acdn.net/-3-mobile_app2.mweb.css-26-7152148426b993e8.css" rel=3D"preload" a=
+s=3D"style"><style type=3D"text/css" data-idx=3D"1" class=3D"q-inline-css">=
+@font-face{font-family:'q-icons';src:url(//qsf.fs.quoracdn.net/-3-fonts.q-i=
+cons.q-icons.eot-26-77537d1534e881c7.eot);src:url(//qsf.fs.quoracdn.net/-3-=
+fonts.q-icons.q-icons.woff2-26-9afc20a49e3ef2cf.woff2) format('woff2'),url(=
+//qsf.fs.quoracdn.net/-3-fonts.q-icons.q-icons.woff-26-65ff765647e8022d.wof=
+f) format('woff'),url(//qsf.fs.quoracdn.net/-3-fonts.q-icons.q-icons.ttf-26=
+-9b3a0133a3772b92.ttf) format('truetype'),url(//qsf.fs.quoracdn.net/-3-font=
+s.q-icons.q-icons.svg-26-f15db5ed8a6a1c99.svg) format('svg');font-weight:no=
+rmal;font-style:normal}@font-face{font-family:'q_serif';src:url(//qsf.fs.qu=
+oracdn.net/-3-fonts.q_serif.q_serif_regular.eot-26-32bcf77490f11979.eot);sr=
+c:url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_regular.eot-26-32bcf77=
+490f11979.eot) format('embedded-opentype'),url(//qsf.fs.quoracdn.net/-3-fon=
+ts.q_serif.q_serif_regular.woff2-26-7ace3bc4cbe404d9.woff2) format('woff2')=
+,url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_regular.woff-26-f0420a5=
+164a81dd8.woff) format('woff'),url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q=
+_serif_regular.ttf-26-7898e7d4856b7522.ttf) format('truetype');font-weight:=
+400;font-style:normal;font-display:optional}@font-face{font-family:'q_serif=
+';src:url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_regular_italic.eot=
+-26-49fec9df405eb8c5.eot);src:url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_=
+serif_regular_italic.eot-26-49fec9df405eb8c5.eot) format('embedded-opentype=
+'),url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_regular_italic.woff2-=
+26-9d81ab3229809d01.woff2) format('woff2'),url(//qsf.fs.quoracdn.net/-3-fon=
+ts.q_serif.q_serif_regular_italic.woff-26-abdaf93fdd9fa055.woff) format('wo=
+ff'),url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_regular_italic.ttf-=
+26-56609786b9cb4477.ttf) format('truetype');font-weight:400;font-style:ital=
+ic;font-display:optional}@font-face{font-family:'q_serif';src:url(//qsf.fs.=
+quoracdn.net/-3-fonts.q_serif.q_serif_semibold.eot-26-55d5be5691f1c039.eot)=
+;src:url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_semibold.eot-26-55d=
+5be5691f1c039.eot) format('embedded-opentype'),url(//qsf.fs.quoracdn.net/-3=
+-fonts.q_serif.q_serif_semibold.woff2-26-b55bf39d9018ace9.woff2) format('wo=
+ff2'),url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_semibold.woff-26-5=
+8647fb84f463a5b.woff) format('woff'),url(//qsf.fs.quoracdn.net/-3-fonts.q_s=
+erif.q_serif_semibold.ttf-26-090aa43000320feb.ttf) format('truetype');font-=
+weight:bold;font-style:normal;font-display:optional}@font-face{font-family:=
+'q_serif';src:url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_semibold_i=
+talic.eot-26-81f302412a4ff695.eot);src:url(//qsf.fs.quoracdn.net/-3-fonts.q=
+_serif.q_serif_semibold_italic.eot-26-81f302412a4ff695.eot) format('embedde=
+d-opentype'),url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_semibold_it=
+alic.woff2-26-4c39f22524232bf2.woff2) format('woff2'),url(//qsf.fs.quoracdn=
+.net/-3-fonts.q_serif.q_serif_semibold_italic.woff-26-d7206591d9b1c126.woff=
+) format('woff'),url(//qsf.fs.quoracdn.net/-3-fonts.q_serif.q_serif_semibol=
+d_italic.ttf-26-84aa84102fc2de40.ttf) format('truetype');font-weight:bold;f=
+ont-style:italic;font-display:optional}*{margin:0;padding:0}html{-webkit-us=
+er-select:none;-webkit-touch-callout:none;-moz-user-select:none;-ms-user-se=
+lect:none;user-select:none}body{line-height:1.4;font-size:15px;color:#333;f=
+ont-family:system,-apple-system,"Helvetica Neue",Helvetica,sans-serif;backg=
+round:#e6e6e6;word-wrap:break-word;-webkit-text-size-adjust:none}img{color:=
+transparent}div{outline:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit=
+-tap-highlight-color:transparent}input,textarea{font-family:system,-apple-s=
+ystem,"Helvetica Neue",Helvetica,sans-serif;line-height:1.4;font-size:15px;=
+margin:0;padding:0;border:0;color:#333;outline:0;-webkit-tap-highlight-colo=
+r:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;border-radius:0}inp=
+ut[type=3D"submit"]{padding:0;margin:0;border:0;background:0}h1,h2,h3{font-=
+size:inherit;-webkit-margin-after:0}a{-webkit-tap-highlight-color:rgba(34,1=
+06,173,0.1);-webkit-user-select:none;-webkit-touch-callout:none;-moz-user-s=
+elect:none;-ms-user-select:none;user-select:none;color:#2b6dad;text-decorat=
+ion:none}img{max-width:100%}address,blockquote{margin:10px 0;padding:0;padd=
+ing-left:15px;color:#666;border-left:2px solid #e2e2e2}ol li,ul li{margin-t=
+op:5px;margin-bottom:5px}ol{list-style-type:decimal}ul{list-style-type:disc=
+}#request_events{overflow-x:scroll}body{text-align:left;direction:ltr}:not(=
+'.results_frame') .rendered_qtext>ol li,:not('.results_frame') .expanded_q_=
+text>ol li,:not('.results_frame') .suggested_edits_text>ol li,:not('.result=
+s_frame') .qtext_editor_content>ol li,:not('.results_frame') .inline_editor=
+_content>ol li,:not('.results_frame') .rendered_qtext>ul li,:not('.results_=
+frame') .expanded_q_text>ul li,:not('.results_frame') .suggested_edits_text=
+>ul li,:not('.results_frame') .qtext_editor_content>ul li,:not('.results_fr=
+ame') .inline_editor_content>ul li,:not('.results_frame') .rendered_qtext b=
+lockquote>ol li,:not('.results_frame') .expanded_q_text blockquote>ol li,:n=
+ot('.results_frame') .suggested_edits_text blockquote>ol li,:not('.results_=
+frame') .qtext_editor_content blockquote>ol li,:not('.results_frame') .inli=
+ne_editor_content blockquote>ol li,:not('.results_frame') .rendered_qtext b=
+lockquote>ul li,:not('.results_frame') .expanded_q_text blockquote>ul li,:n=
+ot('.results_frame') .suggested_edits_text blockquote>ul li,:not('.results_=
+frame') .qtext_editor_content blockquote>ul li,:not('.results_frame') .inli=
+ne_editor_content blockquote>ul li{margin-bottom:0}:not('.results_frame') .=
+ui_qtext_rendered_qtext>ol li,:not('.results_frame') .ui_qtext_rendered_qte=
+xt>ul li,:not('.results_frame') .ui_qtext_rendered_qtext blockquote>ol li,:=
+not('.results_frame') .ui_qtext_rendered_qtext blockquote>ul li{margin-bott=
+om:0}body:not(.tablet_app) .AnsweredQuestions .feed_type_question:not(.Boar=
+dStandaloneItem),body:not(.tablet_app) .YourRequestsList .feed_type_questio=
+n:not(.BoardStandaloneItem),body:not(.tablet_app) .YourRequestsToggle .feed=
+_type_question:not(.BoardStandaloneItem),body:not(.tablet_app) .TopQuestion=
+s .feed_type_question:not(.BoardStandaloneItem){padding-top:5px}body:not(.t=
+ablet_app) .AMAHostFeed .feed_item.feed_type_question:not(.BoardStandaloneI=
+tem){padding-top:0}@-webkit-keyframes showBottomBanner{0%{opacity:1;-webkit=
+-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}100%{opaci=
+ty:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@ke=
+yframes showBottomBanner{0%{opacity:1;-webkit-transform:translate3d(0,100%,=
+0);transform:translate3d(0,100%,0)}100%{opacity:1;-webkit-transform:transla=
+te3d(0,0,0);transform:translate3d(0,0,0)}}@-webkit-keyframes placeholderShi=
+mmer{0%{background-position:-200px 0}100%{background-position:200px 0}}@-mo=
+z-keyframes placeholderShimmer{0%{background-position:-200px 0}100%{backgro=
+und-position:200px 0}}@keyframes placeholderShimmer{0%{background-position:=
+-200px 0}100%{background-position:200px 0}}amp-ad .LoadingDots{position:abs=
+olute;top:calc(50% - 26px)}.mweb *{outline:0}img.qtext_image{margin:10px 0}=
+canvas.qtext_image_placeholder{margin:10px 0}.diffinsert{white-space:pre-wr=
+ap}.diffdelete{white-space:pre-wrap}.diffinsert{color:#405a04;background:#d=
+1e1ad}.diffdelete{color:#a82400;background:#e5bdb2}.qtext_para{display:inli=
+ne}.small{font-size:12px}.qtext_embed.thumbnail{position:relative;width:100=
+%;height:0;padding-top:56.25%}.qtext_embed.thumbnail:after{content:" ";back=
+ground-color:transparent;background:url(//qsf.fs.quoracdn.net/-3-images.pla=
+y4.png-26-5689fb5285523f5a.png) center center no-repeat;background-size:70p=
+x 70px;display:block;height:100%;left:0;margin:0;padding:0;position:absolut=
+e;top:0;width:100%}a.external_link{background:url(//qsf.fs.quoracdn.net/-3-=
+images.new_grid.external_link.svg-26-7f84ed22dfd7e97b.svg) no-repeat right =
+.3em;padding-right:15px;background-size:10.5px}.LoadingDots{margin:0 auto;t=
+ext-align:center;width:100%;min-width:36px}.LoadingDots .dot{width:8px;heig=
+ht:8px;margin:0 2px}.LoadingDots .dot{background-color:#ccc;border-radius:1=
+00%;display:inline-block;-webkit-animation:sk-bouncedelay 1s infinite ease-=
+in-out both;animation:sk-bouncedelay 1s infinite ease-in-out both}.LoadingD=
+ots.regular{padding:15px 0}.LoadingDots.small{min-width:30px}.LoadingDots.s=
+mall .dot{width:6px;height:6px;margin:0 2px}.LoadingDots.tiny{min-width:18p=
+x}.LoadingDots.tiny .dot{width:4px;height:4px;margin:0 1px}.LoadingDots .fi=
+rst{-webkit-animation-delay:-0.32s;animation-delay:-0.32s}.LoadingDots .sec=
+ond{-webkit-animation-delay:-0.16s;animation-delay:-0.16s}.Placeholder .ani=
+mated_background{-webkit-animation:placeholderShimmer 1s linear 0s infinite=
+ normal forwards;-o-animation:placeholderShimmer 1s linear 0s infinite norm=
+al forwards;animation:placeholderShimmer 1s linear 0s infinite normal forwa=
+rds;-webkit-animation-fill-mode:forwards;-o-animation-fill-mode:forwards;an=
+imation-fill-mode:forwards}.Placeholder .photo_placeholder{float:left}.Plac=
+eholder .photo_placeholder .photo_meta_spacing{float:right}.HomepageFeedSto=
+ryItemPlaceholder{height:170px;padding:30px 20px;border-bottom:6px solid #e=
+6e6e6}.HomepageFeedStoryItemPlaceholder .bar_row{height:8px}.HomepageFeedSt=
+oryItemPlaceholder .bar_row .mask{height:8px;float:right}.HomepageFeedStory=
+ItemPlaceholder .mask_row.section_spacing{height:20px}.HomepageFeedStoryIte=
+mPlaceholder .mask_row.line_spacing{height:10px}.HomepageFeedStoryItemPlace=
+holder .photo_placeholder{width:46px;height:36px}.HomepageFeedStoryItemPlac=
+eholder .photo_placeholder .photo_meta_spacing{width:10px;height:36px}.Home=
+pageFeedStoryItemPlaceholder .photo_placeholder.profile .svg_circular_hole{=
+display:block;width:36px;height:36px;float:left}.HomepageFeedStoryItemPlace=
+holder .title_placeholder .bar_row.line-1 .mask{width:5%}.HomepageFeedStory=
+ItemPlaceholder .title_placeholder .bar_row.line-2 .mask{width:20%}.Homepag=
+eFeedStoryItemPlaceholder .profile_placeholder .bar_row.line-1 .mask{width:=
+65%}.HomepageFeedStoryItemPlaceholder .profile_placeholder .bar_row.line-2 =
+.mask{width:45%}.rendered_qtext{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.r=
+endered_qtext:hover .more_link{text-decoration:underline}.rendered_qtext>ol=
+{margin:0 2em 1em 0}.rendered_qtext>ul{margin:0 2em 1em 0}.rendered_qtext b=
+lockquote>ol{margin:0 2em 1em 0}.rendered_qtext blockquote>ul{margin:0 2em =
+1em 0}.rendered_qtext>ol ol{padding-left:1.4em;margin-bottom:1.2em}.rendere=
+d_qtext>ul ol{padding-left:1.4em;margin-bottom:1.2em}.rendered_qtext blockq=
+uote>ol ol{padding-left:1.4em;margin-bottom:1.2em}.rendered_qtext blockquot=
+e>ul ol{padding-left:1.4em;margin-bottom:1.2em}.rendered_qtext>ol ul{paddin=
+g-left:1.4em;margin-bottom:1.2em}.rendered_qtext>ul ul{padding-left:1.4em;m=
+argin-bottom:1.2em}.rendered_qtext blockquote>ol ul{padding-left:1.4em;marg=
+in-bottom:1.2em}.rendered_qtext blockquote>ul ul{padding-left:1.4em;margin-=
+bottom:1.2em}.rendered_qtext>ol li{position:relative;margin-left:2em;paddin=
+g-bottom:.7em}.rendered_qtext>ul li{position:relative;margin-left:2em;paddi=
+ng-bottom:.7em}.rendered_qtext blockquote>ol li{position:relative;margin-le=
+ft:2em;padding-bottom:.7em}.rendered_qtext blockquote>ul li{position:relati=
+ve;margin-left:2em;padding-bottom:.7em}.rendered_qtext>ol li:last-child{pad=
+ding-bottom:0}.rendered_qtext>ul li:last-child{padding-bottom:0}.rendered_q=
+text blockquote>ol li:last-child{padding-bottom:0}.rendered_qtext blockquot=
+e>ul li:last-child{padding-bottom:0}.rendered_qtext>ol li li{padding-bottom=
+:0;padding-top:.7em}.rendered_qtext>ul li li{padding-bottom:0;padding-top:.=
+7em}.rendered_qtext blockquote>ol li li{padding-bottom:0;padding-top:.7em}.=
+rendered_qtext blockquote>ul li li{padding-bottom:0;padding-top:.7em}.rende=
+red_qtext>ol li ul{padding-left:0}.rendered_qtext>ul li ul{padding-left:0}.=
+rendered_qtext blockquote>ol li ul{padding-left:0}.rendered_qtext blockquot=
+e>ul li ul{padding-left:0}.rendered_qtext>ol ol{list-style:lower-alpha}.ren=
+dered_qtext>ul ol{list-style:lower-alpha}.rendered_qtext blockquote>ul ol{l=
+ist-style:lower-alpha}.rendered_qtext blockquote>ol ol{list-style:lower-alp=
+ha}.rendered_qtext>ol ol ol{list-style:lower-roman}.rendered_qtext>ul ol ol=
+{list-style:lower-roman}.rendered_qtext blockquote>ul ol ol{list-style:lowe=
+r-roman}.rendered_qtext blockquote>ol ol ol{list-style:lower-roman}.rendere=
+d_qtext>ol ul{list-style:circle}.rendered_qtext>ul ul{list-style:circle}.re=
+ndered_qtext blockquote>ul ul{list-style:circle}.rendered_qtext blockquote>=
+ol ul{list-style:circle}.rendered_qtext>ol ul ul{list-style:square}.rendere=
+d_qtext>ul ul ul{list-style:square}.rendered_qtext blockquote>ul ul ul{list=
+-style:square}.rendered_qtext blockquote>ol ul ul{list-style:square}.render=
+ed_qtext>ul{list-style:disc}.rendered_qtext blockquote>ul{list-style:disc}.=
+rendered_qtext>ol{list-style:decimal}.rendered_qtext blockquote>ol{list-sty=
+le:decimal}.rendered_qtext blockquote{color:#666;border-left:2px solid #e2e=
+2e2;padding-left:1em}.rendered_qtext .qtext_para{display:block;margin-botto=
+m:1em}.rendered_qtext .qtext_citation_lead{display:block;font-weight:bold}.=
+rendered_qtext u{text-decoration:none;font-style:italic}.rendered_qtext .qt=
+ext_image_wrapper{position:relative;margin-bottom:1em}.rendered_qtext .qtex=
+t_image_wrapper img{border-radius:3px;max-width:100%}.rendered_qtext .qtext=
+_image_wrapper .qtext_image_placeholder{position:relative;border-radius:3px=
+}.rendered_qtext .qtext_image_placeholder{position:relative;max-width:100%}=
+.rendered_qtext p.citation{outline:0;margin-top:-63px;padding-top:63px}.ren=
+dered_qtext p.citation:last-of-type{margin-bottom:1em}.rendered_qtext .qtex=
+t_embed{margin-bottom:1em}.rendered_qtext .qtext_embed.thumbnail{position:r=
+elative;width:100%;height:0;padding-top:56.25%;background-repeat:no-repeat;=
+background-position:center;background-size:cover}.rendered_qtext .qtext_emb=
+ed.thumbnail:after{content:" ";background-color:transparent;background:url(=
+//qsf.fs.quoracdn.net/-3-images.play4.png-26-5689fb5285523f5a.png) center c=
+enter no-repeat;background-size:70px 70px;display:block;height:100%;left:0;=
+margin:0;padding:0;position:absolute;top:0;width:100%}.rendered_qtext a.ext=
+ernal_link{background:url(//qsf.fs.quoracdn.net/-3-images.new_grid.external=
+_link.svg-26-7f84ed22dfd7e97b.svg) no-repeat right .3em;padding-right:15px;=
+background-size:10.5px}.rendered_qtext .diffinsert{white-space:pre-wrap}.re=
+ndered_qtext .diffdelete{white-space:pre-wrap}.rendered_qtext .diffinsert{c=
+olor:#405a04;background:#d1e1ad}.rendered_qtext .diffdelete{color:#a82400;b=
+ackground:#e5bdb2}.rendered_qtext .diffdelete br{display:none}.rendered_qte=
+xt>:first-child:not(.qtext_hr){margin-top:0}.rendered_qtext>:last-child{mar=
+gin-bottom:0}.qtext_hr{position:relative;margin:2em auto;padding:0;width:14=
+8px;height:2px;background:#e6e6e6;border:0}.hr_img{padding:2em 178px}.ui_qt=
+ext_rendered_qtext{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.ui_qtext_rende=
+red_qtext>ol,.ui_qtext_rendered_qtext>ul,.ui_qtext_rendered_qtext blockquot=
+e>ol,.ui_qtext_rendered_qtext blockquote>ul{margin:0 2em 1em 0}.ui_qtext_re=
+ndered_qtext>ol ol,.ui_qtext_rendered_qtext>ul ol,.ui_qtext_rendered_qtext =
+blockquote>ol ol,.ui_qtext_rendered_qtext blockquote>ul ol,.ui_qtext_render=
+ed_qtext>ol ul,.ui_qtext_rendered_qtext>ul ul,.ui_qtext_rendered_qtext bloc=
+kquote>ol ul,.ui_qtext_rendered_qtext blockquote>ul ul{padding-left:1.4em;m=
+argin-bottom:1.2em}.ui_qtext_rendered_qtext>ol li,.ui_qtext_rendered_qtext>=
+ul li,.ui_qtext_rendered_qtext blockquote>ol li,.ui_qtext_rendered_qtext bl=
+ockquote>ul li{position:relative;margin-left:2em;padding-bottom:.7em}.ui_qt=
+ext_rendered_qtext>ol li:last-child,.ui_qtext_rendered_qtext>ul li:last-chi=
+ld,.ui_qtext_rendered_qtext blockquote>ol li:last-child,.ui_qtext_rendered_=
+qtext blockquote>ul li:last-child{padding-bottom:0}.ui_qtext_rendered_qtext=
+>ol li li,.ui_qtext_rendered_qtext>ul li li,.ui_qtext_rendered_qtext blockq=
+uote>ol li li,.ui_qtext_rendered_qtext blockquote>ul li li{padding-bottom:0=
+;padding-top:.7em}.ui_qtext_rendered_qtext>ol li ul,.ui_qtext_rendered_qtex=
+t>ul li ul,.ui_qtext_rendered_qtext blockquote>ol li ul,.ui_qtext_rendered_=
+qtext blockquote>ul li ul{padding-left:0}.ui_qtext_rendered_qtext>ol ol,.ui=
+_qtext_rendered_qtext>ul ol,.ui_qtext_rendered_qtext blockquote>ul ol,.ui_q=
+text_rendered_qtext blockquote>ol ol{list-style:lower-alpha}.ui_qtext_rende=
+red_qtext>ol ol ol,.ui_qtext_rendered_qtext>ul ol ol,.ui_qtext_rendered_qte=
+xt blockquote>ul ol ol,.ui_qtext_rendered_qtext blockquote>ol ol ol{list-st=
+yle:lower-roman}.ui_qtext_rendered_qtext>ol ul,.ui_qtext_rendered_qtext>ul =
+ul,.ui_qtext_rendered_qtext blockquote>ul ul,.ui_qtext_rendered_qtext block=
+quote>ol ul{list-style:circle}.ui_qtext_rendered_qtext>ol ul ul,.ui_qtext_r=
+endered_qtext>ul ul ul,.ui_qtext_rendered_qtext blockquote>ul ul ul,.ui_qte=
+xt_rendered_qtext blockquote>ol ul ul{list-style:square}.ui_qtext_rendered_=
+qtext>ul,.ui_qtext_rendered_qtext blockquote>ul{list-style:disc}.ui_qtext_r=
+endered_qtext>ol,.ui_qtext_rendered_qtext blockquote>ol{list-style:decimal}=
+.ui_qtext_rendered_qtext blockquote{color:#666;border-left:2px solid #e2e2e=
+2;padding-left:1em}.ui_qtext_rendered_qtext u{text-decoration:none;font-sty=
+le:italic}.ui_qtext_rendered_qtext>:last-child{margin-bottom:0!important}.u=
+i_qtext_image_wrapper{position:relative;line-height:0}.ui_qtext_gif_noclick=
+_wrapper{position:relative;display:inline-block;cursor:pointer}.ui_qtext_gi=
+f_noclick_wrapper>img{display:inline}.ui_qtext_gif_noclick_wrapper .gif_emb=
+ed_noclick:after{content:" ";position:absolute;background:url(//qsf.fs.quor=
+acdn.net/-3-images.play3.png-26-fc54fe208f00479e.png) transparent center ce=
+nter no-repeat;height:100%;width:100%;top:0;left:0}.amp_embed{position:rela=
+tive;height:0;width:100%;padding-top:56.25%}</style><link as=3D"script" rel=
+=3D"preload" href=3D"https://qsc.fs.quoracdn.net/-3-chunk.mobile.main.js.ou=
+t-34-16f96e42e2e7e24c.webpack"><title>How to convert a string to UTF-8 in J=
+ava - Quora</title><meta name=3D"robots" content=3D"noarchive"><link rel=3D=
+"canonical" href=3D"https://www.quora.com/How-do-I-convert-a-string-to-UTF-=
+8-in-Java"><link rel=3D"stylesheet" type=3D"text/css" href=3D"https://qsc.f=
+s.quoracdn.net/-3-mobile_app2.mweb.css-26-7152148426b993e8.css" id=3D"onLoa=
+dCss"></head><body class=3D"mobile_app2 experiment-lookup_bar-on pretty_blo=
+gs mweb mweb_android lang_en q_ltr"><style type=3D"text/css" data-idx=3D"2"=
+ class=3D"q-inline-css">.PageWrapper{background:#fff}.hidden{display:none!i=
+mportant}.mweb .PageWrapper{margin-top:88px}@media(min-width:924px){.mweb .=
+PageWrapper{margin-left:80px;margin-right:80px}}.mweb .PageWrapper.has_open=
+_in_app_banner{margin-bottom:51px}.mweb .PageWrapper.is_logged_out{margin-t=
+op:44px}</style><style type=3D"text/css" data-idx=3D"3" class=3D"q-inline-c=
+ss">.more_link{color:#949494}.Header.LoggedOutHeader .signup_login_buttons{=
+margin-right:10px}.Header.LoggedOutHeader .signup_login_buttons .signup{pad=
+ding:5px 10px;margin:9px 0;display:block;float:left;font-weight:bold;border=
+-radius:2px;background:#fff;color:#2b6dad;font-size:12px;margin-left:10px}.=
+Header.LoggedOutHeader .signup_login_buttons .ViewInAppLink{-webkit-user-se=
+lect:none;-webkit-touch-callout:none;-moz-user-select:none;-ms-user-select:=
+none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap=
+-highlight-color:transparent;display:inline-block;position:relative;outline=
+:0;border-radius:3px;text-align:center;white-space:pre;font-size:12px;paddi=
+ng:.5em .7em;font-weight:bold;background:transparent;color:#fff;border:1px =
+solid #fff;margin-top:9px;padding:5px;float:left}.Header .fixed_header{posi=
+tion:fixed;top:0;left:0;right:0;z-index:300;width:100%}@media screen and (m=
+in-width:924px){.Header .fixed_header{width:calc(100% - 160px);margin:0 aut=
+o}}.Header .fixed_header .header_main{position:relative;background:#b92b27;=
+min-height:44px;width:100%;display:flex}.Header .fixed_header .header_main =
+a{color:#fff}.Header .fixed_header .header_main .logo{display:block;width:7=
+1px;min-width:71px;height:44px;background-size:71px 20px;background-image:u=
+rl(//qsf.fs.quoracdn.net/-3-images.logo.wordmark_default.svg-26-bfa6b94bc0d=
+6af2e.svg);background-repeat:no-repeat;background-position:center center;ba=
+ckground-image:url(//qsf.fs.quoracdn.net/-3-images.logo.wordmark_inverse.sv=
+g-26-adcd764292de7751.svg);padding:0 10px}.Header .fixed_header .header_mai=
+n .logo span{display:none}.mweb_new_stories_button_wrapper{position:absolut=
+e;z-index:-10;top:calc(100% + 15px);text-align:center;width:100%}.LoggedOut=
+Header .header_main{justify-content:space-between}.LoggedOutHeader .signup_=
+login_buttons{margin-right:10px}.LoggedOutHeader .signup_login_buttons .sig=
+nup{padding:5px 10px;margin:7px 0;display:block;float:left;font-weight:bold=
+;border-radius:2px;background:#fff;color:#2b6dad}.CookieBanner{font-size:12=
+px;text-align:left;background-color:rgba(240,240,240,0.95);position:relativ=
+e}.CookieBanner:after{content:"";position:absolute;pointer-events:none;box-=
+sizing:border-box;border-radius:0;top:0;left:0;width:100%;height:100%;borde=
+r-width:1px;border-color:#e2e2e2}@media only screen and (-webkit-min-device=
+-pixel-ratio:1.5){.CookieBanner:after{-webkit-transform:scale(0.5);transfor=
+m:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0;width:200%;h=
+eight:200%;border-radius:0}}.CookieBanner:after{border-bottom-style:solid}.=
+CookieBanner .wrapper{display:table;width:100%}.CookieBanner .message{displ=
+ay:table-cell;vertical-align:middle;padding:10px 15px;text-align:center;wid=
+th:100%}.CookieBanner .dismiss{display:table-cell;padding:15px;vertical-ali=
+gn:middle;text-align:right;background-color:rgba(232,232,232,0.95);outline:=
+0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:tra=
+nsparent;position:relative}.CookieBanner .dismiss:before{font-family:'q-ico=
+ns';content:':)';font-style:normal;font-weight:normal;font-variant:normal;t=
+ext-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothi=
+ng:grayscale;text-shadow:1px 1px 1px rgba(0,0,0,0.004);text-rendering:optim=
+izeLegibility!important;speak:none;color:#666;font-size:18px;line-height:1;=
+display:inline-block;width:18px;height:18px}.CookieBanner .dismiss:before{c=
+ontent:'\F114'}.CookieBanner .dismiss:after{content:"";position:absolute;po=
+inter-events:none;box-sizing:border-box;border-radius:0;top:0;left:0;width:=
+100%;height:100%;border-width:1px;border-color:#e2e2e2}@media only screen a=
+nd (-webkit-min-device-pixel-ratio:1.5){.CookieBanner .dismiss:after{-webki=
+t-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;tr=
+ansform-origin:0 0;width:200%;height:200%;border-radius:0}}.CookieBanner .d=
+ismiss:after{border-left-style:solid}.CookieBanner .dismiss:before{text-ali=
+gn:center}</style><div class=3D"PageWrapper is_logged_out" id=3D"page_wrapp=
+er"><div class=3D"has_open_in_app_banner" id=3D"main_page_wrapper"><div cla=
+ss=3D"LoggedOutHeader Header" id=3D"header"><div class=3D"fixed_header"><di=
+v class=3D"header_main"><a class=3D"logo logo_full" href=3D"https://www.quo=
+ra.com/"><span>Quora</span></a><div class=3D"signup_login_buttons"><a class=
+=3D"ViewInAppLink" href=3D"https://www.quora.com/How-do-I-convert-a-string-=
+to-UTF-8-in-Java#" id=3D"__w2_wF9q6vsX13_view_in_app">Open In App</a><a cla=
+ss=3D"signup" id=3D"__w2_wF9q6vsX12_signup_button">Sign In</a></div></div><=
+div class=3D"mweb_new_stories_button_wrapper" id=3D"mweb_new_stories_button=
+_wrapper"></div></div></div><div class=3D"CookieBanner" id=3D"__w2_wF9q6vsX=
+11_banner"><div class=3D"wrapper"><div class=3D"message"><div class=3D"Simp=
+leToggle CookieBannerMessage Toggle" id=3D"__w2_wF9q6vsX16__truncated">Quor=
+a uses cookies to improve your experience. <a class=3D"more_link" href=3D"h=
+ttps://www.quora.com/How-do-I-convert-a-string-to-UTF-8-in-Java#" id=3D"__w=
+2_wF9q6vsX16_more">Read more</a></div><div class=3D"SimpleToggle CookieBann=
+erMessage Toggle hidden" id=3D"__w2_wF9q6vsX16__expanded"></div></div><a cl=
+ass=3D"dismiss" href=3D"https://www.quora.com/How-do-I-convert-a-string-to-=
+UTF-8-in-Java#" id=3D"__w2_wF9q6vsX11_dismiss"></a></div></div><style type=
+=3D"text/css" data-idx=3D"4" class=3D"q-inline-css">.topic_pill{font-size:1=
+2px;color:#666;padding:3px 6px;background:#f7f7f7;word-break:break-word;bor=
+der-radius:4px}.topic_pill a{color:#666;-webkit-tap-highlight-color:rgba(25=
+5,255,255,0.6)}.section_header{color:#333;letter-spacing:.025em;text-transf=
+orm:uppercase;font-size:12px;font-weight:400;font-family:system,-apple-syst=
+em,"Helvetica Neue",Helvetica,sans-serif;position:relative;padding:11px 20p=
+x 9px;background-color:#fff}.section_header:after{content:"";position:absol=
+ute;pointer-events:none;box-sizing:border-box;border-radius:0;top:0;left:0;=
+width:100%;height:100%;border-width:1px;border-color:#e2e2e2}@media only sc=
+reen and (-webkit-min-device-pixel-ratio:1.5){.section_header:after{-webkit=
+-transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;tra=
+nsform-origin:0 0;width:200%;height:200%;border-radius:0}}.section_header:a=
+fter{border-bottom-style:solid}.section_header a{float:right;color:#949494;=
+-webkit-tap-highlight-color:rgba(255,255,255,0.6)}.u-inline-block{display:i=
+nline-block!important}.horizontal_scroll_outer{position:relative;z-index:1;=
+overflow-x:scroll;overflow-y:hidden;-webkit-overflow-scrolling:touch}.horiz=
+ontal_scroll_outer::-webkit-scrollbar{display:none}.horizontal_scroll_inner=
+{width:calc(100%);white-space:nowrap;overflow:scroll;overflow-y:hidden;-web=
+kit-overflow-scrolling:touch;-webkit-box-sizing:border-box;-moz-box-sizing:=
+border-box;box-sizing:border-box}.horizontal_scroll_inner:before,.horizonta=
+l_scroll_inner:after{display:table;content:""}.horizontal_scroll_inner:afte=
+r{clear:both}.horizontal_scroll_inner::-webkit-scrollbar{display:none}.Sect=
+ion{background:#e6e6e6;position:relative}.Section:after{content:"";position=
+:absolute;pointer-events:none;box-sizing:border-box;border-radius:0;top:0;l=
+eft:0;width:100%;height:100%;border-width:1px;border-color:#e2e2e2}@media o=
+nly screen and (-webkit-min-device-pixel-ratio:1.5){.Section:after{-webkit-=
+transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;tran=
+sform-origin:0 0;width:200%;height:200%;border-radius:0}}.Section:after{bor=
+der-top-style:solid}.ts_cells{list-style-type:none;margin-left:0}.Cell{-web=
+kit-user-select:none;-webkit-touch-callout:none;-moz-user-select:none;-ms-u=
+ser-select:none;user-select:none;display:block;position:relative;margin:0;b=
+ackground:#fff}.Cell:before,.Cell:after{display:table;content:""}.Cell:afte=
+r{clear:both}.Cell .tc_inner{-webkit-tap-highlight-color:rgba(230,230,230,0=
+.5);display:block;padding:15px 20px}.Cell .tc_stroke{position:relative;heig=
+ht:1px}.Cell .tc_stroke:after{content:"";position:absolute;pointer-events:n=
+one;box-sizing:border-box;border-radius:0;top:0;left:0;width:100%;height:10=
+0%;border-width:1px;border-color:#e2e2e2}@media only screen and (-webkit-mi=
+n-device-pixel-ratio:1.5){.Cell .tc_stroke:after{-webkit-transform:scale(0.=
+5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0;w=
+idth:200%;height:200%;border-radius:0}}.Cell .tc_stroke:after{border-top-st=
+yle:solid}.Cell:last-child .tc_stroke{position:relative}.Cell:last-child .t=
+c_stroke:after{border:0}.Cell:last-child .tc_stroke:after{content:"";positi=
+on:absolute;pointer-events:none;box-sizing:border-box;border-radius:0;top:0=
+;left:0;width:100%;height:100%;border-width:1px;border-color:#e2e2e2}@media=
+ only screen and (-webkit-min-device-pixel-ratio:1.5){.Cell:last-child .tc_=
+stroke:after{-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-tran=
+sform-origin:0 0;transform-origin:0 0;width:200%;height:200%;border-radius:=
+0}}.Cell:last-child .tc_stroke:after{border-bottom-style:solid}.Cell .tc_te=
+xt{color:#333;font-size:16px;font-weight:400}.Cell .tc_detail{color:#949494=
+}.Cell.has_detail_text .tc_text{margin-bottom:2px}.Cell.has_badge .tc_inner=
+{padding-right:60px}.question_text_wrapper .qtext_para{display:inline;margi=
+n:0}.ui_story_title{-webkit-user-select:text;-moz-user-select:text;-ms-user=
+-select:text;user-select:text}a>.ui_story_title:hover{text-decoration:under=
+line!important}.mobile_app2 a .ui_story_title{text-decoration:none!importan=
+t}.question_topics_container{margin-left:-20px;margin-right:-20px}.Question=
+Topics.has_topics{font-size:12px;padding-left:20px;margin-bottom:5px}.Quest=
+ionTopics.has_topics:before,.QuestionTopics.has_topics:after{display:table;=
+content:""}.QuestionTopics.has_topics:after{clear:both}.QuestionTopics.has_=
+topics div{display:inline-block}.QuestionTopics.has_topics .TopicListItem{m=
+argin-right:5px}.QuestionTopics.has_topics .TopicNameLink{float:left;displa=
+y:block}.QuestionTopics.has_topics .topic_pill{padding-bottom:0}.QuestionPr=
+eview{padding:20px 20px;position:relative;border-bottom:6px solid #e6e6e6}.=
+QuestionPreview .question_text_wrapper{font-family:Georgia,Times,"Times New=
+ Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;font-weight:bold;color:#3=
+33;line-height:1.3;font-size:21px;margin-bottom:0}.js-wf-loaded .QuestionPr=
+eview .question_text_wrapper{font-family:'q_serif',Georgia,Times,"Times New=
+ Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.amp-page .QuestionPrevie=
+w .question_text_wrapper{font-family:'q_serif',Georgia,Times,"Times New Rom=
+an","Hiragino Kaku Gothic Pro","Meiryo",serif}.RelatedQuestions .Cell .tc_t=
+ext{line-height:1.4;font-size:15px}.RelatedQuestions .AskQuestionButton{pad=
+ding:15px 20px;background:#fff;display:block}.RelatedQuestions .AskQuestion=
+Button:before{font-family:'q-icons';content:':)';font-style:normal;font-wei=
+ght:normal;font-variant:normal;text-transform:none;-webkit-font-smoothing:a=
+ntialiased;-moz-osx-font-smoothing:grayscale;text-shadow:1px 1px 1px rgba(0=
+,0,0,0.004);text-rendering:optimizeLegibility!important;speak:none;color:#2=
+b6dad;font-size:20px;line-height:1;display:inline-block;width:20px;height:2=
+0px}.RelatedQuestions .AskQuestionButton:before{content:'\F124'}.RelatedQue=
+stions{-webkit-user-select:none;-webkit-touch-callout:none;-moz-user-select=
+:none;-ms-user-select:none;user-select:none;background:#e6e6e6}.RelatedQues=
+tions .more_link{-webkit-tap-highlight-color:rgba(255,255,255,0.6);display:=
+block;width:100%;box-sizing:border-box;padding-top:13px;padding-bottom:11px=
+;background-color:#fff;text-align:center;font-weight:normal;height:auto}.Re=
+latedQuestions .more_link:after{border:0}.RelatedQuestions .more_link span{=
+position:relative}.RelatedQuestions .more_link span:before{position:absolut=
+e;right:-15px}.RelatedQuestions .more_link>span{color:#666}.RelatedQuestion=
+s .more_link>span:before{font-family:'q-icons';content:':)';font-style:norm=
+al;font-weight:normal;font-variant:normal;text-transform:none;-webkit-font-=
+smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-shadow:1px 1px=
+ 1px rgba(0,0,0,0.004);text-rendering:optimizeLegibility!important;speak:no=
+ne;color:#666;font-size:13px;line-height:1;display:inline-block;width:13px;=
+height:13px}.RelatedQuestions .more_link>span:before{content:'\F116'}.Relat=
+edQuestions .more_link>span:before{bottom:1px}.RelatedQuestions.logged_out =
+.Cell .tc_text{color:#2b6dad}.BelowQuestionAddPrompt{border-radius:4px 4px =
+0 0;font-weight:500;position:fixed;box-sizing:border-box;width:100%;z-index=
+:100;bottom:0;background:#fff;box-shadow:0 -1px 2px 0 rgba(200,200,200,0.3)=
+;font-size:12px;line-height:1;-webkit-animation:fadeInUp 180ms ease-out 0s =
+1 normal forwards;-o-animation:fadeInUp 180ms ease-out 0s 1 normal forwards=
+;animation:fadeInUp 180ms ease-out 0s 1 normal forwards}.BelowQuestionAddPr=
+ompt .input_prompt{padding:10px}.BelowQuestionAddPrompt .input_prompt .valu=
+e_prop{margin-bottom:10px}.BelowQuestionAddPrompt .input_prompt .value_prop=
+:before{font-family:'q-icons';content:':)';font-style:normal;font-weight:no=
+rmal;font-variant:normal;text-transform:none;-webkit-font-smoothing:antiali=
+ased;-moz-osx-font-smoothing:grayscale;text-shadow:1px 1px 1px rgba(0,0,0,0=
+.004);text-rendering:optimizeLegibility!important;speak:none;color:#2b6dad;=
+font-size:20px;line-height:1;display:inline-block;width:20px;height:20px}.B=
+elowQuestionAddPrompt .input_prompt .value_prop:before{content:'\F122'}.Bel=
+owQuestionAddPrompt .input_prompt .AskQuestionButton{position:relative;font=
+-family:Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo"=
+,serif;font-weight:bold;line-height:1.3;color:#333;font-size:18px;padding:1=
+0px;color:#949494;font-size:15px;display:block;background:#fff}.BelowQuesti=
+onAddPrompt .input_prompt .AskQuestionButton:after{content:"";position:abso=
+lute;pointer-events:none;box-sizing:border-box;border-radius:4px;top:0;left=
+:0;width:100%;height:100%;border-width:1px;border-color:#e2e2e2}@media only=
+ screen and (-webkit-min-device-pixel-ratio:1.5){.BelowQuestionAddPrompt .i=
+nput_prompt .AskQuestionButton:after{-webkit-transform:scale(0.5);transform=
+:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0;width:200%;he=
+ight:200%;border-radius:8px}}.BelowQuestionAddPrompt .input_prompt .AskQues=
+tionButton:after{border-style:solid}.js-wf-loaded .BelowQuestionAddPrompt .=
+input_prompt .AskQuestionButton{font-family:'q_serif',Georgia,Times,"Times =
+New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.amp-page .BelowQuesti=
+onAddPrompt .input_prompt .AskQuestionButton{font-family:'q_serif',Georgia,=
+Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}</style><=
+span id=3D"w7rFElNn14"><div class=3D"QuestionPreview"><span id=3D"wJhUe0cp3=
+"></span><span id=3D"wJhUe0cp5"><div class=3D"question_topics_container hor=
+izontal_scroll_outer"><div class=3D"QuestionTopics has_topics horizontal_sc=
+roll_inner" id=3D"question_topics"><span id=3D"wJhUe0cp11"><div id=3D"__w2_=
+wJhUe0cp12_topics_list"><span id=3D"wJhUe0cp13"><div class=3D"QuestionTopic=
+ListItems SimpleToggle Toggle TopicListItems2" id=3D"__w2_wJhUe0cp14__trunc=
+ated"><span id=3D"wJhUe0cp16"><div class=3D"QuestionTopicListItem TopicList=
+Item topic_pill" id=3D"__w2_wJhUe0cp17_topic_list_item"><div class=3D"u-inl=
+ine-block"><span id=3D"wJhUe0cp24"><a class=3D"HoverMenu TopicNameLink topi=
+c_name" href=3D"https://www.quora.com/topic/UTF-8" action_mousedown=3D"Topi=
+cLinkClickthrough" mobile_loading_placeholder=3D"topic" id=3D"__w2_wJhUe0cp=
+25_link"><span class=3D"name_text"><span id=3D"wJhUe0cp32"><span class=3D"T=
+opicNameSpan TopicName" id=3D"__w2_wJhUe0cp33_card">UTF-8</span></span></sp=
+an></a></span></div></div></span><span id=3D"wJhUe0cp18"><div class=3D"Ques=
+tionTopicListItem TopicListItem topic_pill" id=3D"__w2_wJhUe0cp19_topic_lis=
+t_item"><div class=3D"u-inline-block"><span id=3D"wJhUe0cp26"><a class=3D"H=
+overMenu TopicNameLink topic_name" href=3D"https://www.quora.com/topic/Java=
+-programming-language" action_mousedown=3D"TopicLinkClickthrough" mobile_lo=
+ading_placeholder=3D"topic" id=3D"__w2_wJhUe0cp27_link"><span class=3D"name=
+_text"><span id=3D"wJhUe0cp34"><span class=3D"TopicNameSpan TopicName" id=
+=3D"__w2_wJhUe0cp35_card">Java (programming language)</span></span></span><=
+/a></span></div></div></span><span id=3D"wJhUe0cp20"><div class=3D"Question=
+TopicListItem TopicListItem topic_pill" id=3D"__w2_wJhUe0cp21_topic_list_it=
+em"><div class=3D"u-inline-block"><span id=3D"wJhUe0cp28"><a class=3D"Hover=
+Menu TopicNameLink topic_name" href=3D"https://www.quora.com/topic/Programm=
+ing-Languages" action_mousedown=3D"TopicLinkClickthrough" mobile_loading_pl=
+aceholder=3D"topic" id=3D"__w2_wJhUe0cp29_link"><span class=3D"name_text"><=
+span id=3D"wJhUe0cp36"><span class=3D"TopicNameSpan TopicName" id=3D"__w2_w=
+JhUe0cp37_card">Programming Languages</span></span></span></a></span></div>=
+</div></span><span id=3D"wJhUe0cp22"><div class=3D"QuestionTopicListItem To=
+picListItem topic_pill" id=3D"__w2_wJhUe0cp23_topic_list_item"><div class=
+=3D"u-inline-block"><span id=3D"wJhUe0cp30"><a class=3D"HoverMenu TopicName=
+Link topic_name" href=3D"https://www.quora.com/topic/Computer-Programming" =
+action_mousedown=3D"TopicLinkClickthrough" mobile_loading_placeholder=3D"to=
+pic" id=3D"__w2_wJhUe0cp31_link"><span class=3D"name_text"><span id=3D"wJhU=
+e0cp38"><span class=3D"TopicNameSpan TopicName" id=3D"__w2_wJhUe0cp39_card"=
+>Computer Programming</span></span></span></a></span></div></div></span></d=
+iv></span></div></span></div></div></span><div class=3D"question_text_wrapp=
+er"><span id=3D"wJhUe0cp9"><span class=3D"ui_story_title  "><span class=3D"=
+ui_qtext_rendered_qtext">How do I convert a string to UTF-8 in Java?</span>=
+</span></span></div><span id=3D"wJhUe0cp7"></span></div></span><div class=
+=3D"NewGridQuestionPage QuestionMain expanded_featured_comments" id=3D"__w2=
+_w7rFElNn17_grid"><div class=3D"BelowQuestionAddPrompt" id=3D"__w2_wEdYxkU4=
+1_question_prompt"><div class=3D"input_prompt"><p class=3D"value_prop">Stil=
+l have a question? Ask your own!</p><a class=3D"LoggedOutAskQuestionButton =
+AskQuestionButton" href=3D"https://www.quora.com/How-do-I-convert-a-string-=
+to-UTF-8-in-Java#" id=3D"__w2_wEdYxkU410_button">What is your question?</a>=
+</div></div><style type=3D"text/css" data-idx=3D"5" class=3D"q-inline-css">=
+.section_header.section_header_gray{background-color:#e6e6e6}.pass_color_to=
+_child_links a{color:inherit}.dismissed_msg_wrapper .content_dismiss_title{=
+line-height:1.4;font-size:15px;font-weight:500;margin-bottom:5px}.dismissed=
+_msg_wrapper .content_dismiss_body{font-size:12px;color:#949494;margin-bott=
+om:5px}.dismissed_msg_wrapper .undo{-webkit-tap-highlight-color:rgba(255,25=
+5,255,0.6);color:#949494;text-decoration:none;font-size:12px;cursor:pointer=
+;font-weight:bold}.dismissed_msg_wrapper .upper_content_feed_reason{positio=
+n:relative}.dismissed_msg_wrapper .upper_content_feed_reason:after{clear:bo=
+th;content:" ";display:block}.profile_photo_img{border-radius:50%}.answer_c=
+ontent .qtext_para:empty{display:none}.answer_content{-webkit-user-select:t=
+ext;-moz-user-select:text;-ms-user-select:text;user-select:text}.u-margin-r=
+ight--sm{margin-right:10px!important}.u-padding-left--xs{padding-left:5px!i=
+mportant}.u-padding-right--xs{padding-right:5px!important}.u-relative{posit=
+ion:relative!important}.u-absolute{position:absolute!important}.u-absolute-=
+-center{top:50%!important;left:50%!important;-webkit-transform:translate(-5=
+0%,-50%);transform:translate(-50%,-50%)}.u-flex{display:-webkit-box!importa=
+nt;display:-ms-flexbox!important;display:flex!important}.u-flex-auto{-webki=
+t-box-flex:1!important;-ms-flex:1 1 auto!important;flex:1 1 auto!important;=
+min-width:0!important;min-height:0!important}.u-flex-none{-webkit-box-flex:=
+0!important;-ms-flex:none!important;flex:none!important}.u-flex-align-self-=
+-center{-webkit-align-self:center!important;-ms-flex-item-align:center!impo=
+rtant;align-self:center!important}.u-flex-justify--between{-webkit-box-pack=
+:justify!important;-ms-flex-pack:justify!important;justify-content:space-be=
+tween!important}.u-serif-font-main--regular{font-family:Georgia,Times,"Time=
+s New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;font-size:15px;line-=
+height:1.6}.js-wf-loaded .u-serif-font-main--regular{font-family:'q_serif',=
+Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.=
+amp-page .u-serif-font-main--regular{font-family:'q_serif',Georgia,Times,"T=
+imes New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.u-font-size--1_4=
+{font-size:14px!important}.u-line-height--1_5{line-height:1.5!important}.u-=
+border-radius--ellipse{border-radius:100%!important}.mobile_app2 .u-border-=
+radius--ellipse:after{border-radius:100%!important}@media only screen and (=
+-webkit-min-device-pixel-ratio:1.5){.mobile_app2 .u-border-radius--ellipse:=
+after{border-radius:200%}}.ContentHeader{position:relative;margin-bottom:4p=
+x;min-height:40px;font-family:system,-apple-system,"Helvetica Neue",Helveti=
+ca,sans-serif;line-height:1.4;font-size:15px}.ContentHeader:before,.Content=
+Header:after{display:table;content:""}.ContentHeader:after{clear:both}.Cont=
+entHeader .feed_item_answer_user{position:relative;line-height:1.3em;word-b=
+reak:break-word;font-family:Georgia,Times,"Times New Roman","Hiragino Kaku =
+Gothic Pro","Meiryo",serif;color:#333}.ContentHeader .feed_item_answer_user=
+:before,.ContentHeader .feed_item_answer_user:after{display:table;content:"=
+"}.ContentHeader .feed_item_answer_user:after{clear:both}.js-wf-loaded .Con=
+tentHeader .feed_item_answer_user{font-family:'q_serif',Georgia,Times,"Time=
+s New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.amp-page .ContentHe=
+ader .feed_item_answer_user{font-family:'q_serif',Georgia,Times,"Times New =
+Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.ContentHeader .feed_item_=
+answer_user .user{font-family:Georgia,Times,"Times New Roman","Hiragino Kak=
+u Gothic Pro","Meiryo",serif;color:#333}.js-wf-loaded .ContentHeader .feed_=
+item_answer_user .user{font-family:'q_serif',Georgia,Times,"Times New Roman=
+","Hiragino Kaku Gothic Pro","Meiryo",serif}.amp-page .ContentHeader .feed_=
+item_answer_user .user{font-family:'q_serif',Georgia,Times,"Times New Roman=
+","Hiragino Kaku Gothic Pro","Meiryo",serif}.ContentHeader .icon_follow_but=
+ton_wrapper{width:24px;height:24px}.ContentFooter{margin-top:10px;font-fami=
+ly:system,-apple-system,"Helvetica Neue",Helvetica,sans-serif;font-size:12p=
+x;color:#949494}.ContentFooter a{color:#949494;-webkit-tap-highlight-color:=
+rgba(255,255,255,0.6)}.PagedListFoo.unified{transition:opacity ease-in-out =
+100ms}.PagedListFoo.unified .spinner_display_area{background-color:#e6e6e6}=
+.PagedListFoo.unified .action_button{-webkit-tap-highlight-color:rgba(255,2=
+55,255,0.6);display:block;width:100%;box-sizing:border-box;padding-top:13px=
+;padding-bottom:11px;background-color:#fff;text-align:center;font-weight:no=
+rmal;height:auto}.PagedListFoo.unified .action_button:after{border:0}.Paged=
+ListFoo.unified .action_button span{position:relative}.PagedListFoo.unified=
+ .action_button span:before{position:absolute;right:-15px}.PagedListFoo.uni=
+fied .action_button>span{color:#666}.PagedListFoo.unified .action_button>sp=
+an:before{font-family:'q-icons';content:':)';font-style:normal;font-weight:=
+normal;font-variant:normal;text-transform:none;-webkit-font-smoothing:antia=
+liased;-moz-osx-font-smoothing:grayscale;text-shadow:1px 1px 1px rgba(0,0,0=
+,0.004);text-rendering:optimizeLegibility!important;speak:none;color:#666;f=
+ont-size:13px;line-height:1;display:inline-block;width:13px;height:13px}.Pa=
+gedListFoo.unified .action_button>span:before{content:'\F116';-webkit-trans=
+form:rotate(-90deg);transform:rotate(-90deg)}.PagedListFoo.unified .action_=
+button>span:before{bottom:2px}.action_button{-webkit-user-select:none;-webk=
+it-touch-callout:none;-moz-user-select:none;-ms-user-select:none;user-selec=
+t:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-colo=
+r:transparent;display:inline-block;position:relative;outline:0;border-radiu=
+s:3px;text-align:center;white-space:pre;font-size:12px;padding:.5em .7em;fo=
+nt-weight:bold;background:#f0f0f5;color:#6d6d6d}.ui_qtext_expanded .ui_qtex=
+t_para{display:block;margin-bottom:1em}.ui_qtext_expanded .ui_qtext_image_w=
+rapper{display:block;margin-bottom:1em}.ui_qtext_expanded .qtext_citation_l=
+ead{display:block;font-weight:bold}.ui_qtext_expanded .ui_qtext_image_wrapp=
+er canvas{border-radius:3px;max-width:100%}.ui_qtext_expanded .ui_qtext_ima=
+ge_wrapper img{border-radius:3px;max-width:100%}.ui_qtext_expanded p.citati=
+on{outline:0;margin-top:-63px;padding-top:63px}.ui_qtext_expanded p.citatio=
+n:last-of-type{margin-bottom:1em}.ui_qtext_expanded .ui_qtext_embed{margin-=
+bottom:1em}.ui_qtext_expanded .ui_qtext_embed.thumbnail{position:relative;w=
+idth:100%;height:0;background-repeat:no-repeat;background-position:center;b=
+ackground-size:cover}.ui_qtext_expanded .ui_qtext_embed.thumbnail:after{con=
+tent:" ";background-color:transparent;background:url(//qsf.fs.quoracdn.net/=
+-3-images.play4.png-26-5689fb5285523f5a.png) center center no-repeat;backgr=
+ound-size:70px 70px;display:block;height:100%;left:0;margin:0;padding:0;pos=
+ition:absolute;top:0;width:100%}.mobile_app2 .ui_qtext_expanded .ui_qtext_e=
+mbed{position:relative;width:100%;height:0;padding-top:56.25%}.mobile_app2 =
+.ui_qtext_expanded .ui_qtext_embed:after{content:" ";background-color:trans=
+parent;background:url(//qsf.fs.quoracdn.net/-3-images.play4.png-26-5689fb52=
+85523f5a.png) center center no-repeat;background-size:70px 70px;display:blo=
+ck;height:100%;left:0;margin:0;padding:0;position:absolute;top:0;width:100%=
+}.ui_layout_photo_text.ui_layout_size--small .ui_layout_photo{width:40px;he=
+ight:40px}.ui_layout_photo_text.ui_layout_size--small .ui_layout_photo img{=
+width:40px;height:40px}.mobile_app2 .ui_layout_photo_text.ui_layout_size--s=
+mall .ui_layout_photo{width:36px;height:36px}.mobile_app2 .ui_layout_photo_=
+text.ui_layout_size--small .ui_layout_photo img{width:36px;height:36px}.ui_=
+layout_photo_text.ui_layout_size--small .ui_layout_text{margin-left:10px}.u=
+i_layout_photo_text .ui_layout_text{-webkit-box-sizing:border-box;-moz-box-=
+sizing:border-box;box-sizing:border-box;word-break:break-word}.ui_layout_ph=
+oto_text .ui_layout_photo{overflow:visible}.answer_permalink{font-size:12px=
+;color:#949494}.credibility_wrapper{display:inline-block}.credibility_wrapp=
+er .profile_photo_img{height:15px;width:15px;margin-right:5px;position:rela=
+tive;top:3px}.CredibilityFacts{font-size:12px;color:#949494;padding:4px 0}.=
+CredibilityFacts .bold_num{font-weight:bold}.UnifiedAnswerPagedList{positio=
+n:relative}.UnifiedAnswerPagedList:after{content:"";position:absolute;point=
+er-events:none;box-sizing:border-box;border-radius:0;top:0;left:0;width:100=
+%;height:100%;border-width:1px;border-color:#e2e2e2}@media only screen and =
+(-webkit-min-device-pixel-ratio:1.5){.UnifiedAnswerPagedList:after{-webkit-=
+transform:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;tran=
+sform-origin:0 0;width:200%;height:200%;border-radius:0}}.UnifiedAnswerPage=
+dList:after{border-bottom-style:solid}.UnifiedAnswerPagedList .pagedlist_it=
+em:last-child .answer_wrapper:after{border:0}.UnifiedAnswerPagedList .answe=
+r_wrapper{padding:20px 20px;position:relative}.UnifiedAnswerPagedList .answ=
+er_wrapper:after{content:"";position:absolute;pointer-events:none;box-sizin=
+g:border-box;border-radius:0;top:0;left:0;width:100%;height:100%;border-wid=
+th:1px;border-color:#e2e2e2}@media only screen and (-webkit-min-device-pixe=
+l-ratio:1.5){.UnifiedAnswerPagedList .answer_wrapper:after{-webkit-transfor=
+m:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-or=
+igin:0 0;width:200%;height:200%;border-radius:0}}.UnifiedAnswerPagedList .a=
+nswer_wrapper:after{border-bottom-style:solid}.UnifiedAnswerPagedList .page=
+dlist_item{display:block}.UnifiedAnswerPagedList .answer_wrapper{border-bot=
+tom:6px solid #e6e6e6}.UnifiedAnswerPagedList .ContentHeader{margin-bottom:=
+10px}.QuestionMain .answer_text_small .ExpandedAnswer{font-size:14px;line-h=
+eight:1.5}.paged_list_wrapper>div:last-of-type>.FollowSuggestionListItem{bo=
+rder-bottom:0}.TranslatedAnswerBanner{padding-bottom:5px}.outer_content_box=
+{border-bottom:6px solid #e6e6e6;padding:10px 20px}.outer_content_box .feat=
+ured_text_container{color:#949494;font-size:12px;width:90%;padding-bottom:0=
+}.outer_content_box .featured_text_container:after{border-bottom:0}.outer_c=
+ontent_box .featured_text_container .promoted_weblink{color:#949494}.outer_=
+content_box .featured_text_container .advertiser_endpoint{display:inline-bl=
+ock;width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;ve=
+rtical-align:top}.outer_content_box .featured_text_container .advertiser_en=
+dpoint::first-letter {text-transform:capitalize}.outer_content_box .content=
+_title{font-family:Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pr=
+o","Meiryo",serif;font-size:18px;font-weight:bold;line-height:23px;color:#3=
+33;padding-top:5px}.js-wf-loaded .outer_content_box .content_title{font-fam=
+ily:'q_serif',Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","M=
+eiryo",serif}.amp-page .outer_content_box .content_title{font-family:'q_ser=
+if',Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",ser=
+if}.outer_content_box .content_summary{font-family:Georgia,Times,"Times New=
+ Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;font-size:15px;color:#333=
+;line-height:23px;margin-top:10px;padding-bottom:5px}.js-wf-loaded .outer_c=
+ontent_box .content_summary{font-family:'q_serif',Georgia,Times,"Times New =
+Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.amp-page .outer_content_b=
+ox .content_summary{font-family:'q_serif',Georgia,Times,"Times New Roman","=
+Hiragino Kaku Gothic Pro","Meiryo",serif}.outer_content_box .content_button=
+{-webkit-tap-highlight-color:rgba(255,255,255,0.6);display:block;position:r=
+elative;padding:10px;color:#585a61;border-radius:3px;margin:10px 0;text-ali=
+gn:center}.outer_content_box .content_button::after{content:"";position:abs=
+olute;border:1px solid #ced1e1;pointer-events:none;box-sizing:border-box;bo=
+rder-radius:3px;top:0;left:0;width:100%;height:100%}@media only screen and =
+(-webkit-min-device-pixel-ratio:1.5),only screen and (min-resolution:1.5dpp=
+x){.outer_content_box .content_button::after{-webkit-transform:scale(0.5);t=
+ransform:scale(0.5);-webkit-transform-origin:0 0;transform-origin:0 0;width=
+:200%;height:200%;border-radius:6px}}.outer_content_box .content_button a{c=
+olor:#585a61}.outer_content_box .content_button::after{content:"";backgroun=
+d-image:url(//qsf.fs.quoracdn.net/-3-images.new_grid.external_link_dark.svg=
+-26-32ba031947f6f389.svg);background-repeat:no-repeat;background-position:r=
+ight 16px top 24px;background-size:26px;opacity:.8;z-index:1}.outer_content=
+_box .upper_content_link{-webkit-tap-highlight-color:rgba(255,255,255,0.6)}=
+.outer_content_box.question_page_ad{padding-top:15px}.outer_content_box.que=
+stion_page_ad .content_summary{margin-top:5px}.outer_content_box.question_p=
+age_ad .dismissed_msg_wrapper{margin-bottom:5px}.outer_content_box.question=
+_page_ad.top_slot .featured_text_container{border-bottom:0;margin-bottom:0}=
+.outer_content_box.question_page_ad.top_slot .featured_text_container .prom=
+oted_weblink:hover{text-decoration:underline}.outer_content_box.question_pa=
+ge_ad.top_slot .content_title{-webkit-tap-highlight-color:rgba(255,255,255,=
+0.6);padding-top:0;margin-top:5px;font-size:16px;line-height:23px}.outer_co=
+ntent_box.question_page_ad.top_slot .content_summary{-webkit-tap-highlight-=
+color:rgba(255,255,255,0.6);margin-top:5px;font-size:15px;line-height:23px;=
+padding-bottom:0}.outer_content_box.question_page_ad.top_slot.logged_out_ad=
+ .content_title{-webkit-tap-highlight-color:rgba(255,255,255,0.6);font-size=
+:15px;line-height:1.5}.outer_content_box.question_page_ad.top_slot.logged_o=
+ut_ad .content_summary{-webkit-tap-highlight-color:rgba(255,255,255,0.6);fo=
+nt-size:14px;line-height:1.5}.outer_content_box.question_page_ad.top_slot.l=
+ogged_out_ad .content_button{font-size:14px}amp-img.profile_photo_img>img{b=
+order-radius:50%}.answer_text_small .answer_wrapper{padding:20px 20px;posit=
+ion:relative}.answer_text_small .answer_wrapper:after{content:"";position:a=
+bsolute;pointer-events:none;box-sizing:border-box;border-radius:0;top:0;lef=
+t:0;width:100%;height:100%;border-width:1px;border-color:#e2e2e2}@media onl=
+y screen and (-webkit-min-device-pixel-ratio:1.5){.answer_text_small .answe=
+r_wrapper:after{-webkit-transform:scale(0.5);transform:scale(0.5);-webkit-t=
+ransform-origin:0 0;transform-origin:0 0;width:200%;height:200%;border-radi=
+us:0}}.answer_text_small .answer_wrapper:after{border-bottom-style:solid}.E=
+xpandedAnswer{font-family:Georgia,Times,"Times New Roman","Hiragino Kaku Go=
+thic Pro","Meiryo",serif;line-height:1.5}.js-wf-loaded .ExpandedAnswer{font=
+-family:'q_serif',Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro=
+","Meiryo",serif}.amp-page .ExpandedAnswer{font-family:'q_serif',Georgia,Ti=
+mes,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif}.ExpandedAn=
+swer h2{font-weight:bold}.ExpandedAnswer b{font-weight:bold}.ExpandedAnswer=
+{font-size:15px;color:#333}</style><span id=3D"wEdYxkU42"><div class=3D"pro=
+mpts_list"><span id=3D"wfiaIBtT26"></span><span id=3D"wfiaIBtT28"></span><s=
+pan id=3D"wfiaIBtT30"></span><span id=3D"wfiaIBtT32"></span><span id=3D"wfi=
+aIBtT34"></span><span id=3D"wfiaIBtT36"></span><span id=3D"wfiaIBtT40"></sp=
+an><span id=3D"wfiaIBtT42"></span><span id=3D"wfiaIBtT44"></span><span id=
+=3D"wfiaIBtT46"></span><span id=3D"wfiaIBtT48"></span><span id=3D"wfiaIBtT5=
+0"></span><span id=3D"wfiaIBtT53"></span><span id=3D"wfiaIBtT55"></span></d=
+iv></span><div><div class=3D"content_area" id=3D"__w2_wegfd7qq32_axhphdpirk=
+ypkrrmobpw"><div class=3D"outer_content_box question_page_ad top_slot logge=
+d_out_ad"><div id=3D"__w2_wegfd7qq33_uziuuxdpipwyeutbtqip"><div class=3D"up=
+per_content_feed_reason"><div class=3D"featured_text_container"><div class=
+=3D"upper_content_link promoted_weblink external_link link_overlay"><p clas=
+s=3D"advertiser_endpoint">ad  by CodeGym</p></div></div></div><div class=3D=
+"ad_interior"><a class=3D"upper_content_link" href=3D"https://www.quora.com=
+/MTAzMTUzMjk1OTgzMDQ0NzI3NHwyMTExMDYyMzMzMjkwODd8MA**/codegym-cc-49" target=
+=3D"_blank" mobile_app_target=3D"external" rel=3D"noopener nofollow" id=3D"=
+__w2_wegfd7qq35_phvyilnhwegwazeosnud"><div class=3D"upper_content_group"><d=
+iv id=3D"__w2_wegfd7qq36_omrglleidmoebictupbe"><div class=3D"content_title"=
+>Free Java online courses. Start learning today from home.</div></div><div =
+id=3D"__w2_wegfd7qq37_shnwwluneckrxzaollbz"><div class=3D"content_summary">=
+Try Java programming online courses with CodeGym for free. Easy, fast and q=
+uality learning. Start now!</div></div></div></a></div><div class=3D"upper_=
+content_actions"><div id=3D"__w2_wegfd7qq38_atkgteforwilgccuyxwf"><div clas=
+s=3D"empty_button"><a class=3D"content_button" href=3D"https://www.quora.co=
+m/MTAzMTUzMjk1OTgzMDQ0NzI3NHwyMTExMDYyMzMzMjkwODd8MA**/codegym-cc-49" targe=
+t=3D"_blank" mobile_app_target=3D"external" rel=3D"noopener nofollow" id=3D=
+"__w2_wegfd7qq39_tnbgwsacgwfrmtufgsmp">Free Trial</a></div></div></div></di=
+v><div class=3D"hidden dismissed_msg_wrapper" id=3D"__w2_wegfd7qq33_sobgiuq=
+lpjbtrmqzrafp"><div class=3D"content_dismiss_title">You dismissed this ad.<=
+/div><div class=3D"content_dismiss_body">The feedback you provide will help=
+ us show you more relevant content in the future.</div><a class=3D"undo" id=
+=3D"__w2_wegfd7qq33_knjmvwgzyfuiuwpioiyg">Undo</a></div></div><a href=3D"ht=
+tps://www.quora.com/_/ncli?ih=3DMTAzMTUzMjk1OTgzMDQ0NzI3NHwyMTExMDYyMzMzMjk=
+wODd8MA**" style=3D"display: none;"></a></div></div><span id=3D"wegfd7qq19"=
+></span><span id=3D"wegfd7qq21"><div class=3D"section_header section_header=
+_gray">6 Answers</div></span><div class=3D"answer_text_small"><div class=3D=
+"PagedListFoo _UnifiedAnswerPagedList UnifiedAnswerPagedList unified" id=3D=
+"__w2_wegfd7qq2_paged_list"><div class=3D"paged_list_wrapper" id=3D"__w2_we=
+gfd7qq2_paged_list_wrapper"><span class=3D"pagedlist_item" id=3D"wegfd7qq3"=
+><div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;action_=
+log_target&quot;: {&quot;type&quot;: 4, &quot;hash&quot;: &quot;answer_rank=
+ing|-1666770864&quot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D=
+"__w2_wAT6XDDd4_actionable" data-clog-processed=3D"1"><span id=3D"wAT6XDDd5=
+"><div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;object=
+_view&quot;: {&quot;view_tracking_key&quot;: &quot;a-83578621&quot;, &quot;=
+view_tracking_hash&quot;: &quot;5821a4717782c2013213aff1f9b9d83a&quot;}}" d=
+ata-clog-event-type=3D"ObjectView" data-clog-processed=3D"1"><span id=3D"wA=
+T6XDDd8"><div class=3D"Answer answer_wrapper" data-clog-metadata=3D"{}" id=
+=3D"__w2_wAT6XDDd9_answer"><div class=3D"answer_inner"><div class=3D"answer=
+_text"><span id=3D"wAT6XDDd11"><div class=3D"AnswerHeader ContentHeader"><d=
+iv class=3D"ui_layout_photo_text u-flex ui_layout_size--small"><div class=
+=3D"ui_layout_photo_wrapper u-flex-none"><div class=3D"ui_layout_photo u-re=
+lative"><span id=3D"wAT6XDDd19"><span class=3D"photo_tooltip Photo Identity=
+Photo HoverMenu" id=3D"__w2_wAT6XDDd20_link"><a href=3D"https://www.quora.c=
+om/profile/Giorgio-Desideri" mobile_loading_placeholder=3D"profile" id=3D"_=
+_w2_wAT6XDDd32_link"><img class=3D"profile_photo_img" src=3D"https://qph.fs=
+.quoracdn.net/main-thumb-454104244-50-kdolqernoawfnpdobnjywsnoksdapdtf.jpeg=
+" alt=3D"Giorgio Desideri" height=3D"50" width=3D"50"></a><span id=3D"wAT6X=
+DDd35"></span></span></span></div></div><div class=3D"ui_layout_text u-flex=
+-auto u-flex-align-self--center"><div class=3D"u-flex u-flex-justify--betwe=
+en"><div class=3D"u-margin-right--sm"><div class=3D"feed_item_answer_user">=
+<span id=3D"wAT6XDDd21"><span id=3D"wAT6XDDd33"><span id=3D"__w2_wAT6XDDd34=
+_link"><a class=3D"user" href=3D"https://www.quora.com/profile/Giorgio-Desi=
+deri" mobile_loading_placeholder=3D"profile" action_mousedown=3D"UserLinkCl=
+ickthrough" id=3D"__w2_wAT6XDDd34_name_link">Giorgio Desideri</a></span></s=
+pan><span class=3D"NameCredential">, Senior Engineer at Agoda (2017-present=
+)</span></span></div><span class=3D"credibility_wrapper"><span class=3D"u-i=
+nline-block" id=3D"wAT6XDDd14"><div class=3D"CredibilityFacts pass_color_to=
+_child_links"><span id=3D"wAT6XDDd37"><a class=3D"answer_permalink" action_=
+mousedown=3D"AnswerPermalinkClickthrough" href=3D"https://www.quora.com/How=
+-do-I-convert-a-string-to-UTF-8-in-Java/answer/Giorgio-Desideri" mobile_loa=
+ding_placeholder=3D"answer" id=3D"__w2_wAT6XDDd38_link">Answered <span clas=
+s=3D"datetime" id=3D"__w2_wAT6XDDd46_datespan">May 16</span></a></span><spa=
+n class=3D"bullet"> =C2=B7 </span>Author has <span class=3D"bold_num">146</=
+span> answers and <span class=3D"bold_num">42.4k</span> answer views</div><=
+/span></span></div><div id=3D"__w2_wAT6XDDd13_follow_button_section"><div c=
+lass=3D"u-relative icon_follow_button_wrapper"><div class=3D"u-absolute u-a=
+bsolute--center u-border-radius--ellipse u-padding-right--xs u-padding-left=
+--xs icon_follow_button" id=3D"__w2_wAT6XDDd13_follow_button"><span id=3D"w=
+AT6XDDd29"></span></div></div></div></div></div></div><div id=3D"__w2_wAT6X=
+DDd31_suggested_section"></div></div></span><div class=3D"answer_content" i=
+d=3D"__w2_wAT6XDDd9_answer_content"><div class=3D"ExpandedContent ExpandedA=
+nswer" id=3D"__w2_wAT6XDDd10_expanded_content"><span id=3D"wAT6XDDd16"></sp=
+an><div class=3D"TranslatedAnswerBanner"></div><div class=3D"u-serif-font-m=
+ain--regular u-font-size--1_4 u-line-height--1_5"><div class=3D"ui_qtext_ex=
+panded"><span class=3D"ui_qtext_rendered_qtext"><p class=3D"ui_qtext_para">=
+It is without libraries and only pure Java 8</p><pre class=3D"prettyprint l=
+inenums prettyprinted" style=3D""><ol class=3D"linenums"><li class=3D"L0"><=
+span class=3D"com">// Java will convert it into a UTF-16 representation</sp=
+an></li><li class=3D"L1"><span class=3D"typ">String</span><span class=3D"pl=
+n"> s </span><span class=3D"pun">=3D</span><span class=3D"pln"> </span><spa=
+n class=3D"pun">=E2=80=9C</span><span class=3D"typ">This</span><span class=
+=3D"pln"> </span><span class=3D"kwd">is</span><span class=3D"pln"> </span><=
+span class=3D"kwd">my</span><span class=3D"pln"> </span><span class=3D"kwd"=
+>string</span><span class=3D"pun">=E2=80=9D</span><span class=3D"pln"> </sp=
+an><span class=3D"pun">;</span></li><li class=3D"L2"><span class=3D"pln">&n=
+bsp;</span></li><li class=3D"L3"><span class=3D"com">// byte representation=
+ in UTF-8</span></li><li class=3D"L4"><span class=3D"typ">ByteBuffer</span>=
+<span class=3D"pln"> byteBuff </span><span class=3D"pun">=3D</span><span cl=
+ass=3D"pln"> </span><span class=3D"typ">StandardCharset</span><span class=
+=3D"pun">.</span><span class=3D"pln">UTF</span><span class=3D"pun">-</span>=
+<span class=3D"lit">8.encode</span><span class=3D"pun">(</span><span class=
+=3D"pln">s</span><span class=3D"pun">);</span></li><li class=3D"L5"><span c=
+lass=3D"pln">&nbsp;</span></li><li class=3D"L6"><span class=3D"com">// do w=
+hat you want with this byte buffer</span></li><li class=3D"L7"><span class=
+=3D"typ">String</span><span class=3D"pln"> v </span><span class=3D"pun">=3D=
+</span><span class=3D"pln"> </span><span class=3D"kwd">new</span><span clas=
+s=3D"pln"> </span><span class=3D"typ">String</span><span class=3D"pun">(</s=
+pan><span class=3D"pln"> bytes</span><span class=3D"pun">,</span><span clas=
+s=3D"pln"> </span><span class=3D"typ">StandardCharset</span><span class=3D"=
+pun">.</span><span class=3D"pln">UTF</span><span class=3D"pun">-</span><spa=
+n class=3D"lit">8</span><span class=3D"pln"> </span><span class=3D"pun">);<=
+/span></li></ol></pre></span></div></div><span id=3D"wAT6XDDd24"><div class=
+=3D"AnswerFooter ContentFooter" id=3D"__w2_wAT6XDDd25_content_footer"><span=
+ id=3D"wAT6XDDd27"><span class=3D"meta_num">9.1k</span> Views</span><span i=
+d=3D"wAT6XDDd40"></span><span id=3D"wAT6XDDd42"></span></div></span><div id=
+=3D"__w2_wAT6XDDd10_survey_wrapper"></div></div></div></div></div></div></s=
+pan></div></span></div></span><span class=3D"pagedlist_item" id=3D"wegfd7qq=
+15"><div class=3D"RelatedQuestions InlineRelatedQuestionsLoggedOut logged_o=
+ut" id=3D"__w2_w91639bY4_related_questions"><div class=3D"section_header">R=
+elated Questions (More Answers Below)</div><div class=3D"BlockComponent Sec=
+tion" id=3D"__w2_w91639bY7_section"><ul class=3D"ts_cells"><span id=3D"w916=
+39bY9"><div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;a=
+ction_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quot;rela=
+ted_questions|34594812|-858929511&quot;}}" data-clog-event-type=3D"ActionLo=
+gImpression" id=3D"__w2_w91639bY10_actionable" data-clog-processed=3D"1"><l=
+i class=3D"LinkMixin RelatedQuestionCell Cell ActionableCell DisclosureMixi=
+n tc_target has_detail_text" id=3D"__w2_w91639bY10_cell"><a class=3D"tc_inn=
+er sticky_highlight" href=3D"https://www.quora.com/How-do-I-convert-a-char-=
+to-a-string-in-Java" action_click=3D"QuestionLinkClickthrough" mobile_loadi=
+ng_placeholder=3D"question"><span class=3D"tc_text" id=3D"__w2_w91639bY10_c=
+ell_text"><span id=3D"w91639bY19"><span class=3D"ui_story_title  "><span cl=
+ass=3D"ui_qtext_rendered_qtext">How do I convert a char to a string in Java=
+?</span></span></span></span><p class=3D"tc_detail" id=3D"__w2_w91639bY10_c=
+ell_detail_text">315 Views</p></a><div class=3D"tc_stroke"></div></li></div=
+></span><span id=3D"w91639bY11"><div data-clog-trigger=3D"impression" data-=
+clog-metadata=3D"{&quot;action_log_target&quot;: {&quot;type&quot;: 21, &qu=
+ot;hash&quot;: &quot;related_questions|4342636|-858929511&quot;}}" data-clo=
+g-event-type=3D"ActionLogImpression" id=3D"__w2_w91639bY12_actionable" data=
+-clog-processed=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell Actio=
+nableCell DisclosureMixin tc_target has_detail_text" id=3D"__w2_w91639bY12_=
+cell"><a class=3D"tc_inner sticky_highlight" href=3D"https://www.quora.com/=
+How-do-we-convert-a-String-like-Java-to-int-form-in-Java" action_click=3D"Q=
+uestionLinkClickthrough" mobile_loading_placeholder=3D"question"><span clas=
+s=3D"tc_text" id=3D"__w2_w91639bY12_cell_text"><span id=3D"w91639bY21"><spa=
+n class=3D"ui_story_title  "><span class=3D"ui_qtext_rendered_qtext">How do=
+ we convert a String (like "Java") to int form in Java?</span></span></span=
+></span><p class=3D"tc_detail" id=3D"__w2_w91639bY12_cell_detail_text">1,41=
+4 Views</p></a><div class=3D"tc_stroke"></div></li></div></span><span id=3D=
+"w91639bY13"><div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&=
+quot;action_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quo=
+t;related_questions|14981240|-858929511&quot;}}" data-clog-event-type=3D"Ac=
+tionLogImpression" id=3D"__w2_w91639bY14_actionable" data-clog-processed=3D=
+"1"><li class=3D"LinkMixin RelatedQuestionCell Cell ActionableCell Disclosu=
+reMixin tc_target has_detail_text" id=3D"__w2_w91639bY14_cell"><a class=3D"=
+tc_inner sticky_highlight" href=3D"https://www.quora.com/In-Java-how-can-I-=
+convert-a-hex-value-to-a-String" action_click=3D"QuestionLinkClickthrough" =
+mobile_loading_placeholder=3D"question"><span class=3D"tc_text" id=3D"__w2_=
+w91639bY14_cell_text"><span id=3D"w91639bY23"><span class=3D"ui_story_title=
+  "><span class=3D"ui_qtext_rendered_qtext">In Java, how can I convert a he=
+x value to a String?</span></span></span></span><p class=3D"tc_detail" id=
+=3D"__w2_w91639bY14_cell_detail_text">2,311 Views</p></a><div class=3D"tc_s=
+troke"></div></li></div></span><span id=3D"w91639bY15"><div data-clog-trigg=
+er=3D"impression" data-clog-metadata=3D"{&quot;action_log_target&quot;: {&q=
+uot;type&quot;: 21, &quot;hash&quot;: &quot;related_questions|7720476|-8589=
+29511&quot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D"__w2_w916=
+39bY16_actionable" data-clog-processed=3D"1"><li class=3D"LinkMixin Related=
+QuestionCell Cell ActionableCell DisclosureMixin tc_target has_detail_text"=
+ id=3D"__w2_w91639bY16_cell"><a class=3D"tc_inner sticky_highlight" href=3D=
+"https://www.quora.com/How-do-I-convert-string-array-to-string-in-Java" act=
+ion_click=3D"QuestionLinkClickthrough" mobile_loading_placeholder=3D"questi=
+on"><span class=3D"tc_text" id=3D"__w2_w91639bY16_cell_text"><span id=3D"w9=
+1639bY25"><span class=3D"ui_story_title  "><span class=3D"ui_qtext_rendered=
+_qtext">How do I convert string array to string in Java?</span></span></spa=
+n></span><p class=3D"tc_detail" id=3D"__w2_w91639bY16_cell_detail_text">20,=
+583 Views</p></a><div class=3D"tc_stroke"></div></li></div></span><span id=
+=3D"w91639bY17"><div data-clog-trigger=3D"impression" data-clog-metadata=3D=
+"{&quot;action_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &=
+quot;related_questions|33090156|-858929511&quot;}}" data-clog-event-type=3D=
+"ActionLogImpression" id=3D"__w2_w91639bY18_actionable" data-clog-processed=
+=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell ActionableCell Discl=
+osureMixin tc_target has_detail_text" id=3D"__w2_w91639bY18_cell"><a class=
+=3D"tc_inner sticky_highlight" href=3D"https://www.quora.com/How-can-I-conv=
+ert-a-character-type-variable-to-the-string-type-in-Java" action_click=3D"Q=
+uestionLinkClickthrough" mobile_loading_placeholder=3D"question"><span clas=
+s=3D"tc_text" id=3D"__w2_w91639bY18_cell_text"><span id=3D"w91639bY27"><spa=
+n class=3D"ui_story_title  "><span class=3D"ui_qtext_rendered_qtext">How ca=
+n I convert a character type variable to the string type in Java?</span></s=
+pan></span></span><p class=3D"tc_detail" id=3D"__w2_w91639bY18_cell_detail_=
+text">624 Views</p></a><div class=3D"tc_stroke"></div></li></div></span></u=
+l></div></div><span id=3D"w91639bY5"></span><div class=3D"section_header se=
+ction_header_gray">Other Answers</div></span><span class=3D"pagedlist_item"=
+ id=3D"wegfd7qq25"></span><span class=3D"pagedlist_item" id=3D"wegfd7qq6"><=
+div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;action_lo=
+g_target&quot;: {&quot;type&quot;: 4, &quot;hash&quot;: &quot;answer_rankin=
+g|-1826122825&quot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D"_=
+_w2_wbGVGgfr4_actionable" data-clog-processed=3D"1"><span id=3D"wbGVGgfr5">=
+<div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;object_v=
+iew&quot;: {&quot;view_tracking_key&quot;: &quot;a-72246626&quot;, &quot;vi=
+ew_tracking_hash&quot;: &quot;8a54c307b0077c91a04fe9b045b7eb81&quot;}}" dat=
+a-clog-event-type=3D"ObjectView" data-clog-processed=3D"1"><span id=3D"wbGV=
+Ggfr8"><div class=3D"Answer answer_wrapper" data-clog-metadata=3D"{}" id=3D=
+"__w2_wbGVGgfr9_answer"><div class=3D"answer_inner"><div class=3D"answer_te=
+xt"><span id=3D"wbGVGgfr11"><div class=3D"AnswerHeader ContentHeader"><div =
+class=3D"ui_layout_photo_text u-flex ui_layout_size--small"><div class=3D"u=
+i_layout_photo_wrapper u-flex-none"><div class=3D"ui_layout_photo u-relativ=
+e"><span id=3D"wbGVGgfr19"><span class=3D"photo_tooltip Photo IdentityPhoto=
+ HoverMenu" id=3D"__w2_wbGVGgfr20_link"><a href=3D"https://www.quora.com/pr=
+ofile/Marco-Behler" mobile_loading_placeholder=3D"profile" id=3D"__w2_wbGVG=
+gfr32_link"><img class=3D"profile_photo_img" src=3D"https://qph.fs.quoracdn=
+.net/main-thumb-4883813-50-gyqqlfwomiyjwqjdimvcoanumcdjqroh.jpeg" alt=3D"Ma=
+rco Behler" height=3D"50" width=3D"50"></a><span id=3D"wbGVGgfr35"></span><=
+/span></span></div></div><div class=3D"ui_layout_text u-flex-auto u-flex-al=
+ign-self--center"><div class=3D"u-flex u-flex-justify--between"><div class=
+=3D"u-margin-right--sm"><div class=3D"feed_item_answer_user"><span id=3D"wb=
+GVGgfr21"><span id=3D"wbGVGgfr33"><span id=3D"__w2_wbGVGgfr34_link"><a clas=
+s=3D"user" href=3D"https://www.quora.com/profile/Marco-Behler" mobile_loadi=
+ng_placeholder=3D"profile" action_mousedown=3D"UserLinkClickthrough" id=3D"=
+__w2_wbGVGgfr34_name_link">Marco Behler</a></span></span><span class=3D"Nam=
+eCredential">, Programmer; Author; Java Screencaster @ www.marcobehler.com<=
+/span></span></div><span class=3D"credibility_wrapper"><span class=3D"u-inl=
+ine-block" id=3D"wbGVGgfr14"><div class=3D"CredibilityFacts pass_color_to_c=
+hild_links"><span id=3D"wbGVGgfr37"><a class=3D"answer_permalink" action_mo=
+usedown=3D"AnswerPermalinkClickthrough" href=3D"https://www.quora.com/How-d=
+o-I-convert-a-string-to-UTF-8-in-Java/answer/Marco-Behler" mobile_loading_p=
+laceholder=3D"answer" id=3D"__w2_wbGVGgfr38_link">Answered <span class=3D"d=
+atetime" id=3D"__w2_wbGVGgfr47_datespan">Feb 6</span></a></span><span class=
+=3D"bullet"> =C2=B7 </span>Author has <span class=3D"bold_num">253</span> a=
+nswers and <span class=3D"bold_num">76.9k</span> answer views</div></span><=
+/span></div><div id=3D"__w2_wbGVGgfr13_follow_button_section"><div class=3D=
+"u-relative icon_follow_button_wrapper"><div class=3D"u-absolute u-absolute=
+--center u-border-radius--ellipse u-padding-right--xs u-padding-left--xs ic=
+on_follow_button" id=3D"__w2_wbGVGgfr13_follow_button"><span id=3D"wbGVGgfr=
+29"></span></div></div></div></div></div></div><div id=3D"__w2_wbGVGgfr31_s=
+uggested_section"></div></div></span><div class=3D"answer_content" id=3D"__=
+w2_wbGVGgfr9_answer_content"><div class=3D"ExpandedContent ExpandedAnswer" =
+id=3D"__w2_wbGVGgfr10_expanded_content"><span id=3D"wbGVGgfr16"></span><div=
+ class=3D"TranslatedAnswerBanner"></div><div class=3D"u-serif-font-main--re=
+gular u-font-size--1_4 u-line-height--1_5"><div class=3D"ui_qtext_expanded"=
+><span class=3D"ui_qtext_rendered_qtext"><p class=3D"ui_qtext_para">Your qu=
+estion is confusing. Strings in Java ARE already UTF-8 rather UTF-16.</p><p=
+ class=3D"ui_qtext_para">Are you asking to specify a different encoding whe=
+n you are trying to convert that string to bytes, i.e. byte[]? If you, yes,=
+ then you can specify the encoding, like <span class=3D"qlink_container"><a=
+ href=3D"https://www.quora.com/profile/Barry-Gold-8">Barry Gold</a></span> =
+said, when calling string.getBytes(charset).</p></span></div></div><span id=
+=3D"wbGVGgfr24"><div class=3D"AnswerFooter ContentFooter" id=3D"__w2_wbGVGg=
+fr25_content_footer"><span id=3D"wbGVGgfr27"><span class=3D"meta_num">14.2k=
+</span> Views</span><span class=3D"bullet"> =C2=B7 </span><a class=3D"Voter=
+ListModalLink AnswerVoterListModalLink" href=3D"https://www.quora.com/api/m=
+obile_expanded_voter_list?key=3DaOcA1SHl46T&amp;type=3Danswer" id=3D"__w2_w=
+bGVGgfr40_modal_link">View 1 Upvoter</a><span id=3D"wbGVGgfr41"></span><spa=
+n id=3D"wbGVGgfr43"></span></div></span><div id=3D"__w2_wbGVGgfr10_survey_w=
+rapper"></div></div></div></div></div></div></span></div></span></div></spa=
+n><span class=3D"pagedlist_item" id=3D"wegfd7qq27"><div><div class=3D"conte=
+nt_area" id=3D"__w2_wegfd7qq40_osmhcmizpwmeuurotuag"><div class=3D"outer_co=
+ntent_box question_page_ad lower_slot"><div id=3D"__w2_wegfd7qq41_wjtqqkmgr=
+uheqodxrolt"><div class=3D"upper_content_feed_reason"><div class=3D"feature=
+d_text_container"><a class=3D"upper_content_link promoted_weblink" href=3D"=
+https://www.quora.com/MTAzMTUzMjk1OTgzMDQ0NzI3NHwyMTExMDYyMzM0NzMxOTN8MA**/=
+luno-128" target=3D"_blank" mobile_app_target=3D"external" rel=3D"noopener =
+nofollow" id=3D"__w2_wegfd7qq48_xvcgduysjeiyubyjnnja"><p class=3D"advertise=
+r_endpoint">sponsored  by Luno</p></a></div></div><div class=3D"ad_interior=
+"><a class=3D"upper_content_link" href=3D"https://www.quora.com/MTAzMTUzMjk=
+1OTgzMDQ0NzI3NHwyMTExMDYyMzM0NzMxOTN8MA**/luno-128" target=3D"_blank" mobil=
+e_app_target=3D"external" rel=3D"noopener nofollow" id=3D"__w2_wegfd7qq43_u=
+kanniqspbqwuptdcwxi"><div class=3D"upper_content_group"><div id=3D"__w2_weg=
+fd7qq44_mleuiazwdghhmaotnvqj"><div class=3D"content_title">The easiest way =
+to buy Bitcoin and Ethereum.</div></div><div id=3D"__w2_wegfd7qq45_pkwwxlsi=
+bboywbckwbgm"><div class=3D"content_summary">Luno makes it safe and easy to=
+ buy, store and learn about cryptocurrencies like Bitcoin and Ethereum.</di=
+v></div></div></a></div><div class=3D"upper_content_actions"><div id=3D"__w=
+2_wegfd7qq46_gmxraezzhxxjjsgikiot"><div class=3D"empty_button"><a class=3D"=
+content_button" href=3D"https://www.quora.com/MTAzMTUzMjk1OTgzMDQ0NzI3NHwyM=
+TExMDYyMzM0NzMxOTN8MA**/luno-128" target=3D"_blank" mobile_app_target=3D"ex=
+ternal" rel=3D"noopener nofollow" id=3D"__w2_wegfd7qq47_zxnmrpidjefpolzqadh=
+u">Learn More</a></div></div></div></div><div class=3D"hidden dismissed_msg=
+_wrapper" id=3D"__w2_wegfd7qq41_ifnphqtwmvyqihisoeql"><div class=3D"content=
+_dismiss_title">You dismissed this ad.</div><div class=3D"content_dismiss_b=
+ody">The feedback you provide will help us show you more relevant content i=
+n the future.</div><a class=3D"undo" id=3D"__w2_wegfd7qq41_ozbvobbsppmurelo=
+oijt">Undo</a></div></div><a href=3D"https://www.quora.com/_/ncli?ih=3DMTAz=
+MTUzMjk1OTgzMDQ0NzI3NHwyMTExMDYyMzM0NzMxOTN8MA**" style=3D"display: none;">=
+</a></div></div></span><span class=3D"pagedlist_item" id=3D"wegfd7qq9"><div=
+ data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;action_log_t=
+arget&quot;: {&quot;type&quot;: 4, &quot;hash&quot;: &quot;answer_ranking|1=
+951171784&quot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D"__w2_=
+wQahpkeX4_actionable" data-clog-processed=3D"1"><span id=3D"wQahpkeX5"><div=
+ data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;object_view&=
+quot;: {&quot;view_tracking_key&quot;: &quot;a-58482474&quot;, &quot;view_t=
+racking_hash&quot;: &quot;9d9f4b55568b548e0aad6d0ef273f260&quot;}}" data-cl=
+og-event-type=3D"ObjectView" data-clog-processed=3D"1"><span id=3D"wQahpkeX=
+8"><div class=3D"Answer answer_wrapper" data-clog-metadata=3D"{}" id=3D"__w=
+2_wQahpkeX9_answer"><div class=3D"answer_inner"><div class=3D"answer_text">=
+<span id=3D"wQahpkeX11"><div class=3D"AnswerHeader ContentHeader"><div clas=
+s=3D"ui_layout_photo_text u-flex ui_layout_size--small"><div class=3D"ui_la=
+yout_photo_wrapper u-flex-none"><div class=3D"ui_layout_photo u-relative"><=
+span id=3D"wQahpkeX19"><span class=3D"photo_tooltip Photo IdentityPhoto Hov=
+erMenu" id=3D"__w2_wQahpkeX20_link"><a href=3D"https://www.quora.com/profil=
+e/Barry-Gold-8" mobile_loading_placeholder=3D"profile" id=3D"__w2_wQahpkeX3=
+2_link"><img class=3D"profile_photo_img" src=3D"https://qph.fs.quoracdn.net=
+/main-thumb-306715562-50-wobidvjiduhyiltfquuifxutvbwcascs.jpeg" alt=3D"Barr=
+y Gold" height=3D"50" width=3D"50"></a><span id=3D"wQahpkeX35"></span></spa=
+n></span></div></div><div class=3D"ui_layout_text u-flex-auto u-flex-align-=
+self--center"><div class=3D"u-flex u-flex-justify--between"><div class=3D"u=
+-margin-right--sm"><div class=3D"feed_item_answer_user"><span id=3D"wQahpke=
+X21"><span id=3D"wQahpkeX33"><span id=3D"__w2_wQahpkeX34_link"><a class=3D"=
+user" href=3D"https://www.quora.com/profile/Barry-Gold-8" mobile_loading_pl=
+aceholder=3D"profile" action_mousedown=3D"UserLinkClickthrough" id=3D"__w2_=
+wQahpkeX34_name_link">Barry Gold</a></span></span><span class=3D"NameCreden=
+tial">, former Web Programmer (2003-2008)</span></span></div><span class=3D=
+"credibility_wrapper"><span class=3D"u-inline-block" id=3D"wQahpkeX14"><div=
+ class=3D"CredibilityFacts pass_color_to_child_links"><span id=3D"wQahpkeX3=
+7"><a class=3D"answer_permalink" action_mousedown=3D"AnswerPermalinkClickth=
+rough" href=3D"https://www.quora.com/How-do-I-convert-a-string-to-UTF-8-in-=
+Java/answer/Barry-Gold-8" mobile_loading_placeholder=3D"answer" id=3D"__w2_=
+wQahpkeX38_link">Answered <span class=3D"datetime" id=3D"__w2_wQahpkeX47_da=
+tespan">Oct 1 2017</span></a></span><span class=3D"bullet"> =C2=B7 </span>A=
+uthor has <span class=3D"bold_num">569</span> answers and <span class=3D"bo=
+ld_num">919.2k</span> answer views</div></span></span></div><div id=3D"__w2=
+_wQahpkeX13_follow_button_section"><div class=3D"u-relative icon_follow_but=
+ton_wrapper"><div class=3D"u-absolute u-absolute--center u-border-radius--e=
+llipse u-padding-right--xs u-padding-left--xs icon_follow_button" id=3D"__w=
+2_wQahpkeX13_follow_button"><span id=3D"wQahpkeX29"></span></div></div></di=
+v></div></div></div><div id=3D"__w2_wQahpkeX31_suggested_section"></div></d=
+iv></span><div class=3D"answer_content" id=3D"__w2_wQahpkeX9_answer_content=
+"><div class=3D"ExpandedContent ExpandedAnswer" id=3D"__w2_wQahpkeX10_expan=
+ded_content"><span id=3D"wQahpkeX16"></span><div class=3D"TranslatedAnswerB=
+anner"></div><div class=3D"u-serif-font-main--regular u-font-size--1_4 u-li=
+ne-height--1_5"><div class=3D"ui_qtext_expanded"><span class=3D"ui_qtext_re=
+ndered_qtext"><p class=3D"ui_qtext_para">Go to the Java classes overview <s=
+pan class=3D"qlink_container"><a href=3D"http://docs.oracle.com/javase/8/do=
+cs/api/overview-summary.html" mobile_app_target=3D"browser" rel=3D"noopener=
+ nofollow" target=3D"_blank" class=3D"external_link">(Java Platform SE 8 )<=
+/a></span></p><p class=3D"ui_qtext_para">In the class java.lang.String, see=
+ method <code class=3D"prettyprint inline prettyprinted" style=3D""><span c=
+lass=3D"pln">getBytes</span><span class=3D"pun">(</span><span class=3D"typ"=
+>Charset</span><span class=3D"pln"> charset</span><span class=3D"pun">)</sp=
+an></code></p><p class=3D"ui_qtext_para">In general, I have found Google an=
+d Stackoverflow useful. I just went to Google and entered two words: =E2=80=
+=9Cjava=E2=80=9D and =E2=80=9Cutf-8=E2=80=9D. The answer was the 3rd or 4th=
+ one shown.</p></span></div></div><span id=3D"wQahpkeX24"><div class=3D"Ans=
+werFooter ContentFooter" id=3D"__w2_wQahpkeX25_content_footer"><span id=3D"=
+wQahpkeX27"><span class=3D"meta_num">11.9k</span> Views</span><span class=
+=3D"bullet"> =C2=B7 </span><a class=3D"VoterListModalLink AnswerVoterListMo=
+dalLink" href=3D"https://www.quora.com/api/mobile_expanded_voter_list?key=
+=3D3J29ubZICOr&amp;type=3Danswer" id=3D"__w2_wQahpkeX40_modal_link">View 10=
+ Upvoters</a><span id=3D"wQahpkeX41"></span><span id=3D"wQahpkeX43"></span>=
+</div></span><div id=3D"__w2_wQahpkeX10_survey_wrapper"></div></div></div><=
+/div></div></div></span></div></span></div></span></div><div class=3D"pager=
+_next row action_button hidden" id=3D"__w2_wegfd7qq2_more">View More</div><=
+div class=3D"spinner_display_area paged_list_hidden_footer" id=3D"__w2_wegf=
+d7qq2_spinner"></div></div><div class=3D"paged_list_hidden_footer"></div></=
+div><div class=3D"RelatedQuestions logged_out paged_list_hidden_footer" id=
+=3D"__w2_wEdYxkU412_related_questions"><div class=3D"section_header">Relate=
+d Questions</div><div class=3D"BlockComponent Section" id=3D"__w2_wEdYxkU41=
+3_section"><ul class=3D"ts_cells"><span id=3D"wEdYxkU415"><div data-clog-tr=
+igger=3D"impression" data-clog-metadata=3D"{&quot;action_log_target&quot;: =
+{&quot;type&quot;: 21, &quot;hash&quot;: &quot;related_questions|2876873|-8=
+58929511&quot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D"__w2_w=
+EdYxkU416_actionable" data-clog-processed=3D"1"><li class=3D"LinkMixin Rela=
+tedQuestionCell Cell ActionableCell DisclosureMixin tc_target has_detail_te=
+xt" id=3D"__w2_wEdYxkU416_cell"><a class=3D"tc_inner sticky_highlight" href=
+=3D"https://www.quora.com/How-do-I-convert-a-long-number-string-into-a-list=
+-of-integers-in-Java" action_click=3D"QuestionLinkClickthrough" mobile_load=
+ing_placeholder=3D"question"><span class=3D"tc_text" id=3D"__w2_wEdYxkU416_=
+cell_text"><span id=3D"wEdYxkU445"><span class=3D"ui_story_title  "><span c=
+lass=3D"ui_qtext_rendered_qtext">How do I convert a long number string into=
+ a list of integers in Java?</span></span></span></span><p class=3D"tc_deta=
+il" id=3D"__w2_wEdYxkU416_cell_detail_text">17,552 Views</p></a><div class=
+=3D"tc_stroke"></div></li></div></span><span id=3D"wEdYxkU417"><div data-cl=
+og-trigger=3D"impression" data-clog-metadata=3D"{&quot;action_log_target&qu=
+ot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quot;related_questions|35523=
+804|-858929511&quot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D"=
+__w2_wEdYxkU418_actionable" data-clog-processed=3D"1"><li class=3D"LinkMixi=
+n RelatedQuestionCell Cell ActionableCell DisclosureMixin tc_target has_det=
+ail_text" id=3D"__w2_wEdYxkU418_cell"><a class=3D"tc_inner sticky_highlight=
+" href=3D"https://www.quora.com/How-can-I-convert-numeric-string-to-int-in-=
+Java" action_click=3D"QuestionLinkClickthrough" mobile_loading_placeholder=
+=3D"question"><span class=3D"tc_text" id=3D"__w2_wEdYxkU418_cell_text"><spa=
+n id=3D"wEdYxkU447"><span class=3D"ui_story_title  "><span class=3D"ui_qtex=
+t_rendered_qtext">How can I convert numeric string to int in Java?</span></=
+span></span></span><p class=3D"tc_detail" id=3D"__w2_wEdYxkU418_cell_detail=
+_text">1,240 Views</p></a><div class=3D"tc_stroke"></div></li></div></span>=
+<span id=3D"wEdYxkU419"><div data-clog-trigger=3D"impression" data-clog-met=
+adata=3D"{&quot;action_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&=
+quot;: &quot;related_questions|37703074|-858929511&quot;}}" data-clog-event=
+-type=3D"ActionLogImpression" id=3D"__w2_wEdYxkU420_actionable" data-clog-p=
+rocessed=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell ActionableCe=
+ll DisclosureMixin tc_target has_detail_text" id=3D"__w2_wEdYxkU420_cell"><=
+a class=3D"tc_inner sticky_highlight" href=3D"https://www.quora.com/How-do-=
+you-convert-binary-numbers-to-a-hexadecimal-string-in-Java" action_click=3D=
+"QuestionLinkClickthrough" mobile_loading_placeholder=3D"question"><span cl=
+ass=3D"tc_text" id=3D"__w2_wEdYxkU420_cell_text"><span id=3D"wEdYxkU449"><s=
+pan class=3D"ui_story_title  "><span class=3D"ui_qtext_rendered_qtext">How =
+do you convert binary numbers to a hexadecimal string in Java?</span></span=
+></span></span><p class=3D"tc_detail" id=3D"__w2_wEdYxkU420_cell_detail_tex=
+t">621 Views</p></a><div class=3D"tc_stroke"></div></li></div></span><span =
+id=3D"wEdYxkU421"><div data-clog-trigger=3D"impression" data-clog-metadata=
+=3D"{&quot;action_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;=
+: &quot;related_questions|29305705|-858929511&quot;}}" data-clog-event-type=
+=3D"ActionLogImpression" id=3D"__w2_wEdYxkU422_actionable" data-clog-proces=
+sed=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell ActionableCell Di=
+sclosureMixin tc_target has_detail_text" id=3D"__w2_wEdYxkU422_cell"><a cla=
+ss=3D"tc_inner sticky_highlight" href=3D"https://www.quora.com/How-do-I-con=
+vert-String-to-time-stamp-using-Java" action_click=3D"QuestionLinkClickthro=
+ugh" mobile_loading_placeholder=3D"question"><span class=3D"tc_text" id=3D"=
+__w2_wEdYxkU422_cell_text"><span id=3D"wEdYxkU451"><span class=3D"ui_story_=
+title  "><span class=3D"ui_qtext_rendered_qtext">How do I convert String to=
+ time stamp using Java?</span></span></span></span><p class=3D"tc_detail" i=
+d=3D"__w2_wEdYxkU422_cell_detail_text">9,065 Views</p></a><div class=3D"tc_=
+stroke"></div></li></div></span><span id=3D"wEdYxkU423"><div data-clog-trig=
+ger=3D"impression" data-clog-metadata=3D"{&quot;action_log_target&quot;: {&=
+quot;type&quot;: 21, &quot;hash&quot;: &quot;related_questions|37506508|-85=
+8929511&quot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D"__w2_wE=
+dYxkU424_actionable" data-clog-processed=3D"1"><li class=3D"LinkMixin Relat=
+edQuestionCell Cell ActionableCell DisclosureMixin tc_target has_detail_tex=
+t" id=3D"__w2_wEdYxkU424_cell"><a class=3D"tc_inner sticky_highlight" href=
+=3D"https://www.quora.com/How-do-I-convert-byte-array-to-string-in-Java" ac=
+tion_click=3D"QuestionLinkClickthrough" mobile_loading_placeholder=3D"quest=
+ion"><span class=3D"tc_text" id=3D"__w2_wEdYxkU424_cell_text"><span id=3D"w=
+EdYxkU453"><span class=3D"ui_story_title  "><span class=3D"ui_qtext_rendere=
+d_qtext">How do I convert byte array to string in Java?</span></span></span=
+></span><p class=3D"tc_detail" id=3D"__w2_wEdYxkU424_cell_detail_text">453 =
+Views</p></a><div class=3D"tc_stroke"></div></li></div></span><span id=3D"w=
+EdYxkU425"><div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&qu=
+ot;action_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quot;=
+related_questions|12704009|-858929511&quot;}}" data-clog-event-type=3D"Acti=
+onLogImpression" id=3D"__w2_wEdYxkU426_actionable" data-clog-processed=3D"1=
+"><li class=3D"LinkMixin RelatedQuestionCell Cell ActionableCell Disclosure=
+Mixin tc_target has_detail_text" id=3D"__w2_wEdYxkU426_cell"><a class=3D"tc=
+_inner sticky_highlight" href=3D"https://www.quora.com/How-do-I-convert-a-c=
+ondition-written-in-string-to-a-Java-if-condition" action_click=3D"Question=
+LinkClickthrough" mobile_loading_placeholder=3D"question"><span class=3D"tc=
+_text" id=3D"__w2_wEdYxkU426_cell_text"><span id=3D"wEdYxkU455"><span class=
+=3D"ui_story_title  "><span class=3D"ui_qtext_rendered_qtext">How do I conv=
+ert a condition written in string to a Java "if" condition?</span></span></=
+span></span><p class=3D"tc_detail" id=3D"__w2_wEdYxkU426_cell_detail_text">=
+1,981 Views</p></a><div class=3D"tc_stroke"></div></li></div></span><span i=
+d=3D"wEdYxkU427"><div data-clog-trigger=3D"impression" data-clog-metadata=
+=3D"{&quot;action_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;=
+: &quot;related_questions|36575255|-858929511&quot;}}" data-clog-event-type=
+=3D"ActionLogImpression" id=3D"__w2_wEdYxkU428_actionable" data-clog-proces=
+sed=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell ActionableCell Di=
+sclosureMixin tc_target has_detail_text" id=3D"__w2_wEdYxkU428_cell"><a cla=
+ss=3D"tc_inner sticky_highlight" href=3D"https://www.quora.com/What-is-the-=
+program-to-convert-digits-to-string-in-Java" action_click=3D"QuestionLinkCl=
+ickthrough" mobile_loading_placeholder=3D"question"><span class=3D"tc_text"=
+ id=3D"__w2_wEdYxkU428_cell_text"><span id=3D"wEdYxkU457"><span class=3D"ui=
+_story_title  "><span class=3D"ui_qtext_rendered_qtext">What is the program=
+ to convert digits to string in Java?</span></span></span></span><p class=
+=3D"tc_detail" id=3D"__w2_wEdYxkU428_cell_detail_text">494 Views</p></a><di=
+v class=3D"tc_stroke"></div></li></div></span><span id=3D"wEdYxkU429"><div =
+data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;action_log_ta=
+rget&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quot;related_question=
+s|4524146|-858929511&quot;}}" data-clog-event-type=3D"ActionLogImpression" =
+id=3D"__w2_wEdYxkU430_actionable" data-clog-processed=3D"1"><li class=3D"Li=
+nkMixin RelatedQuestionCell Cell ActionableCell DisclosureMixin tc_target h=
+as_detail_text" id=3D"__w2_wEdYxkU430_cell"><a class=3D"tc_inner sticky_hig=
+hlight" href=3D"https://www.quora.com/How-do-I-convert-an-input-string-to-c=
+har-in-Java" action_click=3D"QuestionLinkClickthrough" mobile_loading_place=
+holder=3D"question"><span class=3D"tc_text" id=3D"__w2_wEdYxkU430_cell_text=
+"><span id=3D"wEdYxkU459"><span class=3D"ui_story_title  "><span class=3D"u=
+i_qtext_rendered_qtext">How do I convert an input string to char in Java?</=
+span></span></span></span><p class=3D"tc_detail" id=3D"__w2_wEdYxkU430_cell=
+_detail_text">10,941 Views</p></a><div class=3D"tc_stroke"></div></li></div=
+></span><span id=3D"wEdYxkU431"><div data-clog-trigger=3D"impression" data-=
+clog-metadata=3D"{&quot;action_log_target&quot;: {&quot;type&quot;: 21, &qu=
+ot;hash&quot;: &quot;related_questions|31057024|-858929511&quot;}}" data-cl=
+og-event-type=3D"ActionLogImpression" id=3D"__w2_wEdYxkU432_actionable" dat=
+a-clog-processed=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell Acti=
+onableCell DisclosureMixin tc_target has_detail_text" id=3D"__w2_wEdYxkU432=
+_cell"><a class=3D"tc_inner sticky_highlight" href=3D"https://www.quora.com=
+/How-do-you-convert-a-string-to-a-hexadecimal-How-is-this-done-in-Java" act=
+ion_click=3D"QuestionLinkClickthrough" mobile_loading_placeholder=3D"questi=
+on"><span class=3D"tc_text" id=3D"__w2_wEdYxkU432_cell_text"><span id=3D"wE=
+dYxkU461"><span class=3D"ui_story_title  "><span class=3D"ui_qtext_rendered=
+_qtext">How do you convert a string to a hexadecimal? How is this done in J=
+ava?</span></span></span></span><p class=3D"tc_detail" id=3D"__w2_wEdYxkU43=
+2_cell_detail_text">1,763 Views</p></a><div class=3D"tc_stroke"></div></li>=
+</div></span><span id=3D"wEdYxkU433"><div data-clog-trigger=3D"impression" =
+data-clog-metadata=3D"{&quot;action_log_target&quot;: {&quot;type&quot;: 21=
+, &quot;hash&quot;: &quot;related_questions|10799863|-858929511&quot;}}" da=
+ta-clog-event-type=3D"ActionLogImpression" id=3D"__w2_wEdYxkU434_actionable=
+" data-clog-processed=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell=
+ ActionableCell DisclosureMixin tc_target has_detail_text" id=3D"__w2_wEdYx=
+kU434_cell"><a class=3D"tc_inner sticky_highlight" href=3D"https://www.quor=
+a.com/How-do-I-convert-a-string-to-integer-array-in-Java" action_click=3D"Q=
+uestionLinkClickthrough" mobile_loading_placeholder=3D"question"><span clas=
+s=3D"tc_text" id=3D"__w2_wEdYxkU434_cell_text"><span id=3D"wEdYxkU463"><spa=
+n class=3D"ui_story_title  "><span class=3D"ui_qtext_rendered_qtext">How do=
+ I convert a string to integer array in Java?</span></span></span></span><p=
+ class=3D"tc_detail" id=3D"__w2_wEdYxkU434_cell_detail_text">47,613 Views</=
+p></a><div class=3D"tc_stroke"></div></li></div></span><span id=3D"wEdYxkU4=
+35"><div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;acti=
+on_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quot;related=
+_questions|10951595|-858929511&quot;}}" data-clog-event-type=3D"ActionLogIm=
+pression" id=3D"__w2_wEdYxkU436_actionable" data-clog-processed=3D"1"><li c=
+lass=3D"LinkMixin RelatedQuestionCell Cell ActionableCell DisclosureMixin t=
+c_target has_detail_text" id=3D"__w2_wEdYxkU436_cell"><a class=3D"tc_inner =
+sticky_highlight" href=3D"https://www.quora.com/How-do-I-create-a-Java-stri=
+ng" action_click=3D"QuestionLinkClickthrough" mobile_loading_placeholder=3D=
+"question"><span class=3D"tc_text" id=3D"__w2_wEdYxkU436_cell_text"><span i=
+d=3D"wEdYxkU465"><span class=3D"ui_story_title  "><span class=3D"ui_qtext_r=
+endered_qtext">How do I create a Java string?</span></span></span></span><p=
+ class=3D"tc_detail" id=3D"__w2_wEdYxkU436_cell_detail_text">2,994 Views</p=
+></a><div class=3D"tc_stroke"></div></li></div></span><span id=3D"wEdYxkU43=
+7"><div data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;actio=
+n_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quot;related_=
+questions|12381745|-858929511&quot;}}" data-clog-event-type=3D"ActionLogImp=
+ression" id=3D"__w2_wEdYxkU438_actionable" data-clog-processed=3D"1"><li cl=
+ass=3D"LinkMixin RelatedQuestionCell Cell ActionableCell DisclosureMixin tc=
+_target has_detail_text" id=3D"__w2_wEdYxkU438_cell"><a class=3D"tc_inner s=
+ticky_highlight" href=3D"https://www.quora.com/In-Java-how-do-you-convert-a=
+-string-to-a-biginteger" action_click=3D"QuestionLinkClickthrough" mobile_l=
+oading_placeholder=3D"question"><span class=3D"tc_text" id=3D"__w2_wEdYxkU4=
+38_cell_text"><span id=3D"wEdYxkU467"><span class=3D"ui_story_title  "><spa=
+n class=3D"ui_qtext_rendered_qtext">In Java, how do you convert a string to=
+ a biginteger?</span></span></span></span><p class=3D"tc_detail" id=3D"__w2=
+_wEdYxkU438_cell_detail_text">4,995 Views</p></a><div class=3D"tc_stroke"><=
+/div></li></div></span><span id=3D"wEdYxkU439"><div data-clog-trigger=3D"im=
+pression" data-clog-metadata=3D"{&quot;action_log_target&quot;: {&quot;type=
+&quot;: 21, &quot;hash&quot;: &quot;related_questions|13974214|-858929511&q=
+uot;}}" data-clog-event-type=3D"ActionLogImpression" id=3D"__w2_wEdYxkU440_=
+actionable" data-clog-processed=3D"1"><li class=3D"LinkMixin RelatedQuestio=
+nCell Cell ActionableCell DisclosureMixin tc_target has_detail_text" id=3D"=
+__w2_wEdYxkU440_cell"><a class=3D"tc_inner sticky_highlight" href=3D"https:=
+//www.quora.com/How-do-you-convert-a-hex-to-string-in-Java" action_click=3D=
+"QuestionLinkClickthrough" mobile_loading_placeholder=3D"question"><span cl=
+ass=3D"tc_text" id=3D"__w2_wEdYxkU440_cell_text"><span id=3D"wEdYxkU469"><s=
+pan class=3D"ui_story_title  "><span class=3D"ui_qtext_rendered_qtext">How =
+do you convert a hex to string in Java?</span></span></span></span><p class=
+=3D"tc_detail" id=3D"__w2_wEdYxkU440_cell_detail_text">1,507 Views</p></a><=
+div class=3D"tc_stroke"></div></li></div></span><span id=3D"wEdYxkU441"><di=
+v data-clog-trigger=3D"impression" data-clog-metadata=3D"{&quot;action_log_=
+target&quot;: {&quot;type&quot;: 21, &quot;hash&quot;: &quot;related_questi=
+ons|11378521|-858929511&quot;}}" data-clog-event-type=3D"ActionLogImpressio=
+n" id=3D"__w2_wEdYxkU442_actionable" data-clog-processed=3D"1"><li class=3D=
+"LinkMixin RelatedQuestionCell Cell ActionableCell DisclosureMixin tc_targe=
+t has_detail_text" id=3D"__w2_wEdYxkU442_cell"><a class=3D"tc_inner sticky_=
+highlight" href=3D"https://www.quora.com/How-do-you-convert-a-Java-string-t=
+o-an-enum" action_click=3D"QuestionLinkClickthrough" mobile_loading_placeho=
+lder=3D"question"><span class=3D"tc_text" id=3D"__w2_wEdYxkU442_cell_text">=
+<span id=3D"wEdYxkU471"><span class=3D"ui_story_title  "><span class=3D"ui_=
+qtext_rendered_qtext">How do you convert a Java string to an enum?</span></=
+span></span></span><p class=3D"tc_detail" id=3D"__w2_wEdYxkU442_cell_detail=
+_text">1,451 Views</p></a><div class=3D"tc_stroke"></div></li></div></span>=
+<span id=3D"wEdYxkU443"><div data-clog-trigger=3D"impression" data-clog-met=
+adata=3D"{&quot;action_log_target&quot;: {&quot;type&quot;: 21, &quot;hash&=
+quot;: &quot;related_questions|5634823|-858929511&quot;}}" data-clog-event-=
+type=3D"ActionLogImpression" id=3D"__w2_wEdYxkU444_actionable" data-clog-pr=
+ocessed=3D"1"><li class=3D"LinkMixin RelatedQuestionCell Cell ActionableCel=
+l DisclosureMixin tc_target has_detail_text" id=3D"__w2_wEdYxkU444_cell"><a=
+ class=3D"tc_inner sticky_highlight" href=3D"https://www.quora.com/How-do-I=
+-convert-a-binary-file-to-UTF-8" action_click=3D"QuestionLinkClickthrough" =
+mobile_loading_placeholder=3D"question"><span class=3D"tc_text" id=3D"__w2_=
+wEdYxkU444_cell_text"><span id=3D"wEdYxkU473"><span class=3D"ui_story_title=
+  "><span class=3D"ui_qtext_rendered_qtext">How do I convert a binary file =
+to UTF-8?</span></span></span></span><p class=3D"tc_detail" id=3D"__w2_wEdY=
+xkU444_cell_detail_text">6,724 Views</p></a><div class=3D"tc_stroke"></div>=
+</li></div></span></ul></div></div></div><style type=3D"text/css" data-idx=
+=3D"6" class=3D"q-inline-css paged_list_hidden_footer">.CharacterCounter{fo=
+nt-size:12px;-webkit-transition:all;transition:all;-webkit-transition:all 1=
+80ms ease-in-out 0s;-o-transition:all 180ms ease-in-out 0s;transition:all 1=
+80ms ease-in-out 0s;font-weight:500;color:#949494}.CharacterCounter.fade_ou=
+t{opacity:0;-webkit-transform:translate3d(0,-3px,0);transform:translate3d(0=
+,-3px,0)}.LoggedOutFooter{position:relative;background-color:#e6e6e6;paddin=
+g:15px 0 10px 20px}.LoggedOutFooter:after{content:"";position:absolute;poin=
+ter-events:none;box-sizing:border-box;border-radius:0;top:0;left:0;width:10=
+0%;height:100%;border-width:1px;border-color:#e2e2e2}@media only screen and=
+ (-webkit-min-device-pixel-ratio:1.5){.LoggedOutFooter:after{-webkit-transf=
+orm:scale(0.5);transform:scale(0.5);-webkit-transform-origin:0 0;transform-=
+origin:0 0;width:200%;height:200%;border-radius:0}}.LoggedOutFooter:after{b=
+order-top-style:solid}.LoggedOutFooter a{color:#949494}.LoggedOutFooter .fo=
+oter_static_items{color:#949494;margin-top:10px}.ask_interstitial{color:#66=
+6;padding:25px 25px 5px;text-align:center;font-size:15px}.ask_interstitial =
+.ask_interstitial_content{height:85px;background:url(//qsf.fs.quoracdn.net/=
+-3-images.lookup_bar.interstitial.png-26-3a281279e366569f.png) no-repeat ce=
+nter top;background-size:165px;margin:0;font-size:14px;line-height:1.3;colo=
+r:#888;padding:115px 0 0 0}.ask_interstitial .ask_interstitial_content .ask=
+_interstitial_title{font-size:17px;display:block;color:#666;line-height:1.8=
+}.mweb .ask_interstitial{padding:20px;color:#666;background-color:#fdfdfd;t=
+ext-align:center;font-size:16px}.MobileWebLookupBarHeader .fixed_header{z-i=
+ndex:701}.mweb_modal_back_button{position:relative;background:transparent;b=
+order:0;margin-top:23px;margin-left:14px;height:1px;width:1px}.mweb_modal_b=
+ack_button:after{content:"";display:block;height:10px;width:10px;border:2px=
+ solid #fff;border-bottom:0;border-left:none;position:absolute;margin-top:-=
+7.14285714px;top:50%}.mweb_modal_back_button:after{-webkit-transform:rotate=
+(-135deg);-moz-transform:rotate(-135deg);-ms-transform:rotate(-135deg);tran=
+sform:rotate(-135deg)}.mweb_lookup_bar_input_wrapper{position:absolute;left=
+:35px;right:8px;top:8px;z-index:100}.mweb_lookup_bar_input_wrapper .mweb_lo=
+okup_bar_input{width:100%;padding:5px 10px 5px 25px;color:#fff;font-size:14=
+px;font-weight:400;border-radius:5px;box-sizing:border-box;-webkit-appearan=
+ce:none;background:#91201c url(//qsf.fs.quoracdn.net/-3-images.mweb.lookup_=
+bar_icon.png-26-f359eb9115c9ba9f.png) no-repeat 8px center;background-size:=
+13px}.mweb_lookup_bar_input_wrapper .mweb_lookup_bar_input::-webkit-search-=
+decoration{-webkit-appearance:none}.mweb_lookup_bar_input_wrapper .mweb_loo=
+kup_bar_input::-webkit-input-placeholder{color:rgba(255,255,255,0.5)}@media=
+ only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-=
+device-pixel-ratio:1.5),only screen and (min-resolution:192dpi){.mweb_looku=
+p_bar_input_wrapper .mweb_lookup_bar_input{background-image:url(//qsf.fs.qu=
+oracdn.net/-3-images.mweb.lookup_bar_icon_2x.png-26-ef96bfe79d679a99.png)}}=
+.mweb_lookup_bar_footer_wrapper{border-bottom:10px solid #e6e6e6;background=
+-color:#fff;padding:0}.mweb_lookup_bar_footer_wrapper label{margin-top:10px=
+;float:left}.mweb_lookup_bar_footer_wrapper label div{display:inline;margin=
+-left:10px}.mweb_lookup_bar_footer_wrapper .button_wrapper{padding-top:10px=
+}.mweb_lookup_bar_footer_wrapper .button_wrapper .counter{display:inline-bl=
+ock;margin-right:15px}.mweb_lookup_bar_footer_wrapper .mweb_lookup_bar_butt=
+on{-webkit-user-select:none;-webkit-touch-callout:none;-moz-user-select:non=
+e;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,=
+0,0,0);-webkit-tap-highlight-color:transparent;display:inline-block;positio=
+n:relative;outline:0;border-radius:3px;text-align:center;white-space:pre;fo=
+nt-size:12px;padding:.5em .7em;font-weight:bold;color:#fff;background:#3e78=
+ad;box-sizing:border-box;margin:10px;margin-top:0;display:block;padding:10p=
+x;font-size:15px;float:none}.mweb_lookup_bar_footer_wrapper .mweb_lookup_ba=
+r_text{float:left;margin-top:14px;color:#666}.MobilePageWrapperFooterInner.=
+bottom_banner{padding-bottom:37px}</style></div><div class=3D"MobilePageWra=
+pperFooterInner bottom_banner"><div class=3D"LoggedOutFooter horizontal_scr=
+oll_outer" id=3D"logged_out_footer"><div class=3D"footer_static_items"><a h=
+ref=3D"https://www.quora.com/about">About</a><span class=3D"bullet"> =C2=B7=
+ </span><a href=3D"https://www.quora.com/careers">Careers</a><span class=3D=
+"bullet"> =C2=B7 </span><a href=3D"https://www.quora.com/about/privacy">Pri=
+vacy</a><span class=3D"bullet"> =C2=B7 </span><a href=3D"https://www.quora.=
+com/about/tos">Terms</a><span class=3D"bullet"> =C2=B7 </span><a href=3D"ht=
+tps://www.quora.com/contact">Contact</a></div></div><div class=3D"hidden" i=
+d=3D"lookup_bar_page_wrapper"><div class=3D"MobileWebLookupBarHeader Header=
+" id=3D"lookup_bar_header"><div class=3D"fixed_header"><div class=3D"header=
+_main"><button class=3D"mweb_modal_back_button" id=3D"__w2_wF9q6vsX2_mweb_l=
+ookup_bar_back_button"></button><div class=3D"mweb_lookup_bar_input_wrapper=
+"><input class=3D"mweb_lookup_bar_input" data-group=3D"js-editable" placeho=
+lder=3D"Ask Quora" w2cid=3D"wF9q6vsX2" id=3D"__w2_wF9q6vsX2_mweb_lookup_bar=
+_input"></div></div><div class=3D"mweb_new_stories_button_wrapper" id=3D"mw=
+eb_new_stories_button_wrapper"></div></div></div><div class=3D"hidden mweb_=
+lookup_bar_footer_wrapper" id=3D"__w2_wF9q6vsX8_lookup_bar_footer_wrapper">=
+<div class=3D"mweb_lookup_bar_text" id=3D"__w2_wF9q6vsX8_lookup_bar_text"><=
+/div><label class=3D"mweb_lookup_bar_anon_wrapper" id=3D"__w2_wF9q6vsX8_ano=
+n_wrapper"><input type=3D"checkbox" data-group=3D"js-editable" w2cid=3D"wF9=
+q6vsX8" id=3D"__w2_wF9q6vsX8_anon_checkbox"><div id=3D"__w2_wF9q6vsX8_anon_=
+text"></div></label><div class=3D"button_wrapper"><div class=3D"counter hid=
+den" id=3D"__w2_wF9q6vsX8_counter"><div class=3D"CharacterCounter fade_out"=
+ id=3D"__w2_wF9q6vsX9_counter_wrapper"><div class=3D"counter" id=3D"__w2_wF=
+9q6vsX9_counter">250</div></div></div><a class=3D"mweb_lookup_bar_button" h=
+ref=3D"https://www.quora.com/How-do-I-convert-a-string-to-UTF-8-in-Java#" i=
+d=3D"__w2_wF9q6vsX8_lookup_bar_button"></a></div></div><div id=3D"__w2_wF9q=
+6vsX7_results"></div><div class=3D"ask_interstitial hidden" id=3D"__w2_wF9q=
+6vsX7_ask_mode_interstitial"><p class=3D"ask_interstitial_content"><strong =
+class=3D"ask_interstitial_title" id=3D"__w2_wF9q6vsX7_interstitial_title"><=
+/strong><span id=3D"__w2_wF9q6vsX7_interstitial_text"></span></p></div><div=
+ id=3D"__w2_wF9q6vsX7_empty_state"></div></div></div><style type=3D"text/cs=
+s" data-idx=3D"7" class=3D"q-inline-css">.action_view_overlay{border-radius=
+:8px 8px 0 0;background-color:white}.action_view_overlay .action_view_heade=
+r{position:relative;padding:15px;text-align:center}.action_view_overlay .ac=
+tion_view_header .navigation_button{position:absolute;right:15px;font-weigh=
+t:500;color:#b92b27;top:15px;text-transform:capitalize}.action_view_overlay=
+ .action_view_title{text-align:center;font-weight:500;color:#949494}.action=
+_view_overlay .action_view_content{height:100%;overflow-y:scroll}.action_vi=
+ew_overlay .action_view_close{position:absolute;left:15px;-webkit-tap-highl=
+ight-color:rgba(255,255,255,0.6)}.action_view_overlay .action_view_close:be=
+fore{font-family:'q-icons';content:':)';font-style:normal;font-weight:norma=
+l;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiase=
+d;-moz-osx-font-smoothing:grayscale;text-shadow:1px 1px 1px rgba(0,0,0,0.00=
+4);text-rendering:optimizeLegibility!important;speak:none;color:#b92b27;fon=
+t-size:23px;line-height:1;display:inline-block;width:23px;height:23px}.acti=
+on_view_overlay .action_view_close:before{content:'\F114'}.action_view_over=
+lay{position:absolute;width:100%;left:0;top:0;-webkit-overflow-scrolling:to=
+uch;z-index:400;overflow-x:hidden;-webkit-transform:translate(0,100%);trans=
+form:translate(0,100%)}.Header .fixed_header .header_main .header_action_bu=
+ttons{display:flex}.Header .fixed_header .header_main .header_action_button=
+s a{white-space:nowrap;float:left;padding:13px 20px 12px;min-height:20px;mi=
+n-width:20px;cursor:pointer;-webkit-tap-highlight-color:rgba(166,37,15,0.5)=
+}.Header .fixed_header .header_main .header_action_buttons .ViewInAppLink{p=
+adding:11px 10px}.Header .fixed_header .header_main .header_action_buttons =
+.AskQuestionButton{background:url(//qsf.fs.quoracdn.net/-3-images.mweb.add_=
+question.png-26-3e30ffb28ff5f74a.png) no-repeat center center;background-si=
+ze:16px 20px;right:44px;background-position:0 center;padding-left:24px}@med=
+ia only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (mi=
+n-device-pixel-ratio:1.5),only screen and (min-resolution:192dpi){.Header .=
+fixed_header .header_main .header_action_buttons .AskQuestionButton{backgro=
+und-image:url(//qsf.fs.quoracdn.net/-3-images.mweb.add_question_2x.png-26-2=
+02acdc7133289da.png)}}.Header .fixed_header .header_main .header_action_but=
+tons .right_icon_button{font-family:'q-icons';text-align:center;font-size:2=
+0px;line-height:1}.Header .fixed_header .header_main .navigation_button{pad=
+ding:0 20px;cursor:pointer;top:0;right:0;box-sizing:border-box;max-width:ca=
+lc(100% - 88px);line-height:44px;white-space:nowrap}.Header .fixed_header .=
+header_main .navigation_button.has_badge{left:0;right:auto;background:url(/=
+/qsf.fs.quoracdn.net/-3-images.mweb.navbar_dropdown.png-26-9f65dc0343da3535=
+.png) no-repeat;background-size:20px 17px;background-position:10px center;p=
+adding-left:40px}@media only screen and (-webkit-min-device-pixel-ratio:1.5=
+),only screen and (min-device-pixel-ratio:1.5),only screen and (min-resolut=
+ion:192dpi){.Header .fixed_header .header_main .navigation_button.has_badge=
+{background-image:url(//qsf.fs.quoracdn.net/-3-images.mweb.navbar_dropdown_=
+2x.png-26-cd7afcf0f30538e2.png)}}</style><div class=3D"hidden" id=3D"modal_=
+page_wrapper"><div class=3D"modal_wrapper normal hidden" id=3D"-5-344628710=
+1"></div></div><div id=3D"update_next_page_indicator_spinner_container" cla=
+ss=3D"update_next_page_indicator_spinner"><div class=3D"LoadingDots regular=
+"><div class=3D"dot first"></div><div class=3D"dot second"></div><div class=
+=3D"dot third"></div></div></div></div><div id=3D"__w2_wfiaIBtT1_signup_wal=
+l_wrapper"></div><span id=3D"wfiaIBtT14"></span><div class=3D"action_view_o=
+verlay hidden" id=3D"__w2_wfiaIBtT16_container"><div class=3D"action_view_h=
+eader" id=3D"__w2_wfiaIBtT16_action_view_header"><span class=3D"action_view=
+_close" id=3D"__w2_wfiaIBtT16_close_button"></span><span class=3D"action_vi=
+ew_title" id=3D"__w2_wfiaIBtT16_title"></span><div class=3D"header_action_b=
+uttons" id=3D"__w2_wfiaIBtT16_header_action_buttons"><a class=3D"right_icon=
+_button hidden" id=3D"__w2_wfiaIBtT16_right_icon_button_0"></a><a class=3D"=
+right_icon_button hidden" id=3D"__w2_wfiaIBtT16_right_icon_button_1"></a></=
+div><a class=3D"navigation_button hidden" id=3D"__w2_wfiaIBtT16_navigation_=
+button"></a></div><div class=3D"action_view_content" id=3D"__w2_wfiaIBtT16_=
+content"></div></div><span id=3D"wfiaIBtT17"></span><div class=3D"PMsgConta=
+iner" id=3D"__w2_wfiaIBtT20_pmsg_container"></div></body></html>
+------=_NextPart_000_836A_9DF236DE.9DF1EC01
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://qsf.fs.quoracdn.net/-3-images.new_grid.external_link.svg-26-7f84ed22dfd7e97b.svg
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?>
+<svg width=3D"14px" height=3D"14px" viewBox=3D"0 0 14 14" version=3D"1.1" x=
+mlns=3D"http://www.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999/x=
+link" xmlns:sketch=3D"http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sk=
+etch -->
+    <title>external_link</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id=3D"Page-1" stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-=
+rule=3D"evenodd" sketch:type=3D"MSPage">
+        <g id=3D"external_link" sketch:type=3D"MSLayerGroup" fill=3D"#ccc">
+            <path d=3D"M10,8 C9.447,8 9,8.448 9,9 L9,12 L2,12 L2,5 L5,5 C5.=
+553,5 6,4.552 6,4 C6,3.448 5.553,3 5,3 L1,3 C0.447,3 0,3.448 0,4 L0,13 C0,1=
+3.552 0.447,14 1,14 L10,14 C10.553,14 11,13.552 11,13 L11,9 C11,8.448 10.55=
+3,8 10,8 L10,8 Z" id=3D"Shape" sketch:type=3D"MSShapeGroup"></path>
+            <path d=3D"M13,0 L8,0 C7.447,0 7,0.448 7,1 C7,1.552 7.447,2 8,2=
+ L10.586,2 L4.293,8.293 C3.902,8.684 3.902,9.316 4.293,9.707 C4.488,9.902 4=
+.744,10 5,10 C5.256,10 5.512,9.902 5.707,9.707 L12,3.414 L12,6 C12,6.552 12=
+.447,7 13,7 C13.553,7 14,6.552 14,6 L14,1 C14,0.448 13.553,0 13,0 L13,0 Z" =
+id=3D"Shape" sketch:type=3D"MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
+------=_NextPart_000_836A_9DF236DE.9DF1EC01
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://qsf.fs.quoracdn.net/-3-images.logo.wordmark_inverse.svg-26-adcd764292de7751.svg
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?>
+<svg width=3D"301px" height=3D"83px" viewBox=3D"0 0 301 83" version=3D"1.1"=
+ xmlns=3D"http://www.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999=
+/xlink" xmlns:sketch=3D"http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/ske=
+tch -->
+    <title>Imported Layers</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id=3D"Page-1" stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-=
+rule=3D"evenodd" sketch:type=3D"MSPage">
+        <g id=3D"Imported-Layers" sketch:type=3D"MSLayerGroup" fill=3D"#FFF=
+FFF">
+            <path d=3D"M43.741,64.651 C40.732,58.86 37.099,52.738 30.3,52.7=
+38 C29.295,52.738 28.22,52.91 27.319,53.309 L25.322,49.001 C28.069,46.878 3=
+2.326,45.322 37.383,45.322 C46.201,45.322 50.627,49.718 54.181,55.194 C56.3=
+64,50.493 57.404,44.152 57.404,36.273 C57.404,16.754 51.301,6.745 37.099,6.=
+745 C23.12,6.745 17.103,16.754 17.103,36.273 C17.103,55.672 23.12,65.588 37=
+.099,65.588 C39.538,65.588 41.769,65.29 43.741,64.651 L43.741,64.651 Z M46.=
+997,70.885 C43.831,71.796 40.463,72.279 37.099,72.279 C18.842,72.279 0.982,=
+57.604 0.982,36.273 C0.982,14.727 18.842,0.042 37.099,0.042 C55.68,0.042 73=
+.417,14.62 73.417,36.273 C73.417,48.245 67.88,58.028 59.764,64.376 C62.493,=
+68.393 65.316,71.067 69.296,71.067 C73.51,71.067 75.275,67.801 75.576,65.30=
+5 L80.382,65.305 C80.701,68.633 79.241,82.486 64.469,82.486 C55.525,82.486 =
+50.637,77.106 46.997,70.885 L46.997,70.885 Z" id=3D"Fill-1" sketch:type=3D"=
+MSShapeGroup"></path>
+            <path d=3D"M86.923,52.72 L86.923,27.562 C86.923,24.751 85.876,2=
+3.496 82.655,23.496 L79.216,23.496 L79.216,17.432 L101.164,17.432 L101.164,=
+52.397 C101.164,58.415 104.456,61.061 109.448,61.061 C113.454,61.061 117.33=
+1,59.38 119.597,55.589 L119.597,27.562 C119.597,24.751 118.557,23.496 115.3=
+3,23.496 L111.686,23.496 L111.686,17.432 L133.835,17.432 L133.835,54.542 C1=
+33.835,58.193 135.187,59.857 139.347,59.857 L140.075,59.857 L140.075,66.14 =
+L120.325,69.375 L120.325,62.396 L119.909,62.396 C116.032,67.184 110.596,70.=
+418 102.588,70.418 C94.002,70.418 86.923,65.935 86.923,52.72" id=3D"Fill-2"=
+ sketch:type=3D"MSShapeGroup"></path>
+            <path d=3D"M170.69,64.34 C178.856,64.34 181.987,57.228 182.145,=
+42.933 C182.303,28.936 178.856,22.151 170.69,22.151 C163.565,22.151 159.118=
+,28.947 159.118,42.933 C159.118,57.228 163.468,64.34 170.69,64.34 L170.69,6=
+4.34 Z M170.69,70.418 C156.389,70.418 143.524,59.38 143.524,42.933 C143.524=
+,26.791 156.073,16.072 170.69,16.072 C185.936,16.072 198.157,26.999 198.157=
+,42.933 C198.157,59.38 185.936,70.418 170.69,70.418 L170.69,70.418 Z" id=3D=
+"Fill-3" sketch:type=3D"MSShapeGroup"></path>
+            <path d=3D"M200.04,69.375 L200.04,63.289 L202.224,63.289 C207.6=
+4,63.289 208.156,61.732 208.156,57.045 L208.156,27.562 C208.156,24.751 206.=
+707,23.496 203.372,23.496 L200.453,23.496 L200.453,17.432 L220.522,17.432 L=
+221.561,28.148 L221.984,28.148 C224.273,20.451 230.416,16.395 236.157,16.39=
+5 C240.923,16.395 244.434,19.099 244.434,24.31 C244.434,27.856 242.673,32.0=
+38 237.674,32.038 C232.948,32.038 232.191,28.864 228.257,28.864 C225.248,28=
+.864 222.293,32.25 222.293,36.826 L222.293,57.045 C222.293,61.732 223.44,63=
+.289 228.745,63.289 L231.764,63.289 L231.764,69.375 L200.04,69.375" id=3D"F=
+ill-4" sketch:type=3D"MSShapeGroup"></path>
+            <path d=3D"M268.477,61.851 C274.985,61.851 277.686,55.762 277.6=
+86,49.274 L277.686,40.753 C272.895,45.781 261.767,45.874 261.767,54.93 C261=
+.767,59.369 264.345,61.851 268.477,61.851 L268.477,61.851 Z M278.002,61.542=
+ C275.366,66.843 269.997,70.418 262.301,70.418 C253.461,70.418 247.633,65.6=
+27 247.633,57.235 C247.633,40.319 270.876,44.816 277.686,33.616 L277.686,32=
+.07 C277.686,23.359 274.19,21.961 270.521,21.961 C260.465,21.961 264.797,33=
+.189 255.494,33.189 C250.968,33.189 249.193,30.464 249.193,27.405 C249.193,=
+21.265 256.646,16.072 270.392,16.072 C283.933,16.072 292.035,19.816 292.035=
+,33.11 L292.035,55.019 C292.035,58.455 293.265,60.287 296.281,60.287 C297.5=
+22,60.287 298.562,59.965 299.375,59.423 L300.982,63.325 C299.612,65.519 296=
+.105,69.375 288.893,69.375 C282.857,69.375 278.945,66.707 278.421,61.542 L2=
+78.002,61.542 L278.002,61.542 Z" id=3D"Fill-5" sketch:type=3D"MSShapeGroup"=
+></path>
+        </g>
+    </g>
+</svg>
+------=_NextPart_000_836A_9DF236DE.9DF1EC01
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://qsf.fs.quoracdn.net/-3-images.new_grid.external_link_dark.svg-26-32ba031947f6f389.svg
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?>
+<svg width=3D"14px" height=3D"14px" viewBox=3D"0 0 14 14" version=3D"1.1" x=
+mlns=3D"http://www.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999/x=
+link">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sk=
+etch -->
+    <title>external_link_dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id=3D"Page-1" stroke=3D"none" stroke-width=3D"1" fill=3D"none" fill-=
+rule=3D"evenodd">
+        <g id=3D"external_link_dark" fill=3D"#585A61">
+            <g id=3D"Page-1">
+                <g id=3D"external_link">
+                    <path d=3D"M10,8 C9.447,8 9,8.448 9,9 L9,12 L2,12 L2,5 =
+L5,5 C5.553,5 6,4.552 6,4 C6,3.448 5.553,3 5,3 L1,3 C0.447,3 0,3.448 0,4 L0=
+,13 C0,13.552 0.447,14 1,14 L10,14 C10.553,14 11,13.552 11,13 L11,9 C11,8.4=
+48 10.553,8 10,8 L10,8 L10,8 Z" id=3D"Shape"></path>
+                    <path d=3D"M13,0 L8,0 C7.447,0 7,0.448 7,1 C7,1.552 7.4=
+47,2 8,2 L10.586,2 L4.293,8.293 C3.902,8.684 3.902,9.316 4.293,9.707 C4.488=
+,9.902 4.744,10 5,10 C5.256,10 5.512,9.902 5.707,9.707 L12,3.414 L12,6 C12,=
+6.552 12.447,7 13,7 C13.553,7 14,6.552 14,6 L14,1 C14,0.448 13.553,0 13,0 L=
+13,0 L13,0 Z" id=3D"Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+------=_NextPart_000_836A_9DF236DE.9DF1EC01
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://qph.fs.quoracdn.net/main-thumb-454104244-50-kdolqernoawfnpdobnjywsnoksdapdtf.jpeg
+
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAyADIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7I8T/
+ABttbbwdqUmgH/idxxMbRL+ILEZMjG7LDjGa+TJvEOoeO/FH9ofEG6u9a0surDTtJuhZoWVxzjbj
+BAYYAB5zu4qTSr6TxZc4ktQtmhDMZDJk85BUh8YyB2/Our1HULDR/DN/bWdjELj7PMyTywq7+YVY
+78kevP4Vwyr1Kj912PqKdKjQunrc4LT/ANq/x18KX8T2PgDTbR/D11qRa2XUFN0tngYaOIgruHQE
+kYypwMk16l8B/wBvnxVJ4ggsfiXpNiuizSLA2r6fAYGtGYgB5E3ENHzyRgjrzXz3ezWfh/S7DSzc
+xRSW9ukfl7hvdsZYkdckkk1hPrsFxJPbxTpcBkZJIiRlsjGMVTxT5rNCnl9OUee5+yiOsqhlYMp5
+BB4IpJcohZRyB2715H+ydq9zrf7PHge4uZnnmSxNuZHOSRFI8a5P+6gH4V69z3NXfqfOuPK7FE67
+bA4KuCOoIH+NFcfeWGoNdzsscZUuxGXPTP0orl9vPsegsPTfU/OP4oeG08S+CvCd5pVtb6JdWssm
+m3uoW6ym3uNmMO+xTh15JIxkHocZrgfCPwt1/WL1ryz1yyvkskM1zZxvMHKDeMAsm3JCkjnuOhr7
+AuNL8ArotwRqaRWs8hkEaFkazds7iWHEgLgHGcZ6GuS+H/wX1nwt4w1tYNT064tZbZZoZJuC6lm2
+j5CwBOSBng/ga+LwueRi5Uqmlr2vq7fd59TthKknzS3R8ja94Ys7bVbANOIljUZmaXgIO5B7kDH1
+rndG0aKS+kdGW4RJHVW8z7yknGT1JGevXivWPi/pGlR+L9Ve2Cm1kz5XzDaG6OARwcOHH4V534Is
+7BfF2lWlxIqQT3cUU8in7kbOAx/ImvqYVZTSd9z1pKm6akkfqZ+xBpuqWPwKsptSvZrtbm7nezSZ
+9wht1by1VfQEozY9Wr3/AO8ODjPpXLWnijwzosNlpdleWcUbRA2ttb42tGPu7AOCDjjHXmlj+IGj
+rqkOntfRrcytiOJid2cZIP074pyzDCU2ouqvvR8jUUqk3JI5fU/A+lS6ldubrV1LTOSI79wo5PQZ
+4FFdVPpLyzyOHiwzFh+8Hc0Vg8JhW78kfwNlKNtz8gdd+LS+EtLtornVbVnSdku7Z5naVmjWJoj5
+W3oCMZPB+YY+XnlfGv7bnjPXNRuZtCvbnQhLbG0MkMoDiM9VUqq46n5uoB4xXzdrGrTajf3FxPI0
+ssrl2djkkk5qpBOXOScHOKrDZFg6clUqQ5pLvt93+ZxSqSfw6I+5vAujWnjL9nrw1eXjfZbjTrNo
+hcAbvMUyMVUr1YktgAc5PHWsPwLoml6bevfXDF9UiRpLewKEbiO4PQnJHHbOeey/A3URd/CLSIbh
+y1nbxmQxg4+dWbB/DtWlprRnxNqDzNi52hrckdEIGR+ua0xVZrHUaaslJP1bR9PhYt4Kbd7q34nl
+HgH9rDxj4IXTLKe8l1LTtNkYQ20spVol5GxXHO0dQDnB6Yya9s+G37W3hp/iBpur3k9/pb4Z5Xml
+QpDMcksu7cDnJGSASSORXw1rE3k6pfKDwtxKB/32arpespA3cVdfKMJWl7RwtLutP+AfM80k9z9n
+bD4heHdXsbe+Gl3eLqNZx5g+b5hnnBxnntRX5iaN8YNLstHsbeew1eWeKCOOSSPV2RWYKASF28An
+t2or5h8Nu/xv7kd6rvv/AF9x4hc/foh70UV+iQPL6H1f8EWP/ClZuTwk+P8Avo10uoMV8XWmCR8q
+dP8AdNFFfG5r/wAjLC+v6o+4y7/cq3p+h8Z6qSdQvef+W7/+hGqa/eFFFfX9D4rqaCsdo5NFFFSW
+f//Z
+------=_NextPart_000_836A_9DF236DE.9DF1EC01
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://qph.fs.quoracdn.net/main-thumb-4883813-50-gyqqlfwomiyjwqjdimvcoanumcdjqroh.jpeg
+
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAyADIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD458S+
+K77xGqfbJPtDI5fzGjQO5OOWIALE46nNZ+j6BqevTSLZRG5nxud2ydv1rqpPBlzHolrfiNXjkTeU
+XO9V7E8d67nwBpUnh2yNxIYofOGdpPOPc0pYiMI+6d1LBznNKp6nof7A3hPxVD8bElkFxDoVnaTD
+UFDDawdSEAHrvVT+FfpD9nsoT8ltLKRyGkkA/QCvk79hlp9a8feIJLeKSfSU08x3N7Ep8uKXerRo
+W6FiN3HoDX2JPpbGQiNXK+rECvocFXUqSu7HyGa03SxTjHVKxlTXUzJtjgiQDOPkU9fwrMlimK4K
+pgeiCulXSJSeQq/V1/xpx0Q9GuYYx7uDXpRrU4bWPK5Zz3OQMMpJOB/3yKK67+w4v+ghD+dFa/W4
+dvwH7KXc/KDVo10LQ1syv74QfZmz34xVae706XSVF3goqjj+oq38S9GuG08OgLTK4f5Sdw9ceteN
+2njG7tNeiimiNzEnAjC84+n9a/NKdN1Fdbn6/WxEaMuWW2iPsn9iP44aB4C8Qa9pmt6tb6Jotxae
+fL9tbYBNGfkMajO4lSw4GThfavvXw74k8PeMdEttY0XWtP1PTbghY7i3uEI3FdwQ85Vsc7Tgj0r8
+UtUY3F+L64a6tRehZN7rsRkx8p5HzZHvTE8SDTLBI7DULhQH37clcnGCcrxnBI+lezSrzopQSPhc
+bQhiq8qr09PI/biXVNGgvfsUur6dHebgn2d7uMSbj0G3dnPtVyS2hUxgyxgyHCfOPnPtzz+FfiAd
+VhvYlvJZ1i+cZj8v5i49GJ9gc1Lf/EO6ur6C7udXur65iwYp1nO+LAwMHrwBj8q6Y4yb3Rw/UorZ
+n7df2W39xvyor8bf+GmPGZ5fxp4lZu5+3y8n/v5RWn1uf8rJ+qLuSH4raPqdgs9zemGYp+9hYHzM
++g45+orxnXb1tY1ie+2mPe3yIP4V7D8qgIG8479adtHSsaOGhSk3Hqe9WxVSvFRn0O28J+L00/To
+HuybsW4NsLaQ5BVnDDjoeA685xmu9+EejeGPiJFcW17o9hDqVsBI21JNsqE4LABwBg4GAMcivBZJ
+Nkm0fxc16T8AdQe2+JOnx7yiTpLC59QUJ/mBXoRjCpJRmrnn1HKMW4n0HH8FvCNs0RXTYR5eSow5
+GfXG+tOP4YeHja/ZpdN094iMFmswWP45rfTarbg+/wBFz1qzA2HUFVx13ZOa7HgsM94HCsRV7/kc
+S37Png1mJ+xW4yc4ELf/ABdFegEJk/4H/GitPqtH+X8w9tU7/kfnmf8AWj6U5j8pooryUemyq3/H
+wP8AdNd98GOPiXoOP+fj/wBlaiitKPxozq/Cz69i4zjjn+tTKT5g5oor2Ty0Tg8Ciiigo//Z
+------=_NextPart_000_836A_9DF236DE.9DF1EC01
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://qph.fs.quoracdn.net/main-thumb-306715562-50-wobidvjiduhyiltfquuifxutvbwcascs.jpeg
+
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAyADIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0bw3A
+dqHb1+UH0r0/SoFe2MEsUTE/ecLg57CvMPDl7hY+dw9D616loEi7Ufcd4I59SOhzUPUDxv41eNvE
+PiPxcvgLw+8emrawpJqd8FJkiZsMkUf+1t2knPGcYrgNc/Zy1Q6cb+38T6q2qEF1lmlYjd19vU16
+Dr6Xen/GfxVfCI3UMkiSxqqfNtZFXaBnkAqee9dTd+OHnsIIY9PnluV3b4sglAuAfr1rzZtuW57O
+HhDkTaPEPB/iR9SjOk6gskWtaegW4WTkOAdvmKe4J9eapeIbQs0+0joB1rXfSZtP+IWq307RhZYD
+Gsa5zncr5PYDDj3yaydXmLLKcYJ557jNb35o6nOock2kcq8LF2+devrRTZJSJGAC4yaK4tD07HuP
+hvUo8xbshc816xpWuwRowQ5AA7civm/RtcWGKBtwIOBwfrXp2l+JUWFy5Coo3F2OFA9z2r1lK588
+4tGtrSrB8R1vzKot721Kxhm58yPkqRjGMEEc+uaoWNwsFzbXaq63LyPvRgDtDH5ixz04GK821H4y
+eGPif4qtfDGial9svbMy3DX1sCIY3QhdqN/H94528YB5NduNN1TUrGO3ubn7NDgiWSHbvk9lIHf1
+rgqq0j2cLJumcDPeyav4w8RzowFhbXBtomx80r4jLtnoFXCqMdTuz0Fc3rMj7pSrHAyBg9s1k+L/
+AIn6b8NfHV54d1W2ksrO6AvILyPLhN52lXHUD5PvDPuO9Lcazbajbm6sriG7t2B2SxOGU/jTa91E
+L+I1fUT7KW5YkMeTjFFQtOhJOf8Ax6ivNu+56XIcx4p+Jq+DtCgljjW41Gb5YImyFOP4mx/CMj69
+K7r4KfCQ/tA/Da98R+PfFmpS2JuZYEsNMkWCCzVMfPIgU7mOchD2A6k8fI3iDxBN4i1Zrl2JjUCO
+Jf7qDOPxPX8a9f8A2Wfi5oPwd8eXWreILS7uLWaza3hmskEklvKWU7wjMAcqCuc5GfQmvXr4WpWo
+qNOfI73uu3Y+fp4qnTquU4cyton37nlnhXWtV+GfjQXFuskGp6Rds6R3UTRGSMk/K6HBAZSQR2zX
+2rpn7XvgG+8PC9ubibS7/wAvMmmmB5Jgw6hCBtbJ6Eke+K+YP2jPina/GX4sT+KbHT5NOshbQ2EM
+UxBmkjjBAeQjjcSTwM4G0ZOK88WIMwIGfeuuVJTS5jClip0G+TqdP8UvHdz8T/HN94glh+ypMVjt
+4N27yYVGEUnucck+pNZGmatfaNKJbG5ktpP4th4b/eHQ/jX0b+xbd/CKLUPEcHxLi0g3zrCdMl1+
+MPa+WN/nKC3yrISU5bsDgjnPkfxyt/CFp8VPEcXgSZZvCguALOSJmaPlRvEZbkxh9wUnsB161qoq
+3LbQwlOV+e+pdh+LkLQoZdNkMpUbykwC57446UV5wowB0orm+pUex2fX6/c563/1x/GtoDCfhRRX
+b0PKY/8AiH+8v9KkT7w/4F/OiigqOxIo+cjtTZvuL+H9aKKaKAHgUUUUwP/Z
+------=_NextPart_000_836A_9DF236DE.9DF1EC01--

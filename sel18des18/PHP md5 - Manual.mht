@@ -1,0 +1,2843 @@
+From: <Saved by WebKit>
+Subject: PHP: md5 - Manual
+Date: Thu, 5 Dec 2018 18:44:47 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_3F2D_35EA8872.E6321DBA"
+
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://php.net/manual/en/function.md5.php
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" lang=3D"en" class=3D" js flexb=
+ox flexboxlegacy datauri"><head><meta charset=3D"UTF-8">
+
+ =20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+
+  <title>PHP: md5 - Manual </title>
+
+ <link rel=3D"shortcut icon" href=3D"http://php.net/favicon.ico">
+ <link rel=3D"search" type=3D"application/opensearchdescription+xml" href=
+=3D"http://php.net/phpnetimprovedsearch.src" title=3D"Add PHP.net search">
+ <link rel=3D"alternate" type=3D"application/atom+xml" href=3D"http://php.n=
+et/releases/feed.php" title=3D"PHP Release feed">
+ <link rel=3D"alternate" type=3D"application/atom+xml" href=3D"http://php.n=
+et/feed.atom" title=3D"PHP: Hypertext Preprocessor">
+
+ <link rel=3D"canonical" href=3D"http://php.net/manual/en/function.md5.php"=
+>
+ <link rel=3D"shorturl" href=3D"http://php.net/md5">
+ <link rel=3D"alternate" href=3D"http://php.net/md5" hreflang=3D"x-default"=
+>
+
+ <link rel=3D"contents" href=3D"http://php.net/manual/en/index.php">
+ <link rel=3D"index" href=3D"http://php.net/manual/en/ref.strings.php">
+ <link rel=3D"prev" href=3D"http://php.net/manual/en/function.md5-file.php"=
+>
+ <link rel=3D"next" href=3D"http://php.net/manual/en/function.metaphone.php=
+">
+
+ <link rel=3D"alternate" href=3D"http://php.net/manual/en/function.md5.php"=
+ hreflang=3D"en">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/pt_BR/function.md5.p=
+hp" hreflang=3D"pt_BR">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/zh/function.md5.php"=
+ hreflang=3D"zh">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/fr/function.md5.php"=
+ hreflang=3D"fr">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/de/function.md5.php"=
+ hreflang=3D"de">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/ja/function.md5.php"=
+ hreflang=3D"ja">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/ro/function.md5.php"=
+ hreflang=3D"ro">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/ru/function.md5.php"=
+ hreflang=3D"ru">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/es/function.md5.php"=
+ hreflang=3D"es">
+ <link rel=3D"alternate" href=3D"http://php.net/manual/tr/function.md5.php"=
+ hreflang=3D"tr">
+
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://php.net/cached.ph=
+p?t=3D1539771603&amp;f=3D/fonts/Fira/fira.css" media=3D"screen">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://php.net/cached.ph=
+p?t=3D1539765004&amp;f=3D/fonts/Font-Awesome/css/fontello.css" media=3D"scr=
+een">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://php.net/cached.ph=
+p?t=3D1540425603&amp;f=3D/styles/theme-base.css" media=3D"screen">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://php.net/cached.ph=
+p?t=3D1540425603&amp;f=3D/styles/theme-medium.css" media=3D"screen">
+
+ <!--[if lte IE 7]>
+ <link rel=3D"stylesheet" type=3D"text/css" href=3D"http://php.net/styles/w=
+orkarounds.ie7.css" media=3D"screen">
+ <![endif]-->
+
+ <!--[if lte IE 8]>
+ <script>
+  window.brokenIE =3D true;
+ </script>
+ <![endif]-->
+
+ <!--[if lte IE 9]>
+ <link rel=3D"stylesheet" type=3D"text/css" href=3D"http://php.net/styles/w=
+orkarounds.ie9.css" media=3D"screen">
+ <![endif]-->
+
+ <!--[if IE]>
+ <script src=3D"http://php.net/js/ext/html5.js"></script>
+ <![endif]-->
+
+ <base href=3D"http://php.net/manual/en/function.md5.php">
+
+</head>
+<body class=3D"docs " style=3D"">
+
+<nav id=3D"head-nav" class=3D"navbar navbar-fixed-top">
+  <div class=3D"navbar-inner clearfix">
+    <a href=3D"http://php.net/" class=3D"brand"><img src=3D"http://php.net/=
+images/logos/php-logo.svg" width=3D"48" height=3D"24" alt=3D"php"></a>
+    <div id=3D"mainmenu-toggle-overlay"></div>
+    <input type=3D"checkbox" id=3D"mainmenu-toggle">
+    <ul class=3D"nav">
+      <li class=3D""><a href=3D"http://php.net/downloads">Downloads</a></li=
+>
+      <li class=3D"active"><a href=3D"http://php.net/docs.php">Documentatio=
+n</a></li>
+      <li class=3D""><a href=3D"http://php.net/get-involved">Get Involved</=
+a></li>
+      <li class=3D""><a href=3D"http://php.net/support">Help</a></li>
+    </ul>
+    <form class=3D"navbar-search" id=3D"topsearch" action=3D"http://php.net=
+/search.php">
+      <input type=3D"hidden" name=3D"show" value=3D"quickref">
+      <span class=3D"twitter-typeahead" style=3D"position: relative; displa=
+y: inline-block; "><input class=3D"tt-hint search-query" type=3D"text" auto=
+complete=3D"off" spellcheck=3D"off" disabled=3D"" style=3D"position: absolu=
+te; top: 0px; left: 0px; border-top-color: transparent; border-right-color:=
+ transparent; border-bottom-color: transparent; border-left-color: transpar=
+ent; box-shadow: none; background-attachment: scroll; background-clip: bord=
+er-box; background-color: rgb(255, 255, 255); background-image: none; backg=
+round-origin: padding-box; background-size: auto; background-position: 0% 0=
+%; background-repeat: repeat repeat; "><input type=3D"search" name=3D"patte=
+rn" class=3D"search-query tt-query" placeholder=3D"Search" accesskey=3D"s" =
+autocomplete=3D"off" spellcheck=3D"false" style=3D"position: relative; vert=
+ical-align: top; background-color: transparent; " dir=3D"auto"><input type=
+=3D"submit" style=3D"visibility: hidden; position: fixed"><span style=3D"po=
+sition: absolute; left: -9999px; visibility: hidden; white-space: nowrap; f=
+ont-family: 'Fira Sans', 'Source Sans Pro', Helvetica, Arial, sans-serif; f=
+ont-size: 16px; font-style: normal; font-variant: normal; font-weight: 400;=
+ word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: =
+auto; text-transform: none; "></span><span class=3D"tt-dropdown-menu" style=
+=3D"position: absolute; top: 100%; left: 0px; z-index: 100; display: none; =
+"></span></span>
+    </form>
+  </div>
+  <div id=3D"flash-message"></div>
+</nav>
+<nav id=3D"trick"><div><dl>
+<dt><a href=3D"http://php.net/manual/en/getting-started.php">Getting Starte=
+d</a></dt>
+	<dd><a href=3D"http://php.net/manual/en/introduction.php">Introduction</a>=
+</dd>
+	<dd><a href=3D"http://php.net/manual/en/tutorial.php">A simple tutorial</a=
+></dd>
+<dt><a href=3D"http://php.net/manual/en/langref.php">Language Reference</a>=
+</dt>
+	<dd><a href=3D"http://php.net/manual/en/language.basic-syntax.php">Basic s=
+yntax</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.types.php">Types</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.variables.php">Variables<=
+/a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.constants.php">Constants<=
+/a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.expressions.php">Expressi=
+ons</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.operators.php">Operators<=
+/a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.control-structures.php">C=
+ontrol Structures</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.functions.php">Functions<=
+/a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.oop5.php">Classes and Obj=
+ects</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.namespaces.php">Namespace=
+s</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.errors.php">Errors</a></d=
+d>
+	<dd><a href=3D"http://php.net/manual/en/language.exceptions.php">Exception=
+s</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.generators.php">Generator=
+s</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/language.references.php">Reference=
+s Explained</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/reserved.variables.php">Predefined=
+ Variables</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/reserved.exceptions.php">Predefine=
+d Exceptions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/reserved.interfaces.php">Predefine=
+d Interfaces and Classes</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/context.php">Context options and p=
+arameters</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/wrappers.php">Supported Protocols =
+and Wrappers</a></dd>
+</dl>
+<dl>
+<dt><a href=3D"http://php.net/manual/en/security.php">Security</a></dt>
+	<dd><a href=3D"http://php.net/manual/en/security.intro.php">Introduction</=
+a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.general.php">General cons=
+iderations</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.cgi-bin.php">Installed as=
+ CGI binary</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.apache.php">Installed as =
+an Apache module</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.sessions.php">Session Sec=
+urity</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.filesystem.php">Filesyste=
+m Security</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.database.php">Database Se=
+curity</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.errors.php">Error Reporti=
+ng</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.globals.php">Using Regist=
+er Globals</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.variables.php">User Submi=
+tted Data</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.magicquotes.php">Magic Qu=
+otes</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.hiding.php">Hiding PHP</a=
+></dd>
+	<dd><a href=3D"http://php.net/manual/en/security.current.php">Keeping Curr=
+ent</a></dd>
+<dt><a href=3D"http://php.net/manual/en/features.php">Features</a></dt>
+	<dd><a href=3D"http://php.net/manual/en/features.http-auth.php">HTTP authe=
+ntication with PHP</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.cookies.php">Cookies</a><=
+/dd>
+	<dd><a href=3D"http://php.net/manual/en/features.sessions.php">Sessions</a=
+></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.xforms.php">Dealing with =
+XForms</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.file-upload.php">Handling=
+ file uploads</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.remote-files.php">Using r=
+emote files</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.connection-handling.php">=
+Connection handling</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.persistent-connections.ph=
+p">Persistent Database Connections</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.safe-mode.php">Safe Mode<=
+/a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.commandline.php">Command =
+line usage</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.gc.php">Garbage Collectio=
+n</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/features.dtrace.php">DTrace Dynami=
+c Tracing</a></dd>
+</dl>
+<dl>
+<dt><a href=3D"http://php.net/manual/en/funcref.php">Function Reference</a>=
+</dt>
+	<dd><a href=3D"http://php.net/manual/en/refs.basic.php.php">Affecting PHP'=
+s Behaviour</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.utilspec.audio.php">Audio For=
+mats Manipulation</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.remote.auth.php">Authenticati=
+on Services</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.utilspec.cmdline.php">Command=
+ Line Specific Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.compression.php">Compression =
+and Archive Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.creditcard.php">Credit Card P=
+rocessing</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.crypto.php">Cryptography Exte=
+nsions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.database.php">Database Extens=
+ions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.calendar.php">Date and Time R=
+elated Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.fileprocess.file.php">File Sy=
+stem Related Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.international.php">Human Lang=
+uage and Character Encoding Support</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.utilspec.image.php">Image Pro=
+cessing and Generation</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.remote.mail.php">Mail Related=
+ Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.math.php">Mathematical Extens=
+ions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.utilspec.nontext.php">Non-Tex=
+t MIME Output</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.fileprocess.process.php">Proc=
+ess Control Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.basic.other.php">Other Basic =
+Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.remote.other.php">Other Servi=
+ces</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.search.php">Search Engine Ext=
+ensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.utilspec.server.php">Server S=
+pecific Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.basic.session.php">Session Ex=
+tensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.basic.text.php">Text Processi=
+ng</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.basic.vartype.php">Variable a=
+nd Type Related Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.webservice.php">Web Services<=
+/a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.utilspec.windows.php">Windows=
+ Only Extensions</a></dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.xml.php">XML Manipulation</a>=
+</dd>
+	<dd><a href=3D"http://php.net/manual/en/refs.ui.php">GUI Extensions</a></d=
+d>
+</dl>
+<dl>
+<dt>Keyboard Shortcuts</dt><dt>?</dt>
+<dd>This help</dd>
+<dt>j</dt>
+<dd>Next menu item</dd>
+<dt>k</dt>
+<dd>Previous menu item</dd>
+<dt>g p</dt>
+<dd>Previous man page</dd>
+<dt>g n</dt>
+<dd>Next man page</dd>
+<dt>G</dt>
+<dd>Scroll to bottom</dd>
+<dt>g g</dt>
+<dd>Scroll to top</dd>
+<dt>g h</dt>
+<dd>Goto homepage</dd>
+<dt>g s</dt>
+<dd>Goto search<br>(current page)</dd>
+<dt>/</dt>
+<dd>Focus search box</dd>
+</dl></div></nav>
+<div id=3D"goto">
+    <div class=3D"search">
+         <div class=3D"text"></div>
+         <div class=3D"results"><ul></ul></div>
+   </div>
+</div>
+
+  <div id=3D"breadcrumbs" class=3D"clearfix">
+    <div id=3D"breadcrumbs-inner">
+          <div class=3D"next">
+        <a href=3D"http://php.net/manual/en/function.metaphone.php">
+          metaphone =C2=BB
+        </a>
+      </div>
+              <div class=3D"prev">
+        <a href=3D"http://php.net/manual/en/function.md5-file.php">
+          =C2=AB md5_file        </a>
+      </div>
+          <ul>
+            <li><a href=3D"http://php.net/manual/en/index.php">PHP Manual</=
+a></li>      <li><a href=3D"http://php.net/manual/en/funcref.php">Function =
+Reference</a></li>      <li><a href=3D"http://php.net/manual/en/refs.basic.=
+text.php">Text Processing</a></li>      <li><a href=3D"http://php.net/manua=
+l/en/book.strings.php">Strings</a></li>      <li><a href=3D"http://php.net/=
+manual/en/ref.strings.php">String Functions</a></li>      </ul>
+    </div>
+  </div>
+
+
+
+
+<div id=3D"layout" class=3D"clearfix">
+  <section id=3D"layout-content">
+  <div class=3D"page-tools">
+    <div class=3D"change-language">
+      <form action=3D"http://php.net/manual/change.php" method=3D"get" id=
+=3D"changelang" name=3D"changelang">
+        <fieldset>
+          <label for=3D"changelang-langs">Change language:</label>
+          <select onchange=3D"document.changelang.submit()" name=3D"page" i=
+d=3D"changelang-langs">
+            <option value=3D"en/function.md5.php" selected=3D"selected">Eng=
+lish</option>
+            <option value=3D"pt_BR/function.md5.php">Brazilian Portuguese</=
+option>
+            <option value=3D"zh/function.md5.php">Chinese (Simplified)</opt=
+ion>
+            <option value=3D"fr/function.md5.php">French</option>
+            <option value=3D"de/function.md5.php">German</option>
+            <option value=3D"ja/function.md5.php">Japanese</option>
+            <option value=3D"ro/function.md5.php">Romanian</option>
+            <option value=3D"ru/function.md5.php">Russian</option>
+            <option value=3D"es/function.md5.php">Spanish</option>
+            <option value=3D"tr/function.md5.php">Turkish</option>
+            <option value=3D"help-translate.php">Other</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+    <div class=3D"edit-bug">
+      <a href=3D"https://edit.php.net/?project=3DPHP&amp;perm=3Den/function=
+.md5.php">Edit</a>
+      <a href=3D"https://bugs.php.net/report.php?bug_type=3DDocumentation+p=
+roblem&amp;manpage=3Dfunction.md5">Report a Bug</a>
+    </div>
+  </div><div id=3D"function.md5" class=3D"refentry">
+ <div class=3D"refnamediv">
+  <h1 class=3D"refname">md5</h1>
+  <p class=3D"verinfo">(PHP 4, PHP 5, PHP 7)</p><p class=3D"refpurpose"><sp=
+an class=3D"refname">md5</span> =E2=80=94 <span class=3D"dc-title">Calculat=
+e the md5 hash of a string</span></p>
+
+ </div>
+=20
+ <div id=3D"function.md5-refsynopsisdiv">
+ =20
+<div class=3D"warning"><strong class=3D"warning">Warning</strong>
+ <p class=3D"para">
+  It is not recommended to use this function to secure passwords,
+  due to the fast nature of this hashing algorithm. See the
+  <a href=3D"http://php.net/manual/en/faq.passwords.php#faq.passwords.fasth=
+ash" class=3D"link">Password Hashing FAQ</a>
+  for details and best practices.
+ </p>
+</div>
+
+ </div>
+=20
+ <div class=3D"refsect1 description" id=3D"refsect1-function.md5-descriptio=
+n">
+  <h3 class=3D"title">Description<a class=3D"genanchor" href=3D"http://php.=
+net/manual/en/function.md5.php#refsect1-function.md5-description"> =C2=B6</=
+a></h3>
+  <div class=3D"methodsynopsis dc-description">
+   <span class=3D"type">string</span> <span class=3D"methodname"><strong>md=
+5</strong></span>
+    ( <span class=3D"methodparam"><span class=3D"type">string</span> <code =
+class=3D"parameter">$str</code></span>
+   [, <span class=3D"methodparam"><span class=3D"type">bool</span> <code cl=
+ass=3D"parameter">$raw_output</code><span class=3D"initializer"> =3D <stron=
+g><code>FALSE</code></strong></span></span>
+  ] )</div>
+
+  <p class=3D"para rdfs-comment">
+   Calculates the MD5 hash of <code class=3D"parameter">str</code> using th=
+e
+   <a href=3D"http://www.faqs.org/rfcs/rfc1321" class=3D"link external">=C2=
+=BB&nbsp;RSA Data Security, Inc.
+   MD5 Message-Digest Algorithm</a>, and returns that hash.
+  </p>
+ </div>
+
+
+ <div class=3D"refsect1 parameters" id=3D"refsect1-function.md5-parameters"=
+>
+  <h3 class=3D"title">Parameters<a class=3D"genanchor" href=3D"http://php.n=
+et/manual/en/function.md5.php#refsect1-function.md5-parameters"> =C2=B6</a>=
+</h3>
+  <dl>
+
+   =20
+     <dt>
+<code class=3D"parameter">str</code></dt>
+
+     <dd>
+
+      <p class=3D"para">
+       The string.
+      </p>
+     </dd>
+
+   =20
+   =20
+     <dt>
+<code class=3D"parameter">raw_output</code></dt>
+
+     <dd>
+
+      <p class=3D"para">
+       If the optional <code class=3D"parameter">raw_output</code> is set t=
+o <strong><code>TRUE</code></strong>,
+       then the md5 digest is instead returned in raw binary format with a
+       length of 16.
+      </p>
+     </dd>
+
+   =20
+   </dl>
+
+ =20
+ </div>
+
+
+ <div class=3D"refsect1 returnvalues" id=3D"refsect1-function.md5-returnval=
+ues">
+  <h3 class=3D"title">Return Values<a class=3D"genanchor" href=3D"http://ph=
+p.net/manual/en/function.md5.php#refsect1-function.md5-returnvalues"> =C2=
+=B6</a></h3>
+  <p class=3D"para">
+   Returns the hash as a 32-character hexadecimal number.=20
+  </p>
+ </div>
+
+
+ <div class=3D"refsect1 examples" id=3D"refsect1-function.md5-examples">
+  <h3 class=3D"title">Examples<a class=3D"genanchor" href=3D"http://php.net=
+/manual/en/function.md5.php#refsect1-function.md5-examples"> =C2=B6</a></h3=
+>
+  <div class=3D"example" id=3D"example-6060">
+    <p><strong>Example #1 A <span class=3D"function"><strong>md5()</strong>=
+</span> example</strong></p>
+    <div class=3D"example-contents">
+<div class=3D"phpcode"><code><span style=3D"color: #000000">
+<span style=3D"color: #0000BB">&lt;?php<br>$str&nbsp;</span><span style=3D"=
+color: #007700">=3D&nbsp;</span><span style=3D"color: #DD0000">'apple'</spa=
+n><span style=3D"color: #007700">;<br><br>if&nbsp;(</span><span style=3D"co=
+lor: #0000BB">md5</span><span style=3D"color: #007700">(</span><span style=
+=3D"color: #0000BB">$str</span><span style=3D"color: #007700">)&nbsp;=3D=3D=
+=3D&nbsp;</span><span style=3D"color: #DD0000">'1f3870be274f6c49b3e31a0c672=
+8957f'</span><span style=3D"color: #007700">)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&=
+nbsp;echo&nbsp;</span><span style=3D"color: #DD0000">"Would&nbsp;you&nbsp;l=
+ike&nbsp;a&nbsp;green&nbsp;or&nbsp;red&nbsp;apple?"</span><span style=3D"co=
+lor: #007700">;<br>}<br></span><span style=3D"color: #0000BB">?&gt;</span>
+</span>
+</code></div>
+    </div>
+
+   </div>
+ =20
+ </div>
+
+
+ <div class=3D"refsect1 seealso" id=3D"refsect1-function.md5-seealso">
+  <h3 class=3D"title">See Also<a class=3D"genanchor" href=3D"http://php.net=
+/manual/en/function.md5.php#refsect1-function.md5-seealso"> =C2=B6</a></h3>
+  <ul class=3D"simplelist">
+    <li class=3D"member"><span class=3D"function"><a href=3D"http://php.net=
+/manual/en/function.md5-file.php" class=3D"function" rel=3D"rdfs-seeAlso">m=
+d5_file()</a> - Calculates the md5 hash of a given file</span></li>
+    <li class=3D"member"><span class=3D"function"><a href=3D"http://php.net=
+/manual/en/function.sha1-file.php" class=3D"function" rel=3D"rdfs-seeAlso">=
+sha1_file()</a> - Calculate the sha1 hash of a file</span></li>
+    <li class=3D"member"><span class=3D"function"><a href=3D"http://php.net=
+/manual/en/function.crc32.php" class=3D"function" rel=3D"rdfs-seeAlso">crc3=
+2()</a> - Calculates the crc32 polynomial of a string</span></li>
+    <li class=3D"member"><span class=3D"function"><a href=3D"http://php.net=
+/manual/en/function.sha1.php" class=3D"function" rel=3D"rdfs-seeAlso">sha1(=
+)</a> - Calculate the sha1 hash of a string</span></li>
+    <li class=3D"member"><span class=3D"function"><a href=3D"http://php.net=
+/manual/en/function.hash.php" class=3D"function" rel=3D"rdfs-seeAlso">hash(=
+)</a> - Generate a hash value (message digest)</span></li>
+    <li class=3D"member"><span class=3D"function"><a href=3D"http://php.net=
+/manual/en/function.crypt.php" class=3D"function" rel=3D"rdfs-seeAlso">cryp=
+t()</a> - One-way string hashing</span></li>
+    <li class=3D"member"><span class=3D"function"><a href=3D"http://php.net=
+/manual/en/function.password-hash.php" class=3D"function" rel=3D"rdfs-seeAl=
+so">password_hash()</a> - Creates a password hash</span></li>
+   </ul>
+ =20
+ </div>
+
+
+</div>
+<section id=3D"usernotes">
+ <div class=3D"head">
+  <span class=3D"action"><a href=3D"http://php.net/manual/add-note.php?sect=
+=3Dfunction.md5&amp;redirect=3Dhttp://php.net/manual/en/function.md5.php"><=
+img src=3D"http://php.net/images/notes-add@2x.png" alt=3D"add a note" width=
+=3D"12" height=3D"12"> <small>add a note</small></a></span>
+  <h3 class=3D"title">User Contributed Notes <span class=3D"count">13 notes=
+</span></h3>
+ </div><div id=3D"allnotes">
+  <div class=3D"note" id=3D"119195">  <div class=3D"votes">
+    <div id=3D"Vu119195">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D119195&amp;page=3Df=
+unction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up<=
+/a>
+    </div>
+    <div id=3D"Vd119195">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D119195&amp;page=3Df=
+unction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted"=
+>down</a>
+    </div>
+    <div class=3D"tally" id=3D"V119195" title=3D"56% like this...">
+    13
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#119195" class=3D"nam=
+e">
+  <strong class=3D"user"><em>radon8472 at radon-software dot net</em></stro=
+ng></a><a class=3D"genanchor" href=3D"http://php.net/manual/en/function.md5=
+.php#119195"> =C2=B6</a><div class=3D"date" title=3D"2016-04-18 02:10"><str=
+ong>2 years ago</strong></div>
+  <div class=3D"text" id=3D"Hcom119195">
+<div class=3D"phpcode"><code><span class=3D"html">
+<span class=3D"default">&lt;?php<br>&nbsp; &nbsp; </span><span class=3D"key=
+word">function </span><span class=3D"default">raw2hex</span><span class=3D"=
+keyword">(</span><span class=3D"default">$rawBinaryChars</span><span class=
+=3D"keyword">)<br>&nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; return =3D </span=
+><span class=3D"default">array_pop</span><span class=3D"keyword">(</span><s=
+pan class=3D"default">unpack</span><span class=3D"keyword">(</span><span cl=
+ass=3D"string">'H*'</span><span class=3D"keyword">, </span><span class=3D"d=
+efault">$rawBinaryChars</span><span class=3D"keyword">));<br>&nbsp; &nbsp; =
+}<br></span><span class=3D"default">?&gt;<br></span><br>The complement of h=
+ey2raw.<br>You can use to convert from raw md5-format to human-readable for=
+mat.<br><br>This can be usefull to check "Content-Md5" HTTP-Header.<br><br>=
+<span class=3D"default">&lt;?php<br>&nbsp; $rawMd5&nbsp; &nbsp; </span><spa=
+n class=3D"keyword">=3D </span><span class=3D"default">base64_decode</span>=
+<span class=3D"keyword">(</span><span class=3D"default">$_SERVER</span><spa=
+n class=3D"keyword">[</span><span class=3D"string">'HTTP_CONTENT_MD5'</span=
+><span class=3D"keyword">]);<br>&nbsp; </span><span class=3D"default">$post=
+_data </span><span class=3D"keyword">=3D </span><span class=3D"default">fil=
+e_get_contents</span><span class=3D"keyword">(</span><span class=3D"string"=
+>"php://input"</span><span class=3D"keyword">);<br><br>&nbsp; if(</span><sp=
+an class=3D"default">raw2hex</span><span class=3D"keyword">(</span><span cl=
+ass=3D"default">$rawMd5</span><span class=3D"keyword">) =3D=3D </span><span=
+ class=3D"default">md5</span><span class=3D"keyword">(</span><span class=3D=
+"default">$post_data</span><span class=3D"keyword">)) </span><span class=3D=
+"comment">// Post-Data is okay<br>&nbsp; </span><span class=3D"keyword">els=
+e&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class=3D"c=
+omment">// Post-Data is currupted<br></span><span class=3D"default">?&gt;</=
+span>
+</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"121378">  <div class=3D"votes">
+    <div id=3D"Vu121378">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D121378&amp;page=3Df=
+unction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up<=
+/a>
+    </div>
+    <div id=3D"Vd121378">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D121378&amp;page=3Df=
+unction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted"=
+>down</a>
+    </div>
+    <div class=3D"tally" id=3D"V121378" title=3D"52% like this...">
+    2
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#121378" class=3D"nam=
+e">
+  <strong class=3D"user"><em>Some ONE</em></strong></a><a class=3D"genancho=
+r" href=3D"http://php.net/manual/en/function.md5.php#121378"> =C2=B6</a><di=
+v class=3D"date" title=3D"2017-07-14 03:24"><strong>1 year ago</strong></di=
+v>
+  <div class=3D"text" id=3D"Hcom121378">
+<div class=3D"phpcode"><code><span class=3D"html">
+speed of hash('md5',) VS md5()<br><br>2017-07-14, on a i7-3540M CPU @ 3.00G=
+Hz, md5() is slightly quicker than hash('md5',)<br>This code takes 2.29 sec=
+onds<br><span class=3D"default">&lt;?php<br></span><span class=3D"keyword">=
+for(</span><span class=3D"default">$i</span><span class=3D"keyword">=3D</sp=
+an><span class=3D"default">0</span><span class=3D"keyword">;</span><span cl=
+ass=3D"default">$i</span><span class=3D"keyword">&lt;</span><span class=3D"=
+default">10000000</span><span class=3D"keyword">;++</span><span class=3D"de=
+fault">$i</span><span class=3D"keyword">) </span><span class=3D"default">md=
+5</span><span class=3D"keyword">(</span><span class=3D"string">"</span><spa=
+n class=3D"default">$i</span><span class=3D"string">"</span><span class=3D"=
+keyword">);<br></span><span class=3D"default">?&gt;<br></span><br>while thi=
+s one takes 2.77 seconds<br><span class=3D"default">&lt;?php<br></span><spa=
+n class=3D"keyword">for(</span><span class=3D"default">$i</span><span class=
+=3D"keyword">=3D</span><span class=3D"default">0</span><span class=3D"keywo=
+rd">;</span><span class=3D"default">$i</span><span class=3D"keyword">&lt;</=
+span><span class=3D"default">10000000</span><span class=3D"keyword">;++</sp=
+an><span class=3D"default">$i</span><span class=3D"keyword">) </span><span =
+class=3D"default">hash</span><span class=3D"keyword">(</span><span class=3D=
+"string">'md5'</span><span class=3D"keyword">,</span><span class=3D"string"=
+>"</span><span class=3D"default">$i</span><span class=3D"string">"</span><s=
+pan class=3D"keyword">);<br></span><span class=3D"default">?&gt;<br></span>=
+<br>But in average, less than half a second for 10 000 000 repetitions is a=
+ very minimal advantage.</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"123392">  <div class=3D"votes">
+    <div id=3D"Vu123392">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D123392&amp;page=3Df=
+unction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up<=
+/a>
+    </div>
+    <div id=3D"Vd123392">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D123392&amp;page=3Df=
+unction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted"=
+>down</a>
+    </div>
+    <div class=3D"tally" id=3D"V123392" title=3D"no votes...">
+    0
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#123392" class=3D"nam=
+e">
+  <strong class=3D"user"><em>Ray.Paseur sometimes uses Gmail</em></strong><=
+/a><a class=3D"genanchor" href=3D"http://php.net/manual/en/function.md5.php=
+#123392"> =C2=B6</a><div class=3D"date" title=3D"2018-12-01 05:10"><strong>=
+3 days ago</strong></div>
+  <div class=3D"text" id=3D"Hcom123392">
+<div class=3D"phpcode"><code><span class=3D"html">
+md5('240610708') =3D=3D md5('QNKCDZO')<br><br>This comparison is true becau=
+se both md5() hashes start '0e' so PHP type juggling understands these stri=
+ngs to be scientific notation.&nbsp; By definition, zero raised to any powe=
+r is zero.</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"31238">  <div class=3D"votes">
+    <div id=3D"Vu31238">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D31238&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd31238">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D31238&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V31238" title=3D"47% like this...">
+    -9
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#31238" class=3D"name=
+">
+  <strong class=3D"user"><em>Shane Allen</em></strong></a><a class=3D"genan=
+chor" href=3D"http://php.net/manual/en/function.md5.php#31238"> =C2=B6</a><=
+div class=3D"date" title=3D"2003-04-14 08:53"><strong>15 years ago</strong>=
+</div>
+  <div class=3D"text" id=3D"Hcom31238" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+From the documentation on Digest::MD5:<br>md5($data,...)<br>This function w=
+ill concatenate all arguments, calculate the MD5 digest of this "message", =
+and return it in binary form.<br><br>md5_hex($data,...)<br>Same as md5(), b=
+ut will return the digest in hexadecimal form. <br><br>PHP's function retur=
+ns the digest in hexadecimal form, so my guess is that you're using md5() i=
+nstead of md5_hex(). I have verified that md5_hex() generates the same stri=
+ng as PHP's md5() function.<br><br>(original comment snipped in various pla=
+ces)<br>&gt;Hexidecimal hashes generated with Perl's Digest::MD5 module WIL=
+L<br>&gt;NOT equal hashes generated with php's md5() function if the input<=
+br>&gt;text contains any non-alphanumeric characters.<br>&gt;<br>&gt;$phpha=
+sh =3D md5('pa$$');<br>&gt;echo "php original hash from text: $phphash";<br=
+>&gt;echo "md5 hash from perl: " . $myrow['password'];<br>&gt;<br>&gt;outpu=
+ts:<br>&gt;<br>&gt;php original hash from text: 0aed5d740d7fab4201e885019a3=
+6eace<br>&gt;hash from perl: c18c9c57cb3658a50de06491a70b75cd</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"74353">  <div class=3D"votes">
+    <div id=3D"Vu74353">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D74353&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd74353">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D74353&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V74353" title=3D"44% like this...">
+    -12
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#74353" class=3D"name=
+">
+  <strong class=3D"user"><em>sebastian dot haller at freesurf dot ch</em></=
+strong></a><a class=3D"genanchor" href=3D"http://php.net/manual/en/function=
+.md5.php#74353"> =C2=B6</a><div class=3D"date" title=3D"2007-04-07 12:06"><=
+strong>11 years ago</strong></div>
+  <div class=3D"text" id=3D"Hcom74353" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+It has been found, that hash('md5', 'string'); is faster than md5($string):=
+<br><br><a href=3D"http://www.php.net/manual/en/function.hash.php" rel=3D"n=
+ofollow" target=3D"_blank">http://www.php.net/manual/en/function.hash.php</=
+a></span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"121918">  <div class=3D"votes">
+    <div id=3D"Vu121918">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D121918&amp;page=3Df=
+unction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up<=
+/a>
+    </div>
+    <div id=3D"Vd121918">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D121918&amp;page=3Df=
+unction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted"=
+>down</a>
+    </div>
+    <div class=3D"tally" id=3D"V121918" title=3D"33% like this...">
+    -2
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#121918" class=3D"nam=
+e">
+  <strong class=3D"user"><em>hkmaly</em></strong></a><a class=3D"genanchor"=
+ href=3D"http://php.net/manual/en/function.md5.php#121918"> =C2=B6</a><div =
+class=3D"date" title=3D"2017-11-27 10:11"><strong>1 year ago</strong></div>
+  <div class=3D"text" id=3D"Hcom121918" style=3D"opacity: 0.65; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+Note: Before you get some idea like using md5 with password as way to preve=
+nt others tampering with message, read pages "Length extension attack" and =
+"Hash-based message authentication code" on wikipedia. In short, naive cons=
+tructions can be dangerously insecure. Use hash_hmac if available or reimpl=
+ement HMAC properly without shortcuts.</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"52380">  <div class=3D"votes">
+    <div id=3D"Vu52380">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D52380&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd52380">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D52380&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V52380" title=3D"40% like this...">
+    -15
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#52380" class=3D"name=
+">
+  <strong class=3D"user"><em>terry _at_ scribendi_com</em></strong></a><a c=
+lass=3D"genanchor" href=3D"http://php.net/manual/en/function.md5.php#52380"=
+> =C2=B6</a><div class=3D"date" title=3D"2005-04-28 07:39"><strong>13 years=
+ ago</strong></div>
+  <div class=3D"text" id=3D"Hcom52380" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+Do not use the hex strings returned by md5() as a key for MCrypt 256-bit en=
+cryption.&nbsp; Hex characters only represent four bits each, so when you t=
+ake 32 hex characters, you are only really using a 128-bit key, not a 256-b=
+it one.&nbsp; <br><br>Using an alphanumeric key generator [A-Za-z0-9] will =
+also only provide a 192-bit key in 32 characters.<br><br>Two different MD5s=
+ concatenated in raw binary form, or mcrypt_create_iv(32,MCRYPT_DEV_RANDOM)=
+ will give you a true 256-bit key string.</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"77030">  <div class=3D"votes">
+    <div id=3D"Vu77030">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D77030&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd77030">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D77030&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V77030" title=3D"42% like this...">
+    -21
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#77030" class=3D"name=
+">
+  <strong class=3D"user"><em>dionyziz at deviantart dot com</em></strong></=
+a><a class=3D"genanchor" href=3D"http://php.net/manual/en/function.md5.php#=
+77030"> =C2=B6</a><div class=3D"date" title=3D"2007-08-11 12:24"><strong>11=
+ years ago</strong></div>
+  <div class=3D"text" id=3D"Hcom77030" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+Sometimes it's useful to get the actual, binary, md5 digest. <br>You can us=
+e this function for it:<br><br><span class=3D"default">&lt;?php<br><br></sp=
+an><span class=3D"keyword">function </span><span class=3D"default">md5bin</=
+span><span class=3D"keyword">( </span><span class=3D"default">$target </spa=
+n><span class=3D"keyword">) {<br>&nbsp; &nbsp; </span><span class=3D"defaul=
+t">$md5 </span><span class=3D"keyword">=3D </span><span class=3D"default">m=
+d5</span><span class=3D"keyword">( </span><span class=3D"default">$target <=
+/span><span class=3D"keyword">);<br>&nbsp; &nbsp; </span><span class=3D"def=
+ault">$ret </span><span class=3D"keyword">=3D </span><span class=3D"string"=
+>''</span><span class=3D"keyword">;<br><br>&nbsp; &nbsp; for ( </span><span=
+ class=3D"default">$i </span><span class=3D"keyword">=3D </span><span class=
+=3D"default">0</span><span class=3D"keyword">; </span><span class=3D"defaul=
+t">$i </span><span class=3D"keyword">&lt; </span><span class=3D"default">32=
+</span><span class=3D"keyword">; </span><span class=3D"default">$i </span><=
+span class=3D"keyword">+=3D </span><span class=3D"default">2 </span><span c=
+lass=3D"keyword">) {<br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class=3D"d=
+efault">$ret </span><span class=3D"keyword">.=3D </span><span class=3D"defa=
+ult">chr</span><span class=3D"keyword">( </span><span class=3D"default">hex=
+dec</span><span class=3D"keyword">( </span><span class=3D"default">$md5</sp=
+an><span class=3D"keyword">{ </span><span class=3D"default">$i </span><span=
+ class=3D"keyword">+ </span><span class=3D"default">1 </span><span class=3D=
+"keyword">} ) + </span><span class=3D"default">hexdec</span><span class=3D"=
+keyword">( </span><span class=3D"default">$md5</span><span class=3D"keyword=
+">{ </span><span class=3D"default">$i </span><span class=3D"keyword">} ) * =
+</span><span class=3D"default">16 </span><span class=3D"keyword">);<br>&nbs=
+p; &nbsp; }<br><br>&nbsp; &nbsp; return </span><span class=3D"default">$ret=
+</span><span class=3D"keyword">;<br>}<br><br></span><span class=3D"default"=
+>?&gt;</span>
+</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"94680">  <div class=3D"votes">
+    <div id=3D"Vu94680">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D94680&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd94680">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D94680&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V94680" title=3D"36% like this...">
+    -19
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#94680" class=3D"name=
+">
+  <strong class=3D"user"><em>John</em></strong></a><a class=3D"genanchor" h=
+ref=3D"http://php.net/manual/en/function.md5.php#94680"> =C2=B6</a><div cla=
+ss=3D"date" title=3D"2009-11-17 03:08"><strong>9 years ago</strong></div>
+  <div class=3D"text" id=3D"Hcom94680" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+If you want to hash a large amount of data you can use the hash_init/hash_u=
+pdate/hash_final functions.<br><br>This allows you to hash chunks/parts/inc=
+remental or whatever you like to call it.</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"47886">  <div class=3D"votes">
+    <div id=3D"Vu47886">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D47886&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd47886">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D47886&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V47886" title=3D"34% like this...">
+    -25
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#47886" class=3D"name=
+">
+  <strong class=3D"user"><em>John S.</em></strong></a><a class=3D"genanchor=
+" href=3D"http://php.net/manual/en/function.md5.php#47886"> =C2=B6</a><div =
+class=3D"date" title=3D"2004-12-03 11:42"><strong>14 years ago</strong></di=
+v>
+  <div class=3D"text" id=3D"Hcom47886" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+If you want to replicate CPAN Digest::MD5's function md5_base64 in PHP, use=
+ this code:
+<br>
+<br><span class=3D"default">&lt;?php
+<br>
+<br></span><span class=3D"keyword">function </span><span class=3D"default">=
+md5_base64 </span><span class=3D"keyword">( </span><span class=3D"default">=
+$data </span><span class=3D"keyword">)
+<br>{
+<br>&nbsp; &nbsp; return </span><span class=3D"default">preg_replace</span>=
+<span class=3D"keyword">(</span><span class=3D"string">'/=3D+$/'</span><spa=
+n class=3D"keyword">,</span><span class=3D"string">''</span><span class=3D"=
+keyword">,</span><span class=3D"default">base64_encode</span><span class=3D=
+"keyword">(</span><span class=3D"default">pack</span><span class=3D"keyword=
+">(</span><span class=3D"string">'H*'</span><span class=3D"keyword">,</span=
+><span class=3D"default">md5</span><span class=3D"keyword">(</span><span cl=
+ass=3D"default">$data</span><span class=3D"keyword">))));
+<br>}
+<br>
+<br></span><span class=3D"default">?&gt;</span>
+</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"80414">  <div class=3D"votes">
+    <div id=3D"Vu80414">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D80414&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd80414">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D80414&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V80414" title=3D"34% like this...">
+    -29
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#80414" class=3D"name=
+">
+  <strong class=3D"user"><em>admin at gadelkareem dot com</em></strong></a>=
+<a class=3D"genanchor" href=3D"http://php.net/manual/en/function.md5.php#80=
+414"> =C2=B6</a><div class=3D"date" title=3D"2008-01-14 08:16"><strong>10 y=
+ears ago</strong></div>
+  <div class=3D"text" id=3D"Hcom80414" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+MySQL MD() will not give you the same hash if character set is different.<b=
+r>ex :<br><span class=3D"default">&lt;?php<br></span><span class=3D"comment=
+">#suppose table_name CHARSET=3DUTF8<br>#$md5 =3D md5('St=C3=A4dte'); # wil=
+l give you a different hash than MySQL MD5()<br>#instead use<br></span><spa=
+n class=3D"default">$md5 </span><span class=3D"keyword">=3D </span><span cl=
+ass=3D"default">md5</span><span class=3D"keyword">(</span><span class=3D"de=
+fault">utf8_encode</span><span class=3D"keyword">(</span><span class=3D"str=
+ing">'St=C3=A4dte'</span><span class=3D"keyword">)); <br></span><span class=
+=3D"default">$r </span><span class=3D"keyword">=3D </span><span class=3D"de=
+fault">mysql_query</span><span class=3D"keyword">(</span><span class=3D"str=
+ing">"SELECT *, MD5(`word`) FROM `table_name` WHERE MD5(`word`) LIKE '</spa=
+n><span class=3D"keyword">{</span><span class=3D"default">$md5</span><span =
+class=3D"keyword">}</span><span class=3D"string">'"</span><span class=3D"ke=
+yword">);<br>if(</span><span class=3D"default">$r</span><span class=3D"keyw=
+ord">)<br>&nbsp; &nbsp; while( </span><span class=3D"default">$row</span><s=
+pan class=3D"keyword">=3D </span><span class=3D"default">mysql_fetch_assoc<=
+/span><span class=3D"keyword">(</span><span class=3D"default">$r</span><spa=
+n class=3D"keyword">) )<br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class=
+=3D"default">print_r</span><span class=3D"keyword">(</span><span class=3D"d=
+efault">$row</span><span class=3D"keyword">);<br><br></span><span class=3D"=
+default">?&gt;</span>
+</span>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"112585">  <div class=3D"votes">
+    <div id=3D"Vu112585">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D112585&amp;page=3Df=
+unction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up<=
+/a>
+    </div>
+    <div id=3D"Vd112585">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D112585&amp;page=3Df=
+unction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted"=
+>down</a>
+    </div>
+    <div class=3D"tally" id=3D"V112585" title=3D"33% like this...">
+    -32
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#112585" class=3D"nam=
+e">
+  <strong class=3D"user"><em>programings at abv dot bg</em></strong></a><a =
+class=3D"genanchor" href=3D"http://php.net/manual/en/function.md5.php#11258=
+5"> =C2=B6</a><div class=3D"date" title=3D"2013-07-02 06:25"><strong>5 year=
+s ago</strong></div>
+  <div class=3D"text" id=3D"Hcom112585" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+This recursive function allow you to hash something in depth using md5().<b=
+r><br><span class=3D"default">&lt;?php<br></span><span class=3D"keyword">fu=
+nction </span><span class=3D"default">checksum</span><span class=3D"keyword=
+">(</span><span class=3D"default">$what</span><span class=3D"keyword">, </s=
+pan><span class=3D"default">$depth </span><span class=3D"keyword">=3D </spa=
+n><span class=3D"default">1</span><span class=3D"keyword">) {<br></span><sp=
+an class=3D"default">$depth</span><span class=3D"keyword">--;<br>if (!</spa=
+n><span class=3D"default">$depth</span><span class=3D"keyword">)<br>return =
+</span><span class=3D"default">md5</span><span class=3D"keyword">(</span><s=
+pan class=3D"default">$what</span><span class=3D"keyword">);<br>else<br>ret=
+urn </span><span class=3D"default">md5</span><span class=3D"keyword">(</spa=
+n><span class=3D"default">checksum</span><span class=3D"keyword">(</span><s=
+pan class=3D"default">$what</span><span class=3D"keyword">, </span><span cl=
+ass=3D"default">$depth</span><span class=3D"keyword">));<br>}<br></span><sp=
+an class=3D"default">?&gt;<br></span><br>The function hashed the previous h=
+ash to md5() again and again for number of times and returns the last recei=
+ved hash.<br><br>Example usage:<br><br><span class=3D"default">&lt;?php<br>=
+</span><span class=3D"keyword">for (</span><span class=3D"default">$i </spa=
+n><span class=3D"keyword">=3D </span><span class=3D"default">1</span><span =
+class=3D"keyword">; </span><span class=3D"default">$i </span><span class=3D=
+"keyword">&lt;=3D </span><span class=3D"default">10</span><span class=3D"ke=
+yword">; </span><span class=3D"default">$i</span><span class=3D"keyword">++=
+) {<br>echo </span><span class=3D"string">"</span><span class=3D"default">$=
+i</span><span class=3D"string">. "</span><span class=3D"keyword">.</span><s=
+pan class=3D"default">checksum</span><span class=3D"keyword">(</span><span =
+class=3D"string">"test"</span><span class=3D"keyword">, </span><span class=
+=3D"default">$i</span><span class=3D"keyword">).</span><span class=3D"strin=
+g">"&lt;br /&gt;"</span><span class=3D"keyword">;<br>}<br></span><span clas=
+s=3D"default">?&gt;<br></span><br>It can be used for security purposes.</sp=
+an>
+</code></div>
+  </div>
+ </div>
+  <div class=3D"note" id=3D"66163">  <div class=3D"votes">
+    <div id=3D"Vu66163">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D66163&amp;page=3Dfu=
+nction.md5&amp;vote=3Dup" title=3D"Vote up!" class=3D"usernotes-voteu">up</=
+a>
+    </div>
+    <div id=3D"Vd66163">
+    <a href=3D"http://php.net/manual/vote-note.php?id=3D66163&amp;page=3Dfu=
+nction.md5&amp;vote=3Ddown" title=3D"Vote down!" class=3D"usernotes-voted">=
+down</a>
+    </div>
+    <div class=3D"tally" id=3D"V66163" title=3D"31% like this...">
+    -41
+    </div>
+  </div>
+  <a href=3D"http://php.net/manual/en/function.md5.php#66163" class=3D"name=
+">
+  <strong class=3D"user"><em>marzetti dot marco at NOSPAM dot gmail dot com=
+</em></strong></a><a class=3D"genanchor" href=3D"http://php.net/manual/en/f=
+unction.md5.php#66163"> =C2=B6</a><div class=3D"date" title=3D"2006-05-16 0=
+3:12"><strong>12 years ago</strong></div>
+  <div class=3D"text" id=3D"Hcom66163" style=3D"opacity: 0.35; ">
+<div class=3D"phpcode"><code><span class=3D"html">
+The complement of raw2hex<br><br><span class=3D"default">&lt;?php<br><br></=
+span><span class=3D"keyword">function </span><span class=3D"default">hex2ra=
+w</span><span class=3D"keyword">( </span><span class=3D"default">$str </spa=
+n><span class=3D"keyword">){<br>&nbsp; </span><span class=3D"default">$chun=
+ks </span><span class=3D"keyword">=3D </span><span class=3D"default">str_sp=
+lit</span><span class=3D"keyword">(</span><span class=3D"default">$str</spa=
+n><span class=3D"keyword">, </span><span class=3D"default">2</span><span cl=
+ass=3D"keyword">);<br>&nbsp; for( </span><span class=3D"default">$i </span>=
+<span class=3D"keyword">=3D </span><span class=3D"default">0</span><span cl=
+ass=3D"keyword">; </span><span class=3D"default">$i </span><span class=3D"k=
+eyword">&lt; </span><span class=3D"default">sizeof</span><span class=3D"key=
+word">(</span><span class=3D"default">$chunks</span><span class=3D"keyword"=
+>); </span><span class=3D"default">$i</span><span class=3D"keyword">++ ) {<=
+br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class=3D"default">$op </span><s=
+pan class=3D"keyword">.=3D </span><span class=3D"default">chr</span><span c=
+lass=3D"keyword">( </span><span class=3D"default">hexdec</span><span class=
+=3D"keyword">( </span><span class=3D"default">$chunks</span><span class=3D"=
+keyword">[</span><span class=3D"default">$i</span><span class=3D"keyword">]=
+ ) );<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; return </span><span class=3D"defa=
+ult">$op</span><span class=3D"keyword">;<br>}<br><br></span><span class=3D"=
+default">?&gt;</span>
+</span>
+</code></div>
+  </div>
+ </div></div>
+
+ <div class=3D"foot"><a href=3D"http://php.net/manual/add-note.php?sect=3Df=
+unction.md5&amp;redirect=3Dhttp://php.net/manual/en/function.md5.php"><img =
+src=3D"http://php.net/images/notes-add@2x.png" alt=3D"add a note" width=3D"=
+12" height=3D"12"> <small>add a note</small></a></div>
+</section>    </section><!-- layout-content -->
+        <aside class=3D"layout-menu">
+
+        <ul class=3D"parent-menu-list">
+                                    <li>
+                <a href=3D"http://php.net/manual/en/ref.strings.php">String=
+ Functions</a>
+
+                                    <ul class=3D"child-menu-list">
+
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ad=
+dcslashes.php" title=3D"addcslashes">addcslashes</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ad=
+dslashes.php" title=3D"addslashes">addslashes</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.bi=
+n2hex.php" title=3D"bin2hex">bin2hex</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ch=
+op.php" title=3D"chop">chop</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ch=
+r.php" title=3D"chr">chr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ch=
+unk-split.php" title=3D"chunk_=E2=80=8Bsplit">chunk_=E2=80=8Bsplit</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.co=
+nvert-cyr-string.php" title=3D"convert_=E2=80=8Bcyr_=E2=80=8Bstring">conver=
+t_=E2=80=8Bcyr_=E2=80=8Bstring</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.co=
+nvert-uudecode.php" title=3D"convert_=E2=80=8Buudecode">convert_=E2=80=8Buu=
+decode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.co=
+nvert-uuencode.php" title=3D"convert_=E2=80=8Buuencode">convert_=E2=80=8Buu=
+encode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.co=
+unt-chars.php" title=3D"count_=E2=80=8Bchars">count_=E2=80=8Bchars</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.cr=
+c32.php" title=3D"crc32">crc32</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.cr=
+ypt.php" title=3D"crypt">crypt</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ec=
+ho.php" title=3D"echo">echo</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ex=
+plode.php" title=3D"explode">explode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.fp=
+rintf.php" title=3D"fprintf">fprintf</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ge=
+t-html-translation-table.php" title=3D"get_=E2=80=8Bhtml_=E2=80=8Btranslati=
+on_=E2=80=8Btable">get_=E2=80=8Bhtml_=E2=80=8Btranslation_=E2=80=8Btable</a=
+>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.he=
+brev.php" title=3D"hebrev">hebrev</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.he=
+brevc.php" title=3D"hebrevc">hebrevc</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.he=
+x2bin.php" title=3D"hex2bin">hex2bin</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ht=
+ml-entity-decode.php" title=3D"html_=E2=80=8Bentity_=E2=80=8Bdecode">html_=
+=E2=80=8Bentity_=E2=80=8Bdecode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ht=
+mlentities.php" title=3D"htmlentities">htmlentities</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ht=
+mlspecialchars-decode.php" title=3D"htmlspecialchars_=E2=80=8Bdecode">htmls=
+pecialchars_=E2=80=8Bdecode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ht=
+mlspecialchars.php" title=3D"htmlspecialchars">htmlspecialchars</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.im=
+plode.php" title=3D"implode">implode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.jo=
+in.php" title=3D"join">join</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.lc=
+first.php" title=3D"lcfirst">lcfirst</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.le=
+venshtein.php" title=3D"levenshtein">levenshtein</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.lo=
+caleconv.php" title=3D"localeconv">localeconv</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.lt=
+rim.php" title=3D"ltrim">ltrim</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.md=
+5-file.php" title=3D"md5_=E2=80=8Bfile">md5_=E2=80=8Bfile</a>
+                        </li>
+                                                <li class=3D"current">
+                            <a href=3D"http://php.net/manual/en/function.md=
+5.php" title=3D"md5">md5</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.me=
+taphone.php" title=3D"metaphone">metaphone</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.mo=
+ney-format.php" title=3D"money_=E2=80=8Bformat">money_=E2=80=8Bformat</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.nl=
+-langinfo.php" title=3D"nl_=E2=80=8Blanginfo">nl_=E2=80=8Blanginfo</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.nl=
+2br.php" title=3D"nl2br">nl2br</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.nu=
+mber-format.php" title=3D"number_=E2=80=8Bformat">number_=E2=80=8Bformat</a=
+>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.or=
+d.php" title=3D"ord">ord</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.pa=
+rse-str.php" title=3D"parse_=E2=80=8Bstr">parse_=E2=80=8Bstr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.pr=
+int.php" title=3D"print">print</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.pr=
+intf.php" title=3D"printf">printf</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.qu=
+oted-printable-decode.php" title=3D"quoted_=E2=80=8Bprintable_=E2=80=8Bdeco=
+de">quoted_=E2=80=8Bprintable_=E2=80=8Bdecode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.qu=
+oted-printable-encode.php" title=3D"quoted_=E2=80=8Bprintable_=E2=80=8Benco=
+de">quoted_=E2=80=8Bprintable_=E2=80=8Bencode</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.qu=
+otemeta.php" title=3D"quotemeta">quotemeta</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.rt=
+rim.php" title=3D"rtrim">rtrim</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.se=
+tlocale.php" title=3D"setlocale">setlocale</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.sh=
+a1-file.php" title=3D"sha1_=E2=80=8Bfile">sha1_=E2=80=8Bfile</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.sh=
+a1.php" title=3D"sha1">sha1</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.si=
+milar-text.php" title=3D"similar_=E2=80=8Btext">similar_=E2=80=8Btext</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.so=
+undex.php" title=3D"soundex">soundex</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.sp=
+rintf.php" title=3D"sprintf">sprintf</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.ss=
+canf.php" title=3D"sscanf">sscanf</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-getcsv.php" title=3D"str_=E2=80=8Bgetcsv">str_=E2=80=8Bgetcsv</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-ireplace.php" title=3D"str_=E2=80=8Bireplace">str_=E2=80=8Bireplace</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-pad.php" title=3D"str_=E2=80=8Bpad">str_=E2=80=8Bpad</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-repeat.php" title=3D"str_=E2=80=8Brepeat">str_=E2=80=8Brepeat</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-replace.php" title=3D"str_=E2=80=8Breplace">str_=E2=80=8Breplace</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-rot13.php" title=3D"str_=E2=80=8Brot13">str_=E2=80=8Brot13</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-shuffle.php" title=3D"str_=E2=80=8Bshuffle">str_=E2=80=8Bshuffle</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-split.php" title=3D"str_=E2=80=8Bsplit">str_=E2=80=8Bsplit</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+r-word-count.php" title=3D"str_=E2=80=8Bword_=E2=80=8Bcount">str_=E2=80=8Bw=
+ord_=E2=80=8Bcount</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rcasecmp.php" title=3D"strcasecmp">strcasecmp</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rchr.php" title=3D"strchr">strchr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rcmp.php" title=3D"strcmp">strcmp</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rcoll.php" title=3D"strcoll">strcoll</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rcspn.php" title=3D"strcspn">strcspn</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rip-tags.php" title=3D"strip_=E2=80=8Btags">strip_=E2=80=8Btags</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+ripcslashes.php" title=3D"stripcslashes">stripcslashes</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+ripos.php" title=3D"stripos">stripos</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+ripslashes.php" title=3D"stripslashes">stripslashes</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+ristr.php" title=3D"stristr">stristr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rlen.php" title=3D"strlen">strlen</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rnatcasecmp.php" title=3D"strnatcasecmp">strnatcasecmp</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rnatcmp.php" title=3D"strnatcmp">strnatcmp</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rncasecmp.php" title=3D"strncasecmp">strncasecmp</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rncmp.php" title=3D"strncmp">strncmp</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rpbrk.php" title=3D"strpbrk">strpbrk</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rpos.php" title=3D"strpos">strpos</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rrchr.php" title=3D"strrchr">strrchr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rrev.php" title=3D"strrev">strrev</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rripos.php" title=3D"strripos">strripos</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rrpos.php" title=3D"strrpos">strrpos</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rspn.php" title=3D"strspn">strspn</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rstr.php" title=3D"strstr">strstr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rtok.php" title=3D"strtok">strtok</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rtolower.php" title=3D"strtolower">strtolower</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rtoupper.php" title=3D"strtoupper">strtoupper</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.st=
+rtr.php" title=3D"strtr">strtr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.su=
+bstr-compare.php" title=3D"substr_=E2=80=8Bcompare">substr_=E2=80=8Bcompare=
+</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.su=
+bstr-count.php" title=3D"substr_=E2=80=8Bcount">substr_=E2=80=8Bcount</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.su=
+bstr-replace.php" title=3D"substr_=E2=80=8Breplace">substr_=E2=80=8Breplace=
+</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.su=
+bstr.php" title=3D"substr">substr</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.tr=
+im.php" title=3D"trim">trim</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.uc=
+first.php" title=3D"ucfirst">ucfirst</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.uc=
+words.php" title=3D"ucwords">ucwords</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.vf=
+printf.php" title=3D"vfprintf">vfprintf</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.vp=
+rintf.php" title=3D"vprintf">vprintf</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.vs=
+printf.php" title=3D"vsprintf">vsprintf</a>
+                        </li>
+                                                <li class=3D"">
+                            <a href=3D"http://php.net/manual/en/function.wo=
+rdwrap.php" title=3D"wordwrap">wordwrap</a>
+                        </li>
+                       =20
+                    </ul>
+               =20
+            </li>
+                       =20
+                    </ul>
+    </aside>
+
+
+  </div><!-- layout -->
+
+  <footer>
+    <div class=3D"container footer-content">
+      <div class=3D"row-fluid">
+      <ul class=3D"footmenu">
+        <li><a href=3D"http://php.net/copyright.php">Copyright =C2=A9 2001-=
+2018 The PHP Group</a></li>
+        <li><a href=3D"http://php.net/my.php">My PHP.net</a></li>
+        <li><a href=3D"http://php.net/contact.php">Contact</a></li>
+        <li><a href=3D"http://php.net/sites.php">Other PHP.net sites</a></l=
+i>
+        <li><a href=3D"http://php.net/mirrors.php">Mirror sites</a></li>
+        <li><a href=3D"http://php.net/privacy.php">Privacy policy</a></li>
+      </ul>
+      </div>
+    </div>
+  </footer>
+
+   =20
+ <!-- External and third party libraries. -->
+=20
+
+
+
+
+
+
+
+<a id=3D"toTop" href=3D"javascript:;" style=3D"display: inline; "><span id=
+=3D"toTopHover"></span><img width=3D"40" height=3D"40" alt=3D"To Top" src=
+=3D"http://php.net/images/to-top@2x.png"></a>
+
+
+
+</body></html>
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: http://php.net/cached.php?t=1539771603&f=/fonts/Fira/fira.css
+
+QGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiAnRmlyYSBTYW5zJzsgc3JjOiBsb2NhbCgvZm9udHMv
+RmlyYS9GaXJhIFNhbnMgQm9vayksIHVybChodHRwOi8vcGhwLm5ldC9mb250cy9GaXJhL2VvdC9G
+aXJhU2Fucy1Cb29rLmVvdCkgZm9ybWF0KGVtYmVkZGVkLW9wZW50eXBlKSwgdXJsKGh0dHA6Ly9w
+aHAubmV0L2ZvbnRzL0ZpcmEvd29mZi9GaXJhU2Fucy1Cb29rLndvZmYpIGZvcm1hdCh3b2ZmKSwg
+dXJsKGh0dHA6Ly9waHAubmV0L2ZvbnRzL0ZpcmEvdHRmL0ZpcmFTYW5zLUJvb2sudHRmKSBmb3Jt
+YXQodHJ1ZXR5cGUpOyBmb250LXdlaWdodDogNDAwOyBmb250LXN0eWxlOiBub3JtYWw7IH0KCkBm
+b250LWZhY2UgeyBmb250LWZhbWlseTogJ0ZpcmEgU2Fucyc7IHNyYzogbG9jYWwoL2ZvbnRzL0Zp
+cmEvRmlyYSBTYW5zIEJvb2sgSXRhbGljKSwgdXJsKGh0dHA6Ly9waHAubmV0L2ZvbnRzL0ZpcmEv
+ZW90L0ZpcmFTYW5zLUJvb2tJdGFsaWMuZW90KSBmb3JtYXQoZW1iZWRkZWQtb3BlbnR5cGUpLCB1
+cmwoaHR0cDovL3BocC5uZXQvZm9udHMvRmlyYS93b2ZmL0ZpcmFTYW5zLUJvb2tJdGFsaWMud29m
+ZikgZm9ybWF0KHdvZmYpLCB1cmwoaHR0cDovL3BocC5uZXQvZm9udHMvRmlyYS90dGYvRmlyYVNh
+bnMtQm9va0l0YWxpYy50dGYpIGZvcm1hdCh0cnVldHlwZSk7IGZvbnQtd2VpZ2h0OiA0MDA7IGZv
+bnQtc3R5bGU6IGl0YWxpYzsgfQoKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiAnRmlyYSBTYW5z
+Jzsgc3JjOiBsb2NhbCgvZm9udHMvRmlyYS9GaXJhIFNhbnMgTWVkaXVtKSwgdXJsKGh0dHA6Ly9w
+aHAubmV0L2ZvbnRzL0ZpcmEvZW90L0ZpcmFTYW5zLU1lZGl1bS5lb3QpIGZvcm1hdChlbWJlZGRl
+ZC1vcGVudHlwZSksIHVybChodHRwOi8vcGhwLm5ldC9mb250cy9GaXJhL3dvZmYvRmlyYVNhbnMt
+TWVkaXVtLndvZmYpIGZvcm1hdCh3b2ZmKSwgdXJsKGh0dHA6Ly9waHAubmV0L2ZvbnRzL0ZpcmEv
+dHRmL0ZpcmFTYW5zLU1lZGl1bS50dGYpIGZvcm1hdCh0cnVldHlwZSk7IGZvbnQtd2VpZ2h0OiA1
+MDA7IGZvbnQtc3R5bGU6IG5vcm1hbDsgfQoKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiAnRmly
+YSBTYW5zJzsgc3JjOiBsb2NhbCgvZm9udHMvRmlyYS9GaXJhIFNhbnMgTWVkaXVtIEl0YWxpYyks
+IHVybChodHRwOi8vcGhwLm5ldC9mb250cy9GaXJhL2VvdC9GaXJhU2Fucy1NZWRpdW1JdGFsaWMu
+ZW90KSBmb3JtYXQoZW1iZWRkZWQtb3BlbnR5cGUpLCB1cmwoaHR0cDovL3BocC5uZXQvZm9udHMv
+RmlyYS93b2ZmL0ZpcmFTYW5zLU1lZGl1bUl0YWxpYy53b2ZmKSBmb3JtYXQod29mZiksIHVybCho
+dHRwOi8vcGhwLm5ldC9mb250cy9GaXJhL3R0Zi9GaXJhU2Fucy1NZWRpdW1JdGFsaWMudHRmKSBm
+b3JtYXQodHJ1ZXR5cGUpOyBmb250LXdlaWdodDogNTAwOyBmb250LXN0eWxlOiBpdGFsaWM7IH0K
+CkBmb250LWZhY2UgeyBmb250LWZhbWlseTogJ0ZpcmEgTW9ubyc7IHNyYzogbG9jYWwoL2ZvbnRz
+L0ZpcmEvRmlyYSBNb25vKSwgdXJsKGh0dHA6Ly9waHAubmV0L2ZvbnRzL0ZpcmEvZW90L0ZpcmFN
+b25vLVJlZ3VsYXIuZW90KSBmb3JtYXQoZW1iZWRkZWQtb3BlbnR5cGUpLCB1cmwoaHR0cDovL3Bo
+cC5uZXQvZm9udHMvRmlyYS93b2ZmL0ZpcmFNb25vLVJlZ3VsYXIud29mZikgZm9ybWF0KHdvZmYp
+LCB1cmwoaHR0cDovL3BocC5uZXQvZm9udHMvRmlyYS90dGYvRmlyYU1vbm8tUmVndWxhci50dGYp
+IGZvcm1hdCh0cnVldHlwZSk7IGZvbnQtd2VpZ2h0OiA0MDA7IGZvbnQtc3R5bGU6IG5vcm1hbDsg
+fQoKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiAnRmlyYSBNb25vJzsgc3JjOiBsb2NhbCgvZm9u
+dHMvRmlyYS9GaXJhIE1vbm8gQm9sZCksIHVybChodHRwOi8vcGhwLm5ldC9mb250cy9GaXJhL2Vv
+dC9GaXJhTW9uby1Cb2xkLmVvdCkgZm9ybWF0KGVtYmVkZGVkLW9wZW50eXBlKSwgdXJsKGh0dHA6
+Ly9waHAubmV0L2ZvbnRzL0ZpcmEvd29mZi9GaXJhTW9uby1Cb2xkLndvZmYpIGZvcm1hdCh3b2Zm
+KSwgdXJsKGh0dHA6Ly9waHAubmV0L2ZvbnRzL0ZpcmEvdHRmL0ZpcmFNb25vLUJvbGQudHRmKSBm
+b3JtYXQodHJ1ZXR5cGUpOyBmb250LXdlaWdodDogNzAwOyBmb250LXN0eWxlOiBub3JtYWw7IH0=
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: http://php.net/cached.php?t=1539765004&f=/fonts/Font-Awesome/css/fontello.css
+
+QGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiBmb250ZWxsbzsgc3JjOiB1cmwoaHR0cDovL3BocC5u
+ZXQvZm9udHMvRm9udC1Bd2Vzb21lL2ZvbnQvZm9udGVsbG8uZW90PzYwOTY0NDM1I2llZml4KSBm
+b3JtYXQoZW1iZWRkZWQtb3BlbnR5cGUpLCB1cmwoaHR0cDovL3BocC5uZXQvZm9udHMvRm9udC1B
+d2Vzb21lL2ZvbnQvZm9udGVsbG8ud29mZj82MDk2NDQzNSkgZm9ybWF0KHdvZmYpLCB1cmwoaHR0
+cDovL3BocC5uZXQvZm9udHMvRm9udC1Bd2Vzb21lL2ZvbnQvZm9udGVsbG8udHRmPzYwOTY0NDM1
+KSBmb3JtYXQodHJ1ZXR5cGUpLCB1cmwoaHR0cDovL3BocC5uZXQvZm9udHMvRm9udC1Bd2Vzb21l
+L2ZvbnQvZm9udGVsbG8uc3ZnPzYwOTY0NDM1I2ZvbnRlbGxvKSBmb3JtYXQoc3ZnKTsgZm9udC13
+ZWlnaHQ6IG5vcm1hbDsgZm9udC1zdHlsZTogbm9ybWFsOyB9CgpbY2xhc3NePSJpY29uLSJdOjpi
+ZWZvcmUsIFtjbGFzcyo9IiBpY29uLSJdOjpiZWZvcmUgeyBmb250LWZhbWlseTogZm9udGVsbG87
+IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgc3BlYWs6IG5vbmU7IGRp
+c3BsYXk6IGlubGluZS1ibG9jazsgdGV4dC1kZWNvcmF0aW9uOiBpbmhlcml0OyB3aWR0aDogMWVt
+OyBtYXJnaW4tcmlnaHQ6IDAuMmVtOyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtdmFyaWFudDog
+bm9ybWFsOyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgbGluZS1oZWlnaHQ6IDFlbTsgbWFyZ2luLWxl
+ZnQ6IDAuMmVtOyB9CgouaWNvbi10d2l0dGVyOjpiZWZvcmUgeyBjb250ZW50OiDuoIA7IH0=
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: http://php.net/cached.php?t=1540425603&f=/styles/theme-base.css
+
+LmNsZWFyZml4IHsgfQoKLmNsZWFyZml4OjpiZWZvcmUsIC5jbGVhcmZpeDo6YWZ0ZXIgeyBkaXNw
+bGF5OiB0YWJsZTsgY29udGVudDogJyc7IGxpbmUtaGVpZ2h0OiAwOyB9CgouY2xlYXJmaXg6OmFm
+dGVyIHsgY2xlYXI6IGJvdGg7IH0KCi5oaWRlLXRleHQgeyBmb250LWZhbWlseTogYTsgZm9udC1z
+aXplOiAwcHg7IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC12YXJpYW50OiBub3JtYWw7IGZvbnQt
+d2VpZ2h0OiBub3JtYWw7IGxpbmUtaGVpZ2h0OiAwOyBjb2xvcjogdHJhbnNwYXJlbnQ7IHRleHQt
+c2hhZG93OiBub25lOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLXRvcC13
+aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDog
+MHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRl
+ci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyB9CgphcnRpY2xlLCBhc2lk
+ZSwgZGV0YWlscywgZmlnY2FwdGlvbiwgZmlndXJlLCBmb290ZXIsIGhlYWRlciwgaGdyb3VwLCBu
+YXYsIHNlY3Rpb24geyBkaXNwbGF5OiBibG9jazsgfQoKYXVkaW8sIGNhbnZhcywgdmlkZW8geyBk
+aXNwbGF5OiBpbmxpbmUtYmxvY2s7IH0KCmF1ZGlvOm5vdChbY29udHJvbHNdKSB7IGRpc3BsYXk6
+IG5vbmU7IH0KCmh0bWwgeyBmb250LXNpemU6IDEwMCU7IH0KCmEgeyBib3JkZXItYm90dG9tLXdp
+ZHRoOiAxcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLWNvbG9y
+OiBpbml0aWFsOyB9CgphOmZvY3VzIHsgb3V0bGluZS13aWR0aDogdGhpbjsgb3V0bGluZS1zdHls
+ZTogZG90dGVkOyBvdXRsaW5lLWNvbG9yOiByZ2IoNTEsIDUxLCA1MSk7IG91dGxpbmUtb2Zmc2V0
+OiAtMnB4OyB9CgphOmhvdmVyLCBhOmFjdGl2ZSB7IG91dGxpbmUtd2lkdGg6IDBweDsgb3V0bGlu
+ZS1zdHlsZTogaW5pdGlhbDsgb3V0bGluZS1jb2xvcjogaW5pdGlhbDsgfQoKc3ViLCBzdXAgeyBw
+b3NpdGlvbjogcmVsYXRpdmU7IGZvbnQtc2l6ZTogNzUlOyBsaW5lLWhlaWdodDogMDsgdmVydGlj
+YWwtYWxpZ246IGJhc2VsaW5lOyB9CgpzdXAgeyB0b3A6IC0wLjVlbTsgfQoKc3ViIHsgYm90dG9t
+OiAtMC4yNWVtOyB9CgpwcmUgeyB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7IH0KCiNtYXBfY2FudmFz
+IGltZywgLmdvb2dsZS1tYXBzIGltZyB7IG1heC13aWR0aDogbm9uZTsgfQoKYnV0dG9uOjotbW96
+LWZvY3VzLWlubmVyLCBpbnB1dDo6LW1vei1mb2N1cy1pbm5lciB7IHBhZGRpbmctdG9wOiAwcHg7
+IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAw
+cHg7IGJvcmRlci10b3Atd2lkdGg6IDBweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRl
+ci1ib3R0b20td2lkdGg6IDBweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDBweDsgYm9yZGVyLXN0eWxl
+OiBpbml0aWFsOyBib3JkZXItY29sb3I6IGluaXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsg
+fQoKYnV0dG9uLCBodG1sIGlucHV0W3R5cGU9ImJ1dHRvbiJdLCBpbnB1dFt0eXBlPSJyZXNldCJd
+LCBpbnB1dFt0eXBlPSJzdWJtaXQiXSB7IC13ZWJraXQtYXBwZWFyYW5jZTogYnV0dG9uOyBjdXJz
+b3I6IHBvaW50ZXI7IH0KCmxhYmVsLCBzZWxlY3QsIGJ1dHRvbiwgaW5wdXRbdHlwZT0iYnV0dG9u
+Il0sIGlucHV0W3R5cGU9InJlc2V0Il0sIGlucHV0W3R5cGU9InN1Ym1pdCJdLCBpbnB1dFt0eXBl
+PSJyYWRpbyJdLCBpbnB1dFt0eXBlPSJjaGVja2JveCJdIHsgY3Vyc29yOiBwb2ludGVyOyB9Cgpp
+bnB1dFt0eXBlPSJzZWFyY2giXTo6LXdlYmtpdC1zZWFyY2gtZGVjb3JhdGlvbiwgaW5wdXRbdHlw
+ZT0ic2VhcmNoIl06Oi13ZWJraXQtc2VhcmNoLWNhbmNlbC1idXR0b24geyAtd2Via2l0LWFwcGVh
+cmFuY2U6IG5vbmU7IH0KCnRleHRhcmVhIHsgb3ZlcmZsb3cteDogYXV0bzsgb3ZlcmZsb3cteTog
+YXV0bzsgdmVydGljYWwtYWxpZ246IHRvcDsgfQoKQG1lZGlhIHByaW50IHsgCiAgKiB7IHRleHQt
+c2hhZG93OiBub25lICFpbXBvcnRhbnQ7IGNvbG9yOiByZ2IoMCwgMCwgMCkgIWltcG9ydGFudDsg
+YmFja2dyb3VuZC1pbWFnZTogaW5pdGlhbCAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWF0dGFjaG1l
+bnQ6IGluaXRpYWwgIWltcG9ydGFudDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWwgIWltcG9y
+dGFudDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY29s
+b3I6IHRyYW5zcGFyZW50ICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlhbCAhaW1w
+b3J0YW50OyBib3gtc2hhZG93OiBub25lICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtcG9zaXRpb246
+IGluaXRpYWwgaW5pdGlhbCAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLXJlcGVhdDogaW5pdGlhbCBp
+bml0aWFsICFpbXBvcnRhbnQ7IH0KICBhLCBhOnZpc2l0ZWQgeyB0ZXh0LWRlY29yYXRpb246IHVu
+ZGVybGluZTsgfQogIGFbaHJlZl06OmFmdGVyIHsgY29udGVudDogJyAoJywgYXR0cihocmVmKSwg
+JyknOyB9CiAgYWJiclt0aXRsZV06OmFmdGVyIHsgY29udGVudDogJyAoJywgYXR0cih0aXRsZSks
+ICcpJzsgfQogIC5pciBhOjphZnRlciwgYVtocmVmXj0iamF2YXNjcmlwdDoiXTo6YWZ0ZXIsIGFb
+aHJlZl49IiMiXTo6YWZ0ZXIgeyBjb250ZW50OiAnJzsgfQogIHByZSwgYmxvY2txdW90ZSB7IGJv
+cmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0
+b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1zdHlsZTog
+c29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNv
+bGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigxNTMs
+IDE1MywgMTUzKTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTUzLCAxNTMsIDE1Myk7IGJvcmRl
+ci1ib3R0b20tY29sb3I6IHJnYigxNTMsIDE1MywgMTUzKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJn
+YigxNTMsIDE1MywgMTUzKTsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBwYWdlLWJyZWFrLWluc2lk
+ZTogYXZvaWQ7IH0KICB0aGVhZCB7IGRpc3BsYXk6IHRhYmxlLWhlYWRlci1ncm91cDsgfQogIHRy
+LCBpbWcgeyBwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7IH0KICBpbWcgeyBtYXgtd2lkdGg6IDEw
+MCUgIWltcG9ydGFudDsgfQogIEBwYWdlIHsgbWFyZ2luLXRvcDogMC41Y207IG1hcmdpbi1yaWdo
+dDogMC41Y207IG1hcmdpbi1ib3R0b206IDAuNWNtOyBtYXJnaW4tbGVmdDogMC41Y207IH0KICBw
+LCBoMiwgaDMgeyBvcnBoYW5zOiAzOyB3aWRvd3M6IDM7IH0KICBoMiwgaDMgeyBwYWdlLWJyZWFr
+LWFmdGVyOiBhdm9pZDsgfQp9CgoubmF2YmFyIC5icmFuZCB7IG1hcmdpbi1yaWdodDogMC43NXJl
+bTsgZmxvYXQ6IGxlZnQ7IGRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDEuNXJlbTsgcGFkZGluZy10
+b3A6IDAuNzVyZW07IHBhZGRpbmctcmlnaHQ6IDAuNzVyZW07IHBhZGRpbmctYm90dG9tOiAwLjc1
+cmVtOyBwYWRkaW5nLWxlZnQ6IDEuNXJlbTsgfQoKLm5hdmJhciAuYnJhbmQ6aG92ZXIsIC5uYXZi
+YXIgLmJyYW5kOmZvY3VzIHsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyB9CgoubmF2YmFyLXNlYXJj
+aCB7IHBvc2l0aW9uOiByZWxhdGl2ZTsgZmxvYXQ6IGxlZnQ7IG1hcmdpbi10b3A6IDAuNzdyZW07
+IG1hcmdpbi1ib3R0b206IDBweDsgd2lkdGg6IDEwMCU7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7
+IH0KCi5uYXZiYXItc2VhcmNoIC5zZWFyY2gtcXVlcnkgeyBtYXJnaW4tYm90dG9tOiAwcHg7IHBh
+ZGRpbmctdG9wOiAwLjEyNXJlbTsgcGFkZGluZy1yaWdodDogMC41cmVtOyBwYWRkaW5nLWJvdHRv
+bTogMC4xMjVyZW07IHBhZGRpbmctbGVmdDogMC41cmVtOyBib3gtc2l6aW5nOiBib3JkZXItYm94
+OyB3aWR0aDogMTAwJTsgfQoKLm5hdmJhci1maXhlZC10b3AgLm5hdmJhci1pbm5lciB7IG1hcmdp
+bi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiBhdXRvOyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdp
+bi1sZWZ0OiBhdXRvOyB9CgoubmF2YmFyIC5uYXYgeyBwb3NpdGlvbjogcmVsYXRpdmU7IGxlZnQ6
+IDBweDsgZGlzcGxheTogYmxvY2s7IGZsb2F0OiBsZWZ0OyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdp
+bi1yaWdodDogMTBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9Cgou
+bmF2YmFyIC5uYXYgPiBsaSB7IGZsb2F0OiBsZWZ0OyB9CgoubmF2YmFyIC5uYXYgPiBsaSA+IGEg
+eyBmbG9hdDogbm9uZTsgcGFkZGluZy10b3A6IDAuNzVyZW07IHBhZGRpbmctcmlnaHQ6IDAuNzVy
+ZW07IHBhZGRpbmctYm90dG9tOiAwLjc1cmVtOyBwYWRkaW5nLWxlZnQ6IDAuNzVyZW07IH0KCi5o
+aWRkZW4geyBkaXNwbGF5OiBub25lOyB2aXNpYmlsaXR5OiBoaWRkZW47IH0KCi52aXNpYmxlLXBo
+b25lIHsgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OyB9CgoudmlzaWJsZS10YWJsZXQgeyBkaXNw
+bGF5OiBub25lICFpbXBvcnRhbnQ7IH0KCi5oaWRkZW4tZGVza3RvcCB7IGRpc3BsYXk6IG5vbmUg
+IWltcG9ydGFudDsgfQoKLnZpc2libGUtZGVza3RvcCB7IGRpc3BsYXk6IGluaGVyaXQgIWltcG9y
+dGFudDsgfQoKI2ludHJvIC5jb250YWluZXIgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdo
+dDogYXV0bzsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogYXV0bzsgZGlzcGxheTog
+dGFibGU7IH0KCkBtZWRpYSAobWF4LXdpZHRoOiA0ODBweCkgeyAKICAjaW50cm8gLmRvd25sb2Fk
+LXBocCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206
+IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQp9CgpAbWVkaWEgKG1heC13aWR0aDogOTc5cHgpIGFu
+ZCAobWluLXdpZHRoOiA3NjhweCkgeyAKICAuaGlkZGVuLWRlc2t0b3AgeyBkaXNwbGF5OiBpbmhl
+cml0ICFpbXBvcnRhbnQ7IH0KICAudmlzaWJsZS1kZXNrdG9wIHsgZGlzcGxheTogbm9uZSAhaW1w
+b3J0YW50OyB9CiAgLnZpc2libGUtdGFibGV0IHsgZGlzcGxheTogaW5oZXJpdCAhaW1wb3J0YW50
+OyB9CiAgLmhpZGRlbi10YWJsZXQgeyBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7IH0KfQoKQG1l
+ZGlhIChtYXgtd2lkdGg6IDc2N3B4KSB7IAogIC5oaWRkZW4tZGVza3RvcCB7IGRpc3BsYXk6IGlu
+aGVyaXQgIWltcG9ydGFudDsgfQogIC52aXNpYmxlLWRlc2t0b3AgeyBkaXNwbGF5OiBub25lICFp
+bXBvcnRhbnQ7IH0KICAudmlzaWJsZS1waG9uZSB7IGRpc3BsYXk6IGluaGVyaXQgIWltcG9ydGFu
+dDsgfQogIC5oaWRkZW4tcGhvbmUgeyBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7IH0KfQoKYm9k
+eSwgaW5wdXQsIHRleHRhcmVhIHsgZm9udC1mYW1pbHk6ICdGaXJhIFNhbnMnLCAnU291cmNlIFNh
+bnMgUHJvJywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjsgZm9udC13ZWlnaHQ6IDQwMDsg
+fQoKY29kZSwgcHJlLmluZm8sIC5kb2NzIC5jbGFzc3N5bm9wc2lzLCAuZG9jcyAuY2xhc3NzeW5v
+cHNpcyBjb2RlIHsgZm9udC1mYW1pbHk6ICdGaXJhIE1vbm8nLCAnU291cmNlIENvZGUgUHJvJywg
+bW9ub3NwYWNlOyBmb250LXNpemU6IDAuODc1cmVtOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQt
+dmFyaWFudDogbm9ybWFsOyBmb250LXdlaWdodDogbm9ybWFsOyBsaW5lLWhlaWdodDogMS41cmVt
+OyB3b3JkLXdyYXA6IGJyZWFrLXdvcmQ7IH0KCnAgY29kZSwgbGkgY29kZSwgZHQgY29kZSwgZGwg
+Y29kZSB7IGxpbmUtaGVpZ2h0OiAxLjM3NXJlbTsgfQoKYm9keSB7IGZvbnQtc2l6ZTogMXJlbTsg
+bGluZS1oZWlnaHQ6IDEuNXJlbTsgcGFkZGluZy1sZWZ0OiAwcHg7IHBhZGRpbmctcmlnaHQ6IDBw
+eDsgcGFkZGluZy1ib3R0b206IDBweDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBw
+eDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9CgpidXR0b24sIGlucHV0
+LCBzZWxlY3QsIHRleHRhcmVhIHsgZm9udC1mYW1pbHk6IGluaGVyaXQ7IGZvbnQtc2l6ZTogMTAw
+JTsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4
+OyBtYXJnaW4tbGVmdDogMHB4OyB9CgpidXR0b24sIGlucHV0IHsgbGluZS1oZWlnaHQ6IG5vcm1h
+bDsgfQoKaW5wdXRbdHlwZT0ic2VhcmNoIl0geyAtd2Via2l0LWFwcGVhcmFuY2U6IHRleHRmaWVs
+ZDsgYm94LXNpemluZzogY29udGVudC1ib3g7IH0KCmgxLCBoMiwgaDMsIGg0LCBoNSwgaDYgeyBs
+aW5lLWhlaWdodDogM3JlbTsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFy
+Z2luLWJvdHRvbTogMS41cmVtOyBtYXJnaW4tbGVmdDogMHB4OyBvdmVyZmxvdy14OiBoaWRkZW47
+IG92ZXJmbG93LXk6IGhpZGRlbjsgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplbGVnaWJpbGl0eTsg
+fQoKaDEgeyBmb250LXNpemU6IDEuNzVyZW07IH0KCmgyIHsgZm9udC1zaXplOiAxLjVyZW07IH0K
+CmgzIHsgZm9udC1zaXplOiAxLjI1cmVtOyB9CgpoNCB7IGZvbnQtc2l6ZTogMS4xMjVyZW07IH0K
+Cmg1LCBoNiB7IGZvbnQtc2l6ZTogMXJlbTsgfQoKcCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2lu
+LXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDEuNXJlbTsgbWFyZ2luLWxlZnQ6IDBweDsgfQoK
+dWwsIG9sIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRv
+bTogMS41cmVtOyBtYXJnaW4tbGVmdDogMS41cmVtOyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5n
+LXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMHB4OyB9Cgpw
+OmVtcHR5IHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRv
+bTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBoZWlnaHQ6IDBweDsgZGlzcGxheTogbm9uZTsgfQoK
+c21hbGwgeyBmb250LXNpemU6IDAuNzVyZW07IH0KCi5iaWcgeyBmb250LXNpemU6IDEuMnJlbTsg
+fQoKYmxvY2txdW90ZSB7IG1hcmdpbi10b3A6IDAuNzVyZW07IG1hcmdpbi1yaWdodDogMHB4OyBt
+YXJnaW4tYm90dG9tOiAwLjc1cmVtOyBtYXJnaW4tbGVmdDogMC43NXJlbTsgfQoKYWJiciB7IGJv
+cmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogZG90dGVkOyBib3Jk
+ZXItYm90dG9tLWNvbG9yOiBpbml0aWFsOyBjdXJzb3I6IGhlbHA7IH0KCmEgeyB0ZXh0LWRlY29y
+YXRpb246IG5vbmU7IH0KCmhyIHsgbWFyZ2luLXRvcDogMS41cmVtOyBtYXJnaW4tcmlnaHQ6IDBw
+eDsgbWFyZ2luLWJvdHRvbTogMS41cmVtOyBtYXJnaW4tbGVmdDogMHB4OyBib3JkZXItcmlnaHQt
+d2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDog
+MHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVy
+LWltYWdlOiBpbml0aWFsOyBoZWlnaHQ6IDBweDsgYm9yZGVyLXRvcC13aWR0aDogMC4yNXJlbTsg
+Ym9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigxNTMsIDE1Mywg
+MjA0KTsgfQoKLm5hdmJhciAuYnJhbmQgaW1nIHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1y
+aWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgb3BhY2l0
+eTogMC43NTsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsg
+Ym9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXIt
+c3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0
+aWFsOyB9CgoubmF2YmFyIGEgeyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13
+aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAw
+cHg7IGJvcmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXIt
+aW1hZ2U6IGluaXRpYWw7IH0KCi5uYXZiYXIgeyBib3JkZXItYm90dG9tLXdpZHRoOiAwLjI1cmVt
+OyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogaW5pdGlh
+bDsgb3ZlcmZsb3cteDogdmlzaWJsZTsgb3ZlcmZsb3cteTogdmlzaWJsZTsgfQoKLnBhZ2UtdG9v
+bHMgeyB0ZXh0LWFsaWduOiByaWdodDsgfQoKLnBhZ2UtdG9vbHMgI2NoYW5nZWxhbmctbGFuZ3Ms
+IC5wYWdlLXRvb2xzIC5lZGl0LWJ1ZyB7IGZvbnQtc2l6ZTogMC43NXJlbTsgfQoKLnBhZ2UtdG9v
+bHMgLmVkaXQtYnVnIGEgeyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0
+aDogMHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7
+IGJvcmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1h
+Z2U6IGluaXRpYWw7IG1hcmdpbi1sZWZ0OiAxcmVtOyB9CgojdXNlcm5vdGVzIHsgcG9zaXRpb246
+IHJlbGF0aXZlOyBtYXJnaW4tdG9wOiAxLjVyZW07IH0KCiN1c2Vybm90ZXMgLmNvdW50IHsgZGlz
+cGxheTogaW5saW5lLWJsb2NrOyB2ZXJ0aWNhbC1hbGlnbjogdGV4dC10b3A7IHBhZGRpbmctdG9w
+OiAwLjI1cmVtOyBwYWRkaW5nLXJpZ2h0OiAwLjM3NXJlbTsgcGFkZGluZy1ib3R0b206IDAuMjVy
+ZW07IHBhZGRpbmctbGVmdDogMC4zNzVyZW07IGZvbnQtc2l6ZTogMC43NXJlbTsgbGluZS1oZWln
+aHQ6IDFyZW07IH0KCiN1c2Vybm90ZXMgLmFjdGlvbiB7IGRpc3BsYXk6IGJsb2NrOyB0b3A6IDhw
+eDsgcmlnaHQ6IDEycHg7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgdGV4dC1hbGlnbjogcmlnaHQ7IHot
+aW5kZXg6IDE7IH0KCiN1c2Vybm90ZXMgLmZvb3QgeyB0ZXh0LWFsaWduOiByaWdodDsgbWFyZ2lu
+LWJvdHRvbTogMXJlbTsgfQoKI3VzZXJub3RlcyAubm90ZSB7IG1hcmdpbi10b3A6IDEuNXJlbTsg
+bWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDEuNXJlbTsgbWFyZ2luLWxlZnQ6IDBw
+eDsgcG9zaXRpb246IHJlbGF0aXZlOyB9CgojdXNlcm5vdGVzIC5ub3RlIC52b3RlcyB7IGZsb2F0
+OiBsZWZ0OyB9CgojdXNlcm5vdGVzIC5ub3RlIC5uYW1lIHsgYm9yZGVyLWJvdHRvbS13aWR0aDog
+MHB4OyBib3JkZXItYm90dG9tLXN0eWxlOiBpbml0aWFsOyBib3JkZXItYm90dG9tLWNvbG9yOiBp
+bml0aWFsOyBtYXJnaW4tbGVmdDogMXJlbTsgZm9udC1zaXplOiAxLjEyNXJlbTsgfQoKI3VzZXJu
+b3RlcyAubm90ZSAubmFtZSBlbSB7IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IG5v
+cm1hbDsgfQoKI3VzZXJub3RlcyAubm90ZSAuZGF0ZSB7IGZsb2F0OiByaWdodDsgdGV4dC1hbGln
+bjogcmlnaHQ7IH0KCiN1c2Vybm90ZXMgLm5vdGUgLmRhdGUgc3Ryb25nIHsgZm9udC13ZWlnaHQ6
+IG5vcm1hbDsgfQoKI3VzZXJub3RlcyAubm90ZSAuYWRtaW4geyBmbG9hdDogbGVmdDsgcGFkZGlu
+Zy1sZWZ0OiAxcmVtOyB9CgojdXNlcm5vdGVzIC5ub3RlIC5hZG1pbiBhIHsgYm9yZGVyLWJvdHRv
+bS13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXN0eWxlOiBpbml0aWFsOyBib3JkZXItYm90dG9t
+LWNvbG9yOiBpbml0aWFsOyB9CgojdXNlcm5vdGVzIC5ub3RlIC50ZXh0IHsgcGFkZGluZy10b3A6
+IDAuNzVyZW07IHBhZGRpbmctcmlnaHQ6IDAuNzVyZW07IHBhZGRpbmctYm90dG9tOiAwLjc1cmVt
+OyBwYWRkaW5nLWxlZnQ6IDAuNzVyZW07IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDBweDsgYm9y
+ZGVyLXRvcC1yaWdodC1yYWRpdXM6IDBweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDJw
+eDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMnB4OyB9CgojdXNlcm5vdGVzIC5ub3RlIC52
+b3RlcyA+IGRpdjpmaXJzdC1jaGlsZCB7IGZsb2F0OiBsZWZ0OyB9CgojdXNlcm5vdGVzIC5ub3Rl
+IC52b3RlcyA+IGRpdiB7IGZsb2F0OiByaWdodDsgfQoKI3VzZXJub3RlcyAubm90ZSAudm90ZXMg
+YSB7IGRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDBweDsgd2lkdGg6IDBweDsgb3ZlcmZsb3cteDog
+aGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IG1hcmdpbi10b3A6IDhweDsgbWFyZ2luLXJpZ2h0
+OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgYm9yZGVyLWxlZnQt
+d2lkdGg6IDhweDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItbGVmdC1jb2xvcjog
+dHJhbnNwYXJlbnQ7IGJvcmRlci1yaWdodC13aWR0aDogOHB4OyBib3JkZXItcmlnaHQtc3R5bGU6
+IHNvbGlkOyBib3JkZXItcmlnaHQtY29sb3I6IHRyYW5zcGFyZW50OyBib3JkZXItYm90dG9tLXdp
+ZHRoOiAwcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IGluaXRpYWw7IGJvcmRlci1ib3R0b20tY29s
+b3I6IGluaXRpYWw7IH0KCiN1c2Vybm90ZXMgLm5vdGUgLnZvdGVzIC51c2Vybm90ZXMtdm90ZXUg
+eyBib3JkZXItYm90dG9tLXdpZHRoOiAxMHB4OyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsg
+Ym9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDE1MywgMTUzLCAxNTMpOyB9CgojdXNlcm5vdGVzIC5u
+b3RlIC52b3RlcyAudXNlcm5vdGVzLXZvdGVkIHsgYm9yZGVyLXRvcC13aWR0aDogMTBweDsgYm9y
+ZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigxNTMsIDE1MywgMTUz
+KTsgfQoKI3VzZXJub3RlcyAubm90ZSAudm90ZXMgLnVzZXJub3Rlcy12b3RldTpob3ZlciwgI3Vz
+ZXJub3RlcyAubm90ZSAudm90ZXMgLnVzZXJub3Rlcy12b3RldTpmb2N1cyB7IGJvcmRlci1ib3R0
+b20td2lkdGg6IDEwcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9t
+LWNvbG9yOiByZ2IoMCwgMTcsIDg1KTsgfQoKI3VzZXJub3RlcyAubm90ZSAudm90ZXMgLnVzZXJu
+b3Rlcy12b3RlZDpob3ZlciwgI3VzZXJub3RlcyAubm90ZSAudm90ZXMgLnVzZXJub3Rlcy12b3Rl
+ZDpmb2N1cyB7IGJvcmRlci10b3Atd2lkdGg6IDEwcHg7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlk
+OyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMCwgMTcsIDg1KTsgfQoKI3VzZXJub3RlcyAubm90ZSAu
+dm90ZXMgLnRhbGx5IHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMC4zcmVtOyBw
+YWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDAuM3JlbTsgfQoKZGwgZGQgeyBtYXJn
+aW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAxLjVyZW07IG1h
+cmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDEuNXJlbTsg
+cGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAxLjVyZW07IH0KCi5waHBjb2RlLCBk
+aXYuY2xhc3NzeW5vcHNpcyB7IHRleHQtYWxpZ246IGxlZnQ7IH0KCmRpdi5jbGFzc3N5bm9wc2lz
+aW5mb19jb21tZW50IHsgbWFyZ2luLXRvcDogMS41cmVtOyB9Cgoud2FybiB7IHBhZGRpbmctdG9w
+OiAwLjc1cmVtOyBwYWRkaW5nLXJpZ2h0OiAxcmVtOyBwYWRkaW5nLWJvdHRvbTogMC43NXJlbTsg
+cGFkZGluZy1sZWZ0OiAxcmVtOyBtYXJnaW4tdG9wOiAxLjVyZW07IG1hcmdpbi1yaWdodDogMHB4
+OyBtYXJnaW4tYm90dG9tOiAxLjVyZW07IG1hcmdpbi1sZWZ0OiAxLjVyZW07IGJvcmRlci10b3At
+d2lkdGg6IDAuMTg3NXJlbTsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29s
+b3I6IGluaXRpYWw7IH0KCnByZS5pbmZvIHsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXIt
+cmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13
+aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBz
+b2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xp
+ZDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IG1hcmdpbi10
+b3A6IDFyZW07IG1hcmdpbi1ib3R0b206IDEuM3JlbTsgbWFyZ2luLWxlZnQ6IDJyZW07IG1hcmdp
+bi1yaWdodDogMC44cmVtOyB9CgojbGFuZ2Zvcm0geyBmbG9hdDogcmlnaHQ7IH0KCiNsYXlvdXQg
+eyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogYXV0bzsgbWFyZ2luLWJvdHRvbTogMS41
+cmVtOyBtYXJnaW4tbGVmdDogYXV0bzsgY2xlYXI6IGJvdGg7IH0KCi5sYXlvdXQtbWVudSB7IHBh
+ZGRpbmctdG9wOiAwLjc1cmVtOyBwYWRkaW5nLXJpZ2h0OiAxLjVyZW07IHBhZGRpbmctYm90dG9t
+OiAxLjVyZW07IHBhZGRpbmctbGVmdDogMS41cmVtOyBib3gtc2l6aW5nOiBib3JkZXItYm94OyB9
+CgojbGF5b3V0LWNvbnRlbnQgeyBwYWRkaW5nLXRvcDogMS41cmVtOyBwYWRkaW5nLXJpZ2h0OiAx
+LjVyZW07IHBhZGRpbmctYm90dG9tOiAxLjVyZW07IHBhZGRpbmctbGVmdDogMS41cmVtOyBib3gt
+c2l6aW5nOiBib3JkZXItYm94OyB9CgojbGF5b3V0LWNvbnRlbnQ6b25seS1jaGlsZCB7IHdpZHRo
+OiAxMDAlOyB9Cgojc2VhcmNoLXJlc3VsdHMgeyBtYXJnaW4tdG9wOiAxMHB4OyBtYXJnaW4tcmln
+aHQ6IDQwcHg7IG1hcmdpbi1ib3R0b206IDEwcHg7IG1hcmdpbi1sZWZ0OiA0MHB4OyB9Cgojc2Vh
+cmNoLXJlc3VsdHMgbGkgeyBwYWRkaW5nLXRvcDogMXJlbTsgcGFkZGluZy1yaWdodDogMHB4OyBw
+YWRkaW5nLWJvdHRvbTogMXJlbTsgcGFkZGluZy1sZWZ0OiAwcHg7IGxpc3Qtc3R5bGUtdHlwZTog
+bm9uZTsgbGlzdC1zdHlsZS1wb3NpdGlvbjogaW5pdGlhbDsgbGlzdC1zdHlsZS1pbWFnZTogaW5p
+dGlhbDsgfQoKI3NlYXJjaC1yZXN1bHRzIGxpIC5yZXN1bHQgeyBmb250LXNpemU6IDEuMjVyZW07
+IH0KCiNyZXN1bHRzX25hdl9saXN0IHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBw
+eDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5nLXRvcDogMXJl
+bTsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMXJlbTsgcGFkZGluZy1sZWZ0
+OiAwcHg7IH0KCiNyZXN1bHRzX25hdl9saXN0IGxpIHsgbGlzdC1zdHlsZS10eXBlOiBub25lOyBs
+aXN0LXN0eWxlLXBvc2l0aW9uOiBpbml0aWFsOyBsaXN0LXN0eWxlLWltYWdlOiBpbml0aWFsOyBk
+aXNwbGF5OiBpbmxpbmUtYmxvY2s7IH0KCiNyZXN1bHRzX25hdl9saXN0IGxpIGEgeyBwYWRkaW5n
+LXRvcDogMC41cmVtOyBwYWRkaW5nLXJpZ2h0OiAwLjY2cmVtOyBwYWRkaW5nLWJvdHRvbTogMC41
+cmVtOyBwYWRkaW5nLWxlZnQ6IDAuNjZyZW07IH0KCiNyZXN1bHRzX25hdl9saXN0IGxpLmN1cnJl
+bnQgeyBmb250LXdlaWdodDogYm9sZGVyOyB9Cgpib2R5ID4gZm9vdGVyIHsgY2xlYXI6IGJvdGg7
+IG92ZXJmbG93LXg6IGF1dG87IG92ZXJmbG93LXk6IGF1dG87IGxpbmUtaGVpZ2h0OiAzcmVtOyB9
+Cgpib2R5ID4gZm9vdGVyIC5mb290ZXItY29udGVudCB7IG1hcmdpbi10b3A6IDEuNXJlbTsgbWFy
+Z2luLXJpZ2h0OiBhdXRvOyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiBhdXRvOyBw
+YWRkaW5nLXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAxLjVyZW07IHBhZGRpbmctYm90dG9tOiAw
+cHg7IHBhZGRpbmctbGVmdDogMS41cmVtOyBib3gtc2l6aW5nOiBib3JkZXItYm94OyB9Cgpib2R5
+ID4gZm9vdGVyIHVsIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2lu
+LWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5nLXRvcDogMHB4OyBwYWRkaW5n
+LXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDogMHB4OyB9Cgpi
+b2R5ID4gZm9vdGVyIC5mb290bWVudSBsaSB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgbWFyZ2lu
+LXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDAuNzVyZW07IG1hcmdpbi1ib3R0b206IDBweDsgbWFy
+Z2luLWxlZnQ6IDAuNzVyZW07IH0KCmJvZHkgPiBmb290ZXIgYSB7IGRpc3BsYXk6IGlubGluZS1i
+bG9jazsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXN0eWxlOiBpbml0
+aWFsOyBib3JkZXItYm90dG9tLWNvbG9yOiBpbml0aWFsOyB9CgpkaXYuZWxlcGhwYW50cyB7IG1h
+cmdpbi10b3A6IGF1dG87IG1hcmdpbi1yaWdodDogYXV0bzsgbWFyZ2luLWJvdHRvbTogYXV0bzsg
+bWFyZ2luLWxlZnQ6IGF1dG87IG92ZXJmbG93LXg6IGhpZGRlbjsgb3ZlcmZsb3cteTogaGlkZGVu
+OyB9CgpkaXYuZWxlcGhwYW50cyBkaXYuaW1hZ2VzIHsgaGVpZ2h0OiA3NXB4OyB0ZXh0LWFsaWdu
+OiBjZW50ZXI7IHdoaXRlLXNwYWNlOiBub3dyYXA7IH0KCmRpdi5lbGVwaHBhbnRzIGltZyB7IHdp
+ZHRoOiA3NXB4OyBoZWlnaHQ6IDc1cHg7IH0KCnRhYmxlIHsgYm9yZGVyLWNvbGxhcHNlOiBjb2xs
+YXBzZTsgLXdlYmtpdC1ib3JkZXItaG9yaXpvbnRhbC1zcGFjaW5nOiAwcHg7IC13ZWJraXQtYm9y
+ZGVyLXZlcnRpY2FsLXNwYWNpbmc6IDBweDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6
+IDBweDsgbWFyZ2luLWJvdHRvbTogMS41cmVtOyBtYXJnaW4tbGVmdDogMHB4OyB9Cgp0YWJsZSB0
+ZCB7IHZlcnRpY2FsLWFsaWduOiB0b3A7IH0KCnRhYmxlLnN0YW5kYXJkIHsgYm9yZGVyLWNvbGxh
+cHNlOiBjb2xsYXBzZTsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItcmlnaHQtd2lkdGg6
+IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13aWR0aDogMXB4OyBi
+b3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsgYm9yZGVy
+LWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9yZGVyLXRv
+cC1jb2xvcjogcmdiKDIxNywgMjE3LCAyMTcpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMTcs
+IDIxNywgMjE3KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIxNywgMjE3LCAyMTcpOyBib3Jk
+ZXItbGVmdC1jb2xvcjogcmdiKDIxNywgMjE3LCAyMTcpOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7
+IH0KCnRhYmxlLnN0YW5kYXJkIHRkLCB0YWJsZS5zdGFuZGFyZCB0aCB7IGJvcmRlci10b3Atd2lk
+dGg6IDFweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFw
+eDsgYm9yZGVyLWxlZnQtd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRl
+ci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXIt
+bGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMTcsIDIxNywgMjE3KTsg
+Ym9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjE3LCAyMTcsIDIxNyk7IGJvcmRlci1ib3R0b20tY29s
+b3I6IHJnYigyMTcsIDIxNywgMjE3KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMTcsIDIxNywg
+MjE3KTsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyB9Cgp0YWJsZS5zdGFuZGFyZCB0cjpudGgtY2hp
+bGQoZXZlbikgdGQgeyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjMwLCAyMzAsIDIzMCk7IH0KCnRh
+YmxlLnN0YW5kYXJkIHRoIHsgZm9udC1zaXplOiAxLjEyNXJlbTsgcGFkZGluZy10b3A6IDIwcHg7
+IHBhZGRpbmctcmlnaHQ6IDEwcHg7IHBhZGRpbmctYm90dG9tOiA1cHg7IHBhZGRpbmctbGVmdDog
+MTBweDsgY29sb3I6IHJnYigxMDIsIDEwMiwgMTAyKTsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgfQoK
+dGFibGUuc3RhbmRhcmQgdGQgeyBwYWRkaW5nLXRvcDogNXB4OyBwYWRkaW5nLXJpZ2h0OiAxMHB4
+OyBwYWRkaW5nLWJvdHRvbTogNXB4OyBwYWRkaW5nLWxlZnQ6IDEwcHg7IHZlcnRpY2FsLWFsaWdu
+OiBtaWRkbGU7IH0KCnRhYmxlLnN0YW5kYXJkIHRyOm50aC1jaGlsZChldmVuKSB0ZC5zdWJyLCB0
+YWJsZS5zdGFuZGFyZCB0cjpudGgtY2hpbGQoZXZlbikgdGguc3ViciwgdGFibGUuc3RhbmRhcmQg
+dHIgdGQuc3ViciwgdGFibGUuc3RhbmRhcmQgdHIgdGguc3ViciwgdGFibGUuc3RhbmRhcmQgdHI6
+bnRoLWNoaWxkKGV2ZW4pIHRkLnN1YiwgdGFibGUuc3RhbmRhcmQgdHI6bnRoLWNoaWxkKGV2ZW4p
+IHRoLnN1YiwgdGFibGUuc3RhbmRhcmQgdHIgdGQuc3ViLCB0YWJsZS5zdGFuZGFyZCB0ciB0aC5z
+dWIgeyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGlu
+aXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRp
+YWw7IGJhY2tncm91bmQtY29sb3I6IHJnYigyMzAsIDIzMCwgMjMwKTsgYmFja2dyb3VuZC1zaXpl
+OiBpbml0aWFsOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91
+bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCnRhYmxlLnN0YW5kYXJkIHRkLnN1YnIsIHRh
+YmxlLnN0YW5kYXJkIHRoLnN1YnIgeyB0ZXh0LWFsaWduOiByaWdodDsgfQoKI2xheW91dCAuY3Nl
+IC5nc2MtY29udHJvbC1jc2UsICNsYXlvdXQgLmdzYy1jb250cm9sLWNzZSwgI2xheW91dCAuZ3Nj
+LWNvbnRyb2wtY3NlIC5nc2MtdGFibGUtcmVzdWx0IHsgZm9udC1mYW1pbHk6ICdGaXJhIFNhbnMn
+LCAnU291cmNlIFNhbnMgUHJvJywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjsgZm9udC1z
+aXplOiAxcmVtOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90
+dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmln
+aHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IHBvc2l0aW9u
+OiByZWxhdGl2ZTsgfQoKI2xheW91dCAuY3NlIGZvcm0uZ3NjLXNlYXJjaC1ib3gsICNsYXlvdXQg
+Zm9ybS5nc2Mtc2VhcmNoLWJveCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7
+IG1hcmdpbi1ib3R0b206IDFyZW07IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7
+IHBhZGRpbmctcmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAw
+cHg7IH0KCiNsYXlvdXQgLmNzZSB0YWJsZS5nc2Mtc2VhcmNoLWJveCwgI2xheW91dCB0YWJsZS5n
+c2Mtc2VhcmNoLWJveCB7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5
+bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6
+IHNvbGlkOyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBi
+b3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10
+b3AtY29sb3I6IHJnYigxNTMsIDE1MywgMjA0KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTUz
+LCAxNTMsIDIwNCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxNTMsIDE1MywgMjA0KTsgYm9y
+ZGVyLWxlZnQtY29sb3I6IHJnYigxNTMsIDE1MywgMjA0KTsgYm9yZGVyLWltYWdlOiBpbml0aWFs
+OyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAycHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAy
+cHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20tbGVmdC1y
+YWRpdXM6IDJweDsgfQoKI2xheW91dCAuY3NlIGlucHV0LmdzYy1pbnB1dCwgI2xheW91dCBpbnB1
+dC5nc2MtaW5wdXQgeyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDog
+MHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJv
+cmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6
+IGluaXRpYWw7IH0KCiNsYXlvdXQgLmNzZSB0YWJsZS5nc2Mtc2VhcmNoLWJveCB0ZCwgI2xheW91
+dCB0YWJsZS5nc2Mtc2VhcmNoLWJveCB0ZCB7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmln
+aHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IH0KCiNsYXlv
+dXQgLmNzZSBpbnB1dC5nc2Mtc2VhcmNoLWJ1dHRvbiwgI2xheW91dCBpbnB1dC5nc2Mtc2VhcmNo
+LWJ1dHRvbiB7IGJhY2tncm91bmQtaW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQtYXR0YWNobWVu
+dDogaW5pdGlhbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDog
+aW5pdGlhbDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE1MywgMTUzLCAyMDQpOyBiYWNrZ3JvdW5k
+LXNpemU6IGluaXRpYWw7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5
+bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6
+IHNvbGlkOyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBi
+b3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10
+b3AtY29sb3I6IHJnYigxNTMsIDE1MywgMjA0KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTUz
+LCAxNTMsIDIwNCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxNTMsIDE1MywgMjA0KTsgYm9y
+ZGVyLWxlZnQtY29sb3I6IHJnYigxNTMsIDE1MywgMjA0KTsgYm9yZGVyLWltYWdlOiBpbml0aWFs
+OyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAwcHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAw
+cHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAwcHg7IGJvcmRlci1ib3R0b20tbGVmdC1y
+YWRpdXM6IDBweDsgY29sb3I6IHJnYigyMzgsIDIzOCwgMjU1KTsgYmFja2dyb3VuZC1wb3NpdGlv
+bjogaW5pdGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVhdDogaW5pdGlhbCBpbml0aWFsOyB9
+CgojbGF5b3V0IC5jc2UgaW5wdXQuZ3NjLXNlYXJjaC1idXR0b246aG92ZXIsICNsYXlvdXQgaW5w
+dXQuZ3NjLXNlYXJjaC1idXR0b246aG92ZXIgeyBjb2xvcjogd2hpdGU7IH0KCiNsYXlvdXQgLmNz
+ZSAuZ3NjLWNsZWFyLWJ1dHRvbiwgI2xheW91dCAuZ3NjLWNsZWFyLWJ1dHRvbiB7IGRpc3BsYXk6
+IG5vbmU7IH0KCiNsYXlvdXQgLmNzZSBkaXYuZ3NjLXJlc3VsdHMtd3JhcHBlci12aXNpYmxlLCAj
+bGF5b3V0IGRpdi5nc2MtcmVzdWx0cy13cmFwcGVyLXZpc2libGUgeyBwb3NpdGlvbjogcmVsYXRp
+dmU7IG1pbi1oZWlnaHQ6IDExcmVtOyB9CgojbGF5b3V0IC5jc2UgLmdzYy10YWJzQXJlYSwgI2xh
+eW91dCAuZ3NjLXRhYnNBcmVhIHsgcG9zaXRpb246IGFic29sdXRlOyB0b3A6IDBweDsgbGVmdDog
+MHB4OyB3aWR0aDogMjMuNDA0JTsgbWFyZ2luLXJpZ2h0OiAyLjc2MiU7IHBhZGRpbmctdG9wOiAw
+LjVyZW07IHBhZGRpbmctcmlnaHQ6IDAuNzVyZW07IHBhZGRpbmctYm90dG9tOiAwLjVyZW07IHBh
+ZGRpbmctbGVmdDogMC43NXJlbTsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXItcmlnaHQt
+d2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXItbGVmdC13aWR0aDog
+MXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDsg
+Ym9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxlOiBzb2xpZDsgYm9y
+ZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQtY29s
+b3I6IHJnYigyNDIsIDI0MiwgMjQyKTsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIyNCwgMjI0LCAy
+MjQpOyBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMjQsIDIyNCwgMjI0KTsgYm9yZGVyLWxlZnQt
+Y29sb3I6IHJnYigyMjQsIDIyNCwgMjI0KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIxNywg
+MjE3LCAyMTcpOyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAycHg7IGJvcmRlci10b3AtcmlnaHQt
+cmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0
+b20tbGVmdC1yYWRpdXM6IDJweDsgbWFyZ2luLXRvcDogMHB4OyBib3gtc2l6aW5nOiBib3JkZXIt
+Ym94OyB9CgojbGF5b3V0IC5jc2UgLmdzYy10YWJIZWFkZXIuZ3NjLXRhYmhBY3RpdmUsICNsYXlv
+dXQgLmdzYy10YWJIZWFkZXIuZ3NjLXRhYmhBY3RpdmUsICNsYXlvdXQgLmNzZSAuZ3NjLXRhYkhl
+YWRlci5nc2MtdGFiaEluYWN0aXZlLCAjbGF5b3V0IC5nc2MtdGFiSGVhZGVyLmdzYy10YWJoSW5h
+Y3RpdmUgeyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6
+IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGlu
+aXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyBiYWNrZ3JvdW5kLXNpemU6IGlu
+aXRpYWw7IGNvbG9yOiByZ2IoMzgsIDM4LCAzOCk7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBi
+b3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJvcmRlci1z
+dHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRp
+YWw7IGRpc3BsYXk6IGJsb2NrOyBmb250LXNpemU6IDEwMCU7IGZvbnQtd2VpZ2h0OiBub3JtYWw7
+IGJvcmRlci10b3Atc3R5bGU6IGRvdHRlZDsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBib3JkZXIt
+dG9wLWNvbG9yOiByZ2IoMTg5LCAxODksIDE4OSk7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmct
+cmlnaHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IGJhY2tn
+cm91bmQtcG9zaXRpb246IGluaXRpYWwgaW5pdGlhbDsgYmFja2dyb3VuZC1yZXBlYXQ6IGluaXRp
+YWwgaW5pdGlhbDsgfQoKI2xheW91dCAuY3NlIC5nc2MtdGFiSGVhZGVyLmdzYy10YWJoQWN0aXZl
+OmZpcnN0LWNoaWxkLCAjbGF5b3V0IC5nc2MtdGFiSGVhZGVyLmdzYy10YWJoQWN0aXZlOmZpcnN0
+LWNoaWxkLCAjbGF5b3V0IC5jc2UgLmdzYy10YWJIZWFkZXIuZ3NjLXRhYmhJbmFjdGl2ZTpmaXJz
+dC1jaGlsZCwgI2xheW91dCAuZ3NjLXRhYkhlYWRlci5nc2MtdGFiaEluYWN0aXZlOmZpcnN0LWNo
+aWxkIHsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9y
+ZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5
+bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFs
+OyB9CgojbGF5b3V0IC5jc2UgLmdzYy10YWJIZWFkZXIuZ3NjLXRhYmhBY3RpdmUsICNsYXlvdXQg
+LmdzYy10YWJIZWFkZXIuZ3NjLXRhYmhBY3RpdmUgeyBjb2xvcjogYmxhY2s7IH0KCiNsYXlvdXQg
+LmNzZSAuZ3NjLXRhYkhlYWRlci5nc2MtdGFiaEFjdGl2ZTo6YWZ0ZXIsICNsYXlvdXQgLmdzYy10
+YWJIZWFkZXIuZ3NjLXRhYmhBY3RpdmU6OmFmdGVyIHsgY29udGVudDogwrs7IGNvbG9yOiBibGFj
+azsgZmxvYXQ6IHJpZ2h0OyB0ZXh0LWFsaWduOiByaWdodDsgfQoKI2xheW91dCAuY3NlIC5nc2Mt
+dGFiSGVhZGVyLmdzYy10YWJoSW5hY3RpdmU6aG92ZXIsICNsYXlvdXQgLmdzYy10YWJIZWFkZXIu
+Z3NjLXRhYmhJbmFjdGl2ZTpob3ZlciB7IGNvbG9yOiByZ2IoMTAyLCAxNTMsIDUxKTsgfQoKI2xh
+eW91dCAuY3NlIC5nc2MtYWJvdmUtd3JhcHBlci1hcmVhLCAjbGF5b3V0IC5nc2MtYWJvdmUtd3Jh
+cHBlci1hcmVhIHsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBw
+eDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3Jk
+ZXItc3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBp
+bml0aWFsOyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9t
+OiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6
+IDBweDsgcGFkZGluZy1ib3R0b206IDFyZW07IHBhZGRpbmctbGVmdDogMjYuMTY2JTsgd2lkdGg6
+IDczLjgzNCU7IH0KCiNsYXlvdXQgLmNzZSAuZ3NjLWFib3ZlLXdyYXBwZXItYXJlYS1jb250YWlu
+ZXIsICNsYXlvdXQgLmdzYy1hYm92ZS13cmFwcGVyLWFyZWEtY29udGFpbmVyIHsgd2lkdGg6IGF1
+dG87IH0KCiNsYXlvdXQgLmNzZSAuZ3NjLXJlc3VsdC1pbmZvLWNvbnRhaW5lciwgI2xheW91dCAu
+Z3NjLXJlc3VsdC1pbmZvLWNvbnRhaW5lciB7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmln
+aHQ6IDBweDsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAwcHg7IG1hcmdpbi10
+b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxl
+ZnQ6IDBweDsgfQoKI2xheW91dCAuY3NlIC5nc2MtcmVzdWx0LWluZm8sICNsYXlvdXQgLmdzYy1y
+ZXN1bHQtaW5mbyB7IGNvbG9yOiByZ2IoNTEsIDUxLCA1MSk7IGZvbnQtc2l6ZTogMC43NXJlbTsg
+cGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4
+OyBwYWRkaW5nLWxlZnQ6IDBweDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsg
+bWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9CgojbGF5b3V0IC5jc2UgLmdz
+Yy1yZXN1bHRzLCAjbGF5b3V0IC5nc2MtcmVzdWx0cyB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2lu
+LXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGlu
+Zy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRk
+aW5nLWxlZnQ6IDI2LjE2NiU7IHdpZHRoOiA3My44MzQlOyB9CgojbGF5b3V0IC5jc2UgLmdzYy1y
+ZXN1bHRzSGVhZGVyLCAjbGF5b3V0IC5nc2MtcmVzdWx0c0hlYWRlciB7IGRpc3BsYXk6IG5vbmU7
+IH0KCiNsYXlvdXQgLmNzZSAuZ3NjLXdlYlJlc3VsdC5nc2MtcmVzdWx0LCAjbGF5b3V0IC5nc2Mt
+d2ViUmVzdWx0LmdzYy1yZXN1bHQgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4
+OyBtYXJnaW4tYm90dG9tOiAxcmVtOyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5nLXRvcDogMHB4
+OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRpbmctbGVmdDog
+MHB4OyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBib3Jk
+ZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJvcmRlci1zdHls
+ZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7
+IH0KCiNsYXlvdXQgLmNzZSAuZ3Mtd2ViUmVzdWx0LmdzLXJlc3VsdCBhLCAjbGF5b3V0IC5ncy13
+ZWJSZXN1bHQuZ3MtcmVzdWx0IGEsICNsYXlvdXQgLmNzZSAuZ3Mtd2ViUmVzdWx0LmdzLXJlc3Vs
+dCBhIGIsICNsYXlvdXQgLmdzLXdlYlJlc3VsdC5ncy1yZXN1bHQgYSBiIHsgYm9yZGVyLWJvdHRv
+bS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1j
+b2xvcjogcmdiKDUxLCAxMDIsIDE1Myk7IGNvbG9yOiByZ2IoNTEsIDEwMiwgMTUzKTsgdGV4dC1k
+ZWNvcmF0aW9uOiBub25lOyB9CgojbGF5b3V0IC5jc2UgLmdzLXdlYlJlc3VsdC5ncy1yZXN1bHQg
+YTpmb2N1cywgI2xheW91dCAuZ3Mtd2ViUmVzdWx0LmdzLXJlc3VsdCBhOmZvY3VzLCAjbGF5b3V0
+IC5jc2UgLmdzLXdlYlJlc3VsdC5ncy1yZXN1bHQgYTpob3ZlciwgI2xheW91dCAuZ3Mtd2ViUmVz
+dWx0LmdzLXJlc3VsdCBhOmhvdmVyLCAjbGF5b3V0IC5jc2UgLmdzLXdlYlJlc3VsdC5ncy1yZXN1
+bHQgYTpmb2N1cyBiLCAjbGF5b3V0IC5ncy13ZWJSZXN1bHQuZ3MtcmVzdWx0IGE6Zm9jdXMgYiwg
+I2xheW91dCAuY3NlIC5ncy13ZWJSZXN1bHQuZ3MtcmVzdWx0IGE6aG92ZXIgYiwgI2xheW91dCAu
+Z3Mtd2ViUmVzdWx0LmdzLXJlc3VsdCBhOmhvdmVyIGIgeyBib3JkZXItYm90dG9tLWNvbG9yOiBy
+Z2IoNTEsIDEwMiwgMTUzKTsgY29sb3I6IHJnYigxMDIsIDE1MywgNTEpOyB9CgojbGF5b3V0IC5n
+cy13ZWJSZXN1bHQuZ3MtcmVzdWx0IC5ncy12aXNpYmxlVXJsIHsgZm9udC13ZWlnaHQ6IG5vcm1h
+bDsgfQoKI2xheW91dCAuZ3Mtbm8tcmVzdWx0cy1yZXN1bHQgLmdzLXNuaXBwZXQgeyBib3JkZXIt
+dG9wLXdpZHRoOiAwcHg7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdp
+ZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJvcmRlci1zdHlsZTogaW5pdGlhbDsg
+Ym9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQt
+aW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dyb3Vu
+ZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3VuZC1j
+b2xvcjogdHJhbnNwYXJlbnQ7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlhbDsgYmFja2dyb3VuZC1w
+b3NpdGlvbjogaW5pdGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVhdDogaW5pdGlhbCBpbml0
+aWFsOyB9CgouZG9jcyAjY3NlIHRoLCAuZG9jcyAjY3NlIHRkIHsgcGFkZGluZy10b3A6IDBweDsg
+cGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBw
+eDsgfQoKZGl2LmluZm9ybWFsZXhhbXBsZSB7IG1hcmdpbi10b3A6IDAuNzVyZW07IG1hcmdpbi1y
+aWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwLjc1cmVtOyBtYXJnaW4tbGVmdDogMHB4OyB9Cgpz
+dHJvbmcsIGVtIHsgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplbGVnaWJpbGl0eTsgfQoKZW0geyBm
+b250LXdlaWdodDogbm9ybWFsOyBmb250LXN0eWxlOiBpdGFsaWM7IH0KCnN0cm9uZyB7IGZvbnQt
+d2VpZ2h0OiBib2xkZXI7IGZvbnQtc3R5bGU6IG5vcm1hbDsgfQoKYXJ0aWNsZSBzdHJvbmcsICNs
+YXlvdXQtY29udGVudCBvbCBzdHJvbmcsICNsYXlvdXQtY29udGVudCB1bCBzdHJvbmcsICNsYXlv
+dXQtY29udGVudCBwIHN0cm9uZyB7IGZvbnQtd2VpZ2h0OiA1MDA7IH0KCi5yZWZzZWN0MSBjb2Rl
+LnBhcmFtZXRlciwgc3Ryb25nIGNvZGUsIHN0cm9uZyBwcmUsIHByZSBzdHJvbmcgeyBmb250LXdl
+aWdodDogNzAwOyB9CgojdG9Ub3AgeyBkaXNwbGF5OiBub25lOyB0ZXh0LWRlY29yYXRpb246IG5v
+bmU7IHBvc2l0aW9uOiBmaXhlZDsgYm90dG9tOiAwLjc1cmVtOyByaWdodDogMC43NXJlbTsgb3Zl
+cmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IHdpZHRoOiA0M3B4OyBoZWlnaHQ6
+IDQzcHg7IGJvcmRlci10b3Atc3R5bGU6IG5vbmU7IGJvcmRlci1yaWdodC1zdHlsZTogbm9uZTsg
+Ym9yZGVyLWJvdHRvbS1zdHlsZTogbm9uZTsgYm9yZGVyLWxlZnQtc3R5bGU6IG5vbmU7IGJvcmRl
+ci13aWR0aDogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGlu
+aXRpYWw7IHotaW5kZXg6IDEwMDsgfQoKI3RvVG9wSG92ZXIgeyBkaXNwbGF5OiBibG9jazsgb3Zl
+cmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IGZsb2F0OiBsZWZ0OyB9CgojdG9U
+b3A6YWN0aXZlLCAjdG9Ub3A6Zm9jdXMgeyBvdXRsaW5lLXN0eWxlOiBub25lOyBvdXRsaW5lLXdp
+ZHRoOiBpbml0aWFsOyBvdXRsaW5lLWNvbG9yOiBpbml0aWFsOyB9CgpmaWVsZHNldCB7IG1hcmdp
+bi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2lu
+LWxlZnQ6IDBweDsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5n
+LWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDBweDsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBi
+b3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXIt
+bGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5p
+dGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyB9CgoubmF2YmFyIHVsIHsgbGlzdC1zdHlsZS10
+eXBlOiBub25lOyBsaXN0LXN0eWxlLXBvc2l0aW9uOiBpbml0aWFsOyBsaXN0LXN0eWxlLWltYWdl
+OiBpbml0aWFsOyB9CgoubmF2YmFyIGEgeyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IH0KCi50d2l0
+dGVyLXR5cGVhaGVhZCB7IHdpZHRoOiAxMDAlOyB9CgoubmF2YmFyIC5uYXZiYXItc2VhcmNoIC50
+dC1oaW50LnNlYXJjaC1xdWVyeSB7IGNvbG9yOiBzaWx2ZXI7IH0KCi5zZWFyY2gtcXVlcnkgeyB6
+LWluZGV4OiAyICFpbXBvcnRhbnQ7IH0KCi50dC1kcm9wZG93bi1tZW51IHsgYmFja2dyb3VuZC1p
+bWFnZTogbm9uZTsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBzY3JvbGw7IGJhY2tncm91bmQtb3Jp
+Z2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6
+IHJnYigyMjYsIDIyOCwgMjM5KTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBib3JkZXItYm90
+dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9t
+LWNvbG9yOiByZ2IoMTk2LCAyMDEsIDIyMyk7IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDBweDsg
+Ym9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDBweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6
+IDJweDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMnB4OyBib3gtc2hhZG93OiByZ2IoMTk2
+LCAyMDEsIDIyMykgMXB4IDBweCAxcHggLTFweCBpbnNldCwgcmdiKDE5NiwgMjAxLCAyMjMpIC0x
+cHggMHB4IDFweCAtMXB4IGluc2V0LCByZ2IoNzksIDkxLCAxNDcpIDBweCAwcHggMXB4OyBjb2xv
+cjogcmdiKDUxLCA1MSwgNTEpOyBwYWRkaW5nLXRvcDogM3B4OyBtYXJnaW4tdG9wOiAtM3B4OyBt
+aW4td2lkdGg6IDEwMCU7IGJhY2tncm91bmQtcG9zaXRpb246IDBweCAwcHg7IGJhY2tncm91bmQt
+cmVwZWF0OiByZXBlYXQgcmVwZWF0OyB9CgoudHQtZHJvcGRvd24tbWVudSAucmVzdWx0LWhlYWRp
+bmcgeyBmb250LXNpemU6IDEuMXJlbTsgYm9yZGVyLWJvdHRvbS13aWR0aDogMnB4OyBib3JkZXIt
+Ym90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDc5LCA5MSwgMTQ3
+KTsgY29sb3I6IHJnYigyMjYsIDIyOCwgMjM5KTsgdGV4dC1zaGFkb3c6IHJnYmEoMCwgMCwgMCwg
+MC4yNDYwOTQpIDBweCAtMXB4IDBweDsgd29yZC1zcGFjaW5nOiA2cHg7IG1hcmdpbi10b3A6IDBw
+eDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBw
+eDsgcGFkZGluZy10b3A6IDAuMXJlbTsgcGFkZGluZy1yaWdodDogMC4zcmVtOyBwYWRkaW5nLWJv
+dHRvbTogMC4xcmVtOyBwYWRkaW5nLWxlZnQ6IDAuM3JlbTsgbGluZS1oZWlnaHQ6IDIuNXJlbTsg
+YmFja2dyb3VuZC1jb2xvcjogcmdiKDEzNiwgMTQ2LCAxOTEpOyB9CgoudHQtZHJvcGRvd24tbWVu
+dSAucmVzdWx0LWhlYWRpbmcgLmNvbGxhcHNpYmxlIHsgYmFja2dyb3VuZC1pbWFnZTogdXJsKGh0
+dHA6Ly9waHAubmV0L2ltYWdlcy9zZWFyY2gtc3ByaXRlcy5wbmcpOyBiYWNrZ3JvdW5kLWF0dGFj
+aG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNs
+aXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IGluaXRpYWw7IGJhY2tncm91bmQtc2l6ZTog
+aW5pdGlhbDsgd2lkdGg6IDMwcHg7IGhlaWdodDogMTNweDsgZGlzcGxheTogaW5saW5lLWJsb2Nr
+OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwcHggLTE1cHg7IGJhY2tncm91bmQtcmVwZWF0OiBuby1y
+ZXBlYXQgbm8tcmVwZWF0OyB9CgoudHQtZHJvcGRvd24tbWVudSAucmVzdWx0LWhlYWRpbmcgLmNv
+bGxhcHNpYmxlOmhvdmVyIHsgY3Vyc29yOiBwb2ludGVyOyB9CgoudHQtZHJvcGRvd24tbWVudSAu
+cmVzdWx0LWhlYWRpbmcgLmNvbGxhcHNpYmxlLmNsb3NlZCB7IGJhY2tncm91bmQtcG9zaXRpb246
+IDBweCAtMnB4OyB9CgoudHQtZHJvcGRvd24tbWVudSAucmVzdWx0LWhlYWRpbmc6OmFmdGVyIHsg
+Ym9yZGVyLWJvdHRvbS1zdHlsZTogbm9uZTsgYm9yZGVyLWJvdHRvbS13aWR0aDogaW5pdGlhbDsg
+Ym9yZGVyLWJvdHRvbS1jb2xvcjogaW5pdGlhbDsgfQoKLnR0LWRyb3Bkb3duLW1lbnUgLnJlc3Vs
+dC1jb3VudCB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgZmxvYXQ6IHJpZ2h0OyBvcGFjaXR5OiAw
+LjY7IHRleHQtYWxpZ246IHJpZ2h0OyB9CgoudHQtc3VnZ2VzdGlvbnMgeyBjb2xvcjogcmdiKDg1
+LCA4NSwgODUpOyBvdmVyZmxvdy15OiBhdXRvOyBvdmVyZmxvdy14OiBoaWRkZW47IG1heC1oZWln
+aHQ6IDIxMHB4OyB9CgoudHQtZHJvcGRvd24tbWVudSAuc2VhcmNoIHsgYm9yZGVyLXRvcC1zdHls
+ZTogbm9uZTsgYm9yZGVyLXJpZ2h0LXN0eWxlOiBub25lOyBib3JkZXItYm90dG9tLXN0eWxlOiBu
+b25lOyBib3JkZXItbGVmdC1zdHlsZTogbm9uZTsgYm9yZGVyLXdpZHRoOiBpbml0aWFsOyBib3Jk
+ZXItY29sb3I6IGluaXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgY29sb3I6IHdoaXRlOyBk
+aXNwbGF5OiBibG9jazsgcGFkZGluZy10b3A6IDAuM3JlbTsgcGFkZGluZy1yaWdodDogMC4zcmVt
+OyBwYWRkaW5nLWJvdHRvbTogMC4zcmVtOyBwYWRkaW5nLWxlZnQ6IDAuM3JlbTsgYmFja2dyb3Vu
+ZC1pbWFnZTogaW5pdGlhbDsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBiYWNrZ3Jv
+dW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5k
+LWNvbG9yOiByZ2IoMTM2LCAxNDYsIDE5MSk7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlhbDsgYmFj
+a2dyb3VuZC1wb3NpdGlvbjogaW5pdGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVhdDogaW5p
+dGlhbCBpbml0aWFsOyB9CgoudHQtc3VnZ2VzdGlvbiB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2lu
+LXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgcGFkZGlu
+Zy10b3A6IDNweDsgcGFkZGluZy1yaWdodDogM3B4OyBwYWRkaW5nLWJvdHRvbTogM3B4OyBwYWRk
+aW5nLWxlZnQ6IDNweDsgYmFja2dyb3VuZC1pbWFnZTogaW5pdGlhbDsgYmFja2dyb3VuZC1hdHRh
+Y2htZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1j
+bGlwOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI2LCAyMjgsIDIzOSk7IGJhY2tn
+cm91bmQtc2l6ZTogaW5pdGlhbDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXItYm90
+dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDc5LCA5MSwgMTQ3KTsg
+YmFja2dyb3VuZC1wb3NpdGlvbjogaW5pdGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVhdDog
+aW5pdGlhbCBpbml0aWFsOyB9CgoudHQtc3VnZ2VzdGlvbiBoNCB7IGNvbG9yOiByZ2IoNTEsIDUx
+LCA1MSk7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206
+IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBo
+aWRkZW47IHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzOyBmb250LXNpemU6IDExcHQ7IGxpbmUtaGVp
+Z2h0OiAycmVtOyBmb250LXdlaWdodDogbm9ybWFsOyB9CgoudHQtc3VnZ2VzdGlvbiAuZGVzY3Jp
+cHRpb24geyBkaXNwbGF5OiBibG9jazsgZm9udC1zaXplOiAwLjc1cmVtOyBsaW5lLWhlaWdodDog
+MXJlbTsgb3ZlcmZsb3cteDogaGlkZGVuOyBvdmVyZmxvdy15OiBoaWRkZW47IHRleHQtb3ZlcmZs
+b3c6IGVsbGlwc2lzOyB9CgoudHQtc3VnZ2VzdGlvbi50dC1pcy11bmRlci1jdXJzb3IgeyBiYWNr
+Z3JvdW5kLWNvbG9yOiByZ2IoNzksIDkxLCAxNDcpOyB9CgoudHQtc3VnZ2VzdGlvbi50dC1pcy11
+bmRlci1jdXJzb3IgaDQgeyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyB9CgoudHQtc3VnZ2Vz
+dGlvbi50dC1pcy11bmRlci1jdXJzb3IgLmRlc2NyaXB0aW9uIHsgY29sb3I6IHJnYigyNTUsIDI1
+NSwgMjU1KTsgfQoKQG1lZGlhIHNjcmVlbiBhbmQgKG1heC1oZWlnaHQ6IDQ4MHB4KSB7IAogIC50
+dC1zdWdnZXN0aW9uIC5kZXNjcmlwdGlvbiB7IGRpc3BsYXk6IG5vbmU7IH0KfQoKQG1lZGlhIHNj
+cmVlbiBhbmQgKG1heC1oZWlnaHQ6IDQwMHB4KSB7IAogIC50dC1kYXRhc2V0LTEgeyBkaXNwbGF5
+OiBub25lICFpbXBvcnRhbnQ7IH0KfQoKLmRvd25sb2FkcyAuY29udGVudC1ib3ggeyBtYXJnaW4t
+dG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAyLjI1cmVtOyBtYXJn
+aW4tbGVmdDogMHB4OyB9CgouY29udGVudC1oZWFkZXIgLnJlbGVhc2Utc3RhdGUgeyBmbG9hdDog
+cmlnaHQ7IG9wYWNpdHk6IDAuODsgfQoKLmNvbnRlbnQtaGVhZGVyIC5jaGFuZ2Vsb2cgeyBjb2xv
+cjogcmdiKDUxLCAxMDIsIDE1Myk7IH0KCi5jb250ZW50LWJveCAubWQ1c3VtLCAuY29udGVudC1i
+b3ggLnNoYTI1NiB7IGRpc3BsYXk6IGJsb2NrOyBmb250LWZhbWlseTogJ0ZpcmEgTW9ubycsICdT
+b3VyY2UgQ29kZSBQcm8nLCBtb25vc3BhY2U7IGZvbnQtc2l6ZTogMC44NzVyZW07IGZvbnQtc3R5
+bGU6IG5vcm1hbDsgZm9udC12YXJpYW50OiBub3JtYWw7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGxp
+bmUtaGVpZ2h0OiAxLjVyZW07IH0KCi5jb250ZW50LWJveCAubWQ1c3VtOjpiZWZvcmUgeyBjb250
+ZW50OiAnbWQ1OiAnOyBmb250LWZhbWlseTogJ0ZpcmEgU2FucycsICdTb3VyY2UgU2FucyBQcm8n
+LCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmOyB9CgouY29udGVudC1ib3ggLnNoYTI1Njo6
+YmVmb3JlIHsgY29udGVudDogJ3NoYTI1NjogJzsgZm9udC1mYW1pbHk6ICdGaXJhIFNhbnMnLCAn
+U291cmNlIFNhbnMgUHJvJywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjsgfQoKLmNvbnRl
+bnQtYm94IC5yZWxlYXNlZGF0ZSB7IGZsb2F0OiByaWdodDsgZm9udC1zaXplOiAwLjlyZW07IH0K
+Ci5jb250ZW50LWJveCBwcmUgeyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5k
+LWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3Jv
+dW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHdoaXRlOyBiYWNrZ3JvdW5kLXNp
+emU6IGluaXRpYWw7IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6
+IHNvbGlkOyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNv
+bGlkOyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBib3Jk
+ZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10b3At
+Y29sb3I6IHJnYigyMTQsIDIxNCwgMjE0KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMjE0LCAy
+MTQsIDIxNCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigyMTQsIDIxNCwgMjE0KTsgYm9yZGVy
+LWxlZnQtY29sb3I6IHJnYigyMTQsIDIxNCwgMjE0KTsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBt
+YXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1h
+cmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwLjc1cmVtOyBwYWRkaW5nLXJpZ2h0OiAwLjc1
+cmVtOyBwYWRkaW5nLWJvdHRvbTogMC43NXJlbTsgcGFkZGluZy1sZWZ0OiAwLjc1cmVtOyBvdmVy
+Zmxvdy14OiBhdXRvOyBvdmVyZmxvdy15OiBhdXRvOyBmb250LWZhbWlseTogJ1NvdXJjZSBDb2Rl
+IFBybycsIG1vbm9zcGFjZTsgZm9udC1zaXplOiAwLjg3NXJlbTsgZm9udC1zdHlsZTogbm9ybWFs
+OyBmb250LXZhcmlhbnQ6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgbGluZS1oZWlnaHQ6
+IDEuNXJlbTsgYmFja2dyb3VuZC1wb3NpdGlvbjogaW5pdGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5k
+LXJlcGVhdDogaW5pdGlhbCBpbml0aWFsOyB9CgouY29udGVudC1ib3ggcHJlLnNtYWxsIHsgcGFk
+ZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMHB4OyBwYWRkaW5nLWJvdHRvbTogMHB4OyBw
+YWRkaW5nLWxlZnQ6IDBweDsgfQoKQG1lZGlhIChtYXgtd2lkdGg6IDQ2NXB4KSB7IAogIC5jb250
+ZW50LWJveCBoMyAucmVsZWFzZS1zdGF0ZSB7IGRpc3BsYXk6IG5vbmU7IH0KfQoKLnRpdGxlIHsg
+cG9zaXRpb246IHJlbGF0aXZlOyBjbGVhcjogYm90aDsgfQoKaGVhZGVyLnRpdGxlIHsgbWFyZ2lu
+LWJvdHRvbTogMS41cmVtOyB9CgoudGl0bGUgYSB7IGJvcmRlci10b3Atd2lkdGg6IDBweDsgYm9y
+ZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDBweDsgYm9yZGVyLWxl
+ZnQtd2lkdGg6IDBweDsgYm9yZGVyLXN0eWxlOiBpbml0aWFsOyBib3JkZXItY29sb3I6IGluaXRp
+YWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgfQoKLmNvdW50cnkgeyBwb3NpdGlvbjogcmVsYXRp
+dmU7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDEycHg7IHBhZGRpbmctYm90dG9t
+OiAwcHg7IHBhZGRpbmctbGVmdDogMTJweDsgfQoKLmNvdW50cnkgLmNvdW50cnl0aXRsZSB7IG1h
+cmdpbi1sZWZ0OiAtMTJweDsgbWFyZ2luLXJpZ2h0OiAtMTJweDsgfQoKLmNvdW50cnkgLnRpdGxl
+IGltZyB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgcmlnaHQ6IDEycHg7IH0KCi5yZWZlbnRyeSAucmVm
+c2VjdDEgeyBtYXJnaW4tYm90dG9tOiAzcmVtOyB9CgoucmVmc2VjdDEgLnBhcmFtZXRlciB7IGN1
+cnNvcjogcG9pbnRlcjsgfQoKLnJlZnNlY3QxIGR0IHsgaGVpZ2h0OiAxLjVyZW07IH0KCi5kb2Nz
+IGNvZGUucGFyYW1ldGVyIHsgZm9udC1zaXplOiAxcmVtOyB9CgouZG9jcyAuY2xhc3NzeW5vcHNp
+cyBjb2RlLnBhcmFtZXRlciB7IGZvbnQtc2l6ZTogMC44NzVyZW07IH0KCi5kb2NzIC5tZXRob2Ru
+YW1lIHN0cm9uZyB7IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgfQoK
+LmNlbnRlciB7IHRleHQtYWxpZ246IGNlbnRlcjsgfQoKZGl2LnRpcCwgZGl2Lndhcm5pbmcsIGRp
+di5jYXV0aW9uLCBibG9ja3F1b3RlLm5vdGUgeyBwYWRkaW5nLXRvcDogMC43NXJlbTsgcGFkZGlu
+Zy1yaWdodDogMC43NXJlbTsgcGFkZGluZy1ib3R0b206IDAuNzVyZW07IHBhZGRpbmctbGVmdDog
+MC43NXJlbTsgbWFyZ2luLXRvcDogMS41cmVtOyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJv
+dHRvbTogMS41cmVtOyBtYXJnaW4tbGVmdDogMHB4OyBvdmVyZmxvdy14OiBoaWRkZW47IG92ZXJm
+bG93LXk6IGhpZGRlbjsgfQoKYmxvY2txdW90ZS5ub3RlIHN0cm9uZy5ub3RlIHsgZm9udC1zaXpl
+OiAxLjEyNXJlbTsgfQoKZGl2LnRpcCBzdHJvbmcudGlwLCBkaXYud2FybmluZyBzdHJvbmcud2Fy
+bmluZywgZGl2LmNhdXRpb24gc3Ryb25nLmNhdXRpb24geyBmbG9hdDogbGVmdDsgbWFyZ2luLXJp
+Z2h0OiAwLjVyZW07IGZvbnQtc2l6ZTogMS4xMjVyZW07IH0KCmJsb2NrcXVvdGUubm90ZSBwLCBk
+aXYuY2F1dGlvbiBwLCBkaXYud2FybmluZyBwLCBkaXYudGlwIHAgeyBtYXJnaW4tdG9wOiAxLjVy
+ZW07IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAw
+cHg7IH0KCmJsb2NrcXVvdGUubm90ZSA6Zmlyc3QtY2hpbGQgKyBwLCBkaXYuY2F1dGlvbiA6Zmly
+c3QtY2hpbGQgKyBwLCBkaXYud2FybmluZyA6Zmlyc3QtY2hpbGQgKyBwLCBkaXYudGlwIDpmaXJz
+dC1jaGlsZCArIHAsIGJsb2NrcXVvdGUubm90ZSBwOmZpcnN0LWNoaWxkLCBkaXYuY2F1dGlvbiBw
+OmZpcnN0LWNoaWxkLCBkaXYud2FybmluZyBwOmZpcnN0LWNoaWxkLCBkaXYudGlwIHA6Zmlyc3Qt
+Y2hpbGQgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9t
+OiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCi5yZWZzZWN0MSAuZGMtZGVzY3JpcHRpb24sIC5y
+ZWZzZWN0MSAuZGMtZGVzY3JpcHRpb24gY29kZSwgLmRvY3MgLnNlY3QxIC5kYy1kZXNjcmlwdGlv
+biwgLmRvY3MgLnNlY3QxIC5kYy1kZXNjcmlwdGlvbiBjb2RlIHsgZm9udC13ZWlnaHQ6IDQwMDsg
+Zm9udC1zaXplOiAxcmVtOyBmb250LWZhbWlseTogJ0ZpcmEgTW9ubycsICdTb3VyY2UgQ29kZSBQ
+cm8nLCBtb25vc3BhY2U7IGxldHRlci1zcGFjaW5nOiAtMC4wNjI1cmVtOyB3b3JkLXNwYWNpbmc6
+IC0wLjEyNXJlbTsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJv
+dHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyB9CgouZG9jcyAucmVmZW50cnkgLnBhcmFtZXRl
+cnMgZGwgeyBtYXJnaW4tYm90dG9tOiAwcHg7IH0KCi5kb2NzIC5leGFtcGxlIHsgbWFyZ2luLXRv
+cDogMS41cmVtOyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMS41cmVtOyBtYXJn
+aW4tbGVmdDogMHB4OyB9CgouZG9jcyAuZXhhbXBsZS1jb250ZW50cyB7IG1hcmdpbi1ib3R0b206
+IDEuNXJlbTsgfQoKLmRvY3MgLmV4YW1wbGUtY29udGVudHMgcHJlIHsgbWFyZ2luLXRvcDogMHB4
+OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4
+OyB9CgouZG9jcyAuZXhhbXBsZS1jb250ZW50cyA+IFtjbGFzcyQ9ImNvZGUiXSwgLmRvY3MgLmV4
+YW1wbGUtY29udGVudHMuc2NyZWVuLCAuaW5mb3JtYWxleGFtcGxlIC5saXRlcmFsbGF5b3V0IHsg
+cGFkZGluZy10b3A6IDAuNzVyZW07IHBhZGRpbmctcmlnaHQ6IDAuNzVyZW07IHBhZGRpbmctYm90
+dG9tOiAwLjc1cmVtOyBwYWRkaW5nLWxlZnQ6IDAuNzVyZW07IH0KCi5kb2NzIC5jbGFzc3N5bm9w
+c2lzLCAucmVmc2VjdDEgLmZpZWxkc3lub3BzaXMsIC5yZWZzZWN0MSAuZGMtZGVzY3JpcHRpb24s
+IC5kb2NzIC5zZWN0MSAuZGMtZGVzY3JpcHRpb24geyBwYWRkaW5nLXRvcDogMC43NXJlbTsgcGFk
+ZGluZy1yaWdodDogMC43NXJlbTsgcGFkZGluZy1ib3R0b206IDAuNzVyZW07IHBhZGRpbmctbGVm
+dDogMC43NXJlbTsgbWFyZ2luLWJvdHRvbTogMS41cmVtOyB9CgouZG9jcyAucGhwY29kZSBjb2Rl
+IHsgZGlzcGxheTogYmxvY2s7IH0KCi5kb2NzIC5xYW5kYWVudHJ5IGR0IC5waHBjb2RlICogeyBm
+b250LXdlaWdodDogbm9ybWFsOyB9CgouZG9jcyB0aCB7IHRleHQtYWxpZ246IGxlZnQ7IH0KCi5k
+b2NzIHRkLCAuZG9jcyB0aCB7IHBhZGRpbmctdG9wOiAwLjI1cmVtOyBwYWRkaW5nLXJpZ2h0OiAw
+LjVyZW07IHBhZGRpbmctYm90dG9tOiAwLjI1cmVtOyBwYWRkaW5nLWxlZnQ6IDAuNXJlbTsgfQoK
+LmRvY3RhYmxlLCAuc2VnbWVudGVkbGlzdCB7IHdpZHRoOiAxMDAlOyBtYXJnaW4tdG9wOiAwcHg7
+IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90dG9tOiAxLjVyZW07IG1hcmdpbi1sZWZ0OiAw
+cHg7IH0KCi5kb2N0YWJsZSB0aGVhZCB0ciwgLnNlZ21lbnRlZGxpc3QgdGhlYWQgdHIgeyBib3Jk
+ZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0aDogMXB4OyBib3JkZXItYm90dG9t
+LXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7IGJvcmRlci10b3Atc3R5bGU6IHNv
+bGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xp
+ZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXItY29sb3I6IGluaXRpYWw7IGJvcmRl
+ci1pbWFnZTogaW5pdGlhbDsgfQoKLmRvY3RhYmxlIHRyLCAuc2VnbWVudGVkbGlzdCB0ciB7IGJv
+cmRlci10b3Atd2lkdGg6IDFweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0
+b20td2lkdGg6IDFweDsgYm9yZGVyLWxlZnQtd2lkdGg6IDFweDsgYm9yZGVyLXRvcC1zdHlsZTog
+c29saWQ7IGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tc3R5bGU6IHNv
+bGlkOyBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9y
+ZGVyLWltYWdlOiBpbml0aWFsOyB9Cgp1bC5pdGVtaXplZGxpc3QgeyBsaXN0LXN0eWxlLXR5cGU6
+IGNpcmNsZTsgfQoKdWwuc2ltcGxlbGlzdCB7IGxpc3Qtc3R5bGUtdHlwZTogZGlzYzsgfQoKdWwu
+Y2h1bmtsaXN0IHsgbGlzdC1zdHlsZS10eXBlOiBkaXNjOyB9CgouZG9jcyBvbCB7IGxpc3Qtc3R5
+bGUtdHlwZTogZGVjaW1hbDsgfQoKZGwucWFuZGFlbnRyeSB7IGJvcmRlci10b3Atd2lkdGg6IDFw
+eDsgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7IGJvcmRlci10b3AtY29sb3I6IGluaXRpYWw7IH0K
+CnVsLmNodW5rbGlzdF9jaGlsZHJlbiB7IG1hcmdpbi10b3A6IDBweDsgfQoKLmRvY3MgZGl2LnNl
+Y3QxLCAuZG9jcyBkaXYucGFydGludHJvIHsgcG9zaXRpb246IHJlbGF0aXZlOyB9CgouZG9jcyAu
+dmVyaW5mbyB7IGZvbnQtc2l6ZTogMC44NzVyZW07IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJp
+Z2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLnJlZm5h
+bWUgLnZlcmluZm8geyBsaW5lLWhlaWdodDogMi44NzVyZW07IGZsb2F0OiByaWdodDsgZm9udC13
+ZWlnaHQ6IG5vcm1hbDsgfQoKLmRvY3MgaDEucmVmbmFtZSArIGgxLnJlZm5hbWUgeyBtYXJnaW4t
+dG9wOiAtMS41cmVtOyB9CgouZG9jcyAucmVmbmFtZWRpdiB7IHBvc2l0aW9uOiByZWxhdGl2ZTsg
+fQoKLmRvY3MgLmNsYXNzc3lub3BzaXMgeyBtYXJnaW4tYm90dG9tOiAxLjVyZW07IH0KCi5jbGFz
+c3N5bm9wc2lzaW5mb19jb21tZW50LCAuY2xhc3NzeW5vcHNpcyAuY29uc3RydWN0b3JzeW5vcHNp
+cywgLmNsYXNzc3lub3BzaXMgLm1ldGhvZHN5bm9wc2lzLCAuY2xhc3NzeW5vcHNpcyAuZGVzdHJ1
+Y3RvcnN5bm9wc2lzLCAuY2xhc3NzeW5vcHNpcyAuZmllbGRzeW5vcHNpcyB7IG1hcmdpbi1sZWZ0
+OiAxLjVyZW07IH0KCiNjaGFuZ2VsYW5nIHsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXIt
+cmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13
+aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsg
+Ym9yZGVyLWltYWdlOiBpbml0aWFsOyB9CgouZG9jcyAubGF5b3V0LW1lbnUgdWwucGFyZW50LW1l
+bnUtbGlzdCB7IGxpc3Qtc3R5bGUtdHlwZTogbm9uZTsgbGlzdC1zdHlsZS1wb3NpdGlvbjogaW5p
+dGlhbDsgbGlzdC1zdHlsZS1pbWFnZTogaW5pdGlhbDsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4t
+cmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogMHB4OyBwYWRkaW5n
+LXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7IHBhZGRp
+bmctbGVmdDogMHB4OyB9CgouZG9jcyAubGF5b3V0LW1lbnUgdWwucGFyZW50LW1lbnUtbGlzdCA+
+IGxpIHsgbWFyZ2luLXRvcDogMHB4OyBtYXJnaW4tYm90dG9tOiAwcHg7IH0KCi5kb2NzIC5sYXlv
+dXQtbWVudSB1bC5wYXJlbnQtbWVudS1saXN0ID4gbGkgPiBhIHsgYm9yZGVyLXRvcC13aWR0aDog
+MHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBi
+b3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xv
+cjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBmb250LXNpemU6IDEuMTI1cmVtOyBt
+YXJnaW4tYm90dG9tOiAwLjc1cmVtOyBkaXNwbGF5OiBibG9jazsgfQoKLmRvY3MgLmxheW91dC1t
+ZW51IHVsLmNoaWxkLW1lbnUtbGlzdCB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAw
+cHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQoKLmxheW91dC1tZW51
+IHVsLmNoaWxkLW1lbnUtbGlzdCBsaSB7IGxpc3Qtc3R5bGUtdHlwZTogbm9uZTsgbWFyZ2luLXRv
+cDogMHB4OyBtYXJnaW4tcmlnaHQ6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVm
+dDogMHB4OyB9CgoubGF5b3V0LW1lbnUgdWwuY2hpbGQtbWVudS1saXN0IGxpOmZpcnN0LWNoaWxk
+IGEgeyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci10b3Atc3R5bGU6IGRvdHRlZDsgYm9y
+ZGVyLXRvcC1jb2xvcjogaW5pdGlhbDsgbWFyZ2luLXRvcDogLTFweDsgfQoKLmxheW91dC1tZW51
+IHVsLmNoaWxkLW1lbnUtbGlzdCBhIHsgZm9udC1zaXplOiAwLjg3NXJlbTsgYm9yZGVyLWJvdHRv
+bS13aWR0aDogMXB4OyBib3JkZXItYm90dG9tLXN0eWxlOiBkb3R0ZWQ7IGJvcmRlci1ib3R0b20t
+Y29sb3I6IGluaXRpYWw7IG1hcmdpbi1ib3R0b206IC0xcHg7IGRpc3BsYXk6IGJsb2NrOyBwYWRk
+aW5nLWxlZnQ6IDAuNzVyZW07IHBvc2l0aW9uOiByZWxhdGl2ZTsgfQoKLmxheW91dC1tZW51IHVs
+LmNoaWxkLW1lbnUtbGlzdCAuY3VycmVudCB7IGZvbnQtd2VpZ2h0OiBib2xkZXI7IH0KCiNsYXlv
+dXQtY29udGVudCAuY3VycmVudDo6YmVmb3JlIHsgY29udGVudDogJ8K7ICc7IH0KCi5sYXlvdXQt
+bWVudSB1bC5jaGlsZC1tZW51LWxpc3QgYTpob3Zlcjo6YmVmb3JlLCAubGF5b3V0LW1lbnUgdWwu
+Y2hpbGQtbWVudS1saXN0IGE6Zm9jdXM6OmJlZm9yZSwgLmxheW91dC1tZW51IHVsLmNoaWxkLW1l
+bnUtbGlzdCAuY3VycmVudCBhOjpiZWZvcmUgeyBjb250ZW50OiAnwrsgJzsgcG9zaXRpb246IGFi
+c29sdXRlOyBsZWZ0OiAwcHg7IH0KCi5kb2NzIC5zZWN0MiB7IG1hcmdpbi10b3A6IDAuNzVyZW07
+IH0KCi5zb2Z0LWRlcHJlY2F0aW9uLW5vdGljZSBoMS50aXRsZSB7IGJvcmRlci10b3Atd2lkdGg6
+IDBweDsgYm9yZGVyLXJpZ2h0LXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDBweDsg
+Ym9yZGVyLWxlZnQtd2lkdGg6IDBweDsgYm9yZGVyLXN0eWxlOiBpbml0aWFsOyBib3JkZXItY29s
+b3I6IGluaXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgcG9zaXRpb246IGFic29sdXRlOyBw
+YWRkaW5nLXRvcDogMHB4OyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwcHg7
+IHBhZGRpbmctbGVmdDogMHB4OyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBt
+YXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHRvcDogLTIycHg7IGxlZnQ6IDBw
+eDsgfQoKZGl2LnNvZnQtZGVwcmVjYXRpb24tbm90aWNlIHsgcG9zaXRpb246IHJlbGF0aXZlOyBt
+YXJnaW4tdG9wOiA1MHB4OyBib3JkZXItdG9wLXdpZHRoOiAxcHg7IGJvcmRlci1yaWdodC13aWR0
+aDogMXB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7
+IGJvcmRlci10b3Atc3R5bGU6IHNvbGlkOyBib3JkZXItcmlnaHQtc3R5bGU6IHNvbGlkOyBib3Jk
+ZXItYm90dG9tLXN0eWxlOiBzb2xpZDsgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkOyBib3JkZXIt
+Y29sb3I6IGluaXRpYWw7IGJvcmRlci1pbWFnZTogaW5pdGlhbDsgei1pbmRleDogMTAwOyB9Cgpk
+aXYuc29mdC1kZXByZWNhdGlvbi1ub3RpY2UgYmxvY2txdW90ZS5zaWRlYmFyIHsgcGFkZGluZy10
+b3A6IDEwcHg7IHBhZGRpbmctcmlnaHQ6IDEwcHg7IHBhZGRpbmctYm90dG9tOiAxMHB4OyBwYWRk
+aW5nLWxlZnQ6IDEwcHg7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdp
+bi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBi
+b3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXIt
+bGVmdC13aWR0aDogMHB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0
+eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxl
+OiBzb2xpZDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IH0K
+CiNicmVhZGNydW1icyB7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7IHBhZGRpbmctdG9wOiAwLjc1
+cmVtOyBwYWRkaW5nLXJpZ2h0OiAwcHg7IHBhZGRpbmctYm90dG9tOiAwLjc1cmVtOyBwYWRkaW5n
+LWxlZnQ6IDBweDsgZm9udC1zaXplOiAwLjg3NXJlbTsgZGlzcGxheTogbm9uZTsgfQoKI2JyZWFk
+Y3J1bWJzICNicmVhZGNydW1icy1pbm5lciB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0
+OiBhdXRvOyBtYXJnaW4tYm90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiBhdXRvOyB9CgojYnJlYWRj
+cnVtYnMgdWwgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90
+dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiAwcHg7IHBhZGRpbmctdG9wOiAwcHg7IHBhZGRpbmctcmln
+aHQ6IDAuNXJlbTsgcGFkZGluZy1ib3R0b206IDBweDsgcGFkZGluZy1sZWZ0OiAxLjVyZW07IG92
+ZXJmbG93LXg6IGhpZGRlbjsgb3ZlcmZsb3cteTogaGlkZGVuOyB9CgojYnJlYWRjcnVtYnMtaW5u
+ZXIgZGl2IHsgcGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMS41cmVtOyBwYWRkaW5n
+LWJvdHRvbTogMHB4OyBwYWRkaW5nLWxlZnQ6IDEuNXJlbTsgfQoKI2JyZWFkY3J1bWJzIGxpIHsg
+ZGlzcGxheTogaW5saW5lLWJsb2NrOyB9CgojYnJlYWRjcnVtYnMgbGkgKyBsaTo6YmVmb3JlIHsg
+cGFkZGluZy10b3A6IDBweDsgcGFkZGluZy1yaWdodDogMC41cmVtOyBwYWRkaW5nLWJvdHRvbTog
+MHB4OyBwYWRkaW5nLWxlZnQ6IDAuNXJlbTsgY29udGVudDog4oC6OyB9CgojYnJlYWRjcnVtYnMg
+YTpsaW5rLCAjYnJlYWRjcnVtYnMgYTp2aXNpdGVkIHsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBi
+b3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXIt
+bGVmdC13aWR0aDogMHB4OyB9CgojYnJlYWRjcnVtYnMgLm5leHQsICNicmVhZGNydW1icyAucHJl
+diB7IGZsb2F0OiByaWdodDsgfQoKQG1lZGlhIChtaW4td2lkdGg6IDc2OHB4KSB7IAogIC5uYXZi
+YXItZml4ZWQtdG9wIHsgdG9wOiAwcHg7IC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVaKDBw
+eCk7IH0KICBib2R5IHsgbWFyZ2luLXRvcDogMy4yNXJlbTsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1h
+cmdpbi1ib3R0b206IDBweDsgbWFyZ2luLWxlZnQ6IDBweDsgfQogICNicmVhZGNydW1icyB7IGRp
+c3BsYXk6IGJsb2NrOyB9CiAgLm5hdmJhci1zZWFyY2gsICNpbnRybyAuZG93bmxvYWQsICNpbnRy
+byAuYmFja2dyb3VuZCwgYXNpZGUudGlwcywgLmxheW91dC1tZW51IHsgd2lkdGg6IDI1JTsgZmxv
+YXQ6IGxlZnQ7IH0KICAjaW50cm8gLmJsdXJiLCAjbGF5b3V0LWNvbnRlbnQgeyBmbG9hdDogbGVm
+dDsgd2lkdGg6IDc1JTsgfQogIC5uYXZiYXItZml4ZWQtdG9wIHsgcG9zaXRpb246IGZpeGVkOyBy
+aWdodDogMHB4OyBsZWZ0OiAwcHg7IHotaW5kZXg6IDEwMzA7IG1hcmdpbi1ib3R0b206IDBweDsg
+fQp9CgpAbWVkaWEgKG1heC13aWR0aDogOTc5cHgpIGFuZCAobWluLXdpZHRoOiA3NjhweCkgeyAK
+ICAjaW50cm8gLmRvd25sb2FkLCBhc2lkZS50aXBzLCAubmF2YmFyLXNlYXJjaCB7IHdpZHRoOiAz
+MCUgIWltcG9ydGFudDsgfQogICNpbnRybyAuYmx1cmIsICNsYXlvdXQtY29udGVudCB7IHdpZHRo
+OiA3MCUgIWltcG9ydGFudDsgfQp9CgpAbWVkaWEgKG1pbi13aWR0aDogMTIwMHB4KSB7IAogICNp
+bnRybyAuY29udGFpbmVyLCAubmF2YmFyLWlubmVyLCAjYnJlYWRjcnVtYnMtaW5uZXIsICNnb3Rv
+IGRpdiwgI3RyaWNrIGRpdiwgI2xheW91dCwgYm9keSA+IGZvb3RlciAuZm9vdGVyLWNvbnRlbnQg
+eyB3aWR0aDogMTE3MHB4OyB9Cn0KCkBtZWRpYSAobWluLXdpZHRoOiAxNTAwcHgpIHsgCiAgI2lu
+dHJvIC5jb250YWluZXIsIC5uYXZiYXItaW5uZXIsICNicmVhZGNydW1icy1pbm5lciwgI2dvdG8g
+ZGl2LCAjdHJpY2sgZGl2LCAjbGF5b3V0LCBib2R5ID4gZm9vdGVyIC5mb290ZXItY29udGVudCB7
+IHdpZHRoOiAxNDQwcHg7IH0KfQoKI21haW5tZW51LXRvZ2dsZS1vdmVybGF5LCAjbWFpbm1lbnUt
+dG9nZ2xlIHsgZGlzcGxheTogbm9uZTsgfQoKQG1lZGlhIChtYXgtd2lkdGg6IDc2N3B4KSB7IAog
+IC5uYXZiYXItZml4ZWQtdG9wIC5jb250YWluZXIgeyB3aWR0aDogYXV0bzsgfQogIC5uYXZiYXIt
+c2VhcmNoIHsgZmxvYXQ6IGxlZnQ7IGNsZWFyOiBib3RoOyBtYXJnaW4tdG9wOiAwcHg7IHBhZGRp
+bmctdG9wOiAwcHg7IHBhZGRpbmctcmlnaHQ6IDEwcHg7IHBhZGRpbmctYm90dG9tOiAxMHB4OyBw
+YWRkaW5nLWxlZnQ6IDEwcHg7IH0KICAubmF2YmFyIC5uYXYgeyBtYXJnaW4tcmlnaHQ6IDBweDsg
+fQogICNpbnRybyAuZG93bmxvYWQtcGhwIHsgbWFyZ2luLXRvcDogMHB4ICFpbXBvcnRhbnQ7IG1h
+cmdpbi1yaWdodDogMHB4ICFpbXBvcnRhbnQ7IG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50
+OyBtYXJnaW4tbGVmdDogMHB4ICFpbXBvcnRhbnQ7IH0KICAjbWFpbm1lbnUtdG9nZ2xlLW92ZXJs
+YXkgeyBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoaHR0cDovL3BocC5uZXQvaW1hZ2VzL21vYmlsZS1t
+ZW51LnBuZyk7IGJhY2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbDsgYmFja2dyb3VuZC1vcmln
+aW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgYmFja2dyb3VuZC1jb2xvcjog
+cmdiKDc5LCA5MSwgMTQ3KTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBmbG9hdDogcmlnaHQ7
+IGRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDMycHg7IHdpZHRoOiAzNHB4OyBtYXJnaW4tdG9wOiAx
+MHB4OyBtYXJnaW4tcmlnaHQ6IDEwcHg7IGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDVweDsgYm9y
+ZGVyLXRvcC1yaWdodC1yYWRpdXM6IDVweDsgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDVw
+eDsgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogNXB4OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiA1
+MCUgNTAlOyBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0IG5vLXJlcGVhdDsgfQogICNtYWlu
+bWVudS10b2dnbGUgeyBoZWlnaHQ6IDMycHg7IHdpZHRoOiAzNHB4OyBsaW5lLWhlaWdodDogMzJw
+eDsgbWFyZ2luLXRvcDogMTBweDsgbWFyZ2luLXJpZ2h0OiAtMzRweDsgZmxvYXQ6IHJpZ2h0OyBi
+b3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IG5vbmU7IGJvcmRl
+ci1ib3R0b20tY29sb3I6IGluaXRpYWw7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgb3BhY2l0eTog
+MDsgfQogIC5uYXZiYXIgLmJyYW5kIHsgZmxvYXQ6IGxlZnQ7IG1hcmdpbi1ib3R0b206IDAuNXJl
+bTsgfQogIC5uYXZiYXItc2VhcmNoIHsgbWFyZ2luLXRvcDogMHB4OyBwYWRkaW5nLXRvcDogMHB4
+OyBwYWRkaW5nLXJpZ2h0OiAxMHB4OyBwYWRkaW5nLWJvdHRvbTogMTBweDsgcGFkZGluZy1sZWZ0
+OiAxMHB4OyB9CiAgLm5hdmJhciAuYnJhbmQgaW1nIHsgZGlzcGxheTogYmxvY2s7IG1hcmdpbi1s
+ZWZ0OiAxMnB4OyB9CiAgLm5hdmJhciAubmF2IHsgY2xlYXI6IGJvdGg7IGZsb2F0OiBub25lOyBt
+YXgtaGVpZ2h0OiAwcHg7IG92ZXJmbG93LXg6IGhpZGRlbjsgb3ZlcmZsb3cteTogaGlkZGVuOyAt
+d2Via2l0LXRyYW5zaXRpb24tcHJvcGVydHk6IG1heC1oZWlnaHQ7IC13ZWJraXQtdHJhbnNpdGlv
+bi1kdXJhdGlvbjogNDAwbXM7IC13ZWJraXQtdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGlu
+aXRpYWw7IC13ZWJraXQtdHJhbnNpdGlvbi1kZWxheTogaW5pdGlhbDsgfQogIC5uYXZiYXIgLm5h
+diA+IGxpLCAuZm9vdG1lbnUgPiBsaSB7IGZsb2F0OiBub25lOyBkaXNwbGF5OiBibG9jazsgdGV4
+dC1hbGlnbjogY2VudGVyOyB9CiAgLm5hdmJhciAubmF2ID4gbGkgYSwgLmZvb3RtZW51ID4gbGkg
+PiBhIHsgd2lkdGg6IDEwMCU7IGRpc3BsYXk6IGJsb2NrOyBwYWRkaW5nLWxlZnQ6IDBweDsgfQog
+ICNtYWlubWVudS10b2dnbGU6Y2hlY2tlZCArIC5uYXYgeyBtYXgtaGVpZ2h0OiA1MHJlbTsgfQog
+ICNmbGFzaC1tZXNzYWdlIHsgbWFyZ2luLXRvcDogMHB4ICFpbXBvcnRhbnQ7IHRvcDogMHB4OyB9
+Cn0KCkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkgeyAKICAjdG9wc2VhcmNoIHsgZmxvYXQ6IHJp
+Z2h0OyB9CiAgLm5hdmJhci1zZWFyY2ggLnNlYXJjaC1xdWVyeSB7IHdpZHRoOiAxMDAlOyB9CiAg
+I2ludHJvIC5jb250YWluZXIgeyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KfQoKQG1lZGlhIChtYXgt
+d2lkdGg6IDk3OXB4KSBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHsgCiAgI2ludHJvIC5kb3dubG9h
+ZC1waHAgYS5idG4tcG9wIHsgcGFkZGluZy1yaWdodDogMC4zNzVyZW07IH0KfQoKQG1lZGlhICht
+aW4td2lkdGg6IDE1NDhweCkgeyAKICAjbGF5b3V0IHsgcGFkZGluZy1yaWdodDogMHB4OyB9Cn0K
+CiNnb3RvIHsgZGlzcGxheTogbm9uZTsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDUxLCA1MSwgNTEp
+OyBoZWlnaHQ6IDEwMCU7IHdpZHRoOiAxMDAlOyBvcGFjaXR5OiAwLjk7IHBvc2l0aW9uOiBmaXhl
+ZDsgdG9wOiA1MHB4OyB6LWluZGV4OiA1MDAwOyBjb2xvcjogcmdiKDIzMCwgMjMwLCAyMzApOyB9
+CgojZ290byAuc2VhcmNoIC5yZXN1bHRzIHsgdGV4dC1zaGFkb3c6IHJnYig4NSwgODUsIDg1KSAw
+cHggMnB4IDNweDsgZm9udC1zaXplOiAycmVtOyBsaW5lLWhlaWdodDogMTsgfQoKI2dvdG8gLnNl
+YXJjaCAucmVzdWx0cyA6Zm9jdXMgeyBmb250LXNpemU6IDJyZW07IGxpbmUtaGVpZ2h0OiAxLjI7
+IH0KCiNnb3RvIC5zZWFyY2ggLnRleHQgeyBjb2xvcjogcmdiKDM0LCAzNCwgMzQpOyB0ZXh0LXNo
+YWRvdzogcmdiKDg1LCA4NSwgODUpIDBweCAycHggM3B4OyBmb250LXNpemU6IDEwcmVtOyBsaW5l
+LWhlaWdodDogMC43OyB9CgojdHJpY2sgeyBkaXNwbGF5OiBub25lOyBiYWNrZ3JvdW5kLWNvbG9y
+OiByZ2JhKDUxLCA1MSwgNTEsIDAuOTQ5MjE5KTsgaGVpZ2h0OiAxMDAlOyB3aWR0aDogMTAwJTsg
+cG9zaXRpb246IGZpeGVkOyB0b3A6IDUwcHg7IHotaW5kZXg6IDUwMDA7IH0KCiNnb3RvIGRpdiwg
+I3RyaWNrIGRpdiB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiBhdXRvOyBtYXJnaW4t
+Ym90dG9tOiAwcHg7IG1hcmdpbi1sZWZ0OiBhdXRvOyB9CgojdHJpY2sgZHQsICN0cmljayBkbCB7
+IGNvbG9yOiByZ2IoMjMwLCAyMzAsIDIzMCk7IH0KCiN0cmljayBkbCB7IGRpc3BsYXk6IGlubGlu
+ZS1ibG9jazsgdmVydGljYWwtYWxpZ246IHRvcDsgfQoKI3RyaWNrIGEgeyBjb2xvcjogcmdiKDIz
+MCwgMjMwLCAyMzApOyBkaXNwbGF5OiBibG9jazsgYm9yZGVyLWJvdHRvbS1zdHlsZTogbm9uZTsg
+Ym9yZGVyLWJvdHRvbS13aWR0aDogaW5pdGlhbDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogaW5pdGlh
+bDsgcGFkZGluZy10b3A6IDFweDsgcGFkZGluZy1yaWdodDogMXB4OyBwYWRkaW5nLWJvdHRvbTog
+MXB4OyBwYWRkaW5nLWxlZnQ6IDFweDsgfQoKYXNpZGUudGlwcyB7IGJveC1zaXppbmc6IGJvcmRl
+ci1ib3g7IHBhZGRpbmctdG9wOiAxLjVyZW07IHBhZGRpbmctcmlnaHQ6IDEuNXJlbTsgcGFkZGlu
+Zy1ib3R0b206IDEuNXJlbTsgcGFkZGluZy1sZWZ0OiAxLjVyZW07IGNvbG9yOiByZ2IoMjA0LCAy
+MDQsIDIwNCk7IH0KCmFzaWRlLnRpcHMgcCB7IG1hcmdpbi10b3A6IDBweDsgfQoKYXNpZGUudGlw
+cyAucGFuZWwgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDogMHB4OyBtYXJnaW4tYm90
+dG9tOiAxLjVyZW07IG1hcmdpbi1sZWZ0OiAwcHg7IH0KCmFzaWRlLnRpcHMgLnBhbmVsIC5ib2R5
+IHsgZm9udC1zaXplOiAwLjg3NXJlbTsgbWFyZ2luLXRvcDogMS41cmVtOyB9Cgphc2lkZS50aXBz
+IC5wYW5lbCAuaGVhZGxpbmUgeyBkaXNwbGF5OiBibG9jazsgYm9yZGVyLWJvdHRvbS13aWR0aDog
+MHB4OyBib3JkZXItYm90dG9tLXN0eWxlOiBpbml0aWFsOyBib3JkZXItYm90dG9tLWNvbG9yOiBp
+bml0aWFsOyBsaW5lLWhlaWdodDogMS41cmVtOyBmb250LXNpemU6IDEuMTI1cmVtOyBjb2xvcjog
+cmdiKDIzMCwgMjMwLCAyMzApOyB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVsZWdpYmlsaXR5OyB9
+Cgphc2lkZS50aXBzIGRpdi5pbm5lciB7IGNsZWFyOiBub25lOyBib3JkZXItdG9wLXdpZHRoOiAw
+cHg7IGJvcmRlci1yaWdodC13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJv
+cmRlci1sZWZ0LXdpZHRoOiAwcHg7IGJvcmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9y
+OiBpbml0aWFsOyBib3JkZXItaW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQ6IGluaGVyaXQ7IH0K
+CiNmbGFzaC1tZXNzYWdlIHsgaGVpZ2h0OiBhdXRvOyBtYXJnaW4tdG9wOiA0cHg7IHBvc2l0aW9u
+OiBmaXhlZDsgd2lkdGg6IDEwMCU7IHotaW5kZXg6IDk1OyB0ZXh0LWFsaWduOiBjZW50ZXI7IGJv
+eC1zaGFkb3c6IHJnYmEoMCwgMCwgMCwgMC4wOTc2NTYzKSAwcHggMC4yNXJlbSAwLjI1cmVtOyB9
+CgojZmxhc2gtbWVzc2FnZSAubWVzc2FnZSB7IGN1cnNvcjogcG9pbnRlcjsgdGV4dC1hbGlnbjog
+Y2VudGVyOyBwb3NpdGlvbjogcmVsYXRpdmU7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9y
+ZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IGluaXRpYWw7IHBh
+ZGRpbmctdG9wOiAwLjI1cmVtOyBwYWRkaW5nLXJpZ2h0OiAwLjI1cmVtOyBwYWRkaW5nLWJvdHRv
+bTogMC4yNXJlbTsgcGFkZGluZy1sZWZ0OiAwLjI1cmVtOyB9CgojZmxhc2gtbWVzc2FnZSAubWVz
+c2FnZSBhIHsgYm9yZGVyLXRvcC1zdHlsZTogZG90dGVkOyBib3JkZXItcmlnaHQtc3R5bGU6IGRv
+dHRlZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogZG90dGVkOyBib3JkZXItbGVmdC1zdHlsZTogZG90
+dGVkOyBmb250LXdlaWdodDogYm9sZGVyOyB9CgoubmV3c2VudHJ5IGhlYWRlciBoMiB7IG1hcmdp
+bi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0OiAwcHg7IG1hcmdpbi1ib3R0b206IDBweDsgbWFyZ2lu
+LWxlZnQ6IDBweDsgfQoKLm5ld3NlbnRyeSB7IG1hcmdpbi10b3A6IDBweDsgbWFyZ2luLXJpZ2h0
+OiAwcHg7IG1hcmdpbi1ib3R0b206IDNyZW07IG1hcmdpbi1sZWZ0OiAwcHg7IHBvc2l0aW9uOiBy
+ZWxhdGl2ZTsgfQoKLm5ld3NlbnRyeSBoMiB7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IH0KCi5uZXdz
+ZW50cnkgaDIgLnJlbGVhc2Utc3RhdGUgeyBmbG9hdDogcmlnaHQ7IG9wYWNpdHk6IDAuODsgfQoK
+Lm5ld3NlbnRyeSBoZWFkZXIgdGltZSB7IGZsb2F0OiByaWdodDsgbGluZS1oZWlnaHQ6IDNyZW07
+IH0KCi5uZXdzZW50cnkgcCB7IGxpbmUtaGVpZ2h0OiAxLjdyZW07IH0KCi5uZXdzZW50cnkgLm5l
+d3NpbWFnZSBhIHsgZmxvYXQ6IHJpZ2h0OyBib3JkZXItdG9wLXdpZHRoOiAwcHg7IGJvcmRlci1y
+aWdodC13aWR0aDogMHB4OyBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7IGJvcmRlci1sZWZ0LXdp
+ZHRoOiAwcHg7IGJvcmRlci1zdHlsZTogaW5pdGlhbDsgYm9yZGVyLWNvbG9yOiBpbml0aWFsOyBi
+b3JkZXItaW1hZ2U6IGluaXRpYWw7IHBhZGRpbmctdG9wOiAxMHB4OyBwYWRkaW5nLXJpZ2h0OiAx
+MHB4OyBwYWRkaW5nLWJvdHRvbTogMTBweDsgcGFkZGluZy1sZWZ0OiAxMHB4OyB9CgoubG9nby1s
+aXN0IHVsIHsgbGlzdC1zdHlsZS10eXBlOiBub25lOyB9
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://php.net/images/bg-texture-00.svg
+
+<svg xmlns=3D"http://www.w3.org/2000/svg" width=3D"4" height=3D"4">
+  <path style=3D"stroke:#000;stroke-width:.5;stroke-opacity:.25" d=3D"M 0,0=
+ 4,4 M 0,4 4,0"/>
+</svg>=0A
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: text/css
+Content-Transfer-Encoding: base64
+Content-Location: http://php.net/cached.php?t=1540425603&f=/styles/theme-medium.css
+
+aHRtbCB7IGJhY2tncm91bmQtaW1hZ2U6IHVybChodHRwOi8vcGhwLm5ldC9pbWFnZXMvYmctdGV4
+dHVyZS0wMC5zdmcpOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQt
+b3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29s
+b3I6IHJnYig1MSwgNTEsIDUxKTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFsOyBjb2xvcjogcmdi
+KDIwNCwgMjA0LCAyMDQpOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJh
+Y2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCiNsYXlvdXQtY29udGVudCB7IGJh
+Y2tncm91bmQtaW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQtYXR0YWNobWVudDogaW5pdGlhbDsg
+YmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgYmFj
+a2dyb3VuZC1jb2xvcjogcmdiKDI0MiwgMjQyLCAyNDIpOyBiYWNrZ3JvdW5kLXNpemU6IGluaXRp
+YWw7IGNvbG9yOiByZ2IoNTEsIDUxLCA1MSk7IGJhY2tncm91bmQtcG9zaXRpb246IGluaXRpYWwg
+aW5pdGlhbDsgYmFja2dyb3VuZC1yZXBlYXQ6IGluaXRpYWwgaW5pdGlhbDsgfQoKI2xheW91dC1j
+b250ZW50Om5vdCg6b25seS1jaGlsZCkgeyBib3JkZXItcmlnaHQtd2lkdGg6IDAuMjVyZW07IGJv
+cmRlci1yaWdodC1zdHlsZTogc29saWQ7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDEwMiwgMTAy
+LCAxMDIpOyB9CgphYmJyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDEzNiwgMTQ2LCAxOTEpOyBi
+b3JkZXItcmlnaHQtY29sb3I6IHJnYigxMzYsIDE0NiwgMTkxKTsgYm9yZGVyLWJvdHRvbS1jb2xv
+cjogcmdiKDEzNiwgMTQ2LCAxOTEpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDEzNiwgMTQ2LCAx
+OTEpOyB9CgpoMSwgaDIsIGgzLCBoNCwgaDUsIGg2IHsgZm9udC13ZWlnaHQ6IDUwMDsgY29sb3I6
+IHJnYig1MSwgNTEsIDUxKTsgfQoKaGVhZGVyLnRpdGxlLCBoMTo6YWZ0ZXIsIGgyOjphZnRlciwg
+aDM6OmFmdGVyIHsgZGlzcGxheTogdGFibGU7IHdpZHRoOiAxMDAlOyBjb250ZW50OiAnICc7IG1h
+cmdpbi10b3A6IC0xcHg7IGJvcmRlci1ib3R0b20td2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS1z
+dHlsZTogZG90dGVkOyBib3JkZXItYm90dG9tLWNvbG9yOiBpbml0aWFsOyB9CgoudGl0bGUgaDE6
+OmFmdGVyLCAudGl0bGUgaDI6OmFmdGVyLCAudGl0bGUgaDM6OmFmdGVyIHsgZGlzcGxheTogbm9u
+ZTsgfQoKYTpsaW5rLCBhOnZpc2l0ZWQgeyBjb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyB9Cgoj
+bGF5b3V0LWNvbnRlbnQgYTpsaW5rLCAjbGF5b3V0LWNvbnRlbnQgYTp2aXNpdGVkIHsgY29sb3I6
+IHJnYig1MSwgMTAyLCAxNTMpOyB9CgphOmhvdmVyLCBhOmZvY3VzLCAjbGF5b3V0LWNvbnRlbnQg
+YTpob3ZlciwgI2xheW91dC1jb250ZW50IGE6Zm9jdXMgeyBjb2xvcjogcmdiKDE3NCwgODAsIDE0
+MSk7IGJvcmRlci10b3AtY29sb3I6IHJnYigxNzQsIDgwLCAxNDEpOyBib3JkZXItcmlnaHQtY29s
+b3I6IHJnYigxNzQsIDgwLCAxNDEpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMTc0LCA4MCwg
+MTQxKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigxNzQsIDgwLCAxNDEpOyBvdXRsaW5lLXdpZHRo
+OiAwcHg7IG91dGxpbmUtc3R5bGU6IGluaXRpYWw7IG91dGxpbmUtY29sb3I6IGluaXRpYWw7IH0K
+CnVsIHsgbGlzdC1zdHlsZS10eXBlOiBkaXNjOyB9CgpvbCB7IGxpc3Qtc3R5bGUtdHlwZTogZGVj
+aW1hbDsgfQoKZGwucWFuZGFlbnRyeSB7IGJvcmRlci10b3AtY29sb3I6IHJnYigwLCAwLCAwKTsg
+Ym9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMCwgMCwgMCk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJn
+YigwLCAwLCAwKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigwLCAwLCAwKTsgfQoKaDEucmVmbmFt
+ZSB7IGNvbG9yOiByZ2IoMTIxLCA1NiwgOTgpOyB9CgouaW50ZXJmYWNlbmFtZSBhLCAuZmllbGRz
+eW5vcHNpcyAudHlwZSwgLm1ldGhvZHN5bm9wc2lzIC50eXBlLCAuY29uc3RydWN0b3JzeW5vcHNp
+cyAudHlwZSB7IGNvbG9yOiByZ2IoMTAyLCAxNTMsIDUxKTsgfQoKLmNsYXNzc3lub3BzaXNpbmZv
+IC5tb2RpZmllciwgLmZpZWxkc3lub3BzaXMgLm1vZGlmaWVyLCAubWV0aG9kc3lub3BzaXMgLm1v
+ZGlmaWVyLCAuY29uc3RydWN0b3JzeW5vcHNpcyAubW9kaWZpZXIgeyBjb2xvcjogcmdiKDE1Mywg
+NTEsIDEwMik7IH0KCi5jbGFzc3N5bm9wc2lzIHsgY29sb3I6IHJnYig3NywgNzcsIDc3KTsgfQoK
+LmRvY3MgLmNsYXNzc3lub3BzaXNpbmZvX2NvbW1lbnQgeyBjb2xvcjogcmdiKDI1NSwgMTM2LCAw
+KTsgfQoKLnRpdGxlIGEsIC50aXRsZSB7IGNvbG9yOiByZ2IoMTIxLCA1NiwgOTgpOyB9CgoudGl0
+bGUgdGltZSB7IGNvbG9yOiByZ2IoNTEsIDUxLCA1MSk7IH0KCi5tZXRob2RuYW1lIGIsIC5tZXRo
+b2RuYW1lIHN0cm9uZywgLm1ldGhvZG5hbWUgYSwgLmNsYXNzc3lub3BzaXMgLmNsYXNzbmFtZSwg
+LnBhcmFtZXRlciB7IGNvbG9yOiByZ2IoNTEsIDEwMiwgMTUzKTsgfQoKLmluaXRpYWxpemVyLCAu
+aW5pdGlhbGl6ZXIgY29kZSB7IGNvbG9yOiByZ2IoMTUzLCA1MSwgMTAyKTsgfQoKLmRjLWRlc2Ny
+aXB0aW9uIHsgY29sb3I6IHJnYigxMTUsIDExNSwgMTE1KTsgfQoKI2ZsYXNoLW1lc3NhZ2UgLnN1
+Y2Nlc3MgeyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6
+IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGlu
+aXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHJnYigyMzAsIDI0MiwgMjE3KTsgYmFja2dyb3VuZC1z
+aXplOiBpbml0aWFsOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjA0LCAyMzAsIDE3OSk7IGJvcmRl
+ci1yaWdodC1jb2xvcjogcmdiKDIwNCwgMjMwLCAxNzkpOyBib3JkZXItYm90dG9tLWNvbG9yOiBy
+Z2IoMjA0LCAyMzAsIDE3OSk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjA0LCAyMzAsIDE3OSk7
+IGJhY2tncm91bmQtcG9zaXRpb246IGluaXRpYWwgaW5pdGlhbDsgYmFja2dyb3VuZC1yZXBlYXQ6
+IGluaXRpYWwgaW5pdGlhbDsgfQoKI2ZsYXNoLW1lc3NhZ2UgLmluZm8sIGRpdi50aXAgeyBiYWNr
+Z3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGluaXRpYWw7IGJh
+Y2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IGJhY2tn
+cm91bmQtY29sb3I6IHJnYigyMTcsIDIzMCwgMjQyKTsgYmFja2dyb3VuZC1zaXplOiBpbml0aWFs
+OyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMTc5LCAyMDQsIDIzMCk7IGJvcmRlci1yaWdodC1jb2xv
+cjogcmdiKDE3OSwgMjA0LCAyMzApOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDE3OSwgMjA0LCAy
+MzApOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMTU5LCAxOTEsIDIyMyk7IGJhY2tncm91bmQt
+cG9zaXRpb246IGluaXRpYWwgaW5pdGlhbDsgYmFja2dyb3VuZC1yZXBlYXQ6IGluaXRpYWwgaW5p
+dGlhbDsgfQoKYmxvY2txdW90ZS5ub3RlIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzMCwgMjMw
+LCAyMzApOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IGJvcmRlci1yaWdo
+dC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjA0
+LCAyMDQsIDIwNCk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IH0KCmRp
+di5jYXV0aW9uIHsgYmFja2dyb3VuZC1pbWFnZTogaW5pdGlhbDsgYmFja2dyb3VuZC1hdHRhY2ht
+ZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1jbGlw
+OiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjUyLCAyNTIsIDIzMyk7IGJhY2tncm91
+bmQtc2l6ZTogaW5pdGlhbDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIyNiwgMjI2LCAyMDkpOyBi
+b3JkZXItcmlnaHQtY29sb3I6IHJnYigyMjYsIDIyNiwgMjA5KTsgYm9yZGVyLWJvdHRvbS1jb2xv
+cjogcmdiKDIyNiwgMjI2LCAyMDkpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIyNiwgMjI2LCAy
+MDkpOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVw
+ZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCi5yZWZzZWN0MSBibG9ja3F1b3RlLm5vdGUgeyBtYXJn
+aW4tbGVmdDogMHB4OyBiYWNrZ3JvdW5kLWltYWdlOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWF0dGFj
+aG1lbnQ6IGluaXRpYWw7IGJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNs
+aXA6IGluaXRpYWw7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgYmFja2dy
+b3VuZC1zaXplOiBpbml0aWFsOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjI5LCAyMzAsIDIzMyk7
+IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIyOSwgMjMwLCAyMzMpOyBib3JkZXItYm90dG9tLWNv
+bG9yOiByZ2IoMjI5LCAyMzAsIDIzMyk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjI5LCAyMzAs
+IDIzMyk7IGJhY2tncm91bmQtcG9zaXRpb246IGluaXRpYWwgaW5pdGlhbDsgYmFja2dyb3VuZC1y
+ZXBlYXQ6IGluaXRpYWwgaW5pdGlhbDsgfQoKI2ZsYXNoLW1lc3NhZ2UgLmVycm9yLCBkaXYud2Fy
+bmluZyB7IGJhY2tncm91bmQtaW1hZ2U6IGluaXRpYWw7IGJhY2tncm91bmQtYXR0YWNobWVudDog
+aW5pdGlhbDsgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IGJhY2tncm91bmQtY2xpcDogaW5p
+dGlhbDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NCwgMjIzLCAyMjMpOyBiYWNrZ3JvdW5kLXNp
+emU6IGluaXRpYWw7IGJvcmRlci10b3AtY29sb3I6IHJnYigyMzQsIDE5MSwgMTkxKTsgYm9yZGVy
+LXJpZ2h0LWNvbG9yOiByZ2IoMjM0LCAxOTEsIDE5MSk7IGJvcmRlci1ib3R0b20tY29sb3I6IHJn
+YigyMzQsIDE5MSwgMTkxKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigyMzQsIDE5MSwgMTkxKTsg
+YmFja2dyb3VuZC1wb3NpdGlvbjogaW5pdGlhbCBpbml0aWFsOyBiYWNrZ3JvdW5kLXJlcGVhdDog
+aW5pdGlhbCBpbml0aWFsOyB9CgouZG9jcyAuY2xhc3NzeW5vcHNpcywgLnJlZnNlY3QxIC5maWVs
+ZHN5bm9wc2lzLCAucmVmc2VjdDEgLmRjLWRlc2NyaXB0aW9uLCAuZG9jcyAuc2VjdDEgLmRjLWRl
+c2NyaXB0aW9uLCBkaXYudGlwLCBibG9ja3F1b3RlLm5vdGUsIGRpdi5jYXV0aW9uLCBkaXYud2Fy
+bmluZyB7IGJveC1zaGFkb3c6IHJnYmEoMCwgMCwgMCwgMC4xNDg0MzgpIDBweCAwcHggMHB4IDFw
+eCBpbnNldDsgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMHB4OyBib3JkZXItdG9wLXJpZ2h0LXJh
+ZGl1czogMHB4OyBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogMnB4OyBib3JkZXItYm90dG9t
+LWxlZnQtcmFkaXVzOiAycHg7IH0KCiNmbGFzaC1tZXNzYWdlIC5lcnJvciBhLCBkaXYud2Fybmlu
+ZyBhOmxpbmssIGRpdi53YXJuaW5nIGE6dmlzaXRlZCwgZGl2Lndhcm5pbmcgaDIsIGRpdi53YXJu
+aW5nIGgzIHsgY29sb3I6IHJnYigxNTMsIDUxLCAxMDIpOyB9CgojZmxhc2gtbWVzc2FnZSAuc3Vj
+Y2VzcyBhLCAjZmxhc2gtbWVzc2FnZSBhOmhvdmVyLCAjZmxhc2gtbWVzc2FnZSBhOmZvY3VzLCBk
+aXYud2FybmluZyBhOmhvdmVyLCBkaXYud2FybmluZyBhOmZvY3VzIHsgY29sb3I6IHJnYigxMDIs
+IDE1MywgNTEpOyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMTAyLCAxNTMsIDUxKTsgYm9yZGVyLXJp
+Z2h0LWNvbG9yOiByZ2IoMTAyLCAxNTMsIDUxKTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDEw
+MiwgMTUzLCA1MSk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMTAyLCAxNTMsIDUxKTsgfQoKLm5h
+dmJhciAubmF2ID4gbGkgPiBhOmZvY3VzLCAubmF2YmFyIC5uYXYgPiBsaSA+IGE6aG92ZXIgeyBj
+b2xvcjogcmdiKDUxLCA1MSwgNTEpOyB9CgoubmF2YmFyIC5uYXYgPiAuYWN0aXZlID4gYSB7IGJv
+eC1zaGFkb3c6IHJnYmEoMCwgMCwgMCwgMC4xMjEwOTQpIDBweCAzcHggOHB4IGluc2V0OyB9Cgou
+bmF2YmFyIC5icmFuZCwgLm5hdmJhciAubmF2ID4gbGkgPiBhIHsgY29sb3I6IHJnYigyMjYsIDIy
+OCwgMjM5KTsgYm9yZGVyLXRvcC13aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsg
+Ym9yZGVyLWJvdHRvbS13aWR0aDogMHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXIt
+c3R5bGU6IGluaXRpYWw7IGJvcmRlci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0
+aWFsOyB0ZXh0LXNoYWRvdzogcmdiYSgwLCAwLCAwLCAwLjI0NjA5NCkgMHB4IC0xcHggMHB4OyB9
+CgoubmF2YmFyIC5icmFuZDpob3ZlciwgLm5hdmJhciAubmF2ID4gbGkgPiBhOmhvdmVyLCAubmF2
+YmFyIC5icmFuZDpmb2N1cywgLm5hdmJhciAubmF2ID4gbGkgPiBhOmZvY3VzIHsgY29sb3I6IHJn
+YigyNTUsIDI1NSwgMjU1KTsgfQoKLm5hdmJhciAubmF2ID4gbGkgPiBhOmZvY3VzLCAubmF2YmFy
+IC5uYXYgPiBsaSA+IGE6aG92ZXIgeyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgY29s
+b3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgfQoKLm5hdmJhciAubmF2IC5hY3RpdmUgPiBhLCAubmF2
+YmFyIC5uYXYgLmFjdGl2ZSA+IGE6aG92ZXIsIC5uYXZiYXIgLm5hdiAuYWN0aXZlID4gYTpmb2N1
+cyB7IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGJhY2tncm91bmQtY29sb3I6IHJnYig3OSwg
+OTEsIDE0Nyk7IH0KCi5uYXZiYXIgLm5hdmJhci1zZWFyY2ggLnNlYXJjaC1xdWVyeSB7IGJhY2tn
+cm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgY29sb3I6IHJnYig1MSwgNTEsIDUxKTsg
+dGV4dC1zaGFkb3c6IHJnYigyNTUsIDI1NSwgMjU1KSAwcHggMXB4IDBweDsgYm9yZGVyLXRvcC13
+aWR0aDogMHB4OyBib3JkZXItcmlnaHQtd2lkdGg6IDBweDsgYm9yZGVyLWJvdHRvbS13aWR0aDog
+MHB4OyBib3JkZXItbGVmdC13aWR0aDogMHB4OyBib3JkZXItc3R5bGU6IGluaXRpYWw7IGJvcmRl
+ci1jb2xvcjogaW5pdGlhbDsgYm9yZGVyLWltYWdlOiBpbml0aWFsOyBib3JkZXItdG9wLWxlZnQt
+cmFkaXVzOiAycHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20t
+cmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDJweDsgYm94LXNo
+YWRvdzogcmdiYSgwLCAwLCAwLCAwLjE5OTIxOSkgMHB4IDFweCAycHggaW5zZXQ7IH0KCi5uYXZi
+YXIgLm5hdmJhci1zZWFyY2ggLnNlYXJjaC1xdWVyeTpmb2N1cyB7IGJveC1zaGFkb3c6IHJnYmEo
+MCwgMCwgMCwgMC4xOTkyMTkpIDBweCAxcHggMnB4IGluc2V0OyB9CgoubmF2YmFyIC5uYXZiYXIt
+c2VhcmNoIC5zZWFyY2gtcXVlcnk6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIgeyBjb2xvcjog
+cmdiKDE1MywgMTUzLCAxNTMpOyB9CgoubmF2YmFyIHsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDc5
+LCA5MSwgMTQ3KTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoNzksIDkxLCAxNDcpOyBib3JkZXIt
+Ym90dG9tLWNvbG9yOiByZ2IoNzksIDkxLCAxNDcpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDc5
+LCA5MSwgMTQ3KTsgYmFja2dyb3VuZC1pbWFnZTogaW5pdGlhbDsgYmFja2dyb3VuZC1hdHRhY2ht
+ZW50OiBpbml0aWFsOyBiYWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1jbGlw
+OiBpbml0aWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTM2LCAxNDYsIDE5MSk7IGJhY2tncm91
+bmQtc2l6ZTogaW5pdGlhbDsgYm94LXNoYWRvdzogcmdiYSgwLCAwLCAwLCAwLjA5NzY1NjMpIDBw
+eCAwLjI1ZW0gMC4yNWVtOyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJh
+Y2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGluaXRpYWw7IH0KCi5uYXZiYXIgLmJyYW5kIHsgY29s
+b3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgfQoKLm5hdmJhciBhIHsgdGV4dC1zaGFkb3c6IHJnYigy
+NTUsIDI1NSwgMjU1KSAwcHggMXB4IDBweDsgfQoKI3VzZXJub3RlcyAuY291bnQgeyBiYWNrZ3Jv
+dW5kLWNvbG9yOiByZ2IoMTIxLCA1NiwgOTgpOyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBi
+b3JkZXItdG9wLWxlZnQtcmFkaXVzOiA0cHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiA0cHg7
+IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiA0cHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRp
+dXM6IDRweDsgfQoKI3VzZXJub3RlcyAubm90ZSAubmFtZSB7IGNvbG9yOiByZ2IoNTEsIDUxLCA1
+MSk7IH0KCiN1c2Vybm90ZXMgLm5vdGUgLmRhdGUgeyBjb2xvcjogcmdiKDEwMiwgMTAyLCAxMDIp
+OyB9CgojdXNlcm5vdGVzIC5ub3RlIC5uYW1lOmhvdmVyICsgLmdlbmFuY2hvciB7IGNvbG9yOiBi
+bGFjazsgfQoKI3VzZXJub3RlcyAubm90ZSAudGV4dCB7IC13ZWJraXQtdHJhbnNpdGlvbi1wcm9w
+ZXJ0eTogb3BhY2l0eTsgLXdlYmtpdC10cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjRzOyAtd2Via2l0
+LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBpbml0aWFsOyAtd2Via2l0LXRyYW5zaXRpb24t
+ZGVsYXk6IGluaXRpYWw7IH0KCiN1c2Vybm90ZXMgLm5vdGUgLnZvdGVzIC50YWxseSB7IGNvbG9y
+OiByZ2IoNTEsIDUxLCA1MSk7IH0KCiN1c2Vybm90ZXMgLm5vdGUgLnZvdGVzIGEgeyAtd2Via2l0
+LXRyYW5zaXRpb24tcHJvcGVydHk6IGJvcmRlcjsgLXdlYmtpdC10cmFuc2l0aW9uLWR1cmF0aW9u
+OiAwLjRzOyAtd2Via2l0LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBpbml0aWFsOyAtd2Vi
+a2l0LXRyYW5zaXRpb24tZGVsYXk6IGluaXRpYWw7IH0KCi5kb2N0YWJsZSwgLnNlZ21lbnRlZGxp
+c3QgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IGJvcmRlci1yaWdodC1j
+b2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjA0LCAy
+MDQsIDIwNCk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IH0KCi5kb2N0
+YWJsZSB0aGVhZCB0ciwgLnNlZ21lbnRlZGxpc3QgdGhlYWQgdHIgeyBib3JkZXItdG9wLWNvbG9y
+OiByZ2IoMTk2LCAyMDEsIDIyMyk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDE5NiwgMjAxLCAy
+MjMpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDE5NiwgMjAxLCAyMjMpOyBib3JkZXItYm90dG9t
+LWNvbG9yOiByZ2IoMTM2LCAxNDYsIDE5MSk7IGNvbG9yOiByZ2IoNTEsIDUxLCA1MSk7IH0KCi5k
+b2N0YWJsZSB0aCwgLnNlZ21lbnRlZGxpc3QgdGggeyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTk2
+LCAyMDEsIDIyMyk7IH0KCi5kb2N0YWJsZSB0ciwgLnNlZ21lbnRlZGxpc3QgdHIgeyBib3JkZXIt
+dG9wLWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIw
+NCwgMjA0LCAyMDQpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IGJv
+cmRlci1sZWZ0LWNvbG9yOiByZ2IoMjA0LCAyMDQsIDIwNCk7IH0KCi5kb2N0YWJsZSB0Ym9keSB0
+cjpudGgtY2hpbGQob2RkKSwgLnNlZ21lbnRlZGxpc3QgdGJvZHkgdHI6bnRoLWNoaWxkKG9kZCkg
+eyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IH0KCi5kb2N0YWJsZSB0Ym9k
+eSB0cjpudGgtY2hpbGQoZXZlbiksIC5zZWdtZW50ZWRsaXN0IHRib2R5IHRyOm50aC1jaGlsZChl
+dmVuKSB7IGJhY2tncm91bmQtY29sb3I6IHJnYigyMzAsIDIzMCwgMjMwKTsgfQoKI3VzZXJub3Rl
+cyAubm90ZSAudGV4dCwgLmV4YW1wbGUtY29udGVudHMgPiBbY2xhc3MkPSJjb2RlIl0sIC5leGFt
+cGxlLWNvbnRlbnRzLnNjcmVlbiwgLmluZm9ybWFsZXhhbXBsZSAubGl0ZXJhbGxheW91dCB7IGJh
+Y2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgYm94LXNoYWRvdzogcmdiYSgwLCAw
+LCAwLCAwLjE0ODQzOCkgMHB4IDBweCAwcHggMXB4IGluc2V0OyBib3JkZXItdG9wLWxlZnQtcmFk
+aXVzOiAwcHg7IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAwcHg7IGJvcmRlci1ib3R0b20tcmln
+aHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDJweDsgfQoKLnJlZnNl
+Y3QxIC5leGFtcGxlLWNvbnRlbnRzID4gW2NsYXNzJD0iY29kZSJdLCAucmVmc2VjdDEgLmV4YW1w
+bGUtY29udGVudHMuc2NyZWVuIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUp
+OyB9CgouZG9jcyAuY2xhc3NzeW5vcHNpcywgLnJlZnNlY3QxIC5maWVsZHN5bm9wc2lzLCAucmVm
+c2VjdDEgLmRjLWRlc2NyaXB0aW9uLCAuZG9jcyAuc2VjdDEgLmRjLWRlc2NyaXB0aW9uIHsgYmFj
+a2dyb3VuZC1pbWFnZTogaW5pdGlhbDsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsOyBi
+YWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsOyBiYWNr
+Z3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGJhY2tncm91bmQtc2l6ZTogaW5pdGlh
+bDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIxNywgMjE3LCAyMTcpOyBib3JkZXItcmlnaHQtY29s
+b3I6IHJnYigyMTcsIDIxNywgMjE3KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIxNywgMjE3
+LCAyMTcpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIxNywgMjE3LCAyMTcpOyBiYWNrZ3JvdW5k
+LXBvc2l0aW9uOiBpbml0aWFsIGluaXRpYWw7IGJhY2tncm91bmQtcmVwZWF0OiBpbml0aWFsIGlu
+aXRpYWw7IH0KCi5waHBjb2RlIHNwYW4uaHRtbCB7IGNvbG9yOiBibGFjazsgYmFja2dyb3VuZC1j
+b2xvcjogdHJhbnNwYXJlbnQ7IH0KCi5waHBjb2RlIHNwYW4uY29tbWVudCB7IGNvbG9yOiByZ2Io
+NzksIDkxLCAxNDcpOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgfQoKZGl2LnBocGNv
+ZGUgc3Bhbi5kZWZhdWx0IHsgY29sb3I6IHJnYig1MSwgMTAyLCAxNTMpOyBiYWNrZ3JvdW5kLWNv
+bG9yOiB0cmFuc3BhcmVudDsgfQoKZGl2LnBocGNvZGUgc3Bhbi5rZXl3b3JkIHsgY29sb3I6IHJn
+YigxMDIsIDE1MywgNTEpOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsgfQoKZGl2LnBo
+cGNvZGUgc3Bhbi5zdHJpbmcgeyBjb2xvcjogcmdiKDIwNCwgNTEsIDUxKTsgYmFja2dyb3VuZC1j
+b2xvcjogdHJhbnNwYXJlbnQ7IH0KCi5wYXJhIHZhciwgLnNpbXBhcmEgdmFyIHsgYmFja2dyb3Vu
+ZC1jb2xvcjogcmdiKDIzMCwgMjMwLCAyMzApOyBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAycHg7
+IGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAycHg7IGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVz
+OiAycHg7IGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDJweDsgY29sb3I6IHJnYig1MSwgNTEs
+IDUxKTsgcGFkZGluZy10b3A6IDJweDsgcGFkZGluZy1yaWdodDogNHB4OyBwYWRkaW5nLWJvdHRv
+bTogMnB4OyBwYWRkaW5nLWxlZnQ6IDRweDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgZm9udC1mYW1p
+bHk6ICdTb3VyY2UgQ29kZSBQcm8nLCBtb25vc3BhY2U7IGZvbnQtc2l6ZTogMTRweDsgZm9udC1z
+dHlsZTogbm9ybWFsOyBmb250LXZhcmlhbnQ6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsg
+bGluZS1oZWlnaHQ6IDEuNDY7IH0KCnZhci5yZXNldCB7IGJhY2tncm91bmQtaW1hZ2U6IG5vbmUg
+IWltcG9ydGFudDsgYmFja2dyb3VuZC1hdHRhY2htZW50OiBpbml0aWFsICFpbXBvcnRhbnQ7IGJh
+Y2tncm91bmQtb3JpZ2luOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtY2xpcDogaW5p
+dGlhbCAhaW1wb3J0YW50OyBiYWNrZ3JvdW5kLWNvbG9yOiBpbml0aWFsICFpbXBvcnRhbnQ7IGJh
+Y2tncm91bmQtc2l6ZTogaW5pdGlhbCAhaW1wb3J0YW50OyBwYWRkaW5nLXRvcDogMHB4ICFpbXBv
+cnRhbnQ7IHBhZGRpbmctcmlnaHQ6IDBweCAhaW1wb3J0YW50OyBwYWRkaW5nLWJvdHRvbTogMHB4
+ICFpbXBvcnRhbnQ7IHBhZGRpbmctbGVmdDogMHB4ICFpbXBvcnRhbnQ7IGZvbnQtc2l6ZTogMWVt
+ICFpbXBvcnRhbnQ7IGJhY2tncm91bmQtcG9zaXRpb246IGluaXRpYWwgaW5pdGlhbCAhaW1wb3J0
+YW50OyBiYWNrZ3JvdW5kLXJlcGVhdDogaW5pdGlhbCBpbml0aWFsICFpbXBvcnRhbnQ7IH0KCiNs
+YXlvdXQtY29udGVudCBhLmdlbmFuY2hvcjpsaW5rLCAjbGF5b3V0LWNvbnRlbnQgYS5nZW5hbmNo
+b3I6dmlzaXRlZCB7IGNvbG9yOiB0cmFuc3BhcmVudDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogbm9u
+ZTsgYm9yZGVyLWJvdHRvbS13aWR0aDogaW5pdGlhbDsgYm9yZGVyLWJvdHRvbS1jb2xvcjogaW5p
+dGlhbDsgfQoKI2xheW91dC1jb250ZW50IGEuZ2VuYW5jaG9yOmhvdmVyLCAjbGF5b3V0LWNvbnRl
+bnQgYS5nZW5hbmNob3I6Zm9jdXMgeyBjb2xvcjogcmdiKDUxLCA1MSwgNTEpOyBib3JkZXItYm90
+dG9tLXN0eWxlOiBub25lOyBib3JkZXItYm90dG9tLXdpZHRoOiBpbml0aWFsOyBib3JkZXItYm90
+dG9tLWNvbG9yOiBpbml0aWFsOyB9Cgoud2FybiB7IGJvcmRlci10b3AtY29sb3I6IHJnYig3OSwg
+OTEsIDE0Nyk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDc5LCA5MSwgMTQ3KTsgYm9yZGVyLWJv
+dHRvbS1jb2xvcjogcmdiKDc5LCA5MSwgMTQ3KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYig3OSwg
+OTEsIDE0Nyk7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgYm9yZGVyLXRv
+cC1sZWZ0LXJhZGl1czogMHB4OyBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMHB4OyBib3JkZXIt
+Ym90dG9tLXJpZ2h0LXJhZGl1czogMnB4OyBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAycHg7
+IH0KCnByZS5pbmZvIHsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzOSwgMjM5LCAyMzkpOyBib3Jk
+ZXItdG9wLWNvbG9yOiByZ2IoMjIxLCAyMjEsIDIyMSk7IGJvcmRlci1yaWdodC1jb2xvcjogcmdi
+KDIyMSwgMjIxLCAyMjEpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjIxLCAyMjEsIDIyMSk7
+IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMjIxLCAyMjEsIDIyMSk7IH0KCmFzaWRlLnRpcHMgZGl2
+LmJvcmRlciB7IGRpc3BsYXk6IG5vbmU7IH0KCmFzaWRlLnRpcHMgaDMgeyBjb2xvcjogcmdiKDIz
+MCwgMjMwLCAyMzApOyB9Cgphc2lkZS50aXBzIGEgeyBjb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQp
+OyBib3JkZXItYm90dG9tLXdpZHRoOiAxcHg7IGJvcmRlci1ib3R0b20tc3R5bGU6IGRvdHRlZDsg
+Ym9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDEwMiwgMTAyLCAxMDIpOyB9Cgphc2lkZS50aXBzIC5w
+YW5lbCA+IGE6OmFmdGVyLCBhc2lkZS50aXBzIC5wYW5lbCA+IHNwYW46OmFmdGVyIHsgY29udGVu
+dDogJyAnOyBkaXNwbGF5OiBibG9jazsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXIt
+Ym90dG9tLXN0eWxlOiBkb3R0ZWQ7IGJvcmRlci1ib3R0b20tY29sb3I6IHJnYigxMDIsIDEwMiwg
+MTAyKTsgfQoKYXNpZGUudGlwcyAucGFuZWwgPiBhIHsgZGlzcGxheTogYmxvY2s7IGJvcmRlci1i
+b3R0b20tc3R5bGU6IG5vbmU7IGJvcmRlci1ib3R0b20td2lkdGg6IGluaXRpYWw7IGJvcmRlci1i
+b3R0b20tY29sb3I6IGluaXRpYWw7IH0KCmFzaWRlLnRpcHMgLnBhbmVsID4gYTpob3Zlcjo6YWZ0
+ZXIgeyBib3JkZXItdG9wLWNvbG9yOiByZ2IoMTc0LCA4MCwgMTQxKTsgYm9yZGVyLXJpZ2h0LWNv
+bG9yOiByZ2IoMTc0LCA4MCwgMTQxKTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDE3NCwgODAs
+IDE0MSk7IGJvcmRlci1sZWZ0LWNvbG9yOiByZ2IoMTc0LCA4MCwgMTQxKTsgfQoKYXNpZGUudGlw
+cyBhOmhvdmVyLCBhc2lkZS50aXBzIGE6Zm9jdXMgeyBjb2xvcjogcmdiKDE3NCwgODAsIDE0MSk7
+IGJvcmRlci10b3AtY29sb3I6IHJnYigxNzQsIDgwLCAxNDEpOyBib3JkZXItcmlnaHQtY29sb3I6
+IHJnYigxNzQsIDgwLCAxNDEpOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMTc0LCA4MCwgMTQx
+KTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigxNzQsIDgwLCAxNDEpOyB9Cgouc29mdC1kZXByZWNh
+dGlvbi1ub3RpY2UgeyBjb2xvcjogcmdiKDUxLCA1MSwgNTEpOyBib3JkZXItdG9wLWNvbG9yOiBy
+Z2IoMjM4LCAyMDUsIDIyMik7IGJvcmRlci1yaWdodC1jb2xvcjogcmdiKDIzOCwgMjA1LCAyMjIp
+OyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjM4LCAyMDUsIDIyMik7IGJvcmRlci1sZWZ0LWNv
+bG9yOiByZ2IoMjM4LCAyMDUsIDIyMik7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNDksIDIzNiwg
+MjQyKTsgfQoKLnNvZnQtZGVwcmVjYXRpb24tbm90aWNlIGgxLnRpdGxlIHsgY29sb3I6IHJnYig2
+OSwgNzgsIDg1KTsgfQoKLnNvZnQtZGVwcmVjYXRpb24tbm90aWNlIGJsb2NrcXVvdGUuc2lkZWJh
+ciB7IGNvbG9yOiByZ2IoMTAyLCAwLCAwKTsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDEwMiwgMTAy
+LCAwKTsgYm9yZGVyLXJpZ2h0LWNvbG9yOiByZ2IoMTAyLCAxMDIsIDApOyBib3JkZXItYm90dG9t
+LWNvbG9yOiByZ2IoMTAyLCAxMDIsIDApOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDEwMiwgMTAy
+LCAwKTsgfQoKI2JyZWFkY3J1bWJzIHsgY29sb3I6IHJnYigxNTMsIDE1MywgMTUzKTsgfQoKLmxh
+eW91dC1tZW51IHVsLmNoaWxkLW1lbnUtbGlzdCBsaTpmaXJzdC1jaGlsZCBhIHsgYm9yZGVyLXRv
+cC1jb2xvcjogcmdiKDEwMiwgMTAyLCAxMDIpOyB9CgoubGF5b3V0LW1lbnUgdWwuY2hpbGQtbWVu
+dS1saXN0IGxpLmN1cnJlbnQgYSB7IGNvbG9yOiByZ2IoMTc0LCA4MCwgMTQxKTsgYm9yZGVyLWJv
+dHRvbS1jb2xvcjogcmdiKDE3NCwgODAsIDE0MSk7IH0KCi5sYXlvdXQtbWVudSB1bC5jaGlsZC1t
+ZW51LWxpc3QgYSB7IGJvcmRlci10b3AtY29sb3I6IHJnYigxMDIsIDEwMiwgMTAyKTsgYm9yZGVy
+LXJpZ2h0LWNvbG9yOiByZ2IoMTAyLCAxMDIsIDEwMik7IGJvcmRlci1ib3R0b20tY29sb3I6IHJn
+YigxMDIsIDEwMiwgMTAyKTsgYm9yZGVyLWxlZnQtY29sb3I6IHJnYigxMDIsIDEwMiwgMTAyKTsg
+fQoKZGl2LmVsZXBocGFudHMgaW1nIHsgb3BhY2l0eTogMC41OyAtd2Via2l0LXRyYW5zaXRpb24t
+cHJvcGVydHk6IGFsbDsgLXdlYmtpdC10cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjJzOyAtd2Via2l0
+LXRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLWluLW91dDsgLXdlYmtpdC10cmFuc2l0
+aW9uLWRlbGF5OiBpbml0aWFsOyB9CgpkaXYuZWxlcGhwYW50czpob3ZlciBpbWcgeyBvcGFjaXR5
+OiAwLjY7IC13ZWJraXQtdHJhbnNpdGlvbi1wcm9wZXJ0eTogYWxsOyAtd2Via2l0LXRyYW5zaXRp
+b24tZHVyYXRpb246IDAuMnM7IC13ZWJraXQtdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVh
+c2UtaW4tb3V0OyAtd2Via2l0LXRyYW5zaXRpb24tZGVsYXk6IGluaXRpYWw7IH0KCmRpdi5lbGVw
+aHBhbnRzIGltZzpob3ZlciwgZGl2LmVsZXBocGFudHMgaW1nOmZvY3VzIHsgb3BhY2l0eTogMTsg
+fQoKLm1pcnJvciB7IHBvc2l0aW9uOiByZWxhdGl2ZTsgYm9yZGVyLXRvcC13aWR0aDogMXB4OyBi
+b3JkZXItcmlnaHQtd2lkdGg6IDFweDsgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4OyBib3JkZXIt
+bGVmdC13aWR0aDogMXB4OyBib3JkZXItdG9wLXN0eWxlOiBzb2xpZDsgYm9yZGVyLXJpZ2h0LXN0
+eWxlOiBzb2xpZDsgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7IGJvcmRlci1sZWZ0LXN0eWxl
+OiBzb2xpZDsgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyBib3JkZXItcmln
+aHQtY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KTsgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIw
+NCwgMjA0LCAyMDQpOyBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIwNCwgMjA0LCAyMDQpOyBib3Jk
+ZXItaW1hZ2U6IGluaXRpYWw7IHBhZGRpbmctdG9wOiAyMHB4OyBwYWRkaW5nLXJpZ2h0OiAyMHB4
+OyBwYWRkaW5nLWJvdHRvbTogMjBweDsgcGFkZGluZy1sZWZ0OiAyMHB4OyBtYXJnaW4tdG9wOiA1
+cHg7IG1hcmdpbi1yaWdodDogNXB4OyBtYXJnaW4tYm90dG9tOiA1cHg7IG1hcmdpbi1sZWZ0OiA1
+cHg7IH0KCi5taXJyb3IgLnRpdGxlIGltZyB7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgcmlnaHQ6IDBw
+eDsgfQoKLm1pcnJvciAudGl0bGUgeyBmb250LXNpemU6IDEuNGVtOyBwb3NpdGlvbjogcmVsYXRp
+dmU7IH0KCi5oZWFkc3VwIHsgcGFkZGluZy10b3A6IDAuMjVyZW07IHBhZGRpbmctcmlnaHQ6IDBw
+eDsgcGFkZGluZy1ib3R0b206IDAuMjVyZW07IHBhZGRpbmctbGVmdDogMHB4OyBoZWlnaHQ6IDEu
+NXJlbTsgYm9yZGVyLWJvdHRvbS13aWR0aDogMC4xMjVyZW07IGJvcmRlci1ib3R0b20tc3R5bGU6
+IHNvbGlkOyBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMTAyLCAxNTMsIDEwMik7IGJhY2tncm91
+bmQtY29sb3I6IHJnYigxNTMsIDIwNCwgMTUzKTsgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsg
+fQoKLmhlYWRzdXAsIC5oZWFkc3VwIGEgeyBtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1yaWdodDog
+YXV0bzsgbWFyZ2luLWJvdHRvbTogMHB4OyBtYXJnaW4tbGVmdDogYXV0bzsgdGV4dC1hbGlnbjog
+Y2VudGVyOyBjb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyB9
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://php.net/images/logos/php-logo.svg
+
+<svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 -1 100 50">
+	<path d=3D"m7.579 10.123 14.204 0c4.169 0.035 7.19 1.237 9.063 3.604 1.873=
+ 2.367 2.491 5.6 1.855 9.699-0.247 1.873-0.795 3.71-1.643 5.512-0.813 1.802=
+-1.943 3.427-3.392 4.876-1.767 1.837-3.657 3.003-5.671 3.498-2.014 0.495-4.=
+099 0.742-6.254 0.742l-6.36 0-2.014 10.07-7.367 0 7.579-38.001 0 0m6.201 6.=
+042-3.18 15.9c0.212 0.035 0.424 0.053 0.636 0.053 0.247 0 0.495 0 0.742 0 3=
+.392 0.035 6.219-0.3 8.48-1.007 2.261-0.742 3.781-3.321 4.558-7.738 0.636-3=
+.71 0-5.848-1.908-6.413-1.873-0.565-4.222-0.83-7.049-0.795-0.424 0.035-0.83=
+ 0.053-1.219 0.053-0.353 0-0.724 0-1.113 0l0.053-0.053"/>
+	<path d=3D"m41.093 0 7.314 0-2.067 10.123 6.572 0c3.604 0.071 6.289 0.813 =
+8.056 2.226 1.802 1.413 2.332 4.099 1.59 8.056l-3.551 17.649-7.42 0 3.392-1=
+6.854c0.353-1.767 0.247-3.021-0.318-3.763-0.565-0.742-1.784-1.113-3.657-1.1=
+13l-5.883-0.053-4.346 21.783-7.314 0 7.632-38.054 0 0"/>
+	<path d=3D"m70.412 10.123 14.204 0c4.169 0.035 7.19 1.237 9.063 3.604 1.87=
+3 2.367 2.491 5.6 1.855 9.699-0.247 1.873-0.795 3.71-1.643 5.512-0.813 1.80=
+2-1.943 3.427-3.392 4.876-1.767 1.837-3.657 3.003-5.671 3.498-2.014 0.495-4=
+.099 0.742-6.254 0.742l-6.36 0-2.014 10.07-7.367 0 7.579-38.001 0 0m6.201 6=
+.042-3.18 15.9c0.212 0.035 0.424 0.053 0.636 0.053 0.247 0 0.495 0 0.742 0 =
+3.392 0.035 6.219-0.3 8.48-1.007 2.261-0.742 3.781-3.321 4.558-7.738 0.636-=
+3.71 0-5.848-1.908-6.413-1.873-0.565-4.222-0.83-7.049-0.795-0.424 0.035-0.8=
+3 0.053-1.219 0.053-0.353 0-0.724 0-1.113 0l0.053-0.053"/>
+</svg>=0A
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://php.net/images/notes-add@2x.png
+
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABjSURB
+VEiJ7ZbBCgAhCETfLH24f+4eFi9BFMu6ITSnQFF8g5UAI1FXZnGAFgd3ty8LSzL4YYL6Ddo85VEw
+Da16Vh/RPg965rP4yJP6iPZ50DM9e5Cm5bvo7XtRH1F6A1H9V3EDrqAYtjWD2W4AAAAASUVORK5C
+YII=
+------=_NextPart_000_3F2D_35EA8872.E6321DBA
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://php.net/images/to-top@2x.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAVPSURB
+VHic7Z3dbxRVFMB/ZylRaipYsQo8FEkIGx76ggHfFGliGx98kDZqMOJ/ZpRoAuGBmFiQLSVV0lB5
+sSakpgapAYm1qR+NYDT0+HBv93vne+7MLPNL9qHdmTvn/nJ3Z+6ZO2dFVckKEdkFjABDHi+ATY/X
+mqo+cht5A3EtUER2A0eAKnAQqMRscgu4CywDP6jqnzHbC4UTgSLyIkZYFdiX8uF+wchcVtW1lI+V
+nkAREeAocBLYm8pB/FkH5oDbmlJHUxEoIi8D48CBxBuPxn2gpqo/Jd1wogLtR3UcOJxYo8myghH5
+a1INJiJQRJ4FTgFjgMRuMF0UWAJmVfWvuI3FFigiB4FpYDBuMI55CJxX1btxGoklUEReASaBHXGC
+yJDHwIyq3oraQCSBIlIBJoDjUQ+cMxaBy6q6FXbH0ALt7GEKOBT2YDnnDnAh7KwmlEARGQbOAMPh
+YisMG8A5Vd0IukPgaZQdef0sD0zfzti+BiKQQPudN0V/y9tmGJiyffYl6AicoP++87w4hOmzL74C
+7aVKv5xtw3Dc9t0TT4H2InkyoYCKyKR10JOeAu30bJriXiQnwQ5g2rroitcIPEXxpmdpMIhx0ZWu
+Am1WZSytiArImHXSQa8ROE7+syouEYyTDjoE2mRoXvN5WXLYummhRaBNw3c1XQLAuHVUp30EHiU/
+afg8cgDjqE67wJPuYiksLY7qAu1ZJqu7Z0Vib/MZuXkEVjMIpqjUXZUCo9Eq0C63SHvFQD+xzzqr
+j8By9IWnCjDQ/EfO+A2zLONnTHxvkK+5eRW4OWDT16NZR9PG98AXqvqv/fuWiPwIvAu8lF1YLYyK
+yK4KZn1e3CVmSbKgqheb5AGgqn8AH2PWueSBCjBSobGIMQ/Mq+qVXm+q6j/Ap5glbHlgKE8Ca6p6
+zW+jJokP0g/Jl9wIvKKq3wTd2N78/gRzosmSXAi8qqoLYXeyEj8D/k4+pMBkLvCaqt6IurOq/g58
+DvyXXEihyFTgdVWd99tIRJ7yel9V7wEXMYvNXZOZwHlVve63kYi8BnwoIju9tlPVZeASZvGkS4ay
+uP67EeRsKyLHMLm3/cDp9kxwO6r6HfBlMiEGp4J5WMUVC6p61W8jEakCbzX96wgBllqo6rfAbPTw
+QrPpUuA94Cu/jURkFDhN5+zohIi86re/qn6NWevnAqcC5/ye1bCZ3vdoJDnaedOOTj98T04J4VSg
+5/RLRPZg1h8+7bUZ8I6I+N34cjVLcSrQax3OIPABwa4IdgLvi8hzPtu4wKnArksjrIizwPMh2noG
+OGuXHHdjf7jQIrM5gDuBEyKyAKxhnmHbg8lDvk60ROlu4CMRuQmsYvrxgn2dSCLgAGwOYDq0Rfo5
+wRHg7YTbHCK7lRRbwFrFTspXMwqiyKyq6qPtUbecaSjFZBkaH9tSYHgaAu1j8nnI8BaFB9ulBZpP
+HOUoDE7dVSkwGp0C7VPc65mEUyzWm594b7/2m3McTBFpcdQu8Db5uXGdR+5jHNVpEWjTTTWXERWM
+WntKrmP6ZkuDrDgLqTisdCub0mv+W8P9DZo80/OT2VWgPcsspRlRwVjqVWvGKwMziykN8qTzEI8b
+VT0F2qI05zGlQZ5UHmNqy/Qs0OOZA7RFaWYSDqpIzPgV5vFNotqiNItJRVQgFoMU5Amahb6Mu3ut
+eeAOps++BBJoK/pcwNRV6Xc2MAV4Ai1WCnwfxKb+z9HfErcL7wSuXlSWfmqQfumn+k5l8bE6Zfm7
+LMrftTRQFmAsS4DGoSxCG5OyDHJMykLcMSlLwcek/DGCmDgX2HLwPvg5jP8BZQUTNqeQ8kYAAAAA
+SUVORK5CYII=
+------=_NextPart_000_3F2D_35EA8872.E6321DBA--

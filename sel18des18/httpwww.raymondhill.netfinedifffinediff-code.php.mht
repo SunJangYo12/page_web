@@ -1,0 +1,849 @@
+From: <Saved by WebKit>
+Subject: 
+Date: Tue, 10 Dec 2018 05:06:10 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0D0D_A3FACFE4.96199283"
+
+------=_NextPart_000_0D0D_A3FACFE4.96199283
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.raymondhill.net/finediff/finediff-code.php
+
+<html><head><meta charset=3D"ISO-8859-1"></head><body><pre style=3D"word-wr=
+ap: break-word; white-space: pre-wrap;">&lt;?php
+/**
+* FINE granularity DIFF
+*
+* Computes a set of instructions to convert the content of
+* one string into another.
+*
+* Copyright (c) 2011 Raymond Hill (http://raymondhill.net/blog/?p=3D441)
+*
+* Licensed under The MIT License
+*=20
+* Permission is hereby granted, free of charge, to any person obtaining a c=
+opy
+* of this software and associated documentation files (the "Software"), to =
+deal
+* in the Software without restriction, including without limitation the rig=
+hts
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included i=
+n
+* all copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS O=
+R
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL T=
+HE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING F=
+ROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+* THE SOFTWARE.
+*
+* @copyright Copyright 2011 (c) Raymond Hill (http://raymondhill.net/blog/?=
+p=3D441)
+* @link http://www.raymondhill.net/finediff/
+* @version 0.6
+* @license MIT License (http://www.opensource.org/licenses/mit-license.php)
+*/
+
+/**
+* Usage (simplest):
+*
+*   include 'finediff.php';
+*
+*   // for the stock stack, granularity values are:
+*   // FineDiff::$paragraphGranularity =3D paragraph/line level
+*   // FineDiff::$sentenceGranularity =3D sentence level
+*   // FineDiff::$wordGranularity =3D word level
+*   // FineDiff::$characterGranularity =3D character level [default]
+*
+*   $opcodes =3D FineDiff::getDiffOpcodes($from_text, $to_text [, $granular=
+ityStack =3D null] );
+*   // store opcodes for later use...
+*
+*   ...
+*
+*   // restore $to_text from $from_text + $opcodes
+*   include 'finediff.php';
+*   $to_text =3D FineDiff::renderToTextFromOpcodes($from_text, $opcodes);
+*
+*   ...
+*/
+
+/**
+* Persisted opcodes (string) are a sequence of atomic opcode.
+* A single opcode can be one of the following:
+*   c | c{n} | d | d{n} | i:{c} | i{length}:{s}
+*   'c'        =3D copy one character from source
+*   'c{n}'     =3D copy n characters from source
+*   'd'        =3D skip one character from source
+*   'd{n}'     =3D skip n characters from source
+*   'i:{c}     =3D insert character 'c'
+*   'i{n}:{s}' =3D insert string s, which is of length n
+*
+* Do not exist as of now, under consideration:
+*   'm{n}:{o}  =3D move n characters from source o characters ahead.
+*   It would be essentially a shortcut for a delete-&gt;copy-&gt;insert
+*   command (swap) for when the inserted segment is exactly the same
+*   as the deleted one, and with only a copy operation in between.
+*   TODO: How often this case occurs? Is it worth it? Can only
+*   be done as a postprocessing method (-&gt;optimize()?)
+*/
+abstract class FineDiffOp {
+	abstract public function getFromLen();
+	abstract public function getToLen();
+	abstract public function getOpcode();
+	}
+
+class FineDiffDeleteOp extends FineDiffOp {
+	public function __construct($len) {
+		$this-&gt;fromLen =3D $len;
+		}
+	public function getFromLen() {
+		return $this-&gt;fromLen;
+		}
+	public function getToLen() {
+		return 0;
+		}
+	public function getOpcode() {
+		if ( $this-&gt;fromLen =3D=3D=3D 1 ) {
+			return 'd';
+			}
+		return "d{$this-&gt;fromLen}";
+		}
+	}
+
+class FineDiffInsertOp extends FineDiffOp {
+	public function __construct($text) {
+		$this-&gt;text =3D $text;
+		}
+	public function getFromLen() {
+		return 0;
+		}
+	public function getToLen() {
+		return strlen($this-&gt;text);
+		}
+	public function getText() {
+		return $this-&gt;text;
+		}
+	public function getOpcode() {
+		$to_len =3D strlen($this-&gt;text);
+		if ( $to_len =3D=3D=3D 1 ) {
+			return "i:{$this-&gt;text}";
+			}
+		return "i{$to_len}:{$this-&gt;text}";
+		}
+	}
+
+class FineDiffReplaceOp extends FineDiffOp {
+	public function __construct($fromLen, $text) {
+		$this-&gt;fromLen =3D $fromLen;
+		$this-&gt;text =3D $text;
+		}
+	public function getFromLen() {
+		return $this-&gt;fromLen;
+		}
+	public function getToLen() {
+		return strlen($this-&gt;text);
+		}
+	public function getText() {
+		return $this-&gt;text;
+		}
+	public function getOpcode() {
+		if ( $this-&gt;fromLen =3D=3D=3D 1 ) {
+			$del_opcode =3D 'd';
+			}
+		else {
+			$del_opcode =3D "d{$this-&gt;fromLen}";
+			}
+		$to_len =3D strlen($this-&gt;text);
+		if ( $to_len =3D=3D=3D 1 ) {
+			return "{$del_opcode}i:{$this-&gt;text}";
+			}
+		return "{$del_opcode}i{$to_len}:{$this-&gt;text}";
+		}
+	}
+
+class FineDiffCopyOp extends FineDiffOp {
+	public function __construct($len) {
+		$this-&gt;len =3D $len;
+		}
+	public function getFromLen() {
+		return $this-&gt;len;
+		}
+	public function getToLen() {
+		return $this-&gt;len;
+		}
+	public function getOpcode() {
+		if ( $this-&gt;len =3D=3D=3D 1 ) {
+			return 'c';
+			}
+		return "c{$this-&gt;len}";
+		}
+	public function increase($size) {
+		return $this-&gt;len +=3D $size;
+		}
+	}
+
+/**
+* FineDiff ops
+*
+* Collection of ops
+*/
+class FineDiffOps {
+	public function appendOpcode($opcode, $from, $from_offset, $from_len) {
+		if ( $opcode =3D=3D=3D 'c' ) {
+			$edits[] =3D new FineDiffCopyOp($from_len);
+			}
+		else if ( $opcode =3D=3D=3D 'd' ) {
+			$edits[] =3D new FineDiffDeleteOp($from_len);
+			}
+		else /* if ( $opcode =3D=3D=3D 'i' ) */ {
+			$edits[] =3D new FineDiffInsertOp(substr($from, $from_offset, $from_len)=
+);
+			}
+		}
+	public $edits =3D array();
+	}
+
+/**
+* FineDiff class
+*
+* TODO: Document
+*
+*/
+class FineDiff {
+
+	/**-----------------------------------------------------------------------=
+-
+	*
+	* Public section
+	*
+	*/
+
+	/**
+	* Constructor
+	* ...
+	* The $granularityStack allows FineDiff to be configurable so that
+	* a particular stack tailored to the specific content of a document can
+	* be passed.
+	*/
+	public function __construct($from_text =3D '', $to_text =3D '', $granulari=
+tyStack =3D null) {
+		// setup stack for generic text documents by default
+		$this-&gt;granularityStack =3D $granularityStack ? $granularityStack : Fi=
+neDiff::$characterGranularity;
+		$this-&gt;edits =3D array();
+		$this-&gt;from_text =3D $from_text;
+		$this-&gt;doDiff($from_text, $to_text);
+		}
+
+	public function getOps() {
+		return $this-&gt;edits;
+		}
+
+	public function getOpcodes() {
+		$opcodes =3D array();
+		foreach ( $this-&gt;edits as $edit ) {
+			$opcodes[] =3D $edit-&gt;getOpcode();
+			}
+		return implode('', $opcodes);
+		}
+
+	public function renderDiffToHTML() {
+		$in_offset =3D 0;
+		ob_start();
+		foreach ( $this-&gt;edits as $edit ) {
+			$n =3D $edit-&gt;getFromLen();
+			if ( $edit instanceof FineDiffCopyOp ) {
+				FineDiff::renderDiffToHTMLFromOpcode('c', $this-&gt;from_text, $in_offs=
+et, $n);
+				}
+			else if ( $edit instanceof FineDiffDeleteOp ) {
+				FineDiff::renderDiffToHTMLFromOpcode('d', $this-&gt;from_text, $in_offs=
+et, $n);
+				}
+			else if ( $edit instanceof FineDiffInsertOp ) {
+				FineDiff::renderDiffToHTMLFromOpcode('i', $edit-&gt;getText(), 0, $edit=
+-&gt;getToLen());
+				}
+			else /* if ( $edit instanceof FineDiffReplaceOp ) */ {
+				FineDiff::renderDiffToHTMLFromOpcode('d', $this-&gt;from_text, $in_offs=
+et, $n);
+				FineDiff::renderDiffToHTMLFromOpcode('i', $edit-&gt;getText(), 0, $edit=
+-&gt;getToLen());
+				}
+			$in_offset +=3D $n;
+			}
+		return ob_get_clean();
+		}
+
+	/**-----------------------------------------------------------------------=
+-
+	* Return an opcodes string describing the diff between a "From" and a
+	* "To" string
+	*/
+	public static function getDiffOpcodes($from, $to, $granularities =3D null)=
+ {
+		$diff =3D new FineDiff($from, $to, $granularities);
+		return $diff-&gt;getOpcodes();
+		}
+
+	/**-----------------------------------------------------------------------=
+-
+	* Return an iterable collection of diff ops from an opcodes string
+	*/
+	public static function getDiffOpsFromOpcodes($opcodes) {
+		$diffops =3D new FineDiffOps();
+		FineDiff::renderFromOpcodes(null, $opcodes, array($diffops,'appendOpcode'=
+));
+		return $diffops-&gt;edits;
+		}
+
+	/**-----------------------------------------------------------------------=
+-
+	* Re-create the "To" string from the "From" string and an "Opcodes" string
+	*/
+	public static function renderToTextFromOpcodes($from, $opcodes) {
+		ob_start();
+		FineDiff::renderFromOpcodes($from, $opcodes, array('FineDiff','renderToTe=
+xtFromOpcode'));
+		return ob_get_clean();
+		}
+
+	/**-----------------------------------------------------------------------=
+-
+	* Render the diff to an HTML string -- UTF8 unsafe
+	*/
+	public static function renderDiffToHTMLFromOpcodes($from, $opcodes) {
+		ob_start();
+		FineDiff::renderFromOpcodes($from, $opcodes, array('FineDiff','renderDiff=
+ToHTMLFromOpcode'));
+		return ob_get_clean();
+		}
+
+	/**-----------------------------------------------------------------------=
+-
+	* Render the diff to an HTML string -- UTF8 safe
+	*/
+	public static function renderUTF8DiffToHTMLFromOpcodes($from, $opcodes) {
+		ob_start();
+		FineDiff::renderUTF8FromOpcode($from, $opcodes, array('FineDiff','renderD=
+iffToHTMLFromOpcode'));
+		return ob_get_clean();
+		}
+
+	/**-----------------------------------------------------------------------=
+-
+	* Generic opcodes parser, user must supply callback for handling
+	* single opcode
+	*/
+	public static function renderFromOpcodes($from, $opcodes, $callback) {
+		if ( !is_callable($callback) ) {
+			return;
+			}
+		$opcodes_len =3D strlen($opcodes);
+		$from_offset =3D $opcodes_offset =3D 0;
+		while ( $opcodes_offset &lt;  $opcodes_len ) {
+			$opcode =3D substr($opcodes, $opcodes_offset, 1);
+			$opcodes_offset++;
+			$n =3D intval(substr($opcodes, $opcodes_offset));
+			if ( $n ) {
+				$opcodes_offset +=3D strlen(strval($n));
+				}
+			else {
+				$n =3D 1;
+				}
+			if ( $opcode =3D=3D=3D 'c' ) { // copy n characters from source
+				call_user_func($callback, 'c', $from, $from_offset, $n, '');
+				$from_offset +=3D $n;
+				}
+			else if ( $opcode =3D=3D=3D 'd' ) { // delete n characters from source
+				call_user_func($callback, 'd', $from, $from_offset, $n, '');
+				$from_offset +=3D $n;
+				}
+			else /* if ( $opcode =3D=3D=3D 'i' ) */ { // insert n characters from op=
+codes
+				call_user_func($callback, 'i', $opcodes, $opcodes_offset + 1, $n);
+				$opcodes_offset +=3D 1 + $n;
+				}
+			}
+		}
+
+	/**-----------------------------------------------------------------------=
+-
+	* Generic opcodes parser, user must supply callback for handling
+	* single opcode
+	*/
+	private static function renderUTF8FromOpcode($from, $opcodes, $callback) {
+		if ( !is_callable($callback) ) {
+			return;
+			}
+        $from_len =3D strlen($from);
+		$opcodes_len =3D strlen($opcodes);
+		$from_offset =3D $opcodes_offset =3D 0;
+        $last_to_chars =3D '';
+		while ( $opcodes_offset &lt;  $opcodes_len ) {
+			$opcode =3D substr($opcodes, $opcodes_offset, 1);
+			$opcodes_offset++;
+			$n =3D intval(substr($opcodes, $opcodes_offset));
+			if ( $n ) {
+				$opcodes_offset +=3D strlen(strval($n));
+				}
+			else {
+				$n =3D 1;
+				}
+            if ( $opcode =3D=3D=3D 'c' || $opcode =3D=3D=3D 'd' ) {
+                $beg =3D $from_offset;
+                $end =3D $from_offset + $n;
+                while ( $beg &gt; 0 &amp;&amp; (ord($from[$beg]) &amp; 0xC0=
+) =3D=3D=3D 0x80 ) { $beg--; }
+                while ( $end &lt; $from_len &amp;&amp; (ord($from[$end]) &a=
+mp; 0xC0) =3D=3D=3D 0x80 ) { $end++; }
+                if ( $opcode =3D=3D=3D 'c' ) { // copy n characters from so=
+urce
+                    call_user_func($callback, 'c', $from, $beg, $end - $beg=
+, '');
+                    $last_to_chars =3D substr($from, $from, $beg, $end - $b=
+eg);
+                    }
+                else /* if ( $opcode =3D=3D=3D 'd' ) */ { // delete n chara=
+cters from source
+                    call_user_func($callback, 'd', $from, $beg, $end - $beg=
+, '');
+                    }
+                $from_offset +=3D $n;
+                }
+			else /* if ( $opcode =3D=3D=3D 'i' ) */ { // insert n characters from op=
+codes
+				$opcodes_offset +=3D 1;
+                if ( strlen($last_to_chars) &gt; 0 &amp;&amp; (ord($opcodes=
+[$opcodes_offset]) &amp; 0xC0) =3D=3D=3D 0x80 ) {
+                    $beg =3D strlen($last_to_chars) - 1;
+                    while ( $beg &gt; 0 &amp;&amp; (ord($last_to_chars[$beg=
+]) &amp; 0xC0) =3D=3D=3D 0x80 ) { $beg--; }
+                    $prefix =3D substr($last_to_chars, $beg);
+                } else {
+                    $prefix =3D '';
+                }
+                $end =3D $from_offset;
+                while ( $end &lt; $from_len &amp;&amp; (ord($from[$end]) &a=
+mp; 0xC0) =3D=3D=3D 0x80 ) { $end++; }
+                $toInsert =3D $prefix . substr($opcodes, $opcodes_offset, $=
+n) . substr($from, $end, $end - $from_offset);
+                call_user_func($callback, 'i', $toInsert, 0, strlen($toInse=
+rt));
+				$opcodes_offset +=3D $n;
+                $last_to_chars =3D $toInsert;
+                }
+            }
+        }
+
+	/**
+	* Stock granularity stacks and delimiters
+	*/
+
+	const paragraphDelimiters =3D "\n\r";
+	public static $paragraphGranularity =3D array(
+		FineDiff::paragraphDelimiters
+		);
+	const sentenceDelimiters =3D ".\n\r";
+	public static $sentenceGranularity =3D array(
+		FineDiff::paragraphDelimiters,
+		FineDiff::sentenceDelimiters
+		);
+	const wordDelimiters =3D " \t.\n\r";
+	public static $wordGranularity =3D array(
+		FineDiff::paragraphDelimiters,
+		FineDiff::sentenceDelimiters,
+		FineDiff::wordDelimiters
+		);
+	const characterDelimiters =3D "";
+	public static $characterGranularity =3D array(
+		FineDiff::paragraphDelimiters,
+		FineDiff::sentenceDelimiters,
+		FineDiff::wordDelimiters,
+		FineDiff::characterDelimiters
+		);
+
+	public static $textStack =3D array(
+		".",
+		" \t.\n\r",
+		""
+		);
+
+	/**-----------------------------------------------------------------------=
+-
+	*
+	* Private section
+	*
+	*/
+
+	/**
+	* Entry point to compute the diff.
+	*/
+	private function doDiff($from_text, $to_text) {
+		$this-&gt;last_edit =3D false;
+		$this-&gt;stackpointer =3D 0;
+		$this-&gt;from_text =3D $from_text;
+		$this-&gt;from_offset =3D 0;
+		// can't diff without at least one granularity specifier
+		if ( empty($this-&gt;granularityStack) ) {
+			return;
+			}
+		$this-&gt;_processGranularity($from_text, $to_text);
+		}
+
+	/**
+	* This is the recursive function which is responsible for
+	* handling/increasing granularity.
+	*
+	* Incrementally increasing the granularity is key to compute the
+	* overall diff in a very efficient way.
+	*/
+	private function _processGranularity($from_segment, $to_segment) {
+		$delimiters =3D $this-&gt;granularityStack[$this-&gt;stackpointer++];
+		$has_next_stage =3D $this-&gt;stackpointer &lt; count($this-&gt;granulari=
+tyStack);
+		foreach ( FineDiff::doFragmentDiff($from_segment, $to_segment, $delimiter=
+s) as $fragment_edit ) {
+			// increase granularity
+			if ( $fragment_edit instanceof FineDiffReplaceOp &amp;&amp; $has_next_st=
+age ) {
+				$this-&gt;_processGranularity(
+					substr($this-&gt;from_text, $this-&gt;from_offset, $fragment_edit-&gt;=
+getFromLen()),
+					$fragment_edit-&gt;getText()
+					);
+				}
+			// fuse copy ops whenever possible
+			else if ( $fragment_edit instanceof FineDiffCopyOp &amp;&amp; $this-&gt;=
+last_edit instanceof FineDiffCopyOp ) {
+				$this-&gt;edits[count($this-&gt;edits)-1]-&gt;increase($fragment_edit-&=
+gt;getFromLen());
+				$this-&gt;from_offset +=3D $fragment_edit-&gt;getFromLen();
+				}
+			else {
+				/* $fragment_edit instanceof FineDiffCopyOp */
+				/* $fragment_edit instanceof FineDiffDeleteOp */
+				/* $fragment_edit instanceof FineDiffInsertOp */
+				$this-&gt;edits[] =3D $this-&gt;last_edit =3D $fragment_edit;
+				$this-&gt;from_offset +=3D $fragment_edit-&gt;getFromLen();
+				}
+			}
+		$this-&gt;stackpointer--;
+		}
+
+	/**
+	* This is the core algorithm which actually perform the diff itself,
+	* fragmenting the strings as per specified delimiters.
+	*
+	* This function is naturally recursive, however for performance purpose
+	* a local job queue is used instead of outright recursivity.
+	*/
+	private static function doFragmentDiff($from_text, $to_text, $delimiters) =
+{
+		// Empty delimiter means character-level diffing.
+		// In such case, use code path optimized for character-level
+		// diffing.
+		if ( empty($delimiters) ) {
+			return FineDiff::doCharDiff($from_text, $to_text);
+			}
+
+		$result =3D array();
+
+		// fragment-level diffing
+		$from_text_len =3D strlen($from_text);
+		$to_text_len =3D strlen($to_text);
+		$from_fragments =3D FineDiff::extractFragments($from_text, $delimiters);
+		$to_fragments =3D FineDiff::extractFragments($to_text, $delimiters);
+
+		$jobs =3D array(array(0, $from_text_len, 0, $to_text_len));
+
+		$cached_array_keys =3D array();
+
+		while ( $job =3D array_pop($jobs) ) {
+
+			// get the segments which must be diff'ed
+			list($from_segment_start, $from_segment_end, $to_segment_start, $to_segm=
+ent_end) =3D $job;
+
+			// catch easy cases first
+			$from_segment_length =3D $from_segment_end - $from_segment_start;
+			$to_segment_length =3D $to_segment_end - $to_segment_start;
+			if ( !$from_segment_length || !$to_segment_length ) {
+				if ( $from_segment_length ) {
+					$result[$from_segment_start * 4] =3D new FineDiffDeleteOp($from_segmen=
+t_length);
+					}
+				else if ( $to_segment_length ) {
+					$result[$from_segment_start * 4 + 1] =3D new FineDiffInsertOp(substr($=
+to_text, $to_segment_start, $to_segment_length));
+					}
+				continue;
+				}
+
+			// find longest copy operation for the current segments
+			$best_copy_length =3D 0;
+
+			$from_base_fragment_index =3D $from_segment_start;
+
+			$cached_array_keys_for_current_segment =3D array();
+
+			while ( $from_base_fragment_index &lt; $from_segment_end ) {
+				$from_base_fragment =3D $from_fragments[$from_base_fragment_index];
+				$from_base_fragment_length =3D strlen($from_base_fragment);
+				// performance boost: cache array keys
+				if ( !isset($cached_array_keys_for_current_segment[$from_base_fragment]=
+) ) {
+					if ( !isset($cached_array_keys[$from_base_fragment]) ) {
+						$to_all_fragment_indices =3D $cached_array_keys[$from_base_fragment] =
+=3D array_keys($to_fragments, $from_base_fragment, true);
+						}
+					else {
+						$to_all_fragment_indices =3D $cached_array_keys[$from_base_fragment];
+						}
+					// get only indices which falls within current segment
+					if ( $to_segment_start &gt; 0 || $to_segment_end &lt; $to_text_len ) {
+						$to_fragment_indices =3D array();
+						foreach ( $to_all_fragment_indices as $to_fragment_index ) {
+							if ( $to_fragment_index &lt; $to_segment_start ) { continue; }
+							if ( $to_fragment_index &gt;=3D $to_segment_end ) { break; }
+							$to_fragment_indices[] =3D $to_fragment_index;
+							}
+						$cached_array_keys_for_current_segment[$from_base_fragment] =3D $to_f=
+ragment_indices;
+						}
+					else {
+						$to_fragment_indices =3D $to_all_fragment_indices;
+						}
+					}
+				else {
+					$to_fragment_indices =3D $cached_array_keys_for_current_segment[$from_=
+base_fragment];
+					}
+				// iterate through collected indices
+				foreach ( $to_fragment_indices as $to_base_fragment_index ) {
+					$fragment_index_offset =3D $from_base_fragment_length;
+					// iterate until no more match
+					for (;;) {
+						$fragment_from_index =3D $from_base_fragment_index + $fragment_index_=
+offset;
+						if ( $fragment_from_index &gt;=3D $from_segment_end ) {
+							break;
+							}
+						$fragment_to_index =3D $to_base_fragment_index + $fragment_index_offs=
+et;
+						if ( $fragment_to_index &gt;=3D $to_segment_end ) {
+							break;
+							}
+						if ( $from_fragments[$fragment_from_index] !=3D=3D $to_fragments[$fra=
+gment_to_index] ) {
+							break;
+							}
+						$fragment_length =3D strlen($from_fragments[$fragment_from_index]);
+						$fragment_index_offset +=3D $fragment_length;
+						}
+					if ( $fragment_index_offset &gt; $best_copy_length ) {
+						$best_copy_length =3D $fragment_index_offset;
+						$best_from_start =3D $from_base_fragment_index;
+						$best_to_start =3D $to_base_fragment_index;
+						}
+					}
+				$from_base_fragment_index +=3D strlen($from_base_fragment);
+				// If match is larger than half segment size, no point trying to find b=
+etter
+				// TODO: Really?
+				if ( $best_copy_length &gt;=3D $from_segment_length / 2) {
+					break;
+					}
+				// no point to keep looking if what is left is less than
+				// current best match
+				if ( $from_base_fragment_index + $best_copy_length &gt;=3D $from_segmen=
+t_end ) {
+					break;
+					}
+				}
+
+			if ( $best_copy_length ) {
+				$jobs[] =3D array($from_segment_start, $best_from_start, $to_segment_st=
+art, $best_to_start);
+				$result[$best_from_start * 4 + 2] =3D new FineDiffCopyOp($best_copy_len=
+gth);
+				$jobs[] =3D array($best_from_start + $best_copy_length, $from_segment_e=
+nd, $best_to_start + $best_copy_length, $to_segment_end);
+				}
+			else {
+				$result[$from_segment_start * 4 ] =3D new FineDiffReplaceOp($from_segme=
+nt_length, substr($to_text, $to_segment_start, $to_segment_length));
+				}
+			}
+
+		ksort($result, SORT_NUMERIC);
+		return array_values($result);
+		}
+
+	/**
+	* Perform a character-level diff.
+	*
+	* The algorithm is quite similar to doFragmentDiff(), except that
+	* the code path is optimized for character-level diff -- strpos() is
+	* used to find out the longest common subequence of characters.
+	*
+	* We try to find a match using the longest possible subsequence, which
+	* is at most the length of the shortest of the two strings, then increment=
+ally
+	* reduce the size until a match is found.
+	*
+	* I still need to study more the performance of this function. It
+	* appears that for long strings, the generic doFragmentDiff() is more
+	* performant. For word-sized strings, doCharDiff() is somewhat more
+	* performant.
+	*/
+	private static function doCharDiff($from_text, $to_text) {
+		$result =3D array();
+		$jobs =3D array(array(0, strlen($from_text), 0, strlen($to_text)));
+		while ( $job =3D array_pop($jobs) ) {
+			// get the segments which must be diff'ed
+			list($from_segment_start, $from_segment_end, $to_segment_start, $to_segm=
+ent_end) =3D $job;
+			$from_segment_len =3D $from_segment_end - $from_segment_start;
+			$to_segment_len =3D $to_segment_end - $to_segment_start;
+
+			// catch easy cases first
+			if ( !$from_segment_len || !$to_segment_len ) {
+				if ( $from_segment_len ) {
+					$result[$from_segment_start * 4 + 0] =3D new FineDiffDeleteOp($from_se=
+gment_len);
+					}
+				else if ( $to_segment_len ) {
+					$result[$from_segment_start * 4 + 1] =3D new FineDiffInsertOp(substr($=
+to_text, $to_segment_start, $to_segment_len));
+					}
+				continue;
+				}
+			if ( $from_segment_len &gt;=3D $to_segment_len ) {
+				$copy_len =3D $to_segment_len;
+				while ( $copy_len ) {
+					$to_copy_start =3D $to_segment_start;
+					$to_copy_start_max =3D $to_segment_end - $copy_len;
+					while ( $to_copy_start &lt;=3D $to_copy_start_max ) {
+						$from_copy_start =3D strpos(substr($from_text, $from_segment_start, $=
+from_segment_len), substr($to_text, $to_copy_start, $copy_len));
+						if ( $from_copy_start !=3D=3D false ) {
+							$from_copy_start +=3D $from_segment_start;
+							break 2;
+							}
+						$to_copy_start++;
+						}
+					$copy_len--;
+					}
+				}
+			else {
+				$copy_len =3D $from_segment_len;
+				while ( $copy_len ) {
+					$from_copy_start =3D $from_segment_start;
+					$from_copy_start_max =3D $from_segment_end - $copy_len;
+					while ( $from_copy_start &lt;=3D $from_copy_start_max ) {
+						$to_copy_start =3D strpos(substr($to_text, $to_segment_start, $to_seg=
+ment_len), substr($from_text, $from_copy_start, $copy_len));
+						if ( $to_copy_start !=3D=3D false ) {
+							$to_copy_start +=3D $to_segment_start;
+							break 2;
+							}
+						$from_copy_start++;
+						}
+					$copy_len--;
+					}
+				}
+			// match found
+			if ( $copy_len ) {
+				$jobs[] =3D array($from_segment_start, $from_copy_start, $to_segment_st=
+art, $to_copy_start);
+				$result[$from_copy_start * 4 + 2] =3D new FineDiffCopyOp($copy_len);
+				$jobs[] =3D array($from_copy_start + $copy_len, $from_segment_end, $to_=
+copy_start + $copy_len, $to_segment_end);
+				}
+			// no match,  so delete all, insert all
+			else {
+				$result[$from_segment_start * 4] =3D new FineDiffReplaceOp($from_segmen=
+t_len, substr($to_text, $to_segment_start, $to_segment_len));
+				}
+			}
+		ksort($result, SORT_NUMERIC);
+		return array_values($result);
+		}
+
+	/**
+	* Efficiently fragment the text into an array according to
+	* specified delimiters.
+	* No delimiters means fragment into single character.
+	* The array indices are the offset of the fragments into
+	* the input string.
+	* A sentinel empty fragment is always added at the end.
+	* Careful: No check is performed as to the validity of the
+	* delimiters.
+	*/
+	private static function extractFragments($text, $delimiters) {
+		// special case: split into characters
+		if ( empty($delimiters) ) {
+			$chars =3D str_split($text, 1);
+			$chars[strlen($text)] =3D '';
+			return $chars;
+			}
+		$fragments =3D array();
+		$start =3D $end =3D 0;
+		for (;;) {
+			$end +=3D strcspn($text, $delimiters, $end);
+			$end +=3D strspn($text, $delimiters, $end);
+			if ( $end =3D=3D=3D $start ) {
+				break;
+				}
+			$fragments[$start] =3D substr($text, $start, $end - $start);
+			$start =3D $end;
+			}
+		$fragments[$start] =3D '';
+		return $fragments;
+		}
+
+	/**
+	* Stock opcode renderers
+	*/
+	private static function renderToTextFromOpcode($opcode, $from, $from_offse=
+t, $from_len) {
+		if ( $opcode =3D=3D=3D 'c' || $opcode =3D=3D=3D 'i' ) {
+			echo substr($from, $from_offset, $from_len);
+			}
+		}
+
+	private static function renderDiffToHTMLFromOpcode($opcode, $from, $from_o=
+ffset, $from_len) {
+		if ( $opcode =3D=3D=3D 'c' ) {
+			echo htmlspecialchars(substr($from, $from_offset, $from_len));
+			}
+		else if ( $opcode =3D=3D=3D 'd' ) {
+			$deletion =3D substr($from, $from_offset, $from_len);
+			if ( strcspn($deletion, " \n\r") =3D=3D=3D 0 ) {
+				$deletion =3D str_replace(array("\n","\r"), array('\n','\r'), $deletion=
+);
+				}
+			echo '&lt;del&gt;', htmlspecialchars($deletion), '&lt;/del&gt;';
+			}
+		else /* if ( $opcode =3D=3D=3D 'i' ) */ {
+ 			echo '&lt;ins&gt;', htmlspecialchars(substr($from, $from_offset, $from_=
+len)), '&lt;/ins&gt;';
+			}
+		}
+	}
+
+</pre></body></html>
+------=_NextPart_000_0D0D_A3FACFE4.96199283--
