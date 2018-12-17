@@ -1,0 +1,12 @@
+aaaaaaaaaaa
+ddddddddddd
+dsfffssffffs
+sddddddddddd
+sdsdaaaadsasdsa
+sdaaaaaaasad
+sdaaaaaaasas
+sadddddddddd
+sfffffffffff
+asdddddddddd
+#pesawat
+<script>alert('oke');</script>
